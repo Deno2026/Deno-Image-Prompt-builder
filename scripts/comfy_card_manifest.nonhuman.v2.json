@@ -1,0 +1,336 @@
+[
+  {
+    "subject": "vehicle",
+    "step": "detail",
+    "option_key": "vehicle-car-exterior",
+    "title": "자동차 외관",
+    "cue": "premium car exterior hero shot, polished body line, showroom quality"
+  },
+  {
+    "subject": "vehicle",
+    "step": "detail",
+    "option_key": "vehicle-sports",
+    "title": "스포츠카",
+    "cue": "sports car visual, aggressive premium automotive styling"
+  },
+  {
+    "subject": "vehicle",
+    "step": "detail",
+    "option_key": "vehicle-ev",
+    "title": "전기차",
+    "cue": "modern electric vehicle, clean futuristic automotive mood"
+  },
+  {
+    "subject": "vehicle",
+    "step": "environment",
+    "option_key": "vehicle-env-showroom",
+    "title": "쇼룸 환경",
+    "cue": "indoor showroom environment, luxury automotive display"
+  },
+  {
+    "subject": "vehicle",
+    "step": "environment",
+    "option_key": "vehicle-env-nightcity",
+    "title": "야간 도시 배경",
+    "cue": "night city automotive scene, premium urban light reflections"
+  },
+  {
+    "subject": "vehicle",
+    "step": "purpose",
+    "option_key": "vehicle-purpose-premium",
+    "title": "프리미엄 차량 톤",
+    "cue": "luxury vehicle branding visual, premium aspirational feel"
+  },
+  {
+    "subject": "vehicle",
+    "step": "composition",
+    "option_key": "vehicle-comp-front-angle",
+    "title": "전면 사선 구도",
+    "cue": "front angle vehicle composition, dynamic catalog hero view"
+  },
+  {
+    "subject": "vehicle",
+    "step": "composition",
+    "option_key": "vehicle-comp-side-profile",
+    "title": "측면 프로필 구도",
+    "cue": "side profile automotive composition, clean silhouette read"
+  },
+
+  {
+    "subject": "animal",
+    "step": "detail",
+    "option_key": "animal-dog",
+    "title": "강아지",
+    "cue": "cute dog portrait, premium pet photography"
+  },
+  {
+    "subject": "animal",
+    "step": "detail",
+    "option_key": "animal-cat",
+    "title": "고양이",
+    "cue": "stylish cat portrait, soft premium pet image"
+  },
+  {
+    "subject": "animal",
+    "step": "detail",
+    "option_key": "animal-bird",
+    "title": "새",
+    "cue": "bird wildlife portrait, clean subject-focused nature image"
+  },
+  {
+    "subject": "animal",
+    "step": "action",
+    "option_key": "animal-action-run",
+    "title": "달리는 동물",
+    "cue": "animal in motion, energetic run action, sharp subject"
+  },
+  {
+    "subject": "animal",
+    "step": "action",
+    "option_key": "animal-action-sleep",
+    "title": "자는 모습",
+    "cue": "sleeping pet, peaceful cozy animal scene"
+  },
+  {
+    "subject": "animal",
+    "step": "focus",
+    "option_key": "animal-focus-eyes",
+    "title": "눈빛 강조",
+    "cue": "animal eye contact focus, emotional close portrait"
+  },
+  {
+    "subject": "animal",
+    "step": "environment",
+    "option_key": "animal-env-home",
+    "title": "집 안 환경",
+    "cue": "pet at home, clean indoor animal environment"
+  },
+  {
+    "subject": "animal",
+    "step": "composition",
+    "option_key": "animal-comp-face-close",
+    "title": "얼굴 클로즈업",
+    "cue": "tight animal face close-up, clean subject-only framing"
+  },
+
+  {
+    "subject": "workspace",
+    "step": "detail",
+    "option_key": "work-planning",
+    "title": "기획 작업 장면",
+    "cue": "planning workspace scene, organized desk and documents"
+  },
+  {
+    "subject": "workspace",
+    "step": "detail",
+    "option_key": "work-presentation",
+    "title": "발표 자료 장면",
+    "cue": "presentation workspace scene, clean business material setup"
+  },
+  {
+    "subject": "workspace",
+    "step": "detail",
+    "option_key": "work-tech",
+    "title": "테크 작업 환경",
+    "cue": "tech workspace desk, polished device-forward setup"
+  },
+  {
+    "subject": "workspace",
+    "step": "focus",
+    "option_key": "work-focus-device",
+    "title": "기기 중심",
+    "cue": "device-focused workspace visual, monitor laptop gear emphasis"
+  },
+  {
+    "subject": "workspace",
+    "step": "focus",
+    "option_key": "work-focus-doc",
+    "title": "문서 중심",
+    "cue": "document-focused workspace scene, paper and notes emphasis"
+  },
+  {
+    "subject": "workspace",
+    "step": "layout",
+    "option_key": "work-layout-left",
+    "title": "왼쪽 여백 레이아웃",
+    "cue": "workspace composition with left space for text"
+  },
+  {
+    "subject": "workspace",
+    "step": "layout",
+    "option_key": "work-layout-wide",
+    "title": "넓은 전체 레이아웃",
+    "cue": "wide workspace overview, balanced desk composition"
+  },
+  {
+    "subject": "workspace",
+    "step": "composition",
+    "option_key": "work-comp-device-clean",
+    "title": "깔끔한 기기 구도",
+    "cue": "clean device-led workspace composition, minimal business tone"
+  },
+
+  {
+    "subject": "fantasy",
+    "step": "detail",
+    "option_key": "fantasy-magic",
+    "title": "마법 세계관",
+    "cue": "magical fantasy world, glowing arcane atmosphere"
+  },
+  {
+    "subject": "fantasy",
+    "step": "detail",
+    "option_key": "fantasy-cyberpunk",
+    "title": "사이버펑크",
+    "cue": "cyberpunk sci-fi world, neon urban future environment"
+  },
+  {
+    "subject": "fantasy",
+    "step": "detail",
+    "option_key": "fantasy-myth",
+    "title": "신화 세계관",
+    "cue": "mythic fantasy world, legendary symbolic atmosphere"
+  },
+  {
+    "subject": "fantasy",
+    "step": "stage",
+    "option_key": "fantasy-stage-castle",
+    "title": "성 무대",
+    "cue": "fantasy castle stage, grand worldbuilding environment"
+  },
+  {
+    "subject": "fantasy",
+    "step": "stage",
+    "option_key": "fantasy-stage-forest",
+    "title": "숲 무대",
+    "cue": "enchanted forest stage, rich fantasy atmosphere"
+  },
+  {
+    "subject": "fantasy",
+    "step": "focus",
+    "option_key": "fantasy-focus-world",
+    "title": "세계관 전체 강조",
+    "cue": "worldbuilding focus, environment-first fantasy scene"
+  },
+  {
+    "subject": "fantasy",
+    "step": "render",
+    "option_key": "fantasy-render-epic",
+    "title": "에픽 렌더",
+    "cue": "epic cinematic fantasy rendering, dramatic scale"
+  },
+  {
+    "subject": "fantasy",
+    "step": "composition",
+    "option_key": "fantasy-comp-world-wide",
+    "title": "와이드 세계관 구도",
+    "cue": "wide fantasy world composition, grand panoramic scene"
+  },
+
+  {
+    "subject": "event",
+    "step": "detail",
+    "option_key": "event-concert",
+    "title": "콘서트 행사",
+    "cue": "concert event scene, dramatic stage energy"
+  },
+  {
+    "subject": "event",
+    "step": "detail",
+    "option_key": "event-conference",
+    "title": "컨퍼런스 행사",
+    "cue": "conference event, modern professional stage and audience"
+  },
+  {
+    "subject": "event",
+    "step": "detail",
+    "option_key": "event-booth",
+    "title": "부스 행사",
+    "cue": "expo booth event, clean brand display space"
+  },
+  {
+    "subject": "event",
+    "step": "focus",
+    "option_key": "event-focus-stage",
+    "title": "무대 중심",
+    "cue": "stage-focused event visual, lighting and performance emphasis"
+  },
+  {
+    "subject": "event",
+    "step": "moment",
+    "option_key": "event-moment-opening",
+    "title": "오프닝 순간",
+    "cue": "opening moment of event, expectation and reveal mood"
+  },
+  {
+    "subject": "event",
+    "step": "moment",
+    "option_key": "event-moment-climax",
+    "title": "클라이맥스 순간",
+    "cue": "event climax, strongest dramatic peak and lights"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "event-comp-stage-wide",
+    "title": "무대 와이드 구도",
+    "cue": "wide event stage composition, crowd and lights balance"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "event-comp-booth-sign",
+    "title": "부스 사인 중심",
+    "cue": "expo booth sign composition, branded event display"
+  },
+
+  {
+    "subject": "broll",
+    "step": "detail",
+    "option_key": "broll-empty",
+    "title": "비어 있는 배경 장면",
+    "cue": "clean empty b-roll background, calm atmospheric scene"
+  },
+  {
+    "subject": "broll",
+    "step": "detail",
+    "option_key": "broll-object",
+    "title": "오브젝트 B-roll",
+    "cue": "single object b-roll shot, cinematic minimal atmosphere"
+  },
+  {
+    "subject": "broll",
+    "step": "detail",
+    "option_key": "broll-window",
+    "title": "창가 B-roll",
+    "cue": "window-side b-roll scene, soft light and depth"
+  },
+  {
+    "subject": "broll",
+    "step": "usage",
+    "option_key": "broll-use-intro",
+    "title": "인트로용 B-roll",
+    "cue": "intro b-roll visual, clean establishing image"
+  },
+  {
+    "subject": "broll",
+    "step": "usage",
+    "option_key": "broll-use-transition",
+    "title": "전환용 B-roll",
+    "cue": "transition b-roll visual, simple movement-friendly framing"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "broll-comp-empty-wide",
+    "title": "넓은 빈 배경 구도",
+    "cue": "wide empty b-roll composition, space for title or narration"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "broll-comp-object-center",
+    "title": "오브젝트 중앙 구도",
+    "cue": "centered object b-roll composition, balanced cinematic still"
+  }
+]

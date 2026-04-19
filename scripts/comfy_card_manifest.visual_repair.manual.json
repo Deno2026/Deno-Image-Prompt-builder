@@ -1,0 +1,74 @@
+[
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "thumbnail-person",
+    "title": "유튜브 썸네일 인물",
+    "cue": "사람 중심 대표 카드",
+    "prompt": "beautiful korean woman portrait, thumbnail-friendly close framing, clear expressive face, clean studio background, strong subject separation, no text, no logo, no watermark, photorealistic, square frame"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "landscape",
+    "title": "풍경 / 자연 / 도시",
+    "cue": "풍경 대표 카드",
+    "prompt": "cinematic landscape scenery, clear horizon, visually rich environment, dramatic natural light, scenic mountains or lake, no people, no text, no logo, no watermark, photorealistic, square frame"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "broll",
+    "title": "배경 / B-roll",
+    "cue": "B-roll 대표 카드",
+    "prompt": "cinematic atmospheric b-roll frame, rich environmental mood, elegant object or room detail, visually interesting but clean composition, no people, no text, no logo, no watermark, photorealistic, square frame"
+  },
+  {
+    "subject": "broll",
+    "step": "usage",
+    "option_key": "broll-use-transition",
+    "title": "전환용",
+    "cue": "중간 연결 장면",
+    "prompt": "cinematic transition shot, visually rich low-clutter scene, soft light and clear depth, no people, no text, no letters, no logo, no watermark, photorealistic, square frame"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "broll-comp-object-center",
+    "title": "중앙 오브젝트",
+    "cue": "단순 중심 배치",
+    "prompt": "single elegant object centered in frame, cinematic lighting, clear subject and readable silhouette, minimal but visually rich set, no people, no text, no logo, no watermark, photorealistic, square frame"
+  },
+  {
+    "subject": "broll",
+    "step": "detail",
+    "option_key": "broll-empty",
+    "title": "비어 있는 장면",
+    "cue": "조용한 무드",
+    "prompt": "quiet cinematic empty room, soft window light, subtle depth and texture, visually rich negative space, no people, no text, no logo, no watermark, photorealistic, square frame"
+  },
+  {
+    "subject": "service",
+    "step": "detail",
+    "option_key": "service-education",
+    "title": "교육 서비스",
+    "cue": "학습 관련 서비스 장면",
+    "prompt": "clean modern study desk scene, laptop with completely blank unreadable screen, notebook and pencil nearby, bright learning atmosphere, no wall signage, no visible text, no logo, no watermark, photorealistic, square frame"
+  },
+  {
+    "subject": "poster",
+    "step": "mood",
+    "option_key": "mood-luxury",
+    "title": "고급스럽고 세련되게",
+    "cue": "럭셔리 포스터 무드",
+    "prompt": "luxury key visual, premium elegant scene, refined lighting, rich material texture, dramatic but clean composition, no rendered typography, no logo, no watermark, photorealistic, square frame"
+  },
+  {
+    "subject": "product",
+    "step": "presentation",
+    "option_key": "product-material",
+    "title": "소재감 강조",
+    "cue": "재질 표현 중심",
+    "prompt": "premium product close-up, material texture clearly visible, controlled studio lighting, rich highlights and shadows, no brand label, no text, no logo, no watermark, photorealistic, square frame"
+  }
+]

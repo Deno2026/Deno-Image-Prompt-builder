@@ -1,0 +1,10 @@
+[
+  {
+    "subject": "service",
+    "step": "detail",
+    "option_key": "service-education",
+    "title": "교육 서비스",
+    "cue": "학습 관련 서비스 장면",
+    "prompt": "clean modern study desk scene, laptop with completely blank unreadable screen, notebook and pencil nearby, bright learning atmosphere, no wall signage, no visible text, no logo, no watermark, photorealistic, square frame"
+  }
+]

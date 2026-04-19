@@ -1,0 +1,1194 @@
+[
+  {
+    "subject": "architecture",
+    "step": "mood",
+    "option_key": "mood-luxury",
+    "title": "고급스럽고 세련되게",
+    "cue": "브랜드 비주얼 같은 정제된 무드",
+    "prompt": "architectural exterior photography, clean facade composition, no people unless specified, photorealistic, square frame, 고급스럽고 세련되게, 브랜드 비주얼 같은 정제된 무드, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "event",
+    "step": "detail",
+    "option_key": "event-award",
+    "title": "시상식",
+    "cue": "조명과 상징성이 중요한 장면",
+    "prompt": "event photography, clean documentary scene, no people unless specified, photorealistic, square frame, 시상식, 조명과 상징성이 중요한 장면, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "event",
+    "step": "detail",
+    "option_key": "event-booth",
+    "title": "전시 / 부스 운영",
+    "cue": "브랜드 소개와 현장감이 중요한 장면",
+    "prompt": "event photography, clean documentary scene, no people unless specified, photorealistic, square frame, 전시 / 부스 운영, 브랜드 소개와 현장감이 중요한 장면, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "event",
+    "step": "detail",
+    "option_key": "event-lecture",
+    "title": "강연 / 세미나",
+    "cue": "발표와 청중 흐름이 중요한 장면",
+    "prompt": "event photography, clean documentary scene, no people unless specified, photorealistic, square frame, 강연 / 세미나, 발표와 청중 흐름이 중요한 장면, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "event",
+    "step": "focus",
+    "option_key": "event-focus-mix",
+    "title": "무대와 관객 균형",
+    "cue": "행사 전체 분위기를 담는 방향",
+    "prompt": "event photography, clean documentary scene, no people unless specified, photorealistic, square frame, 무대와 관객 균형, 행사 전체 분위기를 담는 방향, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "event",
+    "step": "focus",
+    "option_key": "event-focus-stage",
+    "title": "무대 전체",
+    "cue": "조명과 규모가 먼저 보이는 방향",
+    "prompt": "event photography, clean documentary scene, no people unless specified, photorealistic, square frame, 무대 전체, 조명과 규모가 먼저 보이는 방향, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "event",
+    "step": "moment",
+    "option_key": "event-moment-main",
+    "title": "메인 진행 중",
+    "cue": "행사 핵심 장면이 펼쳐지는 순간",
+    "prompt": "event photography, clean documentary scene, no people unless specified, photorealistic, square frame, 메인 진행 중, 행사 핵심 장면이 펼쳐지는 순간, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "event",
+    "step": "moment",
+    "option_key": "event-moment-presentation",
+    "title": "설명 / 발표 장면",
+    "cue": "스크린과 발표 흐름이 중요한 순간",
+    "prompt": "event photography, clean documentary scene, no people unless specified, photorealistic, square frame, 설명 / 발표 장면, 스크린과 발표 흐름이 중요한 순간, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "event",
+    "step": "mood",
+    "option_key": "mood-clean",
+    "title": "깨끗하고 맑게",
+    "cue": "정보 전달이 또렷한 클린한 방향",
+    "prompt": "event photography, clean documentary scene, no people unless specified, photorealistic, square frame, 깨끗하고 맑게, 정보 전달이 또렷한 클린한 방향, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "event",
+    "step": "mood",
+    "option_key": "mood-future",
+    "title": "미래적이고 차갑게",
+    "cue": "기술적이고 현대적인 느낌",
+    "prompt": "event photography, clean documentary scene, no people unless specified, photorealistic, square frame, 미래적이고 차갑게, 기술적이고 현대적인 느낌, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "composition",
+    "option_key": "comp-poster",
+    "title": "포스터형 메인 비주얼",
+    "cue": "한 장면 자체가 강하게 보이는 구성",
+    "prompt": "beautiful fashion model, premium editorial beauty photography, clean high-end styling, photorealistic, square frame, 포스터형 메인 비주얼, 한 장면 자체가 강하게 보이는 구성, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "detail",
+    "option_key": "fashion-brand",
+    "title": "브랜드 캠페인 컷",
+    "cue": "브랜드 무드와 메시지가 중요한 방향",
+    "prompt": "beautiful fashion model, premium editorial beauty photography, clean high-end styling, photorealistic, square frame, 브랜드 캠페인 컷, 브랜드 무드와 메시지가 중요한 방향, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "mood",
+    "option_key": "mood-luxury",
+    "title": "고급스럽고 세련되게",
+    "cue": "브랜드 비주얼 같은 정제된 무드",
+    "prompt": "beautiful fashion model, premium editorial beauty photography, clean high-end styling, photorealistic, square frame, 고급스럽고 세련되게, 브랜드 비주얼 같은 정제된 무드, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "styling",
+    "option_key": "fashion-tone-luxury",
+    "title": "럭셔리 / 하이엔드",
+    "cue": "브랜드 화보 같은 프리미엄 무드",
+    "prompt": "beautiful fashion model, premium editorial beauty photography, clean high-end styling, photorealistic, square frame, 럭셔리 / 하이엔드, 브랜드 화보 같은 프리미엄 무드, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "food-drink",
+    "step": "composition",
+    "option_key": "comp-poster",
+    "title": "포스터형 메인 비주얼",
+    "cue": "한 장면 자체가 강하게 보이는 구성",
+    "prompt": "premium food photography, delicious editorial plating, object-only composition, no people, photorealistic, square frame, 포스터형 메인 비주얼, 한 장면 자체가 강하게 보이는 구성, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "food-drink",
+    "step": "presentation",
+    "option_key": "food-topview",
+    "title": "탑뷰 메뉴 배치",
+    "cue": "정리된 메뉴판 느낌의 구성",
+    "prompt": "premium food photography, delicious editorial plating, object-only composition, no people, photorealistic, square frame, 탑뷰 메뉴 배치, 정리된 메뉴판 느낌의 구성, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "poster",
+    "step": "detail",
+    "option_key": "poster-festival",
+    "title": "페스티벌 / 시즌 포스터",
+    "cue": "행사성과 에너지가 느껴지는 방향",
+    "prompt": "clean campaign poster visual, premium graphic-led composition, no people unless specified, photorealistic, square frame, 페스티벌 / 시즌 포스터, 행사성과 에너지가 느껴지는 방향, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "poster",
+    "step": "detail",
+    "option_key": "poster-youtube",
+    "title": "유튜브 커버 / 썸네일 배경",
+    "cue": "텍스트 배치가 쉬운 방향",
+    "prompt": "clean campaign poster visual, premium graphic-led composition, no people unless specified, photorealistic, square frame, 유튜브 커버 / 썸네일 배경, 텍스트 배치가 쉬운 방향, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "poster",
+    "step": "layout",
+    "option_key": "poster-layout-clean",
+    "title": "텍스트 없이 비주얼 중심",
+    "cue": "이미지 자체가 강한 구조",
+    "prompt": "clean campaign poster visual, premium graphic-led composition, no people unless specified, photorealistic, square frame, 텍스트 없이 비주얼 중심, 이미지 자체가 강한 구조, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "poster",
+    "step": "mood",
+    "option_key": "mood-luxury",
+    "title": "고급스럽고 세련되게",
+    "cue": "브랜드 비주얼 같은 정제된 무드",
+    "prompt": "clean campaign poster visual, premium graphic-led composition, no people unless specified, photorealistic, square frame, 고급스럽고 세련되게, 브랜드 비주얼 같은 정제된 무드, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "poster",
+    "step": "mood",
+    "option_key": "mood-vintage",
+    "title": "빈티지하고 레트로하게",
+    "cue": "옛 감성과 필름 느낌이 남는 방향",
+    "prompt": "clean campaign poster visual, premium graphic-led composition, no people unless specified, photorealistic, square frame, 빈티지하고 레트로하게, 옛 감성과 필름 느낌이 남는 방향, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "poster",
+    "step": "motif",
+    "option_key": "poster-motif-landscape",
+    "title": "풍경 중심",
+    "cue": "장소와 공기감이 포스터의 핵심인 방향",
+    "prompt": "clean campaign poster visual, premium graphic-led composition, no people unless specified, photorealistic, square frame, 풍경 중심, 장소와 공기감이 포스터의 핵심인 방향, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "poster",
+    "step": "motif",
+    "option_key": "poster-motif-texture",
+    "title": "질감 / 패턴 중심",
+    "cue": "배경 자체의 무드가 강한 방향",
+    "prompt": "clean campaign poster visual, premium graphic-led composition, no people unless specified, photorealistic, square frame, 질감 / 패턴 중심, 배경 자체의 무드가 강한 방향, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "product",
+    "step": "background",
+    "option_key": "product-bg-brand",
+    "title": "브랜드 세트 배경",
+    "cue": "캠페인 톤이 있는 배경",
+    "prompt": "premium commercial product photography, clean studio lighting, object-only composition, no people, photorealistic, square frame, 브랜드 세트 배경, 캠페인 톤이 있는 배경, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "product",
+    "step": "background",
+    "option_key": "product-bg-minimal",
+    "title": "최대한 단순하게",
+    "cue": "제품만 또렷하게 보이는 배경",
+    "prompt": "premium commercial product photography, clean studio lighting, object-only composition, no people, photorealistic, square frame, 최대한 단순하게, 제품만 또렷하게 보이는 배경, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "product",
+    "step": "background",
+    "option_key": "product-bg-natural",
+    "title": "자연광 테이블",
+    "cue": "담백하고 생활감 있는 배경",
+    "prompt": "premium commercial product photography, clean studio lighting, object-only composition, no people, photorealistic, square frame, 자연광 테이블, 담백하고 생활감 있는 배경, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "product",
+    "step": "background",
+    "option_key": "product-bg-soft",
+    "title": "부드러운 그라데이션",
+    "cue": "과하지 않고 세련된 배경",
+    "prompt": "premium commercial product photography, clean studio lighting, object-only composition, no people, photorealistic, square frame, 부드러운 그라데이션, 과하지 않고 세련된 배경, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "product",
+    "step": "background",
+    "option_key": "product-bg-white",
+    "title": "흰 배경 스튜디오",
+    "cue": "가장 범용적이고 상세페이지에 쉬운 배경",
+    "prompt": "premium commercial product photography, clean studio lighting, object-only composition, no people, photorealistic, square frame, 흰 배경 스튜디오, 가장 범용적이고 상세페이지에 쉬운 배경, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "product",
+    "step": "composition",
+    "option_key": "comp-low",
+    "title": "로우 앵글",
+    "cue": "주제의 존재감을 더 크게 느끼게 하는 각도",
+    "prompt": "premium commercial product photography, clean studio lighting, object-only composition, no people, photorealistic, square frame, 로우 앵글, 주제의 존재감을 더 크게 느끼게 하는 각도, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "product",
+    "step": "composition",
+    "option_key": "comp-medium",
+    "title": "미디엄 샷",
+    "cue": "인물과 주변 맥락을 함께 보여주는 기본 구도",
+    "prompt": "premium commercial product photography, clean studio lighting, object-only composition, no people, photorealistic, square frame, 미디엄 샷, 인물과 주변 맥락을 함께 보여주는 기본 구도, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "product",
+    "step": "composition",
+    "option_key": "comp-poster",
+    "title": "포스터형 메인 비주얼",
+    "cue": "한 장면 자체가 강하게 보이는 구성",
+    "prompt": "premium commercial product photography, clean studio lighting, object-only composition, no people, photorealistic, square frame, 포스터형 메인 비주얼, 한 장면 자체가 강하게 보이는 구성, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "product",
+    "step": "composition",
+    "option_key": "comp-pov",
+    "title": "POV / 셀카 느낌",
+    "cue": "직접 찍은 듯 가까운 거리감이 있는 구도",
+    "prompt": "premium commercial product photography, clean studio lighting, object-only composition, no people, photorealistic, square frame, POV / 셀카 느낌, 직접 찍은 듯 가까운 거리감이 있는 구도, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "product",
+    "step": "composition",
+    "option_key": "comp-symmetry",
+    "title": "정면 대칭",
+    "cue": "또렷하고 정돈된 인상을 주는 구도",
+    "prompt": "premium commercial product photography, clean studio lighting, object-only composition, no people, photorealistic, square frame, 정면 대칭, 또렷하고 정돈된 인상을 주는 구도, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "product",
+    "step": "detail",
+    "option_key": "product-beauty",
+    "title": "뷰티 / 화장품",
+    "cue": "스킨케어, 메이크업 제품 중심",
+    "prompt": "premium commercial product photography, clean studio lighting, object-only composition, no people, photorealistic, square frame, 뷰티 / 화장품, 스킨케어, 메이크업 제품 중심, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "product",
+    "step": "detail",
+    "option_key": "product-bottle",
+    "title": "병 / 용기 제품",
+    "cue": "향수, 샴푸, 드링크 같은 형태",
+    "prompt": "premium commercial product photography, clean studio lighting, object-only composition, no people, photorealistic, square frame, 병 / 용기 제품, 향수, 샴푸, 드링크 같은 형태, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "product",
+    "step": "detail",
+    "option_key": "product-box",
+    "title": "박스 / 패키지 제품",
+    "cue": "포장 외형과 구성품이 중요한 제품",
+    "prompt": "premium commercial product photography, clean studio lighting, object-only composition, no people, photorealistic, square frame, 박스 / 패키지 제품, 포장 외형과 구성품이 중요한 제품, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "product",
+    "step": "detail",
+    "option_key": "product-food",
+    "title": "식품 패키지",
+    "cue": "과자, 음료, 식품 포장 제품",
+    "prompt": "premium commercial product photography, clean studio lighting, object-only composition, no people, photorealistic, square frame, 식품 패키지, 과자, 음료, 식품 포장 제품, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "product",
+    "step": "feature",
+    "option_key": "product-feature-gloss",
+    "title": "광택 / 반사",
+    "cue": "표면의 빛 표현이 중요한 제품",
+    "prompt": "premium commercial product photography, clean studio lighting, object-only composition, no people, photorealistic, square frame, 광택 / 반사, 표면의 빛 표현이 중요한 제품, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "product",
+    "step": "feature",
+    "option_key": "product-feature-luxury",
+    "title": "고급감",
+    "cue": "프리미엄 인상이 가장 중요한 제품",
+    "prompt": "premium commercial product photography, clean studio lighting, object-only composition, no people, photorealistic, square frame, 고급감, 프리미엄 인상이 가장 중요한 제품, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "product",
+    "step": "mood",
+    "option_key": "mood-calm",
+    "title": "차분하고 담백하게",
+    "cue": "과장되지 않고 정리된 톤",
+    "prompt": "premium commercial product photography, clean studio lighting, object-only composition, no people, photorealistic, square frame, 차분하고 담백하게, 과장되지 않고 정리된 톤, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "product",
+    "step": "mood",
+    "option_key": "mood-clean",
+    "title": "깨끗하고 맑게",
+    "cue": "정보 전달이 또렷한 클린한 방향",
+    "prompt": "premium commercial product photography, clean studio lighting, object-only composition, no people, photorealistic, square frame, 깨끗하고 맑게, 정보 전달이 또렷한 클린한 방향, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "product",
+    "step": "mood",
+    "option_key": "mood-dramatic",
+    "title": "강렬하고 드라마틱하게",
+    "cue": "명암과 감정이 또렷한 방향",
+    "prompt": "premium commercial product photography, clean studio lighting, object-only composition, no people, photorealistic, square frame, 강렬하고 드라마틱하게, 명암과 감정이 또렷한 방향, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "product",
+    "step": "mood",
+    "option_key": "mood-luxury",
+    "title": "고급스럽고 세련되게",
+    "cue": "브랜드 비주얼 같은 정제된 무드",
+    "prompt": "premium commercial product photography, clean studio lighting, object-only composition, no people, photorealistic, square frame, 고급스럽고 세련되게, 브랜드 비주얼 같은 정제된 무드, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "product",
+    "step": "mood",
+    "option_key": "mood-playful",
+    "title": "귀엽고 경쾌하게",
+    "cue": "색감과 인상이 가볍고 재미있는 방향",
+    "prompt": "premium commercial product photography, clean studio lighting, object-only composition, no people, photorealistic, square frame, 귀엽고 경쾌하게, 색감과 인상이 가볍고 재미있는 방향, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "product",
+    "step": "mood",
+    "option_key": "mood-warm",
+    "title": "따뜻하고 편안하게",
+    "cue": "부드럽고 정감 있는 인상을 주는 무드",
+    "prompt": "premium commercial product photography, clean studio lighting, object-only composition, no people, photorealistic, square frame, 따뜻하고 편안하게, 부드럽고 정감 있는 인상을 주는 무드, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "product",
+    "step": "presentation",
+    "option_key": "product-angle",
+    "title": "45도 히어로 샷",
+    "cue": "입체감과 디자인이 같이 보이는 구성",
+    "prompt": "premium commercial product photography, clean studio lighting, object-only composition, no people, photorealistic, square frame, 45도 히어로 샷, 입체감과 디자인이 같이 보이는 구성, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "product",
+    "step": "presentation",
+    "option_key": "product-float",
+    "title": "공중에 떠 있는 연출",
+    "cue": "세련되고 광고 같은 표현",
+    "prompt": "premium commercial product photography, clean studio lighting, object-only composition, no people, photorealistic, square frame, 공중에 떠 있는 연출, 세련되고 광고 같은 표현, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "product",
+    "step": "presentation",
+    "option_key": "product-set",
+    "title": "구성품까지 함께",
+    "cue": "패키지와 구성 요소가 같이 보이는 구성",
+    "prompt": "premium commercial product photography, clean studio lighting, object-only composition, no people, photorealistic, square frame, 구성품까지 함께, 패키지와 구성 요소가 같이 보이는 구성, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "product",
+    "step": "presentation",
+    "option_key": "product-single",
+    "title": "단독 정면 컷",
+    "cue": "제품 하나가 가장 깔끔하게 보이는 구성",
+    "prompt": "premium commercial product photography, clean studio lighting, object-only composition, no people, photorealistic, square frame, 단독 정면 컷, 제품 하나가 가장 깔끔하게 보이는 구성, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "product",
+    "step": "presentation",
+    "option_key": "product-splash",
+    "title": "물 / 액체 / 입자 연출",
+    "cue": "시원함이나 강한 광고성이 필요한 구성",
+    "prompt": "premium commercial product photography, clean studio lighting, object-only composition, no people, photorealistic, square frame, 물 / 액체 / 입자 연출, 시원함이나 강한 광고성이 필요한 구성, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "profile-id",
+    "step": "background",
+    "option_key": "profile-bg-color",
+    "title": "단색 컬러 배경",
+    "cue": "개인 브랜딩 느낌이 있는 배경",
+    "prompt": "professional beautiful woman profile photo, trustworthy polished expression, clean commercial portrait, photorealistic, square frame, 단색 컬러 배경, 개인 브랜딩 느낌이 있는 배경, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "service",
+    "step": "composition",
+    "option_key": "poster-bottom-space",
+    "title": "하단 크레딧형",
+    "cue": "아래쪽에 정보가 들어가기 쉬운 구조",
+    "prompt": "clean service branding visual, polished app or web campaign image, no people unless specified, photorealistic, square frame, 하단 크레딧형, 아래쪽에 정보가 들어가기 쉬운 구조, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "service",
+    "step": "composition",
+    "option_key": "poster-center",
+    "title": "정중앙 메인 비주얼",
+    "cue": "주제가 정면에서 강하게 보이는 포스터 구도",
+    "prompt": "clean service branding visual, polished app or web campaign image, no people unless specified, photorealistic, square frame, 정중앙 메인 비주얼, 주제가 정면에서 강하게 보이는 포스터 구도, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "service",
+    "step": "composition",
+    "option_key": "poster-collage",
+    "title": "콜라주형",
+    "cue": "여러 요소를 한 장에 묶는 구성",
+    "prompt": "clean service branding visual, polished app or web campaign image, no people unless specified, photorealistic, square frame, 콜라주형, 여러 요소를 한 장에 묶는 구성, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "service",
+    "step": "composition",
+    "option_key": "poster-diagonal",
+    "title": "대각선 흐름형",
+    "cue": "시선이 사선으로 움직이는 역동적인 구조",
+    "prompt": "clean service branding visual, polished app or web campaign image, no people unless specified, photorealistic, square frame, 대각선 흐름형, 시선이 사선으로 움직이는 역동적인 구조, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "service",
+    "step": "composition",
+    "option_key": "poster-left-space",
+    "title": "왼쪽 여백형",
+    "cue": "오른쪽 비주얼, 왼쪽 텍스트 배치가 쉬운 구조",
+    "prompt": "clean service branding visual, polished app or web campaign image, no people unless specified, photorealistic, square frame, 왼쪽 여백형, 오른쪽 비주얼, 왼쪽 텍스트 배치가 쉬운 구조, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "service",
+    "step": "composition",
+    "option_key": "poster-minimal",
+    "title": "미니멀 메인형",
+    "cue": "요소를 줄여 상징이 강하게 보이는 구조",
+    "prompt": "clean service branding visual, polished app or web campaign image, no people unless specified, photorealistic, square frame, 미니멀 메인형, 요소를 줄여 상징이 강하게 보이는 구조, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "service",
+    "step": "composition",
+    "option_key": "poster-right-space",
+    "title": "오른쪽 여백형",
+    "cue": "왼쪽 비주얼, 오른쪽 텍스트 배치가 쉬운 구조",
+    "prompt": "clean service branding visual, polished app or web campaign image, no people unless specified, photorealistic, square frame, 오른쪽 여백형, 왼쪽 비주얼, 오른쪽 텍스트 배치가 쉬운 구조, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "service",
+    "step": "composition",
+    "option_key": "poster-top-space",
+    "title": "상단 타이틀형",
+    "cue": "위쪽 제목 공간을 남기는 포스터 구조",
+    "prompt": "clean service branding visual, polished app or web campaign image, no people unless specified, photorealistic, square frame, 상단 타이틀형, 위쪽 제목 공간을 남기는 포스터 구조, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "service",
+    "step": "detail",
+    "option_key": "service-ai",
+    "title": "AI / 챗봇 서비스",
+    "cue": "미래성과 친근함이 함께 필요한 방향",
+    "prompt": "clean service branding visual, polished app or web campaign image, no people unless specified, photorealistic, square frame, AI / 챗봇 서비스, 미래성과 친근함이 함께 필요한 방향, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "service",
+    "step": "detail",
+    "option_key": "service-app",
+    "title": "앱 소개 메인 비주얼",
+    "cue": "앱 첫 화면이나 소개 배너용 방향",
+    "prompt": "clean service branding visual, polished app or web campaign image, no people unless specified, photorealistic, square frame, 앱 소개 메인 비주얼, 앱 첫 화면이나 소개 배너용 방향, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "service",
+    "step": "detail",
+    "option_key": "service-commerce",
+    "title": "쇼핑 / 커머스",
+    "cue": "사용 흐름과 구매감이 느껴지는 방향",
+    "prompt": "clean service branding visual, polished app or web campaign image, no people unless specified, photorealistic, square frame, 쇼핑 / 커머스, 사용 흐름과 구매감이 느껴지는 방향, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "service",
+    "step": "detail",
+    "option_key": "service-education",
+    "title": "교육 / 학습 서비스",
+    "cue": "친절하고 이해 쉬운 방향",
+    "prompt": "clean service branding visual, polished app or web campaign image, no people unless specified, photorealistic, square frame, 교육 / 학습 서비스, 친절하고 이해 쉬운 방향, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "service",
+    "step": "detail",
+    "option_key": "service-finance",
+    "title": "금융 / 결제 서비스",
+    "cue": "신뢰감과 깔끔함이 중요한 방향",
+    "prompt": "clean service branding visual, polished app or web campaign image, no people unless specified, photorealistic, square frame, 금융 / 결제 서비스, 신뢰감과 깔끔함이 중요한 방향, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "service",
+    "step": "detail",
+    "option_key": "service-health",
+    "title": "건강 / 케어 서비스",
+    "cue": "안정감과 따뜻함이 중요한 방향",
+    "prompt": "clean service branding visual, polished app or web campaign image, no people unless specified, photorealistic, square frame, 건강 / 케어 서비스, 안정감과 따뜻함이 중요한 방향, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "service",
+    "step": "detail",
+    "option_key": "service-marketing",
+    "title": "마케팅 / 광고 서비스",
+    "cue": "성과와 역동감이 중요한 방향",
+    "prompt": "clean service branding visual, polished app or web campaign image, no people unless specified, photorealistic, square frame, 마케팅 / 광고 서비스, 성과와 역동감이 중요한 방향, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "service",
+    "step": "detail",
+    "option_key": "service-saas",
+    "title": "대시보드 / SaaS",
+    "cue": "툴과 생산성 느낌이 중요한 방향",
+    "prompt": "clean service branding visual, polished app or web campaign image, no people unless specified, photorealistic, square frame, 대시보드 / SaaS, 툴과 생산성 느낌이 중요한 방향, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "service",
+    "step": "detail",
+    "option_key": "service-support",
+    "title": "고객지원 / 상담 서비스",
+    "cue": "사람 중심 안내가 중요한 방향",
+    "prompt": "clean service branding visual, polished app or web campaign image, no people unless specified, photorealistic, square frame, 고객지원 / 상담 서비스, 사람 중심 안내가 중요한 방향, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "service",
+    "step": "detail",
+    "option_key": "service-web",
+    "title": "웹서비스 소개",
+    "cue": "웹 메인 히어로와 잘 맞는 비주얼",
+    "prompt": "clean service branding visual, polished app or web campaign image, no people unless specified, photorealistic, square frame, 웹서비스 소개, 웹 메인 히어로와 잘 맞는 비주얼, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "service",
+    "step": "mood",
+    "option_key": "trust-bold",
+    "title": "선명하고 자신감 있게",
+    "cue": "강한 메시지와 전달력이 필요한 방향",
+    "prompt": "clean service branding visual, polished app or web campaign image, no people unless specified, photorealistic, square frame, 선명하고 자신감 있게, 강한 메시지와 전달력이 필요한 방향, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "service",
+    "step": "mood",
+    "option_key": "trust-calm",
+    "title": "과하지 않게 안정적으로",
+    "cue": "설명 자료에 무리가 없는 담백한 무드",
+    "prompt": "clean service branding visual, polished app or web campaign image, no people unless specified, photorealistic, square frame, 과하지 않게 안정적으로, 설명 자료에 무리가 없는 담백한 무드, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "service",
+    "step": "mood",
+    "option_key": "trust-clear",
+    "title": "깔끔하고 신뢰감 있게",
+    "cue": "회사 소개나 업무 자료에 잘 맞는 방향",
+    "prompt": "clean service branding visual, polished app or web campaign image, no people unless specified, photorealistic, square frame, 깔끔하고 신뢰감 있게, 회사 소개나 업무 자료에 잘 맞는 방향, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "service",
+    "step": "mood",
+    "option_key": "trust-friendly",
+    "title": "친근하고 부드럽게",
+    "cue": "접근성이 좋아 보이는 서비스 톤",
+    "prompt": "clean service branding visual, polished app or web campaign image, no people unless specified, photorealistic, square frame, 친근하고 부드럽게, 접근성이 좋아 보이는 서비스 톤, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "service",
+    "step": "mood",
+    "option_key": "trust-human",
+    "title": "사람 냄새 나게",
+    "cue": "딱딱함을 줄이고 실사용 장면이 느껴지는 방향",
+    "prompt": "clean service branding visual, polished app or web campaign image, no people unless specified, photorealistic, square frame, 사람 냄새 나게, 딱딱함을 줄이고 실사용 장면이 느껴지는 방향, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "service",
+    "step": "mood",
+    "option_key": "trust-premium",
+    "title": "차분하고 프리미엄하게",
+    "cue": "전문성과 품질감이 느껴지는 방향",
+    "prompt": "clean service branding visual, polished app or web campaign image, no people unless specified, photorealistic, square frame, 차분하고 프리미엄하게, 전문성과 품질감이 느껴지는 방향, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "service",
+    "step": "mood",
+    "option_key": "trust-smart",
+    "title": "똑똑하고 현대적으로",
+    "cue": "기술적이고 효율적인 인상이 있는 톤",
+    "prompt": "clean service branding visual, polished app or web campaign image, no people unless specified, photorealistic, square frame, 똑똑하고 현대적으로, 기술적이고 효율적인 인상이 있는 톤, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "service",
+    "step": "mood",
+    "option_key": "trust-soft",
+    "title": "부드럽고 환하게",
+    "cue": "교육, 케어, 입문자 대상에 맞는 방향",
+    "prompt": "clean service branding visual, polished app or web campaign image, no people unless specified, photorealistic, square frame, 부드럽고 환하게, 교육, 케어, 입문자 대상에 맞는 방향, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "service",
+    "step": "tone",
+    "option_key": "service-tone-bold",
+    "title": "강한 인상으로",
+    "cue": "메인 캠페인이나 런칭에 잘 맞는 톤",
+    "prompt": "clean service branding visual, polished app or web campaign image, no people unless specified, photorealistic, square frame, 강한 인상으로, 메인 캠페인이나 런칭에 잘 맞는 톤, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "service",
+    "step": "tone",
+    "option_key": "service-tone-friendly",
+    "title": "친근하고 쉽게",
+    "cue": "입문자 대상 서비스에 잘 맞는 톤",
+    "prompt": "clean service branding visual, polished app or web campaign image, no people unless specified, photorealistic, square frame, 친근하고 쉽게, 입문자 대상 서비스에 잘 맞는 톤, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "service",
+    "step": "tone",
+    "option_key": "service-tone-future",
+    "title": "미래적이고 기술적으로",
+    "cue": "AI, 테크 서비스에 잘 맞는 톤",
+    "prompt": "clean service branding visual, polished app or web campaign image, no people unless specified, photorealistic, square frame, 미래적이고 기술적으로, AI, 테크 서비스에 잘 맞는 톤, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "service",
+    "step": "tone",
+    "option_key": "service-tone-human",
+    "title": "사람 냄새 나게",
+    "cue": "실사용자 중심 느낌이 있는 톤",
+    "prompt": "clean service branding visual, polished app or web campaign image, no people unless specified, photorealistic, square frame, 사람 냄새 나게, 실사용자 중심 느낌이 있는 톤, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "service",
+    "step": "tone",
+    "option_key": "service-tone-premium",
+    "title": "고급스럽고 세련되게",
+    "cue": "브랜드 가치를 높이는 톤",
+    "prompt": "clean service branding visual, polished app or web campaign image, no people unless specified, photorealistic, square frame, 고급스럽고 세련되게, 브랜드 가치를 높이는 톤, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "service",
+    "step": "tone",
+    "option_key": "service-tone-soft",
+    "title": "부드럽고 안정적으로",
+    "cue": "케어, 교육 서비스에 잘 맞는 톤",
+    "prompt": "clean service branding visual, polished app or web campaign image, no people unless specified, photorealistic, square frame, 부드럽고 안정적으로, 케어, 교육 서비스에 잘 맞는 톤, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "service",
+    "step": "tone",
+    "option_key": "service-tone-trust",
+    "title": "신뢰감 있게",
+    "cue": "금융, 업무, 전문 서비스에 잘 맞는 톤",
+    "prompt": "clean service branding visual, polished app or web campaign image, no people unless specified, photorealistic, square frame, 신뢰감 있게, 금융, 업무, 전문 서비스에 잘 맞는 톤, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "service",
+    "step": "usage",
+    "option_key": "service-usage-appstore",
+    "title": "앱스토어 / 소개 카드용",
+    "cue": "디바이스 중심 구성이 쉬운 용도",
+    "prompt": "clean service branding visual, polished app or web campaign image, no people unless specified, photorealistic, square frame, 앱스토어 / 소개 카드용, 디바이스 중심 구성이 쉬운 용도, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "service",
+    "step": "usage",
+    "option_key": "service-usage-banner",
+    "title": "배너 / 광고 카피용",
+    "cue": "큰 여백과 카피가 필요한 용도",
+    "prompt": "clean service branding visual, polished app or web campaign image, no people unless specified, photorealistic, square frame, 배너 / 광고 카피용, 큰 여백과 카피가 필요한 용도, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "service",
+    "step": "usage",
+    "option_key": "service-usage-dashboard",
+    "title": "대시보드 / SaaS 소개용",
+    "cue": "화면과 정보 구조가 중요한 용도",
+    "prompt": "clean service branding visual, polished app or web campaign image, no people unless specified, photorealistic, square frame, 대시보드 / SaaS 소개용, 화면과 정보 구조가 중요한 용도, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "service",
+    "step": "usage",
+    "option_key": "service-usage-doc",
+    "title": "제안서 / 소개 자료용",
+    "cue": "문서에 넣기 쉬운 용도",
+    "prompt": "clean service branding visual, polished app or web campaign image, no people unless specified, photorealistic, square frame, 제안서 / 소개 자료용, 문서에 넣기 쉬운 용도, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "service",
+    "step": "usage",
+    "option_key": "service-usage-feature",
+    "title": "기능 설명 섹션용",
+    "cue": "서비스 기능이 읽히는 용도",
+    "prompt": "clean service branding visual, polished app or web campaign image, no people unless specified, photorealistic, square frame, 기능 설명 섹션용, 서비스 기능이 읽히는 용도, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "service",
+    "step": "usage",
+    "option_key": "service-usage-hero",
+    "title": "메인 랜딩 첫 화면용",
+    "cue": "첫인상과 대표성이 중요한 용도",
+    "prompt": "clean service branding visual, polished app or web campaign image, no people unless specified, photorealistic, square frame, 메인 랜딩 첫 화면용, 첫인상과 대표성이 중요한 용도, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "service",
+    "step": "usage",
+    "option_key": "service-usage-social",
+    "title": "SNS 홍보 포스트용",
+    "cue": "빠르게 눈에 띄는 용도",
+    "prompt": "clean service branding visual, polished app or web campaign image, no people unless specified, photorealistic, square frame, SNS 홍보 포스트용, 빠르게 눈에 띄는 용도, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "service",
+    "step": "usage",
+    "option_key": "service-usage-support",
+    "title": "고객지원 / 안내 페이지용",
+    "cue": "사람 중심 안내가 필요한 용도",
+    "prompt": "clean service branding visual, polished app or web campaign image, no people unless specified, photorealistic, square frame, 고객지원 / 안내 페이지용, 사람 중심 안내가 필요한 용도, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "service",
+    "step": "visual",
+    "option_key": "service-visual-banner",
+    "title": "큰 여백 배너형",
+    "cue": "메인 카피를 넣기 쉬운 구성",
+    "prompt": "clean service branding visual, polished app or web campaign image, no people unless specified, photorealistic, square frame, 큰 여백 배너형, 메인 카피를 넣기 쉬운 구성, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "service",
+    "step": "visual",
+    "option_key": "service-visual-dashboard",
+    "title": "대시보드 화면 중심",
+    "cue": "정보 구조가 중요한 구성",
+    "prompt": "clean service branding visual, polished app or web campaign image, no people unless specified, photorealistic, square frame, 대시보드 화면 중심, 정보 구조가 중요한 구성, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "service",
+    "step": "visual",
+    "option_key": "service-visual-device",
+    "title": "디바이스 목업 중심",
+    "cue": "폰이나 노트북 화면이 중심인 구성",
+    "prompt": "clean service branding visual, polished app or web campaign image, no people unless specified, photorealistic, square frame, 디바이스 목업 중심, 폰이나 노트북 화면이 중심인 구성, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "service",
+    "step": "visual",
+    "option_key": "service-visual-hand",
+    "title": "손에 든 폰 / 기기",
+    "cue": "직접 쓰는 장면이 있는 구성",
+    "prompt": "clean service branding visual, polished app or web campaign image, no people unless specified, photorealistic, square frame, 손에 든 폰 / 기기, 직접 쓰는 장면이 있는 구성, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "service",
+    "step": "visual",
+    "option_key": "service-visual-person-device",
+    "title": "사람 + 화면",
+    "cue": "실사용 감이 쉽게 느껴지는 구성",
+    "prompt": "clean service branding visual, polished app or web campaign image, no people unless specified, photorealistic, square frame, 사람 + 화면, 실사용 감이 쉽게 느껴지는 구성, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "service",
+    "step": "visual",
+    "option_key": "service-visual-symbolic",
+    "title": "추상적 서비스 키비주얼",
+    "cue": "기능을 상징적으로 표현하는 구성",
+    "prompt": "clean service branding visual, polished app or web campaign image, no people unless specified, photorealistic, square frame, 추상적 서비스 키비주얼, 기능을 상징적으로 표현하는 구성, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "service",
+    "step": "visual",
+    "option_key": "service-visual-team",
+    "title": "팀 협업 장면",
+    "cue": "사람과 서비스 맥락이 보이는 구성",
+    "prompt": "clean service branding visual, polished app or web campaign image, no people unless specified, photorealistic, square frame, 팀 협업 장면, 사람과 서비스 맥락이 보이는 구성, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "service",
+    "step": "visual",
+    "option_key": "service-visual-ui",
+    "title": "UI가 떠 있는 합성형",
+    "cue": "기술 서비스처럼 보이는 구성",
+    "prompt": "clean service branding visual, polished app or web campaign image, no people unless specified, photorealistic, square frame, UI가 떠 있는 합성형, 기술 서비스처럼 보이는 구성, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "space",
+    "step": "mood",
+    "option_key": "mood-luxury",
+    "title": "고급스럽고 세련되게",
+    "cue": "브랜드 비주얼 같은 정제된 무드",
+    "prompt": "premium interior photography, clean architectural space, no people, photorealistic, square frame, 고급스럽고 세련되게, 브랜드 비주얼 같은 정제된 무드, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "space",
+    "step": "style",
+    "option_key": "space-style-editorial",
+    "title": "매거진 화보 같은 공간",
+    "cue": "공간 자체가 스타일 화보처럼 보이는 방향",
+    "prompt": "premium interior photography, clean architectural space, no people, photorealistic, square frame, 매거진 화보 같은 공간, 공간 자체가 스타일 화보처럼 보이는 방향, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "animal",
+    "title": "반려동물 / 동물",
+    "cue": "강아지, 고양이, 동물 초상과 활동 장면",
+    "prompt": "clean category cover image for a prompt builder app, premium square thumbnail, simple readable subject-first visual, 반려동물 / 동물, 강아지, 고양이, 동물 초상과 활동 장면, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "broll",
+    "title": "배경 / B-roll 장면",
+    "cue": "중간 삽입컷, 전환컷, 텍스트 배경용 이미지",
+    "prompt": "clean category cover image for a prompt builder app, premium square thumbnail, simple readable subject-first visual, 배경 / B-roll 장면, 중간 삽입컷, 전환컷, 텍스트 배경용 이미지, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "fantasy",
+    "title": "판타지 / SF / 세계관",
+    "cue": "세계관, 미래도시, 게임 콘셉트 이미지",
+    "prompt": "clean category cover image for a prompt builder app, premium square thumbnail, simple readable subject-first visual, 판타지 / SF / 세계관, 세계관, 미래도시, 게임 콘셉트 이미지, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "fashion-beauty",
+    "title": "패션 / 뷰티 / 룩북",
+    "cue": "의상, 메이크업, 헤어가 중심인 이미지",
+    "prompt": "clean category cover image for a prompt builder app, premium square thumbnail, simple readable subject-first visual, 패션 / 뷰티 / 룩북, 의상, 메이크업, 헤어가 중심인 이미지, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "food-drink",
+    "title": "음식 / 음료 사진",
+    "cue": "카페, 메뉴, 디저트, 음료, 술 이미지",
+    "prompt": "clean category cover image for a prompt builder app, premium square thumbnail, simple readable subject-first visual, 음식 / 음료 사진, 카페, 메뉴, 디저트, 음료, 술 이미지, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "group-family",
+    "title": "커플 / 가족 / 그룹",
+    "cue": "둘 이상이 함께 나오는 관계 중심 사진",
+    "prompt": "clean category cover image for a prompt builder app, premium square thumbnail, simple readable subject-first visual, 커플 / 가족 / 그룹, 둘 이상이 함께 나오는 관계 중심 사진, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "illustration",
+    "title": "캐릭터 / 일러스트",
+    "cue": "애니풍, 귀여운 캐릭터, 교육용 일러스트",
+    "prompt": "clean category cover image for a prompt builder app, premium square thumbnail, simple readable subject-first visual, 캐릭터 / 일러스트, 애니풍, 귀여운 캐릭터, 교육용 일러스트, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "landscape",
+    "title": "풍경 / 자연 / 도시",
+    "cue": "자연, 도시 전경, 야경, 계절 풍경",
+    "prompt": "clean category cover image for a prompt builder app, premium square thumbnail, simple readable subject-first visual, 풍경 / 자연 / 도시, 자연, 도시 전경, 야경, 계절 풍경, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "portrait",
+    "title": "인물 사진",
+    "cue": "프로필, 화보, SNS용 인물 이미지",
+    "prompt": "clean category cover image for a prompt builder app, premium square thumbnail, simple readable subject-first visual, 인물 사진, 프로필, 화보, SNS용 인물 이미지, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "poster",
+    "title": "포스터 / 커버 / 키비주얼",
+    "cue": "행사 포스터, 앨범커버, 메인 비주얼",
+    "prompt": "clean category cover image for a prompt builder app, premium square thumbnail, simple readable subject-first visual, 포스터 / 커버 / 키비주얼, 행사 포스터, 앨범커버, 메인 비주얼, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "product",
+    "title": "제품 사진",
+    "cue": "상품 소개, 상세페이지, 브랜드용 제품 이미지",
+    "prompt": "clean category cover image for a prompt builder app, premium square thumbnail, simple readable subject-first visual, 제품 사진, 상품 소개, 상세페이지, 브랜드용 제품 이미지, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "selfie-sns",
+    "title": "셀카 / SNS 사진",
+    "cue": "인스타 감성, 거울셀카, 일상 인증샷",
+    "prompt": "clean category cover image for a prompt builder app, premium square thumbnail, simple readable subject-first visual, 셀카 / SNS 사진, 인스타 감성, 거울셀카, 일상 인증샷, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "service",
+    "title": "서비스 / 앱 설명 이미지",
+    "cue": "웹, 앱, AI 서비스 소개용 비주얼",
+    "prompt": "clean category cover image for a prompt builder app, premium square thumbnail, simple readable subject-first visual, 서비스 / 앱 설명 이미지, 웹, 앱, AI 서비스 소개용 비주얼, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "thumbnail-person",
+    "title": "유튜브 썸네일 인물",
+    "cue": "표정과 반응이 강조되는 클릭형 썸네일",
+    "prompt": "clean category cover image for a prompt builder app, premium square thumbnail, simple readable subject-first visual, 유튜브 썸네일 인물, 표정과 반응이 강조되는 클릭형 썸네일, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "travel",
+    "title": "여행 / 브이로그 장면",
+    "cue": "인트로, 여행 컷, 브이로그용 장면",
+    "prompt": "clean category cover image for a prompt builder app, premium square thumbnail, simple readable subject-first visual, 여행 / 브이로그 장면, 인트로, 여행 컷, 브이로그용 장면, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "vehicle",
+    "title": "차량 / 모빌리티",
+    "cue": "자동차, 바이크, 이동수단 중심 이미지",
+    "prompt": "clean category cover image for a prompt builder app, premium square thumbnail, simple readable subject-first visual, 차량 / 모빌리티, 자동차, 바이크, 이동수단 중심 이미지, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "workspace",
+    "title": "업무 참고 이미지",
+    "cue": "발표 자료, 기획안, 문서 삽입용 이미지",
+    "prompt": "clean category cover image for a prompt builder app, premium square thumbnail, simple readable subject-first visual, 업무 참고 이미지, 발표 자료, 기획안, 문서 삽입용 이미지, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "composition",
+    "option_key": "poster-collage",
+    "title": "콜라주형",
+    "cue": "여러 요소를 한 장에 묶는 구성",
+    "prompt": "beautiful korean woman, youtube thumbnail portrait, clear face, strong subject separation, clickable visual, photorealistic, square frame, 콜라주형, 여러 요소를 한 장에 묶는 구성, image only, keep the layout useful for later overlay, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "composition",
+    "option_key": "poster-minimal",
+    "title": "미니멀 메인형",
+    "cue": "요소를 줄여 상징이 강하게 보이는 구조",
+    "prompt": "beautiful korean woman, youtube thumbnail portrait, clear face, strong subject separation, clickable visual, photorealistic, square frame, 미니멀 메인형, 요소를 줄여 상징이 강하게 보이는 구조, image only, keep the layout useful for later overlay, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "detail",
+    "option_key": "thumb-reaction",
+    "title": "리액션 / 감정형",
+    "cue": "표정 자체가 클릭 포인트가 되는 방향",
+    "prompt": "beautiful korean woman, youtube thumbnail portrait, clear face, strong subject separation, clickable visual, photorealistic, square frame, 리액션 / 감정형, 표정 자체가 클릭 포인트가 되는 방향, image only, keep the layout useful for later overlay, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "mood",
+    "option_key": "mood-bright",
+    "title": "밝고 친근하게",
+    "cue": "입문자도 편하게 느끼는 가볍고 열린 분위기",
+    "prompt": "beautiful korean woman, youtube thumbnail portrait, clear face, strong subject separation, clickable visual, photorealistic, square frame, 밝고 친근하게, 입문자도 편하게 느끼는 가볍고 열린 분위기, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "mood",
+    "option_key": "mood-cinematic",
+    "title": "영화처럼 깊게",
+    "cue": "공기감과 서사가 함께 느껴지는 무드",
+    "prompt": "beautiful korean woman, youtube thumbnail portrait, clear face, strong subject separation, clickable visual, photorealistic, square frame, 영화처럼 깊게, 공기감과 서사가 함께 느껴지는 무드, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "mood",
+    "option_key": "mood-clean",
+    "title": "깨끗하고 맑게",
+    "cue": "정보 전달이 또렷한 클린한 방향",
+    "prompt": "beautiful korean woman, youtube thumbnail portrait, clear face, strong subject separation, clickable visual, photorealistic, square frame, 깨끗하고 맑게, 정보 전달이 또렷한 클린한 방향, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "mood",
+    "option_key": "mood-dramatic",
+    "title": "강렬하고 드라마틱하게",
+    "cue": "명암과 감정이 또렷한 방향",
+    "prompt": "beautiful korean woman, youtube thumbnail portrait, clear face, strong subject separation, clickable visual, photorealistic, square frame, 강렬하고 드라마틱하게, 명암과 감정이 또렷한 방향, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "mood",
+    "option_key": "mood-future",
+    "title": "미래적이고 차갑게",
+    "cue": "기술적이고 현대적인 느낌",
+    "prompt": "beautiful korean woman, youtube thumbnail portrait, clear face, strong subject separation, clickable visual, photorealistic, square frame, 미래적이고 차갑게, 기술적이고 현대적인 느낌, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "mood",
+    "option_key": "mood-warm",
+    "title": "따뜻하고 편안하게",
+    "cue": "부드럽고 정감 있는 인상을 주는 무드",
+    "prompt": "beautiful korean woman, youtube thumbnail portrait, clear face, strong subject separation, clickable visual, photorealistic, square frame, 따뜻하고 편안하게, 부드럽고 정감 있는 인상을 주는 무드, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "people",
+    "option_key": "thumb-one-female",
+    "title": "여성 1명",
+    "cue": "한 명의 표정이 가장 강하게 보이는 구성",
+    "prompt": "beautiful korean woman, youtube thumbnail portrait, clear face, strong subject separation, clickable visual, photorealistic, square frame, 여성 1명, 한 명의 표정이 가장 강하게 보이는 구성, image only, keep the layout useful for later overlay, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "people",
+    "option_key": "thumb-senior",
+    "title": "시니어 / 전문가 인상",
+    "cue": "설명력과 신뢰감이 먼저 보이는 구성",
+    "prompt": "beautiful korean woman, youtube thumbnail portrait, clear face, strong subject separation, clickable visual, photorealistic, square frame, 시니어 / 전문가 인상, 설명력과 신뢰감이 먼저 보이는 구성, image only, keep the layout useful for later overlay, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "pose",
+    "option_key": "thumb-pose-cheek",
+    "title": "볼이나 턱선에 손을 대고 반응하기",
+    "cue": "썸네일용 감정 표현이 강해지는 자세",
+    "prompt": "beautiful korean woman, youtube thumbnail portrait, clear face, strong subject separation, clickable visual, photorealistic, square frame, 볼이나 턱선에 손을 대고 반응하기, 썸네일용 감정 표현이 강해지는 자세, image only, keep the layout useful for later overlay, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "pose",
+    "option_key": "thumb-pose-clap",
+    "title": "양손을 모아 기대감 주기",
+    "cue": "후기나 추천형의 밝은 반응을 살리는 자세",
+    "prompt": "beautiful korean woman, youtube thumbnail portrait, clear face, strong subject separation, clickable visual, photorealistic, square frame, 양손을 모아 기대감 주기, 후기나 추천형의 밝은 반응을 살리는 자세, image only, keep the layout useful for later overlay, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "pose",
+    "option_key": "thumb-pose-device",
+    "title": "휴대폰이나 태블릿을 세워 들기",
+    "cue": "앱 / 설정 결과물을 같이 보여주기 좋은 자세",
+    "prompt": "beautiful korean woman, youtube thumbnail portrait, clear face, strong subject separation, clickable visual, photorealistic, square frame, 휴대폰이나 태블릿을 세워 들기, 앱 / 설정 결과물을 같이 보여주기 좋은 자세, image only, keep the layout useful for later overlay, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "text",
+    "option_key": "text-badge",
+    "title": "배지 / 말풍선 포인트",
+    "cue": "작은 강조 문구가 들어가기 쉬운 구조",
+    "prompt": "beautiful korean woman, youtube thumbnail portrait, clear face, strong subject separation, clickable visual, photorealistic, square frame, 배지 / 말풍선 포인트, 작은 강조 문구가 들어가기 쉬운 구조, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "text",
+    "option_key": "text-bottom",
+    "title": "하단 캡션",
+    "cue": "아래쪽 정보가 읽히는 구조",
+    "prompt": "beautiful korean woman, youtube thumbnail portrait, clear face, strong subject separation, clickable visual, photorealistic, square frame, 하단 캡션, 아래쪽 정보가 읽히는 구조, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "travel",
+    "step": "composition",
+    "option_key": "land-foreground",
+    "title": "전경 강조",
+    "cue": "앞쪽 요소를 크게 두고 깊이를 만드는 화면",
+    "prompt": "cinematic travel photography, destination atmosphere, low-clutter scene, no people unless specified, photorealistic, square frame, 전경 강조, 앞쪽 요소를 크게 두고 깊이를 만드는 화면, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "travel",
+    "step": "detail",
+    "option_key": "travel-transit",
+    "title": "기차 / 버스 / 이동 중",
+    "cue": "이동 과정이 느껴지는 장면",
+    "prompt": "cinematic travel photography, destination atmosphere, low-clutter scene, no people unless specified, photorealistic, square frame, 기차 / 버스 / 이동 중, 이동 과정이 느껴지는 장면, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "travel",
+    "step": "feel",
+    "option_key": "travel-feel-local",
+    "title": "로컬 감성 있게",
+    "cue": "현지 공기가 살아 있는 방향",
+    "prompt": "cinematic travel photography, destination atmosphere, low-clutter scene, no people unless specified, photorealistic, square frame, 로컬 감성 있게, 현지 공기가 살아 있는 방향, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "travel",
+    "step": "mood",
+    "option_key": "mood-luxury",
+    "title": "고급스럽고 세련되게",
+    "cue": "브랜드 비주얼 같은 정제된 무드",
+    "prompt": "cinematic travel photography, destination atmosphere, low-clutter scene, no people unless specified, photorealistic, square frame, 고급스럽고 세련되게, 브랜드 비주얼 같은 정제된 무드, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "travel",
+    "step": "mood",
+    "option_key": "mood-vintage",
+    "title": "빈티지하고 레트로하게",
+    "cue": "옛 감성과 필름 느낌이 남는 방향",
+    "prompt": "cinematic travel photography, destination atmosphere, low-clutter scene, no people unless specified, photorealistic, square frame, 빈티지하고 레트로하게, 옛 감성과 필름 느낌이 남는 방향, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "travel",
+    "step": "presence",
+    "option_key": "travel-hand",
+    "title": "손 / 소품 중심",
+    "cue": "커피, 티켓, 지도 같은 소품이 보이는 구성",
+    "prompt": "cinematic travel photography, destination atmosphere, low-clutter scene, no people unless specified, photorealistic, square frame, 손 / 소품 중심, 커피, 티켓, 지도 같은 소품이 보이는 구성, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "vehicle",
+    "step": "composition",
+    "option_key": "comp-low",
+    "title": "로우 앵글",
+    "cue": "주제의 존재감을 더 크게 느끼게 하는 각도",
+    "prompt": "premium automotive photography, vehicle-only composition, no people unless specified, photorealistic, square frame, 로우 앵글, 주제의 존재감을 더 크게 느끼게 하는 각도, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "vehicle",
+    "step": "composition",
+    "option_key": "comp-poster",
+    "title": "포스터형 메인 비주얼",
+    "cue": "한 장면 자체가 강하게 보이는 구성",
+    "prompt": "premium automotive photography, vehicle-only composition, no people unless specified, photorealistic, square frame, 포스터형 메인 비주얼, 한 장면 자체가 강하게 보이는 구성, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "vehicle",
+    "step": "detail",
+    "option_key": "vehicle-ev",
+    "title": "전기차 / 충전 장면",
+    "cue": "미래성과 기술성이 중요한 장면",
+    "prompt": "premium automotive photography, vehicle-only composition, no people unless specified, photorealistic, square frame, 전기차 / 충전 장면, 미래성과 기술성이 중요한 장면, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "vehicle",
+    "step": "environment",
+    "option_key": "vehicle-env-city",
+    "title": "도심 거리",
+    "cue": "현대적이고 실사용 느낌이 있는 배경",
+    "prompt": "premium automotive photography, vehicle-only composition, no people unless specified, photorealistic, square frame, 도심 거리, 현대적이고 실사용 느낌이 있는 배경, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "vehicle",
+    "step": "environment",
+    "option_key": "vehicle-env-nightcity",
+    "title": "야간 도시",
+    "cue": "네온과 반사가 살아나는 배경",
+    "prompt": "premium automotive photography, vehicle-only composition, no people unless specified, photorealistic, square frame, 야간 도시, 네온과 반사가 살아나는 배경, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "vehicle",
+    "step": "environment",
+    "option_key": "vehicle-env-showroom",
+    "title": "쇼룸 / 실내 전시",
+    "cue": "제품처럼 깔끔한 배경",
+    "prompt": "premium automotive photography, vehicle-only composition, no people unless specified, photorealistic, square frame, 쇼룸 / 실내 전시, 제품처럼 깔끔한 배경, image only, no text, no letters, no words, no typography, no logo, no watermark, no captions, no signage"
+  },
+  {
+    "subject": "workspace",
+    "step": "composition",
+    "option_key": "comp-poster",
+    "title": "포스터형 메인 비주얼",
+    "cue": "한 장면 자체가 강하게 보이는 구성",
+    "prompt": "clean office or desk scene photography, no people unless specified, photorealistic, square frame, 포스터형 메인 비주얼, 한 장면 자체가 강하게 보이는 구성, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  },
+  {
+    "subject": "workspace",
+    "step": "mood",
+    "option_key": "trust-bold",
+    "title": "선명하고 자신감 있게",
+    "cue": "강한 메시지와 전달력이 필요한 방향",
+    "prompt": "clean office or desk scene photography, no people unless specified, photorealistic, square frame, 선명하고 자신감 있게, 강한 메시지와 전달력이 필요한 방향, image only, leave clean empty space where copy could be added later, but do not render any text, letters, words, typography, logo, watermark, captions, or signage"
+  }
+]

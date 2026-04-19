@@ -1,0 +1,296 @@
+[
+  {
+    "subject": "thumbnail-person",
+    "step": "detail",
+    "option_key": "thumb-explain",
+    "title": "설명 / 강의형",
+    "cue": "tutorial explainer thumbnail, presenter energy, educational content"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "detail",
+    "option_key": "thumb-review",
+    "title": "리뷰 / 비교형",
+    "cue": "review thumbnail, opinionated creator look, product commentary vibe"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "detail",
+    "option_key": "thumb-before-after",
+    "title": "전후 비교형",
+    "cue": "before after thumbnail, dramatic comparison storytelling"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "people",
+    "option_key": "thumb-two-people",
+    "title": "두 사람",
+    "cue": "two people in thumbnail, conversational energy, cohost setup"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "pose",
+    "option_key": "thumb-pose-openhand",
+    "title": "두 손으로 설명하기",
+    "cue": "open hand explanation gesture, presenter pose, clear communication"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "pose",
+    "option_key": "thumb-pose-compare",
+    "title": "비교 제스처",
+    "cue": "comparison gesture, left versus right emphasis"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "pose",
+    "option_key": "thumb-pose-mouthcover",
+    "title": "입 가리고 놀람",
+    "cue": "covering mouth surprised pose, clickbait style reaction"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "composition",
+    "option_key": "thumb-comp-left-screen",
+    "title": "왼쪽 화면 / 오른쪽 인물",
+    "cue": "screen on left, host on right, tutorial thumbnail layout"
+  },
+  {
+    "subject": "portrait",
+    "step": "detail",
+    "option_key": "portrait-profile",
+    "title": "프로필형 인물",
+    "cue": "clean polished personal brand portrait"
+  },
+  {
+    "subject": "portrait",
+    "step": "detail",
+    "option_key": "portrait-fashion",
+    "title": "화보형 인물",
+    "cue": "glamorous editorial portrait, elevated beauty mood"
+  },
+  {
+    "subject": "portrait",
+    "step": "detail",
+    "option_key": "portrait-sns",
+    "title": "SNS 감성 인물",
+    "cue": "soft sns portrait, approachable lifestyle tone"
+  },
+  {
+    "subject": "portrait",
+    "step": "pose",
+    "option_key": "portrait-pose-angle",
+    "title": "사선 포즈",
+    "cue": "slight angled body pose, elegant shoulder line"
+  },
+  {
+    "subject": "portrait",
+    "step": "pose",
+    "option_key": "portrait-pose-crossleg",
+    "title": "다리 꼬고 앉기",
+    "cue": "seated with crossed legs, sophisticated sensual elegance"
+  },
+  {
+    "subject": "portrait",
+    "step": "pose",
+    "option_key": "portrait-pose-armup",
+    "title": "팔 올리기",
+    "cue": "one arm lifted above head, elongated body line, editorial sensual pose"
+  },
+  {
+    "subject": "portrait",
+    "step": "pose",
+    "option_key": "portrait-pose-recline",
+    "title": "기대어 앉기",
+    "cue": "reclining seated pose, soft sensual confidence"
+  },
+  {
+    "subject": "portrait",
+    "step": "composition",
+    "option_key": "portrait-comp-editorial-poster",
+    "title": "포스터형 클로즈업",
+    "cue": "editorial poster framing, premium close portrait"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "detail",
+    "option_key": "selfie-mirror",
+    "title": "거울 셀카",
+    "cue": "mirror selfie, stylish room look, confident young woman"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "detail",
+    "option_key": "selfie-travel",
+    "title": "여행 셀카",
+    "cue": "travel selfie, casual chic, destination vibe"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "pose",
+    "option_key": "self-pose-lookingback",
+    "title": "뒤돌아보기",
+    "cue": "looking back over shoulder selfie pose, soft feminine mood"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "pose",
+    "option_key": "self-pose-windowseat",
+    "title": "창가에 앉기",
+    "cue": "sitting by a window, knees gathered, dreamy lifestyle selfie"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "pose",
+    "option_key": "self-pose-overheadbed",
+    "title": "침대 위 오버헤드",
+    "cue": "overhead bed selfie, relaxed private room vibe, clean and tasteful"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "setting",
+    "option_key": "self-set-mirror",
+    "title": "거울 앞",
+    "cue": "mirror setup, stylish interior, polished selfie background"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "setting",
+    "option_key": "self-set-night",
+    "title": "야간 조명",
+    "cue": "night ambience, city light glow, moody selfie atmosphere"
+  },
+  {
+    "subject": "group-family",
+    "step": "detail",
+    "option_key": "group-family",
+    "title": "가족 사진",
+    "cue": "warm family portrait, affectionate natural togetherness"
+  },
+  {
+    "subject": "group-family",
+    "step": "detail",
+    "option_key": "group-friends",
+    "title": "친구 모임",
+    "cue": "stylish friend group photo, energetic and fun atmosphere"
+  },
+  {
+    "subject": "group-family",
+    "step": "pose",
+    "option_key": "group-pose-hug",
+    "title": "껴안기",
+    "cue": "close hug pose, emotional warmth, natural chemistry"
+  },
+  {
+    "subject": "group-family",
+    "step": "pose",
+    "option_key": "group-pose-circle",
+    "title": "둥글게 모이기",
+    "cue": "friends gathering in a circle, playful closeness"
+  },
+  {
+    "subject": "group-family",
+    "step": "composition",
+    "option_key": "group-comp-casual-trip",
+    "title": "여행 스냅형",
+    "cue": "travel snapshot composition, lifestyle memory feeling"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "detail",
+    "option_key": "fashion-lookbook",
+    "title": "룩북 컷",
+    "cue": "lookbook fashion shot, full outfit readability"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "detail",
+    "option_key": "fashion-makeup",
+    "title": "메이크업 강조",
+    "cue": "beauty editorial, makeup focus, glowing skin"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "focus",
+    "option_key": "fashion-focus-full",
+    "title": "전신 룩",
+    "cue": "full body fashion emphasis, silhouette and styling clarity"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "focus",
+    "option_key": "fashion-focus-makeup",
+    "title": "메이크업 디테일",
+    "cue": "makeup detail focus, eyes lips skin texture"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "pose",
+    "option_key": "fashion-pose-walk",
+    "title": "걷는 런웨이 느낌",
+    "cue": "runway walk pose, confident leg line, premium editorial movement"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "pose",
+    "option_key": "fashion-pose-necktouch",
+    "title": "목선 강조",
+    "cue": "touching neck pose, feminine graceful beauty pose"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "styling",
+    "option_key": "fashion-tone-luxury",
+    "title": "럭셔리 톤",
+    "cue": "luxury fashion tone, polished premium styling"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "composition",
+    "option_key": "fashion-comp-beauty-face",
+    "title": "뷰티 얼굴 중심",
+    "cue": "beauty face composition, eyes and skin forward"
+  },
+  {
+    "subject": "profile-id",
+    "step": "detail",
+    "option_key": "profile-resume",
+    "title": "이력서 프로필",
+    "cue": "resume profile photo, neat trustworthy professionalism"
+  },
+  {
+    "subject": "profile-id",
+    "step": "detail",
+    "option_key": "profile-social",
+    "title": "SNS 프로필",
+    "cue": "social profile portrait, approachable but polished"
+  },
+  {
+    "subject": "profile-id",
+    "step": "appearance",
+    "option_key": "profile-trust",
+    "title": "신뢰감",
+    "cue": "trustworthy expression, calm authority, clean eye contact"
+  },
+  {
+    "subject": "profile-id",
+    "step": "appearance",
+    "option_key": "profile-friendly",
+    "title": "친근함",
+    "cue": "friendly warm smile, easy approachable professional look"
+  },
+  {
+    "subject": "profile-id",
+    "step": "pose",
+    "option_key": "profile-pose-handclasp",
+    "title": "손 모으기",
+    "cue": "hands clasped professional pose, presenter calmness"
+  },
+  {
+    "subject": "profile-id",
+    "step": "background",
+    "option_key": "profile-bg-office",
+    "title": "사무실 배경",
+    "cue": "clean office background, soft modern workplace feel"
+  }
+]

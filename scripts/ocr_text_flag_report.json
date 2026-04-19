@@ -1,0 +1,150 @@
+[
+  {
+    "subject": "broll",
+    "step": "detail",
+    "option_key": "broll-object",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\broll\\detail\\broll-object.webp",
+    "hits": [
+      {
+        "text": "BIGJOJY",
+        "confidence": 0.9842257329395839
+      }
+    ]
+  },
+  {
+    "subject": "broll",
+    "step": "usage",
+    "option_key": "broll-use-transition",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\broll\\usage\\broll-use-transition.webp",
+    "hits": [
+      {
+        "text": "din",
+        "confidence": 0.7250184118747711
+      }
+    ]
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "event-comp-booth-sign",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\event\\composition\\event-comp-booth-sign.webp",
+    "hits": [
+      {
+        "text": "ViCONOTOF",
+        "confidence": 0.9431638320287069
+      },
+      {
+        "text": "RONnO",
+        "confidence": 0.88971346616745
+      },
+      {
+        "text": "ora",
+        "confidence": 0.8466575543085734
+      },
+      {
+        "text": "Jurjiruo",
+        "confidence": 0.8614321574568748
+      },
+      {
+        "text": "Vijpocfice",
+        "confidence": 0.8950594067573547
+      },
+      {
+        "text": "viji picnolio",
+        "confidence": 0.8568119658873632
+      }
+    ]
+  },
+  {
+    "subject": "portrait",
+    "step": "composition",
+    "option_key": "portrait-comp-editorial-poster",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\portrait\\composition\\portrait-comp-editorial-poster.webp",
+    "hits": [
+      {
+        "text": "'IBNNEDDAYHEFOOPKULIDE",
+        "confidence": 0.952095543796366
+      },
+      {
+        "text": "(JILAID)",
+        "confidence": 0.9336498603224754
+      },
+      {
+        "text": "COTLUTY",
+        "confidence": 0.9973652703421456
+      },
+      {
+        "text": "EPRYOOIES",
+        "confidence": 0.9946461915969849
+      },
+      {
+        "text": "TIENODOOA",
+        "confidence": 0.9933439426951938
+      },
+      {
+        "text": "EUSSBCONUCNTIGEUENOINERASUROL",
+        "confidence": 0.9705204860917453
+      }
+    ]
+  },
+  {
+    "subject": "product",
+    "step": "composition",
+    "option_key": "product-comp-angle",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\product\\composition\\product-comp-angle.webp",
+    "hits": [
+      {
+        "text": "PREIMIIUM",
+        "confidence": 0.9522085785865784
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "composition",
+    "option_key": "service-comp-ui-dashboard",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\composition\\service-comp-ui-dashboard.webp",
+    "hits": [
+      {
+        "text": "mobon",
+        "confidence": 0.9955981016159058
+      },
+      {
+        "text": "Pellulical Service",
+        "confidence": 0.8787734624412324
+      },
+      {
+        "text": "FAMUS DAPOPAWORX",
+        "confidence": 0.8995077051222324
+      },
+      {
+        "text": "HADENNWIN",
+        "confidence": 0.7759505179193285
+      }
+    ]
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "composition",
+    "option_key": "thumb-comp-left-screen",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\thumbnail-person\\composition\\thumb-comp-left-screen.webp",
+    "hits": [
+      {
+        "text": "Teabulloe",
+        "confidence": 0.9471325675646464
+      }
+    ]
+  },
+  {
+    "subject": "vehicle",
+    "step": "composition",
+    "option_key": "vehicle-comp-front-angle",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\vehicle\\composition\\vehicle-comp-front-angle.webp",
+    "hits": [
+      {
+        "text": "JARE",
+        "confidence": 0.9948344230651855
+      }
+    ]
+  }
+]

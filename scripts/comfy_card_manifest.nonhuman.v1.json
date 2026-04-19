@@ -1,0 +1,450 @@
+[
+  {
+    "subject": "product",
+    "step": "detail",
+    "option_key": "product-tech",
+    "title": "전자기기 제품",
+    "cue": "sleek gadget product, premium consumer tech, sharp industrial detail"
+  },
+  {
+    "subject": "product",
+    "step": "detail",
+    "option_key": "product-premium",
+    "title": "프리미엄 제품",
+    "cue": "luxury premium product, glossy finish, elevated commercial mood"
+  },
+  {
+    "subject": "product",
+    "step": "presentation",
+    "option_key": "product-single",
+    "title": "단일 제품 강조",
+    "cue": "single hero product, centered studio presentation"
+  },
+  {
+    "subject": "product",
+    "step": "presentation",
+    "option_key": "product-float",
+    "title": "공중에 띄운 연출",
+    "cue": "floating product shot, premium suspended display, clean commercial look"
+  },
+  {
+    "subject": "product",
+    "step": "background",
+    "option_key": "product-bg-dark",
+    "title": "어두운 배경",
+    "cue": "dark studio background, luxury product contrast"
+  },
+  {
+    "subject": "product",
+    "step": "feature",
+    "option_key": "product-feature-gloss",
+    "title": "광택 질감",
+    "cue": "glossy reflective surface, premium finish emphasis"
+  },
+  {
+    "subject": "product",
+    "step": "composition",
+    "option_key": "product-comp-angle",
+    "title": "사선 각도 구도",
+    "cue": "angled product composition, dynamic premium catalog framing"
+  },
+
+  {
+    "subject": "food-drink",
+    "step": "detail",
+    "option_key": "food-coffee",
+    "title": "커피 음료",
+    "cue": "artisan coffee drink, cozy cafe menu photography"
+  },
+  {
+    "subject": "food-drink",
+    "step": "detail",
+    "option_key": "food-bakery",
+    "title": "베이커리",
+    "cue": "premium bakery pastry, warm oven-fresh display"
+  },
+  {
+    "subject": "food-drink",
+    "step": "detail",
+    "option_key": "food-korean",
+    "title": "한식 메뉴",
+    "cue": "premium korean dish, rich appetizing food editorial"
+  },
+  {
+    "subject": "food-drink",
+    "step": "presentation",
+    "option_key": "food-single",
+    "title": "메뉴 단독 강조",
+    "cue": "single menu hero shot, clean dish-first framing"
+  },
+  {
+    "subject": "food-drink",
+    "step": "presentation",
+    "option_key": "food-topview",
+    "title": "탑뷰 플레이팅",
+    "cue": "top view plating shot, neat menu layout"
+  },
+  {
+    "subject": "food-drink",
+    "step": "texture",
+    "option_key": "food-hot",
+    "title": "뜨거운 온기",
+    "cue": "hot steaming food, warmth and aroma emphasis"
+  },
+  {
+    "subject": "food-drink",
+    "step": "texture",
+    "option_key": "food-premium",
+    "title": "고급스러운 질감",
+    "cue": "premium gourmet texture, glossy rich surface detail"
+  },
+  {
+    "subject": "food-drink",
+    "step": "composition",
+    "option_key": "food-comp-hot-close",
+    "title": "뜨거운 음식 클로즈업",
+    "cue": "tight close-up on hot dish, appetite-first framing"
+  },
+
+  {
+    "subject": "landscape",
+    "step": "detail",
+    "option_key": "land-sea",
+    "title": "바다 풍경",
+    "cue": "coastal sea landscape, open horizon, cinematic travel mood"
+  },
+  {
+    "subject": "landscape",
+    "step": "detail",
+    "option_key": "land-city",
+    "title": "도시 전경",
+    "cue": "city skyline landscape, clean urban panorama"
+  },
+  {
+    "subject": "landscape",
+    "step": "detail",
+    "option_key": "land-night",
+    "title": "야경 풍경",
+    "cue": "night cityscape, glowing urban lights, clean dark mood"
+  },
+  {
+    "subject": "landscape",
+    "step": "detail",
+    "option_key": "land-snow",
+    "title": "눈 풍경",
+    "cue": "snow landscape, crisp winter environment, minimal mood"
+  },
+  {
+    "subject": "landscape",
+    "step": "time",
+    "option_key": "land-time-sunset",
+    "title": "노을 시간",
+    "cue": "sunset landscape light, warm sky gradient, cinematic glow"
+  },
+  {
+    "subject": "landscape",
+    "step": "time",
+    "option_key": "land-time-bluehour",
+    "title": "블루아워",
+    "cue": "blue hour landscape, cool premium twilight atmosphere"
+  },
+  {
+    "subject": "landscape",
+    "step": "presence",
+    "option_key": "land-presence-none",
+    "title": "사람 없는 풍경",
+    "cue": "empty landscape, pure environmental scene, no human presence"
+  },
+  {
+    "subject": "landscape",
+    "step": "composition",
+    "option_key": "land-comp-empty-panorama",
+    "title": "파노라마형 빈 풍경",
+    "cue": "panoramic empty landscape composition, open space emphasis"
+  },
+
+  {
+    "subject": "travel",
+    "step": "detail",
+    "option_key": "travel-intro",
+    "title": "인트로 여행 장면",
+    "cue": "travel intro scene, establishing destination mood"
+  },
+  {
+    "subject": "travel",
+    "step": "detail",
+    "option_key": "travel-airport",
+    "title": "공항 장면",
+    "cue": "airport travel scene, clean modern departure atmosphere"
+  },
+  {
+    "subject": "travel",
+    "step": "detail",
+    "option_key": "travel-landmark",
+    "title": "랜드마크 장면",
+    "cue": "famous landmark travel view, iconic destination framing"
+  },
+  {
+    "subject": "travel",
+    "step": "detail",
+    "option_key": "travel-street",
+    "title": "거리 여행 장면",
+    "cue": "street travel scene, atmospheric destination walk view"
+  },
+  {
+    "subject": "travel",
+    "step": "detail",
+    "option_key": "travel-hotel",
+    "title": "호텔 / 숙소 장면",
+    "cue": "hotel or resort travel scene, premium stay atmosphere"
+  },
+  {
+    "subject": "travel",
+    "step": "presence",
+    "option_key": "travel-none",
+    "title": "사람 없는 여행 장면",
+    "cue": "empty travel scene, location-only atmospheric destination"
+  },
+  {
+    "subject": "travel",
+    "step": "feel",
+    "option_key": "travel-feel-cinematic",
+    "title": "시네마틱 감성",
+    "cue": "cinematic travel feeling, dramatic location storytelling"
+  },
+  {
+    "subject": "travel",
+    "step": "composition",
+    "option_key": "land-comp-empty-road",
+    "title": "비어 있는 길 구도",
+    "cue": "empty road travel composition, destination path leading line"
+  },
+
+  {
+    "subject": "service",
+    "step": "detail",
+    "option_key": "service-app",
+    "title": "앱 서비스",
+    "cue": "modern mobile app service branding visual, clean startup tone"
+  },
+  {
+    "subject": "service",
+    "step": "detail",
+    "option_key": "service-web",
+    "title": "웹 서비스",
+    "cue": "web platform service visual, polished digital product campaign"
+  },
+  {
+    "subject": "service",
+    "step": "detail",
+    "option_key": "service-saas",
+    "title": "SaaS 서비스",
+    "cue": "saas branding visual, trustworthy software product mood"
+  },
+  {
+    "subject": "service",
+    "step": "usage",
+    "option_key": "service-usage-hero",
+    "title": "메인 히어로 영역",
+    "cue": "hero section visual, homepage headline support image"
+  },
+  {
+    "subject": "service",
+    "step": "usage",
+    "option_key": "service-usage-dashboard",
+    "title": "대시보드 설명용",
+    "cue": "dashboard promo visual, feature-led product communication"
+  },
+  {
+    "subject": "service",
+    "step": "visual",
+    "option_key": "service-visual-ui",
+    "title": "UI 중심 비주얼",
+    "cue": "clean UI-centered service graphic, screen-first composition"
+  },
+  {
+    "subject": "service",
+    "step": "tone",
+    "option_key": "service-tone-clean",
+    "title": "깔끔한 서비스 톤",
+    "cue": "clean trustworthy service branding, minimal polished feel"
+  },
+  {
+    "subject": "service",
+    "step": "composition",
+    "option_key": "service-comp-ui-dashboard",
+    "title": "대시보드 중심 구도",
+    "cue": "dashboard-led service composition, structured clean layout"
+  },
+
+  {
+    "subject": "poster",
+    "step": "detail",
+    "option_key": "poster-event",
+    "title": "행사 포스터",
+    "cue": "event poster design visual, bold announcement feeling"
+  },
+  {
+    "subject": "poster",
+    "step": "detail",
+    "option_key": "poster-campaign",
+    "title": "캠페인 포스터",
+    "cue": "campaign poster visual, strong branding and message"
+  },
+  {
+    "subject": "poster",
+    "step": "detail",
+    "option_key": "poster-launch",
+    "title": "런칭 포스터",
+    "cue": "product launch poster, premium reveal style"
+  },
+  {
+    "subject": "poster",
+    "step": "detail",
+    "option_key": "poster-youtube",
+    "title": "유튜브용 포스터",
+    "cue": "youtube channel campaign poster, creator promo visual"
+  },
+  {
+    "subject": "poster",
+    "step": "motif",
+    "option_key": "poster-motif-symbol",
+    "title": "상징 오브젝트 중심",
+    "cue": "symbol-led poster motif, strong central object"
+  },
+  {
+    "subject": "poster",
+    "step": "layout",
+    "option_key": "poster-layout-clean",
+    "title": "깔끔한 타이포 레이아웃",
+    "cue": "clean poster typography layout, generous spacing"
+  },
+  {
+    "subject": "poster",
+    "step": "composition",
+    "option_key": "poster-comp-visual-symbol",
+    "title": "상징 비주얼 중심",
+    "cue": "single symbolic visual poster composition"
+  },
+  {
+    "subject": "poster",
+    "step": "composition",
+    "option_key": "poster-comp-title-top",
+    "title": "상단 제목형 포스터",
+    "cue": "poster with top title zone and clean hero visual"
+  },
+
+  {
+    "subject": "space",
+    "step": "detail",
+    "option_key": "space-living",
+    "title": "거실 공간",
+    "cue": "premium living room interior, clean residential styling"
+  },
+  {
+    "subject": "space",
+    "step": "detail",
+    "option_key": "space-cafe",
+    "title": "카페 공간",
+    "cue": "stylish cafe interior, warm commercial space mood"
+  },
+  {
+    "subject": "space",
+    "step": "detail",
+    "option_key": "space-office",
+    "title": "오피스 공간",
+    "cue": "modern office interior, clean productive environment"
+  },
+  {
+    "subject": "space",
+    "step": "detail",
+    "option_key": "space-studio",
+    "title": "스튜디오 공간",
+    "cue": "creative studio interior, minimal premium room setup"
+  },
+  {
+    "subject": "space",
+    "step": "style",
+    "option_key": "space-style-minimal",
+    "title": "미니멀 스타일",
+    "cue": "minimal interior style, calm uncluttered composition"
+  },
+  {
+    "subject": "space",
+    "step": "style",
+    "option_key": "space-style-luxury",
+    "title": "럭셔리 스타일",
+    "cue": "luxury interior styling, premium material emphasis"
+  },
+  {
+    "subject": "space",
+    "step": "light",
+    "option_key": "space-light-window",
+    "title": "창가 자연광",
+    "cue": "window light interior, soft natural illumination"
+  },
+  {
+    "subject": "space",
+    "step": "composition",
+    "option_key": "space-comp-living-wide",
+    "title": "넓게 보는 실내 구도",
+    "cue": "wide room interior composition, balanced furniture layout"
+  },
+
+  {
+    "subject": "architecture",
+    "step": "detail",
+    "option_key": "arch-cafe",
+    "title": "카페 외관",
+    "cue": "cafe facade exterior, stylish storefront architecture"
+  },
+  {
+    "subject": "architecture",
+    "step": "detail",
+    "option_key": "arch-hotel",
+    "title": "호텔 외관",
+    "cue": "hotel exterior architecture, premium hospitality building"
+  },
+  {
+    "subject": "architecture",
+    "step": "detail",
+    "option_key": "arch-landmark",
+    "title": "랜드마크 건축",
+    "cue": "landmark architecture, iconic building exterior"
+  },
+  {
+    "subject": "architecture",
+    "step": "detail",
+    "option_key": "arch-future",
+    "title": "미래형 건축",
+    "cue": "futuristic architecture exterior, sleek modern facade"
+  },
+  {
+    "subject": "architecture",
+    "step": "time",
+    "option_key": "arch-time-bluehour",
+    "title": "블루아워 외관",
+    "cue": "blue hour building exterior, cool clean city light"
+  },
+  {
+    "subject": "architecture",
+    "step": "focus",
+    "option_key": "arch-point-front",
+    "title": "정면 파사드 강조",
+    "cue": "front facade emphasis, clean symmetric exterior"
+  },
+  {
+    "subject": "architecture",
+    "step": "context",
+    "option_key": "arch-context-night",
+    "title": "야간 거리 맥락",
+    "cue": "architecture in night street context, moody urban environment"
+  },
+  {
+    "subject": "architecture",
+    "step": "composition",
+    "option_key": "arch-comp-landmark-wide",
+    "title": "랜드마크 와이드 구도",
+    "cue": "wide landmark architecture composition, strong full-building read"
+  }
+]

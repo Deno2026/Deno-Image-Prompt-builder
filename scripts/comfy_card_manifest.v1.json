@@ -1,0 +1,72 @@
+[
+  {
+    "subject": "thumbnail-person",
+    "step": "reaction",
+    "option_key": "react-surprise",
+    "title": "놀람 / 충격",
+    "prompt": "beautiful korean woman, shocked and surprised reaction, wide eyes, slightly open mouth, strong youtube thumbnail expression, cinematic face lighting, clean background, square frame, photorealistic"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "people",
+    "option_key": "thumb-host-screen",
+    "title": "인물 + 화면",
+    "prompt": "beautiful korean female creator standing beside a tutorial screen, presenter plus monitor composition, clean educational thumbnail look, confident expression, modern studio light, square frame, photorealistic"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "pose",
+    "option_key": "thumb-pose-point",
+    "title": "화면 / 제목 가리키기",
+    "prompt": "beautiful korean woman pointing toward title space, tutorial thumbnail pose, one hand pointing, confident smile, clean background, photorealistic, square frame"
+  },
+  {
+    "subject": "portrait",
+    "step": "detail",
+    "option_key": "portrait-cover",
+    "title": "커버용 메인 인물",
+    "prompt": "beautiful elegant woman, cover portrait, premium editorial feeling, confident eye contact, polished skin, soft studio light, minimal background, photorealistic, square frame"
+  },
+  {
+    "subject": "portrait",
+    "step": "pose",
+    "option_key": "portrait-pose-window",
+    "title": "창가에 기대서 빛 받기",
+    "prompt": "beautiful woman leaning by a window, natural light on face, gentle editorial portrait pose, calm sensual elegance, warm daylight, photorealistic, square frame"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "detail",
+    "option_key": "selfie-profile",
+    "title": "SNS 프로필용 셀카",
+    "prompt": "beautiful korean woman taking a stylish sns profile selfie, flattering angle, clean face visibility, soft natural light, subtle makeup, simple background, photorealistic, square frame"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "setting",
+    "option_key": "self-set-cafe",
+    "title": "카페 / 식탁",
+    "prompt": "beautiful woman at a cafe table, cozy lifestyle selfie mood, coffee and warm ambience, natural candid composition, stylish everyday look, photorealistic, square frame"
+  },
+  {
+    "subject": "group-family",
+    "step": "detail",
+    "option_key": "group-couple",
+    "title": "커플 데이트",
+    "prompt": "stylish attractive couple on a date, warm romantic mood, natural smiles, fashionable casual clothes, lifestyle photography, photorealistic, square frame"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "detail",
+    "option_key": "fashion-editorial",
+    "title": "패션 화보",
+    "prompt": "beautiful fashion model, editorial photoshoot, elegant pose, premium styling, dramatic but clean studio light, confident expression, magazine quality, photorealistic, square frame"
+  },
+  {
+    "subject": "profile-id",
+    "step": "detail",
+    "option_key": "profile-lecturer",
+    "title": "강사 / 발표자 소개",
+    "prompt": "professional beautiful woman lecturer portrait, trustworthy and polished expression, presenter profile photo, clean background, business casual styling, photorealistic, square frame"
+  }
+]

@@ -1,0 +1,154 @@
+[
+  {
+    "subject": "event",
+    "step": "detail",
+    "option_key": "event-award",
+    "title": "시상식",
+    "cue": "상 받는 순간",
+    "prompt": "person receiving a trophy on a clean stage, audience lights softly blurred, no banners, no backdrop text, no logo, no watermark, photorealistic event photography, square frame"
+  },
+  {
+    "subject": "event",
+    "step": "detail",
+    "option_key": "event-booth",
+    "title": "전시 부스",
+    "cue": "브랜드 부스 현장",
+    "prompt": "clean modern expo booth scene, product displays and visitors, no readable signage, no logos, no watermark, photorealistic event photography, square frame"
+  },
+  {
+    "subject": "event",
+    "step": "moment",
+    "option_key": "event-moment-main",
+    "title": "메인 진행 장면",
+    "cue": "행사 대표 순간",
+    "prompt": "main event moment on stage, presenter and dramatic light, clean dark background, no projected words, no banners, no logos, no watermark, photorealistic, square frame"
+  },
+  {
+    "subject": "poster",
+    "step": "detail",
+    "option_key": "poster-festival",
+    "title": "페스티벌 포스터 무드",
+    "cue": "에너지 있는 키비주얼",
+    "prompt": "festival-style key visual, energetic lighting and atmospheric scene, blank copy space only, absolutely no typography, no logos, no watermark, photorealistic, square frame"
+  },
+  {
+    "subject": "product",
+    "step": "composition",
+    "option_key": "comp-low",
+    "title": "로우 앵글",
+    "cue": "존재감 강조",
+    "prompt": "premium product shot from a low angle, dramatic studio lighting, no labels, no logos, no watermark, photorealistic, square frame"
+  },
+  {
+    "subject": "product",
+    "step": "composition",
+    "option_key": "comp-medium",
+    "title": "미디엄 구도",
+    "cue": "균형 잡힌 제품샷",
+    "prompt": "premium product shot at balanced medium distance, clean studio background, no labels, no logos, no watermark, photorealistic, square frame"
+  },
+  {
+    "subject": "product",
+    "step": "composition",
+    "option_key": "comp-poster",
+    "title": "포스터형 메인 비주얼",
+    "cue": "강한 메인 이미지",
+    "prompt": "single hero product visual, poster-like dramatic lighting, clean backdrop, no branding text, no logos, no watermark, photorealistic, square frame"
+  },
+  {
+    "subject": "product",
+    "step": "composition",
+    "option_key": "comp-pov",
+    "title": "POV 구도",
+    "cue": "가까운 거리감",
+    "prompt": "premium product shot in point-of-view style, close realistic perspective, clean background, no labels, no logos, no watermark, photorealistic, square frame"
+  },
+  {
+    "subject": "product",
+    "step": "composition",
+    "option_key": "comp-symmetry",
+    "title": "정면 대칭",
+    "cue": "정돈된 인상",
+    "prompt": "symmetrical front-facing product shot, clean premium studio setup, no labels, no logos, no watermark, photorealistic, square frame"
+  },
+  {
+    "subject": "product",
+    "step": "feature",
+    "option_key": "product-feature-gloss",
+    "title": "광택 강조",
+    "cue": "반사와 하이라이트",
+    "prompt": "premium glossy product close-up, reflective highlight and rich texture, no labels, no logos, no watermark, photorealistic, square frame"
+  },
+  {
+    "subject": "product",
+    "step": "mood",
+    "option_key": "mood-calm",
+    "title": "차분한 무드",
+    "cue": "정갈한 제품샷",
+    "prompt": "calm premium product photography, soft clean studio mood, no labels, no logos, no watermark, photorealistic, square frame"
+  },
+  {
+    "subject": "product",
+    "step": "mood",
+    "option_key": "mood-luxury",
+    "title": "럭셔리 무드",
+    "cue": "고급스러운 제품샷",
+    "prompt": "luxury product photography, elegant premium lighting and materials, no labels, no logos, no watermark, photorealistic, square frame"
+  },
+  {
+    "subject": "product",
+    "step": "mood",
+    "option_key": "mood-warm",
+    "title": "따뜻한 무드",
+    "cue": "친근한 제품샷",
+    "prompt": "warm inviting product photography, soft premium lighting, no labels, no logos, no watermark, photorealistic, square frame"
+  },
+  {
+    "subject": "product",
+    "step": "presentation",
+    "option_key": "product-angle",
+    "title": "각도 강조",
+    "cue": "입체적인 제품 표현",
+    "prompt": "angled premium product shot, dimensional studio composition, no labels, no logos, no watermark, photorealistic, square frame"
+  },
+  {
+    "subject": "product",
+    "step": "presentation",
+    "option_key": "product-set",
+    "title": "세트 연출",
+    "cue": "구성 있는 제품 배치",
+    "prompt": "styled premium product set, tasteful props and clean arrangement, no labels, no logos, no watermark, photorealistic, square frame"
+  },
+  {
+    "subject": "product",
+    "step": "presentation",
+    "option_key": "product-splash",
+    "title": "스플래시 연출",
+    "cue": "역동적인 제품 컷",
+    "prompt": "dynamic premium product splash shot, liquid motion frozen in studio light, no labels, no logos, no watermark, photorealistic, square frame"
+  },
+  {
+    "subject": "space",
+    "step": "mood",
+    "option_key": "mood-luxury",
+    "title": "럭셔리 공간",
+    "cue": "고급스러운 인테리어",
+    "prompt": "luxury interior scene, rich materials and elegant light, visually full but clean, no signs, no logos, no watermark, photorealistic, square frame"
+  },
+  {
+    "subject": "space",
+    "step": "style",
+    "option_key": "space-style-editorial",
+    "title": "에디토리얼 공간",
+    "cue": "잡지같은 인테리어 톤",
+    "prompt": "editorial-style interior photography, tasteful styling and strong composition, no signs, no logos, no watermark, photorealistic, square frame"
+  },
+  {
+    "subject": "travel",
+    "step": "mood",
+    "option_key": "mood-vintage",
+    "title": "빈티지 여행 무드",
+    "cue": "필름 같은 여행 장면",
+    "prompt": "cinematic travel scene with subtle vintage film mood, visually rich destination atmosphere, no text, no logos, no watermark, photorealistic, square frame"
+  }
+]

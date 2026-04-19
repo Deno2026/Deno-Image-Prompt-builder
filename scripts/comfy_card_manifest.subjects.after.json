@@ -1,0 +1,149 @@
+[
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "thumbnail-person",
+    "title": "유튜브 썸네일 인물",
+    "cue": "표정과 반응이 강조되는 클릭형 썸네일"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "portrait",
+    "title": "인물 사진",
+    "cue": "프로필, 화보, SNS용 인물 이미지"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "selfie-sns",
+    "title": "셀카 / SNS 사진",
+    "cue": "인스타 감성, 거울셀카, 일상 인증샷"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "group-family",
+    "title": "커플 / 가족 / 그룹",
+    "cue": "둘 이상이 함께 나오는 관계 중심 사진"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "fashion-beauty",
+    "title": "패션 / 뷰티 / 룩북",
+    "cue": "의상, 메이크업, 헤어가 중심인 이미지"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "profile-id",
+    "title": "증명 / 프로필 사진",
+    "cue": "이력서, 회사 소개, 강사 프로필용 이미지"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "product",
+    "title": "제품 사진",
+    "cue": "상품 소개, 상세페이지, 브랜드용 제품 이미지"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "food-drink",
+    "title": "음식 / 음료 사진",
+    "cue": "카페, 메뉴, 디저트, 음료, 술 이미지"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "vehicle",
+    "title": "차량 / 모빌리티",
+    "cue": "자동차, 바이크, 이동수단 중심 이미지"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "space",
+    "title": "공간 / 인테리어",
+    "cue": "거실, 주방, 카페, 작업실 같은 실내 공간"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "architecture",
+    "title": "건축 / 외관",
+    "cue": "건물 외관, 거리, 상업 공간 외부 이미지"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "landscape",
+    "title": "풍경 / 자연 / 도시",
+    "cue": "자연, 도시 전경, 야경, 계절 풍경"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "travel",
+    "title": "여행 / 브이로그 장면",
+    "cue": "인트로, 여행 컷, 브이로그용 장면"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "animal",
+    "title": "반려동물 / 동물",
+    "cue": "강아지, 고양이, 동물 초상과 활동 장면"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "workspace",
+    "title": "업무 참고 이미지",
+    "cue": "발표 자료, 기획안, 문서 삽입용 이미지"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "service",
+    "title": "서비스 / 앱 설명 이미지",
+    "cue": "웹, 앱, AI 서비스 소개용 비주얼"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "poster",
+    "title": "포스터 / 커버 / 키비주얼",
+    "cue": "행사 포스터, 앨범커버, 메인 비주얼"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "fantasy",
+    "title": "판타지 / SF / 세계관",
+    "cue": "세계관, 미래도시, 게임 콘셉트 이미지"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "illustration",
+    "title": "캐릭터 / 일러스트",
+    "cue": "애니풍, 귀여운 캐릭터, 교육용 일러스트"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "event",
+    "title": "행사 / 공연 / 무대",
+    "cue": "콘서트, 강연, 축제, 발표 장면"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "broll",
+    "title": "배경 / B-roll 장면",
+    "cue": "중간 삽입컷, 전환컷, 텍스트 배경용 이미지"
+  }
+]

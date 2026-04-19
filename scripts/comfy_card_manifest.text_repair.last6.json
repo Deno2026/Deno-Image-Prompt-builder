@@ -1,0 +1,50 @@
+[
+  {
+    "subject": "event",
+    "step": "detail",
+    "option_key": "event-award",
+    "title": "시상식",
+    "cue": "트로피 수상 장면",
+    "prompt": "close-up of a person holding a trophy, dramatic event lighting, dark simple background, no screens, no banners, no backdrop text, no logos, no watermark, photorealistic, square frame"
+  },
+  {
+    "subject": "event",
+    "step": "detail",
+    "option_key": "event-booth",
+    "title": "전시 부스",
+    "cue": "브랜드 부스 현장",
+    "prompt": "modern expo installation with product stands and clean lights, no readable signs, no text, no logos, no watermark, photorealistic event scene, square frame"
+  },
+  {
+    "subject": "product",
+    "step": "composition",
+    "option_key": "comp-poster",
+    "title": "포스터형 메인 비주얼",
+    "cue": "강한 메인 이미지",
+    "prompt": "single hero object in a dramatic premium studio scene, large clean backdrop, no labels, no branding text, no logos, no watermark, photorealistic, square frame"
+  },
+  {
+    "subject": "product",
+    "step": "composition",
+    "option_key": "comp-symmetry",
+    "title": "정면 대칭",
+    "cue": "정돈된 인상",
+    "prompt": "perfectly symmetrical front-facing product shot, centered object, clean premium studio background, no labels, no branding text, no logos, no watermark, photorealistic, square frame"
+  },
+  {
+    "subject": "product",
+    "step": "presentation",
+    "option_key": "product-set",
+    "title": "세트 연출",
+    "cue": "구성 있는 제품 배치",
+    "prompt": "styled premium object set, tasteful props, clean arrangement, all objects unbranded, no labels, no logos, no watermark, photorealistic, square frame"
+  },
+  {
+    "subject": "product",
+    "step": "presentation",
+    "option_key": "product-splash",
+    "title": "스플래시 연출",
+    "cue": "역동적인 제품 컷",
+    "prompt": "dynamic object splash scene with water or liquid motion, central unbranded product, no labels, no text, no logos, no watermark, photorealistic, square frame"
+  }
+]

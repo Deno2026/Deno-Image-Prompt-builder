@@ -1,0 +1,23 @@
+[
+  {
+    "subject": "home",
+    "step": "main",
+    "option_key": "home-image-builder",
+    "title": "이미지 생성기",
+    "prompt": "beautiful cinematic portrait creation scene, elegant woman working with ai image ideas, premium visual mood board feeling, polished skin, soft studio glow, rich green and warm neutral tones, premium creative workflow atmosphere, no text, no letters, no typography, photorealistic, square frame"
+  },
+  {
+    "subject": "home",
+    "step": "main",
+    "option_key": "home-video-builder",
+    "title": "동영상 생성기",
+    "prompt": "cinematic video creation concept, dynamic scene planning board, motion-focused visual with camera movement feeling, dramatic light streaks and layered scene depth, premium ai video workflow atmosphere, sleek dark blue and emerald tone, no text, no letters, no typography, photorealistic, square frame"
+  },
+  {
+    "subject": "home",
+    "step": "main",
+    "option_key": "home-tts-builder",
+    "title": "TTS/가사 생성기",
+    "prompt": "premium voice and lyrics creation scene, stylish microphone, waveform-inspired light, songwriting desk mood, music creation atmosphere, subtle emotional glow, dark warm studio ambience, no text, no letters, no typography, photorealistic, square frame"
+  }
+]

@@ -74,9 +74,11 @@
     .brand-copy strong {
       display: block;
       font-size: clamp(2rem, 4vw, 3.7rem);
-      line-height: 0.94;
+      line-height: 1.05;
       letter-spacing: -0.05em;
       font-weight: 900;
+      padding-bottom: 0.12em;
+      text-wrap: balance;
     }
 
     .pill {
@@ -162,6 +164,23 @@
       margin-bottom: 24px;
       position: relative;
       overflow: hidden;
+    }
+
+    .thumb--media {
+      background: #101813;
+    }
+
+    .thumb--media::before,
+    .thumb--media::after {
+      content: none;
+    }
+
+    .thumb--media img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      object-position: center;
     }
 
     .thumb::before,
@@ -289,13 +308,21 @@
     }
 
     @media (max-width: 700px) {
+      .shell {
+        width: min(100vw - 20px, 100%);
+        min-height: 100vh;
+        padding: 12px 0 14px;
+      }
+
       .topbar {
         flex-direction: column;
-        align-items: stretch;
+        align-items: flex-start;
+        gap: 10px;
       }
 
       .brand {
         align-items: flex-start;
+        gap: 14px;
       }
 
       .brand-mark {
@@ -305,18 +332,181 @@
         font-size: 1.8rem;
       }
 
+      .brand-copy strong {
+        font-size: clamp(1.7rem, 10vw, 2.6rem);
+        line-height: 1.05;
+        padding-bottom: 0.12em;
+      }
+
+      .pill {
+        width: 100%;
+        justify-content: center;
+        min-height: 46px;
+        padding: 0 16px;
+      }
+
+      .card-grid {
+        margin: 10px 0 0;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        align-content: stretch;
+        flex: 1;
+      }
+
       .entry-card {
-        padding: 18px;
-        border-radius: 24px;
+        padding: 14px;
+        border-radius: 22px;
+        min-height: 0;
+        display: flex;
+        flex-direction: column;
       }
 
       .thumb {
-        height: 220px;
-        border-radius: 22px;
+        height: 112px;
+        border-radius: 18px;
+        margin-bottom: 14px;
+      }
+
+      .entry-title {
+        font-size: clamp(1.18rem, 4.6vw, 1.5rem);
+        margin-bottom: 8px;
       }
 
       .entry-desc {
-        min-height: auto;
+        font-size: 0.82rem;
+        line-height: 1.45;
+        min-height: 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      .entry-meta {
+        margin-top: auto;
+        min-height: 38px;
+        padding: 0 12px;
+        font-size: 0.84rem;
+      }
+    }
+
+    @media (max-width: 460px) {
+      .shell {
+        width: min(100vw - 16px, 100%);
+        min-height: 100vh;
+        padding: 10px 0 12px;
+      }
+
+      .brand {
+        width: 100%;
+      }
+
+      .brand-mark {
+        width: 52px;
+        height: 52px;
+        border-radius: 16px;
+        font-size: 1.55rem;
+      }
+
+      .brand-copy strong {
+        font-size: clamp(1.38rem, 8.5vw, 1.96rem);
+        line-height: 1.12;
+        padding-top: 0.03em;
+        padding-bottom: 0.16em;
+      }
+
+      .topbar {
+        gap: 8px;
+      }
+
+      .card-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin: 6px 0 0;
+        align-content: start;
+      }
+
+      .thumb {
+        height: 98px;
+        margin-bottom: 12px;
+      }
+
+      .thumb.image::before,
+      .thumb.video::before,
+      .thumb.tts::before {
+        left: 18px;
+        bottom: 16px;
+        width: 72px;
+        height: 72px;
+      }
+
+      .thumb.image::after,
+      .thumb.tts::after {
+        right: 18px;
+        bottom: 16px;
+        width: 54px;
+        height: 54px;
+      }
+
+      .thumb.video::after {
+        right: 20px;
+        top: 24px;
+        border-top-width: 16px;
+        border-bottom-width: 16px;
+        border-left-width: 24px;
+      }
+
+      .thumb.video::before {
+        left: 20px;
+        bottom: 16px;
+        width: 86px;
+        height: 68px;
+      }
+
+      .entry-card {
+        display: grid;
+        grid-template-columns: 112px minmax(0, 1fr);
+        grid-template-areas:
+          "thumb title"
+          "thumb desc"
+          "thumb meta";
+        align-items: start;
+        column-gap: 12px;
+        row-gap: 6px;
+        padding: 12px;
+        min-height: 0;
+      }
+
+      .entry-card .thumb {
+        grid-area: thumb;
+        margin-bottom: 0;
+      }
+
+      .entry-title {
+        grid-area: title;
+        align-self: end;
+      }
+
+      .entry-title {
+        font-size: 0.98rem;
+      }
+
+      .entry-desc {
+        grid-area: desc;
+        font-size: 0.73rem;
+        line-height: 1.38;
+        -webkit-line-clamp: 2;
+        min-height: 0;
+      }
+
+      .entry-meta {
+        grid-area: meta;
+        margin-top: 2px;
+        min-height: 34px;
+        font-size: 0.78rem;
+        width: fit-content;
+        padding: 0 14px;
       }
     }
   </style>
@@ -338,7 +528,9 @@
 
     <section class="card-grid" aria-label="Prompt builder entries">
       <a class="entry-card" href="image.html">
-        <div class="thumb image" aria-hidden="true"></div>
+        <div class="thumb thumb--media" aria-hidden="true">
+          <img src="assets/cards/home/main/home-image-builder.webp" alt="" loading="eager" decoding="async" />
+        </div>
         <div class="entry-title">이미지 생성기</div>
         <div class="entry-desc">
           원하는 사진 방향을 하나씩 고르면서 마지막에 바로 복사할 수 있는 지시문까지 정리하는 흐름입니다.
@@ -347,7 +539,9 @@
       </a>
 
       <a class="entry-card" href="video.html">
-        <div class="thumb video" aria-hidden="true"></div>
+        <div class="thumb thumb--media" aria-hidden="true">
+          <img src="assets/cards/home/main/home-video-builder.webp" alt="" loading="lazy" decoding="async" />
+        </div>
         <div class="entry-title">동영상 생성기</div>
         <div class="entry-desc">
           장면, 움직임, 카메라 흐름을 더 쉽게 정리할 수 있도록 별도 흐름으로 이어질 페이지입니다.
@@ -356,7 +550,9 @@
       </a>
 
       <a class="entry-card" href="tts.html">
-        <div class="thumb tts" aria-hidden="true"></div>
+        <div class="thumb thumb--media" aria-hidden="true">
+          <img src="assets/cards/home/main/home-tts-builder.webp" alt="" loading="lazy" decoding="async" />
+        </div>
         <div class="entry-title">TTS / 가사 생성기</div>
         <div class="entry-desc">
           TTS용 대본과 말투 가이드, Suno 등에 넣기 좋은 가사 아이디어를 쉽게 정리할 수 있도록 준비할 예정입니다.

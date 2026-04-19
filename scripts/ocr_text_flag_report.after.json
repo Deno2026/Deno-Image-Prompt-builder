@@ -1,0 +1,3030 @@
+[
+  {
+    "subject": "architecture",
+    "step": "mood",
+    "option_key": "mood-luxury",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\architecture\\mood\\mood-luxury.webp",
+    "hits": [
+      {
+        "text": "Tecare asheunint",
+        "confidence": 0.9716744273900986
+      }
+    ]
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "broll-comp-empty-wide",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\broll\\composition\\broll-comp-empty-wide.webp",
+    "hits": [
+      {
+        "text": "A.dARes,Aempelertleday",
+        "confidence": 0.9356942610307173
+      }
+    ]
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "event-comp-booth-sign",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\event\\composition\\event-comp-booth-sign.webp",
+    "hits": [
+      {
+        "text": "ViCONOTOF",
+        "confidence": 0.9431638320287069
+      },
+      {
+        "text": "RONnO",
+        "confidence": 0.88971346616745
+      },
+      {
+        "text": "ora",
+        "confidence": 0.8466575543085734
+      },
+      {
+        "text": "Jurjiruo",
+        "confidence": 0.8614321574568748
+      },
+      {
+        "text": "Vijpocfice",
+        "confidence": 0.8950594067573547
+      },
+      {
+        "text": "viji picnolio",
+        "confidence": 0.8568119658873632
+      }
+    ]
+  },
+  {
+    "subject": "event",
+    "step": "detail",
+    "option_key": "event-award",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\event\\detail\\event-award.webp",
+    "hits": [
+      {
+        "text": "MEICIN70P:",
+        "confidence": 0.9077926725149155
+      },
+      {
+        "text": "pelo",
+        "confidence": 0.7204405441880226
+      },
+      {
+        "text": "EICE DION",
+        "confidence": 0.9472160206900703
+      },
+      {
+        "text": "NOI",
+        "confidence": 0.8072320421536764
+      }
+    ]
+  },
+  {
+    "subject": "event",
+    "step": "detail",
+    "option_key": "event-booth",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\event\\detail\\event-booth.webp",
+    "hits": [
+      {
+        "text": "SENFCEDVELTING",
+        "confidence": 0.996412605047226
+      },
+      {
+        "text": "TIULILNIR",
+        "confidence": 0.9684248103035821
+      }
+    ]
+  },
+  {
+    "subject": "event",
+    "step": "detail",
+    "option_key": "event-lecture",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\event\\detail\\event-lecture.webp",
+    "hits": [
+      {
+        "text": "WORK",
+        "confidence": 0.9789636433124542
+      }
+    ]
+  },
+  {
+    "subject": "event",
+    "step": "focus",
+    "option_key": "event-focus-mix",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\event\\focus\\event-focus-mix.webp",
+    "hits": [
+      {
+        "text": "TAITONfUT",
+        "confidence": 0.9196225007375082
+      },
+      {
+        "text": "QUOIS FRISATS",
+        "confidence": 0.7943518161773682
+      }
+    ]
+  },
+  {
+    "subject": "event",
+    "step": "focus",
+    "option_key": "event-focus-stage",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\event\\focus\\event-focus-stage.webp",
+    "hits": [
+      {
+        "text": "QUMO",
+        "confidence": 0.7941702082753181
+      }
+    ]
+  },
+  {
+    "subject": "event",
+    "step": "moment",
+    "option_key": "event-moment-main",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\event\\moment\\event-moment-main.webp",
+    "hits": [
+      {
+        "text": "EGUre",
+        "confidence": 0.8768541812896729
+      },
+      {
+        "text": "Denn",
+        "confidence": 0.8345793634653091
+      }
+    ]
+  },
+  {
+    "subject": "event",
+    "step": "moment",
+    "option_key": "event-moment-presentation",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\event\\moment\\event-moment-presentation.webp",
+    "hits": [
+      {
+        "text": "ELEVBON代的青年",
+        "confidence": 0.9888007153164257
+      }
+    ]
+  },
+  {
+    "subject": "event",
+    "step": "mood",
+    "option_key": "mood-clean",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\event\\mood\\mood-clean.webp",
+    "hits": [
+      {
+        "text": "AOOA",
+        "confidence": 0.966408908367157
+      },
+      {
+        "text": "Fie Yuz of Veuels bepsing Hoirs",
+        "confidence": 0.9707614741017742
+      }
+    ]
+  },
+  {
+    "subject": "event",
+    "step": "mood",
+    "option_key": "mood-future",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\event\\mood\\mood-future.webp",
+    "hits": [
+      {
+        "text": "PHSH OFWIISENN",
+        "confidence": 0.8226555788091251
+      },
+      {
+        "text": "AASSESS CALL RONEESINES",
+        "confidence": 0.9538940865060558
+      }
+    ]
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "composition",
+    "option_key": "comp-poster",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\fashion-beauty\\composition\\comp-poster.webp",
+    "hits": [
+      {
+        "text": "速舞售！SKION",
+        "confidence": 0.8532309631506602
+      }
+    ]
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "detail",
+    "option_key": "fashion-brand",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\fashion-beauty\\detail\\fashion-brand.webp",
+    "hits": [
+      {
+        "text": "WEANGYOUR",
+        "confidence": 0.9950518608093262
+      },
+      {
+        "text": "Boky cheRel",
+        "confidence": 0.9047407453710382
+      }
+    ]
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "mood",
+    "option_key": "mood-luxury",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\fashion-beauty\\mood\\mood-luxury.webp",
+    "hits": [
+      {
+        "text": "Bervfary",
+        "confidence": 0.7377592101693153
+      }
+    ]
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "styling",
+    "option_key": "fashion-tone-luxury",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\fashion-beauty\\styling\\fashion-tone-luxury.webp",
+    "hits": [
+      {
+        "text": "Phiguiccc",
+        "confidence": 0.7944570382436117
+      },
+      {
+        "text": "PhyLecc",
+        "confidence": 0.9241417646408081
+      }
+    ]
+  },
+  {
+    "subject": "food-drink",
+    "step": "composition",
+    "option_key": "comp-poster",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\food-drink\\composition\\comp-poster.webp",
+    "hits": [
+      {
+        "text": "PREMIEUM",
+        "confidence": 0.9844793528318405
+      },
+      {
+        "text": "BremiutlyFoopYind Corpers",
+        "confidence": 0.9697087216377258
+      },
+      {
+        "text": "FO0%",
+        "confidence": 0.8378922194242477
+      }
+    ]
+  },
+  {
+    "subject": "food-drink",
+    "step": "presentation",
+    "option_key": "food-topview",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\food-drink\\presentation\\food-topview.webp",
+    "hits": [
+      {
+        "text": "premiwM",
+        "confidence": 0.882621773651668
+      },
+      {
+        "text": "一口划驿川来茶",
+        "confidence": 0.7602822227137429
+      }
+    ]
+  },
+  {
+    "subject": "portrait",
+    "step": "composition",
+    "option_key": "portrait-comp-editorial-poster",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\portrait\\composition\\portrait-comp-editorial-poster.webp",
+    "hits": [
+      {
+        "text": "'IBNNEDDAYHEFOOPKULIDE",
+        "confidence": 0.952095543796366
+      },
+      {
+        "text": "(JILAID)",
+        "confidence": 0.9336498603224754
+      },
+      {
+        "text": "COTLUTY",
+        "confidence": 0.9973652703421456
+      },
+      {
+        "text": "EPRYOOIES",
+        "confidence": 0.9946461915969849
+      },
+      {
+        "text": "TIENODOOA",
+        "confidence": 0.9933439426951938
+      },
+      {
+        "text": "EUSSBCONUCNTIGEUENOINERASUROL",
+        "confidence": 0.9705204860917453
+      }
+    ]
+  },
+  {
+    "subject": "poster",
+    "step": "detail",
+    "option_key": "poster-festival",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\poster\\detail\\poster-festival.webp",
+    "hits": [
+      {
+        "text": "TOISALINSHAD",
+        "confidence": 0.9565131564935049
+      }
+    ]
+  },
+  {
+    "subject": "poster",
+    "step": "detail",
+    "option_key": "poster-youtube",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\poster\\detail\\poster-youtube.webp",
+    "hits": [
+      {
+        "text": "昙YouTube",
+        "confidence": 0.9202795773744583
+      }
+    ]
+  },
+  {
+    "subject": "poster",
+    "step": "layout",
+    "option_key": "poster-layout-clean",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\poster\\layout\\poster-layout-clean.webp",
+    "hits": [
+      {
+        "text": "DIOR",
+        "confidence": 0.8915343135595322
+      }
+    ]
+  },
+  {
+    "subject": "poster",
+    "step": "mood",
+    "option_key": "mood-luxury",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\poster\\mood\\mood-luxury.webp",
+    "hits": [
+      {
+        "text": "YONG",
+        "confidence": 0.8245192468166351
+      }
+    ]
+  },
+  {
+    "subject": "poster",
+    "step": "mood",
+    "option_key": "mood-vintage",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\poster\\mood\\mood-vintage.webp",
+    "hits": [
+      {
+        "text": "BONIG",
+        "confidence": 0.9152837514877319
+      },
+      {
+        "text": "ROOG",
+        "confidence": 0.9157970994710922
+      }
+    ]
+  },
+  {
+    "subject": "poster",
+    "step": "motif",
+    "option_key": "poster-motif-landscape",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\poster\\motif\\poster-motif-landscape.webp",
+    "hits": [
+      {
+        "text": "EON",
+        "confidence": 0.992781400680542
+      },
+      {
+        "text": "EON",
+        "confidence": 0.9754969875017802
+      }
+    ]
+  },
+  {
+    "subject": "poster",
+    "step": "motif",
+    "option_key": "poster-motif-texture",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\poster\\motif\\poster-motif-texture.webp",
+    "hits": [
+      {
+        "text": "BNO",
+        "confidence": 0.997722327709198
+      }
+    ]
+  },
+  {
+    "subject": "product",
+    "step": "background",
+    "option_key": "product-bg-brand",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\product\\background\\product-bg-brand.webp",
+    "hits": [
+      {
+        "text": "PREMIUM",
+        "confidence": 0.994094797543117
+      }
+    ]
+  },
+  {
+    "subject": "product",
+    "step": "background",
+    "option_key": "product-bg-minimal",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\product\\background\\product-bg-minimal.webp",
+    "hits": [
+      {
+        "text": "PREMIUM",
+        "confidence": 0.9858093091419765
+      }
+    ]
+  },
+  {
+    "subject": "product",
+    "step": "background",
+    "option_key": "product-bg-natural",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\product\\background\\product-bg-natural.webp",
+    "hits": [
+      {
+        "text": "PREMIUM",
+        "confidence": 0.9914108514785767
+      }
+    ]
+  },
+  {
+    "subject": "product",
+    "step": "background",
+    "option_key": "product-bg-soft",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\product\\background\\product-bg-soft.webp",
+    "hits": [
+      {
+        "text": "Premium",
+        "confidence": 0.9751781736101423
+      }
+    ]
+  },
+  {
+    "subject": "product",
+    "step": "background",
+    "option_key": "product-bg-white",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\product\\background\\product-bg-white.webp",
+    "hits": [
+      {
+        "text": "PREMIUM",
+        "confidence": 0.9925663811819894
+      }
+    ]
+  },
+  {
+    "subject": "product",
+    "step": "composition",
+    "option_key": "comp-low",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\product\\composition\\comp-low.webp",
+    "hits": [
+      {
+        "text": "PREMIUM",
+        "confidence": 0.9614377192088536
+      }
+    ]
+  },
+  {
+    "subject": "product",
+    "step": "composition",
+    "option_key": "comp-medium",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\product\\composition\\comp-medium.webp",
+    "hits": [
+      {
+        "text": "PREMIUM",
+        "confidence": 0.9908605217933655
+      }
+    ]
+  },
+  {
+    "subject": "product",
+    "step": "composition",
+    "option_key": "comp-poster",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\product\\composition\\comp-poster.webp",
+    "hits": [
+      {
+        "text": "PREMIUM",
+        "confidence": 0.9929617132459369
+      }
+    ]
+  },
+  {
+    "subject": "product",
+    "step": "composition",
+    "option_key": "comp-pov",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\product\\composition\\comp-pov.webp",
+    "hits": [
+      {
+        "text": "TAIEIOIUN",
+        "confidence": 0.8218621181117164
+      }
+    ]
+  },
+  {
+    "subject": "product",
+    "step": "composition",
+    "option_key": "comp-symmetry",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\product\\composition\\comp-symmetry.webp",
+    "hits": [
+      {
+        "text": "Premium",
+        "confidence": 0.9924154792513166
+      }
+    ]
+  },
+  {
+    "subject": "product",
+    "step": "composition",
+    "option_key": "product-comp-angle",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\product\\composition\\product-comp-angle.webp",
+    "hits": [
+      {
+        "text": "PREIMIIUM",
+        "confidence": 0.9522085785865784
+      }
+    ]
+  },
+  {
+    "subject": "product",
+    "step": "detail",
+    "option_key": "product-beauty",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\product\\detail\\product-beauty.webp",
+    "hits": [
+      {
+        "text": "RENIIUM",
+        "confidence": 0.9280957664762225
+      },
+      {
+        "text": "Gdeutnoosooo rinher",
+        "confidence": 0.7532904179472673
+      }
+    ]
+  },
+  {
+    "subject": "product",
+    "step": "detail",
+    "option_key": "product-bottle",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\product\\detail\\product-bottle.webp",
+    "hits": [
+      {
+        "text": "Premium'",
+        "confidence": 0.9480063915252686
+      },
+      {
+        "text": "BEEL-CHIE",
+        "confidence": 0.9889778958426582
+      }
+    ]
+  },
+  {
+    "subject": "product",
+    "step": "detail",
+    "option_key": "product-box",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\product\\detail\\product-box.webp",
+    "hits": [
+      {
+        "text": "PREMIUM",
+        "confidence": 0.9892372148377555
+      }
+    ]
+  },
+  {
+    "subject": "product",
+    "step": "detail",
+    "option_key": "product-food",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\product\\detail\\product-food.webp",
+    "hits": [
+      {
+        "text": "Fnein",
+        "confidence": 0.9892275214195252
+      },
+      {
+        "text": "Broddirg",
+        "confidence": 0.967122882604599
+      }
+    ]
+  },
+  {
+    "subject": "product",
+    "step": "feature",
+    "option_key": "product-feature-gloss",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\product\\feature\\product-feature-gloss.webp",
+    "hits": [
+      {
+        "text": "PREMIUM",
+        "confidence": 0.9932505062648228
+      }
+    ]
+  },
+  {
+    "subject": "product",
+    "step": "feature",
+    "option_key": "product-feature-luxury",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\product\\feature\\product-feature-luxury.webp",
+    "hits": [
+      {
+        "text": "PREMIEM",
+        "confidence": 0.9868488907814026
+      }
+    ]
+  },
+  {
+    "subject": "product",
+    "step": "mood",
+    "option_key": "mood-calm",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\product\\mood\\mood-calm.webp",
+    "hits": [
+      {
+        "text": "Pkemium",
+        "confidence": 0.9421295438494001
+      }
+    ]
+  },
+  {
+    "subject": "product",
+    "step": "mood",
+    "option_key": "mood-clean",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\product\\mood\\mood-clean.webp",
+    "hits": [
+      {
+        "text": "PREWIUM",
+        "confidence": 0.9563225252287728
+      },
+      {
+        "text": "mon350d",
+        "confidence": 0.9601307341030666
+      }
+    ]
+  },
+  {
+    "subject": "product",
+    "step": "mood",
+    "option_key": "mood-dramatic",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\product\\mood\\mood-dramatic.webp",
+    "hits": [
+      {
+        "text": "PREMIUM",
+        "confidence": 0.9917649456432888
+      }
+    ]
+  },
+  {
+    "subject": "product",
+    "step": "mood",
+    "option_key": "mood-luxury",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\product\\mood\\mood-luxury.webp",
+    "hits": [
+      {
+        "text": "Premium",
+        "confidence": 0.9965262327875409
+      },
+      {
+        "text": "P?lDIUm",
+        "confidence": 0.8550956973007747
+      }
+    ]
+  },
+  {
+    "subject": "product",
+    "step": "mood",
+    "option_key": "mood-playful",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\product\\mood\\mood-playful.webp",
+    "hits": [
+      {
+        "text": "PEEMIUM",
+        "confidence": 0.993472158908844
+      },
+      {
+        "text": "Premiug",
+        "confidence": 0.9460839033126831
+      },
+      {
+        "text": "Ra.eo",
+        "confidence": 0.7902850270271301
+      }
+    ]
+  },
+  {
+    "subject": "product",
+    "step": "mood",
+    "option_key": "mood-warm",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\product\\mood\\mood-warm.webp",
+    "hits": [
+      {
+        "text": "Premium",
+        "confidence": 0.9634896516799927
+      }
+    ]
+  },
+  {
+    "subject": "product",
+    "step": "presentation",
+    "option_key": "product-angle",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\product\\presentation\\product-angle.webp",
+    "hits": [
+      {
+        "text": "PREMIUM",
+        "confidence": 0.9692065971238273
+      }
+    ]
+  },
+  {
+    "subject": "product",
+    "step": "presentation",
+    "option_key": "product-float",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\product\\presentation\\product-float.webp",
+    "hits": [
+      {
+        "text": "PRENWUR",
+        "confidence": 0.9617039561271667
+      },
+      {
+        "text": "Melichiouir lokiohtchsporctigh",
+        "confidence": 0.9748529235521952
+      }
+    ]
+  },
+  {
+    "subject": "product",
+    "step": "presentation",
+    "option_key": "product-set",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\product\\presentation\\product-set.webp",
+    "hits": [
+      {
+        "text": "PREMIUM'",
+        "confidence": 0.930717010051012
+      },
+      {
+        "text": "IREMIUM",
+        "confidence": 0.9811671887125287
+      },
+      {
+        "text": "PREMIUM",
+        "confidence": 0.991242596081325
+      },
+      {
+        "text": "PREmfini",
+        "confidence": 0.9429057836532593
+      },
+      {
+        "text": "PIREnDint",
+        "confidence": 0.7995289034313626
+      },
+      {
+        "text": "PREMIUN",
+        "confidence": 0.9932377593857902
+      }
+    ]
+  },
+  {
+    "subject": "product",
+    "step": "presentation",
+    "option_key": "product-single",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\product\\presentation\\product-single.webp",
+    "hits": [
+      {
+        "text": "Premium",
+        "confidence": 0.9960880109242031
+      },
+      {
+        "text": "Frembss",
+        "confidence": 0.9958886419023786
+      }
+    ]
+  },
+  {
+    "subject": "product",
+    "step": "presentation",
+    "option_key": "product-splash",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\product\\presentation\\product-splash.webp",
+    "hits": [
+      {
+        "text": "PREMIUM",
+        "confidence": 0.9915851439748492
+      }
+    ]
+  },
+  {
+    "subject": "profile-id",
+    "step": "background",
+    "option_key": "profile-bg-color",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\profile-id\\background\\profile-bg-color.webp",
+    "hits": [
+      {
+        "text": "HIC",
+        "confidence": 0.979523758093516
+      },
+      {
+        "text": "BOAISUKT",
+        "confidence": 0.9639711230993271
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "composition",
+    "option_key": "poster-bottom-space",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\composition\\poster-bottom-space.webp",
+    "hits": [
+      {
+        "text": "13:49",
+        "confidence": 0.9630486726760864
+      },
+      {
+        "text": "Cllen",
+        "confidence": 0.866973054409027
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "composition",
+    "option_key": "poster-center",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\composition\\poster-center.webp",
+    "hits": [
+      {
+        "text": "Cllean",
+        "confidence": 0.8490816652774811
+      },
+      {
+        "text": "Bucher&",
+        "confidence": 0.9894734535898481
+      },
+      {
+        "text": "SERVICE",
+        "confidence": 0.9916938543319702
+      },
+      {
+        "text": "strvice",
+        "confidence": 0.9322101644107273
+      },
+      {
+        "text": "Conbtion",
+        "confidence": 0.9847249016165733
+      },
+      {
+        "text": "CEA",
+        "confidence": 0.7717767357826233
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "composition",
+    "option_key": "poster-collage",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\composition\\poster-collage.webp",
+    "hits": [
+      {
+        "text": "1004",
+        "confidence": 0.8519143462181091
+      },
+      {
+        "text": "Donanmgglite service",
+        "confidence": 0.9808761656284333
+      },
+      {
+        "text": "Foean tto serwvice",
+        "confidence": 0.9331693036688699
+      },
+      {
+        "text": "Dilcan ito-servion",
+        "confidence": 0.9453675581349267
+      },
+      {
+        "text": "099",
+        "confidence": 0.7902483940124512
+      },
+      {
+        "text": "F)fH Pae",
+        "confidence": 0.7425472438335419
+      },
+      {
+        "text": "Donan tto service",
+        "confidence": 0.965052604675293
+      },
+      {
+        "text": "Doman mggito sevice",
+        "confidence": 0.9463185981700295
+      },
+      {
+        "text": "Beclaler me",
+        "confidence": 0.8191600739955902
+      },
+      {
+        "text": "Doand to vice",
+        "confidence": 0.9464228336627667
+      },
+      {
+        "text": "Aesen",
+        "confidence": 0.873452240228653
+      },
+      {
+        "text": "$19",
+        "confidence": 0.9570727944374084
+      },
+      {
+        "text": "Denan fite sevice",
+        "confidence": 0.9845949832130881
+      },
+      {
+        "text": "Dlenan ite srovion",
+        "confidence": 0.9920752180947198
+      },
+      {
+        "text": "fago to fevice",
+        "confidence": 0.7896399029663631
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "composition",
+    "option_key": "poster-diagonal",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\composition\\poster-diagonal.webp",
+    "hits": [
+      {
+        "text": "RadPane",
+        "confidence": 0.8354929685592651
+      },
+      {
+        "text": "18:00",
+        "confidence": 0.9521127223968506
+      },
+      {
+        "text": "Clerrondices",
+        "confidence": 0.9281206528345743
+      },
+      {
+        "text": "PONO",
+        "confidence": 0.9312175512313843
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "composition",
+    "option_key": "poster-left-space",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\composition\\poster-left-space.webp",
+    "hits": [
+      {
+        "text": "9:11",
+        "confidence": 0.8667340278625488
+      },
+      {
+        "text": "CleaiSeriveQ",
+        "confidence": 0.9493402242660522
+      },
+      {
+        "text": "Ceron vele",
+        "confidence": 0.9470173716545105
+      },
+      {
+        "text": "Cleics sovel",
+        "confidence": 0.9350140194098154
+      },
+      {
+        "text": "Clanto chep",
+        "confidence": 0.9469489292664961
+      },
+      {
+        "text": "dur!",
+        "confidence": 0.9895778149366379
+      },
+      {
+        "text": "Glecesooeld",
+        "confidence": 0.9946755495938387
+      },
+      {
+        "text": "Cleephcoodi",
+        "confidence": 0.9807559035041116
+      },
+      {
+        "text": "culld.",
+        "confidence": 0.943038135766983
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "composition",
+    "option_key": "poster-minimal",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\composition\\poster-minimal.webp",
+    "hits": [
+      {
+        "text": "plearicanty 2025",
+        "confidence": 0.9863658733665943
+      },
+      {
+        "text": "Clean",
+        "confidence": 0.9294000864028931
+      },
+      {
+        "text": "Clean",
+        "confidence": 0.9608139753341675
+      },
+      {
+        "text": "Clean",
+        "confidence": 0.9980669975280761
+      },
+      {
+        "text": "ClnaNow",
+        "confidence": 0.887497067451477
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "composition",
+    "option_key": "poster-right-space",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\composition\\poster-right-space.webp",
+    "hits": [
+      {
+        "text": "CEMVLEN",
+        "confidence": 0.8578131028584072
+      },
+      {
+        "text": "Cinkireet",
+        "confidence": 0.9825140105353461
+      },
+      {
+        "text": "Sendec..",
+        "confidence": 0.9821220561861992
+      },
+      {
+        "text": "eoonsevticaop",
+        "confidence": 0.9926247596740723
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "composition",
+    "option_key": "poster-top-space",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\composition\\poster-top-space.webp",
+    "hits": [
+      {
+        "text": "Clean",
+        "confidence": 0.9752913594245911
+      },
+      {
+        "text": "it st'y,",
+        "confidence": 0.792936272919178
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "composition",
+    "option_key": "service-comp-ui-dashboard",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\composition\\service-comp-ui-dashboard.webp",
+    "hits": [
+      {
+        "text": "mobon",
+        "confidence": 0.9955981016159058
+      },
+      {
+        "text": "Pellulical Service",
+        "confidence": 0.8787734624412324
+      },
+      {
+        "text": "FAMUS DAPOPAWORX",
+        "confidence": 0.8995077051222324
+      },
+      {
+        "text": "HADENNWIN",
+        "confidence": 0.7759505179193285
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "detail",
+    "option_key": "service-ai",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\detail\\service-ai.webp",
+    "hits": [
+      {
+        "text": "18:41",
+        "confidence": 0.9119906306266785
+      },
+      {
+        "text": "SERVICE",
+        "confidence": 0.9972967846052987
+      },
+      {
+        "text": "Buryory",
+        "confidence": 0.9165919508252826
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "detail",
+    "option_key": "service-app",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\detail\\service-app.webp",
+    "hits": [
+      {
+        "text": "Clean",
+        "confidence": 0.9933974146842957
+      },
+      {
+        "text": "service",
+        "confidence": 0.9983392953872681
+      },
+      {
+        "text": "seraen",
+        "confidence": 0.9961419006188711
+      },
+      {
+        "text": "servic",
+        "confidence": 0.9450604418913523
+      },
+      {
+        "text": "Osce Doy",
+        "confidence": 0.8573082834482193
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "detail",
+    "option_key": "service-commerce",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\detail\\service-commerce.webp",
+    "hits": [
+      {
+        "text": "11:30",
+        "confidence": 0.9687025666236877
+      },
+      {
+        "text": "CIEANH",
+        "confidence": 0.8891146530707678
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "detail",
+    "option_key": "service-education",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\detail\\service-education.webp",
+    "hits": [
+      {
+        "text": "28:44",
+        "confidence": 0.8755509376525878
+      },
+      {
+        "text": "Outt olsk 21precunlsoly",
+        "confidence": 0.8864557574624601
+      },
+      {
+        "text": "号Miice",
+        "confidence": 0.8855819801489512
+      },
+      {
+        "text": "3110",
+        "confidence": 0.9973457008600235
+      },
+      {
+        "text": "Clean servic",
+        "confidence": 0.9182375570138296
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "detail",
+    "option_key": "service-finance",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\detail\\service-finance.webp",
+    "hits": [
+      {
+        "text": "5:41",
+        "confidence": 0.9644432961940765
+      },
+      {
+        "text": "dean dowt",
+        "confidence": 0.9443972375657823
+      },
+      {
+        "text": "/品号",
+        "confidence": 0.9026801188786825
+      },
+      {
+        "text": "My-alermordoor",
+        "confidence": 0.9961683239255633
+      },
+      {
+        "text": "OFeRCloto",
+        "confidence": 0.9754552377594842
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "detail",
+    "option_key": "service-health",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\detail\\service-health.webp",
+    "hits": [
+      {
+        "text": "1:30",
+        "confidence": 0.9539276510477066
+      },
+      {
+        "text": "Clean",
+        "confidence": 0.9804799318313598
+      },
+      {
+        "text": "Service",
+        "confidence": 0.9928085122789655
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "detail",
+    "option_key": "service-marketing",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\detail\\service-marketing.webp",
+    "hits": [
+      {
+        "text": "州OOH",
+        "confidence": 0.7350398302078247
+      },
+      {
+        "text": "10H",
+        "confidence": 0.7342200875282288
+      },
+      {
+        "text": "her vente srmloner actineiTion.",
+        "confidence": 0.8633415179867898
+      },
+      {
+        "text": "Oerlnhemiclnnricom sonions.",
+        "confidence": 0.7802934712833829
+      },
+      {
+        "text": "Thlre1heacoom",
+        "confidence": 0.8781659969916711
+      },
+      {
+        "text": "clesepneesnc prdtpertc= lbricoc",
+        "confidence": 0.7396470745725017
+      },
+      {
+        "text": "thieus wuler,",
+        "confidence": 0.7697979693229382
+      },
+      {
+        "text": "TEOA",
+        "confidence": 0.8137542754411697
+      },
+      {
+        "text": "Conp",
+        "confidence": 0.9785924851894379
+      },
+      {
+        "text": "Conp",
+        "confidence": 0.9820960015058517
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "detail",
+    "option_key": "service-saas",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\detail\\service-saas.webp",
+    "hits": [
+      {
+        "text": "Secvvico",
+        "confidence": 0.9177756309509277
+      },
+      {
+        "text": "CleeSChontOrsing",
+        "confidence": 0.9894050620496273
+      },
+      {
+        "text": "CllearService",
+        "confidence": 0.993698395215548
+      },
+      {
+        "text": "Youtr mate Serting",
+        "confidence": 0.8519061870045133
+      },
+      {
+        "text": "Duast Derist",
+        "confidence": 0.9027016460895538
+      },
+      {
+        "text": "Cuvmonen",
+        "confidence": 0.788052637130022
+      },
+      {
+        "text": "Youn hesed Serving",
+        "confidence": 0.9278890622986687
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "detail",
+    "option_key": "service-support",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\detail\\service-support.webp",
+    "hits": [
+      {
+        "text": "1:31",
+        "confidence": 0.9829486608505249
+      },
+      {
+        "text": "in JcatornSererfioos",
+        "confidence": 0.9684254944324493
+      },
+      {
+        "text": "Dloins",
+        "confidence": 0.7292032390832901
+      },
+      {
+        "text": "a0ed",
+        "confidence": 0.7228538542985916
+      },
+      {
+        "text": "Beans",
+        "confidence": 0.9183404922485352
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "detail",
+    "option_key": "service-web",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\detail\\service-web.webp",
+    "hits": [
+      {
+        "text": "COPJO+",
+        "confidence": 0.8604645431041718
+      },
+      {
+        "text": "Cleenfor srrvice the",
+        "confidence": 0.9478481531143188
+      },
+      {
+        "text": "Eeon tyfornoFver geotde",
+        "confidence": 0.8012272378672725
+      },
+      {
+        "text": "Concojo",
+        "confidence": 0.9542043464524406
+      },
+      {
+        "text": "BRUBIN149",
+        "confidence": 0.9962904122140672
+      },
+      {
+        "text": "DEFICERTIONS",
+        "confidence": 0.9953696330388387
+      },
+      {
+        "text": "RECATION",
+        "confidence": 0.9477274939417839
+      },
+      {
+        "text": "ENHSI,",
+        "confidence": 0.9679629107316335
+      },
+      {
+        "text": "Coeodoybiele",
+        "confidence": 0.8744490891695023
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "mood",
+    "option_key": "trust-bold",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\mood\\trust-bold.webp",
+    "hits": [
+      {
+        "text": "Clean",
+        "confidence": 0.9750227570533753
+      },
+      {
+        "text": "Sevice",
+        "confidence": 0.9986597895622253
+      },
+      {
+        "text": "Hoernow",
+        "confidence": 0.9746323568480355
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "mood",
+    "option_key": "trust-calm",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\mood\\trust-calm.webp",
+    "hits": [
+      {
+        "text": "Eloora",
+        "confidence": 0.9930137097835541
+      },
+      {
+        "text": "lorra",
+        "confidence": 0.9813697695732116
+      },
+      {
+        "text": "Divenden",
+        "confidence": 0.9973887801170349
+      },
+      {
+        "text": "CLEAN SERVICE",
+        "confidence": 0.9666400781044593
+      },
+      {
+        "text": "Opdlyfos",
+        "confidence": 0.8782230839133263
+      },
+      {
+        "text": "CLEANEMOO",
+        "confidence": 0.9621627993053861
+      },
+      {
+        "text": "Vasedritore",
+        "confidence": 0.9841349070722406
+      },
+      {
+        "text": "Aen yate pall",
+        "confidence": 0.9251656394738418
+      },
+      {
+        "text": "asclouto seuchies",
+        "confidence": 0.9942603742375093
+      },
+      {
+        "text": "cocerunton",
+        "confidence": 0.9972841024398804
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "mood",
+    "option_key": "trust-clear",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\mood\\trust-clear.webp",
+    "hits": [
+      {
+        "text": "Berisoo",
+        "confidence": 0.9978090269224984
+      },
+      {
+        "text": "Breremistion",
+        "confidence": 0.9714129865169525
+      },
+      {
+        "text": "Escicoindie",
+        "confidence": 0.9029930261048403
+      },
+      {
+        "text": "Ocloment",
+        "confidence": 0.966997392475605
+      },
+      {
+        "text": "Olcine",
+        "confidence": 0.8791512747605642
+      },
+      {
+        "text": "Erenting",
+        "confidence": 0.9892826974391937
+      },
+      {
+        "text": "Coute",
+        "confidence": 0.9895649075508117
+      },
+      {
+        "text": "ColinGcoante",
+        "confidence": 0.9709989925225576
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "mood",
+    "option_key": "trust-friendly",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\mood\\trust-friendly.webp",
+    "hits": [
+      {
+        "text": "cle",
+        "confidence": 0.9484758973121643
+      },
+      {
+        "text": "Veohtion",
+        "confidence": 0.995711050927639
+      },
+      {
+        "text": "Servicet",
+        "confidence": 0.994009792804718
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "mood",
+    "option_key": "trust-human",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\mood\\trust-human.webp",
+    "hits": [
+      {
+        "text": "cleAn",
+        "confidence": 0.8654122471809387
+      },
+      {
+        "text": "Coape",
+        "confidence": 0.9019756078720093
+      },
+      {
+        "text": "Elrepetiie",
+        "confidence": 0.8793673187494278
+      },
+      {
+        "text": "sRa2",
+        "confidence": 0.8277293294668198
+      },
+      {
+        "text": "eleaan serive",
+        "confidence": 0.9461684777186468
+      },
+      {
+        "text": "Coeto",
+        "confidence": 0.7328666687011719
+      },
+      {
+        "text": "Clean sonel",
+        "confidence": 0.9405849196694114
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "mood",
+    "option_key": "trust-premium",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\mood\\trust-premium.webp",
+    "hits": [
+      {
+        "text": "18:49",
+        "confidence": 0.8687301099300384
+      },
+      {
+        "text": "19:05",
+        "confidence": 0.9850732922554016
+      },
+      {
+        "text": "ConotteGreapmion",
+        "confidence": 0.9806129857897758
+      },
+      {
+        "text": "ComoterAccliones",
+        "confidence": 0.996623907238245
+      },
+      {
+        "text": "CleslienDoneTings",
+        "confidence": 0.9911917097428266
+      },
+      {
+        "text": "Thueheririme ceharmoagher and",
+        "confidence": 0.8742398825185053
+      },
+      {
+        "text": "com.ntieyEiwer ceso/cores.",
+        "confidence": 0.9343674985262064
+      },
+      {
+        "text": "Capnether(Doedncen",
+        "confidence": 0.9740889668464661
+      },
+      {
+        "text": "ClealinTings",
+        "confidence": 0.9892803281545639
+      },
+      {
+        "text": "Proes",
+        "confidence": 0.9192314386367798
+      },
+      {
+        "text": "NEA",
+        "confidence": 0.989143172899882
+      },
+      {
+        "text": "DFI",
+        "confidence": 0.8737400968869528
+      },
+      {
+        "text": "OSE",
+        "confidence": 0.9528107444445292
+      },
+      {
+        "text": "136",
+        "confidence": 0.850302259127299
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "mood",
+    "option_key": "trust-smart",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\mood\\trust-smart.webp",
+    "hits": [
+      {
+        "text": "1:00",
+        "confidence": 0.9784586727619171
+      },
+      {
+        "text": "Clean&",
+        "confidence": 0.9780383507410685
+      },
+      {
+        "text": "Servercup",
+        "confidence": 0.9949077102873061
+      },
+      {
+        "text": "Lumen ise",
+        "confidence": 0.978328267733256
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "mood",
+    "option_key": "trust-soft",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\mood\\trust-soft.webp",
+    "hits": [
+      {
+        "text": "1:41",
+        "confidence": 0.9548326283693314
+      },
+      {
+        "text": "10/0",
+        "confidence": 0.9959815591573715
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "tone",
+    "option_key": "service-tone-bold",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\tone\\service-tone-bold.webp",
+    "hits": [
+      {
+        "text": "WEERDOM",
+        "confidence": 0.9950789724077497
+      },
+      {
+        "text": "OLUARRVIOUK",
+        "confidence": 0.9912552345882762
+      },
+      {
+        "text": "CleanSerice",
+        "confidence": 0.9931580478494818
+      },
+      {
+        "text": "IPonioutlemlerdeFechaugle",
+        "confidence": 0.9886741042137146
+      },
+      {
+        "text": "fordolttertics",
+        "confidence": 0.9945758666310992
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "tone",
+    "option_key": "service-tone-friendly",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\tone\\service-tone-friendly.webp",
+    "hits": [
+      {
+        "text": "12:14",
+        "confidence": 0.9889631748199463
+      },
+      {
+        "text": "1410",
+        "confidence": 0.7294398099184036
+      },
+      {
+        "text": "Cleanservics",
+        "confidence": 0.9917160173257192
+      },
+      {
+        "text": "Your thengoibeo",
+        "confidence": 0.8152160992225012
+      },
+      {
+        "text": "Ppsatircin sare-coa eurrortlwity",
+        "confidence": 0.8657145574688911
+      },
+      {
+        "text": "do wile Hlie poroleseetation bede,",
+        "confidence": 0.9304626066895092
+      },
+      {
+        "text": "all th.",
+        "confidence": 0.8720157827649798
+      },
+      {
+        "text": "Autadior by inellceing",
+        "confidence": 0.9540324427864768
+      },
+      {
+        "text": "Whao tom your limee aufocing",
+        "confidence": 0.8920761389391763
+      },
+      {
+        "text": "cloltiny e erting.",
+        "confidence": 0.8220729695426093
+      },
+      {
+        "text": "Stieire Mlaes",
+        "confidence": 0.9584889778724084
+      },
+      {
+        "text": "Rocring creethot dliaic, nowe",
+        "confidence": 0.8294354194197161
+      },
+      {
+        "text": "sedleer.",
+        "confidence": 0.9103114828467369
+      },
+      {
+        "text": "Scentoltin Konme",
+        "confidence": 0.9164899177849293
+      },
+      {
+        "text": "Apcallamou com nnvlye ton hriting",
+        "confidence": 0.9495449644146543
+      },
+      {
+        "text": "agpthcl chewloole.",
+        "confidence": 0.8556191209289763
+      },
+      {
+        "text": "Desltington",
+        "confidence": 0.767220291224393
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "tone",
+    "option_key": "service-tone-future",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\tone\\service-tone-future.webp",
+    "hits": [
+      {
+        "text": "2:401",
+        "confidence": 0.9231533765792846
+      },
+      {
+        "text": "clean",
+        "confidence": 0.9867922067642212
+      },
+      {
+        "text": "service",
+        "confidence": 0.9881841370037624
+      },
+      {
+        "text": "clean srrice",
+        "confidence": 0.9261107444763184
+      },
+      {
+        "text": "deats sarfoocstheleass soord the cef",
+        "confidence": 0.9276953488588333
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "tone",
+    "option_key": "service-tone-human",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\tone\\service-tone-human.webp",
+    "hits": [
+      {
+        "text": "PERCE",
+        "confidence": 0.9361273050308228
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "tone",
+    "option_key": "service-tone-premium",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\tone\\service-tone-premium.webp",
+    "hits": [
+      {
+        "text": "1:40",
+        "confidence": 0.9612151682376862
+      },
+      {
+        "text": "Clean",
+        "confidence": 0.9236765384674073
+      },
+      {
+        "text": "Service",
+        "confidence": 0.9864240969930377
+      },
+      {
+        "text": "Chorn",
+        "confidence": 0.9751132726669312
+      },
+      {
+        "text": "Dhon",
+        "confidence": 0.9906715452671051
+      },
+      {
+        "text": "Pututrrowillare",
+        "confidence": 0.9960058410962422
+      },
+      {
+        "text": "the the the me attresaslo morss",
+        "confidence": 0.8821376956278278
+      },
+      {
+        "text": "ancortovciann nucpanniani",
+        "confidence": 0.9587741613388061
+      },
+      {
+        "text": "Infialalielinguit",
+        "confidence": 0.9833225362441119
+      },
+      {
+        "text": "woto.on",
+        "confidence": 0.7753404698201588
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "tone",
+    "option_key": "service-tone-soft",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\tone\\service-tone-soft.webp",
+    "hits": [
+      {
+        "text": "8:50",
+        "confidence": 0.9447126239538193
+      },
+      {
+        "text": "CleanElokService",
+        "confidence": 0.9835905507206917
+      },
+      {
+        "text": "Nee triver Sovicy",
+        "confidence": 0.8861466751379126
+      },
+      {
+        "text": "Serorde",
+        "confidence": 0.9473678895405361
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "tone",
+    "option_key": "service-tone-trust",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\tone\\service-tone-trust.webp",
+    "hits": [
+      {
+        "text": "19:24",
+        "confidence": 0.9595853686332703
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "usage",
+    "option_key": "service-usage-appstore",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\usage\\service-usage-appstore.webp",
+    "hits": [
+      {
+        "text": "1:55",
+        "confidence": 0.9466199725866318
+      },
+      {
+        "text": "Clean",
+        "confidence": 0.9840242385864257
+      },
+      {
+        "text": "Serrvices",
+        "confidence": 0.9977338512738546
+      },
+      {
+        "text": "Cacer and",
+        "confidence": 0.995370070139567
+      },
+      {
+        "text": "Norned",
+        "confidence": 0.9777190486590067
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "usage",
+    "option_key": "service-usage-banner",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\usage\\service-usage-banner.webp",
+    "hits": [
+      {
+        "text": "Plieressernte chion",
+        "confidence": 0.9775569909497311
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "usage",
+    "option_key": "service-usage-dashboard",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\usage\\service-usage-dashboard.webp",
+    "hits": [
+      {
+        "text": "Salo Ewing",
+        "confidence": 0.8794693350791931
+      },
+      {
+        "text": "CleanS",
+        "confidence": 0.9720648527145386
+      },
+      {
+        "text": "Vene dire",
+        "confidence": 0.7360818386077881
+      },
+      {
+        "text": "SaAS",
+        "confidence": 0.887964591383934
+      },
+      {
+        "text": "peostnes",
+        "confidence": 0.8829042166471481
+      },
+      {
+        "text": "Wears",
+        "confidence": 0.9858998537063599
+      },
+      {
+        "text": "29011.58",
+        "confidence": 0.8621602207422256
+      },
+      {
+        "text": "Eendy",
+        "confidence": 0.818442291021347
+      },
+      {
+        "text": "Reniow",
+        "confidence": 0.9825493693351746
+      },
+      {
+        "text": "58.00",
+        "confidence": 0.9853050827980041
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "usage",
+    "option_key": "service-usage-doc",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\usage\\service-usage-doc.webp",
+    "hits": [
+      {
+        "text": "1:41",
+        "confidence": 0.9629900455474854
+      },
+      {
+        "text": "cleentarge Clen",
+        "confidence": 0.788857614994049
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "usage",
+    "option_key": "service-usage-feature",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\usage\\service-usage-feature.webp",
+    "hits": [
+      {
+        "text": "LicinSerice(Sly)",
+        "confidence": 0.9656708352267742
+      },
+      {
+        "text": "Hood sernicle.s)",
+        "confidence": 0.9475096128880978
+      },
+      {
+        "text": "Enderro",
+        "confidence": 0.9800401670592171
+      },
+      {
+        "text": "bboest(",
+        "confidence": 0.7620644867420197
+      },
+      {
+        "text": "Gepball rampticcids)",
+        "confidence": 0.9746139973402024
+      },
+      {
+        "text": "Tiacer",
+        "confidence": 0.9911506275335947
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "usage",
+    "option_key": "service-usage-hero",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\usage\\service-usage-hero.webp",
+    "hits": [
+      {
+        "text": "CIEAN",
+        "confidence": 0.9109027028083801
+      },
+      {
+        "text": "Clean",
+        "confidence": 0.9976897239685059
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "usage",
+    "option_key": "service-usage-social",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\usage\\service-usage-social.webp",
+    "hits": [
+      {
+        "text": "clean erdcluce",
+        "confidence": 0.957112831728799
+      },
+      {
+        "text": "sriees",
+        "confidence": 0.965721865495046
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "usage",
+    "option_key": "service-usage-support",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\usage\\service-usage-support.webp",
+    "hits": [
+      {
+        "text": "Clean",
+        "confidence": 0.9777431130409241
+      },
+      {
+        "text": "Threm or Selyice",
+        "confidence": 0.9287402294576168
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "visual",
+    "option_key": "service-visual-banner",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\visual\\service-visual-banner.webp",
+    "hits": [
+      {
+        "text": "cean",
+        "confidence": 0.9501365721225739
+      },
+      {
+        "text": "Chean Spenic",
+        "confidence": 0.9509457250436147
+      },
+      {
+        "text": "Clean Stern",
+        "confidence": 0.9262534596703269
+      },
+      {
+        "text": "Spelon",
+        "confidence": 0.9012274841467539
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "visual",
+    "option_key": "service-visual-dashboard",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\visual\\service-visual-dashboard.webp",
+    "hits": [
+      {
+        "text": "Rucolko",
+        "confidence": 0.7734166213444301
+      },
+      {
+        "text": "EvendionCleanbliees",
+        "confidence": 0.9949453284865931
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "visual",
+    "option_key": "service-visual-device",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\visual\\service-visual-device.webp",
+    "hits": [
+      {
+        "text": "Clean",
+        "confidence": 0.9629924535751343
+      },
+      {
+        "text": "Service",
+        "confidence": 0.996692282812936
+      },
+      {
+        "text": "Aparcince",
+        "confidence": 0.992375738090939
+      },
+      {
+        "text": "Sod.od",
+        "confidence": 0.8844322065512339
+      },
+      {
+        "text": "Socfi",
+        "confidence": 0.7671404600143432
+      },
+      {
+        "text": "Aokence Masuams",
+        "confidence": 0.972827923297882
+      },
+      {
+        "text": "canneces wepe rechouperels",
+        "confidence": 0.8758543729782104
+      },
+      {
+        "text": "Crontces te @e censentive rvagonice",
+        "confidence": 0.8773068334375109
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "visual",
+    "option_key": "service-visual-hand",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\visual\\service-visual-hand.webp",
+    "hits": [
+      {
+        "text": "0.11",
+        "confidence": 0.9450126737356186
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "visual",
+    "option_key": "service-visual-person-device",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\visual\\service-visual-person-device.webp",
+    "hits": [
+      {
+        "text": "CLEANSEAT,",
+        "confidence": 0.9788977026939392
+      },
+      {
+        "text": "OFBRINUCE",
+        "confidence": 0.9938100576400757
+      },
+      {
+        "text": "Plyen of fee:",
+        "confidence": 0.724701620065249
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "visual",
+    "option_key": "service-visual-symbolic",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\visual\\service-visual-symbolic.webp",
+    "hits": [
+      {
+        "text": "relsido oe Jetan",
+        "confidence": 0.9634608179330826
+      },
+      {
+        "text": "￥:30",
+        "confidence": 0.8390918374061584
+      },
+      {
+        "text": "CLEAN.",
+        "confidence": 0.9848543405532837
+      },
+      {
+        "text": "SERVICE",
+        "confidence": 0.9952578118869236
+      },
+      {
+        "text": "Frotfond Tuse",
+        "confidence": 0.8112881894295032
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "visual",
+    "option_key": "service-visual-team",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\visual\\service-visual-team.webp",
+    "hits": [
+      {
+        "text": "PBUIVE",
+        "confidence": 0.9315935969352722
+      },
+      {
+        "text": "REVILC.",
+        "confidence": 0.8709492257663182
+      },
+      {
+        "text": "Clean",
+        "confidence": 0.996783721446991
+      }
+    ]
+  },
+  {
+    "subject": "service",
+    "step": "visual",
+    "option_key": "service-visual-ui",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\visual\\service-visual-ui.webp",
+    "hits": [
+      {
+        "text": "0.24",
+        "confidence": 0.9560949206352234
+      },
+      {
+        "text": "Servi",
+        "confidence": 0.7872526705265045
+      },
+      {
+        "text": "<Poivcoss",
+        "confidence": 0.8659413655598959
+      },
+      {
+        "text": "Clean",
+        "confidence": 0.991039514541626
+      },
+      {
+        "text": "Service",
+        "confidence": 0.9965114508356366
+      }
+    ]
+  },
+  {
+    "subject": "space",
+    "step": "mood",
+    "option_key": "mood-luxury",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\space\\mood\\mood-luxury.webp",
+    "hits": [
+      {
+        "text": "PREMIDEM",
+        "confidence": 0.9745531007647514
+      }
+    ]
+  },
+  {
+    "subject": "space",
+    "step": "style",
+    "option_key": "space-style-editorial",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\space\\style\\space-style-editorial.webp",
+    "hits": [
+      {
+        "text": "fueHiem",
+        "confidence": 0.9214251126561847
+      }
+    ]
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "animal",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\subjects\\subject\\animal.webp",
+    "hits": [
+      {
+        "text": "PromptBuiller",
+        "confidence": 0.9980131020912757
+      },
+      {
+        "text": "Prompt Buille",
+        "confidence": 0.9466054622943585
+      }
+    ]
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "broll",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\subjects\\subject\\broll.webp",
+    "hits": [
+      {
+        "text": "Promptuilan",
+        "confidence": 0.9993867603215304
+      },
+      {
+        "text": "Proomp biller",
+        "confidence": 0.9969542668415949
+      }
+    ]
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "fantasy",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\subjects\\subject\\fantasy.webp",
+    "hits": [
+      {
+        "text": "Prompt Builer",
+        "confidence": 0.9624849603726313
+      }
+    ]
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "fashion-beauty",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\subjects\\subject\\fashion-beauty.webp",
+    "hits": [
+      {
+        "text": "RONJINEUCTA",
+        "confidence": 0.9945200898430564
+      },
+      {
+        "text": "POMPT BUILLE",
+        "confidence": 0.9607859005530676
+      }
+    ]
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "food-drink",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\subjects\\subject\\food-drink.webp",
+    "hits": [
+      {
+        "text": "046",
+        "confidence": 0.9801076849301656
+      },
+      {
+        "text": "PromypLiller",
+        "confidence": 0.9862052400906881
+      }
+    ]
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "group-family",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\subjects\\subject\\group-family.webp",
+    "hits": [
+      {
+        "text": "老师楠",
+        "confidence": 0.7943248947461446
+      },
+      {
+        "text": "Prompt biiolit",
+        "confidence": 0.9517039316041129
+      },
+      {
+        "text": "插油间行会容票-Bea.Boly",
+        "confidence": 0.9810027591884136
+      }
+    ]
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "illustration",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\subjects\\subject\\illustration.webp",
+    "hits": [
+      {
+        "text": "PROMPIT",
+        "confidence": 0.9478754486356463
+      }
+    ]
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "landscape",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\subjects\\subject\\landscape.webp",
+    "hits": [
+      {
+        "text": "Poor noent Billen",
+        "confidence": 0.9388249796979568
+      }
+    ]
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "portrait",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\subjects\\subject\\portrait.webp",
+    "hits": [
+      {
+        "text": "Prescheff",
+        "confidence": 0.9537809954749213
+      },
+      {
+        "text": "Prompt Builler",
+        "confidence": 0.9594320697443826
+      }
+    ]
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "poster",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\subjects\\subject\\poster.webp",
+    "hits": [
+      {
+        "text": "PRENIONM",
+        "confidence": 0.9504241347312927
+      },
+      {
+        "text": "Nev",
+        "confidence": 0.9782794316609701
+      },
+      {
+        "text": "Buliupt",
+        "confidence": 0.9168480081217629
+      },
+      {
+        "text": "Premum",
+        "confidence": 0.993521253267924
+      }
+    ]
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "product",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\subjects\\subject\\product.webp",
+    "hits": [
+      {
+        "text": "Prompt Builler",
+        "confidence": 0.974366477557591
+      }
+    ]
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "selfie-sns",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\subjects\\subject\\selfie-sns.webp",
+    "hits": [
+      {
+        "text": "Prompt Bilter",
+        "confidence": 0.9727109349690951
+      },
+      {
+        "text": "Prompt | 11-2023",
+        "confidence": 0.9329676441848278
+      }
+    ]
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "service",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\subjects\\subject\\service.webp",
+    "hits": [
+      {
+        "text": "1:01",
+        "confidence": 0.9684891104698181
+      },
+      {
+        "text": "PROMptBuller",
+        "confidence": 0.9076627443234125
+      },
+      {
+        "text": "All-Rove",
+        "confidence": 0.9091193117201328
+      }
+    ]
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "thumbnail-person",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\subjects\\subject\\thumbnail-person.webp",
+    "hits": [
+      {
+        "text": "Pkompt BulleR",
+        "confidence": 0.8520875848256625
+      }
+    ]
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "travel",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\subjects\\subject\\travel.webp",
+    "hits": [
+      {
+        "text": "Promp/ecther",
+        "confidence": 0.9946688910325369
+      }
+    ]
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "vehicle",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\subjects\\subject\\vehicle.webp",
+    "hits": [
+      {
+        "text": "TrennT",
+        "confidence": 0.8886931935946146
+      },
+      {
+        "text": "Mon",
+        "confidence": 0.9940508802731832
+      },
+      {
+        "text": "Promipct",
+        "confidence": 0.9990384429693222
+      },
+      {
+        "text": "Promnt",
+        "confidence": 0.9117640803257624
+      },
+      {
+        "text": "Buildel",
+        "confidence": 0.940304526260921
+      }
+    ]
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "workspace",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\subjects\\subject\\workspace.webp",
+    "hits": [
+      {
+        "text": "PROMPTBLIDE",
+        "confidence": 0.9937882694331083
+      }
+    ]
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "composition",
+    "option_key": "poster-collage",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\thumbnail-person\\composition\\poster-collage.webp",
+    "hits": [
+      {
+        "text": "Neavodbe",
+        "confidence": 0.998192086815834
+      },
+      {
+        "text": "YourTbe",
+        "confidence": 0.9882731182234628
+      }
+    ]
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "composition",
+    "option_key": "poster-minimal",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\thumbnail-person\\composition\\poster-minimal.webp",
+    "hits": [
+      {
+        "text": "Youue Yowfue",
+        "confidence": 0.9419176975886027
+      }
+    ]
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "composition",
+    "option_key": "thumb-comp-left-screen",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\thumbnail-person\\composition\\thumb-comp-left-screen.webp",
+    "hits": [
+      {
+        "text": "Teabulloe",
+        "confidence": 0.9471325675646464
+      }
+    ]
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "detail",
+    "option_key": "thumb-reaction",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\thumbnail-person\\detail\\thumb-reaction.webp",
+    "hits": [
+      {
+        "text": "Mlol2",
+        "confidence": 0.7325443923473358
+      }
+    ]
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "mood",
+    "option_key": "mood-bright",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\thumbnail-person\\mood\\mood-bright.webp",
+    "hits": [
+      {
+        "text": "200品0",
+        "confidence": 0.7676884800195694
+      }
+    ]
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "mood",
+    "option_key": "mood-cinematic",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\thumbnail-person\\mood\\mood-cinematic.webp",
+    "hits": [
+      {
+        "text": "YTOUS",
+        "confidence": 0.9814860939979553
+      }
+    ]
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "mood",
+    "option_key": "mood-clean",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\thumbnail-person\\mood\\mood-clean.webp",
+    "hits": [
+      {
+        "text": "Tolipe",
+        "confidence": 0.8851396689812342
+      }
+    ]
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "mood",
+    "option_key": "mood-dramatic",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\thumbnail-person\\mood\\mood-dramatic.webp",
+    "hits": [
+      {
+        "text": "XIAAH茶",
+        "confidence": 0.8310781121253967
+      },
+      {
+        "text": "YOUTIAUE",
+        "confidence": 0.960998609662056
+      }
+    ]
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "mood",
+    "option_key": "mood-future",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\thumbnail-person\\mood\\mood-future.webp",
+    "hits": [
+      {
+        "text": "A Yoture",
+        "confidence": 0.9212495759129524
+      }
+    ]
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "mood",
+    "option_key": "mood-warm",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\thumbnail-person\\mood\\mood-warm.webp",
+    "hits": [
+      {
+        "text": "Yutoube",
+        "confidence": 0.9411681720188686
+      }
+    ]
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "people",
+    "option_key": "thumb-one-female",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\thumbnail-person\\people\\thumb-one-female.webp",
+    "hits": [
+      {
+        "text": "Yufi",
+        "confidence": 0.9883976429700851
+      }
+    ]
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "people",
+    "option_key": "thumb-senior",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\thumbnail-person\\people\\thumb-senior.webp",
+    "hits": [
+      {
+        "text": "YoTbe",
+        "confidence": 0.9427519083023072
+      }
+    ]
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "pose",
+    "option_key": "thumb-pose-cheek",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\thumbnail-person\\pose\\thumb-pose-cheek.webp",
+    "hits": [
+      {
+        "text": "YiuYouurte",
+        "confidence": 0.9346850752830506
+      }
+    ]
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "pose",
+    "option_key": "thumb-pose-clap",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\thumbnail-person\\pose\\thumb-pose-clap.webp",
+    "hits": [
+      {
+        "text": "Yiutupe",
+        "confidence": 0.7542537110192435
+      }
+    ]
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "pose",
+    "option_key": "thumb-pose-device",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\thumbnail-person\\pose\\thumb-pose-device.webp",
+    "hits": [
+      {
+        "text": "244",
+        "confidence": 0.9729430079460144
+      },
+      {
+        "text": "YouTube",
+        "confidence": 0.9936599561146328
+      },
+      {
+        "text": "Countal Tuliter",
+        "confidence": 0.9369233647982279
+      },
+      {
+        "text": "Matllo Mell Hade",
+        "confidence": 0.854484936222434
+      },
+      {
+        "text": "Musim Iialy",
+        "confidence": 0.8125505447387695
+      },
+      {
+        "text": "Arance Hotdion",
+        "confidence": 0.909480618579047
+      },
+      {
+        "text": "Lannls Licdton",
+        "confidence": 0.8071811199188232
+      },
+      {
+        "text": "Aoictad Otc/nley",
+        "confidence": 0.8294286038726568
+      }
+    ]
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "text",
+    "option_key": "text-badge",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\thumbnail-person\\text\\text-badge.webp",
+    "hits": [
+      {
+        "text": "HEVIF",
+        "confidence": 0.7894226908683777
+      }
+    ]
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "text",
+    "option_key": "text-bottom",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\thumbnail-person\\text\\text-bottom.webp",
+    "hits": [
+      {
+        "text": "Youtule",
+        "confidence": 0.9954329218183245
+      }
+    ]
+  },
+  {
+    "subject": "travel",
+    "step": "composition",
+    "option_key": "land-foreground",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\travel\\composition\\land-foreground.webp",
+    "hits": [
+      {
+        "text": "RIAL GUYOR HITITAET",
+        "confidence": 0.9433219683797736
+      },
+      {
+        "text": "JLEW.lueD",
+        "confidence": 0.8323574397299025
+      }
+    ]
+  },
+  {
+    "subject": "travel",
+    "step": "detail",
+    "option_key": "travel-transit",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\travel\\detail\\travel-transit.webp",
+    "hits": [
+      {
+        "text": "TTUNYAOT",
+        "confidence": 0.7481883689761162
+      }
+    ]
+  },
+  {
+    "subject": "travel",
+    "step": "feel",
+    "option_key": "travel-feel-local",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\travel\\feel\\travel-feel-local.webp",
+    "hits": [
+      {
+        "text": "SPLET LIED",
+        "confidence": 0.942090654373169
+      }
+    ]
+  },
+  {
+    "subject": "travel",
+    "step": "mood",
+    "option_key": "mood-luxury",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\travel\\mood\\mood-luxury.webp",
+    "hits": [
+      {
+        "text": "Maeco.",
+        "confidence": 0.9642047782739004
+      },
+      {
+        "text": "HOULOUSH",
+        "confidence": 0.9886704087257385
+      }
+    ]
+  },
+  {
+    "subject": "travel",
+    "step": "mood",
+    "option_key": "mood-vintage",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\travel\\mood\\mood-vintage.webp",
+    "hits": [
+      {
+        "text": "GOANGSEINEA",
+        "confidence": 0.8384275517680428
+      }
+    ]
+  },
+  {
+    "subject": "travel",
+    "step": "presence",
+    "option_key": "travel-hand",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\travel\\presence\\travel-hand.webp",
+    "hits": [
+      {
+        "text": "OAFDIAS",
+        "confidence": 0.7964923466954913
+      },
+      {
+        "text": "LOBJBOOADE",
+        "confidence": 0.994298642873764
+      },
+      {
+        "text": "LOBJIBOOADE",
+        "confidence": 0.9967339363965121
+      },
+      {
+        "text": "PORFESS",
+        "confidence": 0.9866442169461932
+      },
+      {
+        "text": "FIVTENDREE",
+        "confidence": 0.8907679408788681
+      },
+      {
+        "text": "SELNCWETREOCK",
+        "confidence": 0.9512727856636047
+      },
+      {
+        "text": "FUYORENERON",
+        "confidence": 0.9785920544104143
+      }
+    ]
+  },
+  {
+    "subject": "vehicle",
+    "step": "composition",
+    "option_key": "comp-low",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\vehicle\\composition\\comp-low.webp",
+    "hits": [
+      {
+        "text": "AIVU-DET",
+        "confidence": 0.9758601188659668
+      }
+    ]
+  },
+  {
+    "subject": "vehicle",
+    "step": "composition",
+    "option_key": "comp-poster",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\vehicle\\composition\\comp-poster.webp",
+    "hits": [
+      {
+        "text": "23:7",
+        "confidence": 0.9409465342760086
+      },
+      {
+        "text": "2E2AIY",
+        "confidence": 0.9533289472262064
+      },
+      {
+        "text": "jeorane",
+        "confidence": 0.9938213314328875
+      },
+      {
+        "text": "R力B",
+        "confidence": 0.9577356775601705
+      }
+    ]
+  },
+  {
+    "subject": "vehicle",
+    "step": "composition",
+    "option_key": "vehicle-comp-front-angle",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\vehicle\\composition\\vehicle-comp-front-angle.webp",
+    "hits": [
+      {
+        "text": "JARE",
+        "confidence": 0.9948344230651855
+      }
+    ]
+  },
+  {
+    "subject": "vehicle",
+    "step": "detail",
+    "option_key": "vehicle-ev",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\vehicle\\detail\\vehicle-ev.webp",
+    "hits": [
+      {
+        "text": "TUSAR",
+        "confidence": 0.7993992805480957
+      }
+    ]
+  },
+  {
+    "subject": "vehicle",
+    "step": "environment",
+    "option_key": "vehicle-env-city",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\vehicle\\environment\\vehicle-env-city.webp",
+    "hits": [
+      {
+        "text": "LEUFQUIH",
+        "confidence": 0.8440764583647251
+      }
+    ]
+  },
+  {
+    "subject": "vehicle",
+    "step": "environment",
+    "option_key": "vehicle-env-nightcity",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\vehicle\\environment\\vehicle-env-nightcity.webp",
+    "hits": [
+      {
+        "text": "CROMD",
+        "confidence": 0.7838513731956482
+      },
+      {
+        "text": "FEN",
+        "confidence": 0.9967408776283264
+      }
+    ]
+  },
+  {
+    "subject": "vehicle",
+    "step": "environment",
+    "option_key": "vehicle-env-showroom",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\vehicle\\environment\\vehicle-env-showroom.webp",
+    "hits": [
+      {
+        "text": "renJo",
+        "confidence": 0.8714418411254883
+      },
+      {
+        "text": "PeniDron",
+        "confidence": 0.8152847364544868
+      }
+    ]
+  },
+  {
+    "subject": "workspace",
+    "step": "composition",
+    "option_key": "comp-poster",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\workspace\\composition\\comp-poster.webp",
+    "hits": [
+      {
+        "text": "（双001）W00T02明",
+        "confidence": 0.821592838718341
+      }
+    ]
+  },
+  {
+    "subject": "workspace",
+    "step": "mood",
+    "option_key": "trust-bold",
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\workspace\\mood\\trust-bold.webp",
+    "hits": [
+      {
+        "text": "HEAN洗",
+        "confidence": 0.867909049987793
+      }
+    ]
+  }
+]

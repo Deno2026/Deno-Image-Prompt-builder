@@ -1,0 +1,842 @@
+[
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\subjects\\subject\\thumbnail-person.webp",
+    "rel": "subjects/subject/thumbnail-person.webp",
+    "mean": 89.97,
+    "stddev": 3.68,
+    "entropy": 3.832
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\subjects\\subject\\landscape.webp",
+    "rel": "subjects/subject/landscape.webp",
+    "mean": 124.73,
+    "stddev": 18.76,
+    "entropy": 6.163
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\broll\\usage\\broll-use-transition.webp",
+    "rel": "broll/usage/broll-use-transition.webp",
+    "mean": 96.3,
+    "stddev": 21.79,
+    "entropy": 6.263
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\detail\\service-education.webp",
+    "rel": "service/detail/service-education.webp",
+    "mean": 53.32,
+    "stddev": 23.21,
+    "entropy": 5.916
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\broll\\composition\\broll-comp-object-center.webp",
+    "rel": "broll/composition/broll-comp-object-center.webp",
+    "mean": 117.33,
+    "stddev": 27.52,
+    "entropy": 6.701
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\space\\light\\space-light-noon.webp",
+    "rel": "space/light/space-light-noon.webp",
+    "mean": 206.6,
+    "stddev": 27.71,
+    "entropy": 6.51
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\animal\\detail\\animal-bird.webp",
+    "rel": "animal/detail/animal-bird.webp",
+    "mean": 123.13,
+    "stddev": 28.44,
+    "entropy": 5.718
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\animal\\mood\\mood-warm.webp",
+    "rel": "animal/mood/mood-warm.webp",
+    "mean": 111.57,
+    "stddev": 29.44,
+    "entropy": 6.147
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\space\\style\\space-style-minimal.webp",
+    "rel": "space/style/space-style-minimal.webp",
+    "mean": 181.74,
+    "stddev": 30.79,
+    "entropy": 6.702
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\broll\\detail\\broll-empty.webp",
+    "rel": "broll/detail/broll-empty.webp",
+    "mean": 91.21,
+    "stddev": 31.28,
+    "entropy": 6.601
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\subjects\\subject\\broll.webp",
+    "rel": "subjects/subject/broll.webp",
+    "mean": 131.8,
+    "stddev": 32.1,
+    "entropy": 4.81
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\poster\\mood\\mood-luxury.webp",
+    "rel": "poster/mood/mood-luxury.webp",
+    "mean": 192.87,
+    "stddev": 33.97,
+    "entropy": 6.455
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\animal\\focus\\animal-focus-move.webp",
+    "rel": "animal/focus/animal-focus-move.webp",
+    "mean": 127.47,
+    "stddev": 35.27,
+    "entropy": 6.896
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\product\\presentation\\product-material.webp",
+    "rel": "product/presentation/product-material.webp",
+    "mean": 81.97,
+    "stddev": 35.3,
+    "entropy": 6.747
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\animal\\action\\animal-action-sit.webp",
+    "rel": "animal/action/animal-action-sit.webp",
+    "mean": 81.24,
+    "stddev": 35.58,
+    "entropy": 6.794
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\fantasy\\composition\\poster-diagonal.webp",
+    "rel": "fantasy/composition/poster-diagonal.webp",
+    "mean": 55.17,
+    "stddev": 36.08,
+    "entropy": 6.809
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\vehicle\\composition\\vehicle-comp-side-profile.webp",
+    "rel": "vehicle/composition/vehicle-comp-side-profile.webp",
+    "mean": 65.73,
+    "stddev": 36.1,
+    "entropy": 6.774
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\space\\mood\\mood-clean.webp",
+    "rel": "space/mood/mood-clean.webp",
+    "mean": 152.87,
+    "stddev": 36.32,
+    "entropy": 7.016
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\animal\\mood\\mood-vintage.webp",
+    "rel": "animal/mood/mood-vintage.webp",
+    "mean": 104.6,
+    "stddev": 36.93,
+    "entropy": 7.026
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\event\\mood\\mood-luxury.webp",
+    "rel": "event/mood/mood-luxury.webp",
+    "mean": 125.07,
+    "stddev": 38.04,
+    "entropy": 6.499
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\animal\\mood\\mood-dramatic.webp",
+    "rel": "animal/mood/mood-dramatic.webp",
+    "mean": 49.36,
+    "stddev": 38.14,
+    "entropy": 6.7
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\profile-id\\pose\\profile-pose-handsbehind.webp",
+    "rel": "profile-id/pose/profile-pose-handsbehind.webp",
+    "mean": 50.71,
+    "stddev": 38.35,
+    "entropy": 6.265
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\animal\\mood\\mood-clean.webp",
+    "rel": "animal/mood/mood-clean.webp",
+    "mean": 120.08,
+    "stddev": 38.62,
+    "entropy": 7.031
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\vehicle\\composition\\comp-top.webp",
+    "rel": "vehicle/composition/comp-top.webp",
+    "mean": 132.57,
+    "stddev": 38.7,
+    "entropy": 6.757
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\space\\composition\\land-mid.webp",
+    "rel": "space/composition/land-mid.webp",
+    "mean": 121.99,
+    "stddev": 38.78,
+    "entropy": 7.118
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\product\\presentation\\product-hand.webp",
+    "rel": "product/presentation/product-hand.webp",
+    "mean": 90.56,
+    "stddev": 39.21,
+    "entropy": 6.457
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\fantasy\\stage\\fantasy-stage-portal.webp",
+    "rel": "fantasy/stage/fantasy-stage-portal.webp",
+    "mean": 44.23,
+    "stddev": 39.44,
+    "entropy": 5.974
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\landscape\\detail\\land-desert.webp",
+    "rel": "landscape/detail/land-desert.webp",
+    "mean": 116.93,
+    "stddev": 39.76,
+    "entropy": 7.202
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\animal\\composition\\comp-bust.webp",
+    "rel": "animal/composition/comp-bust.webp",
+    "mean": 128.39,
+    "stddev": 39.79,
+    "entropy": 6.422
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\animal\\focus\\animal-focus-wild.webp",
+    "rel": "animal/focus/animal-focus-wild.webp",
+    "mean": 117.02,
+    "stddev": 40.36,
+    "entropy": 6.928
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\broll\\composition\\broll-comp-empty-wide.webp",
+    "rel": "broll/composition/broll-comp-empty-wide.webp",
+    "mean": 89.48,
+    "stddev": 40.48,
+    "entropy": 7.089
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\animal\\detail\\animal-cat.webp",
+    "rel": "animal/detail/animal-cat.webp",
+    "mean": 122.12,
+    "stddev": 40.67,
+    "entropy": 6.85
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\fantasy\\stage\\fantasy-stage-forest.webp",
+    "rel": "fantasy/stage/fantasy-stage-forest.webp",
+    "mean": 55.17,
+    "stddev": 40.79,
+    "entropy": 6.945
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\product\\presentation\\product-single.webp",
+    "rel": "product/presentation/product-single.webp",
+    "mean": 169.23,
+    "stddev": 41.28,
+    "entropy": 7.006
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\animal\\detail\\animal-baby.webp",
+    "rel": "animal/detail/animal-baby.webp",
+    "mean": 96.94,
+    "stddev": 41.53,
+    "entropy": 7.055
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\landscape\\time\\land-time-sunset.webp",
+    "rel": "landscape/time/land-time-sunset.webp",
+    "mean": 78.18,
+    "stddev": 41.6,
+    "entropy": 7.23
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\space\\composition\\land-foreground.webp",
+    "rel": "space/composition/land-foreground.webp",
+    "mean": 142.71,
+    "stddev": 42.29,
+    "entropy": 7.324
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\fantasy\\render\\fantasy-render-dark.webp",
+    "rel": "fantasy/render/fantasy-render-dark.webp",
+    "mean": 51.47,
+    "stddev": 42.55,
+    "entropy": 6.876
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\space\\style\\space-style-nordic.webp",
+    "rel": "space/style/space-style-nordic.webp",
+    "mean": 183.96,
+    "stddev": 42.82,
+    "entropy": 7.155
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\product\\presentation\\product-splash.webp",
+    "rel": "product/presentation/product-splash.webp",
+    "mean": 186.81,
+    "stddev": 43.09,
+    "entropy": 6.951
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\subjects\\subject\\workspace.webp",
+    "rel": "subjects/subject/workspace.webp",
+    "mean": 183.55,
+    "stddev": 43.12,
+    "entropy": 6.278
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\landscape\\detail\\land-sea.webp",
+    "rel": "landscape/detail/land-sea.webp",
+    "mean": 80.57,
+    "stddev": 43.16,
+    "entropy": 7.336
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\landscape\\presence\\land-presence-animal.webp",
+    "rel": "landscape/presence/land-presence-animal.webp",
+    "mean": 66.98,
+    "stddev": 43.39,
+    "entropy": 7.236
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\travel\\presence\\travel-one.webp",
+    "rel": "travel/presence/travel-one.webp",
+    "mean": 97.13,
+    "stddev": 43.63,
+    "entropy": 7.376
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\fantasy\\focus\\fantasy-focus-object.webp",
+    "rel": "fantasy/focus/fantasy-focus-object.webp",
+    "mean": 46.37,
+    "stddev": 43.67,
+    "entropy": 6.803
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\fashion-beauty\\focus\\fashion-focus-bottom.webp",
+    "rel": "fashion-beauty/focus/fashion-focus-bottom.webp",
+    "mean": 180.57,
+    "stddev": 44.18,
+    "entropy": 6.973
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\space\\mood\\mood-calm.webp",
+    "rel": "space/mood/mood-calm.webp",
+    "mean": 139.18,
+    "stddev": 44.23,
+    "entropy": 7.341
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\animal\\composition\\comp-medium.webp",
+    "rel": "animal/composition/comp-medium.webp",
+    "mean": 129.9,
+    "stddev": 44.24,
+    "entropy": 7.3
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\fantasy\\mood\\mood-calm.webp",
+    "rel": "fantasy/mood/mood-calm.webp",
+    "mean": 52.59,
+    "stddev": 44.41,
+    "entropy": 6.855
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\profile-id\\pose\\profile-pose-pocket.webp",
+    "rel": "profile-id/pose/profile-pose-pocket.webp",
+    "mean": 137.39,
+    "stddev": 44.55,
+    "entropy": 6.632
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\fashion-beauty\\focus\\fashion-focus-full.webp",
+    "rel": "fashion-beauty/focus/fashion-focus-full.webp",
+    "mean": 119.62,
+    "stddev": 44.8,
+    "entropy": 7.331
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\landscape\\detail\\land-nature.webp",
+    "rel": "landscape/detail/land-nature.webp",
+    "mean": 53.14,
+    "stddev": 44.97,
+    "entropy": 6.896
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\landscape\\mood\\mood-dramatic.webp",
+    "rel": "landscape/mood/mood-dramatic.webp",
+    "mean": 59.34,
+    "stddev": 45.29,
+    "entropy": 7.179
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\product\\background\\product-bg-dark.webp",
+    "rel": "product/background/product-bg-dark.webp",
+    "mean": 42.52,
+    "stddev": 45.68,
+    "entropy": 5.408
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\animal\\detail\\animal-small.webp",
+    "rel": "animal/detail/animal-small.webp",
+    "mean": 151.38,
+    "stddev": 45.68,
+    "entropy": 7.187
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\thumbnail-person\\reaction\\react-surprise.webp",
+    "rel": "thumbnail-person/reaction/react-surprise.webp",
+    "mean": 78.49,
+    "stddev": 45.83,
+    "entropy": 7.267
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\subjects\\subject\\product.webp",
+    "rel": "subjects/subject/product.webp",
+    "mean": 204.99,
+    "stddev": 45.85,
+    "entropy": 6.389
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\space\\style\\space-style-luxury.webp",
+    "rel": "space/style/space-style-luxury.webp",
+    "mean": 148.11,
+    "stddev": 45.98,
+    "entropy": 7.268
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\animal\\environment\\animal-env-nature.webp",
+    "rel": "animal/environment/animal-env-nature.webp",
+    "mean": 83.76,
+    "stddev": 46.15,
+    "entropy": 7.354
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\space\\light\\space-light-lamp.webp",
+    "rel": "space/light/space-light-lamp.webp",
+    "mean": 97.09,
+    "stddev": 46.18,
+    "entropy": 7.431
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\travel\\feel\\travel-feel-cinematic.webp",
+    "rel": "travel/feel/travel-feel-cinematic.webp",
+    "mean": 51.58,
+    "stddev": 46.21,
+    "entropy": 6.956
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\space\\light\\space-light-soft.webp",
+    "rel": "space/light/space-light-soft.webp",
+    "mean": 145.38,
+    "stddev": 46.88,
+    "entropy": 7.45
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\poster\\mood\\mood-vintage.webp",
+    "rel": "poster/mood/mood-vintage.webp",
+    "mean": 201.55,
+    "stddev": 47.04,
+    "entropy": 6.331
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\fantasy\\stage\\fantasy-stage-altar.webp",
+    "rel": "fantasy/stage/fantasy-stage-altar.webp",
+    "mean": 64.25,
+    "stddev": 47.12,
+    "entropy": 7.231
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\profile-id\\detail\\profile-team.webp",
+    "rel": "profile-id/detail/profile-team.webp",
+    "mean": 65.4,
+    "stddev": 47.24,
+    "entropy": 6.481
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\vehicle\\action\\vehicle-parked.webp",
+    "rel": "vehicle/action/vehicle-parked.webp",
+    "mean": 68.65,
+    "stddev": 47.42,
+    "entropy": 7.092
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\landscape\\composition\\land-mid.webp",
+    "rel": "landscape/composition/land-mid.webp",
+    "mean": 69.4,
+    "stddev": 47.66,
+    "entropy": 7.012
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\product\\detail\\product-tech.webp",
+    "rel": "product/detail/product-tech.webp",
+    "mean": 107.36,
+    "stddev": 47.84,
+    "entropy": 6.834
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\product\\mood\\mood-vintage.webp",
+    "rel": "product/mood/mood-vintage.webp",
+    "mean": 109.73,
+    "stddev": 47.93,
+    "entropy": 7.02
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\product\\detail\\product-box.webp",
+    "rel": "product/detail/product-box.webp",
+    "mean": 145.01,
+    "stddev": 47.97,
+    "entropy": 6.667
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\tone\\service-tone-premium.webp",
+    "rel": "service/tone/service-tone-premium.webp",
+    "mean": 66.47,
+    "stddev": 48.12,
+    "entropy": 6.299
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\fantasy\\render\\fantasy-render-real.webp",
+    "rel": "fantasy/render/fantasy-render-real.webp",
+    "mean": 46.2,
+    "stddev": 48.15,
+    "entropy": 6.735
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\animal\\action\\animal-action-sleep.webp",
+    "rel": "animal/action/animal-action-sleep.webp",
+    "mean": 144.74,
+    "stddev": 48.19,
+    "entropy": 7.303
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\space\\mood\\mood-luxury.webp",
+    "rel": "space/mood/mood-luxury.webp",
+    "mean": 86.78,
+    "stddev": 48.19,
+    "entropy": 7.435
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\fantasy\\detail\\fantasy-monster.webp",
+    "rel": "fantasy/detail/fantasy-monster.webp",
+    "mean": 53.81,
+    "stddev": 48.21,
+    "entropy": 6.939
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\fantasy\\mood\\mood-luxury.webp",
+    "rel": "fantasy/mood/mood-luxury.webp",
+    "mean": 62.17,
+    "stddev": 48.23,
+    "entropy": 7.279
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\fashion-beauty\\pose\\fashion-pose-legcrossstand.webp",
+    "rel": "fashion-beauty/pose/fashion-pose-legcrossstand.webp",
+    "mean": 130.62,
+    "stddev": 48.24,
+    "entropy": 6.99
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\event\\focus\\event-focus-speaker.webp",
+    "rel": "event/focus/event-focus-speaker.webp",
+    "mean": 48.95,
+    "stddev": 48.34,
+    "entropy": 6.13
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\portrait\\pose\\portrait-pose-hip.webp",
+    "rel": "portrait/pose/portrait-pose-hip.webp",
+    "mean": 103.18,
+    "stddev": 48.52,
+    "entropy": 7.026
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\product\\detail\\product-bottle.webp",
+    "rel": "product/detail/product-bottle.webp",
+    "mean": 137.93,
+    "stddev": 48.69,
+    "entropy": 7.216
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\animal\\detail\\animal-reptile.webp",
+    "rel": "animal/detail/animal-reptile.webp",
+    "mean": 70.26,
+    "stddev": 48.73,
+    "entropy": 6.271
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\poster\\detail\\poster-festival.webp",
+    "rel": "poster/detail/poster-festival.webp",
+    "mean": 86.32,
+    "stddev": 48.81,
+    "entropy": 6.613
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\vehicle\\mood\\mood-cinematic.webp",
+    "rel": "vehicle/mood/mood-cinematic.webp",
+    "mean": 84.69,
+    "stddev": 49.39,
+    "entropy": 7.425
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\landscape\\presence\\land-presence-car.webp",
+    "rel": "landscape/presence/land-presence-car.webp",
+    "mean": 69.77,
+    "stddev": 49.53,
+    "entropy": 7.217
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\visual\\service-visual-banner.webp",
+    "rel": "service/visual/service-visual-banner.webp",
+    "mean": 61.17,
+    "stddev": 49.57,
+    "entropy": 4.679
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\space\\detail\\space-office.webp",
+    "rel": "space/detail/space-office.webp",
+    "mean": 150.09,
+    "stddev": 49.79,
+    "entropy": 7.348
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\space\\style\\space-style-editorial.webp",
+    "rel": "space/style/space-style-editorial.webp",
+    "mean": 132.69,
+    "stddev": 49.91,
+    "entropy": 7.454
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\space\\composition\\land-road.webp",
+    "rel": "space/composition/land-road.webp",
+    "mean": 128.57,
+    "stddev": 50.18,
+    "entropy": 7.462
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\landscape\\composition\\land-top.webp",
+    "rel": "landscape/composition/land-top.webp",
+    "mean": 61.43,
+    "stddev": 50.2,
+    "entropy": 7.128
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\space\\style\\space-style-natural.webp",
+    "rel": "space/style/space-style-natural.webp",
+    "mean": 135.85,
+    "stddev": 50.23,
+    "entropy": 7.509
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\fantasy\\detail\\fantasy-magic.webp",
+    "rel": "fantasy/detail/fantasy-magic.webp",
+    "mean": 56.91,
+    "stddev": 50.24,
+    "entropy": 7.201
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\service\\usage\\service-usage-feature.webp",
+    "rel": "service/usage/service-usage-feature.webp",
+    "mean": 51.28,
+    "stddev": 50.26,
+    "entropy": 4.359
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\vehicle\\environment\\vehicle-env-studio.webp",
+    "rel": "vehicle/environment/vehicle-env-studio.webp",
+    "mean": 116.57,
+    "stddev": 50.28,
+    "entropy": 7.35
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\product\\background\\product-bg-minimal.webp",
+    "rel": "product/background/product-bg-minimal.webp",
+    "mean": 126.75,
+    "stddev": 50.35,
+    "entropy": 7.343
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\travel\\mood\\mood-cinematic.webp",
+    "rel": "travel/mood/mood-cinematic.webp",
+    "mean": 64.45,
+    "stddev": 50.45,
+    "entropy": 7.296
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\product\\presentation\\product-angle.webp",
+    "rel": "product/presentation/product-angle.webp",
+    "mean": 204.65,
+    "stddev": 50.63,
+    "entropy": 6.787
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\animal\\mood\\mood-cinematic.webp",
+    "rel": "animal/mood/mood-cinematic.webp",
+    "mean": 135.97,
+    "stddev": 50.73,
+    "entropy": 7.475
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\animal\\composition\\comp-close.webp",
+    "rel": "animal/composition/comp-close.webp",
+    "mean": 142.7,
+    "stddev": 50.93,
+    "entropy": 7.203
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\poster\\composition\\poster-right-space.webp",
+    "rel": "poster/composition/poster-right-space.webp",
+    "mean": 225.1,
+    "stddev": 50.99,
+    "entropy": 4.823
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\vehicle\\composition\\comp-asymmetry.webp",
+    "rel": "vehicle/composition/comp-asymmetry.webp",
+    "mean": 125.98,
+    "stddev": 51.0,
+    "entropy": 7.472
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\profile-id\\detail\\profile-model.webp",
+    "rel": "profile-id/detail/profile-model.webp",
+    "mean": 83.05,
+    "stddev": 51.2,
+    "entropy": 6.934
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\space\\detail\\space-bedroom.webp",
+    "rel": "space/detail/space-bedroom.webp",
+    "mean": 135.4,
+    "stddev": 51.36,
+    "entropy": 7.61
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\space\\composition\\land-top.webp",
+    "rel": "space/composition/land-top.webp",
+    "mean": 161.51,
+    "stddev": 51.38,
+    "entropy": 7.136
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\travel\\composition\\land-top.webp",
+    "rel": "travel/composition/land-top.webp",
+    "mean": 82.94,
+    "stddev": 51.48,
+    "entropy": 7.337
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\space\\detail\\space-bath.webp",
+    "rel": "space/detail/space-bath.webp",
+    "mean": 160.38,
+    "stddev": 51.61,
+    "entropy": 7.552
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\landscape\\time\\land-time-sunrise.webp",
+    "rel": "landscape/time/land-time-sunrise.webp",
+    "mean": 83.71,
+    "stddev": 51.63,
+    "entropy": 7.472
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\product\\background\\product-bg-texture.webp",
+    "rel": "product/background/product-bg-texture.webp",
+    "mean": 109.24,
+    "stddev": 51.95,
+    "entropy": 7.497
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\space\\detail\\space-cafe.webp",
+    "rel": "space/detail/space-cafe.webp",
+    "mean": 131.76,
+    "stddev": 52.02,
+    "entropy": 7.595
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\vehicle\\mood\\mood-luxury.webp",
+    "rel": "vehicle/mood/mood-luxury.webp",
+    "mean": 73.3,
+    "stddev": 52.06,
+    "entropy": 7.135
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\landscape\\detail\\land-snow.webp",
+    "rel": "landscape/detail/land-snow.webp",
+    "mean": 113.63,
+    "stddev": 52.06,
+    "entropy": 7.545
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\landscape\\detail\\land-sky.webp",
+    "rel": "landscape/detail/land-sky.webp",
+    "mean": 144.99,
+    "stddev": 52.07,
+    "entropy": 7.51
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\space\\composition\\land-panorama.webp",
+    "rel": "space/composition/land-panorama.webp",
+    "mean": 125.49,
+    "stddev": 52.11,
+    "entropy": 7.478
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\vehicle\\detail\\vehicle-classic.webp",
+    "rel": "vehicle/detail/vehicle-classic.webp",
+    "mean": 106.33,
+    "stddev": 52.26,
+    "entropy": 7.535
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\illustration\\usage\\illu-usage-education.webp",
+    "rel": "illustration/usage/illu-usage-education.webp",
+    "mean": 179.72,
+    "stddev": 52.46,
+    "entropy": 6.577
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\fantasy\\composition\\poster-bottom-space.webp",
+    "rel": "fantasy/composition/poster-bottom-space.webp",
+    "mean": 64.72,
+    "stddev": 52.46,
+    "entropy": 6.815
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\landscape\\mood\\mood-vintage.webp",
+    "rel": "landscape/mood/mood-vintage.webp",
+    "mean": 102.05,
+    "stddev": 52.55,
+    "entropy": 7.423
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\broll\\usage\\broll-use-intro.webp",
+    "rel": "broll/usage/broll-use-intro.webp",
+    "mean": 70.88,
+    "stddev": 52.59,
+    "entropy": 6.398
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\travel\\detail\\travel-landmark.webp",
+    "rel": "travel/detail/travel-landmark.webp",
+    "mean": 136.6,
+    "stddev": 52.69,
+    "entropy": 7.238
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\fashion-beauty\\pose\\fashion-pose-bag.webp",
+    "rel": "fashion-beauty/pose/fashion-pose-bag.webp",
+    "mean": 86.25,
+    "stddev": 52.93,
+    "entropy": 7.2
+  },
+  {
+    "path": "C:\\Users\\aions\\Documents\\Codex\\2026-04-17-deno-review\\Deno-Image-Prompt-builder\\assets\\cards\\space\\style\\space-style-vintage.webp",
+    "rel": "space/style/space-style-vintage.webp",
+    "mean": 77.38,
+    "stddev": 52.96,
+    "entropy": 7.391
+  }
+]

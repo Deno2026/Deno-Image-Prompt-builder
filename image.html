@@ -384,6 +384,15 @@
         linear-gradient(180deg, var(--tone-a), var(--tone-b));
     }
 
+    .thumb-photo {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+
     .thumb::before,
     .thumb::after {
       content: "";
@@ -413,7 +422,7 @@
     .thumb-kicker,
     .thumb-badge {
       position: absolute;
-      z-index: 1;
+      z-index: 2;
       border-radius: 999px;
       border: 1px solid rgba(255, 255, 255, 0.08);
       background: rgba(4, 8, 5, 0.66);
@@ -619,6 +628,12 @@
 
     .final-textarea {
       min-height: 118px;
+      font-size: 0.96rem;
+      line-height: 1.55;
+    }
+
+    .final-textarea::placeholder {
+      color: rgba(242, 251, 243, 0.56);
     }
 
     .prompt-editor {
@@ -850,23 +865,55 @@
     }
 
     @media (max-width: 860px) {
+      .shell {
+        width: min(100vw - 18px, 100%);
+        padding: 14px 0 24px;
+      }
+
       .topbar {
-        grid-template-columns: 1fr;
+        grid-template-columns: auto 1fr;
+        grid-template-areas:
+          "home youtube"
+          "modes modes";
+        align-items: center;
+        gap: 12px;
+      }
+
+      .home-pill {
+        grid-area: home;
+        justify-self: start;
       }
 
       .mode-links {
+        grid-area: modes;
         justify-content: flex-start;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        padding-bottom: 4px;
+        scrollbar-width: none;
+      }
+
+      .mode-links::-webkit-scrollbar {
+        display: none;
+      }
+
+      .pill-btn.youtube-link {
+        grid-area: youtube;
+        justify-self: end;
       }
 
       .step-card,
       .result-card {
-        padding: 24px 18px 26px;
+        padding: 20px 16px 22px;
+        min-height: auto;
       }
 
       .step-heading,
       .result-hero {
         flex-direction: column;
         align-items: flex-start;
+        gap: 12px;
+        margin-bottom: 18px;
       }
 
       .step-copy {
@@ -878,11 +925,85 @@
         white-space: normal;
         overflow: visible;
         text-overflow: initial;
+        font-size: clamp(2rem, 9vw, 3rem);
+        line-height: 1.08;
+        padding-bottom: 0.12em;
+      }
+
+      .step-copy p,
+      .result-copy p,
+      .status,
+      .hint,
+      .knowledge-copy {
+        font-size: 0.94rem;
+        line-height: 1.58;
+      }
+
+      .step-indicator {
+        min-height: 42px;
+        min-width: 98px;
+        padding: 0 14px;
+        font-size: 0.9rem;
       }
 
       .summary-grid,
       .option-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .option-card,
+      .direct-card {
+        min-height: 214px;
+        padding: 12px;
+      }
+
+      .thumb {
+        height: 122px;
+        margin-bottom: 12px;
+      }
+
+      .thumb::before {
+        width: 68px;
+        height: 68px;
+        left: 16px;
+        bottom: 22px;
+      }
+
+      .thumb::after {
+        width: 48px;
+        height: 48px;
+        right: 18px;
+        bottom: 18px;
+      }
+
+      .thumb-kicker,
+      .thumb-badge {
+        font-size: 0.8rem;
+        padding: 7px 10px;
+      }
+
+      .option-card strong,
+      .direct-card strong {
+        font-size: 1.08rem;
+        line-height: 1.15;
+        margin-bottom: 7px;
+      }
+
+      .option-card span,
+      .direct-card span {
+        font-size: 0.82rem;
+        line-height: 1.44;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      .status-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        margin-top: 14px;
       }
 
       .action-row {
@@ -891,6 +1012,341 @@
 
       .restart-btn {
         justify-self: start;
+      }
+
+      .copy-cta {
+        width: 100%;
+        min-height: 56px;
+        padding: 0 18px;
+        font-size: 0.98rem;
+      }
+
+      .restart-btn {
+        width: 100%;
+        min-height: 40px;
+        justify-content: center;
+      }
+
+      .final-textarea {
+        min-height: 104px;
+      }
+
+      .prompt-box {
+        min-height: 132px;
+      }
+
+      .result-hero {
+        margin-bottom: 14px;
+      }
+
+      .result-tag {
+        min-height: 30px;
+        padding: 0 10px;
+        font-size: 0.8rem;
+        margin-bottom: 8px;
+      }
+
+      .result-block,
+      .knowledge-block {
+        padding: 14px;
+      }
+
+      .result-block h3,
+      .knowledge-block h3 {
+        font-size: 1.18rem;
+        margin-bottom: 6px;
+      }
+
+      .summary-item {
+        min-height: 62px;
+        padding: 10px 11px;
+      }
+
+      .summary-item strong {
+        font-size: 0.78rem;
+        margin-bottom: 6px;
+      }
+
+      .summary-item span {
+        font-size: 0.96rem;
+        line-height: 1.18;
+      }
+
+      .knowledge-list {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 4px;
+        scrollbar-width: none;
+      }
+
+      .knowledge-list::-webkit-scrollbar {
+        display: none;
+      }
+
+      .knowledge-chip {
+        white-space: nowrap;
+        flex: 0 0 auto;
+        min-height: 30px;
+        padding: 0 10px;
+        font-size: 0.84rem;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .shell {
+        width: min(100vw - 12px, 100%);
+      }
+
+      .topbar {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "home"
+          "modes"
+          "youtube";
+        align-items: stretch;
+      }
+
+      .home-pill,
+      .pill-btn.youtube-link {
+        justify-self: stretch;
+        width: 100%;
+      }
+
+      .home-pill {
+        min-width: 0;
+      }
+
+      .mode-pill,
+      .pill-btn.youtube-link {
+        min-height: 46px;
+        padding: 0 14px;
+        font-size: 0.95rem;
+      }
+
+      .mode-links {
+        gap: 10px;
+      }
+
+      .step-card,
+      .result-card {
+        padding: 18px 12px 20px;
+        border-radius: 24px;
+      }
+
+      .floating-back {
+        width: 52px;
+        height: 52px;
+        border-radius: 16px;
+        margin-bottom: 12px;
+      }
+
+      .step-copy h1,
+      .result-copy h2 {
+        font-size: clamp(1.82rem, 10vw, 2.5rem);
+        line-height: 1.12;
+        padding-top: 0.03em;
+        padding-bottom: 0.16em;
+      }
+
+      .result-copy h2 {
+        font-size: clamp(1.68rem, 8.8vw, 2.1rem);
+        line-height: 1.08;
+        text-wrap: balance;
+      }
+
+      .option-grid,
+      .summary-grid {
+        gap: 10px;
+      }
+
+      .thumb {
+        height: 110px;
+      }
+
+      .thumb::before {
+        width: 60px;
+        height: 60px;
+        left: 14px;
+        bottom: 18px;
+      }
+
+      .thumb::after {
+        width: 42px;
+        height: 42px;
+        right: 14px;
+        bottom: 14px;
+      }
+
+      .option-card,
+      .direct-card {
+        min-height: 196px;
+        border-radius: 22px;
+      }
+
+      .option-card strong,
+      .direct-card strong {
+        font-size: 0.96rem;
+      }
+
+      .option-card span,
+      .direct-card span {
+        font-size: 0.76rem;
+        -webkit-line-clamp: 2;
+      }
+
+      .summary-item {
+        min-height: 58px;
+        padding: 9px 10px;
+      }
+
+      .summary-item span {
+        font-size: 0.9rem;
+      }
+
+      .final-textarea {
+        min-height: 88px;
+        padding: 12px;
+        font-size: 0.84rem;
+        line-height: 1.45;
+      }
+
+      .prompt-box {
+        min-height: 96px;
+      }
+
+      .result-hero {
+        gap: 8px;
+        margin-bottom: 12px;
+      }
+
+      .result-copy p {
+        font-size: 0.9rem;
+        line-height: 1.48;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      .result-layout {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .result-overview {
+        display: contents;
+      }
+
+      .summary-panel {
+        order: 2;
+      }
+
+      .final-panel {
+        order: 1;
+      }
+
+      .knowledge-block {
+        order: 3;
+        padding: 12px;
+      }
+
+      .result-block h3,
+      .knowledge-block h3 {
+        font-size: 1.08rem;
+        margin-bottom: 6px;
+      }
+
+      .summary-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+        margin-top: 10px;
+      }
+
+      .summary-item {
+        min-height: 56px;
+        padding: 9px 10px;
+      }
+
+      .summary-item strong {
+        font-size: 0.74rem;
+        margin-bottom: 4px;
+      }
+
+      .summary-item span {
+        font-size: 0.92rem;
+        line-height: 1.14;
+      }
+
+      .knowledge-copy {
+        display: none;
+      }
+
+      .knowledge-list {
+        margin-top: 8px;
+      }
+
+      .knowledge-chip {
+        min-height: 28px;
+        padding: 0 9px;
+        font-size: 0.8rem;
+      }
+
+      .final-panel > .result-copy {
+        font-size: 0.88rem;
+        line-height: 1.46;
+        margin-bottom: 8px;
+      }
+
+      .final-panel .prompt-details {
+        order: 5;
+      }
+
+      .final-panel .action-row {
+        order: 4;
+        margin-top: 10px;
+      }
+
+      .final-panel #resultStatus {
+        order: 6;
+      }
+
+      .final-label {
+        margin-bottom: 6px;
+        font-size: 0.9rem;
+      }
+
+      .prompt-details {
+        margin-top: 10px;
+        border-radius: 18px;
+      }
+
+      .prompt-details summary {
+        padding: 14px 15px;
+        font-size: 0.92rem;
+      }
+
+      .prompt-details-body {
+        padding: 12px;
+      }
+
+      .copy-cta {
+        min-height: 58px;
+        font-size: 1rem;
+      }
+
+      .restart-btn {
+        min-height: 36px;
+        font-size: 0.82rem;
+      }
+
+      .action-row {
+        gap: 8px;
+        margin-top: 12px;
+      }
+
+      .summary-panel .result-copy {
+        display: none;
       }
     }
   </style>
@@ -960,12 +1416,9 @@
           <textarea
             id="finalExtraInput"
             class="final-textarea"
-            placeholder="예:
-영화같은 분위기, 밝은 미소, 깔끔한 배경, 도시 야경, 역광
-너무 과한 색감은 말고, 차분한 초록빛 톤, 인물은 자신감 있는 표정
-브랜드 화보 느낌, 고급스러운 옷, 배경은 단순하게, 빛 번짐은 살짝만"
+            placeholder="예: 영화같은 분위기, 밝은 미소, 깔끔한 배경, 도시 야경, 역광, 차분한 초록빛 톤, 자신감 있는 표정, 고급스러운 옷, 배경은 단순하게, 빛 번짐은 살짝만"
           ></textarea>
-          <p class="result-copy">입력하는 즉시 아래 복사될 지시문에 자동 반영됩니다.</p>
+          <p class="result-copy">입력하는 즉시 아래 복사 버튼에 반영됩니다.</p>
 
           <details id="promptToggle" class="prompt-details">
             <summary>
@@ -974,13 +1427,13 @@
             <div class="prompt-details-body">
               <label class="final-label" for="systemPromptInput">시스템 프롬프트</label>
               <textarea id="systemPromptInput" class="prompt-editor"></textarea>
-              <label class="final-label" for="resultBox">복사될 지시문</label>
+              <label class="final-label" for="resultBox">AI에 붙여넣을 문장</label>
               <textarea id="resultBox" class="prompt-box" readonly></textarea>
             </div>
           </details>
 
           <div class="action-row">
-            <button id="copyBtn" class="primary-btn copy-cta" type="button">프롬프트 지시문 복사</button>
+            <button id="copyBtn" class="primary-btn copy-cta" type="button">GPT / Gemini에 넣을 문장 복사</button>
             <button id="restartBtn" class="ghost-btn restart-btn" type="button">처음부터 다시 하기</button>
           </div>
 
@@ -4560,6 +5013,26 @@
       return `--tone-a:${tone.a};--tone-b:${tone.b};--tone-glow:${tone.glow};--tone-shape:${tone.shape};`;
     }
 
+    function getCardAssetPath(step, option) {
+      if (!step || !option || option.key === "__direct__") return "";
+      const subjectKey = step.key === "subject" ? "subjects" : (state.currentSubject || "misc");
+      return `assets/cards/${subjectKey}/${step.key}/${option.key}.webp`;
+    }
+
+    function renderCardThumb(step, option) {
+      const assetPath = getCardAssetPath(step, option);
+      const photoMarkup = assetPath
+        ? `<img class="thumb-photo" src="${assetPath}" alt="" loading="lazy" onerror="this.style.display='none'">`
+        : "";
+      return `
+        <div class="thumb">
+          ${photoMarkup}
+          <span class="thumb-kicker">${option.kicker}</span>
+          ${option.key === "__direct__" ? '<span class="thumb-badge">write</span>' : ""}
+        </div>
+      `;
+    }
+
     function getKnowledgeProfile() {
       if (state.currentSubject && KNOWLEDGE_OVERRIDES[state.currentSubject]) {
         return KNOWLEDGE_OVERRIDES[state.currentSubject];
@@ -4659,10 +5132,7 @@
         const cardClass = option.key === "__direct__" ? "direct-card" : "option-card";
         return `
           <button class="${cardClass}${isActive ? " active" : ""}" type="button" data-step="${step.key}" data-key="${option.key}" style="${toneStyle(option)}">
-            <div class="thumb">
-              <span class="thumb-kicker">${option.kicker}</span>
-              ${option.key === "__direct__" ? '<span class="thumb-badge">write</span>' : ""}
-            </div>
+            ${renderCardThumb(step, option)}
             <strong>${option.title}</strong>
             <span>${option.desc}</span>
           </button>
@@ -4850,7 +5320,7 @@
         byId("resultBox").value = buildPromptText();
         try {
           await navigator.clipboard.writeText(byId("resultBox").value);
-          byId("resultStatus").textContent = "프롬프트 지시문을 복사했습니다.";
+      byId("resultStatus").textContent = "GPT / Gemini에 넣을 문장을 복사했습니다.";
         } catch (error) {
           byId("resultStatus").textContent = "복사에 실패했습니다. 접힌 영역을 펼쳐 텍스트를 직접 복사해주세요.";
         }

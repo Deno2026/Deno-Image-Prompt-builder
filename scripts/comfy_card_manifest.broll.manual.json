@@ -1,0 +1,58 @@
+[
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "broll-comp-empty-wide",
+    "title": "빈 장면 넓게",
+    "cue": "여유 있는 화면 배치",
+    "prompt": "clean cinematic atmospheric frame, broad open scene, quiet landscape or room, strong empty negative space, no people, image only, absolutely no text, no letters, no words, no typography, no logo, no watermark, no captions, no subtitles, no signage, no brand name, no visible symbols"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "broll-comp-object-center",
+    "title": "중앙 오브젝트",
+    "cue": "단순 중심 배치",
+    "prompt": "clean cinematic atmospheric frame, single simple object centered in the frame, minimal background, no people, image only, absolutely no text, no letters, no words, no typography, no logo, no watermark, no captions, no subtitles, no signage, no brand name, no visible symbols"
+  },
+  {
+    "subject": "broll",
+    "step": "detail",
+    "option_key": "broll-empty",
+    "title": "비어 있는 장면",
+    "cue": "조용한 무드",
+    "prompt": "clean cinematic atmospheric frame, empty quiet scene, low clutter, soft natural light, no people, image only, absolutely no text, no letters, no words, no typography, no logo, no watermark, no captions, no subtitles, no signage, no brand name, no visible symbols"
+  },
+  {
+    "subject": "broll",
+    "step": "detail",
+    "option_key": "broll-object",
+    "title": "오브젝트 중심",
+    "cue": "소품 위주 장면",
+    "prompt": "clean cinematic atmospheric frame, small object-led detail shot, tasteful minimal set, no people, image only, absolutely no text, no letters, no words, no typography, no logo, no watermark, no captions, no subtitles, no signage, no brand name, no visible symbols"
+  },
+  {
+    "subject": "broll",
+    "step": "detail",
+    "option_key": "broll-window",
+    "title": "창가 장면",
+    "cue": "빛이 들어오는 무드",
+    "prompt": "clean cinematic atmospheric frame, window light entering a quiet room, minimal interior mood, no people, image only, absolutely no text, no letters, no words, no typography, no logo, no watermark, no captions, no subtitles, no signage, no brand name, no visible symbols"
+  },
+  {
+    "subject": "broll",
+    "step": "usage",
+    "option_key": "broll-use-intro",
+    "title": "인트로용",
+    "cue": "도입 장면",
+    "prompt": "clean cinematic atmospheric frame, elegant empty scene, soft light, broad negative space, minimal environment, no people, image only, absolutely no text, no letters, no words, no typography, no logo, no watermark, no captions, no subtitles, no signage, no brand name, no visible symbols"
+  },
+  {
+    "subject": "broll",
+    "step": "usage",
+    "option_key": "broll-use-transition",
+    "title": "전환용",
+    "cue": "중간 연결 장면",
+    "prompt": "clean cinematic atmospheric frame, simple low-clutter scene, soft motionless mood, minimal environment, no people, image only, absolutely no text, no letters, no words, no typography, no logo, no watermark, no captions, no subtitles, no signage, no brand name, no visible symbols"
+  }
+]
