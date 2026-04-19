@@ -1481,6 +1481,38 @@
 5. 코드블록은 쓰지 않습니다.
 6. 인사말이나 불필요한 설명은 넣지 않습니다.`;
 
+    const ENHANCED_SYSTEM_PROMPT = `You are an expert image-prompt planner.
+
+Use the structured inputs below to create 3 final image prompt options.
+
+Core goal:
+- Keep every explicit user selection.
+- If some useful visual details are missing, infer them naturally from the context and add them.
+- Write prompts that are detailed enough for weaker text encoders such as ComfyUI workflows, not only for GPT, Gemini, or Grok image chat models.
+
+Output rules:
+1. Output only Option 1, Option 2, Option 3.
+2. For each option, write one final English image prompt.
+3. Under each English prompt, add one short Korean explanation line.
+4. Keep the chosen subject and direction, but vary the expression style slightly across the 3 options.
+5. Do not use code blocks.
+6. Do not ask questions back.
+
+Expansion rules:
+- Never ignore explicit inputs.
+- Do not contradict selected pose, composition, background, styling, or mood.
+- When the user did not specify enough detail, add only compatible supporting details.
+- Prefer concrete visual wording over vague adjectives.
+- Especially infer and strengthen: pose nuance, hand placement, gaze direction, facial expression, body angle, framing, lens feel, camera distance, lighting direction, color palette, material texture, background simplicity, foreground/background separation, depth, atmosphere, and focal emphasis.
+- For people, add natural details like posture balance, hair flow, wardrobe texture, skin tone harmony, and flattering light if they fit the context.
+- For products, food, architecture, landscape, and service scenes, add realistic support details like surface texture, reflection control, environment cues, clean background handling, and composition anchors when relevant.
+- If the prompt is for ComfyUI-style generation, make the final prompt visually rich and explicit enough that the image can be rendered well even without the user manually specifying every small detail.
+
+Quality rules:
+- Make the result feel intentional, visual, and production-ready.
+- Avoid text inside the generated image unless the user clearly wants text.
+- Avoid weak filler words and avoid repetitive wording.`;
+
     function clone(value) {
       return JSON.parse(JSON.stringify(value));
     }
@@ -4994,7 +5026,7 @@
         selections: clone(state.selections),
         view,
         extraInput: byId("finalExtraInput") ? byId("finalExtraInput").value : "",
-        systemPrompt: byId("systemPromptInput") ? byId("systemPromptInput").value : DEFAULT_SYSTEM_PROMPT,
+          systemPrompt: byId("systemPromptInput") ? byId("systemPromptInput").value : ENHANCED_SYSTEM_PROMPT,
         promptOpen: byId("promptToggle") ? byId("promptToggle").open : false
       };
     }
@@ -5212,7 +5244,7 @@
       state.selections = {};
       state.currentView = "step";
       byId("finalExtraInput").value = "";
-      byId("systemPromptInput").value = DEFAULT_SYSTEM_PROMPT;
+      byId("systemPromptInput").value = ENHANCED_SYSTEM_PROMPT;
       byId("promptToggle").open = false;
       renderStep();
       if (pushHistory) {
@@ -5224,7 +5256,7 @@
 
     function buildPromptText() {
       const extraRequest = byId("finalExtraInput").value.trim();
-      const systemPrompt = byId("systemPromptInput").value.trim() || DEFAULT_SYSTEM_PROMPT;
+      const systemPrompt = byId("systemPromptInput").value.trim() || ENHANCED_SYSTEM_PROMPT;
       const subjectLabel = state.selections.subject?.manual || state.selections.subject?.title || getSubjectTitle(state.currentSubject);
       const inputLines = state.currentFlow.map((step) => `${step.promptLabel}: ${getPromptValue(step)}`);
       const knowledge = getKnowledgeProfile();
@@ -5256,6 +5288,15 @@
         `Must automatically consider: ${knowledge.consider.join(", ")}.`
       );
 
+      parts.push(
+        "",
+        "[Contextual Expansion Rules]",
+        "If some useful visual details are missing, infer and add only compatible supporting details instead of leaving the prompt thin.",
+        "Especially strengthen pose nuance, hand placement, gaze, body angle, crop, camera distance, lens feel, lighting direction, texture, background simplicity, color harmony, depth, atmosphere, and focal emphasis when relevant.",
+        "Make the final prompts explicit enough for ComfyUI and weaker text encoders, not only for chat-based image models.",
+        "Never contradict the selected inputs, and never add text inside the image unless the user clearly requested it."
+      );
+
       return parts.join("\n");
     }
 
@@ -5265,7 +5306,7 @@
       state.stepIndex = typeof payload.stepIndex === "number" ? Math.min(payload.stepIndex, Math.max(state.currentFlow.length - 1, 0)) : 0;
       state.selections = payload.selections || {};
       byId("finalExtraInput").value = payload.extraInput || "";
-      byId("systemPromptInput").value = payload.systemPrompt || DEFAULT_SYSTEM_PROMPT;
+      byId("systemPromptInput").value = payload.systemPrompt || ENHANCED_SYSTEM_PROMPT;
       byId("promptToggle").open = !!payload.promptOpen;
 
       if (payload.view === "result") {
@@ -5406,7 +5447,7 @@
       state.currentSubject = null;
       state.stepIndex = 0;
       state.selections = {};
-      byId("systemPromptInput").value = DEFAULT_SYSTEM_PROMPT;
+      byId("systemPromptInput").value = ENHANCED_SYSTEM_PROMPT;
       bindEvents();
       renderStep();
       syncHistory("replace", "step");
