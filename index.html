@@ -98,6 +98,20 @@
       background: rgba(12, 23, 16, 0.98);
     }
 
+    .pill.is-highlight {
+      background: rgba(86, 255, 143, 0.12);
+      border-color: rgba(86, 255, 143, 0.28);
+      color: #e4ffe9;
+    }
+
+    .top-actions {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
     .youtube-link {
       display: inline-flex;
       align-items: center;
@@ -261,6 +275,79 @@
       background: linear-gradient(90deg, rgba(255,255,255,0.68) 0 22%, rgba(255,255,255,0.68) 30% 52%, rgba(255,255,255,0.68) 60% 100%);
     }
 
+    .thumb.advanced {
+      display: flex;
+      align-items: flex-end;
+      padding: 22px;
+      background:
+        radial-gradient(circle at 26% 24%, rgba(143, 227, 175, 0.22), transparent 22%),
+        radial-gradient(circle at 76% 28%, rgba(121, 169, 255, 0.18), transparent 20%),
+        linear-gradient(180deg, #162018 0%, #0a120d 100%);
+    }
+
+    .thumb.advanced::before {
+      width: 156px;
+      height: 156px;
+      left: 26px;
+      top: 34px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 38% 38%, rgba(177, 249, 201, 0.94), rgba(70, 138, 94, 0.5) 56%, rgba(9, 18, 12, 0) 72%);
+      filter: blur(1px);
+    }
+
+    .thumb.advanced::after {
+      width: 134px;
+      height: 168px;
+      right: 26px;
+      bottom: 28px;
+      border-radius: 26px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.02)),
+        linear-gradient(180deg, rgba(16, 22, 18, 0.98), rgba(8, 13, 10, 0.98));
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    }
+
+    .thumb-advanced-label {
+      position: relative;
+      z-index: 1;
+      display: inline-flex;
+      flex-direction: column;
+      gap: 6px;
+      padding: 16px 18px;
+      max-width: 260px;
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: rgba(8, 13, 10, 0.72);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 18px 36px rgba(0, 0, 0, 0.28);
+    }
+
+    .thumb-advanced-label span {
+      width: fit-content;
+      padding: 5px 10px;
+      border-radius: 999px;
+      background: rgba(86, 255, 143, 0.14);
+      border: 1px solid rgba(86, 255, 143, 0.22);
+      color: #e6ffec;
+      font-size: 0.72rem;
+      font-weight: 900;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .thumb-advanced-label strong {
+      font-size: 1.56rem;
+      line-height: 1.02;
+      letter-spacing: -0.04em;
+    }
+
+    .thumb-advanced-label small {
+      color: #d6e6d9;
+      font-size: 0.86rem;
+      line-height: 1.5;
+    }
+
     .entry-title {
       font-size: clamp(2rem, 2.8vw, 2.6rem);
       line-height: 1.02;
@@ -318,6 +405,10 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
+      }
+
+      .top-actions {
+        width: 100%;
       }
 
       .brand {
@@ -520,10 +611,13 @@
           <strong>Simple Prompt Master V2 (260418)</strong>
         </div>
       </div>
-      <a class="pill youtube-link" href="https://www.youtube.com/@Denoise-AI" target="_blank" rel="noreferrer">
-        <span class="youtube-icon" aria-hidden="true"></span>
-        <span>Deno YouTube</span>
-      </a>
+      <div class="top-actions">
+        <a class="pill is-highlight" href="advanced.html">NEW · 고급 모드 베타</a>
+        <a class="pill youtube-link" href="https://www.youtube.com/@Denoise-AI" target="_blank" rel="noreferrer">
+          <span class="youtube-icon" aria-hidden="true"></span>
+          <span>Deno YouTube</span>
+        </a>
+      </div>
     </div>
 
     <section class="card-grid" aria-label="Prompt builder entries">
@@ -536,6 +630,21 @@
           원하는 사진 방향을 하나씩 고르면서 마지막에 바로 복사할 수 있는 지시문까지 정리하는 흐름입니다.
         </div>
         <div class="entry-meta">지금 바로 사용 가능</div>
+      </a>
+
+      <a class="entry-card" href="advanced.html">
+        <div class="thumb advanced" aria-hidden="true">
+          <div class="thumb-advanced-label">
+            <span>beta</span>
+            <strong>고급 모드</strong>
+            <small>직접 작성, 로컬 LLM, API LLM, 후처리 흐름까지 한 화면에서 다룹니다.</small>
+          </div>
+        </div>
+        <div class="entry-title">고급 모드</div>
+        <div class="entry-desc">
+          기본 생성기보다 자유롭게 다루고 싶은 사용자를 위해, 연결 방식과 출력 구조까지 함께 정리할 수 있게 확장한 ver2 페이지입니다.
+        </div>
+        <div class="entry-meta">새 업데이트 · 베타 공개</div>
       </a>
 
       <a class="entry-card" href="video.html">
