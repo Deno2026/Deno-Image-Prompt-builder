@@ -4,7 +4,6 @@
 이미지, 동영상, TTS/가사 작업을 더 쉽게 시작할 수 있도록 큰 흐름부터 하나씩 고르면서 최종 지시문까지 정리하는 것을 목표로 합니다.
 
 라이브 페이지: [GitHub Pages](https://deno2026.github.io/Deno-Image-Prompt-builder/)  
-고급 모드: [Advanced](https://deno2026.github.io/Deno-Image-Prompt-builder/advanced.html)  
 YouTube 채널: [Deno YouTube](https://www.youtube.com/@Denoise-AI)
 
 ## 프로젝트 소개
@@ -29,21 +28,13 @@ YouTube 채널: [Deno YouTube](https://www.youtube.com/@Denoise-AI)
 - 사람이 들어가는 브랜치에서는 포즈, 인상, 스타일링 등을 더 세분화
 - 마지막에 선택 요약 + 추가 입력 + 복사 가능한 프롬프트 지시문 제공
 
-### 2. 고급 모드 (베타)
-
-기본 흐름보다 자유도가 높은 사용자를 위한 확장 페이지입니다.
-
-- 직접 작성 / 로컬 LLM / API LLM / 후처리 흐름 분리
-- 고급 프롬프트 초안과 호출용 페이로드를 나란히 확인
-- 이후 실제 연결 기능을 붙이기 쉬운 베타 구조
-
-### 3. 동영상 생성기
+### 2. 동영상 생성기
 
 페이지 연결과 입구 구조만 먼저 준비되어 있습니다.
 
 - 동영상 프롬프트 전용 하위 항목은 추후 업데이트 예정
 
-### 4. TTS / 가사 생성기
+### 3. TTS / 가사 생성기
 
 페이지 연결과 방향성만 먼저 열어둔 상태입니다.
 
@@ -63,18 +54,16 @@ YouTube 채널: [Deno YouTube](https://www.youtube.com/@Denoise-AI)
 ## 사용 방법
 
 1. 메인 페이지에서 원하는 생성기 선택
-2. 기본 모드 또는 고급 모드 중 현재 작업에 맞는 흐름 선택
-3. 단계별 질문에서 가장 가까운 항목 선택
-4. 마지막 화면에서 선택 요약 확인
-5. 필요한 추가 정보를 짧게 덧붙이기
-6. `프롬프트 지시문 복사` 버튼으로 복사
-7. GPT, Gemini, 또는 원하는 LLM에 붙여 넣기
+2. 단계별 질문에서 가장 가까운 항목 선택
+3. 마지막 화면에서 선택 요약 확인
+4. 필요한 추가 정보를 짧게 덧붙이기
+5. `프롬프트 지시문 복사` 버튼으로 복사
+6. GPT, Gemini, 또는 원하는 LLM에 붙여 넣기
 
 ## 파일 구성
 
 - `index.html`: 메인 진입 페이지
 - `image.html`: 단계형 이미지 프롬프트 생성기 본편
-- `advanced.html`: 고급 모드 베타 페이지
 - `video.html`: 동영상 생성기 준비 페이지
 - `tts.html`: TTS / 가사 생성기 준비 페이지
 - `favicon.svg`: 사이트 아이콘
