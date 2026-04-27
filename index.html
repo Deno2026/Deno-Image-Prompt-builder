@@ -6,7 +6,7 @@
   <title>Simple Prompt Master - AI 프롬프트 빌더</title>
   <meta
     name="description"
-    content="Simple Prompt Master는 이미지, 동영상, TTS/음악 생성 프롬프트를 카드 선택 흐름으로 정리하고 LLM 상담형 지시문으로 이어주는 정적 웹 도구입니다."
+    content="Simple Prompt Master는 이미지와 동영상 생성 프롬프트를 카드 선택 흐름으로 정리하고 LLM 상담형 지시문으로 이어주는 정적 웹 도구입니다."
   />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <style>
@@ -187,7 +187,7 @@
     .card-grid {
       margin: auto 0;
       display: grid;
-      grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.96fr) minmax(0, 0.96fr);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 24px;
       align-items: stretch;
     }
@@ -196,7 +196,7 @@
       display: block;
       text-decoration: none;
       color: inherit;
-      min-height: 520px;
+      min-height: 560px;
       padding: 26px;
       border-radius: var(--radius-xl);
       border: 1px solid rgba(92, 255, 145, 0.12);
@@ -222,10 +222,6 @@
       inset: 0;
       background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent 22%);
       pointer-events: none;
-    }
-
-    .entry-card:first-child {
-      min-height: 560px;
     }
 
     .thumb {
@@ -624,16 +620,6 @@
         <div class="entry-meta">지금 바로 사용 가능</div>
       </a>
 
-      <a class="entry-card" href="tts.html">
-        <div class="thumb thumb--media" aria-hidden="true">
-          <img src="assets/cards/home/main/home-tts-builder.webp" alt="" width="448" height="448" loading="lazy" decoding="async" />
-        </div>
-        <div class="entry-title">TTS / 가사 생성기</div>
-        <div class="entry-desc">
-          TTS 대본과 말투 가이드, Suno 등에 넣기 좋은 가사와 음악 프롬프트를 단계별로 정리합니다.
-        </div>
-        <div class="entry-meta">지금 바로 사용 가능</div>
-      </a>
     </section>
   </main>
 </body>

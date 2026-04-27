@@ -1470,7 +1470,6 @@
       <div class="mode-links">
         <a class="mode-pill active" href="image.html">이미지 생성</a>
         <a class="mode-pill" href="video.html">동영상 생성</a>
-        <a class="mode-pill" href="tts.html">TTS / 음악</a>
       </div>
       <a class="pill-btn youtube-link" href="https://www.youtube.com/@Denoise-AI" target="_blank" rel="noreferrer">
         <span class="youtube-icon" aria-hidden="true"></span>
@@ -1499,8 +1498,8 @@
       <div class="result-hero">
         <div class="result-copy">
           <span class="result-tag">RESULT</span>
-          <h2>기본 입력이 완료되었어요</h2>
-          <p>지금까지 고른 내용을 한눈에 보고, 마지막으로 꼭 넣고 싶은 내용을 한 줄 더 붙인 뒤 바로 복사하면 됩니다.</p>
+          <h2>이미지 상담 지시문이 준비됐어요</h2>
+          <p>지금까지 고른 내용을 LLM에게 넘기면, 부족한 디테일을 먼저 물어보고 최종 이미지 프롬프트로 완성하는 흐름입니다.</p>
         </div>
         <div class="step-indicator">FINAL STEP</div>
       </div>
@@ -1521,8 +1520,8 @@
         </div>
 
         <div class="result-block final-panel">
-          <h3>추가 입력</h3>
-          <p class="result-copy">원하는 사진을 만들 수 있도록 추가 정보를 생각나는대로 모두 적어주세요. 떠오르는 단어, 장면, 감정, 색감, 질감, 배경 요소를 편하게 적으면 됩니다.</p>
+          <h3>추가로 알려줄 내용</h3>
+          <p class="result-copy">LLM에게 미리 알려주고 싶은 장면, 감정, 색감, 질감, 배경 요소가 있으면 편하게 적어주세요. 비워도 LLM이 부족한 부분을 먼저 물어보도록 되어 있습니다.</p>
 
           <label class="final-label" for="finalExtraInput">추가로 떠오르는 정보</label>
           <textarea
@@ -1530,7 +1529,7 @@
             class="final-textarea"
             placeholder="예: 영화같은 분위기, 밝은 미소, 깔끔한 배경, 도시 야경, 역광, 차분한 초록빛 톤, 자신감 있는 표정, 고급스러운 옷, 배경은 단순하게, 빛 번짐은 살짝만"
           ></textarea>
-          <p class="result-copy">입력하는 즉시 아래 복사 버튼에 반영됩니다.</p>
+          <p class="result-copy">입력하는 즉시 아래 상담 지시문에 반영됩니다.</p>
 
           <details id="promptToggle" class="prompt-details">
             <summary>
@@ -1539,13 +1538,13 @@
             <div class="prompt-details-body">
               <label class="final-label" for="systemPromptInput">시스템 프롬프트</label>
               <textarea id="systemPromptInput" class="prompt-editor" aria-label="시스템 프롬프트"></textarea>
-              <label class="final-label" for="resultBox">AI에 붙여넣을 문장</label>
-              <textarea id="resultBox" class="prompt-box" aria-label="AI에 붙여넣을 문장" readonly></textarea>
+              <label class="final-label" for="resultBox">LLM에 붙여넣을 상담 지시문</label>
+              <textarea id="resultBox" class="prompt-box" aria-label="LLM에 붙여넣을 상담 지시문" readonly></textarea>
             </div>
           </details>
 
           <div class="action-row">
-            <button id="copyBtn" class="primary-btn copy-cta" type="button">GPT / Gemini에 넣을 문장 복사</button>
+            <button id="copyBtn" class="primary-btn copy-cta" type="button">LLM 상담 지시문 복사</button>
             <button id="restartBtn" class="ghost-btn restart-btn" type="button">처음부터 다시 하기</button>
           </div>
 
@@ -1581,49 +1580,54 @@
       teal: { a: "#214447", b: "#0a1718", glow: "rgba(135, 255, 238, 0.22)", shape: "rgba(212, 248, 245, 0.8)" }
     };
 
-    const DEFAULT_SYSTEM_PROMPT = `당신은 이미지 생성 프롬프트를 정리하는 전문가입니다.
+    const DEFAULT_SYSTEM_PROMPT = `당신은 한국어 사용자와 대화하며 이미지 생성 프롬프트를 완성하는 상담형 이미지 디렉터입니다.
 
-아래 구조화된 입력을 읽고 최종 결과를 만들어주세요.
+아래 구조화된 입력은 사용자가 프롬프트 빌더에서 고른 재료입니다. 바로 최종 프롬프트만 던지는 것이 아니라, 먼저 이 재료가 충분한지 판단하고 부족한 부분을 능동적으로 보완해주세요.
 
-출력 규칙:
-1. Option 1, Option 2, Option 3만 출력합니다.
-2. 각 옵션마다 영어 이미지 프롬프트 1개를 작성합니다.
-3. 각 영어 프롬프트 아래에 짧은 한국어 설명을 붙입니다.
-4. 사용자가 고른 핵심 방향은 유지하되, 옵션마다 표현을 다르게 변주합니다.
-5. 코드블록은 쓰지 않습니다.
-6. 인사말이나 불필요한 설명은 넣지 않습니다.`;
+작동 방식:
+1. 사용자가 만들고 싶은 이미지가 무엇인지 짧게 요약합니다.
+2. 좋은 이미지 프롬프트를 만들기 위해 빠진 핵심 정보가 있으면 1~4개만 질문합니다.
+3. 이미 충분하다면 질문을 길게 끌지 말고 바로 최종 프롬프트 후보를 만듭니다.
+4. 사용자가 답을 주면 그 답까지 반영해서 최종 영어 이미지 프롬프트를 완성합니다.
+5. 사용자가 고른 핵심 방향은 유지하고, 서로 충돌하는 선택이 있으면 어떤 부분이 애매한지 짚어줍니다.
+6. 코드블록은 쓰지 않습니다.`;
 
-    const ENHANCED_SYSTEM_PROMPT = `You are an expert image-prompt planner.
+    const ENHANCED_SYSTEM_PROMPT = `You are an active Korean image-prompt consultant and creative director.
 
-Use the structured inputs below to create 3 final image prompt options.
+The structured inputs below are ingredients selected in a visual prompt builder. Your job is not to blindly output a final prompt immediately. Your job is to help the user complete the image idea through a short, useful consultation, then turn it into production-ready image prompts.
 
-Core goal:
-- Keep every explicit user selection.
-- If some useful visual details are missing, infer them naturally from the context and add them.
-- Write each prompt as a clear natural-language visual description, not as comma-separated keyword fragments, while keeping enough concrete visual detail for modern ComfyUI-style workflows where the prompt should carry the visual intent clearly.
+Core behavior:
+- First understand the user's intended image from the structured inputs.
+- Preserve every explicit user selection. Never collapse multiple subjects, objects, or requested details into one vague phrase.
+- If any input contains 2 or more entities/items, preserve every item explicitly and clarify their visual relationship.
+- Detect missing or weak visual information that would materially improve the image.
+- Ask only 1 to 4 high-impact follow-up questions when important information is missing.
+- If the brief is already strong enough, do not over-question. Produce final prompt options immediately.
+- If selections conflict, explain the conflict briefly and ask the smallest useful clarification.
+- Write in Korean when consulting the user. Write final image prompts in English unless the user asks otherwise.
 
-Output rules:
-1. Output only Option 1, Option 2, Option 3.
-2. For each option, write one final English image prompt.
-3. Under each English prompt, add one short Korean explanation line.
-4. Keep the chosen subject and direction, but vary the expression style slightly across the 3 options.
-5. Do not use code blocks.
-6. Do not ask questions back.
+When you ask follow-up questions, prioritize:
+- exact subject identity and relationship between multiple subjects
+- pose, expression, gaze, hand placement, body angle
+- composition, camera distance, lens feel, crop, aspect ratio
+- lighting direction, color palette, mood, atmosphere
+- background simplicity or environment detail
+- texture, material, wardrobe, product surface, food styling, architecture, landscape, or service-scene specifics when relevant
+- whether text should appear inside the generated image
 
-Expansion rules:
-- Never ignore explicit inputs.
-- Do not contradict selected pose, composition, background, styling, or mood.
-- When the user did not specify enough detail, add only compatible supporting details.
-- Prefer concrete visual wording over vague adjectives.
-- Especially infer and strengthen: pose nuance, hand placement, gaze direction, facial expression, body angle, framing, lens feel, camera distance, lighting direction, color palette, material texture, background simplicity, foreground/background separation, depth, atmosphere, and focal emphasis.
-- For people, add natural details like posture balance, hair flow, wardrobe texture, skin tone harmony, and flattering light if they fit the context.
-- For products, food, architecture, landscape, and service scenes, add realistic support details like surface texture, reflection control, environment cues, clean background handling, and composition anchors when relevant.
-- Keep the final prompt visually rich, readable, and specific enough that the scene can be imagined from the wording alone, even when the downstream image model does not infer missing details well.
+When enough information is available, output:
+1. A short Korean summary of the final image direction.
+2. Option 1, Option 2, Option 3.
+3. For each option, one production-ready English image prompt.
+4. Under each English prompt, one short Korean note explaining the variation.
 
 Quality rules:
-- Make the result feel intentional, visual, and production-ready.
+- Keep the result intentional, visual, and production-ready.
+- Use natural-language visual descriptions, not thin keyword fragments.
+- Prefer concrete visual wording over vague adjectives.
 - Avoid text inside the generated image unless the user clearly wants text.
-- Avoid weak filler words and avoid repetitive wording.`;
+- Do not imitate a living artist's exact style. Describe visual qualities instead.
+- Do not use code blocks.`;
 
     function clone(value) {
       return JSON.parse(JSON.stringify(value));
@@ -5400,7 +5404,7 @@ Quality rules:
           "",
           "[Extra Input Handling]",
           "Treat the extra input as short natural-language notes from the user.",
-          "Combine it with the structured selections above, infer the user's final desired image, and reflect that intent naturally in every option."
+          "Combine it with the structured selections above when deciding whether to ask follow-up questions or produce final prompt options."
         );
       }
 
@@ -5414,10 +5418,11 @@ Quality rules:
       parts.push(
         "",
         "[Contextual Expansion Rules]",
-        "If some useful visual details are missing, infer and add only compatible supporting details instead of leaving the prompt thin.",
-        "Especially strengthen pose nuance, hand placement, gaze, body angle, crop, camera distance, lens feel, lighting direction, texture, background simplicity, color harmony, depth, atmosphere, and focal emphasis when relevant.",
-        "Keep the final prompts in natural language, with enough concrete visual detail that the intended image is easy to picture and reproduce.",
-        "Never contradict the selected inputs, and never add text inside the image unless the user clearly requested it."
+        "Before writing final prompts, evaluate whether the current brief is strong enough.",
+        "If important information is missing, ask 1 to 4 concise follow-up questions instead of rushing to a final prompt.",
+        "If enough information is available, produce 3 final prompt options with rich natural-language visual detail.",
+        "Especially check pose nuance, hand placement, gaze, body angle, crop, camera distance, lens feel, lighting direction, texture, background simplicity, color harmony, depth, atmosphere, focal emphasis, and text-in-image intent when relevant.",
+        "Never contradict the selected inputs. Preserve all explicitly selected subjects, objects, and multi-item details."
       );
 
       return parts.join("\n");
@@ -5484,7 +5489,7 @@ Quality rules:
         byId("resultBox").value = buildPromptText();
         try {
           await navigator.clipboard.writeText(byId("resultBox").value);
-      byId("resultStatus").textContent = "GPT / Gemini에 넣을 문장을 복사했습니다.";
+          byId("resultStatus").textContent = "LLM 상담 지시문을 복사했습니다.";
         } catch (error) {
           byId("resultStatus").textContent = "복사에 실패했습니다. 접힌 영역을 펼쳐 텍스트를 직접 복사해주세요.";
         }
