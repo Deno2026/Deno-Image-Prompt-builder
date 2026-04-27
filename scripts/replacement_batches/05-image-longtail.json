@@ -1,0 +1,2879 @@
+[
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "thumbnail-person",
+    "title": "유튜브 썸네일 인물",
+    "cue": "표정과 반응이 강조되는 클릭형 썸네일"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "portrait",
+    "title": "인물 사진",
+    "cue": "프로필, 화보, SNS용 인물 이미지"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "selfie-sns",
+    "title": "셀카 / SNS 사진",
+    "cue": "인스타 감성, 거울셀카, 일상 인증샷"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "group-family",
+    "title": "커플 / 가족 / 그룹",
+    "cue": "둘 이상이 함께 나오는 관계 중심 사진"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "fashion-beauty",
+    "title": "패션 / 뷰티 / 룩북",
+    "cue": "의상, 메이크업, 헤어가 중심인 이미지"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "profile-id",
+    "title": "증명 / 프로필 사진",
+    "cue": "이력서, 회사 소개, 강사 프로필용 이미지"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "product",
+    "title": "제품 사진",
+    "cue": "상품 소개, 상세페이지, 브랜드용 제품 이미지"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "food-drink",
+    "title": "음식 / 음료 사진",
+    "cue": "카페, 메뉴, 디저트, 음료, 술 이미지"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "vehicle",
+    "title": "차량 / 모빌리티",
+    "cue": "자동차, 바이크, 이동수단 중심 이미지"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "space",
+    "title": "공간 / 인테리어",
+    "cue": "거실, 주방, 카페, 작업실 같은 실내 공간"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "architecture",
+    "title": "건축 / 외관",
+    "cue": "건물 외관, 거리, 상업 공간 외부 이미지"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "landscape",
+    "title": "풍경 / 자연 / 도시",
+    "cue": "자연, 도시 전경, 야경, 계절 풍경"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "travel",
+    "title": "여행 / 브이로그 장면",
+    "cue": "인트로, 여행 컷, 브이로그용 장면"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "animal",
+    "title": "반려동물 / 동물",
+    "cue": "강아지, 고양이, 동물 초상과 활동 장면"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "workspace",
+    "title": "업무 참고 이미지",
+    "cue": "발표 자료, 기획안, 문서 삽입용 이미지"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "service",
+    "title": "서비스 / 앱 설명 이미지",
+    "cue": "웹, 앱, AI 서비스 소개용 비주얼"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "poster",
+    "title": "포스터 / 커버 / 키비주얼",
+    "cue": "행사 포스터, 앨범커버, 메인 비주얼"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "fantasy",
+    "title": "판타지 / SF / 세계관",
+    "cue": "세계관, 미래도시, 게임 콘셉트 이미지"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "illustration",
+    "title": "캐릭터 / 일러스트",
+    "cue": "애니풍, 귀여운 캐릭터, 교육용 일러스트"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "event",
+    "title": "행사 / 공연 / 무대",
+    "cue": "콘서트, 강연, 축제, 발표 장면"
+  },
+  {
+    "subject": "subjects",
+    "step": "subject",
+    "option_key": "broll",
+    "title": "배경 / B-roll 장면",
+    "cue": "중간 삽입컷, 전환컷, 텍스트 배경용 이미지"
+  },
+  {
+    "subject": "poster",
+    "step": "detail",
+    "option_key": "poster-movie",
+    "title": "영화 포스터",
+    "cue": "한 장면의 분위기와 제목이 중요한 방향"
+  },
+  {
+    "subject": "poster",
+    "step": "detail",
+    "option_key": "poster-event",
+    "title": "행사 / 전시 포스터",
+    "cue": "정보와 비주얼이 함께 필요한 방향"
+  },
+  {
+    "subject": "poster",
+    "step": "detail",
+    "option_key": "poster-performance",
+    "title": "공연 / 콘서트 포스터",
+    "cue": "무드와 에너지가 중요한 방향"
+  },
+  {
+    "subject": "poster",
+    "step": "detail",
+    "option_key": "poster-album",
+    "title": "앨범 커버",
+    "cue": "아티스트 무드와 심벌성이 중요한 방향"
+  },
+  {
+    "subject": "poster",
+    "step": "detail",
+    "option_key": "poster-book",
+    "title": "책 표지",
+    "cue": "메시지와 상징성이 중요한 방향"
+  },
+  {
+    "subject": "poster",
+    "step": "detail",
+    "option_key": "poster-campaign",
+    "title": "브랜드 캠페인",
+    "cue": "브랜드 메시지가 중심인 방향"
+  },
+  {
+    "subject": "poster",
+    "step": "detail",
+    "option_key": "poster-launch",
+    "title": "제품 런칭 비주얼",
+    "cue": "새로움과 집중도가 중요한 방향"
+  },
+  {
+    "subject": "poster",
+    "step": "detail",
+    "option_key": "poster-youtube",
+    "title": "유튜브 커버 / 썸네일 배경",
+    "cue": "텍스트 배치가 쉬운 방향"
+  },
+  {
+    "subject": "poster",
+    "step": "detail",
+    "option_key": "poster-title",
+    "title": "타이틀 배경용 비주얼",
+    "cue": "문구가 들어갈 메인 배경이 중요한 방향"
+  },
+  {
+    "subject": "poster",
+    "step": "detail",
+    "option_key": "poster-festival",
+    "title": "페스티벌 / 시즌 포스터",
+    "cue": "행사성과 에너지가 느껴지는 방향"
+  },
+  {
+    "subject": "poster",
+    "step": "motif",
+    "option_key": "poster-motif-person",
+    "title": "인물 중심",
+    "cue": "주인공 존재감이 가장 큰 방향"
+  },
+  {
+    "subject": "poster",
+    "step": "motif",
+    "option_key": "poster-motif-object",
+    "title": "오브젝트 중심",
+    "cue": "한 물체나 대상이 상징이 되는 방향"
+  },
+  {
+    "subject": "poster",
+    "step": "motif",
+    "option_key": "poster-motif-symbol",
+    "title": "상징 / 심벌 중심",
+    "cue": "의미를 압축한 메타포가 중요한 방향"
+  },
+  {
+    "subject": "poster",
+    "step": "motif",
+    "option_key": "poster-motif-landscape",
+    "title": "풍경 중심",
+    "cue": "장소와 공기감이 포스터의 핵심인 방향"
+  },
+  {
+    "subject": "poster",
+    "step": "motif",
+    "option_key": "poster-motif-collage",
+    "title": "콜라주 느낌",
+    "cue": "여러 요소가 겹쳐 보이는 방향"
+  },
+  {
+    "subject": "poster",
+    "step": "motif",
+    "option_key": "poster-motif-texture",
+    "title": "질감 / 패턴 중심",
+    "cue": "배경 자체의 무드가 강한 방향"
+  },
+  {
+    "subject": "poster",
+    "step": "motif",
+    "option_key": "poster-motif-light",
+    "title": "빛 / 색 중심",
+    "cue": "조명과 색감이 상징이 되는 방향"
+  },
+  {
+    "subject": "poster",
+    "step": "motif",
+    "option_key": "poster-motif-dual",
+    "title": "대비되는 두 요소",
+    "cue": "두 대상의 대비가 핵심인 방향"
+  },
+  {
+    "subject": "poster",
+    "step": "layout",
+    "option_key": "poster-layout-center",
+    "title": "가운데 제목",
+    "cue": "중앙 타이틀이 강하게 들어가는 구조"
+  },
+  {
+    "subject": "poster",
+    "step": "layout",
+    "option_key": "poster-layout-top",
+    "title": "상단 제목 + 메인 비주얼",
+    "cue": "위쪽 헤드라인이 쉬운 구조"
+  },
+  {
+    "subject": "poster",
+    "step": "layout",
+    "option_key": "poster-layout-bottom",
+    "title": "하단 정보 / 크레딧",
+    "cue": "아래쪽 텍스트 정리에 쉬운 구조"
+  },
+  {
+    "subject": "poster",
+    "step": "layout",
+    "option_key": "poster-layout-left",
+    "title": "왼쪽 타이포 공간",
+    "cue": "왼쪽 여백이 큰 구조"
+  },
+  {
+    "subject": "poster",
+    "step": "layout",
+    "option_key": "poster-layout-right",
+    "title": "오른쪽 타이포 공간",
+    "cue": "오른쪽 여백이 큰 구조"
+  },
+  {
+    "subject": "poster",
+    "step": "layout",
+    "option_key": "poster-layout-vertical",
+    "title": "세로형 포스터 균형",
+    "cue": "세로 비율에서 안정적인 구조"
+  },
+  {
+    "subject": "poster",
+    "step": "layout",
+    "option_key": "poster-layout-clean",
+    "title": "텍스트 없이 비주얼 중심",
+    "cue": "이미지 자체가 강한 구조"
+  },
+  {
+    "subject": "poster",
+    "step": "layout",
+    "option_key": "poster-layout-badge",
+    "title": "작은 서브 문구 포함",
+    "cue": "부제나 배지가 들어가기 쉬운 구조"
+  },
+  {
+    "subject": "poster",
+    "step": "composition",
+    "option_key": "poster-center",
+    "title": "정중앙 메인 비주얼",
+    "cue": "주제가 정면에서 강하게 보이는 포스터 구도"
+  },
+  {
+    "subject": "poster",
+    "step": "composition",
+    "option_key": "poster-left-space",
+    "title": "왼쪽 여백형",
+    "cue": "오른쪽 비주얼, 왼쪽 텍스트 배치가 쉬운 구조"
+  },
+  {
+    "subject": "poster",
+    "step": "composition",
+    "option_key": "poster-right-space",
+    "title": "오른쪽 여백형",
+    "cue": "왼쪽 비주얼, 오른쪽 텍스트 배치가 쉬운 구조"
+  },
+  {
+    "subject": "poster",
+    "step": "composition",
+    "option_key": "poster-top-space",
+    "title": "상단 타이틀형",
+    "cue": "위쪽 제목 공간을 남기는 포스터 구조"
+  },
+  {
+    "subject": "poster",
+    "step": "composition",
+    "option_key": "poster-bottom-space",
+    "title": "하단 크레딧형",
+    "cue": "아래쪽에 정보가 들어가기 쉬운 구조"
+  },
+  {
+    "subject": "poster",
+    "step": "composition",
+    "option_key": "poster-diagonal",
+    "title": "대각선 흐름형",
+    "cue": "시선이 사선으로 움직이는 역동적인 구조"
+  },
+  {
+    "subject": "poster",
+    "step": "composition",
+    "option_key": "poster-collage",
+    "title": "콜라주형",
+    "cue": "여러 요소를 한 장에 묶는 구성"
+  },
+  {
+    "subject": "poster",
+    "step": "composition",
+    "option_key": "poster-minimal",
+    "title": "미니멀 메인형",
+    "cue": "요소를 줄여 상징이 강하게 보이는 구조"
+  },
+  {
+    "subject": "poster",
+    "step": "composition",
+    "option_key": "poster-comp-visual-center",
+    "title": "비주얼 중심 메인컷",
+    "cue": "이미지 자체 힘이 큰 구도"
+  },
+  {
+    "subject": "poster",
+    "step": "composition",
+    "option_key": "poster-comp-visual-clean",
+    "title": "텍스트 거의 없는 메인 비주얼",
+    "cue": "커버형에 가까운 구도"
+  },
+  {
+    "subject": "poster",
+    "step": "composition",
+    "option_key": "poster-comp-visual-symbol",
+    "title": "심벌 / 오브젝트 중심",
+    "cue": "상징이 크게 보이는 구도"
+  },
+  {
+    "subject": "poster",
+    "step": "composition",
+    "option_key": "poster-comp-visual-person",
+    "title": "인물 중심 포스터컷",
+    "cue": "주인공이 강하게 보이는 구도"
+  },
+  {
+    "subject": "poster",
+    "step": "composition",
+    "option_key": "poster-comp-visual-dual",
+    "title": "두 요소 대비 구도",
+    "cue": "대비되는 두 대상이 중심인 구도"
+  },
+  {
+    "subject": "poster",
+    "step": "composition",
+    "option_key": "poster-comp-visual-landscape",
+    "title": "배경 공간이 중심인 구도",
+    "cue": "풍경이 메인 비주얼인 포스터 구도"
+  },
+  {
+    "subject": "poster",
+    "step": "composition",
+    "option_key": "poster-comp-visual-collage",
+    "title": "콜라주 / 다중 요소 구도",
+    "cue": "여러 요소가 겹쳐 보이는 구도"
+  },
+  {
+    "subject": "poster",
+    "step": "composition",
+    "option_key": "poster-comp-visual-minimal",
+    "title": "미니멀 오브젝트 구도",
+    "cue": "한 요소만 강하게 보이는 구도"
+  },
+  {
+    "subject": "poster",
+    "step": "composition",
+    "option_key": "poster-comp-title-top",
+    "title": "상단 타이틀 메인",
+    "cue": "위쪽 제목이 잘 읽히는 포스터 구도"
+  },
+  {
+    "subject": "poster",
+    "step": "composition",
+    "option_key": "poster-comp-title-center",
+    "title": "가운데 타이틀 메인",
+    "cue": "제목 자체가 메인인 포스터 구도"
+  },
+  {
+    "subject": "poster",
+    "step": "composition",
+    "option_key": "poster-comp-title-bottom",
+    "title": "하단 제목 / 크레딧형",
+    "cue": "아래쪽 정보 정리가 쉬운 구도"
+  },
+  {
+    "subject": "poster",
+    "step": "composition",
+    "option_key": "poster-comp-title-left",
+    "title": "왼쪽 타이포 공간형",
+    "cue": "왼쪽 타이포 비중이 큰 구도"
+  },
+  {
+    "subject": "poster",
+    "step": "composition",
+    "option_key": "poster-comp-title-right",
+    "title": "오른쪽 타이포 공간형",
+    "cue": "오른쪽 타이포 비중이 큰 구도"
+  },
+  {
+    "subject": "poster",
+    "step": "composition",
+    "option_key": "poster-comp-title-poster",
+    "title": "포스터형 메인 비주얼",
+    "cue": "비주얼과 제목이 같이 강한 구도"
+  },
+  {
+    "subject": "poster",
+    "step": "composition",
+    "option_key": "poster-comp-title-vertical",
+    "title": "세로 포스터 균형형",
+    "cue": "세로 비율에서 안정적인 구도"
+  },
+  {
+    "subject": "poster",
+    "step": "composition",
+    "option_key": "poster-comp-title-badge",
+    "title": "작은 배지 + 메인 제목",
+    "cue": "부제나 행사 정보가 함께 들어가는 구도"
+  },
+  {
+    "subject": "poster",
+    "step": "mood",
+    "option_key": "mood-bright",
+    "title": "밝고 친근하게",
+    "cue": "입문자도 편하게 느끼는 가볍고 열린 분위기"
+  },
+  {
+    "subject": "poster",
+    "step": "mood",
+    "option_key": "mood-clean",
+    "title": "깨끗하고 맑게",
+    "cue": "정보 전달이 또렷한 클린한 방향"
+  },
+  {
+    "subject": "poster",
+    "step": "mood",
+    "option_key": "mood-warm",
+    "title": "따뜻하고 편안하게",
+    "cue": "부드럽고 정감 있는 인상을 주는 무드"
+  },
+  {
+    "subject": "poster",
+    "step": "mood",
+    "option_key": "mood-calm",
+    "title": "차분하고 담백하게",
+    "cue": "과장되지 않고 정리된 톤"
+  },
+  {
+    "subject": "poster",
+    "step": "mood",
+    "option_key": "mood-cinematic",
+    "title": "영화처럼 깊게",
+    "cue": "공기감과 서사가 함께 느껴지는 무드"
+  },
+  {
+    "subject": "poster",
+    "step": "mood",
+    "option_key": "mood-dramatic",
+    "title": "강렬하고 드라마틱하게",
+    "cue": "명암과 감정이 또렷한 방향"
+  },
+  {
+    "subject": "poster",
+    "step": "mood",
+    "option_key": "mood-luxury",
+    "title": "고급스럽고 세련되게",
+    "cue": "브랜드 비주얼 같은 정제된 무드"
+  },
+  {
+    "subject": "poster",
+    "step": "mood",
+    "option_key": "mood-playful",
+    "title": "귀엽고 경쾌하게",
+    "cue": "색감과 인상이 가볍고 재미있는 방향"
+  },
+  {
+    "subject": "poster",
+    "step": "mood",
+    "option_key": "mood-future",
+    "title": "미래적이고 차갑게",
+    "cue": "기술적이고 현대적인 느낌"
+  },
+  {
+    "subject": "poster",
+    "step": "mood",
+    "option_key": "mood-vintage",
+    "title": "빈티지하고 레트로하게",
+    "cue": "옛 감성과 필름 느낌이 남는 방향"
+  },
+  {
+    "subject": "fantasy",
+    "step": "detail",
+    "option_key": "fantasy-character",
+    "title": "판타지 인물",
+    "cue": "의상과 분위기가 중요한 캐릭터 이미지"
+  },
+  {
+    "subject": "fantasy",
+    "step": "detail",
+    "option_key": "fantasy-city",
+    "title": "SF 미래도시",
+    "cue": "구조물과 세계관이 중요한 배경 이미지"
+  },
+  {
+    "subject": "fantasy",
+    "step": "detail",
+    "option_key": "fantasy-magic",
+    "title": "마법 / 이세계 장면",
+    "cue": "빛과 판타지 요소가 중요한 장면"
+  },
+  {
+    "subject": "fantasy",
+    "step": "detail",
+    "option_key": "fantasy-cyberpunk",
+    "title": "사이버펑크",
+    "cue": "네온과 기술 감성이 강한 장면"
+  },
+  {
+    "subject": "fantasy",
+    "step": "detail",
+    "option_key": "fantasy-monster",
+    "title": "괴물 / 생물체",
+    "cue": "비현실적인 존재가 중심인 장면"
+  },
+  {
+    "subject": "fantasy",
+    "step": "detail",
+    "option_key": "fantasy-game",
+    "title": "게임 콘셉트 아트",
+    "cue": "설정화처럼 보이는 방향"
+  },
+  {
+    "subject": "fantasy",
+    "step": "detail",
+    "option_key": "fantasy-mecha",
+    "title": "메카 / 로봇",
+    "cue": "기계적 디테일이 중요한 장면"
+  },
+  {
+    "subject": "fantasy",
+    "step": "detail",
+    "option_key": "fantasy-post",
+    "title": "포스트아포칼립스",
+    "cue": "폐허와 생존 분위기가 중요한 장면"
+  },
+  {
+    "subject": "fantasy",
+    "step": "detail",
+    "option_key": "fantasy-myth",
+    "title": "신화 / 전설",
+    "cue": "상징성과 장엄함이 중요한 장면"
+  },
+  {
+    "subject": "fantasy",
+    "step": "detail",
+    "option_key": "fantasy-fairy",
+    "title": "동화풍 세계",
+    "cue": "부드럽고 마법 같은 분위기의 장면"
+  },
+  {
+    "subject": "fantasy",
+    "step": "stage",
+    "option_key": "fantasy-stage-forest",
+    "title": "숲 / 신성한 자연",
+    "cue": "자연과 마법 기운이 함께 있는 무대"
+  },
+  {
+    "subject": "fantasy",
+    "step": "stage",
+    "option_key": "fantasy-stage-castle",
+    "title": "성 / 왕국 / 중세 도시",
+    "cue": "전통 판타지 세계가 느껴지는 무대"
+  },
+  {
+    "subject": "fantasy",
+    "step": "stage",
+    "option_key": "fantasy-stage-future",
+    "title": "미래 도시 / 네온 거리",
+    "cue": "기술과 도시 문명이 중심인 무대"
+  },
+  {
+    "subject": "fantasy",
+    "step": "stage",
+    "option_key": "fantasy-stage-ruin",
+    "title": "폐허 / 붕괴된 도시",
+    "cue": "위험과 서사가 느껴지는 무대"
+  },
+  {
+    "subject": "fantasy",
+    "step": "stage",
+    "option_key": "fantasy-stage-space",
+    "title": "우주선 / 정거장 / 실험실",
+    "cue": "SF 설정이 또렷한 무대"
+  },
+  {
+    "subject": "fantasy",
+    "step": "stage",
+    "option_key": "fantasy-stage-portal",
+    "title": "차원문 / 포털 / 꿈세계",
+    "cue": "현실과 다른 경계가 보이는 무대"
+  },
+  {
+    "subject": "fantasy",
+    "step": "stage",
+    "option_key": "fantasy-stage-altar",
+    "title": "제단 / 의식 공간",
+    "cue": "상징과 의식이 중심인 무대"
+  },
+  {
+    "subject": "fantasy",
+    "step": "stage",
+    "option_key": "fantasy-stage-extreme",
+    "title": "사막 / 설원 / 극한 지형",
+    "cue": "환경 자체가 주인공인 무대"
+  },
+  {
+    "subject": "fantasy",
+    "step": "focus",
+    "option_key": "fantasy-focus-character",
+    "title": "주인공 캐릭터 중심",
+    "cue": "인물의 존재감이 가장 큰 방향"
+  },
+  {
+    "subject": "fantasy",
+    "step": "focus",
+    "option_key": "fantasy-focus-world",
+    "title": "세계관 배경 중심",
+    "cue": "도시, 구조, 공간이 더 중요한 방향"
+  },
+  {
+    "subject": "fantasy",
+    "step": "focus",
+    "option_key": "fantasy-focus-object",
+    "title": "무기 / 오브젝트 중심",
+    "cue": "한 대상이 상징처럼 보이는 방향"
+  },
+  {
+    "subject": "fantasy",
+    "step": "focus",
+    "option_key": "fantasy-focus-battle",
+    "title": "전투 직전 / 긴장 장면",
+    "cue": "역동성과 힘이 중요한 방향"
+  },
+  {
+    "subject": "fantasy",
+    "step": "focus",
+    "option_key": "fantasy-focus-explore",
+    "title": "탐험 / 이동 장면",
+    "cue": "세계 속을 걷는 느낌이 중요한 방향"
+  },
+  {
+    "subject": "fantasy",
+    "step": "focus",
+    "option_key": "fantasy-focus-ritual",
+    "title": "의식 / 마법 발동 장면",
+    "cue": "빛과 상징이 강한 방향"
+  },
+  {
+    "subject": "fantasy",
+    "step": "focus",
+    "option_key": "fantasy-focus-team",
+    "title": "여러 캐릭터 조합",
+    "cue": "파티 또는 집단성이 중요한 방향"
+  },
+  {
+    "subject": "fantasy",
+    "step": "focus",
+    "option_key": "fantasy-focus-mood",
+    "title": "분위기 우선 장면",
+    "cue": "서사 공기감이 먼저 느껴지는 방향"
+  },
+  {
+    "subject": "fantasy",
+    "step": "render",
+    "option_key": "fantasy-render-real",
+    "title": "리얼하고 영화처럼",
+    "cue": "실사에 가까운 질감 표현"
+  },
+  {
+    "subject": "fantasy",
+    "step": "render",
+    "option_key": "fantasy-render-illustration",
+    "title": "일러스트 콘셉트 아트처럼",
+    "cue": "설정화 같은 표현"
+  },
+  {
+    "subject": "fantasy",
+    "step": "render",
+    "option_key": "fantasy-render-anime",
+    "title": "애니풍 / 게임풍",
+    "cue": "선명한 캐릭터성이 있는 표현"
+  },
+  {
+    "subject": "fantasy",
+    "step": "render",
+    "option_key": "fantasy-render-dark",
+    "title": "어둡고 묵직하게",
+    "cue": "다크 판타지 느낌이 강한 표현"
+  },
+  {
+    "subject": "fantasy",
+    "step": "render",
+    "option_key": "fantasy-render-glow",
+    "title": "빛과 마법 효과 강조",
+    "cue": "발광과 효과가 중요한 표현"
+  },
+  {
+    "subject": "fantasy",
+    "step": "render",
+    "option_key": "fantasy-render-epic",
+    "title": "장엄하고 웅장하게",
+    "cue": "스케일감이 큰 표현"
+  },
+  {
+    "subject": "fantasy",
+    "step": "render",
+    "option_key": "fantasy-render-clean",
+    "title": "깨끗하고 또렷하게",
+    "cue": "보기 쉬운 정리된 표현"
+  },
+  {
+    "subject": "fantasy",
+    "step": "render",
+    "option_key": "fantasy-render-dreamy",
+    "title": "몽환적이고 부드럽게",
+    "cue": "현실보다 꿈같은 표현"
+  },
+  {
+    "subject": "fantasy",
+    "step": "composition",
+    "option_key": "poster-center",
+    "title": "정중앙 메인 비주얼",
+    "cue": "주제가 정면에서 강하게 보이는 포스터 구도"
+  },
+  {
+    "subject": "fantasy",
+    "step": "composition",
+    "option_key": "poster-left-space",
+    "title": "왼쪽 여백형",
+    "cue": "오른쪽 비주얼, 왼쪽 텍스트 배치가 쉬운 구조"
+  },
+  {
+    "subject": "fantasy",
+    "step": "composition",
+    "option_key": "poster-right-space",
+    "title": "오른쪽 여백형",
+    "cue": "왼쪽 비주얼, 오른쪽 텍스트 배치가 쉬운 구조"
+  },
+  {
+    "subject": "fantasy",
+    "step": "composition",
+    "option_key": "poster-top-space",
+    "title": "상단 타이틀형",
+    "cue": "위쪽 제목 공간을 남기는 포스터 구조"
+  },
+  {
+    "subject": "fantasy",
+    "step": "composition",
+    "option_key": "poster-bottom-space",
+    "title": "하단 크레딧형",
+    "cue": "아래쪽에 정보가 들어가기 쉬운 구조"
+  },
+  {
+    "subject": "fantasy",
+    "step": "composition",
+    "option_key": "poster-diagonal",
+    "title": "대각선 흐름형",
+    "cue": "시선이 사선으로 움직이는 역동적인 구조"
+  },
+  {
+    "subject": "fantasy",
+    "step": "composition",
+    "option_key": "poster-collage",
+    "title": "콜라주형",
+    "cue": "여러 요소를 한 장에 묶는 구성"
+  },
+  {
+    "subject": "fantasy",
+    "step": "composition",
+    "option_key": "poster-minimal",
+    "title": "미니멀 메인형",
+    "cue": "요소를 줄여 상징이 강하게 보이는 구조"
+  },
+  {
+    "subject": "fantasy",
+    "step": "composition",
+    "option_key": "fantasy-comp-battle-clash",
+    "title": "충돌 직전 대치형",
+    "cue": "긴장감이 가장 큰 구도"
+  },
+  {
+    "subject": "fantasy",
+    "step": "composition",
+    "option_key": "fantasy-comp-battle-action",
+    "title": "동작 중심 액션형",
+    "cue": "움직임과 속도감이 강한 구도"
+  },
+  {
+    "subject": "fantasy",
+    "step": "composition",
+    "option_key": "fantasy-comp-battle-magic",
+    "title": "마법 효과 폭발형",
+    "cue": "빛과 이펙트가 먼저 보이는 구도"
+  },
+  {
+    "subject": "fantasy",
+    "step": "composition",
+    "option_key": "fantasy-comp-battle-team",
+    "title": "여러 인물 전투형",
+    "cue": "파티 전투나 집단 대치에 맞는 구도"
+  },
+  {
+    "subject": "fantasy",
+    "step": "composition",
+    "option_key": "fantasy-comp-battle-low",
+    "title": "로우앵글 히어로형",
+    "cue": "주인공 우세가 느껴지는 구도"
+  },
+  {
+    "subject": "fantasy",
+    "step": "composition",
+    "option_key": "fantasy-comp-battle-wide",
+    "title": "배경 포함 전투형",
+    "cue": "세계관 맥락이 함께 보이는 구도"
+  },
+  {
+    "subject": "fantasy",
+    "step": "composition",
+    "option_key": "fantasy-comp-battle-silhouette",
+    "title": "실루엣 액션형",
+    "cue": "극적인 빛 대비가 강한 구도"
+  },
+  {
+    "subject": "fantasy",
+    "step": "composition",
+    "option_key": "fantasy-comp-battle-aftermath",
+    "title": "전투 직후 잔상형",
+    "cue": "여운과 피해 흔적이 느껴지는 구도"
+  },
+  {
+    "subject": "fantasy",
+    "step": "composition",
+    "option_key": "fantasy-comp-world-wide",
+    "title": "세계관 와이드형",
+    "cue": "배경과 구조가 먼저 보이는 구도"
+  },
+  {
+    "subject": "fantasy",
+    "step": "composition",
+    "option_key": "fantasy-comp-world-city",
+    "title": "도시/성채 중심형",
+    "cue": "공간 설정이 메인인 구도"
+  },
+  {
+    "subject": "fantasy",
+    "step": "composition",
+    "option_key": "fantasy-comp-world-road",
+    "title": "길/진입로 강조형",
+    "cue": "탐험과 이동감이 있는 구도"
+  },
+  {
+    "subject": "fantasy",
+    "step": "composition",
+    "option_key": "fantasy-comp-world-sky",
+    "title": "하늘/거대 구조물형",
+    "cue": "스케일감이 강한 구도"
+  },
+  {
+    "subject": "fantasy",
+    "step": "composition",
+    "option_key": "fantasy-comp-world-ruin",
+    "title": "폐허/잔해 중심형",
+    "cue": "서사가 느껴지는 구도"
+  },
+  {
+    "subject": "fantasy",
+    "step": "composition",
+    "option_key": "fantasy-comp-world-reflect",
+    "title": "반사/물가 활용형",
+    "cue": "몽환적 분위기가 강한 구도"
+  },
+  {
+    "subject": "fantasy",
+    "step": "composition",
+    "option_key": "fantasy-comp-world-frame",
+    "title": "문/창 프레임형",
+    "cue": "관문이나 차원 이동 느낌이 있는 구도"
+  },
+  {
+    "subject": "fantasy",
+    "step": "composition",
+    "option_key": "fantasy-comp-world-top",
+    "title": "높은 시점 개요형",
+    "cue": "지도처럼 전체 구조가 보이는 구도"
+  },
+  {
+    "subject": "fantasy",
+    "step": "composition",
+    "option_key": "fantasy-comp-symbol-object",
+    "title": "상징 오브젝트 중심형",
+    "cue": "핵심 아이템이 메인인 구도"
+  },
+  {
+    "subject": "fantasy",
+    "step": "composition",
+    "option_key": "fantasy-comp-symbol-altar",
+    "title": "제단/의식 중심형",
+    "cue": "상징 구조가 먼저 보이는 구도"
+  },
+  {
+    "subject": "fantasy",
+    "step": "composition",
+    "option_key": "fantasy-comp-symbol-door",
+    "title": "문/포털 중심형",
+    "cue": "세계관 관문이 메인인 구도"
+  },
+  {
+    "subject": "fantasy",
+    "step": "composition",
+    "option_key": "fantasy-comp-symbol-light",
+    "title": "빛 기둥/에너지 중심형",
+    "cue": "효과가 주인공인 구도"
+  },
+  {
+    "subject": "fantasy",
+    "step": "composition",
+    "option_key": "fantasy-comp-symbol-hand",
+    "title": "손 + 상징물형",
+    "cue": "마법 발동이나 선택 순간이 느껴지는 구도"
+  },
+  {
+    "subject": "fantasy",
+    "step": "composition",
+    "option_key": "fantasy-comp-symbol-center",
+    "title": "정중앙 대칭형",
+    "cue": "강한 포스터성과 상징성을 주는 구도"
+  },
+  {
+    "subject": "fantasy",
+    "step": "composition",
+    "option_key": "fantasy-comp-symbol-wide",
+    "title": "주변 공간 포함형",
+    "cue": "상징물의 규모감이 보이는 구도"
+  },
+  {
+    "subject": "fantasy",
+    "step": "composition",
+    "option_key": "fantasy-comp-symbol-minimal",
+    "title": "배경 절제형",
+    "cue": "상징물 하나가 또렷한 구도"
+  },
+  {
+    "subject": "fantasy",
+    "step": "composition",
+    "option_key": "fantasy-comp-char-hero",
+    "title": "주인공 메인 포스터형",
+    "cue": "캐릭터 존재감이 가장 강한 구도"
+  },
+  {
+    "subject": "fantasy",
+    "step": "composition",
+    "option_key": "fantasy-comp-char-close",
+    "title": "얼굴/상반신 클로즈업형",
+    "cue": "표정과 설정이 먼저 보이는 구도"
+  },
+  {
+    "subject": "fantasy",
+    "step": "composition",
+    "option_key": "fantasy-comp-char-full",
+    "title": "전신 컨셉아트형",
+    "cue": "의상과 장비가 함께 보이는 구도"
+  },
+  {
+    "subject": "fantasy",
+    "step": "composition",
+    "option_key": "fantasy-comp-char-weapon",
+    "title": "무기/도구 강조형",
+    "cue": "아이덴티티 오브젝트가 먼저 보이는 구도"
+  },
+  {
+    "subject": "fantasy",
+    "step": "composition",
+    "option_key": "fantasy-comp-char-team",
+    "title": "여러 캐릭터 조합형",
+    "cue": "파티나 진영 구도가 보이는 장면"
+  },
+  {
+    "subject": "fantasy",
+    "step": "composition",
+    "option_key": "fantasy-comp-char-backlight",
+    "title": "역광 실루엣형",
+    "cue": "영웅적 존재감이 강한 구도"
+  },
+  {
+    "subject": "fantasy",
+    "step": "composition",
+    "option_key": "fantasy-comp-char-walk",
+    "title": "이동/탐험 장면형",
+    "cue": "스토리가 느껴지는 구도"
+  },
+  {
+    "subject": "fantasy",
+    "step": "composition",
+    "option_key": "fantasy-comp-char-leftspace",
+    "title": "캐릭터 + 카피 여백형",
+    "cue": "키비주얼/배너에 쓰기 쉬운 구도"
+  },
+  {
+    "subject": "fantasy",
+    "step": "mood",
+    "option_key": "mood-bright",
+    "title": "밝고 친근하게",
+    "cue": "입문자도 편하게 느끼는 가볍고 열린 분위기"
+  },
+  {
+    "subject": "fantasy",
+    "step": "mood",
+    "option_key": "mood-clean",
+    "title": "깨끗하고 맑게",
+    "cue": "정보 전달이 또렷한 클린한 방향"
+  },
+  {
+    "subject": "fantasy",
+    "step": "mood",
+    "option_key": "mood-warm",
+    "title": "따뜻하고 편안하게",
+    "cue": "부드럽고 정감 있는 인상을 주는 무드"
+  },
+  {
+    "subject": "fantasy",
+    "step": "mood",
+    "option_key": "mood-calm",
+    "title": "차분하고 담백하게",
+    "cue": "과장되지 않고 정리된 톤"
+  },
+  {
+    "subject": "fantasy",
+    "step": "mood",
+    "option_key": "mood-cinematic",
+    "title": "영화처럼 깊게",
+    "cue": "공기감과 서사가 함께 느껴지는 무드"
+  },
+  {
+    "subject": "fantasy",
+    "step": "mood",
+    "option_key": "mood-dramatic",
+    "title": "강렬하고 드라마틱하게",
+    "cue": "명암과 감정이 또렷한 방향"
+  },
+  {
+    "subject": "fantasy",
+    "step": "mood",
+    "option_key": "mood-luxury",
+    "title": "고급스럽고 세련되게",
+    "cue": "브랜드 비주얼 같은 정제된 무드"
+  },
+  {
+    "subject": "fantasy",
+    "step": "mood",
+    "option_key": "mood-playful",
+    "title": "귀엽고 경쾌하게",
+    "cue": "색감과 인상이 가볍고 재미있는 방향"
+  },
+  {
+    "subject": "fantasy",
+    "step": "mood",
+    "option_key": "mood-future",
+    "title": "미래적이고 차갑게",
+    "cue": "기술적이고 현대적인 느낌"
+  },
+  {
+    "subject": "fantasy",
+    "step": "mood",
+    "option_key": "mood-vintage",
+    "title": "빈티지하고 레트로하게",
+    "cue": "옛 감성과 필름 느낌이 남는 방향"
+  },
+  {
+    "subject": "illustration",
+    "step": "detail",
+    "option_key": "illu-cute",
+    "title": "귀여운 캐릭터",
+    "cue": "친근하고 호감 가는 캐릭터 이미지"
+  },
+  {
+    "subject": "illustration",
+    "step": "detail",
+    "option_key": "illu-anime",
+    "title": "애니풍 인물",
+    "cue": "애니메이션 느낌의 캐릭터 이미지"
+  },
+  {
+    "subject": "illustration",
+    "step": "detail",
+    "option_key": "illu-webtoon",
+    "title": "웹툰풍 인물",
+    "cue": "만화 컷 같은 캐릭터 방향"
+  },
+  {
+    "subject": "illustration",
+    "step": "detail",
+    "option_key": "illu-mascot",
+    "title": "마스코트 / 브랜드 캐릭터",
+    "cue": "브랜드용 캐릭터 이미지"
+  },
+  {
+    "subject": "illustration",
+    "step": "detail",
+    "option_key": "illu-chibi",
+    "title": "치비 / SD 캐릭터",
+    "cue": "작고 귀여운 비율이 중요한 방향"
+  },
+  {
+    "subject": "illustration",
+    "step": "detail",
+    "option_key": "illu-sticker",
+    "title": "스티커 / 이모티콘용",
+    "cue": "단순하고 전달력 높은 캐릭터"
+  },
+  {
+    "subject": "illustration",
+    "step": "detail",
+    "option_key": "illu-kids",
+    "title": "교육 / 아동용 일러스트",
+    "cue": "설명성과 친근함이 중요한 그림"
+  },
+  {
+    "subject": "illustration",
+    "step": "detail",
+    "option_key": "illu-fashion",
+    "title": "패션 일러스트",
+    "cue": "스타일과 실루엣이 중요한 그림"
+  },
+  {
+    "subject": "illustration",
+    "step": "detail",
+    "option_key": "illu-story",
+    "title": "동화책 느낌",
+    "cue": "이야기와 정서가 중요한 그림"
+  },
+  {
+    "subject": "illustration",
+    "step": "detail",
+    "option_key": "illu-sheet",
+    "title": "표정 / 포즈 시트",
+    "cue": "다양한 표정과 자세가 중요한 그림"
+  },
+  {
+    "subject": "illustration",
+    "step": "usage",
+    "option_key": "illu-usage-profile",
+    "title": "프로필 / 아이콘용",
+    "cue": "작은 화면에서도 잘 보이는 용도"
+  },
+  {
+    "subject": "illustration",
+    "step": "usage",
+    "option_key": "illu-usage-sticker",
+    "title": "스티커 / 이모티콘용",
+    "cue": "단순하고 전달력 높은 용도"
+  },
+  {
+    "subject": "illustration",
+    "step": "usage",
+    "option_key": "illu-usage-sns",
+    "title": "SNS 포스트용",
+    "cue": "감성과 캐릭터성이 중요한 용도"
+  },
+  {
+    "subject": "illustration",
+    "step": "usage",
+    "option_key": "illu-usage-poster",
+    "title": "포스터 / 커버용",
+    "cue": "메인 비주얼로 쓰이는 용도"
+  },
+  {
+    "subject": "illustration",
+    "step": "usage",
+    "option_key": "illu-usage-education",
+    "title": "설명 / 교육용",
+    "cue": "읽기 쉽고 정리된 용도"
+  },
+  {
+    "subject": "illustration",
+    "step": "usage",
+    "option_key": "illu-usage-sheet",
+    "title": "캐릭터 시트용",
+    "cue": "설정 자료처럼 쓰이는 용도"
+  },
+  {
+    "subject": "illustration",
+    "step": "usage",
+    "option_key": "illu-usage-goods",
+    "title": "굿즈 / 상품용",
+    "cue": "마스코트성과 귀여움이 중요한 용도"
+  },
+  {
+    "subject": "illustration",
+    "step": "usage",
+    "option_key": "illu-usage-story",
+    "title": "동화 / 스토리 장면용",
+    "cue": "이야기 맥락이 필요한 용도"
+  },
+  {
+    "subject": "illustration",
+    "step": "focus",
+    "option_key": "illu-focus-face",
+    "title": "얼굴 / 표정 중심",
+    "cue": "표정 매력이 중요한 방향"
+  },
+  {
+    "subject": "illustration",
+    "step": "focus",
+    "option_key": "illu-focus-half",
+    "title": "상반신 중심",
+    "cue": "캐릭터 인상이 잘 보이는 방향"
+  },
+  {
+    "subject": "illustration",
+    "step": "focus",
+    "option_key": "illu-focus-full",
+    "title": "전신 중심",
+    "cue": "의상과 포즈가 함께 보이는 방향"
+  },
+  {
+    "subject": "illustration",
+    "step": "focus",
+    "option_key": "illu-focus-turn",
+    "title": "정면 / 측면 시트",
+    "cue": "설정 자료처럼 보기 쉬운 방향"
+  },
+  {
+    "subject": "illustration",
+    "step": "focus",
+    "option_key": "illu-focus-pose",
+    "title": "포즈와 몸짓 중심",
+    "cue": "행동감이 중요한 방향"
+  },
+  {
+    "subject": "illustration",
+    "step": "focus",
+    "option_key": "illu-focus-object",
+    "title": "소품과 함께",
+    "cue": "캐릭터 아이덴티티가 보이는 방향"
+  },
+  {
+    "subject": "illustration",
+    "step": "focus",
+    "option_key": "illu-focus-group",
+    "title": "여러 캐릭터 함께",
+    "cue": "조합과 관계가 중요한 방향"
+  },
+  {
+    "subject": "illustration",
+    "step": "focus",
+    "option_key": "illu-focus-scene",
+    "title": "장면 속 캐릭터",
+    "cue": "배경과 스토리가 함께 보이는 방향"
+  },
+  {
+    "subject": "illustration",
+    "step": "render",
+    "option_key": "illu-render-flat",
+    "title": "단순하고 또렷하게",
+    "cue": "아이콘, 이모티콘에 쉬운 표현"
+  },
+  {
+    "subject": "illustration",
+    "step": "render",
+    "option_key": "illu-render-cel",
+    "title": "셀채색 애니풍",
+    "cue": "애니 캐릭터에 잘 맞는 표현"
+  },
+  {
+    "subject": "illustration",
+    "step": "render",
+    "option_key": "illu-render-soft",
+    "title": "부드럽고 파스텔하게",
+    "cue": "귀엽고 편안한 인상의 표현"
+  },
+  {
+    "subject": "illustration",
+    "step": "render",
+    "option_key": "illu-render-glossy",
+    "title": "반짝이고 선명하게",
+    "cue": "게임 캐릭터처럼 또렷한 표현"
+  },
+  {
+    "subject": "illustration",
+    "step": "render",
+    "option_key": "illu-render-story",
+    "title": "동화책처럼 포근하게",
+    "cue": "이야기 그림에 잘 맞는 표현"
+  },
+  {
+    "subject": "illustration",
+    "step": "render",
+    "option_key": "illu-render-simple",
+    "title": "교육용처럼 명확하게",
+    "cue": "설명이 쉬운 정리된 표현"
+  },
+  {
+    "subject": "illustration",
+    "step": "render",
+    "option_key": "illu-render-fashion",
+    "title": "잡지 일러스트처럼",
+    "cue": "패션 감성이 강한 표현"
+  },
+  {
+    "subject": "illustration",
+    "step": "render",
+    "option_key": "illu-render-texture",
+    "title": "손그림 질감 있게",
+    "cue": "따뜻한 텍스처가 느껴지는 표현"
+  },
+  {
+    "subject": "illustration",
+    "step": "composition",
+    "option_key": "comp-close",
+    "title": "얼굴 클로즈업",
+    "cue": "표정과 디테일이 가장 먼저 보이는 구도"
+  },
+  {
+    "subject": "illustration",
+    "step": "composition",
+    "option_key": "comp-bust",
+    "title": "바스트 샷",
+    "cue": "상반신 중심으로 안정감 있게 보이는 구도"
+  },
+  {
+    "subject": "illustration",
+    "step": "composition",
+    "option_key": "comp-medium",
+    "title": "미디엄 샷",
+    "cue": "인물과 주변 맥락을 함께 보여주는 기본 구도"
+  },
+  {
+    "subject": "illustration",
+    "step": "composition",
+    "option_key": "comp-wide",
+    "title": "와이드 샷",
+    "cue": "배경과 공간 분위기까지 같이 보이는 구도"
+  },
+  {
+    "subject": "illustration",
+    "step": "composition",
+    "option_key": "comp-low",
+    "title": "로우 앵글",
+    "cue": "주제의 존재감을 더 크게 느끼게 하는 각도"
+  },
+  {
+    "subject": "illustration",
+    "step": "composition",
+    "option_key": "comp-top",
+    "title": "탑뷰 / 오버헤드",
+    "cue": "위에서 내려다보는 정리된 화면"
+  },
+  {
+    "subject": "illustration",
+    "step": "composition",
+    "option_key": "comp-pov",
+    "title": "POV / 셀카 느낌",
+    "cue": "직접 찍은 듯 가까운 거리감이 있는 구도"
+  },
+  {
+    "subject": "illustration",
+    "step": "composition",
+    "option_key": "comp-symmetry",
+    "title": "정면 대칭",
+    "cue": "또렷하고 정돈된 인상을 주는 구도"
+  },
+  {
+    "subject": "illustration",
+    "step": "composition",
+    "option_key": "comp-asymmetry",
+    "title": "비대칭 배치",
+    "cue": "시선 흐름과 여백이 살아 있는 구도"
+  },
+  {
+    "subject": "illustration",
+    "step": "composition",
+    "option_key": "comp-poster",
+    "title": "포스터형 메인 비주얼",
+    "cue": "한 장면 자체가 강하게 보이는 구성"
+  },
+  {
+    "subject": "illustration",
+    "step": "composition",
+    "option_key": "illu-comp-sheet-grid",
+    "title": "표정 시트 그리드형",
+    "cue": "여러 표정이 정리된 구도"
+  },
+  {
+    "subject": "illustration",
+    "step": "composition",
+    "option_key": "illu-comp-sheet-turn",
+    "title": "정면/측면/후면 시트형",
+    "cue": "설정 자료에 맞는 구도"
+  },
+  {
+    "subject": "illustration",
+    "step": "composition",
+    "option_key": "illu-comp-sheet-pose",
+    "title": "여러 포즈 배열형",
+    "cue": "동작 차이를 보여주기 쉬운 구도"
+  },
+  {
+    "subject": "illustration",
+    "step": "composition",
+    "option_key": "illu-comp-sheet-item",
+    "title": "소품/아이템 시트형",
+    "cue": "오브젝트와 캐릭터를 함께 보여주는 구도"
+  },
+  {
+    "subject": "illustration",
+    "step": "composition",
+    "option_key": "illu-comp-sheet-color",
+    "title": "색상 변형 시트형",
+    "cue": "버전 비교가 쉬운 구도"
+  },
+  {
+    "subject": "illustration",
+    "step": "composition",
+    "option_key": "illu-comp-sheet-badge",
+    "title": "작은 캐릭터 모음형",
+    "cue": "스티커/굿즈 기획에 맞는 구도"
+  },
+  {
+    "subject": "illustration",
+    "step": "composition",
+    "option_key": "illu-comp-sheet-clean",
+    "title": "아주 정리된 설명형",
+    "cue": "교육용/가이드용으로 쓰기 쉬운 구도"
+  },
+  {
+    "subject": "illustration",
+    "step": "composition",
+    "option_key": "illu-comp-sheet-story",
+    "title": "시퀀스형 배열",
+    "cue": "짧은 상황 변화를 보여주는 구도"
+  },
+  {
+    "subject": "illustration",
+    "step": "composition",
+    "option_key": "illu-comp-full-front",
+    "title": "전신 정면형",
+    "cue": "의상과 비율이 잘 보이는 구도"
+  },
+  {
+    "subject": "illustration",
+    "step": "composition",
+    "option_key": "illu-comp-full-angle",
+    "title": "전신 사선형",
+    "cue": "캐릭터 라인이 살아나는 구도"
+  },
+  {
+    "subject": "illustration",
+    "step": "composition",
+    "option_key": "illu-comp-full-pose",
+    "title": "포즈 강조형",
+    "cue": "몸짓과 동작이 먼저 보이는 구도"
+  },
+  {
+    "subject": "illustration",
+    "step": "composition",
+    "option_key": "illu-comp-full-turn",
+    "title": "정면/측면 시트형",
+    "cue": "설정 자료로 쓰기 쉬운 구도"
+  },
+  {
+    "subject": "illustration",
+    "step": "composition",
+    "option_key": "illu-comp-full-object",
+    "title": "소품 포함 전신형",
+    "cue": "캐릭터 아이덴티티가 강화되는 구도"
+  },
+  {
+    "subject": "illustration",
+    "step": "composition",
+    "option_key": "illu-comp-full-fashion",
+    "title": "룩북형 전신 구도",
+    "cue": "패션 일러스트에 맞는 구도"
+  },
+  {
+    "subject": "illustration",
+    "step": "composition",
+    "option_key": "illu-comp-full-wide",
+    "title": "배경 포함 전신형",
+    "cue": "장면 맥락이 함께 보이는 구도"
+  },
+  {
+    "subject": "illustration",
+    "step": "composition",
+    "option_key": "illu-comp-full-clean",
+    "title": "배경 절제 전신형",
+    "cue": "캐릭터 자체가 메인인 구도"
+  },
+  {
+    "subject": "illustration",
+    "step": "composition",
+    "option_key": "illu-comp-scene-center",
+    "title": "장면 중앙 메인형",
+    "cue": "캐릭터와 배경이 균형 있게 보이는 구도"
+  },
+  {
+    "subject": "illustration",
+    "step": "composition",
+    "option_key": "illu-comp-scene-wide",
+    "title": "배경 포함 와이드형",
+    "cue": "이야기 장소가 함께 보이는 구도"
+  },
+  {
+    "subject": "illustration",
+    "step": "composition",
+    "option_key": "illu-comp-scene-object",
+    "title": "캐릭터 + 소품 장면형",
+    "cue": "상황 설명이 쉬운 구도"
+  },
+  {
+    "subject": "illustration",
+    "step": "composition",
+    "option_key": "illu-comp-scene-leftspace",
+    "title": "장면 오른쪽 + 여백",
+    "cue": "제목이나 카피를 넣기 쉬운 구도"
+  },
+  {
+    "subject": "illustration",
+    "step": "composition",
+    "option_key": "illu-comp-scene-rightspace",
+    "title": "장면 왼쪽 + 여백",
+    "cue": "배너형으로 쓰기 쉬운 구도"
+  },
+  {
+    "subject": "illustration",
+    "step": "composition",
+    "option_key": "illu-comp-scene-top",
+    "title": "상단 여백형",
+    "cue": "동화책 제목 공간이 있는 구도"
+  },
+  {
+    "subject": "illustration",
+    "step": "composition",
+    "option_key": "illu-comp-scene-action",
+    "title": "동작이 있는 스토리형",
+    "cue": "짧은 장면 전개가 느껴지는 구도"
+  },
+  {
+    "subject": "illustration",
+    "step": "composition",
+    "option_key": "illu-comp-scene-cozy",
+    "title": "공간과 감성 중심형",
+    "cue": "포근하고 서정적인 장면 구도"
+  },
+  {
+    "subject": "illustration",
+    "step": "composition",
+    "option_key": "illu-comp-face-front",
+    "title": "얼굴 정면형",
+    "cue": "표정 매력이 가장 잘 보이는 구도"
+  },
+  {
+    "subject": "illustration",
+    "step": "composition",
+    "option_key": "illu-comp-face-angle",
+    "title": "사선 얼굴형",
+    "cue": "입체감과 캐릭터성이 있는 구도"
+  },
+  {
+    "subject": "illustration",
+    "step": "composition",
+    "option_key": "illu-comp-face-close",
+    "title": "얼굴 클로즈업형",
+    "cue": "눈, 입, 헤어 디테일이 먼저 보이는 구도"
+  },
+  {
+    "subject": "illustration",
+    "step": "composition",
+    "option_key": "illu-comp-face-icon",
+    "title": "아이콘/프로필형",
+    "cue": "작은 썸네일에도 잘 보이는 구도"
+  },
+  {
+    "subject": "illustration",
+    "step": "composition",
+    "option_key": "illu-comp-face-soft",
+    "title": "배경 흐림 얼굴형",
+    "cue": "캐릭터 얼굴만 또렷한 구도"
+  },
+  {
+    "subject": "illustration",
+    "step": "composition",
+    "option_key": "illu-comp-face-expression",
+    "title": "표정 변화 중심형",
+    "cue": "감정선이 먼저 읽히는 구도"
+  },
+  {
+    "subject": "illustration",
+    "step": "composition",
+    "option_key": "illu-comp-face-leftspace",
+    "title": "얼굴 + 여백형",
+    "cue": "문구를 넣기 쉬운 구도"
+  },
+  {
+    "subject": "illustration",
+    "step": "composition",
+    "option_key": "illu-comp-face-badge",
+    "title": "스티커/이모티콘형",
+    "cue": "단순 전달에 맞는 구도"
+  },
+  {
+    "subject": "illustration",
+    "step": "mood",
+    "option_key": "mood-bright",
+    "title": "밝고 친근하게",
+    "cue": "입문자도 편하게 느끼는 가볍고 열린 분위기"
+  },
+  {
+    "subject": "illustration",
+    "step": "mood",
+    "option_key": "mood-clean",
+    "title": "깨끗하고 맑게",
+    "cue": "정보 전달이 또렷한 클린한 방향"
+  },
+  {
+    "subject": "illustration",
+    "step": "mood",
+    "option_key": "mood-warm",
+    "title": "따뜻하고 편안하게",
+    "cue": "부드럽고 정감 있는 인상을 주는 무드"
+  },
+  {
+    "subject": "illustration",
+    "step": "mood",
+    "option_key": "mood-calm",
+    "title": "차분하고 담백하게",
+    "cue": "과장되지 않고 정리된 톤"
+  },
+  {
+    "subject": "illustration",
+    "step": "mood",
+    "option_key": "mood-cinematic",
+    "title": "영화처럼 깊게",
+    "cue": "공기감과 서사가 함께 느껴지는 무드"
+  },
+  {
+    "subject": "illustration",
+    "step": "mood",
+    "option_key": "mood-dramatic",
+    "title": "강렬하고 드라마틱하게",
+    "cue": "명암과 감정이 또렷한 방향"
+  },
+  {
+    "subject": "illustration",
+    "step": "mood",
+    "option_key": "mood-luxury",
+    "title": "고급스럽고 세련되게",
+    "cue": "브랜드 비주얼 같은 정제된 무드"
+  },
+  {
+    "subject": "illustration",
+    "step": "mood",
+    "option_key": "mood-playful",
+    "title": "귀엽고 경쾌하게",
+    "cue": "색감과 인상이 가볍고 재미있는 방향"
+  },
+  {
+    "subject": "illustration",
+    "step": "mood",
+    "option_key": "mood-future",
+    "title": "미래적이고 차갑게",
+    "cue": "기술적이고 현대적인 느낌"
+  },
+  {
+    "subject": "illustration",
+    "step": "mood",
+    "option_key": "mood-vintage",
+    "title": "빈티지하고 레트로하게",
+    "cue": "옛 감성과 필름 느낌이 남는 방향"
+  },
+  {
+    "subject": "event",
+    "step": "detail",
+    "option_key": "event-concert",
+    "title": "콘서트 / 공연",
+    "cue": "무대와 조명이 중요한 장면"
+  },
+  {
+    "subject": "event",
+    "step": "detail",
+    "option_key": "event-lecture",
+    "title": "강연 / 세미나",
+    "cue": "발표와 청중 흐름이 중요한 장면"
+  },
+  {
+    "subject": "event",
+    "step": "detail",
+    "option_key": "event-conference",
+    "title": "컨퍼런스",
+    "cue": "전문 행사 분위기가 중요한 장면"
+  },
+  {
+    "subject": "event",
+    "step": "detail",
+    "option_key": "event-weddinghall",
+    "title": "웨딩홀 / 본식",
+    "cue": "특별한 행사감이 중요한 장면"
+  },
+  {
+    "subject": "event",
+    "step": "detail",
+    "option_key": "event-festival",
+    "title": "축제 / 페스티벌",
+    "cue": "활기와 군중감이 중요한 장면"
+  },
+  {
+    "subject": "event",
+    "step": "detail",
+    "option_key": "event-award",
+    "title": "시상식",
+    "cue": "조명과 상징성이 중요한 장면"
+  },
+  {
+    "subject": "event",
+    "step": "detail",
+    "option_key": "event-school",
+    "title": "학교 행사",
+    "cue": "발표와 기념성이 있는 장면"
+  },
+  {
+    "subject": "event",
+    "step": "detail",
+    "option_key": "event-sports",
+    "title": "스포츠 경기장",
+    "cue": "에너지와 관중감이 중요한 장면"
+  },
+  {
+    "subject": "event",
+    "step": "detail",
+    "option_key": "event-backstage",
+    "title": "백스테이지 / 준비 장면",
+    "cue": "무대 뒤 긴장감이 중요한 장면"
+  },
+  {
+    "subject": "event",
+    "step": "detail",
+    "option_key": "event-booth",
+    "title": "전시 / 부스 운영",
+    "cue": "브랜드 소개와 현장감이 중요한 장면"
+  },
+  {
+    "subject": "event",
+    "step": "focus",
+    "option_key": "event-focus-stage",
+    "title": "무대 전체",
+    "cue": "조명과 규모가 먼저 보이는 방향"
+  },
+  {
+    "subject": "event",
+    "step": "focus",
+    "option_key": "event-focus-speaker",
+    "title": "발표자 / 공연자 중심",
+    "cue": "주인공 행동이 중심인 방향"
+  },
+  {
+    "subject": "event",
+    "step": "focus",
+    "option_key": "event-focus-audience",
+    "title": "관객 반응",
+    "cue": "현장 열기와 반응이 중요한 방향"
+  },
+  {
+    "subject": "event",
+    "step": "focus",
+    "option_key": "event-focus-screen",
+    "title": "스크린 / 현수막 포함",
+    "cue": "행사 정보가 함께 보이는 방향"
+  },
+  {
+    "subject": "event",
+    "step": "focus",
+    "option_key": "event-focus-light",
+    "title": "조명 / 레이저 강조",
+    "cue": "시각 효과가 중요한 방향"
+  },
+  {
+    "subject": "event",
+    "step": "focus",
+    "option_key": "event-focus-moment",
+    "title": "결정적 순간 포착",
+    "cue": "박수, 환호, 동작이 중요한 방향"
+  },
+  {
+    "subject": "event",
+    "step": "focus",
+    "option_key": "event-focus-detail",
+    "title": "소품 / 장비 디테일",
+    "cue": "마이크, 악기, 장비가 중요한 방향"
+  },
+  {
+    "subject": "event",
+    "step": "focus",
+    "option_key": "event-focus-mix",
+    "title": "무대와 관객 균형",
+    "cue": "행사 전체 분위기를 담는 방향"
+  },
+  {
+    "subject": "event",
+    "step": "moment",
+    "option_key": "event-moment-opening",
+    "title": "시작 직전 / 오프닝",
+    "cue": "막 시작되는 긴장감이 있는 순간"
+  },
+  {
+    "subject": "event",
+    "step": "moment",
+    "option_key": "event-moment-main",
+    "title": "메인 진행 중",
+    "cue": "행사 핵심 장면이 펼쳐지는 순간"
+  },
+  {
+    "subject": "event",
+    "step": "moment",
+    "option_key": "event-moment-climax",
+    "title": "하이라이트 / 절정",
+    "cue": "열기와 반응이 가장 큰 순간"
+  },
+  {
+    "subject": "event",
+    "step": "moment",
+    "option_key": "event-moment-applause",
+    "title": "박수 / 환호",
+    "cue": "관객 반응이 함께 살아나는 순간"
+  },
+  {
+    "subject": "event",
+    "step": "moment",
+    "option_key": "event-moment-presentation",
+    "title": "설명 / 발표 장면",
+    "cue": "스크린과 발표 흐름이 중요한 순간"
+  },
+  {
+    "subject": "event",
+    "step": "moment",
+    "option_key": "event-moment-break",
+    "title": "쉬는 시간 / 현장 스케치",
+    "cue": "행사 틈새 분위기를 담는 순간"
+  },
+  {
+    "subject": "event",
+    "step": "moment",
+    "option_key": "event-moment-backstage",
+    "title": "준비 / 대기 순간",
+    "cue": "무대 뒤 긴장감이 느껴지는 순간"
+  },
+  {
+    "subject": "event",
+    "step": "moment",
+    "option_key": "event-moment-closing",
+    "title": "마무리 / 엔딩",
+    "cue": "끝맺음 감성과 정리감이 있는 순간"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "land-panorama",
+    "title": "파노라마 와이드",
+    "cue": "넓은 풍경과 스케일이 먼저 느껴지는 화면"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "land-mid",
+    "title": "중간 거리 풍경",
+    "cue": "주제와 배경이 균형 있게 보이는 화면"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "land-foreground",
+    "title": "전경 강조",
+    "cue": "앞쪽 요소를 크게 두고 깊이를 만드는 화면"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "land-silhouette",
+    "title": "실루엣 포함",
+    "cue": "해질녘이나 역광에서 분위기가 살아나는 화면"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "land-road",
+    "title": "길이 이어지는 화면",
+    "cue": "시선이 안쪽으로 자연스럽게 들어가는 구성"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "land-top",
+    "title": "높은 시점 / 항공 느낌",
+    "cue": "지역 전체 윤곽이 보이는 시원한 구도"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "land-framed",
+    "title": "창틀 / 문틀 프레이밍",
+    "cue": "안쪽 장면을 액자처럼 감싸는 구도"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "land-detail",
+    "title": "디테일 클로즈업",
+    "cue": "풍경 일부의 질감과 포인트를 크게 보는 화면"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "event-comp-backstage-prep",
+    "title": "준비 중 스냅형",
+    "cue": "장비와 긴장감이 함께 보이는 구도"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "event-comp-backstage-team",
+    "title": "스태프 협업형",
+    "cue": "여러 사람이 움직이는 현장 구도"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "event-comp-backstage-equipment",
+    "title": "장비/악기 디테일형",
+    "cue": "프로 장비가 먼저 보이는 구도"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "event-comp-backstage-mirror",
+    "title": "거울/대기실 준비형",
+    "cue": "메이크업이나 준비감이 있는 구도"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "event-comp-backstage-walk",
+    "title": "무대 진입 직전형",
+    "cue": "출발 직전 긴장감이 있는 구도"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "event-comp-backstage-corridor",
+    "title": "복도/대기 공간형",
+    "cue": "백스테이지 공간감이 보이는 구도"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "event-comp-backstage-hand",
+    "title": "손동작/세팅 디테일형",
+    "cue": "세팅 과정이 먼저 보이는 구도"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "event-comp-backstage-lowlight",
+    "title": "어두운 준비실 무드형",
+    "cue": "무대 전 긴장감이 강한 구도"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "event-comp-booth-front",
+    "title": "부스 정면형",
+    "cue": "브랜드 소개에 쓰기 쉬운 구도"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "event-comp-booth-person",
+    "title": "상담 중 사람 중심",
+    "cue": "서비스 설명 장면에 맞는 구도"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "event-comp-booth-product",
+    "title": "제품 진열 중심",
+    "cue": "오브젝트와 브랜드가 함께 보이는 구도"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "event-comp-booth-wide",
+    "title": "현장 전체 와이드",
+    "cue": "행사장 맥락이 함께 보이는 구도"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "event-comp-booth-sign",
+    "title": "간판/로고 강조형",
+    "cue": "브랜드명이 먼저 보이는 구도"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "event-comp-booth-demo",
+    "title": "시연 중 디바이스형",
+    "cue": "설명과 제품 체험이 보이는 구도"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "event-comp-booth-leftspace",
+    "title": "부스 오른쪽 + 여백",
+    "cue": "행사 소개 카피를 얹기 쉬운 구도"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "event-comp-booth-rightspace",
+    "title": "부스 왼쪽 + 여백",
+    "cue": "배너형 홍보 이미지에 맞는 구도"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "event-comp-audience-front",
+    "title": "앞줄 관객 반응형",
+    "cue": "표정과 몰입도가 바로 보이는 구도"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "event-comp-audience-wide",
+    "title": "관객석 와이드형",
+    "cue": "행사 규모와 열기가 느껴지는 구도"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "event-comp-audience-stage",
+    "title": "관객 + 무대 함께",
+    "cue": "현장 전체 분위기를 담는 구도"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "event-comp-audience-applause",
+    "title": "박수 / 환호 순간형",
+    "cue": "반응이 가장 또렷한 구도"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "event-comp-audience-silhouette",
+    "title": "실루엣 + 무대 빛",
+    "cue": "공연 감성이 강한 구도"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "event-comp-audience-rear",
+    "title": "뒤에서 보는 관객석",
+    "cue": "현장 몰입감이 있는 구도"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "event-comp-audience-banner",
+    "title": "여백 있는 현장형",
+    "cue": "텍스트를 얹기 쉬운 구도"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "event-comp-audience-detail",
+    "title": "응원도구/손동작 디테일",
+    "cue": "세부 반응이 보이는 구도"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "event-comp-speaker-half",
+    "title": "발표자 상반신 중심",
+    "cue": "표정과 전달력이 먼저 보이는 구도"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "event-comp-speaker-full",
+    "title": "전신 발표형",
+    "cue": "몸짓과 무대 흐름이 함께 보이는 구도"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "event-comp-speaker-screen",
+    "title": "발표자 + 자료 화면",
+    "cue": "설명형 콘텐츠에 맞는 구도"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "event-comp-speaker-angle",
+    "title": "사선 무대형",
+    "cue": "현장감이 살아나는 발표 구도"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "event-comp-speaker-close",
+    "title": "마이크/표정 클로즈업",
+    "cue": "몰입감이 강한 구도"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "event-comp-speaker-audience",
+    "title": "발표자 + 청중 반응",
+    "cue": "현장 흐름이 보이는 구도"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "event-comp-speaker-leftspace",
+    "title": "발표자 오른쪽 + 텍스트 여백",
+    "cue": "카피를 넣기 쉬운 구도"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "event-comp-speaker-rightspace",
+    "title": "발표자 왼쪽 + 텍스트 여백",
+    "cue": "썸네일/배너에 쓰기 쉬운 구도"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "event-comp-stage-wide",
+    "title": "무대 전체 와이드",
+    "cue": "조명과 규모가 함께 보이는 구도"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "event-comp-stage-front",
+    "title": "정면 메인 무대형",
+    "cue": "행사 대표 장면으로 쓰기 쉬운 구도"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "event-comp-stage-low",
+    "title": "아래에서 올려다보는 구도",
+    "cue": "무대 존재감이 강하게 보이는 구도"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "event-comp-stage-screen",
+    "title": "무대 + 스크린 포함",
+    "cue": "행사 정보와 현장감을 함께 담는 구도"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "event-comp-stage-crowd",
+    "title": "무대 + 관객 실루엣",
+    "cue": "현장 열기가 더 크게 느껴지는 구도"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "event-comp-stage-center",
+    "title": "중앙 집중형",
+    "cue": "주인공과 조명이 한눈에 들어오는 구도"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "event-comp-stage-poster",
+    "title": "포스터형 메인 비주얼",
+    "cue": "행사 홍보 이미지로 쓰기 쉬운 구도"
+  },
+  {
+    "subject": "event",
+    "step": "composition",
+    "option_key": "event-comp-stage-lights",
+    "title": "조명 연출 강조형",
+    "cue": "빛과 색감이 먼저 보이는 구도"
+  },
+  {
+    "subject": "event",
+    "step": "mood",
+    "option_key": "mood-bright",
+    "title": "밝고 친근하게",
+    "cue": "입문자도 편하게 느끼는 가볍고 열린 분위기"
+  },
+  {
+    "subject": "event",
+    "step": "mood",
+    "option_key": "mood-clean",
+    "title": "깨끗하고 맑게",
+    "cue": "정보 전달이 또렷한 클린한 방향"
+  },
+  {
+    "subject": "event",
+    "step": "mood",
+    "option_key": "mood-warm",
+    "title": "따뜻하고 편안하게",
+    "cue": "부드럽고 정감 있는 인상을 주는 무드"
+  },
+  {
+    "subject": "event",
+    "step": "mood",
+    "option_key": "mood-calm",
+    "title": "차분하고 담백하게",
+    "cue": "과장되지 않고 정리된 톤"
+  },
+  {
+    "subject": "event",
+    "step": "mood",
+    "option_key": "mood-cinematic",
+    "title": "영화처럼 깊게",
+    "cue": "공기감과 서사가 함께 느껴지는 무드"
+  },
+  {
+    "subject": "event",
+    "step": "mood",
+    "option_key": "mood-dramatic",
+    "title": "강렬하고 드라마틱하게",
+    "cue": "명암과 감정이 또렷한 방향"
+  },
+  {
+    "subject": "event",
+    "step": "mood",
+    "option_key": "mood-luxury",
+    "title": "고급스럽고 세련되게",
+    "cue": "브랜드 비주얼 같은 정제된 무드"
+  },
+  {
+    "subject": "event",
+    "step": "mood",
+    "option_key": "mood-playful",
+    "title": "귀엽고 경쾌하게",
+    "cue": "색감과 인상이 가볍고 재미있는 방향"
+  },
+  {
+    "subject": "event",
+    "step": "mood",
+    "option_key": "mood-future",
+    "title": "미래적이고 차갑게",
+    "cue": "기술적이고 현대적인 느낌"
+  },
+  {
+    "subject": "event",
+    "step": "mood",
+    "option_key": "mood-vintage",
+    "title": "빈티지하고 레트로하게",
+    "cue": "옛 감성과 필름 느낌이 남는 방향"
+  },
+  {
+    "subject": "broll",
+    "step": "detail",
+    "option_key": "broll-abstract",
+    "title": "추상 배경",
+    "cue": "설명 중간에 쓰기 좋은 비정형 배경"
+  },
+  {
+    "subject": "broll",
+    "step": "detail",
+    "option_key": "broll-texture",
+    "title": "소재 / 질감",
+    "cue": "재질감이 중심인 전환용 이미지"
+  },
+  {
+    "subject": "broll",
+    "step": "detail",
+    "option_key": "broll-desk",
+    "title": "책상 위 소품",
+    "cue": "작업 과정이나 설명 컷에 좋은 장면"
+  },
+  {
+    "subject": "broll",
+    "step": "detail",
+    "option_key": "broll-hands",
+    "title": "손이 하는 작업",
+    "cue": "만지는 동작이 중심인 장면"
+  },
+  {
+    "subject": "broll",
+    "step": "detail",
+    "option_key": "broll-window",
+    "title": "창밖 / 커튼 / 빛",
+    "cue": "분위기 전환에 좋은 장면"
+  },
+  {
+    "subject": "broll",
+    "step": "detail",
+    "option_key": "broll-city-detail",
+    "title": "도시 디테일",
+    "cue": "간판, 길, 창문 같은 장면"
+  },
+  {
+    "subject": "broll",
+    "step": "detail",
+    "option_key": "broll-nature-detail",
+    "title": "자연 디테일",
+    "cue": "잎, 물결, 바람 같은 장면"
+  },
+  {
+    "subject": "broll",
+    "step": "detail",
+    "option_key": "broll-light",
+    "title": "빛 번짐 / 반사",
+    "cue": "몽환적인 전환에 좋은 장면"
+  },
+  {
+    "subject": "broll",
+    "step": "detail",
+    "option_key": "broll-object",
+    "title": "오브젝트 하나 중심",
+    "cue": "키워드 상징처럼 쓰기 좋은 장면"
+  },
+  {
+    "subject": "broll",
+    "step": "detail",
+    "option_key": "broll-empty",
+    "title": "텍스트 넣기 쉬운 빈 배경",
+    "cue": "자막이나 제목 얹기 좋은 장면"
+  },
+  {
+    "subject": "broll",
+    "step": "usage",
+    "option_key": "broll-use-intro",
+    "title": "인트로용",
+    "cue": "시작 분위기를 잡는 장면"
+  },
+  {
+    "subject": "broll",
+    "step": "usage",
+    "option_key": "broll-use-middle",
+    "title": "설명 중간 삽입용",
+    "cue": "정보 사이에 넣기 좋은 장면"
+  },
+  {
+    "subject": "broll",
+    "step": "usage",
+    "option_key": "broll-use-transition",
+    "title": "전환컷용",
+    "cue": "장면을 자연스럽게 넘기는 용도"
+  },
+  {
+    "subject": "broll",
+    "step": "usage",
+    "option_key": "broll-use-outro",
+    "title": "마무리용",
+    "cue": "끝맺음 감성을 주는 용도"
+  },
+  {
+    "subject": "broll",
+    "step": "usage",
+    "option_key": "broll-use-thumbbg",
+    "title": "썸네일 배경용",
+    "cue": "제목과 요소를 얹기 쉬운 용도"
+  },
+  {
+    "subject": "broll",
+    "step": "usage",
+    "option_key": "broll-use-banner",
+    "title": "웹 배너 배경용",
+    "cue": "카피가 들어가기 쉬운 용도"
+  },
+  {
+    "subject": "broll",
+    "step": "usage",
+    "option_key": "broll-use-presentation",
+    "title": "발표 자료 배경용",
+    "cue": "정보 위에 얹기 쉬운 용도"
+  },
+  {
+    "subject": "broll",
+    "step": "usage",
+    "option_key": "broll-use-atmosphere",
+    "title": "분위기 전달용",
+    "cue": "맥락보다 공기감이 중요한 용도"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "land-panorama",
+    "title": "파노라마 와이드",
+    "cue": "넓은 풍경과 스케일이 먼저 느껴지는 화면"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "land-mid",
+    "title": "중간 거리 풍경",
+    "cue": "주제와 배경이 균형 있게 보이는 화면"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "land-foreground",
+    "title": "전경 강조",
+    "cue": "앞쪽 요소를 크게 두고 깊이를 만드는 화면"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "land-silhouette",
+    "title": "실루엣 포함",
+    "cue": "해질녘이나 역광에서 분위기가 살아나는 화면"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "land-road",
+    "title": "길이 이어지는 화면",
+    "cue": "시선이 안쪽으로 자연스럽게 들어가는 구성"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "land-top",
+    "title": "높은 시점 / 항공 느낌",
+    "cue": "지역 전체 윤곽이 보이는 시원한 구도"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "land-framed",
+    "title": "창틀 / 문틀 프레이밍",
+    "cue": "안쪽 장면을 액자처럼 감싸는 구도"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "land-detail",
+    "title": "디테일 클로즈업",
+    "cue": "풍경 일부의 질감과 포인트를 크게 보는 화면"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "broll-comp-abstract-center",
+    "title": "중앙 집중형",
+    "cue": "배경 자체가 메인 무드가 되는 구도"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "broll-comp-abstract-leftspace",
+    "title": "오른쪽 비주얼 + 왼쪽 여백",
+    "cue": "텍스트를 얹기 쉬운 구도"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "broll-comp-abstract-rightspace",
+    "title": "왼쪽 비주얼 + 오른쪽 여백",
+    "cue": "제목과 자막 배치가 쉬운 구도"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "broll-comp-abstract-topspace",
+    "title": "상단 여백형",
+    "cue": "헤드라인을 넣기 쉬운 구도"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "broll-comp-abstract-bottomspace",
+    "title": "하단 여백형",
+    "cue": "캡션이나 설명문에 맞는 구도"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "broll-comp-abstract-wide",
+    "title": "넓은 와이드형",
+    "cue": "전환컷과 배너에 잘 맞는 구도"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "broll-comp-abstract-soft",
+    "title": "부드럽게 퍼지는 중심형",
+    "cue": "몽환적인 전환에 맞는 구도"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "broll-comp-abstract-minimal",
+    "title": "아주 단순한 비움형",
+    "cue": "문구를 올리기 쉬운 구도"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "broll-comp-hand-top",
+    "title": "위에서 내려다보는 손동작형",
+    "cue": "작업 과정이 읽히는 구도"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "broll-comp-hand-side",
+    "title": "옆에서 보는 작업형",
+    "cue": "손의 움직임이 자연스럽게 보이는 구도"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "broll-comp-hand-close",
+    "title": "손/도구 클로즈업형",
+    "cue": "디테일 전달에 좋은 구도"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "broll-comp-hand-desk",
+    "title": "책상 전체가 보이는 작업형",
+    "cue": "맥락까지 함께 담는 구도"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "broll-comp-hand-leftspace",
+    "title": "작업 오른쪽 + 왼쪽 여백",
+    "cue": "설명 자막을 넣기 쉬운 구도"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "broll-comp-hand-rightspace",
+    "title": "작업 왼쪽 + 오른쪽 여백",
+    "cue": "강조 문구를 넣기 쉬운 구도"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "broll-comp-hand-motion",
+    "title": "움직임이 살아 있는 스냅형",
+    "cue": "생동감이 있는 구도"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "broll-comp-hand-clean",
+    "title": "정리된 미니멀 작업형",
+    "cue": "발표 자료에 넣기 쉬운 구도"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "broll-comp-object-center",
+    "title": "오브젝트 중앙형",
+    "cue": "상징 이미지처럼 쓰기 쉬운 구도"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "broll-comp-object-angle",
+    "title": "사선 오브젝트형",
+    "cue": "입체감과 감성이 있는 구도"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "broll-comp-object-leftspace",
+    "title": "오른쪽 오브젝트 + 왼쪽 여백",
+    "cue": "텍스트 배치가 쉬운 구도"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "broll-comp-object-rightspace",
+    "title": "왼쪽 오브젝트 + 오른쪽 여백",
+    "cue": "배너형 이미지에 맞는 구도"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "broll-comp-object-shadow",
+    "title": "그림자/빛 강조형",
+    "cue": "무드 전달이 쉬운 구도"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "broll-comp-object-top",
+    "title": "위에서 내려다보는 배치형",
+    "cue": "정리감이 있는 구도"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "broll-comp-object-close",
+    "title": "오브젝트 클로즈업형",
+    "cue": "질감과 포인트가 보이는 구도"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "broll-comp-object-wide",
+    "title": "공간 포함 와이드형",
+    "cue": "장면 맥락이 함께 보이는 구도"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "broll-comp-empty-left",
+    "title": "왼쪽 넓은 여백형",
+    "cue": "제목이나 자막을 넣기 쉬운 구도"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "broll-comp-empty-right",
+    "title": "오른쪽 넓은 여백형",
+    "cue": "카피와 버튼 영역에 맞는 구도"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "broll-comp-empty-top",
+    "title": "상단 여백형",
+    "cue": "헤드라인이 들어가기 쉬운 구도"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "broll-comp-empty-bottom",
+    "title": "하단 여백형",
+    "cue": "설명문과 로고를 넣기 쉬운 구도"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "broll-comp-empty-center",
+    "title": "중앙 비움형",
+    "cue": "미니멀한 배경 이미지에 맞는 구도"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "broll-comp-empty-wide",
+    "title": "넓은 와이드 배경형",
+    "cue": "웹 배너나 프레젠테이션에 맞는 구도"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "broll-comp-empty-gradient",
+    "title": "빛 번짐이 있는 여백형",
+    "cue": "심심하지 않게 비어 있는 구도"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "broll-comp-empty-clean",
+    "title": "완전히 정리된 배경형",
+    "cue": "문서 삽입에 가장 쉬운 구도"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "broll-comp-scenic-road",
+    "title": "길/동선이 이어지는 구도",
+    "cue": "전환컷에 잘 맞는 흐름형 구도"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "broll-comp-scenic-window",
+    "title": "창밖/프레임형",
+    "cue": "안정적인 분위기 전환에 좋은 구도"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "broll-comp-scenic-wide",
+    "title": "공간이 넓게 보이는 와이드",
+    "cue": "인트로와 아웃트로에 맞는 구도"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "broll-comp-scenic-detail",
+    "title": "작은 디테일 클로즈업형",
+    "cue": "감성적인 중간 삽입컷에 맞는 구도"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "broll-comp-scenic-blur",
+    "title": "빛/움직임 블러형",
+    "cue": "몽환적인 전환에 좋은 구도"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "broll-comp-scenic-foreground",
+    "title": "전경 요소가 있는 구도",
+    "cue": "깊이감이 있는 화면"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "broll-comp-scenic-silhouette",
+    "title": "실루엣/윤곽 중심형",
+    "cue": "공기감이 강한 구도"
+  },
+  {
+    "subject": "broll",
+    "step": "composition",
+    "option_key": "broll-comp-scenic-space",
+    "title": "비워진 공간 중심형",
+    "cue": "문구를 얹기 쉬운 풍경 구도"
+  },
+  {
+    "subject": "broll",
+    "step": "mood",
+    "option_key": "mood-bright",
+    "title": "밝고 친근하게",
+    "cue": "입문자도 편하게 느끼는 가볍고 열린 분위기"
+  },
+  {
+    "subject": "broll",
+    "step": "mood",
+    "option_key": "mood-clean",
+    "title": "깨끗하고 맑게",
+    "cue": "정보 전달이 또렷한 클린한 방향"
+  },
+  {
+    "subject": "broll",
+    "step": "mood",
+    "option_key": "mood-warm",
+    "title": "따뜻하고 편안하게",
+    "cue": "부드럽고 정감 있는 인상을 주는 무드"
+  },
+  {
+    "subject": "broll",
+    "step": "mood",
+    "option_key": "mood-calm",
+    "title": "차분하고 담백하게",
+    "cue": "과장되지 않고 정리된 톤"
+  },
+  {
+    "subject": "broll",
+    "step": "mood",
+    "option_key": "mood-cinematic",
+    "title": "영화처럼 깊게",
+    "cue": "공기감과 서사가 함께 느껴지는 무드"
+  },
+  {
+    "subject": "broll",
+    "step": "mood",
+    "option_key": "mood-dramatic",
+    "title": "강렬하고 드라마틱하게",
+    "cue": "명암과 감정이 또렷한 방향"
+  },
+  {
+    "subject": "broll",
+    "step": "mood",
+    "option_key": "mood-luxury",
+    "title": "고급스럽고 세련되게",
+    "cue": "브랜드 비주얼 같은 정제된 무드"
+  },
+  {
+    "subject": "broll",
+    "step": "mood",
+    "option_key": "mood-playful",
+    "title": "귀엽고 경쾌하게",
+    "cue": "색감과 인상이 가볍고 재미있는 방향"
+  },
+  {
+    "subject": "broll",
+    "step": "mood",
+    "option_key": "mood-future",
+    "title": "미래적이고 차갑게",
+    "cue": "기술적이고 현대적인 느낌"
+  },
+  {
+    "subject": "broll",
+    "step": "mood",
+    "option_key": "mood-vintage",
+    "title": "빈티지하고 레트로하게",
+    "cue": "옛 감성과 필름 느낌이 남는 방향"
+  }
+]

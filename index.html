@@ -14,11 +14,23 @@
       --sub: #9dc3a8;
       --accent: #56ff8f;
       --shadow: 0 26px 80px rgba(0, 0, 0, 0.45);
-      --radius-xl: 30px;
-      --radius-lg: 22px;
+      --shadow-soft: 0 18px 52px rgba(0, 0, 0, 0.24);
+      --radius-xl: 34px;
+      --radius-lg: 26px;
     }
 
     * { box-sizing: border-box; }
+
+    a,
+    button {
+      touch-action: manipulation;
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 2px solid rgba(86, 255, 143, 0.72);
+      outline-offset: 3px;
+    }
 
     html, body {
       margin: 0;
@@ -27,19 +39,51 @@
       background:
         radial-gradient(circle at 12% 14%, rgba(86, 255, 143, 0.09), transparent 24%),
         radial-gradient(circle at 88% 18%, rgba(86, 255, 143, 0.06), transparent 22%),
+        radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.03), transparent 26%),
         linear-gradient(180deg, #030604 0%, #050a07 38%, #040906 100%);
       color: var(--text);
+      color-scheme: dark;
     }
 
     body {
       min-height: 100vh;
     }
 
+    body::before,
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    body::before {
+      background:
+        radial-gradient(circle at 18% 20%, rgba(255, 255, 255, 0.03), transparent 10%),
+        radial-gradient(circle at 75% 34%, rgba(86, 255, 143, 0.04), transparent 13%);
+    }
+
+    body::after {
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent 18%),
+        repeating-linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 0.016) 0,
+          rgba(255, 255, 255, 0.016) 1px,
+          transparent 1px,
+          transparent 140px
+        );
+      opacity: 0.24;
+    }
+
     .shell {
-      width: min(1460px, calc(100vw - 56px));
+      position: relative;
+      z-index: 1;
+      width: min(1500px, calc(100vw - 56px));
       min-height: 100vh;
       margin: 0 auto;
-      padding: 20px 0 34px;
+      padding: 18px 0 40px;
       display: flex;
       flex-direction: column;
     }
@@ -49,6 +93,15 @@
       align-items: center;
       justify-content: space-between;
       gap: 20px;
+      margin-bottom: 26px;
+      padding: 14px 16px;
+      border-radius: 28px;
+      border: 1px solid rgba(92, 255, 145, 0.12);
+      background:
+        linear-gradient(180deg, rgba(10, 18, 13, 0.86), rgba(6, 11, 8, 0.92)),
+        linear-gradient(135deg, rgba(86, 255, 143, 0.04), transparent 56%);
+      box-shadow: var(--shadow-soft);
+      backdrop-filter: blur(18px);
     }
 
     .brand {
@@ -66,7 +119,9 @@
       font-size: 2.1rem;
       font-weight: 900;
       color: var(--accent);
-      background: linear-gradient(180deg, rgba(15, 26, 18, 0.96), rgba(8, 14, 10, 0.98));
+      background:
+        linear-gradient(180deg, rgba(15, 26, 18, 0.96), rgba(8, 14, 10, 0.98)),
+        linear-gradient(135deg, rgba(86, 255, 143, 0.06), transparent 54%);
       border: 1px solid var(--line);
       box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04), var(--shadow);
     }
@@ -128,8 +183,8 @@
     .card-grid {
       margin: auto 0;
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 26px;
+      grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.96fr) minmax(0, 0.96fr);
+      gap: 24px;
       align-items: stretch;
     }
 
@@ -138,30 +193,44 @@
       text-decoration: none;
       color: inherit;
       min-height: 520px;
-      padding: 24px;
+      padding: 26px;
       border-radius: var(--radius-xl);
-      border: 1px solid var(--line);
+      border: 1px solid rgba(92, 255, 145, 0.12);
       background:
-        linear-gradient(180deg, rgba(10, 18, 13, 0.98), rgba(6, 11, 8, 0.99)),
+        linear-gradient(180deg, rgba(10, 18, 13, 0.9), rgba(6, 11, 8, 0.95)),
         linear-gradient(135deg, rgba(86, 255, 143, 0.04), transparent 52%);
-      box-shadow: var(--shadow);
+      box-shadow: 0 20px 54px rgba(0, 0, 0, 0.28);
       overflow: hidden;
       transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+      backdrop-filter: blur(16px);
+      position: relative;
     }
 
     .entry-card:hover {
       transform: translateY(-6px);
       border-color: var(--line-strong);
-      box-shadow: 0 34px 90px rgba(0, 0, 0, 0.55);
+      box-shadow: 0 34px 92px rgba(0, 0, 0, 0.42);
+    }
+
+    .entry-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent 22%);
+      pointer-events: none;
+    }
+
+    .entry-card:first-child {
+      min-height: 560px;
     }
 
     .thumb {
-      height: 290px;
+      height: 300px;
       border-radius: 26px;
       border: 1px solid rgba(255, 255, 255, 0.06);
       background-color: #101813;
       box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
-      margin-bottom: 24px;
+      margin-bottom: 26px;
       position: relative;
       overflow: hidden;
     }
@@ -181,6 +250,8 @@
       display: block;
       object-fit: cover;
       object-position: center;
+      filter: saturate(1.05) contrast(1.02);
+      transform: scale(1.015);
     }
 
     .thumb::before,
@@ -529,7 +600,7 @@
     <section class="card-grid" aria-label="Prompt builder entries">
       <a class="entry-card" href="image.html">
         <div class="thumb thumb--media" aria-hidden="true">
-          <img src="assets/cards/home/main/home-image-builder.webp" alt="" loading="eager" decoding="async" />
+          <img src="assets/cards/home/main/home-image-builder.webp" alt="" width="448" height="448" loading="eager" decoding="async" />
         </div>
         <div class="entry-title">이미지 생성기</div>
         <div class="entry-desc">
@@ -540,7 +611,7 @@
 
       <a class="entry-card" href="video.html">
         <div class="thumb thumb--media" aria-hidden="true">
-          <img src="assets/cards/home/main/home-video-builder.webp" alt="" loading="lazy" decoding="async" />
+          <img src="assets/cards/home/main/home-video-builder.webp" alt="" width="448" height="448" loading="lazy" decoding="async" />
         </div>
         <div class="entry-title">동영상 생성기</div>
         <div class="entry-desc">
@@ -551,7 +622,7 @@
 
       <a class="entry-card" href="tts.html">
         <div class="thumb thumb--media" aria-hidden="true">
-          <img src="assets/cards/home/main/home-tts-builder.webp" alt="" loading="lazy" decoding="async" />
+          <img src="assets/cards/home/main/home-tts-builder.webp" alt="" width="448" height="448" loading="lazy" decoding="async" />
         </div>
         <div class="entry-title">TTS / 가사 생성기</div>
         <div class="entry-desc">

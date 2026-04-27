@@ -3,162 +3,1620 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Simple Prompt Master - TTS</title>
+  <title>Simple Prompt Master - TTS / 음악 생성기</title>
   <meta
     name="description"
-    content="Simple Prompt Master TTS / 가사 프롬프트 생성기 준비 페이지입니다."
+    content="Simple Prompt Master TTS / 음악 생성기. TTS 대본, 말투 가이드, 가사와 음악 프롬프트를 단계별로 정리합니다."
   />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <style>
     :root {
-      --bg: #060907;
-      --line: rgba(87, 255, 149, 0.18);
-      --line-strong: rgba(87, 255, 149, 0.32);
+      --bg: #050704;
+      --panel: #08100a;
+      --panel-soft: #0d1710;
       --text: #f4fff7;
-      --sub: #a2b7a8;
-      --accent: #57ff95;
-      --shadow: 0 30px 80px rgba(0, 0, 0, 0.42);
+      --sub: #b1c8b7;
+      --muted: #84a18b;
+      --line: rgba(96, 255, 154, 0.14);
+      --line-strong: rgba(96, 255, 154, 0.3);
+      --accent: #60ff9a;
+      --amber: #f4b15d;
+      --amber-soft: rgba(244, 177, 93, 0.14);
+      --shadow: 0 28px 86px rgba(0, 0, 0, 0.46);
+      --shadow-soft: 0 18px 48px rgba(0, 0, 0, 0.28);
+      --radius-xl: 34px;
+      --radius-lg: 24px;
+      --radius-md: 18px;
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      color-scheme: dark;
+      scroll-behavior: smooth;
+    }
 
     body {
       margin: 0;
       min-height: 100vh;
-      display: grid;
-      place-items: center;
-      padding: 24px;
       font-family: "Pretendard", "Noto Sans KR", "Malgun Gothic", sans-serif;
       color: var(--text);
       background:
-        radial-gradient(circle at 20% 0%, rgba(87, 255, 149, 0.14), transparent 24%),
-        radial-gradient(circle at 100% 12%, rgba(87, 255, 149, 0.06), transparent 20%),
-        linear-gradient(180deg, #040705 0%, #09100b 52%, #060906 100%);
+        radial-gradient(circle at 12% 8%, rgba(96, 255, 154, 0.1), transparent 18%),
+        radial-gradient(circle at 88% 6%, rgba(244, 177, 93, 0.12), transparent 19%),
+        linear-gradient(180deg, #020403 0%, #070d08 46%, #040604 100%);
+      overflow-x: hidden;
     }
 
-    .panel {
-      width: min(760px, 100%);
-      padding: 34px;
-      border-radius: 24px;
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.018), transparent 22%),
+        repeating-linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 0.016) 0,
+          rgba(255, 255, 255, 0.016) 1px,
+          transparent 1px,
+          transparent 126px
+        );
+      opacity: 0.24;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    textarea {
+      font: inherit;
+    }
+
+    button {
+      appearance: none;
+      -webkit-appearance: none;
+      color: inherit;
+      cursor: pointer;
+    }
+
+    a,
+    button,
+    textarea {
+      touch-action: manipulation;
+    }
+
+    a:focus-visible,
+    button:focus-visible,
+    textarea:focus-visible,
+    summary:focus-visible {
+      outline: 2px solid rgba(96, 255, 154, 0.72);
+      outline-offset: 3px;
+    }
+
+    .shell {
+      position: relative;
+      z-index: 1;
+      width: min(1440px, calc(100vw - 56px));
+      margin: 0 auto;
+      padding: 18px 0 46px;
+    }
+
+    .topbar {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: 18px;
+      margin-bottom: 28px;
+      padding: 14px 16px;
+      border-radius: 28px;
       border: 1px solid var(--line);
       background:
-        linear-gradient(180deg, rgba(10, 16, 12, 0.98), rgba(6, 10, 8, 0.98)),
-        radial-gradient(circle at top left, rgba(87, 255, 149, 0.06), transparent 34%);
-      box-shadow: var(--shadow);
+        linear-gradient(180deg, rgba(10, 18, 13, 0.88), rgba(6, 11, 8, 0.94)),
+        linear-gradient(135deg, rgba(96, 255, 154, 0.05), transparent 54%);
+      box-shadow: var(--shadow-soft);
+      backdrop-filter: blur(18px);
     }
 
-    .brand {
-      display: inline-flex;
-      align-items: center;
-      gap: 14px;
-      margin-bottom: 26px;
-    }
-
-    .mark {
-      width: 58px;
-      height: 58px;
-      border-radius: 16px;
-      display: grid;
-      place-items: center;
-      border: 1px solid var(--line-strong);
-      color: var(--accent);
-      background: rgba(87, 255, 149, 0.08);
-      font-size: 30px;
-      font-weight: 900;
-    }
-
-    .eyebrow {
-      display: inline-block;
-      padding: 8px 12px;
-      border-radius: 999px;
-      border: 1px solid var(--line);
-      background: rgba(87, 255, 149, 0.08);
-      color: var(--accent);
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-    }
-
-    h1 {
-      margin: 18px 0 12px;
-      font-size: clamp(30px, 6vw, 52px);
-      line-height: 1.05;
-      letter-spacing: -0.04em;
-    }
-
-    p {
-      margin: 0;
-      color: var(--sub);
-      font-size: 16px;
-      line-height: 1.75;
-    }
-
-    .status-box {
-      margin-top: 24px;
-      padding: 18px 20px;
-      border-radius: 20px;
-      border: 1px solid rgba(255,255,255,0.08);
-      background: rgba(255,255,255,0.03);
-      color: #dbffe6;
-      font-size: 15px;
-      line-height: 1.7;
-    }
-
-    .actions {
+    .mode-links {
       display: flex;
-      flex-wrap: wrap;
+      justify-content: center;
       gap: 12px;
-      margin-top: 26px;
+      flex-wrap: wrap;
     }
 
-    .button {
+    .home-pill,
+    .mode-pill,
+    .pill-btn,
+    .ghost-btn,
+    .copy-btn,
+    .step-badge {
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(12, 20, 14, 0.95), rgba(6, 11, 8, 0.98));
+      color: var(--text);
+      border-radius: 999px;
+      min-height: 50px;
+      padding: 0 18px;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-width: 160px;
-      padding: 13px 18px;
-      border-radius: 999px;
-      border: 1px solid var(--line);
-      text-decoration: none;
-      color: var(--text);
-      background: rgba(87, 255, 149, 0.08);
-      font-weight: 700;
+      font-weight: 900;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+      transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
     }
 
-    .button.secondary {
-      background: rgba(255,255,255,0.03);
+    .home-pill:hover,
+    .mode-pill:hover,
+    .pill-btn:hover,
+    .ghost-btn:hover,
+    .copy-btn:hover {
+      transform: translateY(-2px);
+      border-color: var(--line-strong);
+    }
+
+    .home-pill {
+      width: 52px;
+      min-width: 52px;
+      padding: 0;
+      font-size: 1.3rem;
+    }
+
+    .mode-pill.active,
+    .copy-btn.primary,
+    .step-badge {
+      background: rgba(96, 255, 154, 0.11);
+      border-color: rgba(96, 255, 154, 0.28);
+      color: #eaffef;
+    }
+
+    .youtube-link {
+      gap: 10px;
+    }
+
+    .youtube-icon {
+      position: relative;
+      width: 18px;
+      height: 13px;
+      border-radius: 4px;
+      background: #ff3b30;
+      display: inline-block;
+      flex-shrink: 0;
+    }
+
+    .youtube-icon::before {
+      content: "";
+      position: absolute;
+      left: 6px;
+      top: 3px;
+      border-top: 3.5px solid transparent;
+      border-bottom: 3.5px solid transparent;
+      border-left: 6px solid #fff;
+    }
+
+    .floating-back {
+      position: fixed;
+      left: clamp(26px, 4vw, 72px);
+      top: 142px;
+      width: 72px;
+      height: 72px;
+      border-radius: 24px;
+      border: 1px solid rgba(96, 255, 154, 0.22);
+      background:
+        linear-gradient(180deg, rgba(10, 18, 13, 0.96), rgba(5, 9, 7, 0.98)),
+        linear-gradient(135deg, rgba(96, 255, 154, 0.08), transparent 60%);
+      color: var(--text);
+      font-size: 1.65rem;
+      font-weight: 900;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.34);
+      z-index: 12;
+    }
+
+    .floating-back.hidden {
+      display: none;
+    }
+
+    .screen {
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--line);
+      background:
+        radial-gradient(circle at top left, rgba(96, 255, 154, 0.08), transparent 24%),
+        radial-gradient(circle at 84% 4%, rgba(244, 177, 93, 0.08), transparent 24%),
+        linear-gradient(180deg, rgba(9, 17, 11, 0.96), rgba(4, 9, 6, 0.985));
+      box-shadow: var(--shadow);
+      padding: 34px;
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+    }
+
+    .screen.hidden {
+      display: none !important;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      min-height: 38px;
+      padding: 0 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(96, 255, 154, 0.24);
+      background: rgba(96, 255, 154, 0.08);
+      color: var(--accent);
+      font-size: 0.82rem;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin: 0;
+      letter-spacing: -0.045em;
+      word-break: keep-all;
+      overflow-wrap: break-word;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(360px, 0.72fr);
+      gap: 26px;
+      align-items: stretch;
+    }
+
+    .hero-copy-wrap {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 28px;
+      min-height: 430px;
+    }
+
+    .hero-title {
+      margin-top: 16px;
+      max-width: 15ch;
+      font-size: clamp(2.4rem, 5.2vw, 5.6rem);
+      line-height: 0.96;
+      letter-spacing: -0.065em;
+      text-wrap: balance;
+    }
+
+    .hero-copy,
+    .step-copy,
+    .option-desc,
+    .helper,
+    .system-box,
+    textarea {
       color: var(--sub);
-      border-color: rgba(255,255,255,0.08);
+      line-height: 1.7;
+    }
+
+    .hero-copy {
+      max-width: 760px;
+      margin: 18px 0 0;
+      font-size: 1rem;
+      color: #c1d8c7;
+    }
+
+    .hero-media {
+      min-height: 430px;
+      border-radius: 30px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      overflow: hidden;
+      position: relative;
+      background: #11180f;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    }
+
+    .hero-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      filter: saturate(1.04) contrast(1.03);
+    }
+
+    .hero-media::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(180deg, transparent 52%, rgba(0, 0, 0, 0.44)),
+        linear-gradient(90deg, rgba(0, 0, 0, 0.22), transparent 42%);
+      pointer-events: none;
+    }
+
+    .signal-strip {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .signal {
+      border-radius: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      background: rgba(255, 255, 255, 0.035);
+      padding: 14px;
+    }
+
+    .signal strong {
+      display: block;
+      margin-bottom: 5px;
+      color: #eaffef;
+      font-size: 0.95rem;
+      line-height: 1.28;
+    }
+
+    .signal span {
+      color: var(--muted);
+      font-size: 0.84rem;
+      line-height: 1.45;
+    }
+
+    .mode-grid,
+    .cards-grid,
+    .result-layout {
+      display: grid;
+      gap: 18px;
+    }
+
+    .mode-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      margin-top: 26px;
+    }
+
+    .cards-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      margin-top: 28px;
+    }
+
+    .choice-card,
+    .option-card,
+    .summary-card,
+    .result-box {
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(96, 255, 154, 0.12);
+      background:
+        linear-gradient(180deg, rgba(10, 18, 13, 0.91), rgba(5, 10, 7, 0.96)),
+        linear-gradient(135deg, rgba(96, 255, 154, 0.04), transparent 56%);
+      box-shadow: 0 18px 42px rgba(0, 0, 0, 0.24);
+      backdrop-filter: blur(14px);
+    }
+
+    .choice-card,
+    .option-card {
+      padding: 18px;
+      display: grid;
+      gap: 12px;
+      text-align: left;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+    }
+
+    .choice-card:hover,
+    .option-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--line-strong);
+      box-shadow: 0 28px 64px rgba(0, 0, 0, 0.32);
+    }
+
+    .card-thumb {
+      position: relative;
+      height: 156px;
+      border-radius: 22px;
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 30% 40%, rgba(244, 177, 93, 0.2), transparent 18%),
+        linear-gradient(180deg, #203426, #101710);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+    }
+
+    .card-photo {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: saturate(1.05) contrast(1.02);
+      transform: scale(1.01);
+    }
+
+    .card-thumb::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 45%, rgba(0, 0, 0, 0.38));
+      z-index: 1;
+    }
+
+    .visualizer {
+      position: absolute;
+      left: 20px;
+      right: 20px;
+      bottom: 22px;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: repeat(18, 1fr);
+      gap: 5px;
+      align-items: end;
+      height: 68px;
+    }
+
+    .visualizer span {
+      display: block;
+      border-radius: 999px 999px 5px 5px;
+      background: linear-gradient(180deg, rgba(244, 177, 93, 0.95), rgba(96, 255, 154, 0.76));
+      box-shadow: 0 0 18px rgba(96, 255, 154, 0.18);
+    }
+
+    .voice .visualizer span:nth-child(1) { height: 26%; }
+    .voice .visualizer span:nth-child(2) { height: 44%; }
+    .voice .visualizer span:nth-child(3) { height: 72%; }
+    .voice .visualizer span:nth-child(4) { height: 38%; }
+    .voice .visualizer span:nth-child(5) { height: 58%; }
+    .voice .visualizer span:nth-child(6) { height: 86%; }
+    .voice .visualizer span:nth-child(7) { height: 48%; }
+    .voice .visualizer span:nth-child(8) { height: 64%; }
+    .voice .visualizer span:nth-child(9) { height: 34%; }
+    .voice .visualizer span:nth-child(10) { height: 76%; }
+    .voice .visualizer span:nth-child(11) { height: 42%; }
+    .voice .visualizer span:nth-child(12) { height: 68%; }
+    .voice .visualizer span:nth-child(13) { height: 52%; }
+    .voice .visualizer span:nth-child(14) { height: 88%; }
+    .voice .visualizer span:nth-child(15) { height: 46%; }
+    .voice .visualizer span:nth-child(16) { height: 62%; }
+    .voice .visualizer span:nth-child(17) { height: 36%; }
+    .voice .visualizer span:nth-child(18) { height: 54%; }
+
+    .lyrics .visualizer span:nth-child(1) { height: 78%; }
+    .lyrics .visualizer span:nth-child(2) { height: 34%; }
+    .lyrics .visualizer span:nth-child(3) { height: 58%; }
+    .lyrics .visualizer span:nth-child(4) { height: 82%; }
+    .lyrics .visualizer span:nth-child(5) { height: 44%; }
+    .lyrics .visualizer span:nth-child(6) { height: 70%; }
+    .lyrics .visualizer span:nth-child(7) { height: 92%; }
+    .lyrics .visualizer span:nth-child(8) { height: 56%; }
+    .lyrics .visualizer span:nth-child(9) { height: 38%; }
+    .lyrics .visualizer span:nth-child(10) { height: 86%; }
+    .lyrics .visualizer span:nth-child(11) { height: 62%; }
+    .lyrics .visualizer span:nth-child(12) { height: 48%; }
+    .lyrics .visualizer span:nth-child(13) { height: 76%; }
+    .lyrics .visualizer span:nth-child(14) { height: 54%; }
+    .lyrics .visualizer span:nth-child(15) { height: 90%; }
+    .lyrics .visualizer span:nth-child(16) { height: 42%; }
+    .lyrics .visualizer span:nth-child(17) { height: 68%; }
+    .lyrics .visualizer span:nth-child(18) { height: 50%; }
+
+    .card-kicker,
+    .card-badge {
+      position: absolute;
+      z-index: 3;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(4, 8, 5, 0.66);
+      color: #eefaf1;
+      font-size: 0.82rem;
+      font-weight: 900;
+      letter-spacing: 0.04em;
+      padding: 8px 12px;
+      backdrop-filter: blur(8px);
+    }
+
+    .card-kicker {
+      left: 14px;
+      bottom: 14px;
+      text-transform: uppercase;
+    }
+
+    .card-badge {
+      top: 14px;
+      right: 14px;
+    }
+
+    .choice-top,
+    .option-top,
+    .section-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .mini-badge {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 0 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(255, 255, 255, 0.04);
+      color: var(--text);
+      font-size: 0.78rem;
+      font-weight: 900;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+    }
+
+    .choice-card h2,
+    .option-card h3 {
+      line-height: 1.08;
+    }
+
+    .choice-card h2 {
+      font-size: clamp(1.45rem, 2vw, 2.05rem);
+    }
+
+    .choice-copy,
+    .option-desc {
+      margin: 0;
+      color: #c1d8c7;
+      font-size: 0.94rem;
+      line-height: 1.62;
+    }
+
+    .option-card h3 {
+      max-width: 15ch;
+      font-size: 1.38rem;
+    }
+
+    .section-left {
+      display: grid;
+      gap: 12px;
+    }
+
+    .section-title {
+      max-width: 20ch;
+      font-size: clamp(1.8rem, 2.6vw, 2.6rem);
+      line-height: 1.06;
+      text-wrap: balance;
+    }
+
+    .step-copy {
+      max-width: 780px;
+      margin: 0;
+      font-size: 1rem;
+    }
+
+    .result-layout {
+      grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+      margin-top: 26px;
+      align-items: start;
+    }
+
+    .summary-card,
+    .result-box {
+      padding: 22px;
+      display: grid;
+      gap: 18px;
+    }
+
+    .summary-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .summary-item {
+      border-radius: 18px;
+      border: 1px solid rgba(96, 255, 154, 0.12);
+      background: rgba(9, 17, 11, 0.82);
+      padding: 12px 14px;
+    }
+
+    .summary-item strong {
+      display: block;
+      margin-bottom: 7px;
+      color: #92efaf;
+      font-size: 0.78rem;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .summary-item span {
+      display: block;
+      color: #f5fff7;
+      font-size: 1rem;
+      font-weight: 800;
+      line-height: 1.38;
+    }
+
+    .profile-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .profile-btn {
+      flex: 0 0 auto;
+      min-height: 44px;
+      padding: 0 15px;
+      white-space: nowrap;
+    }
+
+    .profile-btn.active {
+      background: rgba(96, 255, 154, 0.12);
+      border-color: rgba(96, 255, 154, 0.28);
+      color: #ecfff1;
+    }
+
+    .system-box {
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      background: rgba(4, 8, 5, 0.6);
+      padding: 18px;
+      white-space: pre-wrap;
+      font-size: 0.93rem;
+      max-height: 420px;
+      overflow: auto;
+    }
+
+    .action-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 12px;
+    }
+
+    .copy-state {
+      min-height: 24px;
+      color: var(--accent);
+      font-size: 0.92rem;
+      font-weight: 800;
+    }
+
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      z-index: 30;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      background: rgba(2, 5, 3, 0.72);
+      backdrop-filter: blur(10px);
+    }
+
+    .modal-backdrop.open {
+      display: flex;
+    }
+
+    .modal {
+      width: min(640px, calc(100vw - 32px));
+      border-radius: 30px;
+      border: 1px solid rgba(96, 255, 154, 0.16);
+      background:
+        linear-gradient(180deg, rgba(9, 17, 11, 0.98), rgba(5, 10, 7, 0.98)),
+        linear-gradient(135deg, rgba(244, 177, 93, 0.05), transparent 60%);
+      box-shadow: var(--shadow);
+      padding: 26px;
+      display: grid;
+      gap: 14px;
+    }
+
+    .modal h3 {
+      font-size: 1.42rem;
+    }
+
+    .modal textarea {
+      width: 100%;
+      min-height: 150px;
+      border-radius: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(2, 6, 4, 0.9);
+      color: var(--text);
+      padding: 14px 16px;
+      resize: vertical;
+    }
+
+    .modal-actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    @media (max-width: 1080px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-copy-wrap,
+      .hero-media {
+        min-height: auto;
+      }
+
+      .hero-media {
+        height: 310px;
+      }
+
+      .cards-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .result-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 860px) {
+      .shell {
+        width: min(100vw - 20px, 680px);
+        padding: 14px 0 28px;
+      }
+
+      .topbar {
+        grid-template-columns: auto minmax(0, 1fr);
+        gap: 10px;
+      }
+
+      .home-pill {
+        grid-column: 1;
+        grid-row: 1;
+      }
+
+      .youtube-link {
+        grid-column: 2;
+        grid-row: 1;
+        justify-self: end;
+        width: auto;
+        min-height: 46px;
+        padding: 0 14px;
+      }
+
+      .mode-links {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 2px;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+      }
+
+      .mode-links::-webkit-scrollbar {
+        display: none;
+      }
+
+      .mode-pill {
+        min-width: max-content;
+        min-height: 46px;
+        flex: 0 0 auto;
+        padding: 0 15px;
+      }
+
+      .screen {
+        padding: 24px 18px;
+      }
+
+      .floating-back {
+        position: static;
+        width: 58px;
+        height: 58px;
+        border-radius: 18px;
+        margin: 0 0 14px;
+        font-size: 1.35rem;
+      }
+
+      .hero-title {
+        font-size: clamp(2rem, 10vw, 3.4rem);
+      }
+
+      .hero-media {
+        height: 240px;
+      }
+
+      .signal-strip,
+      .mode-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cards-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+
+      .summary-card,
+      .result-box {
+        padding: 18px;
+      }
+
+      .profile-tabs {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 4px;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+      }
+
+      .profile-tabs::-webkit-scrollbar {
+        display: none;
+      }
+
+      .action-row,
+      .modal-actions {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .mode-links {
+        gap: 6px;
+        justify-content: space-between;
+      }
+
+      .mode-pill {
+        min-height: 42px;
+        padding: 0 10px;
+        font-size: 0.88rem;
+      }
+
+      .youtube-link {
+        justify-self: stretch;
+      }
+
+      .screen {
+        border-radius: 28px;
+      }
+
+      .hero-title,
+      .section-title {
+        font-size: clamp(1.75rem, 9vw, 2.5rem);
+        line-height: 1.06;
+      }
+
+      .hero-copy,
+      .step-copy {
+        font-size: 0.94rem;
+      }
+
+      .hero-media {
+        height: 200px;
+        border-radius: 24px;
+      }
+
+      .card-thumb {
+        height: 132px;
+      }
+
+      .choice-card h2,
+      .option-card h3 {
+        font-size: 1.1rem;
+      }
+
+      .choice-copy,
+      .option-desc {
+        font-size: 0.88rem;
+      }
+
+      .system-box {
+        padding: 15px;
+        font-size: 0.86rem;
+        max-height: 360px;
+      }
     }
   </style>
 </head>
 <body>
-  <main class="panel">
-    <div class="brand">
-      <div class="mark" aria-hidden="true">D</div>
+  <main class="shell">
+    <header class="topbar">
+      <a class="home-pill" href="index.html" aria-label="메인으로">⌂</a>
+
+      <nav class="mode-links" aria-label="생성기 이동">
+        <a class="mode-pill" href="image.html">이미지 생성</a>
+        <a class="mode-pill" href="video.html">동영상 생성</a>
+        <a class="mode-pill active" href="tts.html">TTS / 음악</a>
+      </nav>
+
+      <a class="pill-btn youtube-link" href="https://www.youtube.com/@Denoise-AI" target="_blank" rel="noreferrer">
+        <span class="youtube-icon" aria-hidden="true"></span>
+        <span>Deno YouTube</span>
+      </a>
+    </header>
+
+    <button id="backBtn" class="floating-back hidden" type="button" aria-label="이전 단계">←</button>
+
+    <section id="chooserScreen" class="screen">
+      <div class="hero">
+        <div class="hero-copy-wrap">
+          <div>
+            <span class="eyebrow">Audio Flow</span>
+            <h1 class="hero-title">목소리와 음악도 프롬프트부터 정리해요</h1>
+            <p class="hero-copy">
+              영상 설명처럼 오디오도 목적, 말투, 감정선, 길이를 먼저 정리하면 결과가 훨씬 안정적이에요. TTS 대본과 가사/음악 프롬프트를 같은 방식으로 만들 수 있게 나눠두었습니다.
+            </p>
+          </div>
+          <div class="signal-strip" aria-label="오디오 프롬프트 구성 요소">
+            <div class="signal">
+              <strong>말투</strong>
+              <span>친근함, 전문성, 감정선을 먼저 고정</span>
+            </div>
+            <div class="signal">
+              <strong>호흡</strong>
+              <span>문장 길이와 쉬는 지점을 함께 정리</span>
+            </div>
+            <div class="signal">
+              <strong>구조</strong>
+              <span>대본, 가사, 후렴, 태그를 복사하기 쉽게 분리</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-media" aria-hidden="true">
+          <img src="assets/cards/home/main/home-tts-builder.webp" alt="" width="1672" height="941" loading="eager" decoding="async" />
+        </div>
+      </div>
+
+      <div class="mode-grid">
+        <button class="choice-card" type="button" data-mode="tts">
+          <div class="card-thumb voice">
+            <img class="card-photo" src="assets/cards/home/main/home-tts-builder.webp" alt="" width="1672" height="941" loading="lazy" decoding="async" />
+            <div class="visualizer" aria-hidden="true">
+              <span></span><span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <span class="card-kicker">TTS</span>
+            <span class="card-badge">voice</span>
+          </div>
+          <div class="choice-top">
+            <span class="mini-badge">script</span>
+            <span class="mini-badge">narration</span>
+          </div>
+          <div>
+            <h2>TTS 대본 만들기</h2>
+            <p class="choice-copy">튜토리얼, 쇼츠, 광고 멘트처럼 읽히는 문장을 말투와 호흡까지 같이 정리합니다.</p>
+          </div>
+        </button>
+
+        <button class="choice-card" type="button" data-mode="music">
+          <div class="card-thumb lyrics">
+            <img class="card-photo" src="assets/cards/home/main/home-tts-builder.webp" alt="" width="1672" height="941" loading="lazy" decoding="async" />
+            <div class="visualizer" aria-hidden="true">
+              <span></span><span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <span class="card-kicker">music</span>
+            <span class="card-badge">lyrics</span>
+          </div>
+          <div class="choice-top">
+            <span class="mini-badge">song</span>
+            <span class="mini-badge">suno</span>
+          </div>
+          <div>
+            <h2>가사 / 음악 프롬프트 만들기</h2>
+            <p class="choice-copy">Suno, Udio 같은 음악 생성기에 넣기 쉬운 장르, 무드, 보컬, 구조, 가사 초안을 정리합니다.</p>
+          </div>
+        </button>
+      </div>
+    </section>
+
+    <section id="stepScreen" class="screen hidden">
+      <div class="section-head">
+        <div class="section-left">
+          <span id="flowEyebrow" class="eyebrow"></span>
+          <h2 id="stepTitle" class="section-title"></h2>
+          <p id="stepCopy" class="step-copy"></p>
+        </div>
+        <span id="stepBadge" class="step-badge"></span>
+      </div>
+      <div id="cardsGrid" class="cards-grid"></div>
+    </section>
+
+    <section id="resultScreen" class="screen hidden">
+      <div class="section-head">
+        <div class="section-left">
+          <span id="resultEyebrow" class="eyebrow"></span>
+          <h2 id="resultTitle" class="section-title"></h2>
+          <p id="resultCopy" class="step-copy"></p>
+        </div>
+      </div>
+
+      <div class="result-layout">
+        <div class="summary-card">
+          <h3>선택 요약</h3>
+          <div id="summaryList" class="summary-list"></div>
+        </div>
+
+        <div class="result-box">
+          <div>
+            <h3>복사할 프롬프트</h3>
+            <p id="profileCopy" class="helper"></p>
+          </div>
+          <div id="profileTabs" class="profile-tabs"></div>
+          <div id="systemPrompt" class="system-box"></div>
+          <div class="action-row">
+            <div id="copyState" class="copy-state" aria-live="polite"></div>
+            <button id="copyBtn" class="copy-btn primary" type="button">프롬프트 복사</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="detailModal" class="modal-backdrop" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
       <div>
-        <strong>Simple Prompt Master</strong><br />
-        <span style="color: var(--sub); font-size: 13px;">TTS / Lyric Section</span>
+        <span id="modalBadge" class="eyebrow"></span>
+        <h3 id="modalTitle"></h3>
+      </div>
+      <p id="modalCopy" class="helper"></p>
+      <textarea id="modalInput"></textarea>
+      <div class="modal-actions">
+        <button id="skipDetailBtn" class="ghost-btn" type="button">그냥 넘어가기</button>
+        <button id="saveDetailBtn" class="copy-btn primary" type="button">저장하고 다음</button>
       </div>
     </div>
+  </div>
 
-    <div class="eyebrow">Preparing</div>
-    <h1>TTS / 가사 생성기는<br />다음 순서로 준비 중입니다</h1>
-    <p>
-      TTS용 말투 가이드, 감정선, 대본 흐름, 그리고 Suno 같은 곳에 넣기 쉬운 가사 초안까지
-      한 단계씩 고르면서 만들 수 있는 흐름으로 이어질 예정입니다.
-    </p>
+  <script>
+    const flows = {
+      tts: {
+        label: "TTS",
+        eyebrow: "TTS Script",
+        resultTitle: "TTS용 대본 프롬프트가 준비됐어요",
+        resultCopy: "복사해서 Gemini, GPT, Grok 같은 채팅형 모델에 붙이면 TTS에 넣기 좋은 대본과 말투 가이드를 함께 정리할 수 있어요.",
+        profiles: [
+          {
+            key: "script",
+            title: "대본 생성",
+            copy: "일반 LLM에서 바로 읽히는 TTS 대본을 만들 때",
+            instruction: "Create a polished Korean TTS script with clear sentence flow, natural spoken rhythm, and short breath-friendly phrases."
+          },
+          {
+            key: "direction",
+            title: "말투 가이드",
+            copy: "이미 대본이 있고 성우 지시문을 보강할 때",
+            instruction: "Create a voice direction sheet first, then rewrite the script so a TTS model can follow tone, pacing, pauses, and emphasis."
+          },
+          {
+            key: "shorts",
+            title: "쇼츠 내레이션",
+            copy: "짧고 훅이 강한 영상용 멘트가 필요할 때",
+            instruction: "Prioritize a strong opening hook, compact spoken Korean, punchy beats, and a clean ending line for a short-form video."
+          }
+        ],
+        steps: [
+          {
+            key: "purpose",
+            label: "사용 목적",
+            title: "어디에 쓸 목소리인가요?",
+            copy: "목적이 정해지면 문장 길이와 말투가 자연스럽게 좁혀집니다.",
+            detailPrompt: "어떤 영상이나 상황에 넣을 목소리인지 한 줄만 더 적어주세요.",
+            detailPlaceholder: "예: ComfyUI 튜토리얼 인트로에서 초보자에게 오늘 배울 내용을 짧게 알려주는 목소리",
+            options: [
+              { key: "tutorial", title: "튜토리얼 설명", desc: "강의나 사용법을 차분하게 안내", brief: "tutorial narration for clear step-by-step explanation" },
+              { key: "shorts", title: "쇼츠 훅", desc: "짧은 영상의 첫 3초를 잡는 멘트", brief: "short-form hook narration with immediate attention" },
+              { key: "review", title: "리뷰 / 소개", desc: "제품, 모델, 워크플로를 자연스럽게 소개", brief: "review or introduction voiceover" },
+              { key: "ad", title: "광고 멘트", desc: "장점과 행동 유도를 또렷하게 전달", brief: "commercial voiceover with clear benefit and call to action" },
+              { key: "story", title: "감성 내레이션", desc: "분위기와 감정선을 살리는 서술", brief: "emotional narration with cinematic mood" }
+            ]
+          },
+          {
+            key: "voice",
+            label: "말투",
+            title: "어떤 사람처럼 들리면 좋을까요?",
+            copy: "TTS는 문장보다 말투 지시가 약하면 결과가 밋밋해질 수 있어요.",
+            detailPrompt: "원하는 말투나 피하고 싶은 느낌이 있으면 적어주세요.",
+            detailPlaceholder: "예: 너무 광고 같지 않게, 옆에서 알려주는 친절한 전문가 느낌",
+            options: [
+              { key: "friendly", title: "친근한 안내자", desc: "가깝고 편하게 설명하는 톤", brief: "friendly and approachable guide voice" },
+              { key: "calm", title: "차분한 전문가", desc: "안정적이고 신뢰감 있는 톤", brief: "calm expert voice with steady confidence" },
+              { key: "energetic", title: "활기 있는 진행자", desc: "속도감 있고 에너지 있는 톤", brief: "energetic host voice with momentum" },
+              { key: "emotional", title: "감성적인 목소리", desc: "부드럽고 여운이 남는 톤", brief: "warm emotional voice with gentle nuance" },
+              { key: "premium", title: "고급스러운 톤", desc: "절제되고 세련된 브랜드 톤", brief: "refined premium brand voice" }
+            ]
+          },
+          {
+            key: "pace",
+            label: "속도 / 호흡",
+            title: "말의 속도는 어느 쪽인가요?",
+            copy: "호흡 지시를 같이 넣으면 TTS가 더 자연스럽게 끊어 읽습니다.",
+            detailPrompt: "특별히 쉬어야 하는 부분이나 강조점이 있으면 적어주세요.",
+            detailPlaceholder: "예: 어려운 용어 뒤에는 잠깐 쉬고, 마지막 문장은 확신 있게 마무리",
+            options: [
+              { key: "slow", title: "천천히 또렷하게", desc: "초보자가 따라오기 좋게 여유 있게", brief: "slow and clear pacing with generous pauses" },
+              { key: "natural", title: "자연스러운 대화 속도", desc: "일상 대화처럼 부드럽게", brief: "natural conversational pacing" },
+              { key: "brisk", title: "약간 빠르게", desc: "지루하지 않게 밀도 있게", brief: "brisk pacing with compact delivery" },
+              { key: "punchy", title: "짧고 강하게", desc: "쇼츠나 광고에 맞는 리듬", brief: "punchy pacing with short emphatic beats" }
+            ]
+          },
+          {
+            key: "length",
+            label: "길이",
+            title: "어느 정도 길이가 필요해요?",
+            copy: "길이를 정하면 대본이 장황해지는 것을 막을 수 있습니다.",
+            detailPrompt: "초 단위나 문장 수가 정해져 있으면 적어주세요.",
+            detailPlaceholder: "예: 20초 안쪽, 문장 5개 이하",
+            options: [
+              { key: "micro", title: "10초 안쪽", desc: "짧은 훅이나 한 문장 설명", brief: "under 10 seconds, extremely compact" },
+              { key: "short", title: "20~30초", desc: "쇼츠, 릴스, 도입부에 적당", brief: "20 to 30 second short narration" },
+              { key: "medium", title: "1분 내외", desc: "간단한 튜토리얼 구간", brief: "around one minute narration" },
+              { key: "chapter", title: "챕터형", desc: "여러 구간으로 나눠 읽기", brief: "chaptered narration split into clear sections" }
+            ]
+          },
+          {
+            key: "format",
+            label: "출력 형식",
+            title: "어떤 형태로 받을까요?",
+            copy: "대본만 받을지, TTS에 넣을 지시문까지 같이 받을지 정합니다.",
+            detailPrompt: "원하는 출력 규칙이나 금지할 표현이 있으면 적어주세요.",
+            detailPlaceholder: "예: 이모지는 빼고, 어려운 영어 약어는 한글 발음 힌트를 같이 적어줘",
+            options: [
+              { key: "script-only", title: "대본만", desc: "바로 읽힐 문장 중심", brief: "script only, ready to paste into TTS" },
+              { key: "script-direction", title: "대본 + 지시문", desc: "감정, 속도, 쉼표까지 함께", brief: "script plus voice direction and pause notes" },
+              { key: "ssml-lite", title: "SSML 느낌", desc: "쉬는 지점과 강조를 태그처럼 표시", brief: "SSML-like pause and emphasis guide without overcomplication" },
+              { key: "segments", title: "구간별 대본", desc: "인트로, 본문, 마무리로 분리", brief: "segmented script with intro, body, and closing" }
+            ]
+          }
+        ]
+      },
+      music: {
+        label: "음악",
+        eyebrow: "Lyrics / Music",
+        resultTitle: "가사와 음악 프롬프트가 준비됐어요",
+        resultCopy: "복사해서 음악 생성기나 채팅형 모델에 붙이면 장르, 무드, 보컬, 구조가 정리된 가사 초안을 받을 수 있어요.",
+        profiles: [
+          {
+            key: "suno",
+            title: "Suno용",
+            copy: "Suno에 붙이기 쉬운 짧은 음악 설명과 가사 구조",
+            instruction: "Create a Suno-friendly music prompt and lyric draft with clear genre, mood, vocal direction, structure tags, and singable Korean phrasing."
+          },
+          {
+            key: "udio",
+            title: "Udio용",
+            copy: "장르와 사운드 묘사를 조금 더 세밀하게 잡을 때",
+            instruction: "Create a detailed music production brief and lyric structure for a music generation model, with clear instrumentation and vocal arrangement."
+          },
+          {
+            key: "bgm",
+            title: "BGM / 삽입곡",
+            copy: "영상 배경음악이나 짧은 삽입곡 방향을 잡을 때",
+            instruction: "Create a concise background music prompt with mood, pacing, instrumentation, scene usage, and optional short lyric hook only if useful."
+          }
+        ],
+        steps: [
+          {
+            key: "usecase",
+            label: "사용 목적",
+            title: "어디에 들어갈 음악인가요?",
+            copy: "영상용인지, 노래용인지에 따라 가사 밀도와 편곡 방향이 달라집니다.",
+            detailPrompt: "음악을 넣을 장면이나 용도를 한 줄로 적어주세요.",
+            detailPlaceholder: "예: AI 튜토리얼 영상 마지막에 들어갈 짧고 희망적인 엔딩곡",
+            options: [
+              { key: "song", title: "완성곡", desc: "가사와 후렴이 있는 노래", brief: "full song with lyrics and chorus" },
+              { key: "short-hook", title: "짧은 훅", desc: "릴스, 쇼츠, 인트로용 반복구", brief: "short catchy hook for social video" },
+              { key: "bgm", title: "배경음악", desc: "말을 방해하지 않는 분위기", brief: "background music under narration" },
+              { key: "jingle", title: "브랜드 징글", desc: "기억에 남는 짧은 멜로디", brief: "short brand jingle with memorable phrase" },
+              { key: "ending", title: "엔딩곡", desc: "마무리 감정과 여운 중심", brief: "ending music with emotional release" }
+            ]
+          },
+          {
+            key: "genre",
+            label: "장르",
+            title: "기본 장르는 어디에 가까워요?",
+            copy: "아티스트 이름을 따라 하게 하기보다 장르, 악기, 분위기를 직접 설명하는 쪽이 안전하고 재사용하기 좋습니다.",
+            detailPrompt: "참고하고 싶은 사운드가 있으면 아티스트명 대신 악기나 분위기로 적어주세요.",
+            detailPlaceholder: "예: 밝은 신스팝, 가벼운 기타 리프, 너무 클럽스럽지는 않게",
+            options: [
+              { key: "pop", title: "팝", desc: "밝고 익숙한 멜로디", brief: "modern pop with clear melodic hook" },
+              { key: "lofi", title: "로파이 / 칠", desc: "편안하고 부드러운 질감", brief: "lofi chill sound with soft texture" },
+              { key: "cinematic", title: "시네마틱", desc: "영상미와 감정선을 키우는 편곡", brief: "cinematic arrangement with emotional build" },
+              { key: "electronic", title: "일렉트로닉", desc: "신스와 리듬감이 중심", brief: "electronic track with synth rhythm" },
+              { key: "acoustic", title: "어쿠스틱", desc: "기타, 피아노, 자연스러운 보컬", brief: "acoustic song with organic instruments" }
+            ]
+          },
+          {
+            key: "mood",
+            label: "무드",
+            title: "감정은 어떤 쪽인가요?",
+            copy: "무드는 가사 단어 선택과 코드 진행 느낌까지 같이 잡아줍니다.",
+            detailPrompt: "꼭 들어가야 하는 감정이나 피하고 싶은 느낌을 적어주세요.",
+            detailPlaceholder: "예: 희망적이지만 너무 유치하지 않게, 밤에 작업하는 느낌",
+            options: [
+              { key: "hopeful", title: "희망적", desc: "앞으로 나아가는 느낌", brief: "hopeful and uplifting mood" },
+              { key: "nostalgic", title: "아련함", desc: "기억과 여운이 남는 분위기", brief: "nostalgic mood with soft longing" },
+              { key: "confident", title: "자신감", desc: "선명하고 당당한 에너지", brief: "confident and bold mood" },
+              { key: "cozy", title: "따뜻함", desc: "편안하고 가까운 감정", brief: "cozy and warm mood" },
+              { key: "dark", title: "어두운 긴장감", desc: "미스터리하거나 묵직한 느낌", brief: "dark tension with restrained intensity" }
+            ]
+          },
+          {
+            key: "vocal",
+            label: "보컬",
+            title: "목소리는 어떻게 잡을까요?",
+            copy: "보컬 성격을 정하면 가사 어미와 멜로디 밀도가 달라집니다.",
+            detailPrompt: "보컬 성별, 톤, 코러스 느낌이 있으면 적어주세요.",
+            detailPlaceholder: "예: 낮고 부드러운 남성 보컬, 후렴에는 얇은 코러스",
+            options: [
+              { key: "female-soft", title: "부드러운 여성 보컬", desc: "맑고 감성적인 톤", brief: "soft female vocal with emotional clarity" },
+              { key: "male-warm", title: "따뜻한 남성 보컬", desc: "낮고 안정적인 톤", brief: "warm male vocal with steady tone" },
+              { key: "group", title: "그룹 / 코러스", desc: "여러 목소리가 쌓이는 느낌", brief: "group vocal or layered chorus" },
+              { key: "spoken", title: "스포큰 / 랩", desc: "말하듯 리듬을 타는 보컬", brief: "spoken-word or light rap delivery" },
+              { key: "instrumental", title: "보컬 없음", desc: "악기와 분위기만 중심", brief: "instrumental track without lead vocal" }
+            ]
+          },
+          {
+            key: "structure",
+            label: "구조",
+            title: "곡 구조는 어느 정도 필요해요?",
+            copy: "음악 생성기는 구조 태그가 있으면 결과를 더 쉽게 따라갑니다.",
+            detailPrompt: "원하는 길이나 후렴 반복 방식이 있으면 적어주세요.",
+            detailPlaceholder: "예: 후렴은 두 번 반복, 마지막은 짧게 페이드아웃",
+            options: [
+              { key: "simple", title: "짧은 구조", desc: "Intro - Hook - Outro", brief: "short structure with intro, hook, and outro" },
+              { key: "verse-chorus", title: "기본 노래 구조", desc: "Verse - Chorus - Verse - Chorus", brief: "classic verse and chorus song structure" },
+              { key: "build", title: "점점 커지는 구조", desc: "작게 시작해서 후렴에서 확장", brief: "gradual build toward a larger chorus" },
+              { key: "loop", title: "반복 루프", desc: "BGM처럼 자연스럽게 반복", brief: "loop-friendly structure for background use" }
+            ]
+          },
+          {
+            key: "language",
+            label: "언어",
+            title: "가사는 어떤 언어로 갈까요?",
+            copy: "언어를 정하면 라임과 발음 난이도를 같이 맞출 수 있습니다.",
+            detailPrompt: "꼭 들어갈 단어나 피하고 싶은 표현이 있으면 적어주세요.",
+            detailPlaceholder: "예: Deno라는 이름은 한 번만 자연스럽게 들어가면 좋겠어",
+            options: [
+              { key: "korean", title: "한국어", desc: "자연스러운 한국어 가사", brief: "natural Korean lyrics" },
+              { key: "english", title: "영어", desc: "짧고 부르기 쉬운 영어 가사", brief: "simple singable English lyrics" },
+              { key: "mixed", title: "한영 믹스", desc: "한국어 중심에 영어 훅", brief: "Korean lyrics with a simple English hook" },
+              { key: "no-lyrics", title: "가사 없음", desc: "음악 프롬프트만 정리", brief: "no lyrics, music prompt only" }
+            ]
+          }
+        ]
+      }
+    };
 
-    <div class="status-box">
-      현재 상태: 메인 진입 연결 완료<br />
-      다음 단계: 말투, 감정, 길이, 장르, 후렴 구조 중심의 단계형 UX 설계
-    </div>
+    const state = {
+      mode: "",
+      stepIndex: 0,
+      selections: {},
+      activeProfile: ""
+    };
 
-    <div class="actions">
-      <a class="button" href="index.html">메인으로 돌아가기</a>
-      <a class="button secondary" href="image.html">이미지 생성기 보기</a>
-    </div>
-  </main>
+    const chooserScreen = document.getElementById("chooserScreen");
+    const stepScreen = document.getElementById("stepScreen");
+    const resultScreen = document.getElementById("resultScreen");
+    const backBtn = document.getElementById("backBtn");
+    const flowEyebrow = document.getElementById("flowEyebrow");
+    const stepTitle = document.getElementById("stepTitle");
+    const stepCopy = document.getElementById("stepCopy");
+    const stepBadge = document.getElementById("stepBadge");
+    const cardsGrid = document.getElementById("cardsGrid");
+    const resultEyebrow = document.getElementById("resultEyebrow");
+    const resultTitle = document.getElementById("resultTitle");
+    const resultCopy = document.getElementById("resultCopy");
+    const summaryList = document.getElementById("summaryList");
+    const profileTabs = document.getElementById("profileTabs");
+    const profileCopy = document.getElementById("profileCopy");
+    const systemPrompt = document.getElementById("systemPrompt");
+    const copyBtn = document.getElementById("copyBtn");
+    const copyState = document.getElementById("copyState");
+    const detailModal = document.getElementById("detailModal");
+    const modalBadge = document.getElementById("modalBadge");
+    const modalTitle = document.getElementById("modalTitle");
+    const modalCopy = document.getElementById("modalCopy");
+    const modalInput = document.getElementById("modalInput");
+    const skipDetailBtn = document.getElementById("skipDetailBtn");
+    const saveDetailBtn = document.getElementById("saveDetailBtn");
+
+    let pendingSelection = null;
+
+    function hideAllScreens() {
+      chooserScreen.classList.add("hidden");
+      stepScreen.classList.add("hidden");
+      resultScreen.classList.add("hidden");
+    }
+
+    function makeVisualizerClass(mode) {
+      return mode === "music" ? "lyrics" : "voice";
+    }
+
+    function visualizerMarkup() {
+      return Array.from({ length: 18 }, () => "<span></span>").join("");
+    }
+
+    function renderCardThumb(label, badge, mode) {
+      return `
+        <div class="card-thumb ${makeVisualizerClass(mode)}">
+          <img class="card-photo" src="assets/cards/home/main/home-tts-builder.webp" alt="" width="1672" height="941" loading="lazy" decoding="async">
+          <div class="visualizer" aria-hidden="true">${visualizerMarkup()}</div>
+          <span class="card-kicker">${label}</span>
+          <span class="card-badge">${badge}</span>
+        </div>
+      `;
+    }
+
+    function startMode(mode) {
+      state.mode = mode;
+      state.stepIndex = 0;
+      state.selections = {};
+      state.activeProfile = flows[mode].profiles[0].key;
+      renderStep();
+    }
+
+    function renderStep() {
+      const flow = flows[state.mode];
+      const step = flow.steps[state.stepIndex];
+      hideAllScreens();
+      stepScreen.classList.remove("hidden");
+      backBtn.classList.remove("hidden");
+      flowEyebrow.textContent = flow.eyebrow;
+      stepTitle.textContent = step.title;
+      stepCopy.textContent = `${step.copy} 딱 맞는 카드가 없으면 직접 적기로 넘어가도 됩니다.`;
+      stepBadge.textContent = `STEP ${state.stepIndex + 1}`;
+
+      const directCard = `
+        <button class="option-card" type="button" data-direct="${step.key}">
+          <div class="card-thumb ${makeVisualizerClass(state.mode)}">
+            <div class="visualizer" aria-hidden="true">${visualizerMarkup()}</div>
+            <span class="card-kicker">DIRECT</span>
+            <span class="card-badge">write</span>
+          </div>
+          <div class="option-top">
+            <span class="mini-badge">DIRECT</span>
+            <span class="mini-badge">WRITE</span>
+          </div>
+          <div>
+            <h3>직접 적기</h3>
+            <p class="option-desc">원하는 방향이 분명하면 한두 줄로 바로 적고 넘어가면 돼요.</p>
+          </div>
+        </button>
+      `;
+
+      const optionCards = step.options.map((option) => `
+        <button class="option-card" type="button" data-option="${option.key}">
+          ${renderCardThumb(step.label, option.key, state.mode)}
+          <div class="option-top">
+            <span class="mini-badge">${step.label}</span>
+          </div>
+          <div>
+            <h3>${option.title}</h3>
+            <p class="option-desc">${option.desc}</p>
+          </div>
+        </button>
+      `).join("");
+
+      cardsGrid.innerHTML = directCard + optionCards;
+
+      cardsGrid.querySelectorAll("[data-option]").forEach((button) => {
+        button.addEventListener("click", () => {
+          const selected = step.options.find((option) => option.key === button.dataset.option);
+          openDetailInput(step, selected, false);
+        });
+      });
+
+      cardsGrid.querySelectorAll("[data-direct]").forEach((button) => {
+        button.addEventListener("click", () => {
+          openDetailInput(step, {
+            key: "__direct__",
+            title: "직접 입력",
+            desc: "사용자 직접 입력",
+            brief: ""
+          }, true);
+        });
+      });
+
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function openDetailInput(step, option, direct) {
+      pendingSelection = { step, option, direct };
+      modalBadge.textContent = step.label;
+      modalTitle.textContent = direct ? `${step.label} 직접 입력` : option.title;
+      modalCopy.textContent = direct ? step.detailPrompt : `${option.desc} ${step.detailPrompt}`;
+      modalInput.value = "";
+      modalInput.placeholder = step.detailPlaceholder;
+      detailModal.classList.add("open");
+      detailModal.setAttribute("aria-hidden", "false");
+      window.setTimeout(() => modalInput.focus(), 80);
+    }
+
+    function closeDetailInput() {
+      detailModal.classList.remove("open");
+      detailModal.setAttribute("aria-hidden", "true");
+      pendingSelection = null;
+    }
+
+    function saveSelection(withDetail) {
+      if (!pendingSelection) return;
+      const { step, option, direct } = pendingSelection;
+      const detail = withDetail ? modalInput.value.trim() : "";
+      state.selections[step.key] = {
+        key: direct ? "__direct__" : option.key,
+        title: direct ? (detail || "직접 입력") : option.title,
+        brief: direct ? detail : option.brief,
+        detail
+      };
+      closeDetailInput();
+      moveNext();
+    }
+
+    function moveNext() {
+      const flow = flows[state.mode];
+      if (state.stepIndex < flow.steps.length - 1) {
+        state.stepIndex += 1;
+        renderStep();
+      } else {
+        renderResult();
+      }
+    }
+
+    function renderResult() {
+      const flow = flows[state.mode];
+      hideAllScreens();
+      resultScreen.classList.remove("hidden");
+      backBtn.classList.remove("hidden");
+      resultEyebrow.textContent = flow.eyebrow;
+      resultTitle.textContent = flow.resultTitle;
+      resultCopy.textContent = flow.resultCopy;
+
+      summaryList.innerHTML = flow.steps.map((step) => {
+        const selected = state.selections[step.key];
+        const extra = selected?.detail ? `<br><span>${selected.detail}</span>` : "";
+        return `
+          <div class="summary-item">
+            <strong>${step.label}</strong>
+            <span>${selected?.title || "미선택"}${extra}</span>
+          </div>
+        `;
+      }).join("");
+
+      profileTabs.innerHTML = flow.profiles.map((profile) => `
+        <button class="ghost-btn profile-btn${profile.key === state.activeProfile ? " active" : ""}" type="button" data-profile="${profile.key}">
+          ${profile.title}
+        </button>
+      `).join("");
+
+      profileTabs.querySelectorAll("[data-profile]").forEach((button) => {
+        button.addEventListener("click", () => {
+          state.activeProfile = button.dataset.profile;
+          renderResult();
+        });
+      });
+
+      const profile = flow.profiles.find((item) => item.key === state.activeProfile) || flow.profiles[0];
+      profileCopy.textContent = profile.copy;
+      systemPrompt.textContent = buildPrompt(flow, profile);
+      copyState.textContent = "";
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function buildBrief(flow) {
+      return flow.steps.map((step) => {
+        const selected = state.selections[step.key];
+        if (!selected) return `${step.label}:`;
+        const detail = selected.detail ? ` / user detail: ${selected.detail}` : "";
+        return `${step.label}: ${selected.brief || selected.title}${detail}`;
+      }).join("\n");
+    }
+
+    function buildPrompt(flow, profile) {
+      const brief = buildBrief(flow);
+      if (state.mode === "music") {
+        return `You are a music prompt and lyric planning assistant for Korean creators.
+
+Primary task:
+${profile.instruction}
+
+[Structured Brief]
+${brief}
+
+[Output Rules]
+- Write in clear Korean unless the language choice requests English or mixed lyrics.
+- Do not imitate a living artist, a specific singer, or a copyrighted song style. Describe genre, instruments, tempo, mood, vocal texture, and arrangement instead.
+- If lyrics are requested, make them singable: short lines, repeatable hook, natural vowel flow, and no overloaded sentences.
+- If the selected language is no lyrics, return only the music prompt, arrangement notes, and optional negative prompt.
+- Separate the answer into: Music Prompt, Structure, Lyrics Draft, Vocal Direction, Production Notes.`;
+      }
+
+      return `You are a Korean TTS script and voice-direction assistant.
+
+Primary task:
+${profile.instruction}
+
+[Structured Brief]
+${brief}
+
+[Output Rules]
+- Write natural spoken Korean, not stiff written prose.
+- Keep sentences short enough for TTS to read cleanly.
+- Add pause, emphasis, and tone notes only where they help the voice sound natural.
+- Avoid exaggerated ad-copy unless the selected purpose asks for an ad.
+- If technical terms appear, include pronunciation hints or simpler alternatives when useful.
+- Separate the answer into: Final Script, Voice Direction, Pace And Pauses, Optional Variations.`;
+    }
+
+    function fallbackCopyText(text) {
+      const textarea = document.createElement("textarea");
+      textarea.value = text;
+      textarea.setAttribute("readonly", "");
+      textarea.style.position = "fixed";
+      textarea.style.top = "-9999px";
+      document.body.appendChild(textarea);
+      textarea.select();
+      let ok = false;
+      try {
+        ok = document.execCommand("copy");
+      } catch (error) {
+        ok = false;
+      }
+      textarea.remove();
+      return ok;
+    }
+
+    async function copyPrompt() {
+      const text = systemPrompt.textContent;
+      try {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(text);
+          copyState.textContent = "복사 완료";
+          return;
+        }
+        if (fallbackCopyText(text)) {
+          copyState.textContent = "복사 완료";
+          return;
+        }
+        throw new Error("copy failed");
+      } catch (error) {
+        copyState.textContent = "복사가 막혔어요. 프롬프트 박스의 텍스트를 직접 선택해서 복사해주세요.";
+      }
+    }
+
+    document.querySelectorAll("[data-mode]").forEach((button) => {
+      button.addEventListener("click", () => startMode(button.dataset.mode));
+    });
+
+    backBtn.addEventListener("click", () => {
+      if (!state.mode) return;
+      if (!resultScreen.classList.contains("hidden")) {
+        const flow = flows[state.mode];
+        state.stepIndex = flow.steps.length - 1;
+        renderStep();
+        return;
+      }
+      if (!stepScreen.classList.contains("hidden") && state.stepIndex > 0) {
+        const flow = flows[state.mode];
+        const currentStep = flow.steps[state.stepIndex];
+        delete state.selections[currentStep.key];
+        state.stepIndex -= 1;
+        renderStep();
+        return;
+      }
+      state.mode = "";
+      state.stepIndex = 0;
+      state.selections = {};
+      hideAllScreens();
+      chooserScreen.classList.remove("hidden");
+      backBtn.classList.add("hidden");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    skipDetailBtn.addEventListener("click", () => saveSelection(false));
+    saveDetailBtn.addEventListener("click", () => saveSelection(true));
+    copyBtn.addEventListener("click", copyPrompt);
+
+    detailModal.addEventListener("click", (event) => {
+      if (event.target === detailModal) closeDetailInput();
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && detailModal.classList.contains("open")) {
+        closeDetailInput();
+      }
+    });
+  </script>
 </body>
 </html>

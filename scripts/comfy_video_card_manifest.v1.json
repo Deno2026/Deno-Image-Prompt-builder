@@ -1,0 +1,338 @@
+[
+  {
+    "subject": "video",
+    "step": "start",
+    "option_key": "t2v",
+    "title": "Text to Video",
+    "prompt": "cinematic filmmaker workspace with camera body, lens, and clapboard on a wooden desk, warm production mood, premium app card scene, wide 16:9 composition"
+  },
+  {
+    "subject": "video",
+    "step": "start",
+    "option_key": "i2v",
+    "title": "Image to Video",
+    "prompt": "cinematic still photo on a desk transitioning into a living scene, visual transformation feeling, premium app card scene, wide 16:9 composition"
+  },
+  {
+    "subject": "video",
+    "step": "subject",
+    "option_key": "person",
+    "title": "Person scene",
+    "prompt": "cinematic video frame of a beautiful woman as the clear main subject, expressive face, subtle motion feeling, premium wide 16:9 card image, no text, no logo"
+  },
+  {
+    "subject": "video",
+    "step": "subject",
+    "option_key": "product",
+    "title": "Product commercial",
+    "prompt": "premium product commercial video frame, hero product in focus, glossy lighting, ad-like cinematic composition, no text, no logo, wide 16:9 crop"
+  },
+  {
+    "subject": "video",
+    "step": "subject",
+    "option_key": "landscape",
+    "title": "Landscape scene",
+    "prompt": "cinematic landscape video frame, atmospheric scenery, natural depth, soft environmental motion feeling, no text, no logo, premium wide 16:9 composition"
+  },
+  {
+    "subject": "video",
+    "step": "subject",
+    "option_key": "explainer",
+    "title": "Explainer scene",
+    "prompt": "clean demonstration scene with hands or objects clearly showing a process, simple visual storytelling, premium wide 16:9 composition"
+  },
+  {
+    "subject": "video",
+    "step": "subject",
+    "option_key": "music",
+    "title": "Music mood",
+    "prompt": "stylized music video frame, moody lighting, lyrical atmosphere, emotional cinematic scene, premium wide 16:9 card image, no text, no logo"
+  },
+  {
+    "subject": "video",
+    "step": "subject",
+    "option_key": "illustration",
+    "title": "Illustration animation",
+    "prompt": "stylized illustrated animation frame, polished character driven scene, vibrant cinematic background, premium wide 16:9 card image, no text, no logo"
+  },
+  {
+    "subject": "video",
+    "step": "focus",
+    "option_key": "face",
+    "title": "Face focus",
+    "prompt": "video frame focused on facial expression and eyes, close portrait emphasis, emotional cinematic look, premium wide 16:9 card image, no text, no logo"
+  },
+  {
+    "subject": "video",
+    "step": "focus",
+    "option_key": "body",
+    "title": "Body motion",
+    "prompt": "video frame focused on full body pose and motion, stylish human movement, clean cinematic staging, no text, no logo, wide 16:9 composition"
+  },
+  {
+    "subject": "video",
+    "step": "focus",
+    "option_key": "product",
+    "title": "Product detail",
+    "prompt": "video frame focused on premium product detail, material texture and form emphasized, commercial lighting, no text, no logo, wide 16:9 crop"
+  },
+  {
+    "subject": "video",
+    "step": "focus",
+    "option_key": "mood",
+    "title": "Mood and lighting",
+    "prompt": "video frame focused on mood, lighting, and atmosphere, cinematic glow and depth, environment first composition, no text, no logo"
+  },
+  {
+    "subject": "video",
+    "step": "focus",
+    "option_key": "info",
+    "title": "Explainable scene",
+    "prompt": "hands clearly demonstrating one simple action with a small object on a clean table, organized composition, wide 16:9 crop"
+  },
+  {
+    "subject": "video",
+    "step": "focus",
+    "option_key": "ending",
+    "title": "Ending beat",
+    "prompt": "video frame that feels like a clean ending beat or transition point, memorable finish, cinematic composition, no text, no logo"
+  },
+  {
+    "subject": "video",
+    "step": "structure",
+    "option_key": "single",
+    "title": "Single shot",
+    "prompt": "one actor in one room captured in a single decisive cinematic moment, clean uninterrupted composition, realistic still frame, no text, no logo"
+  },
+  {
+    "subject": "video",
+    "step": "structure",
+    "option_key": "two-cut",
+    "title": "Two cut flow",
+    "prompt": "two people in one room, one reacting and one responding, natural cinematic conversation energy in a single coherent scene, premium wide 16:9 composition"
+  },
+  {
+    "subject": "video",
+    "step": "structure",
+    "option_key": "three-cut",
+    "title": "Three cut flow",
+    "prompt": "one subject moving through a hallway toward a bright doorway, clear sense of progression inside one coherent cinematic scene, premium wide 16:9 crop"
+  },
+  {
+    "subject": "video",
+    "step": "structure",
+    "option_key": "multishot",
+    "title": "Multishot",
+    "prompt": "busy cinematic environment with layered foreground midground and background action, rich but coherent scene, polished wide 16:9 composition"
+  },
+  {
+    "subject": "video",
+    "step": "structure",
+    "option_key": "hook-loop",
+    "title": "Hook and ending",
+    "prompt": "bold cinematic reaction shot with a strong first impression, expressive face and clear visual punch, premium still image"
+  },
+  {
+    "subject": "video",
+    "step": "structure",
+    "option_key": "intro-outro",
+    "title": "Intro to outro",
+    "prompt": "one subject stepping from a dark interior toward bright daylight, gentle sense of start and finish in one coherent scene, premium wide 16:9 crop"
+  },
+  {
+    "subject": "video",
+    "step": "camera",
+    "option_key": "static",
+    "title": "Static camera",
+    "prompt": "cinematic static camera video frame, locked composition, still and controlled shot feeling, no text, no logo, premium wide 16:9 card image"
+  },
+  {
+    "subject": "video",
+    "step": "camera",
+    "option_key": "push-in",
+    "title": "Push in",
+    "prompt": "cinematic push in shot feeling, camera slowly moving toward the subject, strong depth and focus, no text, no logo, wide 16:9 crop"
+  },
+  {
+    "subject": "video",
+    "step": "camera",
+    "option_key": "pull-out",
+    "title": "Pull out",
+    "prompt": "cinematic pull out shot feeling, camera gently revealing more of the scene, elegant depth, no text, no logo, wide 16:9 composition"
+  },
+  {
+    "subject": "video",
+    "step": "camera",
+    "option_key": "pan",
+    "title": "Pan shot",
+    "prompt": "smooth pan shot feeling, camera sliding sideways across the scene, cinematic staging, no text, no logo, premium wide 16:9 card image"
+  },
+  {
+    "subject": "video",
+    "step": "camera",
+    "option_key": "follow",
+    "title": "Follow shot",
+    "prompt": "tracking follow shot feeling, camera moving with the subject naturally, dynamic cinematic frame, no text, no logo"
+  },
+  {
+    "subject": "video",
+    "step": "camera",
+    "option_key": "handheld",
+    "title": "Handheld feel",
+    "prompt": "subtle handheld camera feeling, natural organic movement, realistic cinematic shot, no text, no logo, wide 16:9 composition"
+  },
+  {
+    "subject": "video",
+    "step": "camera",
+    "option_key": "orbit",
+    "title": "Orbit shot",
+    "prompt": "orbit camera shot around the subject, elegant circular movement, cinematic motion feeling, no text, no logo, wide 16:9 crop"
+  },
+  {
+    "subject": "video",
+    "step": "camera",
+    "option_key": "tilt-reveal",
+    "title": "Tilt reveal",
+    "prompt": "tilt reveal camera move, cinematic up or down reveal of the subject, premium visual storytelling, no text, no logo"
+  },
+  {
+    "subject": "video",
+    "step": "motion",
+    "option_key": "person-action",
+    "title": "Person motion",
+    "prompt": "video frame centered on human action and body language, expressive movement, cinematic realism, no text, no logo, wide 16:9 composition"
+  },
+  {
+    "subject": "video",
+    "step": "motion",
+    "option_key": "product-motion",
+    "title": "Product motion",
+    "prompt": "product motion video frame, object rotation or reveal, premium commercial movement, no text, no logo, wide 16:9 crop"
+  },
+  {
+    "subject": "video",
+    "step": "motion",
+    "option_key": "env-motion",
+    "title": "Environment motion",
+    "prompt": "environmental motion video frame, wind particles water or light reacting in the scene, cinematic atmosphere, no text, no logo"
+  },
+  {
+    "subject": "video",
+    "step": "motion",
+    "option_key": "camera-only",
+    "title": "Camera driven motion",
+    "prompt": "mostly still subject in a clean scene where the sense of motion comes from camera movement alone, cinematic frame, no text, no logo, wide 16:9 composition"
+  },
+  {
+    "subject": "video",
+    "step": "motion",
+    "option_key": "expression-only",
+    "title": "Expression only",
+    "prompt": "very subtle facial expression change video frame, delicate eyes and emotion, intimate cinematic composition, no text, no logo"
+  },
+  {
+    "subject": "video",
+    "step": "motion",
+    "option_key": "high-energy",
+    "title": "High energy",
+    "prompt": "high energy motion video frame, bold dynamic action, punchy cinematic shortform feeling, no text, no logo, wide 16:9 crop"
+  },
+  {
+    "subject": "video",
+    "step": "motion",
+    "option_key": "subject-and-env",
+    "title": "Subject and environment",
+    "prompt": "video frame where subject movement and environmental motion happen together, layered cinematic scene, no text, no logo"
+  },
+  {
+    "subject": "video",
+    "step": "tempo",
+    "option_key": "slow",
+    "title": "Slow pace",
+    "prompt": "slow cinematic pacing, lingering movement, quiet elegant rhythm, premium video frame, no text, no logo, wide 16:9 composition"
+  },
+  {
+    "subject": "video",
+    "step": "tempo",
+    "option_key": "natural",
+    "title": "Natural pace",
+    "prompt": "natural paced cinematic scene, balanced motion and timing, realistic polished video frame, no text, no logo"
+  },
+  {
+    "subject": "video",
+    "step": "tempo",
+    "option_key": "rhythmic",
+    "title": "Rhythmic pace",
+    "prompt": "rhythmic cinematic pacing, visible beat and flow, stylish but readable motion, no text, no logo, wide 16:9 crop"
+  },
+  {
+    "subject": "video",
+    "step": "tempo",
+    "option_key": "fast",
+    "title": "Fast pace",
+    "prompt": "fast paced video frame, sharper motion and quick progression, energetic cinematic shortform feel, no text, no logo"
+  },
+  {
+    "subject": "video",
+    "step": "tempo",
+    "option_key": "build-up",
+    "title": "Build up",
+    "prompt": "build up pacing video concept, calmer beginning and stronger finish, cinematic rise in intensity, no text, no logo"
+  },
+  {
+    "subject": "video",
+    "step": "tempo",
+    "option_key": "stop-start",
+    "title": "Stop and go",
+    "prompt": "stop and go pacing, sharp pauses and motion beats, stylized cinematic timing, no text, no logo, wide 16:9 composition"
+  },
+  {
+    "subject": "video",
+    "step": "tone",
+    "option_key": "cinematic",
+    "title": "Cinematic tone",
+    "prompt": "cinematic video frame, dramatic but coherent visual language, rich depth, premium lighting, no text, no logo"
+  },
+  {
+    "subject": "video",
+    "step": "tone",
+    "option_key": "commercial",
+    "title": "Commercial tone",
+    "prompt": "clean commercial video frame, polished lighting, crisp product friendly or ad friendly look, no text, no logo"
+  },
+  {
+    "subject": "video",
+    "step": "tone",
+    "option_key": "emotional",
+    "title": "Emotional tone",
+    "prompt": "soft emotional video frame, lyrical atmosphere, intimate cinematic mood, no text, no logo, wide 16:9 composition"
+  },
+  {
+    "subject": "video",
+    "step": "tone",
+    "option_key": "tutorial",
+    "title": "Tutorial tone",
+    "prompt": "hands demonstrating a small object on a clean desk in soft daylight, practical and readable scene with calm clarity"
+  },
+  {
+    "subject": "video",
+    "step": "tone",
+    "option_key": "music-video",
+    "title": "Music video tone",
+    "prompt": "stylized music video frame, moody lighting, dramatic atmosphere, premium cinematic scene, no text, no logo"
+  },
+  {
+    "subject": "video",
+    "step": "tone",
+    "option_key": "luxury",
+    "title": "Luxury tone",
+    "prompt": "luxury cinematic video frame, refined lighting, premium texture, elegant controlled composition, no text, no logo"
+  },
+  {
+    "subject": "video",
+    "step": "tone",
+    "option_key": "shortform",
+    "title": "Shortform tone",
+    "prompt": "energetic close reaction portrait with bold contrast lighting and strong first impression, clean composition, no text, no logo"
+  }
+]

@@ -3,163 +3,2855 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Simple Prompt Master - Video</title>
+  <title>Simple Prompt Master - 동영상 생성기</title>
   <meta
     name="description"
-    content="Simple Prompt Master 동영상 프롬프트 생성기 준비 페이지입니다."
+    content="Simple Prompt Master 동영상 생성기. Text to Video는 단계별로 장면을 정리하고, Image to Video는 이미지와 함께 LLM 상담 지시문을 준비합니다."
   />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <style>
     :root {
-      --bg: #050806;
-      --panel: rgba(10, 14, 12, 0.94);
-      --line: rgba(87, 255, 149, 0.18);
-      --line-strong: rgba(87, 255, 149, 0.32);
-      --text: #f4fff7;
-      --sub: #a2b7a8;
-      --accent: #57ff95;
-      --shadow: 0 30px 80px rgba(0, 0, 0, 0.42);
+      --bg: #040805;
+      --panel: #07100a;
+      --panel-soft: #0b1710;
+      --panel-deep: #030704;
+      --panel-glass: rgba(10, 18, 13, 0.78);
+      --panel-lift: rgba(12, 22, 16, 0.92);
+      --text: #effaf1;
+      --sub: #a6c4ae;
+      --muted: #7f9d87;
+      --line: rgba(92, 255, 145, 0.12);
+      --line-strong: rgba(92, 255, 145, 0.26);
+      --accent: #58ff8d;
+      --accent-soft: rgba(88, 255, 141, 0.12);
+      --accent-glow: rgba(88, 255, 141, 0.18);
+      --shadow: 0 26px 80px rgba(0, 0, 0, 0.45);
+      --shadow-soft: 0 18px 48px rgba(0, 0, 0, 0.26);
+      --shadow-strong: 0 34px 100px rgba(0, 0, 0, 0.46);
+      --radius-xl: 34px;
+      --radius-lg: 26px;
+      --radius-md: 20px;
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      color-scheme: dark;
+    }
 
     body {
       margin: 0;
       min-height: 100vh;
-      display: grid;
-      place-items: center;
-      padding: 24px;
       font-family: "Pretendard", "Noto Sans KR", "Malgun Gothic", sans-serif;
       color: var(--text);
       background:
-        radial-gradient(circle at 20% 0%, rgba(87, 255, 149, 0.14), transparent 24%),
-        radial-gradient(circle at 100% 12%, rgba(87, 255, 149, 0.06), transparent 20%),
-        linear-gradient(180deg, #040705 0%, #09100b 52%, #060906 100%);
+        radial-gradient(circle at 11% 7%, rgba(88, 255, 141, 0.1), transparent 18%),
+        radial-gradient(circle at 82% 9%, rgba(88, 255, 141, 0.07), transparent 16%),
+        radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.03), transparent 28%),
+        linear-gradient(180deg, #020503 0%, #050906 34%, #030704 100%);
+      overflow-x: hidden;
     }
 
-    .panel {
-      width: min(760px, 100%);
-      padding: 34px;
-      border-radius: 24px;
-      border: 1px solid var(--line);
+    body::before,
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    body::before {
       background:
-        linear-gradient(180deg, rgba(10, 16, 12, 0.98), rgba(6, 10, 8, 0.98)),
-        radial-gradient(circle at top left, rgba(87, 255, 149, 0.06), transparent 34%);
-      box-shadow: var(--shadow);
+        radial-gradient(circle at 24% 26%, rgba(255, 255, 255, 0.03), transparent 10%),
+        radial-gradient(circle at 78% 34%, rgba(88, 255, 141, 0.04), transparent 12%);
     }
 
-    .brand {
-      display: inline-flex;
-      align-items: center;
-      gap: 14px;
-      margin-bottom: 26px;
+    body::after {
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent 18%),
+        repeating-linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 0.018) 0,
+          rgba(255, 255, 255, 0.018) 1px,
+          transparent 1px,
+          transparent 128px
+        );
+      opacity: 0.28;
     }
 
-    .mark {
-      width: 58px;
-      height: 58px;
-      border-radius: 16px;
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    textarea {
+      font: inherit;
+    }
+
+    a,
+    button,
+    textarea,
+    summary {
+      touch-action: manipulation;
+    }
+
+    a:focus-visible,
+    button:focus-visible,
+    textarea:focus-visible,
+    summary:focus-visible {
+      outline: 2px solid rgba(88, 255, 141, 0.72);
+      outline-offset: 3px;
+    }
+
+    button {
+      appearance: none;
+      -webkit-appearance: none;
+      color: inherit;
+      cursor: pointer;
+    }
+
+    .shell {
+      position: relative;
+      z-index: 1;
+      width: min(1500px, calc(100vw - 56px));
+      margin: 0 auto;
+      padding: 18px 0 46px;
+    }
+
+    .topbar {
       display: grid;
-      place-items: center;
-      border: 1px solid var(--line-strong);
-      color: var(--accent);
-      background: rgba(87, 255, 149, 0.08);
-      font-size: 30px;
-      font-weight: 900;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: 18px;
+      margin-bottom: 28px;
+      padding: 14px 16px;
+      border-radius: 28px;
+      border: 1px solid rgba(92, 255, 145, 0.12);
+      background:
+        linear-gradient(180deg, rgba(10, 18, 13, 0.86), rgba(6, 11, 8, 0.92)),
+        linear-gradient(135deg, rgba(88, 255, 141, 0.04), transparent 56%);
+      box-shadow: var(--shadow-soft);
+      backdrop-filter: blur(18px);
     }
 
-    .eyebrow {
-      display: inline-block;
-      padding: 8px 12px;
-      border-radius: 999px;
-      border: 1px solid var(--line);
-      background: rgba(87, 255, 149, 0.08);
-      color: var(--accent);
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-    }
-
-    h1 {
-      margin: 18px 0 12px;
-      font-size: clamp(30px, 6vw, 52px);
-      line-height: 1.05;
-      letter-spacing: -0.04em;
-    }
-
-    p {
-      margin: 0;
-      color: var(--sub);
-      font-size: 16px;
-      line-height: 1.75;
-    }
-
-    .status-box {
-      margin-top: 24px;
-      padding: 18px 20px;
-      border-radius: 20px;
-      border: 1px solid rgba(255,255,255,0.08);
-      background: rgba(255,255,255,0.03);
-      color: #dbffe6;
-      font-size: 15px;
-      line-height: 1.7;
-    }
-
-    .actions {
+    .mode-links {
       display: flex;
-      flex-wrap: wrap;
+      justify-content: center;
       gap: 12px;
-      margin-top: 26px;
+      flex-wrap: wrap;
     }
 
-    .button {
+    .home-pill,
+    .mode-pill,
+    .pill-btn,
+    .step-badge,
+    .ghost-btn,
+    .primary-btn,
+    .copy-btn {
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(11, 20, 14, 0.94), rgba(6, 11, 8, 0.98));
+      color: var(--text);
+      border-radius: 999px;
+      min-height: 50px;
+      padding: 0 18px;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-width: 160px;
-      padding: 13px 18px;
-      border-radius: 999px;
-      border: 1px solid var(--line);
-      text-decoration: none;
-      color: var(--text);
-      background: rgba(87, 255, 149, 0.08);
-      font-weight: 700;
+      font-weight: 800;
+      transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
     }
 
-    .button.secondary {
-      background: rgba(255,255,255,0.03);
+    .home-pill:hover,
+    .mode-pill:hover,
+    .pill-btn:hover,
+    .ghost-btn:hover,
+    .primary-btn:hover,
+    .copy-btn:hover {
+      transform: translateY(-2px);
+      border-color: var(--line-strong);
+    }
+
+    .home-pill {
+      width: 52px;
+      min-width: 52px;
+      padding: 0;
+      font-size: 1.3rem;
+    }
+
+    .mode-pill.active,
+    .primary-btn,
+    .copy-btn.primary,
+    .step-badge {
+      background: rgba(88, 255, 141, 0.11);
+      border-color: rgba(88, 255, 141, 0.28);
+      color: #e4ffe9;
+    }
+
+    .youtube-link {
+      gap: 10px;
+    }
+
+    .youtube-icon {
+      position: relative;
+      width: 18px;
+      height: 13px;
+      border-radius: 4px;
+      background: #ff3b30;
+      display: inline-block;
+      flex-shrink: 0;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.18);
+    }
+
+    .youtube-icon::before {
+      content: "";
+      position: absolute;
+      left: 6px;
+      top: 3px;
+      border-top: 3.5px solid transparent;
+      border-bottom: 3.5px solid transparent;
+      border-left: 6px solid #fff;
+    }
+
+    .floating-back {
+      position: fixed;
+      left: clamp(26px, 4vw, 72px);
+      top: 142px;
+      width: 72px;
+      height: 72px;
+      border-radius: 24px;
+      border: 1px solid rgba(88, 255, 141, 0.22);
+      background:
+        linear-gradient(180deg, rgba(10, 18, 13, 0.96), rgba(5, 9, 7, 0.98)),
+        linear-gradient(135deg, rgba(88, 255, 141, 0.08), transparent 60%);
+      color: var(--text);
+      font-size: 1.65rem;
+      font-weight: 900;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.34);
+      transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+      z-index: 12;
+    }
+
+    .floating-back:hover {
+      transform: translateY(-2px);
+      border-color: rgba(88, 255, 141, 0.35);
+    }
+
+    .floating-back.hidden {
+      display: none;
+    }
+
+    .selection-rail {
+      position: fixed;
+      left: 18px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 198px;
+      max-height: min(72vh, calc(100vh - 140px));
+      border-radius: 24px;
+      border: 1px solid rgba(88, 255, 141, 0.16);
+      background:
+        linear-gradient(180deg, rgba(8, 16, 10, 0.84), rgba(4, 8, 5, 0.94)),
+        linear-gradient(135deg, rgba(88, 255, 141, 0.05), transparent 56%);
+      box-shadow: 0 24px 50px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(16px);
+      padding: 16px 14px 14px;
+      overflow-y: auto;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      z-index: 8;
+    }
+
+    .selection-rail::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+      display: none;
+    }
+
+    .selection-rail.hidden {
+      display: none;
+    }
+
+    .selection-rail-head {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-bottom: 12px;
+    }
+
+    .selection-rail-head span {
+      color: #89e6a7;
+      font-size: 0.76rem;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .selection-rail-head strong {
+      color: #f3fff6;
+      font-size: 1rem;
+      line-height: 1.2;
+      letter-spacing: -0.03em;
+    }
+
+    .selection-rail-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .selection-rail-item {
+      border-radius: 18px;
+      border: 1px solid rgba(88, 255, 141, 0.1);
+      background: rgba(9, 17, 11, 0.82);
+      padding: 12px 12px 11px;
+    }
+
+    .selection-rail-item strong {
+      display: block;
+      margin-bottom: 6px;
+      color: #8ce8a8;
+      font-size: 0.77rem;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .selection-rail-item span {
+      display: block;
+      color: #f4fff6;
+      font-size: 0.9rem;
+      font-weight: 800;
+      line-height: 1.36;
+    }
+
+    .screen {
+      border-radius: var(--radius-xl);
+      border: 1px solid rgba(92, 255, 145, 0.12);
+      background:
+        radial-gradient(circle at top left, rgba(88, 255, 141, 0.08), transparent 22%),
+        linear-gradient(180deg, rgba(9, 17, 11, 0.96), rgba(4, 9, 6, 0.98)),
+        linear-gradient(135deg, rgba(88, 255, 141, 0.03), transparent 55%);
+      box-shadow: var(--shadow-strong);
+      padding: 32px 34px 36px;
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+    }
+
+    .shell.with-rail .screen {
+      padding-left: 250px;
+    }
+
+    .screen::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent 18%),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.015) 0, transparent 38%);
+      opacity: 0.45;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    .screen.hidden {
+      display: none !important;
+    }
+
+    #t2vStepScreen {
+      overflow: visible;
+    }
+
+    #t2vStepScreen .section-head {
+      position: sticky;
+      top: 12px;
+      z-index: 12;
+      margin: -10px -8px 26px;
+      padding: 10px 8px 14px;
+      border-radius: 28px;
+      background:
+        linear-gradient(180deg, rgba(7, 16, 10, 0.97), rgba(7, 16, 10, 0.9) 72%, rgba(7, 16, 10, 0.7));
+      box-shadow: 0 22px 34px rgba(0, 0, 0, 0.22);
+      backdrop-filter: blur(18px);
+    }
+
+    #t2vStepScreen .section-head::after {
+      content: "";
+      position: absolute;
+      left: 8px;
+      right: 8px;
+      bottom: -18px;
+      height: 18px;
+      background: linear-gradient(180deg, rgba(7, 16, 10, 0.55), rgba(7, 16, 10, 0));
+      pointer-events: none;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      min-height: 38px;
+      padding: 0 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(88, 255, 141, 0.22);
+      background: rgba(88, 255, 141, 0.08);
+      color: var(--accent);
+      font-size: 0.82rem;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin: 0;
+      letter-spacing: -0.05em;
+      word-break: keep-all;
+      overflow-wrap: break-word;
+    }
+
+    .hero-title {
+      margin-top: 14px;
+      max-width: 18ch;
+      font-size: clamp(1.68rem, 2.1vw, 2.05rem);
+      line-height: 1.1;
+      letter-spacing: -0.055em;
+      text-wrap: pretty;
+    }
+
+    .hero-copy,
+    .step-copy,
+    .option-desc,
+    .helper,
+    .model-copy,
+    .system-box,
+    textarea {
       color: var(--sub);
-      border-color: rgba(255,255,255,0.08);
+      line-height: 1.7;
+    }
+
+    .hero-copy {
+      margin: 12px 0 0;
+      max-width: 860px;
+      font-size: 0.98rem;
+      color: #bed5c5;
+    }
+
+    .choice-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 18px;
+      margin-top: 24px;
+    }
+
+    .choice-card,
+    .option-card,
+    .summary-card,
+    .result-box {
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(92, 255, 145, 0.12);
+      background:
+        linear-gradient(180deg, rgba(10, 18, 13, 0.9), rgba(5, 10, 7, 0.95)),
+        linear-gradient(135deg, rgba(88, 255, 141, 0.04), transparent 52%);
+      box-shadow: 0 18px 42px rgba(0, 0, 0, 0.24);
+      backdrop-filter: blur(14px);
+    }
+
+    .choice-card,
+    .option-card {
+      padding: 18px;
+      display: grid;
+      gap: 12px;
+      text-align: left;
+      color: var(--text);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .choice-card::before,
+    .option-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent 22%);
+      pointer-events: none;
+    }
+
+    .card-thumb {
+      position: relative;
+      height: 154px;
+      border-radius: 24px;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 35% 34%, var(--tone-glow, rgba(88, 255, 141, 0.18)), transparent 18%),
+        linear-gradient(180deg, var(--tone-a, #203327), var(--tone-b, #121b13));
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+    }
+
+    .card-photo {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+      filter: saturate(1.04) contrast(1.02);
+      transform: scale(1.015);
+    }
+
+    .card-thumb::before,
+    .card-thumb::after {
+      content: "";
+      position: absolute;
+      inset: auto;
+      z-index: 1;
+    }
+
+    .card-thumb::before {
+      width: 96px;
+      height: 96px;
+      left: 24px;
+      bottom: 34px;
+      border-radius: 50%;
+      background: var(--tone-shape, rgba(233, 204, 167, 0.92));
+      opacity: 0.92;
+    }
+
+    .card-thumb::after {
+      width: 72px;
+      height: 72px;
+      right: 26px;
+      bottom: 28px;
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .card-thumb.has-photo::before,
+    .card-thumb.has-photo::after {
+      opacity: 0;
+    }
+
+    .card-kicker,
+    .card-badge {
+      position: absolute;
+      z-index: 2;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(4, 8, 5, 0.62);
+      color: #e3f4e7;
+      font-size: 0.86rem;
+      font-weight: 900;
+      letter-spacing: 0.03em;
+      padding: 8px 12px;
+      backdrop-filter: blur(8px);
+    }
+
+    .card-kicker {
+      left: 14px;
+      bottom: 14px;
+      text-transform: uppercase;
+    }
+
+    .card-badge {
+      top: 14px;
+      right: 14px;
+    }
+
+    .choice-card *,
+    .option-card * {
+      color: inherit;
+    }
+
+    .choice-card:hover,
+    .option-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--line-strong);
+      box-shadow: 0 28px 64px rgba(0, 0, 0, 0.32);
+    }
+
+    .choice-top,
+    .option-top,
+    .section-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .mini-badge {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 0 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(255, 255, 255, 0.04);
+      color: var(--text);
+      font-size: 0.78rem;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .choice-card h2 {
+      max-width: none;
+      font-size: clamp(1.38rem, 2vw, 2rem);
+      line-height: 1.08;
+    }
+
+    .choice-copy {
+      margin-top: 4px;
+      max-width: 50ch;
+      font-size: 0.93rem;
+      line-height: 1.58;
+      color: #c4dacb;
+    }
+
+    .choice-points {
+      display: grid;
+      gap: 8px;
+    }
+
+    .point {
+      border-radius: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      background: rgba(255, 255, 255, 0.03);
+      padding: 11px 13px;
+      color: var(--text);
+      font-size: 0.9rem;
+      font-weight: 700;
+      line-height: 1.42;
+    }
+
+    .section-left {
+      display: grid;
+      gap: 12px;
+    }
+
+    .section-title {
+      max-width: 22ch;
+      font-size: clamp(1.72rem, 2.32vw, 2.22rem);
+      line-height: 1.08;
+      letter-spacing: -0.055em;
+      text-wrap: pretty;
+    }
+
+    .step-copy {
+      margin-top: 2px;
+      font-size: 1rem;
+      max-width: 760px;
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+      margin-top: 26px;
+    }
+
+    .option-card h3 {
+      font-size: 1.55rem;
+      line-height: 1.04;
+      max-width: 13ch;
+    }
+
+    .option-desc {
+      max-width: 34ch;
+      font-size: 0.96rem;
+    }
+
+    .result-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
+      gap: 20px;
+      margin-top: 24px;
+      align-items: start;
+    }
+
+    .summary-card,
+    .result-box {
+      padding: 22px;
+      display: grid;
+      gap: 18px;
+    }
+
+    .result-box {
+      position: sticky;
+      top: 18px;
+    }
+
+    .summary-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .summary-item {
+      border-radius: 18px;
+      border: 1px solid rgba(88, 255, 141, 0.12);
+      background: rgba(9, 17, 11, 0.82);
+      padding: 12px 14px;
+    }
+
+    .summary-item strong {
+      display: block;
+      margin-bottom: 7px;
+      color: #8ce8a8;
+      font-size: 0.78rem;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .summary-item span {
+      color: #f4fff6;
+      font-size: 1rem;
+      font-weight: 800;
+      line-height: 1.34;
+    }
+
+    .i2v-comfort-note {
+      border-radius: 18px;
+      border: 1px solid rgba(136, 210, 255, 0.14);
+      background:
+        linear-gradient(135deg, rgba(75, 132, 166, 0.14), rgba(88, 255, 141, 0.05)),
+        rgba(7, 15, 12, 0.82);
+      padding: 14px 16px;
+      color: #e9fff2;
+      font-size: 0.95rem;
+      font-weight: 800;
+      line-height: 1.55;
+    }
+
+    #i2vScreen .summary-card {
+      gap: 12px;
+    }
+
+    .i2v-single-flow {
+      display: grid;
+      margin-top: 24px;
+      max-width: 980px;
+    }
+
+    .i2v-step-list {
+      gap: 8px;
+    }
+
+    .i2v-step-list .summary-item {
+      display: grid;
+      grid-template-columns: 72px minmax(0, 1fr);
+      align-items: center;
+      gap: 10px;
+      padding: 10px 12px;
+      border-radius: 15px;
+    }
+
+    .i2v-step-list .summary-item strong {
+      margin: 0;
+      font-size: 0.74rem;
+    }
+
+    .i2v-step-list .summary-item span {
+      font-size: 0.96rem;
+      line-height: 1.28;
+    }
+
+    #i2vScreen .i2v-comfort-note {
+      padding: 11px 13px;
+      font-size: 0.9rem;
+      line-height: 1.45;
+    }
+
+    .i2v-copy-block {
+      display: grid;
+      gap: 14px;
+      padding-top: 4px;
+    }
+
+    #i2vScreen .action-row {
+      max-width: 720px;
+    }
+
+    .model-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .model-picker-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 18px;
+      max-height: min(54vh, 460px);
+      overflow: auto;
+      padding-right: 4px;
+    }
+
+    .model-picker-btn {
+      border-radius: 20px;
+      border: 1px solid rgba(88, 255, 141, 0.14);
+      background:
+        linear-gradient(180deg, rgba(10, 18, 13, 0.98), rgba(6, 11, 8, 0.99)),
+        linear-gradient(135deg, rgba(88, 255, 141, 0.04), transparent 52%);
+      color: var(--text);
+      text-align: left;
+      padding: 16px;
+      display: grid;
+      gap: 8px;
+    }
+
+    .model-picker-btn:hover {
+      border-color: var(--line-strong);
+      transform: translateY(-2px);
+    }
+
+    .model-picker-btn strong {
+      font-size: 1rem;
+      line-height: 1.2;
+      letter-spacing: -0.03em;
+    }
+
+    .model-picker-btn span {
+      color: var(--sub);
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+
+    .model-btn {
+      flex: 0 0 auto;
+      min-height: 44px;
+      padding: 0 15px;
+      white-space: nowrap;
+    }
+
+    .model-btn.active {
+      background: rgba(88, 255, 141, 0.12);
+      border-color: rgba(88, 255, 141, 0.26);
+      color: #ecfff1;
+    }
+
+    .model-copy {
+      font-size: 0.96rem;
+      color: #bed5c5;
+    }
+
+    .system-box {
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      background: rgba(4, 8, 5, 0.56);
+      padding: 18px;
+      white-space: pre-wrap;
+      font-size: 0.93rem;
+      max-height: 320px;
+      overflow: auto;
+    }
+
+    .prompt-preview {
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      background: rgba(5, 10, 6, 0.62);
+      overflow: hidden;
+    }
+
+    .prompt-preview summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 15px 16px;
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: #edf8ef;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .prompt-preview summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .prompt-preview summary::after {
+      content: "펼쳐보기";
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: #98cfa8;
+    }
+
+    .prompt-preview[open] summary::after {
+      content: "접기";
+    }
+
+    .prompt-preview-inner {
+      display: grid;
+      gap: 12px;
+      padding: 0 16px 16px;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .note-box {
+      width: 100%;
+      min-height: 140px;
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(2, 6, 4, 0.86);
+      color: var(--text);
+      padding: 16px 18px;
+      resize: vertical;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+    }
+
+    .action-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 12px;
+    }
+
+    .copy-state {
+      min-height: 24px;
+      color: var(--accent);
+      font-size: 0.92rem;
+      font-weight: 800;
+    }
+
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(2, 5, 3, 0.72);
+      backdrop-filter: blur(10px);
+      z-index: 30;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .modal-backdrop.open {
+      display: flex;
+    }
+
+    .modal {
+      width: min(640px, calc(100vw - 32px));
+      border-radius: 30px;
+      border: 1px solid rgba(88, 255, 141, 0.16);
+      background:
+        linear-gradient(180deg, rgba(9, 17, 11, 0.98), rgba(5, 10, 7, 0.98)),
+        linear-gradient(135deg, rgba(88, 255, 141, 0.05), transparent 60%);
+      box-shadow: var(--shadow);
+      padding: 26px;
+      display: grid;
+      gap: 14px;
+    }
+
+    .modal textarea {
+      width: 100%;
+      min-height: 150px;
+      border-radius: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(2, 6, 4, 0.9);
+      color: var(--text);
+      padding: 14px 16px;
+      resize: vertical;
+    }
+
+    .modal-actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .picker-actions {
+      grid-template-columns: 1fr;
+      margin-top: 14px;
+    }
+
+    #saveDirectInputBtn {
+      grid-column: 1 / -1;
+      min-height: 52px;
+      font-size: 1rem;
+      font-weight: 900;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    @media (max-width: 1180px) {
+      .cards-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .choice-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 1080px) {
+      .result-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .result-box {
+        order: -1;
+        position: static;
+      }
+
+      .selection-rail {
+        display: none;
+      }
+
+      .shell.with-rail .screen {
+        padding-left: 32px;
+      }
+    }
+
+    @media (max-width: 860px) {
+      .shell {
+        width: min(100vw - 20px, 680px);
+        padding: 14px 0 28px;
+      }
+
+      .topbar {
+        grid-template-columns: auto minmax(0, 1fr);
+        align-items: center;
+        gap: 10px;
+      }
+
+      .home-pill {
+        grid-column: 1;
+        grid-row: 1;
+        width: 52px;
+        min-width: 52px;
+      }
+
+      .youtube-link {
+        grid-column: 2;
+        grid-row: 1;
+        width: auto;
+        min-height: 46px;
+        justify-self: end;
+        padding: 0 14px;
+      }
+
+      .mode-links {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 2px;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+      }
+
+      .mode-links::-webkit-scrollbar {
+        display: none;
+      }
+
+      .mode-pill {
+        width: auto;
+        min-width: max-content;
+        min-height: 46px;
+        flex: 0 0 auto;
+        padding: 0 15px;
+      }
+
+      .screen {
+        padding: 24px 18px;
+      }
+
+      #t2vStepScreen .section-head {
+        top: 8px;
+        margin: -8px -8px 18px;
+        padding: 8px 8px 12px;
+        border-radius: 22px;
+      }
+
+      .floating-back {
+        position: static;
+        width: 58px;
+        height: 58px;
+        border-radius: 18px;
+        margin: 0 0 14px;
+        font-size: 1.35rem;
+      }
+
+      .hero-title,
+      .section-title {
+        max-width: none;
+        font-size: clamp(1.85rem, 8.6vw, 2.75rem);
+        line-height: 1.04;
+      }
+
+      .choice-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cards-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .result-layout {
+        gap: 14px;
+      }
+
+      .summary-card,
+      .result-box {
+        padding: 18px;
+        gap: 14px;
+      }
+
+      .summary-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .option-card {
+        padding: 16px;
+      }
+
+      .option-card h3 {
+        font-size: 1.1rem;
+      }
+
+      .option-desc {
+        font-size: 0.88rem;
+        line-height: 1.5;
+      }
+
+      .model-tabs {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 4px;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+      }
+
+      .model-tabs::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+        display: none;
+      }
+
+      .note-box {
+        min-height: 112px;
+      }
+
+      .model-picker-grid {
+        grid-template-columns: 1fr;
+        max-height: min(58vh, 430px);
+      }
+
+      .action-row,
+      .modal-actions {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .mode-links {
+        gap: 6px;
+        justify-content: space-between;
+      }
+
+      .mode-pill {
+        min-height: 42px;
+        padding: 0 10px;
+        font-size: 0.88rem;
+      }
+
+      .topbar {
+        gap: 8px;
+      }
+
+      .youtube-link {
+        justify-self: stretch;
+        justify-content: center;
+      }
+
+      .cards-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .card-thumb {
+        height: 128px;
+      }
+
+      .option-card h3 {
+        font-size: 1rem;
+      }
+
+      .option-desc {
+        font-size: 0.84rem;
+      }
+
+      .prompt-preview summary {
+        padding: 13px 14px;
+        font-size: 0.9rem;
+      }
+
+      .prompt-preview-inner {
+        padding: 0 14px 14px;
+      }
+
+      .hero-title,
+      .section-title {
+        max-width: none;
+        font-size: clamp(1.62rem, 8.5vw, 2.32rem);
+        line-height: 1.06;
+      }
+
+      .step-copy,
+      .hero-copy {
+        font-size: 0.95rem;
+      }
+
+      .summary-list {
+        grid-template-columns: 1fr;
+      }
+
+      #t2vResultScreen .section-title,
+      #i2vScreen .section-title {
+        font-size: clamp(1.42rem, 7.4vw, 1.96rem);
+        line-height: 1.08;
+      }
+
+      #t2vResultScreen .step-copy,
+      #i2vScreen .step-copy {
+        font-size: 0.89rem;
+        line-height: 1.58;
+      }
+
+      #t2vResultScreen .summary-card,
+      #t2vResultScreen .result-box,
+      #i2vScreen .summary-card,
+      #i2vScreen .result-box {
+        padding: 16px;
+        gap: 12px;
+      }
+
+      #t2vResultScreen .summary-card h3,
+      #t2vResultScreen .result-box h3,
+      #i2vScreen .summary-card h3,
+      #i2vScreen .result-box h3 {
+        font-size: 1.18rem;
+      }
+
+      #t2vResultScreen .model-copy,
+      #i2vScreen .model-copy {
+        font-size: 0.88rem;
+        line-height: 1.55;
+      }
+
+      #t2vResultScreen .note-box,
+      #i2vScreen .note-box {
+        min-height: 92px;
+        padding: 13px 14px;
+        font-size: 0.92rem;
+      }
+
+      #t2vResultScreen .action-row,
+      #i2vScreen .action-row {
+        gap: 10px;
+      }
     }
   </style>
 </head>
 <body>
-  <main class="panel">
-    <div class="brand">
-      <div class="mark" aria-hidden="true">D</div>
-      <div>
-        <strong>Simple Prompt Master</strong><br />
-        <span style="color: var(--sub); font-size: 13px;">Video Prompt Section</span>
+  <main class="shell">
+    <header class="topbar">
+      <a class="home-pill" href="index.html" aria-label="메인으로">⌂</a>
+
+      <nav class="mode-links" aria-label="생성기 이동">
+        <a class="mode-pill" href="image.html">이미지 생성</a>
+        <a class="mode-pill active" href="video.html">동영상 생성</a>
+        <a class="mode-pill" href="tts.html">TTS / 음악</a>
+      </nav>
+
+      <a class="pill-btn youtube-link" href="https://www.youtube.com/@Denoise-AI" target="_blank" rel="noreferrer">
+        <span class="youtube-icon" aria-hidden="true"></span>
+        <span>Deno YouTube</span>
+      </a>
+    </header>
+
+    <button id="backBtn" class="floating-back hidden" type="button" aria-label="이전 단계">←</button>
+    <aside id="selectionRail" class="selection-rail hidden" aria-label="선택 기록"></aside>
+
+    <section id="chooserScreen" class="screen">
+      <span class="eyebrow">VIDEO FLOW</span>
+      <h1 class="hero-title">이번 영상, 어떻게 시작할까요?</h1>
+      <p class="hero-copy">
+        영상은 크게 두 갈래로 생각하면 쉬워요. 프롬프트로 장면을 처음부터 설계할지, 기준 이미지와 함께 LLM에게 정리시킬지 먼저 고르면 다음 질문이 훨씬 쉬워집니다.
+      </p>
+
+      <div class="choice-grid">
+        <button class="choice-card" type="button" data-start="t2v">
+          <div class="card-thumb has-photo" style="--tone-a:#233a2b;--tone-b:#111914;--tone-glow:rgba(255,222,180,0.28);--tone-shape:rgba(229,182,131,0.94);">
+            <img class="card-photo" src="assets/cards/video/start/t2v.webp" alt="" width="448" height="448" loading="lazy" onerror="this.style.display='none'">
+            <span class="card-kicker">T2V</span>
+            <span class="card-badge">scene</span>
+          </div>
+          <div class="choice-top">
+            <span class="mini-badge">T2V</span>
+            <span class="mini-badge">여기서 설계</span>
+          </div>
+          <div>
+            <h2>프롬프트로 영상 만들기</h2>
+              <p class="choice-copy">
+                장면 느낌, 컷 수, 카메라, 움직임을 한 단계씩 고르고 마지막에 LLM 상담 지시문을 복사하는 흐름입니다.
+              </p>
+          </div>
+          <div class="choice-points">
+            <div class="point">초보자도 질문 따라가면 전체 장면 흐름이 잡혀요.</div>
+            <div class="point">카드를 누르면 바로 다음 단계로 넘어가고, 필요할 때만 직접 입력을 열어둘게요.</div>
+            <div class="point">마지막에는 하나의 상담 지시문만 복사하면, LLM이 사용할 모델부터 물어봐요.</div>
+          </div>
+        </button>
+
+        <button class="choice-card" type="button" data-start="i2v">
+          <div class="card-thumb has-photo" style="--tone-a:#243147;--tone-b:#111721;--tone-glow:rgba(176,206,255,0.22);--tone-shape:rgba(214,225,255,0.86);">
+            <img class="card-photo" src="assets/cards/video/start/i2v.webp" alt="" width="448" height="448" loading="lazy" onerror="this.style.display='none'">
+            <span class="card-kicker">I2V</span>
+            <span class="card-badge">image</span>
+          </div>
+          <div class="choice-top">
+            <span class="mini-badge">I2V</span>
+            <span class="mini-badge">LLM으로 넘기기</span>
+          </div>
+          <div>
+            <h2>이미지와 프롬프트로 영상 만들기</h2>
+              <p class="choice-copy">
+                기준 이미지를 함께 넘기고, 상담 지시문을 복사해서 LLM이 장면을 구조화하도록 맡기는 흐름입니다.
+              </p>
+          </div>
+          <div class="choice-points">
+            <div class="point">이미지 안의 정보는 LLM이 먼저 읽게 두는 방식이에요.</div>
+            <div class="point">사용자는 유지할 것과 바꾸고 싶은 것만 짧게 적으면 됩니다.</div>
+            <div class="point">마지막에는 하나의 상담 지시문을 복사하고, LLM이 사용할 모델부터 확인하게 하면 돼요.</div>
+          </div>
+        </button>
+      </div>
+    </section>
+
+    <section id="t2vStepScreen" class="screen hidden">
+      <div class="section-head">
+        <div class="section-left">
+          <span class="eyebrow">Text To Video</span>
+          <h2 id="t2vStepTitle" class="section-title"></h2>
+          <p id="t2vStepCopy" class="step-copy"></p>
+        </div>
+        <span id="t2vStepBadge" class="step-badge"></span>
+      </div>
+
+      <div id="t2vCards" class="cards-grid"></div>
+    </section>
+
+    <section id="t2vResultScreen" class="screen hidden">
+        <div class="section-head">
+          <div class="section-left">
+            <span class="eyebrow">RESULT</span>
+          <h2 class="section-title">이제 복사하면 돼요</h2>
+            <p class="step-copy">
+              정리된 내용은 안에서 묶어둘게요. 여기서는 더 넣고 싶은 것만 짧게 적고, 상담 지시문을 복사하면 됩니다. 사용할 모델은 LLM이 먼저 물어보게 할게요.
+            </p>
+        </div>
+        <span class="step-badge">FINAL STEP</span>
+      </div>
+
+      <div class="result-layout">
+        <div class="summary-card">
+          <h3>지금까지 정리된 내용</h3>
+          <div id="t2vSummary" class="summary-list"></div>
+        </div>
+
+        <div class="result-box">
+          <h3>더 적고 싶은 것</h3>
+          <p class="model-copy">
+            예: 마지막 컷은 인물이 카메라를 바라보게, 속도는 조금 천천히, 색은 따뜻하게
+          </p>
+          <textarea id="t2vExtraNote" class="note-box" aria-label="Text to Video 추가 메모" placeholder="떠오르는 것들을 편하게 적어주세요. 컷 전환, 카메라 속도, 표정, 움직임, 조명, 배경, 소리 같은 것도 괜찮아요."></textarea>
+
+          <div class="action-row">
+            <button id="copyModelPromptBtn" class="primary-btn" type="button">LLM 상담 지시문 복사</button>
+            <button id="resetT2VBtn" class="ghost-btn" type="button">처음부터 다시</button>
+          </div>
+
+          <div id="copyState" class="copy-state" aria-live="polite"></div>
+
+          <details class="prompt-preview">
+            <summary>상담 지시문 미리보기</summary>
+            <div class="prompt-preview-inner">
+              <p id="modelGuideCopy" class="model-copy"></p>
+              <p class="helper">복사하면 LLM이 먼저 사용할 영상 모델을 묻고, 선택 내용을 요약하고, 부족한 부분을 되묻고, 답변 뒤 공식 가이드를 참고해 최종 영상 프롬프트까지 이어가도록 안내합니다.</p>
+              <div id="modelPromptPreview" class="system-box"></div>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="i2vScreen" class="screen hidden">
+      <div class="section-head">
+        <div class="section-left">
+          <span class="eyebrow">Image To Video</span>
+          <h2 class="section-title">이미지는 이미 많은 걸 말하고 있어요</h2>
+          <p class="step-copy">
+            여기서는 장면을 고르거나 메모를 적지 않습니다. 이미지와 지시문만 LLM에 넘기면, LLM이 먼저 보고 필요한 것만 물어보게 됩니다.
+          </p>
+        </div>
+        <span class="step-badge">STEP 2</span>
+      </div>
+
+      <div class="i2v-single-flow">
+        <div class="summary-card">
+          <h3>이 순서대로 하면 됩니다</h3>
+          <p class="model-copy">
+            이미지는 LLM이 먼저 읽습니다. 사용자는 아래 순서만 따라가면 됩니다.
+          </p>
+          <div class="summary-list i2v-step-list">
+            <div class="summary-item">
+              <strong>Step 1</strong>
+              <span>ChatGPT나 Gemini를 엽니다.</span>
+            </div>
+            <div class="summary-item">
+              <strong>Step 2</strong>
+              <span>기준 이미지를 첨부합니다.</span>
+            </div>
+            <div class="summary-item">
+              <strong>Step 3</strong>
+              <span>지시문을 복사해 같은 채팅에 붙여넣습니다.</span>
+            </div>
+            <div class="summary-item">
+              <strong>Step 4</strong>
+              <span>LLM 질문에 답하고 최종 프롬프트를 받습니다.</span>
+            </div>
+          </div>
+
+          <div class="i2v-copy-block">
+            <div class="action-row">
+              <button id="copyI2VPromptBtn" class="primary-btn" type="button">이미지와 함께 쓸 상담 지시문 복사</button>
+              <button id="backToChooserBtn" class="ghost-btn" type="button">다시 고르기</button>
+            </div>
+
+            <div id="i2vCopyState" class="copy-state" aria-live="polite"></div>
+
+            <p id="i2vGuideCopy" class="model-copy"></p>
+
+            <div class="i2v-comfort-note">
+              원하는 변화는 LLM 채팅에서 답하면 됩니다.
+            </div>
+
+            <details class="prompt-preview">
+              <summary>상담 지시문 미리보기</summary>
+              <div class="prompt-preview-inner">
+                <p class="helper">복사하면 LLM이 이미지를 먼저 읽고, 사용자가 설명하지 않아도 되는 부분은 직접 정리하고, 꼭 필요한 질문만 하도록 안내합니다.</p>
+                <div id="i2vPromptPreview" class="system-box"></div>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="directInputModal" class="modal-backdrop" aria-hidden="true">
+      <div class="modal" role="dialog" aria-modal="true" aria-labelledby="directInputTitle">
+        <h3 id="directInputTitle">직접 적고 다음으로 넘어갈게요</h3>
+        <p id="directInputHelper" class="helper">지금 단계에서 떠오르는 장면이나 방향을 편하게 적어주세요.</p>
+        <textarea id="directInputField" aria-label="단계별 직접 입력" placeholder=""></textarea>
+        <p id="directInputValidation" class="copy-state"></p>
+        <div class="modal-actions">
+          <button id="saveDirectInputBtn" class="primary-btn" type="button">입력 완료</button>
+          <button id="cancelDirectInputBtn" class="ghost-btn" type="button">취소</button>
+          <button id="skipDirectInputBtn" class="ghost-btn" type="button">그냥 다음으로</button>
+        </div>
       </div>
     </div>
 
-    <div class="eyebrow">Updating</div>
-    <h1>동영상 프롬프트 생성기는<br />지금 다듬는 중입니다</h1>
-    <p>
-      메인 구조와 페이지 연결은 먼저 열어두고, 세부 입력 항목과 생성 흐름은 다음 업데이트에서 채울 예정입니다.
-      지금 단계에서는 사용자가 입구를 인지하고 들어와 볼 수 있는 상태까지만 정리해둔 페이지입니다.
-    </p>
-
-    <div class="status-box">
-      현재 상태: 페이지 연결 완료<br />
-      다음 단계: 동영상 전용 하위 항목 설계 후 본문 추가
-    </div>
-
-    <div class="actions">
-      <a class="button" href="index.html">메인으로 돌아가기</a>
-      <a class="button secondary" href="image.html">이미지 생성기 열기</a>
-    </div>
   </main>
+
+  <script>
+    const HISTORY_MARKER = "video-builder-v1";
+
+    const VIDEO_CARD_TONES = {
+      start: {
+        t2v: { a: "#233a2b", b: "#111914", glow: "rgba(255,222,180,0.28)", shape: "rgba(229,182,131,0.94)" },
+        i2v: { a: "#243147", b: "#111721", glow: "rgba(176,206,255,0.22)", shape: "rgba(214,225,255,0.86)" }
+      },
+      subject: {
+        person: { a: "#28392c", b: "#111813", glow: "rgba(255,213,180,0.26)", shape: "rgba(226,197,159,0.92)" },
+        product: { a: "#3b2a20", b: "#17100c", glow: "rgba(255,188,122,0.24)", shape: "rgba(230,197,164,0.9)" },
+        landscape: { a: "#263a3e", b: "#10191d", glow: "rgba(155,226,255,0.22)", shape: "rgba(205,228,214,0.9)" },
+        explainer: { a: "#2c3425", b: "#12160f", glow: "rgba(220,255,175,0.22)", shape: "rgba(228,213,170,0.9)" },
+        music: { a: "#362339", b: "#170f19", glow: "rgba(255,140,198,0.2)", shape: "rgba(224,190,212,0.88)" },
+        illustration: { a: "#273048", b: "#111721", glow: "rgba(179,206,255,0.22)", shape: "rgba(223,226,255,0.88)" }
+      },
+      focus: {
+        face: { a: "#2b3a2e", b: "#121814", glow: "rgba(255,226,191,0.24)", shape: "rgba(229,208,182,0.9)" },
+        body: { a: "#263437", b: "#11181b", glow: "rgba(160,223,255,0.2)", shape: "rgba(206,221,228,0.88)" },
+        product: { a: "#3a2c24", b: "#18110e", glow: "rgba(255,200,138,0.2)", shape: "rgba(232,205,171,0.88)" },
+        mood: { a: "#28333a", b: "#10151a", glow: "rgba(171,214,255,0.2)", shape: "rgba(199,221,228,0.86)" },
+        info: { a: "#31331f", b: "#17190d", glow: "rgba(229,255,170,0.2)", shape: "rgba(230,214,173,0.86)" },
+        ending: { a: "#2f2438", b: "#140f18", glow: "rgba(226,176,255,0.18)", shape: "rgba(220,205,234,0.86)" }
+      },
+      structure: {
+        single: { a: "#23352a", b: "#101711", glow: "rgba(185,255,183,0.18)", shape: "rgba(215,224,203,0.88)" },
+        "two-cut": { a: "#263442", b: "#111721", glow: "rgba(161,203,255,0.2)", shape: "rgba(218,223,236,0.88)" },
+        "three-cut": { a: "#37311f", b: "#17130d", glow: "rgba(255,218,148,0.2)", shape: "rgba(230,214,178,0.9)" },
+        multishot: { a: "#32263b", b: "#17101b", glow: "rgba(229,174,255,0.18)", shape: "rgba(221,207,236,0.86)" },
+        "hook-loop": { a: "#3a2424", b: "#170f10", glow: "rgba(255,160,160,0.18)", shape: "rgba(228,196,186,0.86)" },
+        "intro-outro": { a: "#23373c", b: "#10171a", glow: "rgba(165,237,255,0.18)", shape: "rgba(203,226,230,0.88)" }
+      },
+      camera: {
+        static: { a: "#263231", b: "#101615", glow: "rgba(182,226,213,0.18)", shape: "rgba(206,220,214,0.88)" },
+        "push-in": { a: "#2f3843", b: "#12171d", glow: "rgba(173,209,255,0.2)", shape: "rgba(210,221,232,0.88)" },
+        "pull-out": { a: "#243945", b: "#11181d", glow: "rgba(161,230,255,0.2)", shape: "rgba(201,222,229,0.88)" },
+        pan: { a: "#31312a", b: "#171711", glow: "rgba(237,229,177,0.18)", shape: "rgba(224,219,197,0.88)" },
+        follow: { a: "#2f2e3f", b: "#151320", glow: "rgba(192,183,255,0.18)", shape: "rgba(212,207,235,0.88)" },
+        handheld: { a: "#382827", b: "#171110", glow: "rgba(255,194,177,0.18)", shape: "rgba(227,204,198,0.86)" },
+        orbit: { a: "#25363e", b: "#10171b", glow: "rgba(169,232,255,0.2)", shape: "rgba(205,223,231,0.88)" },
+        "tilt-reveal": { a: "#2d3723", b: "#14180f", glow: "rgba(220,255,170,0.18)", shape: "rgba(220,220,191,0.86)" }
+      },
+      motion: {
+        "person-action": { a: "#2f372a", b: "#121711", glow: "rgba(255,216,177,0.2)", shape: "rgba(224,208,180,0.88)" },
+        "product-motion": { a: "#3a2e25", b: "#18120e", glow: "rgba(255,201,142,0.2)", shape: "rgba(229,208,181,0.88)" },
+        "env-motion": { a: "#243840", b: "#0f171b", glow: "rgba(176,235,255,0.2)", shape: "rgba(206,224,228,0.88)" },
+        "camera-only": { a: "#283139", b: "#11161a", glow: "rgba(193,217,255,0.18)", shape: "rgba(210,217,230,0.86)" },
+        "expression-only": { a: "#2d2f36", b: "#131417", glow: "rgba(221,197,255,0.16)", shape: "rgba(219,210,232,0.86)" },
+        "high-energy": { a: "#3d241f", b: "#180f0d", glow: "rgba(255,171,144,0.18)", shape: "rgba(230,197,181,0.86)" },
+        "subject-and-env": { a: "#243941", b: "#10171a", glow: "rgba(164,238,255,0.18)", shape: "rgba(204,224,228,0.88)" }
+      },
+      tempo: {
+        slow: { a: "#2b352e", b: "#121713", glow: "rgba(195,238,203,0.16)", shape: "rgba(212,222,206,0.88)" },
+        natural: { a: "#2e332c", b: "#141612", glow: "rgba(230,232,185,0.16)", shape: "rgba(222,219,197,0.88)" },
+        rhythmic: { a: "#24353e", b: "#10161b", glow: "rgba(177,233,255,0.18)", shape: "rgba(204,224,229,0.88)" },
+        fast: { a: "#3a241f", b: "#170f0d", glow: "rgba(255,169,144,0.18)", shape: "rgba(227,195,184,0.86)" },
+        "build-up": { a: "#30273b", b: "#151019", glow: "rgba(223,180,255,0.16)", shape: "rgba(221,207,236,0.86)" },
+        "stop-start": { a: "#3a2e20", b: "#17120d", glow: "rgba(255,211,151,0.18)", shape: "rgba(229,213,183,0.88)" }
+      },
+      tone: {
+        cinematic: { a: "#23323a", b: "#10161a", glow: "rgba(175,215,255,0.18)", shape: "rgba(210,220,230,0.88)" },
+        commercial: { a: "#2f3526", b: "#14180f", glow: "rgba(227,255,173,0.18)", shape: "rgba(223,220,191,0.88)" },
+        emotional: { a: "#2f2534", b: "#141016", glow: "rgba(232,180,255,0.16)", shape: "rgba(223,209,232,0.86)" },
+        tutorial: { a: "#2e3123", b: "#14170f", glow: "rgba(240,244,179,0.16)", shape: "rgba(223,220,191,0.86)" },
+        "music-video": { a: "#3a2234", b: "#170f16", glow: "rgba(255,154,213,0.18)", shape: "rgba(231,198,217,0.86)" },
+        luxury: { a: "#352d21", b: "#17130d", glow: "rgba(255,220,161,0.18)", shape: "rgba(229,214,188,0.88)" },
+        shortform: { a: "#243446", b: "#101721", glow: "rgba(170,204,255,0.18)", shape: "rgba(209,220,236,0.88)" }
+      }
+    };
+
+    function getVideoTone(stepKey, optionKey) {
+      return VIDEO_CARD_TONES[stepKey]?.[optionKey] || { a: "#23362b", b: "#111813", glow: "rgba(88,255,141,0.18)", shape: "rgba(222,208,180,0.9)" };
+    }
+
+    function getVideoCardAssetPath(stepKey, optionKey) {
+      if (!stepKey || !optionKey || optionKey === "__direct__") return "";
+      return `assets/cards/video/${stepKey}/${optionKey}.webp`;
+    }
+
+    function renderVideoCardThumb(stepKey, option, label, badge = "") {
+      const tone = getVideoTone(stepKey, option.key);
+      const assetPath = getVideoCardAssetPath(stepKey, option.key);
+      const hasPhoto = !!assetPath;
+      const photoMarkup = assetPath
+      ? `<img class="card-photo" src="${assetPath}" alt="" width="448" height="448" loading="lazy" onerror="this.remove();this.parentElement.classList.remove('has-photo')">`
+        : "";
+
+      return `
+        <div class="card-thumb${hasPhoto ? " has-photo" : ""}" style="--tone-a:${tone.a};--tone-b:${tone.b};--tone-glow:${tone.glow};--tone-shape:${tone.shape};">
+          ${photoMarkup}
+          <span class="card-kicker">${label}</span>
+          ${badge ? `<span class="card-badge">${badge}</span>` : ""}
+        </div>
+      `;
+    }
+
+    const t2vSteps = [
+      {
+        key: "subject",
+        label: "영상 종류",
+        title: "어떤 영상으로 갈까요?",
+        copy: "영상은 종류만 먼저 정해도 뒤 질문이 많이 쉬워져요. 너무 넓게 생각하지 말고 가장 가까운 방향 하나만 골라주세요.",
+        directPlaceholder: "예: 어두운 공연장에서 보컬이 한 걸음 앞으로 나오며 조명이 켜지는 감성적인 시작 컷",
+        detailPrompt: "이 방향으로 간다면 어떤 장면인지 한 줄만 더 적어주세요.",
+        detailPlaceholder: "예: 세련된 여성 한 명이 창가에 기대어 있고, 저녁빛이 얼굴에 부드럽게 들어오는 장면",
+        options: [
+          { key: "person", title: "인물 중심 장면", desc: "인물의 표정, 동작, 분위기가 중심인 영상", brief: "person-centered scene, expressive human subject" },
+          { key: "product", title: "제품 / 광고 컷", desc: "제품 소개, 광고, 상세 컷에 가까운 영상", brief: "product commercial shot, product-focused scene" },
+          { key: "landscape", title: "풍경 / 감성 컷", desc: "자연, 도시, 빛, 계절감이 중심인 영상", brief: "landscape or atmospheric scenic shot" },
+          { key: "explainer", title: "설명 / 튜토리얼 컷", desc: "정보 전달이나 화면 설명에 잘 맞는 영상", brief: "explainer style video, tutorial-friendly scene" },
+          { key: "music", title: "뮤직 / 가사 감성", desc: "뮤직비디오나 가사 감성 컷 같은 방향", brief: "music video mood, lyrical visual scene" },
+          { key: "illustration", title: "캐릭터 / 일러스트", desc: "그림이나 캐릭터 기반의 영상", brief: "illustrated or character-based animated scene" }
+        ]
+      },
+      {
+        key: "focus",
+        label: "집중 포인트",
+        title: "무엇이 먼저 보여야 할까요?",
+        copy: "짧은 영상일수록 첫인상이 중요해요. 이 영상에서 가장 먼저 잡히면 좋은 포인트를 하나 정해둘게요.",
+        directPlaceholder: "예: 얼굴 표정이 가장 먼저 보였으면 좋겠고, 그다음에 창가 빛과 손동작이 자연스럽게 따라오게",
+        detailPrompt: "무엇이 먼저 읽혀야 하는지, 왜 그게 중요한지 짧게 적어주세요.",
+        detailPlaceholder: "예: 눈빛과 표정이 제일 먼저 보이고, 그다음에 손끝 움직임과 창문 빛이 따라오면 좋겠어요",
+        options: [
+          { key: "face", title: "표정 / 얼굴", desc: "인물 표정이나 시선이 먼저 보이게", brief: "facial expression and eye contact should read first" },
+          { key: "body", title: "몸동작 / 포즈", desc: "몸의 움직임이나 자세가 먼저 읽히게", brief: "body movement and pose should lead the shot" },
+          { key: "product", title: "대상 / 화면 디테일", desc: "제품, 화면, 오브젝트의 형태나 질감이 먼저 보이게", brief: "object, screen, product, or subject detail should be the first visual anchor" },
+          { key: "mood", title: "빛 / 분위기", desc: "장면의 무드와 빛이 먼저 잡히게", brief: "lighting and atmosphere should establish the scene first" },
+          { key: "info", title: "정보 전달 / 설명성", desc: "무엇을 보여주는 장면인지 바로 읽히게", brief: "clarity and explainability should come first" },
+          { key: "ending", title: "전환 / 마무리 포인트", desc: "마지막 비트나 전환이 기억나게", brief: "transition or ending beat should feel especially clear" }
+        ]
+      },
+      {
+        key: "structure",
+        label: "컷 구성",
+        title: "몇 컷 정도로 갈까요?",
+        copy: "초보자라면 한 컷으로도 충분히 좋게 만들 수 있어요. 그래도 장면 전환이 필요하면 여기서 먼저 정해둘게요.",
+        directPlaceholder: "예: 첫 컷은 책상 위 제품, 두 번째 컷은 손으로 집는 장면, 마지막은 로고 없이 정리된 클로즈업",
+        detailPrompt: "컷이 어떻게 이어지면 좋을지 한 줄로 적어주세요.",
+        detailPlaceholder: "예: 첫 컷은 얼굴 클로즈업, 두 번째 컷은 몸을 돌리는 장면, 마지막은 카메라를 바라보는 마무리",
+        options: [
+          { key: "single", title: "한 컷만", desc: "짧고 선명한 한 장면으로 끝내기", brief: "single-shot video, one continuous scene" },
+          { key: "two-cut", title: "두 컷 연결", desc: "짧은 전환이 있는 2단 흐름", brief: "two connected shots with a clean transition" },
+          { key: "three-cut", title: "세 컷 흐름", desc: "시작-중간-마무리 느낌으로 진행", brief: "three-shot progression with start, middle, and ending" },
+          { key: "multishot", title: "짧은 멀티샷", desc: "짧게 여러 컷이 이어지는 구조", brief: "short multishot progression with coherent transitions" },
+          { key: "hook-loop", title: "짧은 훅 + 마무리", desc: "처음 1초가 강하고 끝이 또렷한 구조", brief: "hook-first short clip with a clear ending beat" },
+          { key: "intro-outro", title: "인트로 + 아웃트로", desc: "시작 컷과 끝 컷의 대비가 있는 흐름", brief: "intro-to-outro progression with clear opening and closing shots" }
+        ]
+      },
+      {
+        key: "camera",
+        label: "카메라",
+        title: "카메라는 어떻게 움직일까요?",
+        copy: "장면이 평범해 보여도 카메라만 잘 잡으면 훨씬 그럴듯해집니다. 너무 복잡하지 않게 한 가지 움직임만 먼저 고르는 게 좋아요.",
+        directPlaceholder: "예: 시작은 고정이고 중간부터 천천히 다가가고, 마지막엔 아주 살짝 오른쪽으로 이동",
+        detailPrompt: "카메라가 어디서 시작해서 어떻게 끝나면 좋을지 짧게 적어주세요.",
+        detailPlaceholder: "예: 허리샷에서 시작해서 얼굴 쪽으로 천천히 가까워지고, 마지막엔 살짝 오른쪽으로 흐르면 좋겠어요",
+        options: [
+          { key: "static", title: "고정", desc: "카메라를 거의 움직이지 않기", brief: "static camera, steady framing" },
+          { key: "push-in", title: "천천히 다가가기", desc: "카메라가 점점 가까워지는 느낌", brief: "slow camera push in toward the subject" },
+          { key: "pull-out", title: "천천히 멀어지기", desc: "카메라가 조금씩 멀어지며 더 보여주는 느낌", brief: "slow camera pull out revealing more of the scene" },
+          { key: "pan", title: "좌우 이동", desc: "가볍게 옆으로 흐르는 카메라", brief: "smooth lateral pan movement" },
+          { key: "follow", title: "인물 / 대상 따라가기", desc: "피사체를 따라가며 보는 느낌", brief: "tracking follow shot that stays with the subject" },
+          { key: "handheld", title: "핸드헬드 느낌", desc: "손으로 찍은 듯한 자연스러운 흔들림", brief: "subtle handheld camera feel" },
+          { key: "orbit", title: "주변을 감싸듯", desc: "대상을 중심으로 도는 느낌", brief: "gentle orbiting camera around the subject" },
+          { key: "tilt-reveal", title: "위아래로 드러내기", desc: "아래에서 위로, 혹은 위에서 아래로 보여주기", brief: "tilt reveal that travels up or down the scene" }
+        ]
+      },
+      {
+        key: "motion",
+        label: "움직임",
+        title: "무엇이 주로 움직일까요?",
+        copy: "영상에서는 무엇이 움직이는지가 굉장히 중요해요. 사람, 대상, 배경, 빛 중에서 중심이 되는 움직임을 먼저 잡아둘게요.",
+        directPlaceholder: "예: 인물은 거의 정지, 머리카락과 옷자락만 바람에 살짝 움직이고 뒤 조명만 천천히 흔들리게",
+        detailPrompt: "무엇이 얼마나 움직여야 하는지 한 줄로 적어주세요.",
+        detailPlaceholder: "예: 인물은 거의 멈춰 있고, 머리카락과 셔츠 끝만 바람에 아주 살짝 움직이면 좋겠어요",
+        options: [
+          { key: "person-action", title: "인물 동작 중심", desc: "표정, 포즈, 걸음, 손동작이 중심", brief: "subject motion is driven by the person's action and body language" },
+          { key: "product-motion", title: "대상 움직임 중심", desc: "제품, 화면, 오브젝트의 등장이나 디테일 변화를 중심으로", brief: "object, screen, or product motion, reveal, rotation, or detail emphasis" },
+          { key: "env-motion", title: "배경 요소 중심", desc: "바람, 빛, 입자, 물결 같은 움직임", brief: "environmental motion like wind, particles, water, or lighting changes" },
+          { key: "camera-only", title: "카메라만 은은하게", desc: "장면은 거의 그대로 두고 카메라만", brief: "minimal scene motion, mostly camera-driven movement" },
+          { key: "expression-only", title: "표정 / 시선만 살짝", desc: "큰 동작 없이 얼굴과 시선 변화 중심", brief: "very subtle facial expression and eye-line changes" },
+          { key: "high-energy", title: "동작 크게 / 빠르게", desc: "움직임이 분명히 느껴지는 편", brief: "clear energetic motion with stronger movement" },
+          { key: "subject-and-env", title: "대상 + 배경 둘 다", desc: "주요 대상의 움직임과 주변 변화가 같이 보이기", brief: "both subject motion and environmental motion are visible together" }
+        ]
+      },
+      {
+        key: "tempo",
+        label: "속도감",
+        title: "전체 속도감은 어떻게 갈까요?",
+        copy: "같은 장면이어도 속도감이 달라지면 완전히 다른 영상처럼 느껴져요. 전체적으로 어떤 박자로 흘렀으면 좋을지만 골라주세요.",
+        directPlaceholder: "예: 시작은 천천히, 중간부터 조금 더 빨라지고, 마지막은 다시 여운 있게 느려지게",
+        detailPrompt: "속도감이 어떻게 느껴지면 좋을지 한 줄만 적어주세요.",
+        detailPlaceholder: "예: 전체적으로는 느리지만 감정이 올라오는 순간에만 아주 살짝 빨라졌으면 좋겠어요",
+        options: [
+          { key: "slow", title: "천천히 / 여운 있게", desc: "컷과 움직임이 느긋하게 이어지는 편", brief: "slow pacing with gentle timing and more lingering moments" },
+          { key: "natural", title: "자연스럽게", desc: "과하지 않은 기본 템포", brief: "natural pacing with balanced timing and readable motion" },
+          { key: "rhythmic", title: "리듬감 있게", desc: "짧은 박자감이 느껴지는 편", brief: "rhythmic pacing with a clearer beat and visual flow" },
+          { key: "fast", title: "빠르게 / 강하게", desc: "체감 속도가 더 빠른 편", brief: "faster pacing with sharper motion and quicker scene progression" },
+          { key: "build-up", title: "점점 커지게", desc: "처음보다 뒤로 갈수록 더 세게", brief: "progressive build-up, starting calmer and becoming more intense" },
+          { key: "stop-start", title: "멈춤과 치고 나감", desc: "잠깐 멈췄다가 움직임이 또렷해지는 편", brief: "stop-and-go pacing with brief pauses and sharper motion beats" }
+        ]
+      },
+      {
+        key: "tone",
+        label: "분위기",
+        title: "전체 톤은 어디로 잡을까요?",
+        copy: "이 단계에서는 색감과 감정의 방향만 가볍게 고르면 됩니다. 나머지 디테일은 마지막 상담 지시문에서 LLM이 되묻고 보강하게 만들게요.",
+        directPlaceholder: "예: 도시 야경의 차가운 파란 톤, 너무 번쩍이지 않게, 영화 오프닝처럼 차분하지만 고급스럽게",
+        detailPrompt: "색감, 감정, 무드를 한 줄만 더 적어주세요.",
+        detailPlaceholder: "예: 저녁의 차분한 녹색빛과 따뜻한 피부톤, 살짝 영화 같은 감성으로 갔으면 좋겠어요",
+        options: [
+          { key: "cinematic", title: "영화같게", desc: "깊이감 있고 몰입되는 톤", brief: "cinematic tone, dramatic but coherent visual language" },
+          { key: "commercial", title: "광고처럼 선명하게", desc: "깔끔하고 또렷한 비주얼", brief: "clean commercial look, polished and crisp" },
+          { key: "emotional", title: "감성적으로", desc: "조용하고 분위기 있는 톤", brief: "soft emotional atmosphere, lyrical and immersive" },
+          { key: "tutorial", title: "설명형 / 깔끔하게", desc: "정보 전달이 편한 톤", brief: "clear explanatory tone, easy to read visually" },
+          { key: "music-video", title: "강한 뮤직비디오 느낌", desc: "분위기와 무드가 먼저 오는 톤", brief: "stylized music-video atmosphere with strong mood" },
+          { key: "luxury", title: "고급스럽고 무게 있게", desc: "빛과 질감이 세련되게 느껴지는 톤", brief: "luxury visual tone with controlled lighting and refined texture" },
+          { key: "shortform", title: "숏폼스럽고 눈에 띄게", desc: "첫인상이 강하고 빠르게 잡히는 톤", brief: "attention-grabbing shortform tone with clear visual hook" }
+        ]
+      }
+    ];
+
+    const consultationFlowGuide = `Your first reply should be a consultation, not the final prompt.
+
+Speak in Korean like a capable video prompt director who is helping the user think. Do not behave like a rigid form-filling script.
+
+In the first reply:
+- First ask which video model or platform the user plans to use, unless they already named one.
+- Briefly summarize what kind of video you think the user is aiming for.
+- Point out the most important missing or weak areas you notice from the brief.
+- Ask only 3 to 5 useful follow-up questions total, including the model/platform question. Make them concrete and easy to answer.
+- Include a gentle option such as "잘 모르겠으면 제가 자연스럽게 추천해서 채워드릴게요."
+- Do not output the final English prompt yet unless the user explicitly asks you to proceed with defaults.
+
+After the user answers, keep the conversation short and useful. Before producing the final prompt, use the target model/platform to shape the format.
+
+If web search or browsing is available to you, search for the latest official prompt guide, help page, model documentation, or model card for the exact target model/platform. Prefer official sources from the model provider or project. Use what you find to decide the final prompt shape, wording, length, and formatting.
+
+If web search is not available, say briefly that you cannot verify the latest official guide in this chat, then either ask the user to paste the guide or ask whether to proceed with general video prompting best practices. Do not pretend that you searched.
+
+When the direction is clear, produce the final result in a clean human-readable shape:
+[한국어 요약]
+- 2~4줄 정도로 최종 영상 방향 요약
+
+[적용 기준]
+- 선택한 모델/플랫폼과, 공식 가이드를 확인했는지 또는 일반 원칙으로 진행했는지 짧게 설명
+
+[Final Prompt]
+- English prompt only, formatted for the selected target model/platform`;
+
+    const videoModelExamples = [
+      "LTX-Video / ComfyUI",
+      "Wan / ComfyUI",
+      "Google Veo",
+      "Runway",
+      "OpenAI Sora",
+      "Seedance",
+      "Kling",
+      "Luma Dream Machine",
+      "Pika",
+      "PixVerse",
+      "Hailuo / MiniMax",
+      "Vidu",
+      "other model the user names"
+    ].join(", ");
+
+    function buildUniversalT2VPrompt(brief, note) {
+      return `You are helping the user develop a video generation prompt.
+
+The user used a lightweight prompt builder as an imagination aid. The selected cards below are not a complete script and not a rigid template. They are raw creative clues.
+
+Your role is to act as an active video prompt director:
+- understand the user's rough intent
+- ask which target video model or platform they will use
+- notice what is still missing for a good video prompt
+- ask only the few details that would most improve the result
+- after the user answers, search for the latest official prompt guidance for the chosen model if browsing is available
+- then write the final prompt in the format that best matches that model/platform
+
+Possible target models/platforms include: ${videoModelExamples}.
+
+Use your judgment. Do not force the user into a JSON-like template. Do not immediately output a final prompt just because the builder choices are present.
+
+${consultationFlowGuide}
+
+[Builder Choices]
+${brief}
+
+[Extra Notes From User]
+${note || "(none)"}`.trim();
+    }
+
+    function buildUniversalI2VPrompt() {
+      return `You are helping the user develop an image-to-video prompt.
+
+The user will paste this instruction into an LLM together with a reference image. Treat the image as the real first frame and the main source of truth.
+
+Your role is to act as a warm, capable image-to-video prompt director.
+
+Make the process feel easy for the user. Do not make the user describe everything that is already visible in the image. First, carefully analyze the attached image yourself.
+
+In your first reply:
+1. If no image is attached, kindly ask the user to attach the image first.
+2. Ask which target video model or platform they plan to use, unless they already named one.
+3. Briefly summarize what you see in the image.
+4. Tell the user what you recommend preserving from the image.
+5. Suggest 2 to 3 natural video directions that could work well.
+6. Ask only the few follow-up questions that are truly needed.
+
+When the user is unsure, offer sensible defaults instead of making them do more work.
+
+Before writing the final prompt:
+- identify what should stay stable from the image
+- identify what can move naturally
+- identify what the camera can do
+- identify what atmosphere or lighting can develop without damaging the original image
+- search for the latest official prompt guidance for the chosen model if browsing is available
+- then write the final prompt in the format that best matches that model/platform
+
+Possible target models/platforms include: ${videoModelExamples}.
+
+Use your judgment. Do not force the user into a JSON-like template. Do not immediately output a generic final prompt.
+
+${consultationFlowGuide}`.trim();
+    }
+
+    function createT2VProfile({ name, guide, target, rules }) {
+      const sharedRules = [
+        "treat the builder choices as useful clues from the user's imagination, not as a complete script",
+        "use your own judgment to notice missing details that would matter for video generation",
+        "if a line contains 'user detail', treat it as a strong preference",
+        "deduplicate overlapping ideas internally so the later final prompt can feel clean, not repetitive",
+        "when tone is abstract, translate it into visible cinematic cues such as lighting direction, color contrast, texture, framing, atmosphere, and motion intensity",
+        "keep the main subject, action logic, camera logic, and environment anchors mutually consistent",
+        "do not invent a second major subject, a contradictory camera plan, or a conflicting motion pattern without asking first",
+        "if the user says to choose for them, fill the gaps with sensible defaults that match the brief"
+      ];
+
+      return {
+        name,
+        guide,
+        buildPrompt(brief, note) {
+          return `You are helping the user develop a video generation prompt for ${target}.
+
+The user used a lightweight prompt builder as an imagination aid. The selected cards below are not meant to lock you into a rigid template. They are a starting brief.
+
+Your role is to act as an active video prompt director:
+- understand the user's rough intent
+- notice what is still missing for a good video prompt
+- ask for the few details that would most improve the result
+- only after the user answers, write the final prompt for ${target}
+
+Use these model-specific notes as craft guidance, not as a cage:
+${sharedRules.map((rule) => `- ${rule}`).join("\n")}
+${rules.map((rule) => `- ${rule}`).join("\n")}
+
+${consultationFlowGuide}
+
+[Structured Brief]
+${brief}
+
+[Extra Notes]
+${note || "(none)"}`.trim();
+        }
+      };
+    }
+
+    function createI2VProfile({ name, guide, target, rules }) {
+      const sharedRules = [
+        "treat the attached image as the real first frame and actual starting point",
+        "if no image is attached in the chat, ask the user to attach the image before making a final prompt",
+        "read the image before writing the final prompt, and use the visible image information as the main source of truth",
+        "preserve identity, outfit, key objects, environment anchors, framing, and overall visual style unless the user clearly asks to change them",
+        "separate internally what should stay stable, what may change, what should move, what the camera should do, and what atmosphere should develop",
+        "if the user note is short, vague, or partial, ask about the few details that matter most instead of inventing unrelated changes",
+        "translate abstract wishes into visible motion, camera, lighting, rhythm, and scene progression cues",
+        "keep the eventual final prompt natural, visual, and easy to imagine as a real moving shot",
+        "do not add readable text, subtitles, logos, or UI in frame unless the user explicitly asks for them"
+      ];
+
+      return {
+        name,
+        guide,
+        buildPrompt(note) {
+          return `You are helping the user develop an image-to-video prompt for ${target}.
+
+The user will use this with a reference image. Your role is not to immediately write a generic final prompt. Your role is to look at the image, understand the user's note, and guide them like a video prompt director.
+
+Before writing the final prompt:
+- identify what should stay stable from the image
+- identify what can move or change
+- identify what camera movement would fit
+- ask only the few follow-up questions that would most improve the result
+- if the user says to choose for them, choose sensible defaults that preserve the image
+
+Use these model-specific notes as craft guidance, not as a cage:
+${sharedRules.map((rule) => `- ${rule}`).join("\n")}
+${rules.map((rule) => `- ${rule}`).join("\n")}
+
+${consultationFlowGuide}
+
+[User Extra Notes]
+${note || "(none)"}`.trim();
+        }
+      };
+    }
+
+    const modelProfiles = {
+      ltx: createT2VProfile({
+        name: "LTX / ComfyUI",
+        guide: "LTX 공식 프롬프팅 가이드 기준으로 한 문단형, 현재형, 시각적으로 명확한 문장으로 정리해서 복사합니다.",
+        target: "LTX-Video / ComfyUI",
+        rules: [
+          "the [Final Prompt] section must be English only",
+          "write one flowing paragraph, not bullet points",
+          "keep the wording in present tense",
+          "describe the shot, scene, subject, action, camera movement, lighting, and atmosphere clearly",
+          "use visible cues instead of abstract feelings whenever possible",
+          "if the user wants more than one shot, keep the sequence physically coherent and easy to follow",
+          "do not add readable text, logos, or subtitles unless the user explicitly asks for them",
+          "keep the final output concrete, visual, and easy to imagine as a real moving shot"
+        ]
+      }),
+      wan: createT2VProfile({
+        name: "Wan / ComfyUI",
+        guide: "Wan 계열처럼 로컬에서 돌릴 때도 잘 먹도록, 장면-행동-카메라를 더 단단하게 풀어쓰는 버전입니다.",
+        target: "Wan video generation / ComfyUI",
+        rules: [
+          "the [Final Prompt] section must be English only",
+          "make subject identity, motion, camera move, and background anchors explicit",
+          "prefer clear physical actions and camera verbs over poetic wording",
+          "keep the clip readable as one natural progression from the opening frame to the ending beat",
+          "if there are multiple beats, order them as a simple progression",
+          "avoid text overlays, subtitles, and logo requests unless explicitly asked"
+        ]
+      }),
+      veo: createT2VProfile({
+        name: "Veo",
+        guide: "Veo 공식 프롬프트 가이드처럼 주체, 맥락, 행동, 카메라, 조명, 구성을 균형 있게 정리합니다.",
+        target: "Google Veo video generation",
+        rules: [
+          "the [Final Prompt] section must be English only",
+          "describe the subject, environment, action, camera framing, composition, lighting, and style clearly",
+          "make the camera move and motion progression explicit when they matter",
+          "keep the scene physically readable and grounded in visible detail",
+          "if audio is not requested, stay visual-first and do not invent dialogue",
+          "avoid readable in-frame text unless explicitly requested"
+        ]
+      }),
+      runway: createT2VProfile({
+        name: "Runway",
+        guide: "Runway 공식 가이드처럼 간단하고 긍정적인 문장으로, 무엇이 움직이는지 먼저 또렷하게 적는 버전입니다.",
+        target: "Runway Gen video generation",
+        rules: [
+          "the [Final Prompt] section must be English only",
+          "start from a clean readable scene and describe the motion you want directly",
+          "prefer positive wording over negative exclusions",
+          "focus on subject motion, camera motion, and scene motion instead of overloading visual adjectives",
+          "if the clip is short, keep one dominant action or transformation at the center",
+          "avoid text overlays and unnecessary UI-like words unless explicitly requested"
+        ]
+      }),
+      sora: createT2VProfile({
+        name: "Sora",
+        guide: "Sora 계열에 맞게 장면, 시간 흐름, 카메라 진행, 스타일 힌트를 균형 있게 서술하는 방식입니다.",
+        target: "OpenAI Sora video generation",
+        rules: [
+          "the [Final Prompt] section must be English only",
+          "state the subject, setting, action, camera framing, lighting, and pacing explicitly",
+          "make the temporal progression easy to follow, especially if there is more than one beat",
+          "use cinematic but readable language that still keeps the physical scene grounded",
+          "keep continuity strong across the clip so the scene feels like one coherent generation",
+          "avoid adding visible text or logos unless explicitly requested"
+        ]
+      }),
+      seedance: createT2VProfile({
+        name: "Seedance",
+        guide: "Seedance 공식 소개에서 강조하는 복잡한 액션, 카메라 움직임, 멀티샷 연결을 살리는 방향으로 복사합니다.",
+        target: "Seedance video generation",
+        rules: [
+          "the [Final Prompt] section must be English only",
+          "keep the main subject, action sequence, and camera plan very explicit",
+          "if the user wants multiple cuts, turn them into a clean, coherent shot progression",
+          "make motion logic, timing, and transitions easy to infer from the wording",
+          "keep the prompt natural and readable, but specific enough for complex action and camera movement",
+          "support cinematic flow, continuity, and visual consistency across the whole clip",
+          "do not add visible text or overlays unless the user explicitly asks for them"
+        ]
+      }),
+      kling: createT2VProfile({
+        name: "Kling",
+        guide: "Kling 공식 가이드에서 강조하는 샷 구성, 카메라 각도, 컷 진행, 주체 일관성을 더 또렷하게 적는 방향입니다.",
+        target: "Kling video generation",
+        rules: [
+          "the [Final Prompt] section must be English only",
+          "make the shot progression, framing, camera angles, and camera movement explicit",
+          "clearly state what the subject does and what remains visually stable",
+          "if the user wants multiple shots, order them in a clean progression with continuity",
+          "keep the core subject identity, environment anchors, and visual logic consistent across cuts",
+          "if dialogue or audio is not requested, keep the prompt visual-first",
+          "do not add text overlays unless the user explicitly asks for them"
+        ]
+      }),
+      luma: createT2VProfile({
+        name: "Luma Dream Machine",
+        guide: "Dream Machine 쪽은 영화 같은 장면 묘사와 카메라 감각을 조금 더 자연어스럽게 살려주는 버전입니다.",
+        target: "Luma Dream Machine video generation",
+        rules: [
+          "the [Final Prompt] section must be English only",
+          "use natural cinematic language, but keep the subject, motion, and camera readable",
+          "make framing, lens feel, and scene atmosphere concrete instead of vague",
+          "if the user wants a dreamy or emotional clip, anchor it in visible scene detail",
+          "keep motion continuity clear so the generated shot feels intentional",
+          "avoid readable text in frame unless explicitly requested"
+        ]
+      }),
+      pika: createT2VProfile({
+        name: "Pika",
+        guide: "Pika 계열은 한 장면 안에서 눈에 띄는 변화나 액션 훅을 또렷하게 쓰는 쪽으로 정리합니다.",
+        target: "Pika video generation",
+        rules: [
+          "the [Final Prompt] section must be English only",
+          "center the prompt around one dominant scene idea, action beat, or transformation",
+          "name the camera movement clearly if it matters, but keep the scene easy to parse",
+          "use vivid but simple wording that makes the main motion obvious",
+          "avoid stacking too many conflicting effects or style changes into one short clip",
+          "avoid in-frame text unless explicitly requested"
+        ]
+      }),
+      pixverse: createT2VProfile({
+        name: "PixVerse",
+        guide: "PixVerse는 주체, 행동, 환경, 카메라를 간단명료하게 적는 쪽이 잘 맞아서 그 방향으로 정리합니다.",
+        target: "PixVerse video generation",
+        rules: [
+          "the [Final Prompt] section must be English only",
+          "keep the prompt as a short natural-language shot description that clearly states subject, action, environment, camera, and mood",
+          "state the camera move and motion intensity clearly if they matter",
+          "make the main subject and movement readable at a glance",
+          "if the user wants style, keep it as a short support cue instead of letting it dominate the whole prompt",
+          "avoid readable text and logo instructions unless explicitly requested"
+        ]
+      }),
+      hailuo: createT2VProfile({
+        name: "Hailuo",
+        guide: "Hailuo 쪽은 카메라 물리감, 주체 일관성, 환경 반응을 또렷하게 적는 방향으로 맞춥니다.",
+        target: "Hailuo / MiniMax video generation",
+        rules: [
+          "the [Final Prompt] section must be English only",
+          "keep one clear subject anchor and one readable motion progression",
+          "describe camera movement like a physical shot, not a vague vibe",
+          "include environmental reactions only when they support the main action",
+          "keep identity, outfit, and major scene anchors stable unless the user asks for change",
+          "avoid visible text or poster-like typography unless explicitly requested"
+        ]
+      }),
+      vidu: createT2VProfile({
+        name: "Vidu",
+        guide: "Vidu는 간결한 설명 안에서도 주체, 동작, 카메라, 연속성을 놓치지 않게 적는 버전입니다.",
+        target: "Vidu video generation",
+        rules: [
+          "the [Final Prompt] section must be English only",
+          "state the subject, action, camera move, and environment anchors clearly",
+          "keep the motion progression straightforward and easy to stage",
+          "if there are multiple beats, present them as one coherent progression rather than unrelated fragments",
+          "preserve continuity and visual stability unless the user asks for a dramatic change",
+          "avoid readable text or subtitle instructions unless explicitly requested"
+        ]
+      })
+    };
+
+    const i2vProfiles = {
+      ltx: createI2VProfile({
+        name: "LTX / ComfyUI",
+        guide: "LTX 쪽은 시작 이미지를 실제 첫 프레임으로 두고, 그 위에 카메라와 움직임을 자연어 문장으로 또렷하게 얹는 방향이에요.",
+        target: "LTX-Video / ComfyUI image-to-video",
+        rules: [
+          "the [Final Prompt] section must be English only",
+          "write one flowing paragraph, not bullet points",
+          "keep the wording in present tense",
+          "describe how motion grows from the attached frame instead of rewriting the whole scene",
+          "make subject action, camera movement, lighting continuity, and atmosphere progression clear",
+          "keep the resulting shot visually coherent and grounded in the original image"
+        ]
+      }),
+      wan: createI2VProfile({
+        name: "Wan / ComfyUI",
+        guide: "Wan 계열은 유지할 것과 움직일 것을 더 또렷하게 나누고, 시작 이미지에서 어디로 변하는지 선명하게 적는 쪽이 좋아요.",
+        target: "Wan image-to-video / ComfyUI",
+        rules: [
+          "the [Final Prompt] section must be English only",
+          "make stable anchors, changing motion, and camera progression explicit",
+          "prefer clear physical actions and camera verbs over vague emotional wording",
+          "keep the motion progression readable from the attached first frame to the ending beat",
+          "if there are multiple beats, order them as one simple coherent progression"
+        ]
+      }),
+      veo: createI2VProfile({
+        name: "Veo",
+        guide: "Veo 기준으로는 이미지에서 이미 보이는 주체와 환경을 먼저 읽고, 그 위에 행동과 카메라를 균형 있게 붙이는 방향이에요.",
+        target: "Google Veo image-to-video",
+        rules: [
+          "the [Final Prompt] section must be English only",
+          "describe the subject, environment, action, composition, camera, lighting, and style clearly",
+          "treat the attached image as the true opening frame and continue from it naturally",
+          "make the camera move and motion progression explicit when they matter",
+          "keep the scene physically readable and grounded in visible detail"
+        ]
+      }),
+      runway: createI2VProfile({
+        name: "Runway",
+        guide: "Runway 쪽은 참조 이미지에서 유지할 요소를 자연스럽게 살리고, 어떤 변화가 일어나는지 직접적이고 긍정적으로 적는 쪽이 잘 맞아요.",
+        target: "Runway image-to-video",
+        rules: [
+          "the [Final Prompt] section must be English only",
+          "start from the attached image as the established scene and describe the motion you want directly",
+          "prefer positive wording over negative exclusions",
+          "focus on subject motion, camera motion, and scene change instead of stacking too many style adjectives",
+          "if the clip is short, keep one dominant action or transformation at the center"
+        ]
+      }),
+      sora: createI2VProfile({
+        name: "Sora",
+        guide: "Sora 쪽은 첫 프레임으로 주어진 이미지에서 시간 흐름이 어떻게 이어지는지, 카메라와 행동이 어떻게 발전하는지 또렷하게 적는 방식이에요.",
+        target: "OpenAI Sora image-to-video",
+        rules: [
+          "the [Final Prompt] section must be English only",
+          "state the subject, setting, action, camera framing, lighting, and pacing explicitly",
+          "make the temporal progression easy to follow from the provided opening frame",
+          "use cinematic but readable language that keeps the scene physically grounded",
+          "keep continuity strong so the clip feels like one coherent continuation of the image"
+        ]
+      }),
+      seedance: createI2VProfile({
+        name: "Seedance",
+        guide: "Seedance는 시작 이미지에서 이어지는 액션, 카메라, 컷 전개가 분명할수록 좋아서 그 방향으로 정리합니다.",
+        target: "Seedance image-to-video",
+        rules: [
+          "the [Final Prompt] section must be English only",
+          "keep the main subject, action sequence, and camera plan very explicit",
+          "if the user wants more than one beat, turn them into a clean, coherent progression from the provided frame",
+          "make motion logic, timing, and transitions easy to infer from the wording",
+          "support cinematic flow, continuity, and visual consistency across the whole clip"
+        ]
+      }),
+      kling: createI2VProfile({
+        name: "Kling",
+        guide: "Kling은 이미지에서 이미 정해진 장면을 유지하면서, 무엇이 움직이고 카메라가 어떻게 따라가는지 또렷하게 쓰는 쪽이 맞아요.",
+        target: "Kling image-to-video",
+        rules: [
+          "the [Final Prompt] section must be English only",
+          "make the shot progression, framing, camera angles, and camera movement explicit",
+          "clearly state what the subject does and what should remain visually stable from the input image",
+          "if the user wants multiple beats, order them in one clean progression with continuity",
+          "keep the core subject identity, environment anchors, and visual logic consistent across the clip"
+        ]
+      }),
+      luma: createI2VProfile({
+        name: "Luma Dream Machine",
+        guide: "Dream Machine 쪽은 입력 이미지를 감성적인 출발점으로 삼되, 카메라 감각과 장면 변화는 자연어로 또렷하게 적는 버전이에요.",
+        target: "Luma Dream Machine image-to-video",
+        rules: [
+          "the [Final Prompt] section must be English only",
+          "use natural cinematic language, but keep the subject, motion, and camera readable",
+          "make framing, lens feel, and atmosphere progression concrete instead of vague",
+          "if the user wants an emotional clip, anchor it in visible scene detail from the image",
+          "keep motion continuity clear so the generated shot feels intentional"
+        ]
+      }),
+      pika: createI2VProfile({
+        name: "Pika",
+        guide: "Pika는 입력 이미지 위에서 어떤 변화가 제일 먼저 일어나는지, 어떤 움직임이 핵심인지 분명하게 적는 게 좋아요.",
+        target: "Pika image-to-video",
+        rules: [
+          "the [Final Prompt] section must be English only",
+          "center the prompt around one dominant motion beat, visual change, or transformation",
+          "name the camera movement clearly if it matters, but keep the scene easy to picture",
+          "use vivid but simple wording that makes the main motion obvious",
+          "avoid stacking too many conflicting effects or style changes into one short clip"
+        ]
+      }),
+      pixverse: createI2VProfile({
+        name: "PixVerse",
+        guide: "PixVerse는 입력 이미지를 그대로 출발점으로 두고, 주체/행동/환경/카메라를 짧은 자연어 문장으로 정리하는 방식으로 맞춥니다.",
+        target: "PixVerse image-to-video",
+        rules: [
+          "the [Final Prompt] section must be English only",
+          "keep the prompt as a short natural-language shot description that clearly states subject, action, environment, camera, and mood",
+          "state the camera move and motion intensity clearly if they matter",
+          "make the main subject and movement readable at a glance",
+          "if the user wants style, keep it as a short support cue instead of letting it dominate the whole prompt"
+        ]
+      }),
+      hailuo: createI2VProfile({
+        name: "Hailuo",
+        guide: "Hailuo는 시작 이미지의 주체 일관성과 카메라 물리감을 먼저 지키고, 환경 반응은 필요한 만큼만 붙이는 방향이에요.",
+        target: "Hailuo / MiniMax image-to-video",
+        rules: [
+          "the [Final Prompt] section must be English only",
+          "keep one clear subject anchor and one readable motion progression",
+          "describe camera movement like a physical shot, not a vague vibe",
+          "include environmental reactions only when they support the main action",
+          "keep identity, outfit, and major scene anchors stable unless the user asks for change"
+        ]
+      }),
+      vidu: createI2VProfile({
+        name: "Vidu",
+        guide: "Vidu는 입력 이미지에서 이어지는 주체, 동작, 카메라, 연속성을 간결하지만 놓치지 않게 적는 방향으로 갑니다.",
+        target: "Vidu image-to-video",
+        rules: [
+          "the [Final Prompt] section must be English only",
+          "state the subject, action, camera move, and environment anchors clearly",
+          "keep the motion progression straightforward and easy to stage from the provided image",
+          "if there are multiple beats, present them as one coherent progression rather than unrelated fragments",
+          "preserve continuity and visual stability unless the user asks for a dramatic change"
+        ]
+      })
+    };
+
+    const shellEl = document.querySelector(".shell");
+    const chooserScreen = document.getElementById("chooserScreen");
+    const t2vStepScreen = document.getElementById("t2vStepScreen");
+    const t2vResultScreen = document.getElementById("t2vResultScreen");
+    const i2vScreen = document.getElementById("i2vScreen");
+    const backBtn = document.getElementById("backBtn");
+    const selectionRail = document.getElementById("selectionRail");
+    const t2vStepTitle = document.getElementById("t2vStepTitle");
+    const t2vStepCopy = document.getElementById("t2vStepCopy");
+    const t2vStepBadge = document.getElementById("t2vStepBadge");
+    const t2vCards = document.getElementById("t2vCards");
+    const t2vSummary = document.getElementById("t2vSummary");
+    const t2vExtraNote = document.getElementById("t2vExtraNote");
+    const modelGuideCopy = document.getElementById("modelGuideCopy");
+    const modelPromptPreview = document.getElementById("modelPromptPreview");
+    const copyModelPromptBtn = document.getElementById("copyModelPromptBtn");
+    const resetT2VBtn = document.getElementById("resetT2VBtn");
+    const copyState = document.getElementById("copyState");
+    const i2vGuideCopy = document.getElementById("i2vGuideCopy");
+    const i2vPromptPreview = document.getElementById("i2vPromptPreview");
+    const copyI2VPromptBtn = document.getElementById("copyI2VPromptBtn");
+    const backToChooserBtn = document.getElementById("backToChooserBtn");
+    const i2vCopyState = document.getElementById("i2vCopyState");
+    const directInputModal = document.getElementById("directInputModal");
+    const directInputTitle = document.getElementById("directInputTitle");
+    const directInputHelper = document.getElementById("directInputHelper");
+    const directInputField = document.getElementById("directInputField");
+    const directInputValidation = document.getElementById("directInputValidation");
+    const saveDirectInputBtn = document.getElementById("saveDirectInputBtn");
+    const skipDirectInputBtn = document.getElementById("skipDirectInputBtn");
+    const cancelDirectInputBtn = document.getElementById("cancelDirectInputBtn");
+
+    const state = {
+      mode: null,
+      stepIndex: 0,
+      selections: {},
+      currentView: "chooser",
+      directInputStep: null,
+      directInputMode: "direct",
+      pendingOption: null
+    };
+
+    function clone(value) {
+      return JSON.parse(JSON.stringify(value || {}));
+    }
+
+    function hideAllScreens() {
+      chooserScreen.classList.add("hidden");
+      t2vStepScreen.classList.add("hidden");
+      t2vResultScreen.classList.add("hidden");
+      i2vScreen.classList.add("hidden");
+    }
+
+    function historyPayload(view = state.currentView) {
+      return {
+        marker: HISTORY_MARKER,
+        mode: state.mode,
+        stepIndex: state.stepIndex,
+        selections: clone(state.selections),
+        currentView: view,
+        t2vExtraNote: t2vExtraNote ? t2vExtraNote.value : ""
+      };
+    }
+
+    function syncHistory(mode = "push", view = state.currentView) {
+      const payload = historyPayload(view);
+      if (mode === "replace") {
+        window.history.replaceState(payload, "", window.location.href);
+      } else {
+        window.history.pushState(payload, "", window.location.href);
+      }
+    }
+
+    function renderSelectionRail() {
+      if (!state.mode) {
+        shellEl.classList.remove("with-rail");
+        selectionRail.classList.add("hidden");
+        selectionRail.innerHTML = "";
+        return;
+      }
+
+      const items = [];
+
+      if (state.mode === "t2v") {
+        items.push({ label: "시작 방식", value: "Text to Video" });
+        t2vSteps.forEach((step) => {
+          const selected = state.selections[step.key];
+          if (selected) {
+            items.push({ label: step.label, value: selected.label });
+          }
+        });
+      } else if (state.mode === "i2v") {
+        items.push({ label: "시작 방식", value: "Image to Video" });
+        items.push({ label: "작업 방향", value: "이미지와 함께 상담 시작" });
+        items.push({ label: "핵심 포인트", value: "이미지 분석 먼저" });
+      }
+
+      if (!items.length) {
+        shellEl.classList.remove("with-rail");
+        selectionRail.classList.add("hidden");
+        selectionRail.innerHTML = "";
+        return;
+      }
+
+      shellEl.classList.add("with-rail");
+      selectionRail.classList.remove("hidden");
+      selectionRail.innerHTML = `
+        <div class="selection-rail-head">
+          <span>Selection</span>
+          <strong>지금까지 고른 내용</strong>
+        </div>
+        <div class="selection-rail-list">
+          ${items.map((item) => `
+            <div class="selection-rail-item">
+              <strong>${item.label}</strong>
+              <span>${item.value}</span>
+            </div>
+          `).join("")}
+        </div>
+      `;
+    }
+
+    function showChooser(historyMode = null) {
+      state.mode = null;
+      state.stepIndex = 0;
+      state.selections = {};
+      state.currentView = "chooser";
+      t2vExtraNote.value = "";
+      copyState.textContent = "";
+      i2vCopyState.textContent = "";
+      hideAllScreens();
+      chooserScreen.classList.remove("hidden");
+      backBtn.classList.add("hidden");
+      renderSelectionRail();
+      if (historyMode) {
+        syncHistory(historyMode, "chooser");
+      }
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function startMode(mode, historyMode = "push") {
+      state.mode = mode;
+      backBtn.classList.remove("hidden");
+      if (mode === "t2v") {
+        state.stepIndex = 0;
+        state.selections = {};
+        t2vExtraNote.value = "";
+        renderT2VStep();
+      } else {
+        renderI2VScreen();
+      }
+      renderSelectionRail();
+      if (historyMode) {
+        syncHistory(historyMode);
+      }
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function getActiveOptions(step) {
+      const subject = state.selections.subject?.key;
+      const focus = state.selections.focus?.key;
+      const structure = state.selections.structure?.key;
+      const motion = state.selections.motion?.key;
+      const filters = [];
+
+      const subjectMap = {
+        focus: {
+          person: ["face", "body", "mood", "ending"],
+          product: ["product", "info", "mood", "ending"],
+          landscape: ["mood", "info", "ending"],
+          explainer: ["info", "product", "mood", "ending"],
+          music: ["face", "body", "mood", "ending"],
+          illustration: ["face", "body", "mood", "ending"]
+        },
+        structure: {
+          person: ["single", "two-cut", "three-cut", "hook-loop", "intro-outro"],
+          product: ["single", "two-cut", "three-cut", "hook-loop", "intro-outro"],
+          landscape: ["single", "two-cut", "three-cut", "intro-outro"],
+          explainer: ["single", "two-cut", "three-cut", "hook-loop"],
+          music: ["two-cut", "three-cut", "multishot", "hook-loop", "intro-outro"],
+          illustration: ["single", "two-cut", "three-cut", "multishot", "intro-outro"]
+        },
+        camera: {
+          person: ["static", "push-in", "pull-out", "pan", "follow", "handheld", "orbit", "tilt-reveal"],
+          product: ["static", "push-in", "pull-out", "pan", "orbit", "tilt-reveal"],
+          landscape: ["static", "push-in", "pull-out", "pan", "handheld", "tilt-reveal"],
+          explainer: ["static", "push-in", "pull-out", "pan", "follow"],
+          music: ["push-in", "pull-out", "pan", "follow", "handheld", "orbit", "tilt-reveal"],
+          illustration: ["static", "push-in", "pull-out", "pan", "orbit", "tilt-reveal"]
+        },
+        motion: {
+          person: ["person-action", "expression-only", "camera-only", "env-motion", "subject-and-env", "high-energy"],
+          product: ["product-motion", "camera-only", "env-motion", "high-energy"],
+          landscape: ["env-motion", "camera-only"],
+          explainer: ["camera-only", "env-motion", "expression-only", "product-motion"],
+          music: ["person-action", "expression-only", "env-motion", "subject-and-env", "high-energy"],
+          illustration: ["person-action", "env-motion", "subject-and-env", "high-energy", "expression-only"]
+        },
+        tempo: {
+          person: ["slow", "natural", "rhythmic", "fast", "build-up", "stop-start"],
+          product: ["slow", "natural", "rhythmic", "build-up"],
+          landscape: ["slow", "natural", "build-up"],
+          explainer: ["slow", "natural", "rhythmic"],
+          music: ["natural", "rhythmic", "fast", "build-up", "stop-start"],
+          illustration: ["slow", "natural", "rhythmic", "build-up", "fast"]
+        },
+        tone: {
+          person: ["cinematic", "emotional", "commercial", "luxury", "shortform"],
+          product: ["commercial", "luxury", "cinematic", "shortform"],
+          landscape: ["cinematic", "emotional", "luxury"],
+          explainer: ["tutorial", "commercial", "shortform"],
+          music: ["music-video", "cinematic", "emotional", "shortform"],
+          illustration: ["cinematic", "emotional", "music-video", "shortform"]
+        }
+      };
+
+      const focusMap = {
+        camera: {
+          face: ["static", "push-in", "pull-out", "pan"],
+          body: ["push-in", "pull-out", "pan", "follow", "handheld", "orbit"],
+          product: ["static", "push-in", "pull-out", "orbit", "tilt-reveal"],
+          mood: ["static", "push-in", "pull-out", "pan", "handheld", "tilt-reveal"],
+          info: ["static", "push-in", "pan", "tilt-reveal"],
+          ending: ["pull-out", "pan", "handheld", "tilt-reveal"]
+        },
+        motion: {
+          face: ["expression-only", "person-action", "camera-only", "subject-and-env"],
+          body: ["person-action", "high-energy", "subject-and-env", "camera-only"],
+          product: ["product-motion", "camera-only", "env-motion"],
+          mood: ["env-motion", "camera-only", "subject-and-env"],
+          info: ["camera-only", "product-motion", "env-motion"],
+          ending: ["high-energy", "camera-only", "subject-and-env"]
+        },
+        tone: {
+          face: ["cinematic", "emotional", "luxury", "shortform"],
+          body: ["cinematic", "commercial", "music-video", "shortform"],
+          product: ["commercial", "luxury", "cinematic"],
+          mood: ["cinematic", "emotional", "music-video", "luxury"],
+          info: ["tutorial", "commercial", "shortform"],
+          ending: ["cinematic", "music-video", "shortform", "commercial"]
+        }
+      };
+
+      const structureMap = {
+        camera: {
+          single: ["static", "push-in", "pull-out", "pan", "follow", "orbit", "handheld", "tilt-reveal"],
+          "two-cut": ["static", "push-in", "pull-out", "pan", "follow", "tilt-reveal"],
+          "three-cut": ["static", "push-in", "pull-out", "pan", "follow", "tilt-reveal"],
+          multishot: ["static", "pan", "follow", "handheld", "tilt-reveal"],
+          "hook-loop": ["push-in", "pull-out", "pan", "follow", "handheld", "tilt-reveal"],
+          "intro-outro": ["static", "push-in", "pull-out", "pan", "tilt-reveal"]
+        },
+        tempo: {
+          single: ["slow", "natural", "rhythmic", "fast"],
+          "two-cut": ["slow", "natural", "rhythmic", "build-up"],
+          "three-cut": ["slow", "natural", "rhythmic", "build-up", "stop-start"],
+          multishot: ["rhythmic", "fast", "build-up", "stop-start"],
+          "hook-loop": ["rhythmic", "fast", "build-up", "stop-start"],
+          "intro-outro": ["slow", "natural", "build-up"]
+        },
+        tone: {
+          single: ["cinematic", "commercial", "emotional", "tutorial", "luxury", "shortform"],
+          "two-cut": ["cinematic", "commercial", "emotional", "tutorial", "shortform"],
+          "three-cut": ["cinematic", "commercial", "emotional", "music-video", "shortform"],
+          multishot: ["cinematic", "commercial", "music-video", "shortform"],
+          "hook-loop": ["commercial", "music-video", "shortform"],
+          "intro-outro": ["cinematic", "emotional", "luxury", "commercial"]
+        }
+      };
+
+      const motionMap = {
+        camera: {
+          "person-action": ["push-in", "pull-out", "pan", "follow", "handheld", "orbit"],
+          "product-motion": ["static", "push-in", "pull-out", "pan", "orbit", "tilt-reveal"],
+          "env-motion": ["static", "push-in", "pull-out", "pan", "handheld", "tilt-reveal"],
+          "camera-only": ["static", "push-in", "pull-out", "pan", "orbit", "handheld", "tilt-reveal"],
+          "expression-only": ["static", "push-in", "pull-out", "pan"],
+          "high-energy": ["pan", "follow", "handheld", "orbit", "tilt-reveal"],
+          "subject-and-env": ["push-in", "pull-out", "pan", "follow", "handheld", "orbit"]
+        },
+        tempo: {
+          "person-action": ["natural", "rhythmic", "fast", "build-up"],
+          "product-motion": ["slow", "natural", "rhythmic", "build-up"],
+          "env-motion": ["slow", "natural", "build-up"],
+          "camera-only": ["slow", "natural", "rhythmic"],
+          "expression-only": ["slow", "natural"],
+          "high-energy": ["rhythmic", "fast", "build-up", "stop-start"],
+          "subject-and-env": ["natural", "rhythmic", "build-up", "fast"]
+        },
+        tone: {
+          "person-action": ["cinematic", "commercial", "music-video", "shortform"],
+          "product-motion": ["commercial", "luxury", "cinematic", "shortform"],
+          "env-motion": ["cinematic", "emotional", "luxury"],
+          "camera-only": ["cinematic", "emotional", "tutorial", "commercial"],
+          "expression-only": ["emotional", "cinematic", "luxury"],
+          "high-energy": ["music-video", "shortform", "commercial"],
+          "subject-and-env": ["cinematic", "music-video", "shortform", "emotional"]
+        }
+      };
+
+      if (subjectMap[step.key]?.[subject]) filters.push(subjectMap[step.key][subject]);
+      if (focusMap[step.key]?.[focus]) filters.push(focusMap[step.key][focus]);
+      if (structureMap[step.key]?.[structure]) filters.push(structureMap[step.key][structure]);
+      if (motionMap[step.key]?.[motion]) filters.push(motionMap[step.key][motion]);
+
+      if (!filters.length) return step.options;
+
+      const allowed = filters.reduce((current, set) => {
+        if (!current) return [...set];
+        return current.filter((key) => set.includes(key));
+      }, null);
+
+      const pickByKeys = (keys) => step.options.filter((option) => keys.includes(option.key));
+
+      if (!allowed?.length) {
+        const fallbackOptions = pickByKeys(filters[filters.length - 1] || []);
+        return fallbackOptions.length ? fallbackOptions : step.options;
+      }
+
+      const filtered = pickByKeys(allowed);
+      if (filtered.length >= 2) return filtered;
+
+      const latestContextOptions = pickByKeys(filters[filters.length - 1] || []);
+      if (latestContextOptions.length > filtered.length) return latestContextOptions;
+
+      const subjectContextOptions = pickByKeys(filters[0] || []);
+      if (subjectContextOptions.length > filtered.length) return subjectContextOptions;
+
+      return filtered.length ? filtered : step.options;
+    }
+
+    function renderT2VStep() {
+      const step = t2vSteps[state.stepIndex];
+      const activeOptions = getActiveOptions(step);
+      hideAllScreens();
+      state.currentView = "t2v-step";
+      t2vStepScreen.classList.remove("hidden");
+      t2vStepTitle.textContent = step.title;
+      t2vStepCopy.textContent = `${step.copy} 눈에 들어오는 카드를 누르면 바로 다음 단계로 넘어갑니다. 딱 맞는 카드가 없을 때만 직접 적기를 쓰면 돼요.`;
+      t2vStepBadge.textContent = `STEP ${state.stepIndex + 1}`;
+
+      const directCard = `
+        <button class="option-card" type="button" data-direct="${step.key}">
+          ${renderVideoCardThumb(step.key, { key: "__direct__" }, "direct", "write")}
+          <div class="option-top">
+            <span class="mini-badge">DIRECT</span>
+            <span class="mini-badge">write</span>
+          </div>
+          <div>
+            <h3>직접 적기</h3>
+            <p class="option-desc">딱 맞는 카드가 없으면 여기서 한두 줄로 편하게 적고 넘어가면 돼요.</p>
+          </div>
+        </button>
+      `;
+
+      const optionCards = activeOptions.map((option) => `
+        <button class="option-card" type="button" data-step="${step.key}" data-option="${option.key}">
+          ${renderVideoCardThumb(step.key, option, step.label)}
+          <div class="option-top">
+            <span class="mini-badge">${step.label}</span>
+          </div>
+          <div>
+            <h3>${option.title}</h3>
+            <p class="option-desc">${option.desc}</p>
+          </div>
+        </button>
+      `).join("");
+
+      t2vCards.innerHTML = directCard + optionCards;
+
+      t2vCards.querySelectorAll("[data-option]").forEach((button) => {
+        button.addEventListener("click", () => {
+          const selected = activeOptions.find((option) => option.key === button.dataset.option);
+          selectPresetOption(step, selected);
+        });
+      });
+
+      t2vCards.querySelectorAll("[data-direct]").forEach((button) => {
+        button.addEventListener("click", () => openDirectInput(step));
+      });
+    }
+
+    function selectPresetOption(step, option) {
+      if (!step || !option) return;
+      state.selections[step.key] = {
+        key: option.key,
+        label: option.title,
+        desc: option.desc,
+        brief: option.brief,
+        detail: "",
+        manual: false
+      };
+      moveNext();
+    }
+
+    function moveNext() {
+      renderSelectionRail();
+      if (state.stepIndex < t2vSteps.length - 1) {
+        state.stepIndex += 1;
+        renderT2VStep();
+      } else {
+        renderT2VResult();
+      }
+      syncHistory("push");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function buildStructuredBrief() {
+      const lines = [
+        `Video type: ${state.selections.subject?.brief || ""}`,
+        state.selections.subject?.detail ? `Video type user detail: ${state.selections.subject.detail}` : "",
+        `Primary focus: ${state.selections.focus?.brief || ""}`,
+        state.selections.focus?.detail ? `Primary focus user detail: ${state.selections.focus.detail}` : "",
+        `Shot structure: ${state.selections.structure?.brief || ""}`,
+        state.selections.structure?.detail ? `Shot structure user detail: ${state.selections.structure.detail}` : "",
+        `Camera plan: ${state.selections.camera?.brief || ""}`,
+        state.selections.camera?.detail ? `Camera plan user detail: ${state.selections.camera.detail}` : "",
+        `Primary motion: ${state.selections.motion?.brief || ""}`,
+        state.selections.motion?.detail ? `Primary motion user detail: ${state.selections.motion.detail}` : "",
+        `Pacing and rhythm: ${state.selections.tempo?.brief || ""}`,
+        state.selections.tempo?.detail ? `Pacing and rhythm user detail: ${state.selections.tempo.detail}` : "",
+        `Tone and style: ${state.selections.tone?.brief || ""}`,
+        state.selections.tone?.detail ? `Tone and style user detail: ${state.selections.tone.detail}` : ""
+      ].filter(Boolean);
+
+      return lines.join("\n");
+    }
+
+    function renderT2VResult() {
+      hideAllScreens();
+      state.currentView = "t2v-result";
+      t2vResultScreen.classList.remove("hidden");
+      t2vSummary.innerHTML = t2vSteps.map((step) => {
+        const selected = state.selections[step.key];
+        return `
+          <div class="summary-item">
+            <strong>${step.label}</strong>
+            <span>${selected ? selected.label : "-"}</span>
+            ${selected?.detail ? `<p class="helper" style="margin-top:8px;">${selected.detail}</p>` : ""}
+          </div>
+        `;
+      }).join("");
+
+      renderSelectionRail();
+      updateModelPromptPreview();
+    }
+
+    function updateModelPromptPreview() {
+      modelGuideCopy.textContent = "이 지시문은 LLM이 먼저 사용할 영상 모델을 묻고, 필요하면 공식 프롬프트 가이드를 찾아 참고한 뒤 최종 프롬프트를 만들도록 안내합니다.";
+      modelPromptPreview.textContent = buildUniversalT2VPrompt(buildStructuredBrief(), t2vExtraNote.value.trim());
+      copyModelPromptBtn.textContent = "LLM 상담 지시문 복사";
+    }
+
+    function renderI2VScreen() {
+      hideAllScreens();
+      state.currentView = "i2v";
+      i2vScreen.classList.remove("hidden");
+      renderSelectionRail();
+      updateI2VPromptPreview();
+    }
+
+    function applyHistoryState(payload) {
+      state.mode = payload.mode || null;
+      state.stepIndex = typeof payload.stepIndex === "number"
+        ? Math.max(0, Math.min(payload.stepIndex, t2vSteps.length - 1))
+        : 0;
+      state.selections = clone(payload.selections);
+      state.currentView = payload.currentView || "chooser";
+      t2vExtraNote.value = payload.t2vExtraNote || "";
+      copyState.textContent = "";
+      i2vCopyState.textContent = "";
+
+      if (state.currentView === "t2v-step" && state.mode === "t2v") {
+        backBtn.classList.remove("hidden");
+        renderT2VStep();
+        renderSelectionRail();
+        return;
+      }
+
+      if (state.currentView === "t2v-result" && state.mode === "t2v") {
+        backBtn.classList.remove("hidden");
+        renderT2VResult();
+        return;
+      }
+
+      if (state.currentView === "i2v" && state.mode === "i2v") {
+        backBtn.classList.remove("hidden");
+        renderI2VScreen();
+        return;
+      }
+
+      showChooser(null);
+    }
+
+    function updateI2VPromptPreview() {
+      i2vGuideCopy.textContent = "복사한 뒤 이미지와 함께 붙여넣으면 됩니다. LLM이 먼저 이미지를 읽고, 사용자가 설명하지 않아도 되는 부분은 알아서 정리하도록 안내해둘게요.";
+      i2vPromptPreview.textContent = buildUniversalI2VPrompt();
+      copyI2VPromptBtn.textContent = "이미지와 함께 쓸 상담 지시문 복사";
+    }
+
+    function openDirectInput(step) {
+      state.directInputMode = "direct";
+      state.directInputStep = step;
+      state.pendingOption = null;
+      directInputTitle.textContent = "직접 적고 다음으로 넘어갈게요";
+      directInputHelper.textContent = "지금 단계에서 떠오르는 장면이나 방향을 편하게 적어주세요. 아직 선명하지 않다면 가볍게 한 줄만 적어도 충분해요.";
+      directInputValidation.textContent = "";
+      skipDirectInputBtn.hidden = true;
+      directInputField.value = "";
+      directInputField.placeholder = step.directPlaceholder;
+      directInputModal.classList.add("open");
+      directInputModal.setAttribute("aria-hidden", "false");
+      setTimeout(() => directInputField.focus(), 40);
+    }
+
+    function closeDirectInput() {
+      directInputModal.classList.remove("open");
+      directInputModal.setAttribute("aria-hidden", "true");
+      state.directInputStep = null;
+      state.pendingOption = null;
+      state.directInputMode = "direct";
+      directInputValidation.textContent = "";
+      skipDirectInputBtn.hidden = false;
+    }
+
+    function skipDirectInput() {
+      closeDirectInput();
+    }
+
+    function saveDirectInput() {
+      const value = directInputField.value.trim();
+      if (!state.directInputStep) {
+        closeDirectInput();
+        return;
+      }
+
+      if (!value) {
+        directInputValidation.textContent = "직접 적으려면 내용을 한 줄만 입력해주세요.";
+        directInputField.focus();
+        return;
+      }
+
+      state.selections[state.directInputStep.key] = {
+        key: "direct",
+        label: value,
+        desc: value,
+        brief: value,
+        detail: value,
+        manual: true
+      };
+
+      closeDirectInput();
+      moveNext();
+    }
+
+    function fallbackCopyText(text) {
+      const textarea = document.createElement("textarea");
+      textarea.value = text;
+      textarea.setAttribute("readonly", "");
+      textarea.style.position = "fixed";
+      textarea.style.top = "0";
+      textarea.style.left = "-9999px";
+      textarea.style.opacity = "0";
+      document.body.appendChild(textarea);
+
+      const selection = document.getSelection();
+      const originalRange = selection && selection.rangeCount > 0 ? selection.getRangeAt(0) : null;
+
+      textarea.focus();
+      textarea.select();
+      textarea.setSelectionRange(0, textarea.value.length);
+
+      let copied = false;
+      try {
+        copied = document.execCommand("copy");
+      } catch (error) {
+        copied = false;
+      }
+
+      document.body.removeChild(textarea);
+
+      if (selection) {
+        selection.removeAllRanges();
+        if (originalRange) {
+          selection.addRange(originalRange);
+        }
+      }
+
+      return copied;
+    }
+
+    async function copyText(text, stateEl, successText) {
+      try {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(text);
+          stateEl.textContent = successText;
+          return true;
+        }
+
+        if (fallbackCopyText(text)) {
+          stateEl.textContent = successText;
+          return true;
+        }
+
+        stateEl.textContent = "복사가 바로 안 되네요. 한 번만 더 눌러주세요.";
+        return false;
+      } catch (error) {
+        if (fallbackCopyText(text)) {
+          stateEl.textContent = successText;
+          return true;
+        }
+        stateEl.textContent = "복사가 바로 안 되네요. 한 번만 더 눌러주세요.";
+        return false;
+      }
+    }
+
+    document.querySelectorAll("[data-start]").forEach((button) => {
+      button.addEventListener("click", () => startMode(button.dataset.start));
+    });
+
+    t2vExtraNote.addEventListener("input", () => {
+      updateModelPromptPreview();
+      syncHistory("replace");
+    });
+    copyModelPromptBtn.addEventListener("click", async () => {
+      const prompt = buildUniversalT2VPrompt(buildStructuredBrief(), t2vExtraNote.value.trim());
+      await copyText(prompt, copyState, "LLM 상담 지시문을 복사했어요. ChatGPT나 Gemini에 붙여넣으면 사용할 영상 모델부터 물어보게 됩니다.");
+    });
+
+    copyI2VPromptBtn.addEventListener("click", async () => {
+      const prompt = buildUniversalI2VPrompt();
+      await copyText(prompt, i2vCopyState, "상담 지시문을 복사했어요. 이제 LLM에 이미지와 함께 붙여넣으면, 이미지 분석부터 편하게 시작할 수 있어요.");
+    });
+
+    resetT2VBtn.addEventListener("click", () => showChooser("push"));
+    backToChooserBtn.addEventListener("click", () => showChooser("push"));
+    backBtn.addEventListener("click", () => {
+      if (state.mode) {
+        window.history.back();
+      }
+    });
+    cancelDirectInputBtn.addEventListener("click", closeDirectInput);
+    saveDirectInputBtn.addEventListener("click", saveDirectInput);
+    skipDirectInputBtn.addEventListener("click", skipDirectInput);
+    directInputModal.addEventListener("click", (event) => {
+      if (event.target === directInputModal) {
+        closeDirectInput();
+      }
+    });
+
+    window.addEventListener("popstate", (event) => {
+      if (!event.state || event.state.marker !== HISTORY_MARKER) {
+        return;
+      }
+      applyHistoryState(event.state);
+    });
+
+    showChooser("replace");
+  </script>
 </body>
 </html>

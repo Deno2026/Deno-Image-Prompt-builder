@@ -23,6 +23,15 @@ DEFAULT_MANIFEST = Path(__file__).with_name("comfy_card_manifest.v1.json")
 REPO_ROOT = Path(__file__).resolve().parents[1]
 OUTPUT_DIR = DEFAULT_COMFY_ROOT / "output"
 ASSET_DIR = REPO_ROOT / "assets" / "cards"
+VIDEO_CARD_SANITY_SUFFIX = (
+    "single clean cinematic photograph of one moment, one coherent scene, "
+    "no text, no letters, no words, no typography, no captions, no subtitles, "
+    "no logo, no watermark, no interface, no split panels, no split screen, "
+    "no collage, no storyboard, no montage grid, no diptych, no triptych, "
+    "no badges, no labels, no circles, no graphic overlays, no UI elements, "
+    "not a screenshot, not a poster, not a social media feed, not a contact sheet, "
+    "not a film strip, not multiple frames, no repeated subject, no repeated faces, no repeated hands, no sequence layout"
+)
 
 SUBJECT_PROMPT_BASES = {
     "subjects": "clean category cover image for a prompt builder app, premium square thumbnail, simple readable subject-first visual",
@@ -155,7 +164,13 @@ def extract_settings(workflow: dict) -> dict:
     }
 
 
-def build_prompt_graph(settings: dict, prompt_text: str, filename_prefix: str, seed: int) -> dict:
+def build_prompt_graph(
+    settings: dict,
+    prompt_text: str,
+    filename_prefix: str,
+    seed: int,
+    power_loras_override: list[dict] | None = None,
+) -> dict:
     ids = settings["ids"]
     graph = {
         ids["clip"]: {
@@ -245,7 +260,8 @@ def build_prompt_graph(settings: dict, prompt_text: str, filename_prefix: str, s
         },
     }
 
-    for index, lora in enumerate(settings["power_loras"], start=1):
+    power_loras = settings["power_loras"] if power_loras_override is None else power_loras_override
+    for index, lora in enumerate(power_loras, start=1):
         graph[ids["power_lora"]]["inputs"][f"lora_{index}"] = lora
 
     return graph
@@ -287,9 +303,29 @@ def derive_asset_path(subject: str, step: str, option_key: str) -> Path:
     return ASSET_DIR / subject / step / f"{option_key}.webp"
 
 
+def normalize_video_prompt(prompt: str) -> str:
+    replacements = [
+        ("video frame", "cinematic photograph"),
+        ("video concept frame", "cinematic photograph"),
+        ("video concept still", "cinematic photograph"),
+        ("video concept", "cinematic photograph"),
+        ("video scene", "cinematic photograph"),
+        ("premium video frame", "premium cinematic photograph"),
+        ("shortform", "social video"),
+    ]
+    normalized = prompt
+    for source, target in replacements:
+        normalized = normalized.replace(source, target)
+    return normalized
+
+
 def build_prompt_from_item(item: dict) -> str:
     if item.get("prompt"):
-        return item["prompt"]
+        prompt = item["prompt"]
+        if item.get("subject") == "video":
+            prompt = normalize_video_prompt(prompt)
+            return f"{prompt}, {VIDEO_CARD_SANITY_SUFFIX}"
+        return prompt
 
     subject = item["subject"]
     base = SUBJECT_PROMPT_BASES.get(subject, "photorealistic square card image")
@@ -297,20 +333,51 @@ def build_prompt_from_item(item: dict) -> str:
     cue = item.get("cue", "").strip()
     focus = ", ".join(part for part in [title, cue] if part)
     if focus:
-        return f"{base}, {focus}"
+        prompt = f"{base}, {focus}"
+        if subject == "video":
+            prompt = normalize_video_prompt(prompt)
+            return f"{prompt}, {VIDEO_CARD_SANITY_SUFFIX}"
+        return prompt
+    if subject == "video":
+        return f"{normalize_video_prompt(base)}, {VIDEO_CARD_SANITY_SUFFIX}"
     return base
 
 
-def convert_to_webp(source: Path, target: Path) -> None:
+def apply_runtime_overrides(settings: dict, args: argparse.Namespace) -> dict:
+    updated = json.loads(json.dumps(settings))
+
+    if args.latent_width:
+        updated["latent"]["width"] = args.latent_width
+    if args.latent_height:
+        updated["latent"]["height"] = args.latent_height
+    if args.resize_width:
+        updated["resize"]["width"] = args.resize_width
+    if args.resize_height:
+        updated["resize"]["height"] = args.resize_height
+    if args.megapixels is not None:
+        updated["resize"]["megapixels"] = args.megapixels
+    if args.ratio_preset:
+        updated["resize"]["ratio_preset"] = args.ratio_preset
+    if args.resize_mode:
+        updated["resize"]["mode"] = args.resize_mode
+    if args.resize_method:
+        updated["resize"]["resize_method"] = args.resize_method
+    if args.interpolation:
+        updated["resize"]["interpolation"] = args.interpolation
+
+    return updated
+
+
+def convert_to_webp(source: Path, target: Path, quality: int) -> None:
     target.parent.mkdir(parents=True, exist_ok=True)
     with Image.open(source) as image:
-        image.save(target, format="WEBP", quality=68, method=6)
+        image.save(target, format="WEBP", quality=quality, method=6)
 
 
 def run_batch(args: argparse.Namespace) -> int:
     workflow = load_json(Path(args.workflow))
     manifest = load_json(Path(args.manifest))
-    settings = extract_settings(workflow)
+    settings = apply_runtime_overrides(extract_settings(workflow), args)
 
     items = manifest[: args.limit] if args.limit else manifest
     print(f"Loaded {len(items)} manifest items")
@@ -322,7 +389,8 @@ def run_batch(args: argparse.Namespace) -> int:
         title = item.get("title", option_key)
         prompt_text = build_prompt_from_item(item)
         seed = random.randint(1, 2**32 - 1)
-        prefix = derive_prefix(subject, step, option_key)
+        prefix_root = args.prefix_root.strip("/\\") if args.prefix_root else "prompt-builder-v2"
+        prefix = f"{prefix_root}/{subject}/{step}/{option_key}"
         asset_path = derive_asset_path(subject, step, option_key)
 
         print(f"[{index}/{len(items)}] {subject}/{step}/{option_key} :: {title}")
@@ -332,7 +400,12 @@ def run_batch(args: argparse.Namespace) -> int:
         print(f"  prompt: {prompt_text}")
         print(f"  prefix: {prefix}")
 
-        graph = build_prompt_graph(settings, prompt_text, prefix, seed)
+        if args.dry_run:
+            continue
+
+        disable_loras = args.disable_loras or (item.get("subject") == "video" and not item.get("keep_loras"))
+        power_loras_override = [] if disable_loras else None
+        graph = build_prompt_graph(settings, prompt_text, prefix, seed, power_loras_override=power_loras_override)
         prompt_id = queue_prompt(args.comfy_base, graph)
         history_item = wait_for_completion(args.comfy_base, prompt_id, timeout_s=args.timeout)
         output_image = extract_output_image(history_item, settings["ids"]["save"])
@@ -340,7 +413,7 @@ def run_batch(args: argparse.Namespace) -> int:
         if not output_image.exists():
             raise FileNotFoundError(f"ComfyUI reported output but file not found: {output_image}")
 
-        convert_to_webp(output_image, asset_path)
+        convert_to_webp(output_image, asset_path, quality=args.webp_quality)
         print(f"  saved: {asset_path}")
 
         if args.keep_png_copy:
@@ -360,6 +433,19 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--timeout", type=int, default=600)
     parser.add_argument("--keep-png-copy", action="store_true")
     parser.add_argument("--overwrite", action="store_true")
+    parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--disable-loras", action="store_true")
+    parser.add_argument("--prefix-root", default="prompt-builder-v2")
+    parser.add_argument("--webp-quality", type=int, default=68)
+    parser.add_argument("--latent-width", type=int, default=0)
+    parser.add_argument("--latent-height", type=int, default=0)
+    parser.add_argument("--resize-width", type=int, default=0)
+    parser.add_argument("--resize-height", type=int, default=0)
+    parser.add_argument("--megapixels", type=float, default=None)
+    parser.add_argument("--ratio-preset", default="")
+    parser.add_argument("--resize-mode", default="")
+    parser.add_argument("--resize-method", default="")
+    parser.add_argument("--interpolation", default="")
     return parser.parse_args()
 
 

@@ -1,0 +1,4174 @@
+[
+  {
+    "subject": "thumbnail-person",
+    "step": "detail",
+    "option_key": "thumb-explain",
+    "title": "설명 / 강의형",
+    "cue": "정보 전달이 또렷한 설명형 썸네일"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "detail",
+    "option_key": "thumb-review",
+    "title": "리뷰 / 비교형",
+    "cue": "전후 비교나 평가 포인트가 보이는 썸네일"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "detail",
+    "option_key": "thumb-news",
+    "title": "이슈 / 뉴스형",
+    "cue": "반응과 메시지가 빠르게 읽히는 방향"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "detail",
+    "option_key": "thumb-vlog",
+    "title": "브이로그 / 일상형",
+    "cue": "가볍고 친근한 콘텐츠에 맞는 방향"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "detail",
+    "option_key": "thumb-reaction",
+    "title": "리액션 / 감정형",
+    "cue": "표정 자체가 클릭 포인트가 되는 방향"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "detail",
+    "option_key": "thumb-brand",
+    "title": "채널 대표 / 브랜딩형",
+    "cue": "대표 얼굴과 채널 정체성이 보이는 방향"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "detail",
+    "option_key": "thumb-howto",
+    "title": "튜토리얼 / 실전형",
+    "cue": "방법을 알려주는 콘텐츠에 맞는 방향"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "detail",
+    "option_key": "thumb-before-after",
+    "title": "전후 비교형",
+    "cue": "변화가 한눈에 느껴지는 썸네일"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "detail",
+    "option_key": "thumb-ranking",
+    "title": "추천 / 랭킹형",
+    "cue": "여러 정보를 묶어 보여주는 방향"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "detail",
+    "option_key": "thumb-story",
+    "title": "스토리 / 경험담형",
+    "cue": "감정선이 읽히는 이야기형 썸네일"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "detail",
+    "option_key": "thumb-promo",
+    "title": "홍보 / 알림형",
+    "cue": "신제품, 공지, 이벤트 전달에 맞는 방향"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "detail",
+    "option_key": "thumb-post",
+    "title": "후기 / 체험형",
+    "cue": "직접 써본 느낌과 감상이 중요한 방향"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "people",
+    "option_key": "thumb-one-female",
+    "title": "여성 1명",
+    "cue": "한 명의 표정이 가장 강하게 보이는 구성"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "people",
+    "option_key": "thumb-one-male",
+    "title": "남성 1명",
+    "cue": "한 명의 리액션이 중심이 되는 구성"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "people",
+    "option_key": "thumb-two-people",
+    "title": "2명 대면 구도",
+    "cue": "서로 다른 반응이 함께 보이는 구성"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "people",
+    "option_key": "thumb-host-product",
+    "title": "인물 + 제품",
+    "cue": "호스트와 핵심 대상이 함께 보이는 구성"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "people",
+    "option_key": "thumb-host-screen",
+    "title": "인물 + 화면",
+    "cue": "설명 대상이 되는 화면이나 결과물이 함께 보이는 구성"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "people",
+    "option_key": "thumb-group",
+    "title": "2~3명 그룹",
+    "cue": "토크나 패널형 콘텐츠에 맞는 구성"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "people",
+    "option_key": "thumb-senior",
+    "title": "시니어 / 전문가 인상",
+    "cue": "설명력과 신뢰감이 먼저 보이는 구성"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "people",
+    "option_key": "thumb-solo-wide",
+    "title": "인물 1명 + 여백",
+    "cue": "제목과 포인트 문구를 넣기 쉬운 구성"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "pose",
+    "option_key": "thumb-pose-point",
+    "title": "화면 / 제목 가리키기",
+    "cue": "설명이나 튜토리얼형에서 자주 쓰는 제스처"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "pose",
+    "option_key": "thumb-pose-openhand",
+    "title": "한 손으로 설명하기",
+    "cue": "정보 전달이 쉬운 오픈핸드 자세"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "pose",
+    "option_key": "thumb-pose-product",
+    "title": "제품이나 소품 들기",
+    "cue": "핵심 대상이 같이 보이는 썸네일 자세"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "pose",
+    "option_key": "thumb-pose-screen",
+    "title": "화면 캡처 옆에서 보여주기",
+    "cue": "설정 화면이나 결과물을 같이 보여주는 자세"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "pose",
+    "option_key": "thumb-pose-arms",
+    "title": "양손 펼쳐 리액션 주기",
+    "cue": "놀람이나 강조가 잘 보이는 손동작"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "pose",
+    "option_key": "thumb-pose-crossed",
+    "title": "팔짱으로 자신감 주기",
+    "cue": "전문가형 / 신뢰형 썸네일에 맞는 자세"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "pose",
+    "option_key": "thumb-pose-lean",
+    "title": "몸을 앞으로 숙여 집중시키기",
+    "cue": "클릭 유도용 긴장감이 있는 자세"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "pose",
+    "option_key": "thumb-pose-fists",
+    "title": "주먹 쥐고 강조하기",
+    "cue": "강한 메시지나 성과형 제목에 맞는 자세"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "pose",
+    "option_key": "thumb-pose-compare",
+    "title": "양쪽 비교 제스처",
+    "cue": "비교형 / 전후형 콘텐츠에 잘 맞는 자세"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "pose",
+    "option_key": "thumb-pose-seated",
+    "title": "책상 앞에 앉아 설명하기",
+    "cue": "강의형 / 설정형 썸네일에 맞는 자세"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "pose",
+    "option_key": "thumb-pose-up",
+    "title": "위쪽을 손으로 짚기",
+    "cue": "상단 제목이나 포인트를 올려주는 자세"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "pose",
+    "option_key": "thumb-pose-down",
+    "title": "아래쪽을 짚어 강조하기",
+    "cue": "하단 자막이나 결과를 가리키는 자세"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "pose",
+    "option_key": "thumb-pose-thumbsup",
+    "title": "엄지로 좋다고 표시하기",
+    "cue": "추천 / 후기형에 잘 맞는 자세"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "pose",
+    "option_key": "thumb-pose-question",
+    "title": "턱이나 볼에 손을 두고 의문형",
+    "cue": "질문형 제목에 잘 맞는 자세"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "pose",
+    "option_key": "thumb-pose-keyboard",
+    "title": "키보드나 마우스를 만지며 설명",
+    "cue": "설정 / 작업형 썸네일에 맞는 자세"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "pose",
+    "option_key": "thumb-pose-mouthcover",
+    "title": "입을 가리며 놀란 반응",
+    "cue": "충격 / 반전형 클릭 유도 자세"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "pose",
+    "option_key": "thumb-pose-count",
+    "title": "손가락으로 숫자 세기",
+    "cue": "순위 / 단계 / 리스트형 제목에 맞는 자세"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "pose",
+    "option_key": "thumb-pose-frame",
+    "title": "양손으로 화면 영역 프레이밍",
+    "cue": "중앙 포인트를 감싸며 강조하는 자세"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "pose",
+    "option_key": "thumb-pose-cheek",
+    "title": "볼이나 턱선에 손을 대고 반응하기",
+    "cue": "썸네일용 감정 표현이 강해지는 자세"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "pose",
+    "option_key": "thumb-pose-leanseat",
+    "title": "의자에 기대서 옆으로 설명하기",
+    "cue": "토크형 / 리뷰형에서 자주 쓰는 자세"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "pose",
+    "option_key": "thumb-pose-device",
+    "title": "휴대폰이나 태블릿을 세워 들기",
+    "cue": "앱 / 설정 결과물을 같이 보여주기 좋은 자세"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "pose",
+    "option_key": "thumb-pose-clap",
+    "title": "양손을 모아 기대감 주기",
+    "cue": "후기나 추천형의 밝은 반응을 살리는 자세"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "pose",
+    "option_key": "thumb-pose-laptop",
+    "title": "노트북 화면을 열어 보여주기",
+    "cue": "강의 / 작업형 썸네일에 맞는 자세"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "pose",
+    "option_key": "thumb-pose-hip",
+    "title": "한 손 허리로 자신감 주기",
+    "cue": "브랜드형 / 메인 비주얼 썸네일에 맞는 자세"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "reaction",
+    "option_key": "react-smile",
+    "title": "밝은 미소",
+    "cue": "부담 없이 보기 좋은 친근한 반응"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "reaction",
+    "option_key": "react-surprise",
+    "title": "놀람 / 충격",
+    "cue": "강한 클릭 유도가 필요한 리액션"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "reaction",
+    "option_key": "react-serious",
+    "title": "진지하고 단단하게",
+    "cue": "설명형 콘텐츠에 맞는 표정"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "reaction",
+    "option_key": "react-curious",
+    "title": "궁금 / 의문",
+    "cue": "질문형 메시지와 잘 맞는 반응"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "reaction",
+    "option_key": "react-confident",
+    "title": "자신감 있게",
+    "cue": "노하우나 팁을 알려주는 느낌"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "reaction",
+    "option_key": "react-calm",
+    "title": "담백하고 차분하게",
+    "cue": "브랜딩이나 전문가 채널에 잘 맞는 반응"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "reaction",
+    "option_key": "react-laugh",
+    "title": "크게 웃는 반응",
+    "cue": "예능형, 입문형 콘텐츠에 잘 맞는 표정"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "reaction",
+    "option_key": "react-beforeafter",
+    "title": "전후 차이 반응",
+    "cue": "변화나 비교 포인트를 살리는 표정"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "text",
+    "option_key": "text-left",
+    "title": "왼쪽 제목 여백",
+    "cue": "오른쪽 인물, 왼쪽 텍스트 구조"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "text",
+    "option_key": "text-right",
+    "title": "오른쪽 제목 여백",
+    "cue": "왼쪽 인물, 오른쪽 텍스트 구조"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "text",
+    "option_key": "text-top",
+    "title": "상단 제목",
+    "cue": "위쪽 제목과 아래 비주얼이 어울리는 구조"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "text",
+    "option_key": "text-bottom",
+    "title": "하단 캡션",
+    "cue": "아래쪽 정보가 읽히는 구조"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "text",
+    "option_key": "text-center-small",
+    "title": "중앙 짧은 문구",
+    "cue": "짧고 강한 키워드가 들어가는 구조"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "text",
+    "option_key": "text-none",
+    "title": "텍스트 없이 인물 중심",
+    "cue": "비주얼 자체로 클릭을 유도하는 구조"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "text",
+    "option_key": "text-badge",
+    "title": "배지 / 말풍선 포인트",
+    "cue": "작은 강조 문구가 들어가기 쉬운 구조"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "text",
+    "option_key": "text-split",
+    "title": "좌우 분할형",
+    "cue": "두 정보를 대비하기 쉬운 레이아웃"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "composition",
+    "option_key": "poster-center",
+    "title": "정중앙 메인 비주얼",
+    "cue": "주제가 정면에서 강하게 보이는 포스터 구도"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "composition",
+    "option_key": "poster-left-space",
+    "title": "왼쪽 여백형",
+    "cue": "오른쪽 비주얼, 왼쪽 텍스트 배치가 쉬운 구조"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "composition",
+    "option_key": "poster-right-space",
+    "title": "오른쪽 여백형",
+    "cue": "왼쪽 비주얼, 오른쪽 텍스트 배치가 쉬운 구조"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "composition",
+    "option_key": "poster-top-space",
+    "title": "상단 타이틀형",
+    "cue": "위쪽 제목 공간을 남기는 포스터 구조"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "composition",
+    "option_key": "poster-bottom-space",
+    "title": "하단 크레딧형",
+    "cue": "아래쪽에 정보가 들어가기 쉬운 구조"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "composition",
+    "option_key": "poster-diagonal",
+    "title": "대각선 흐름형",
+    "cue": "시선이 사선으로 움직이는 역동적인 구조"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "composition",
+    "option_key": "poster-collage",
+    "title": "콜라주형",
+    "cue": "여러 요소를 한 장에 묶는 구성"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "composition",
+    "option_key": "poster-minimal",
+    "title": "미니멀 메인형",
+    "cue": "요소를 줄여 상징이 강하게 보이는 구조"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "composition",
+    "option_key": "thumb-comp-left-face",
+    "title": "오른쪽 얼굴 크게 + 왼쪽 제목",
+    "cue": "제목과 얼굴이 함께 읽히는 기본 썸네일 구도"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "composition",
+    "option_key": "thumb-comp-left-half",
+    "title": "오른쪽 상반신 + 왼쪽 제목",
+    "cue": "정보형 콘텐츠에 안정적인 구도"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "composition",
+    "option_key": "thumb-comp-left-object",
+    "title": "오른쪽 인물 + 왼쪽 비교 대상",
+    "cue": "설명형과 리뷰형에 쉬운 구도"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "composition",
+    "option_key": "thumb-comp-left-screen",
+    "title": "오른쪽 인물 + 왼쪽 화면",
+    "cue": "튜토리얼과 실전형에 맞는 구도"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "composition",
+    "option_key": "thumb-comp-left-reaction",
+    "title": "오른쪽 큰 표정 + 왼쪽 짧은 문구",
+    "cue": "클릭 유도형 구도"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "composition",
+    "option_key": "thumb-comp-left-poster",
+    "title": "오른쪽 메인 비주얼 + 넓은 왼쪽 텍스트",
+    "cue": "강한 포스터형 구성"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "composition",
+    "option_key": "thumb-comp-left-close",
+    "title": "오른쪽 얼굴 클로즈업 + 왼쪽 키워드",
+    "cue": "반응이 중요한 썸네일 구도"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "composition",
+    "option_key": "thumb-comp-left-badge",
+    "title": "왼쪽 제목 + 작은 배지 추가",
+    "cue": "리스트형 콘텐츠에 어울리는 구도"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "composition",
+    "option_key": "thumb-comp-right-face",
+    "title": "왼쪽 얼굴 크게 + 오른쪽 제목",
+    "cue": "제목 읽기와 표정이 동시에 보이는 구도"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "composition",
+    "option_key": "thumb-comp-right-half",
+    "title": "왼쪽 상반신 + 오른쪽 제목",
+    "cue": "설명형 콘텐츠에 안정적인 구도"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "composition",
+    "option_key": "thumb-comp-right-screen",
+    "title": "왼쪽 인물 + 오른쪽 화면",
+    "cue": "결과물과 인물을 같이 보여주는 구도"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "composition",
+    "option_key": "thumb-comp-right-product",
+    "title": "왼쪽 인물 + 오른쪽 제품",
+    "cue": "리뷰 / 홍보형에 쉬운 구도"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "composition",
+    "option_key": "thumb-comp-right-reaction",
+    "title": "왼쪽 강한 표정 + 오른쪽 한 줄 문구",
+    "cue": "클릭 유도형 구도"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "composition",
+    "option_key": "thumb-comp-right-compare",
+    "title": "왼쪽 인물 + 오른쪽 전후 비교",
+    "cue": "비교형 콘텐츠에 맞는 구도"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "composition",
+    "option_key": "thumb-comp-right-wide",
+    "title": "왼쪽 인물 + 오른쪽 넓은 여백",
+    "cue": "긴 제목도 들어가는 구도"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "composition",
+    "option_key": "thumb-comp-right-badge",
+    "title": "오른쪽 제목 + 작은 포인트 배지",
+    "cue": "랭킹형 / 팁형에 어울리는 구도"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "composition",
+    "option_key": "thumb-comp-center-face",
+    "title": "가운데 얼굴 크게",
+    "cue": "텍스트 없이도 얼굴이 먼저 읽히는 구도"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "composition",
+    "option_key": "thumb-comp-center-poster",
+    "title": "포스터처럼 가운데 메인 비주얼",
+    "cue": "한 장면 자체가 강한 구도"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "composition",
+    "option_key": "thumb-comp-center-two",
+    "title": "가운데 두 인물 대면 구도",
+    "cue": "비교나 토크형에 어울리는 구도"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "composition",
+    "option_key": "thumb-comp-center-object",
+    "title": "가운데 인물 + 손에 든 대상",
+    "cue": "주제가 바로 읽히는 구도"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "composition",
+    "option_key": "thumb-comp-center-brand",
+    "title": "대표 얼굴 + 로고형",
+    "cue": "채널 브랜딩에 쉬운 구도"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "composition",
+    "option_key": "thumb-comp-center-screen",
+    "title": "가운데 인물 + 화면 레이어",
+    "cue": "튜토리얼 느낌이 나는 구도"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "composition",
+    "option_key": "thumb-comp-center-split",
+    "title": "좌우 균형형 대칭 구도",
+    "cue": "정리된 설명형에 어울리는 구도"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "composition",
+    "option_key": "thumb-comp-center-close",
+    "title": "얼굴이 꽉 찬 정면 구도",
+    "cue": "리액션이 가장 크게 보이는 구도"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "mood",
+    "option_key": "mood-bright",
+    "title": "밝고 친근하게",
+    "cue": "입문자도 편하게 느끼는 가볍고 열린 분위기"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "mood",
+    "option_key": "mood-clean",
+    "title": "깨끗하고 맑게",
+    "cue": "정보 전달이 또렷한 클린한 방향"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "mood",
+    "option_key": "mood-warm",
+    "title": "따뜻하고 편안하게",
+    "cue": "부드럽고 정감 있는 인상을 주는 무드"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "mood",
+    "option_key": "mood-calm",
+    "title": "차분하고 담백하게",
+    "cue": "과장되지 않고 정리된 톤"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "mood",
+    "option_key": "mood-cinematic",
+    "title": "영화처럼 깊게",
+    "cue": "공기감과 서사가 함께 느껴지는 무드"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "mood",
+    "option_key": "mood-dramatic",
+    "title": "강렬하고 드라마틱하게",
+    "cue": "명암과 감정이 또렷한 방향"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "mood",
+    "option_key": "mood-luxury",
+    "title": "고급스럽고 세련되게",
+    "cue": "브랜드 비주얼 같은 정제된 무드"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "mood",
+    "option_key": "mood-playful",
+    "title": "귀엽고 경쾌하게",
+    "cue": "색감과 인상이 가볍고 재미있는 방향"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "mood",
+    "option_key": "mood-future",
+    "title": "미래적이고 차갑게",
+    "cue": "기술적이고 현대적인 느낌"
+  },
+  {
+    "subject": "thumbnail-person",
+    "step": "mood",
+    "option_key": "mood-vintage",
+    "title": "빈티지하고 레트로하게",
+    "cue": "옛 감성과 필름 느낌이 남는 방향"
+  },
+  {
+    "subject": "portrait",
+    "step": "detail",
+    "option_key": "portrait-profile",
+    "title": "프로필 / 비즈니스 인물",
+    "cue": "신뢰감과 정돈된 인물이 필요한 방향"
+  },
+  {
+    "subject": "portrait",
+    "step": "detail",
+    "option_key": "portrait-fashion",
+    "title": "화보 / 에디토리얼",
+    "cue": "잡지 느낌의 세련된 인물 방향"
+  },
+  {
+    "subject": "portrait",
+    "step": "detail",
+    "option_key": "portrait-sns",
+    "title": "SNS 브랜딩 인물",
+    "cue": "개인 채널, 브랜딩용 인물 이미지"
+  },
+  {
+    "subject": "portrait",
+    "step": "detail",
+    "option_key": "portrait-daily",
+    "title": "일상 감성 인물",
+    "cue": "생활감이 있고 자연스러운 인물 방향"
+  },
+  {
+    "subject": "portrait",
+    "step": "detail",
+    "option_key": "portrait-fitness",
+    "title": "운동 / 건강 인물",
+    "cue": "활동성과 생기가 보이는 방향"
+  },
+  {
+    "subject": "portrait",
+    "step": "detail",
+    "option_key": "portrait-artist",
+    "title": "아티스트 / 창작자",
+    "cue": "개성과 분위기가 중요한 인물 방향"
+  },
+  {
+    "subject": "portrait",
+    "step": "detail",
+    "option_key": "portrait-senior",
+    "title": "시니어 포트레이트",
+    "cue": "편안하고 품위 있는 인물 사진"
+  },
+  {
+    "subject": "portrait",
+    "step": "detail",
+    "option_key": "portrait-student",
+    "title": "학생 / 청년 인물",
+    "cue": "가볍고 밝은 인상을 주는 방향"
+  },
+  {
+    "subject": "portrait",
+    "step": "detail",
+    "option_key": "portrait-outdoor",
+    "title": "야외 자연광 인물",
+    "cue": "배경 공기감이 살아 있는 인물 사진"
+  },
+  {
+    "subject": "portrait",
+    "step": "detail",
+    "option_key": "portrait-studio",
+    "title": "스튜디오 인물",
+    "cue": "조명이 정리된 깔끔한 인물 사진"
+  },
+  {
+    "subject": "portrait",
+    "step": "detail",
+    "option_key": "portrait-interview",
+    "title": "인터뷰 / 토크 인물",
+    "cue": "말하는 사람의 분위기가 중요한 방향"
+  },
+  {
+    "subject": "portrait",
+    "step": "detail",
+    "option_key": "portrait-cover",
+    "title": "커버용 메인 인물",
+    "cue": "포스터나 표지 같은 메인 비주얼 방향"
+  },
+  {
+    "subject": "portrait",
+    "step": "people",
+    "option_key": "people-female",
+    "title": "여성 1명",
+    "cue": "한 사람의 인상이 명확하게 보이는 구성"
+  },
+  {
+    "subject": "portrait",
+    "step": "people",
+    "option_key": "people-male",
+    "title": "남성 1명",
+    "cue": "한 사람의 표정과 스타일이 중심인 구성"
+  },
+  {
+    "subject": "portrait",
+    "step": "people",
+    "option_key": "people-neutral",
+    "title": "중성적 / 담백한 인상",
+    "cue": "성별 고정감보다 분위기가 중요한 구성"
+  },
+  {
+    "subject": "portrait",
+    "step": "people",
+    "option_key": "people-senior",
+    "title": "시니어 1명",
+    "cue": "연륜과 안정감이 보이는 구성"
+  },
+  {
+    "subject": "portrait",
+    "step": "people",
+    "option_key": "people-teen",
+    "title": "학생 / 청년 1명",
+    "cue": "젊고 밝은 인상이 보이는 구성"
+  },
+  {
+    "subject": "portrait",
+    "step": "people",
+    "option_key": "people-two",
+    "title": "2명",
+    "cue": "관계와 거리감이 함께 보이는 구성"
+  },
+  {
+    "subject": "portrait",
+    "step": "people",
+    "option_key": "people-three",
+    "title": "3명 이상",
+    "cue": "소규모 그룹의 조합이 보이는 구성"
+  },
+  {
+    "subject": "portrait",
+    "step": "people",
+    "option_key": "people-person-object",
+    "title": "인물 + 소품",
+    "cue": "책, 카메라, 악기 같은 소품이 함께 보이는 구성"
+  },
+  {
+    "subject": "portrait",
+    "step": "appearance",
+    "option_key": "look-soft",
+    "title": "부드럽고 친근한 인상",
+    "cue": "첫 인상이 편하고 가까운 느낌"
+  },
+  {
+    "subject": "portrait",
+    "step": "appearance",
+    "option_key": "look-clean",
+    "title": "깨끗하고 담백한 인상",
+    "cue": "정리되고 군더더기 없는 느낌"
+  },
+  {
+    "subject": "portrait",
+    "step": "appearance",
+    "option_key": "look-urban",
+    "title": "도시적이고 세련된 인상",
+    "cue": "현대적이고 스타일리시한 느낌"
+  },
+  {
+    "subject": "portrait",
+    "step": "appearance",
+    "option_key": "look-strong",
+    "title": "또렷하고 강한 인상",
+    "cue": "눈빛과 존재감이 강하게 보이는 느낌"
+  },
+  {
+    "subject": "portrait",
+    "step": "appearance",
+    "option_key": "look-warm",
+    "title": "따뜻하고 정감 있는 인상",
+    "cue": "감정선이 부드럽게 읽히는 방향"
+  },
+  {
+    "subject": "portrait",
+    "step": "appearance",
+    "option_key": "look-premium",
+    "title": "고급스럽고 차분한 인상",
+    "cue": "브랜드 화보 같은 무드"
+  },
+  {
+    "subject": "portrait",
+    "step": "appearance",
+    "option_key": "look-fresh",
+    "title": "건강하고 생기 있는 인상",
+    "cue": "활동성과 활력이 느껴지는 방향"
+  },
+  {
+    "subject": "portrait",
+    "step": "appearance",
+    "option_key": "look-creative",
+    "title": "개성 있고 창의적인 인상",
+    "cue": "일반적인 프로필보다 캐릭터가 살아 있는 방향"
+  },
+  {
+    "subject": "portrait",
+    "step": "styling",
+    "option_key": "style-casual",
+    "title": "캐주얼 / 일상복",
+    "cue": "과하지 않고 생활감 있는 스타일"
+  },
+  {
+    "subject": "portrait",
+    "step": "styling",
+    "option_key": "style-formal",
+    "title": "정장 / 포멀",
+    "cue": "전문성과 신뢰감이 잘 보이는 스타일"
+  },
+  {
+    "subject": "portrait",
+    "step": "styling",
+    "option_key": "style-minimal",
+    "title": "미니멀 / 단정",
+    "cue": "색과 디테일을 줄인 정리된 스타일"
+  },
+  {
+    "subject": "portrait",
+    "step": "styling",
+    "option_key": "style-street",
+    "title": "스트리트 / 트렌디",
+    "cue": "젊고 감각적인 패션 방향"
+  },
+  {
+    "subject": "portrait",
+    "step": "styling",
+    "option_key": "style-romantic",
+    "title": "부드럽고 로맨틱하게",
+    "cue": "따뜻하고 섬세한 스타일"
+  },
+  {
+    "subject": "portrait",
+    "step": "styling",
+    "option_key": "style-luxury",
+    "title": "럭셔리 / 하이엔드",
+    "cue": "고급 잡지 화보 같은 방향"
+  },
+  {
+    "subject": "portrait",
+    "step": "styling",
+    "option_key": "style-creative",
+    "title": "아티스트 / 창작자 무드",
+    "cue": "개성과 취향이 드러나는 스타일"
+  },
+  {
+    "subject": "portrait",
+    "step": "styling",
+    "option_key": "style-active",
+    "title": "활동적 / 스포츠 느낌",
+    "cue": "움직임과 건강미가 잘 보이는 스타일"
+  },
+  {
+    "subject": "portrait",
+    "step": "pose",
+    "option_key": "portrait-pose-stand",
+    "title": "정면으로 바르게 서기",
+    "cue": "기본이 되는 안정적인 인물 자세"
+  },
+  {
+    "subject": "portrait",
+    "step": "pose",
+    "option_key": "portrait-pose-angle",
+    "title": "사선으로 몸 틀기",
+    "cue": "허리와 어깨 라인이 자연스럽게 보이는 자세"
+  },
+  {
+    "subject": "portrait",
+    "step": "pose",
+    "option_key": "portrait-pose-chair",
+    "title": "의자에 단정하게 앉기",
+    "cue": "프로필이나 인터뷰형에 잘 맞는 자세"
+  },
+  {
+    "subject": "portrait",
+    "step": "pose",
+    "option_key": "portrait-pose-crossleg",
+    "title": "의자에 다리 꼬고 앉기",
+    "cue": "세련되고 화보 같은 인상"
+  },
+  {
+    "subject": "portrait",
+    "step": "pose",
+    "option_key": "portrait-pose-lean",
+    "title": "벽이나 난간에 기대기",
+    "cue": "자연스럽고 감성적인 인물 자세"
+  },
+  {
+    "subject": "portrait",
+    "step": "pose",
+    "option_key": "portrait-pose-table",
+    "title": "테이블 / 책상에 기대기",
+    "cue": "직업감이나 생활감이 보이는 자세"
+  },
+  {
+    "subject": "portrait",
+    "step": "pose",
+    "option_key": "portrait-pose-walk",
+    "title": "걷는 중 스냅처럼",
+    "cue": "움직임이 살아 있는 인물 컷"
+  },
+  {
+    "subject": "portrait",
+    "step": "pose",
+    "option_key": "portrait-pose-shoulder",
+    "title": "어깨를 틀고 돌아보기",
+    "cue": "반측면 인상을 강조하는 자세"
+  },
+  {
+    "subject": "portrait",
+    "step": "pose",
+    "option_key": "portrait-pose-pocket",
+    "title": "주머니 손으로 편하게 서기",
+    "cue": "과하지 않게 멋을 주는 자세"
+  },
+  {
+    "subject": "portrait",
+    "step": "pose",
+    "option_key": "portrait-pose-hair",
+    "title": "머리카락 / 얼굴선을 만지기",
+    "cue": "여유롭고 감성적인 손동작"
+  },
+  {
+    "subject": "portrait",
+    "step": "pose",
+    "option_key": "portrait-pose-floor",
+    "title": "바닥 / 계단 / 벤치에 앉기",
+    "cue": "자유롭고 캐주얼한 인물 자세"
+  },
+  {
+    "subject": "portrait",
+    "step": "pose",
+    "option_key": "portrait-pose-bed",
+    "title": "소파 / 침대에 기대거나 엎드리기",
+    "cue": "강한 화보감이나 사적인 무드"
+  },
+  {
+    "subject": "portrait",
+    "step": "pose",
+    "option_key": "portrait-pose-armsfolded",
+    "title": "가볍게 팔짱 끼기",
+    "cue": "신뢰감이나 존재감을 주는 자세"
+  },
+  {
+    "subject": "portrait",
+    "step": "pose",
+    "option_key": "portrait-pose-neck",
+    "title": "목선이나 쇄골선을 살리기",
+    "cue": "섬세하고 여성적인 무드를 주는 자세"
+  },
+  {
+    "subject": "portrait",
+    "step": "pose",
+    "option_key": "portrait-pose-cheek",
+    "title": "볼이나 턱선을 손으로 받치기",
+    "cue": "감성적인 얼굴 강조 포즈"
+  },
+  {
+    "subject": "portrait",
+    "step": "pose",
+    "option_key": "portrait-pose-cup",
+    "title": "컵이나 책 같은 소품 들기",
+    "cue": "일상감이나 직업감을 주는 자세"
+  },
+  {
+    "subject": "portrait",
+    "step": "pose",
+    "option_key": "portrait-pose-jacket",
+    "title": "재킷이나 옷깃 만지기",
+    "cue": "스타일링 중심 화보에 잘 맞는 자세"
+  },
+  {
+    "subject": "portrait",
+    "step": "pose",
+    "option_key": "portrait-pose-stairs",
+    "title": "계단에 한쪽 다리를 두고 서기",
+    "cue": "길고 세련된 실루엣을 만드는 자세"
+  },
+  {
+    "subject": "portrait",
+    "step": "pose",
+    "option_key": "portrait-pose-prone",
+    "title": "침대나 소파에 엎드려 얼굴 들기",
+    "cue": "섹시하거나 사적인 화보 무드"
+  },
+  {
+    "subject": "portrait",
+    "step": "pose",
+    "option_key": "portrait-pose-kneel",
+    "title": "무릎을 굽히거나 쭈그려 앉기",
+    "cue": "스트리트나 감성 스냅에 맞는 자세"
+  },
+  {
+    "subject": "portrait",
+    "step": "pose",
+    "option_key": "portrait-pose-window",
+    "title": "창가에 기대서 빛 받기",
+    "cue": "자연광 인물컷에 자주 쓰는 자세"
+  },
+  {
+    "subject": "portrait",
+    "step": "pose",
+    "option_key": "portrait-pose-hip",
+    "title": "한 손 허리로 실루엣 만들기",
+    "cue": "허리선과 골반 라인이 살아나는 자세"
+  },
+  {
+    "subject": "portrait",
+    "step": "pose",
+    "option_key": "portrait-pose-armup",
+    "title": "머리 위로 손을 올려 늘리기",
+    "cue": "여성 화보 느낌과 길쭉한 실루엣이 쉬운 자세"
+  },
+  {
+    "subject": "portrait",
+    "step": "pose",
+    "option_key": "portrait-pose-recline",
+    "title": "소파 팔걸이나 등받이에 비스듬히 기대기",
+    "cue": "요염하지만 과하지 않은 화보 포즈"
+  },
+  {
+    "subject": "portrait",
+    "step": "pose",
+    "option_key": "portrait-pose-sidechair",
+    "title": "의자에 옆으로 걸터앉기",
+    "cue": "다리선과 옆선을 함께 보여주기 좋은 자세"
+  },
+  {
+    "subject": "portrait",
+    "step": "pose",
+    "option_key": "portrait-pose-oneshoulder",
+    "title": "한쪽 어깨를 드러내듯 몸 틀기",
+    "cue": "시선이 자연스럽게 어깨선으로 가는 자세"
+  },
+  {
+    "subject": "portrait",
+    "step": "pose",
+    "option_key": "portrait-pose-legstretch",
+    "title": "바닥이나 침대에 다리 뻗고 앉기",
+    "cue": "길고 여유로운 실루엣을 만드는 자세"
+  },
+  {
+    "subject": "portrait",
+    "step": "pose",
+    "option_key": "portrait-pose-backarch",
+    "title": "상체를 살짝 젖혀 목선 드러내기",
+    "cue": "우아하고 여성적인 분위기를 주는 자세"
+  },
+  {
+    "subject": "portrait",
+    "step": "pose",
+    "option_key": "portrait-pose-chairback",
+    "title": "의자 등받이를 안듯 기대기",
+    "cue": "감성 화보나 브랜딩 인물컷에 어울리는 자세"
+  },
+  {
+    "subject": "portrait",
+    "step": "pose",
+    "option_key": "portrait-pose-floorlean",
+    "title": "바닥에 앉아 팔로 몸을 지탱하기",
+    "cue": "내추럴하면서도 스타일리시한 자세"
+  },
+  {
+    "subject": "portrait",
+    "step": "pose",
+    "option_key": "portrait-pose-overknee",
+    "title": "의자에 앉아 한쪽 무릎을 세우기",
+    "cue": "다리 라인과 표정을 함께 살리는 자세"
+  },
+  {
+    "subject": "portrait",
+    "step": "expression",
+    "option_key": "gaze-camera",
+    "title": "카메라를 정면으로 보기",
+    "cue": "시선이 바로 닿아 존재감이 큰 표정"
+  },
+  {
+    "subject": "portrait",
+    "step": "expression",
+    "option_key": "gaze-away",
+    "title": "옆을 바라보기",
+    "cue": "생각에 잠긴 듯 자연스러운 인상"
+  },
+  {
+    "subject": "portrait",
+    "step": "expression",
+    "option_key": "gaze-smile",
+    "title": "가볍게 웃는 표정",
+    "cue": "편안하고 호감 가는 방향"
+  },
+  {
+    "subject": "portrait",
+    "step": "expression",
+    "option_key": "gaze-neutral",
+    "title": "담백한 무표정",
+    "cue": "정제된 화보나 브랜딩에 잘 맞는 방향"
+  },
+  {
+    "subject": "portrait",
+    "step": "expression",
+    "option_key": "gaze-confident",
+    "title": "자신감 있는 표정",
+    "cue": "전문성과 강한 인상을 주는 방향"
+  },
+  {
+    "subject": "portrait",
+    "step": "expression",
+    "option_key": "gaze-gentle",
+    "title": "부드럽고 차분한 표정",
+    "cue": "따뜻한 분위기를 만드는 방향"
+  },
+  {
+    "subject": "portrait",
+    "step": "expression",
+    "option_key": "gaze-laugh",
+    "title": "활짝 웃는 표정",
+    "cue": "생기와 친근함이 큰 방향"
+  },
+  {
+    "subject": "portrait",
+    "step": "expression",
+    "option_key": "gaze-focused",
+    "title": "집중한 눈빛",
+    "cue": "진지하고 몰입된 인상을 주는 방향"
+  },
+  {
+    "subject": "portrait",
+    "step": "composition",
+    "option_key": "comp-close",
+    "title": "얼굴 클로즈업",
+    "cue": "표정과 디테일이 가장 먼저 보이는 구도"
+  },
+  {
+    "subject": "portrait",
+    "step": "composition",
+    "option_key": "comp-bust",
+    "title": "바스트 샷",
+    "cue": "상반신 중심으로 안정감 있게 보이는 구도"
+  },
+  {
+    "subject": "portrait",
+    "step": "composition",
+    "option_key": "comp-medium",
+    "title": "미디엄 샷",
+    "cue": "인물과 주변 맥락을 함께 보여주는 기본 구도"
+  },
+  {
+    "subject": "portrait",
+    "step": "composition",
+    "option_key": "comp-wide",
+    "title": "와이드 샷",
+    "cue": "배경과 공간 분위기까지 같이 보이는 구도"
+  },
+  {
+    "subject": "portrait",
+    "step": "composition",
+    "option_key": "comp-low",
+    "title": "로우 앵글",
+    "cue": "주제의 존재감을 더 크게 느끼게 하는 각도"
+  },
+  {
+    "subject": "portrait",
+    "step": "composition",
+    "option_key": "comp-top",
+    "title": "탑뷰 / 오버헤드",
+    "cue": "위에서 내려다보는 정리된 화면"
+  },
+  {
+    "subject": "portrait",
+    "step": "composition",
+    "option_key": "comp-pov",
+    "title": "POV / 셀카 느낌",
+    "cue": "직접 찍은 듯 가까운 거리감이 있는 구도"
+  },
+  {
+    "subject": "portrait",
+    "step": "composition",
+    "option_key": "comp-symmetry",
+    "title": "정면 대칭",
+    "cue": "또렷하고 정돈된 인상을 주는 구도"
+  },
+  {
+    "subject": "portrait",
+    "step": "composition",
+    "option_key": "comp-asymmetry",
+    "title": "비대칭 배치",
+    "cue": "시선 흐름과 여백이 살아 있는 구도"
+  },
+  {
+    "subject": "portrait",
+    "step": "composition",
+    "option_key": "comp-poster",
+    "title": "포스터형 메인 비주얼",
+    "cue": "한 장면 자체가 강하게 보이는 구성"
+  },
+  {
+    "subject": "portrait",
+    "step": "composition",
+    "option_key": "portrait-comp-head",
+    "title": "얼굴 중심 헤드샷",
+    "cue": "프로필 인상이 또렷한 구도"
+  },
+  {
+    "subject": "portrait",
+    "step": "composition",
+    "option_key": "portrait-comp-bust",
+    "title": "상반신 정면",
+    "cue": "이력서나 소개 이미지에 쉬운 구도"
+  },
+  {
+    "subject": "portrait",
+    "step": "composition",
+    "option_key": "portrait-comp-angle",
+    "title": "약한 45도 방향",
+    "cue": "정면보다 자연스러운 프로필 구도"
+  },
+  {
+    "subject": "portrait",
+    "step": "composition",
+    "option_key": "portrait-comp-center",
+    "title": "정중앙 안정형",
+    "cue": "단정하고 또렷한 인상 구도"
+  },
+  {
+    "subject": "portrait",
+    "step": "composition",
+    "option_key": "portrait-comp-clean",
+    "title": "여백이 있는 상반신",
+    "cue": "웹페이지 프로필에 넣기 쉬운 구도"
+  },
+  {
+    "subject": "portrait",
+    "step": "composition",
+    "option_key": "portrait-comp-hand",
+    "title": "소품이 함께 보이는 상반신",
+    "cue": "직업성과 취향이 함께 보이는 구도"
+  },
+  {
+    "subject": "portrait",
+    "step": "composition",
+    "option_key": "portrait-comp-seat",
+    "title": "앉은 자세 프로필",
+    "cue": "보다 편안한 소개 이미지 구도"
+  },
+  {
+    "subject": "portrait",
+    "step": "composition",
+    "option_key": "portrait-comp-window",
+    "title": "창가 자연광 프로필",
+    "cue": "부드러운 신뢰감이 느껴지는 구도"
+  },
+  {
+    "subject": "portrait",
+    "step": "composition",
+    "option_key": "portrait-comp-editorial-close",
+    "title": "얼굴 클로즈업 화보",
+    "cue": "표정과 메이크업이 중심인 구도"
+  },
+  {
+    "subject": "portrait",
+    "step": "composition",
+    "option_key": "portrait-comp-editorial-half",
+    "title": "상반신 화보",
+    "cue": "의상과 눈빛이 같이 보이는 구도"
+  },
+  {
+    "subject": "portrait",
+    "step": "composition",
+    "option_key": "portrait-comp-editorial-full",
+    "title": "전신 화보",
+    "cue": "실루엣과 스타일이 크게 보이는 구도"
+  },
+  {
+    "subject": "portrait",
+    "step": "composition",
+    "option_key": "portrait-comp-editorial-poster",
+    "title": "포스터형 메인 비주얼",
+    "cue": "표지처럼 강하게 보이는 구도"
+  },
+  {
+    "subject": "portrait",
+    "step": "composition",
+    "option_key": "portrait-comp-editorial-side",
+    "title": "측면이나 프로필 라인",
+    "cue": "라인과 분위기가 중심인 구도"
+  },
+  {
+    "subject": "portrait",
+    "step": "composition",
+    "option_key": "portrait-comp-editorial-seat",
+    "title": "앉은 자세 화보",
+    "cue": "여유로운 분위기가 있는 구도"
+  },
+  {
+    "subject": "portrait",
+    "step": "composition",
+    "option_key": "portrait-comp-editorial-motion",
+    "title": "움직임이 있는 화보컷",
+    "cue": "걷거나 도는 흐름이 느껴지는 구도"
+  },
+  {
+    "subject": "portrait",
+    "step": "composition",
+    "option_key": "portrait-comp-editorial-wide",
+    "title": "공간이 함께 보이는 화보컷",
+    "cue": "배경 무드까지 같이 담는 구도"
+  },
+  {
+    "subject": "portrait",
+    "step": "composition",
+    "option_key": "portrait-comp-natural-face",
+    "title": "얼굴 + 자연광",
+    "cue": "표정이 자연스럽게 보이는 구도"
+  },
+  {
+    "subject": "portrait",
+    "step": "composition",
+    "option_key": "portrait-comp-natural-half",
+    "title": "상반신 일상컷",
+    "cue": "생활감이 있는 기본 구도"
+  },
+  {
+    "subject": "portrait",
+    "step": "composition",
+    "option_key": "portrait-comp-natural-walk",
+    "title": "걷는 중 스냅",
+    "cue": "이동감이 있는 자연스러운 구도"
+  },
+  {
+    "subject": "portrait",
+    "step": "composition",
+    "option_key": "portrait-comp-natural-seat",
+    "title": "앉은 자세 스냅",
+    "cue": "카페나 실내에서 편안한 구도"
+  },
+  {
+    "subject": "portrait",
+    "step": "composition",
+    "option_key": "portrait-comp-natural-window",
+    "title": "창가 스냅",
+    "cue": "빛이 들어오는 담백한 구도"
+  },
+  {
+    "subject": "portrait",
+    "step": "composition",
+    "option_key": "portrait-comp-natural-back",
+    "title": "살짝 돌아보는 컷",
+    "cue": "감성적인 흐름이 있는 구도"
+  },
+  {
+    "subject": "portrait",
+    "step": "composition",
+    "option_key": "portrait-comp-natural-wide",
+    "title": "배경이 함께 보이는 구도",
+    "cue": "장소와 분위기가 같이 보이는 구도"
+  },
+  {
+    "subject": "portrait",
+    "step": "composition",
+    "option_key": "portrait-comp-natural-hand",
+    "title": "손 / 소품이 함께 보이는 구도",
+    "cue": "생활감이 더해지는 구도"
+  },
+  {
+    "subject": "portrait",
+    "step": "mood",
+    "option_key": "mood-bright",
+    "title": "밝고 친근하게",
+    "cue": "입문자도 편하게 느끼는 가볍고 열린 분위기"
+  },
+  {
+    "subject": "portrait",
+    "step": "mood",
+    "option_key": "mood-clean",
+    "title": "깨끗하고 맑게",
+    "cue": "정보 전달이 또렷한 클린한 방향"
+  },
+  {
+    "subject": "portrait",
+    "step": "mood",
+    "option_key": "mood-warm",
+    "title": "따뜻하고 편안하게",
+    "cue": "부드럽고 정감 있는 인상을 주는 무드"
+  },
+  {
+    "subject": "portrait",
+    "step": "mood",
+    "option_key": "mood-calm",
+    "title": "차분하고 담백하게",
+    "cue": "과장되지 않고 정리된 톤"
+  },
+  {
+    "subject": "portrait",
+    "step": "mood",
+    "option_key": "mood-cinematic",
+    "title": "영화처럼 깊게",
+    "cue": "공기감과 서사가 함께 느껴지는 무드"
+  },
+  {
+    "subject": "portrait",
+    "step": "mood",
+    "option_key": "mood-dramatic",
+    "title": "강렬하고 드라마틱하게",
+    "cue": "명암과 감정이 또렷한 방향"
+  },
+  {
+    "subject": "portrait",
+    "step": "mood",
+    "option_key": "mood-luxury",
+    "title": "고급스럽고 세련되게",
+    "cue": "브랜드 비주얼 같은 정제된 무드"
+  },
+  {
+    "subject": "portrait",
+    "step": "mood",
+    "option_key": "mood-playful",
+    "title": "귀엽고 경쾌하게",
+    "cue": "색감과 인상이 가볍고 재미있는 방향"
+  },
+  {
+    "subject": "portrait",
+    "step": "mood",
+    "option_key": "mood-future",
+    "title": "미래적이고 차갑게",
+    "cue": "기술적이고 현대적인 느낌"
+  },
+  {
+    "subject": "portrait",
+    "step": "mood",
+    "option_key": "mood-vintage",
+    "title": "빈티지하고 레트로하게",
+    "cue": "옛 감성과 필름 느낌이 남는 방향"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "detail",
+    "option_key": "selfie-instagram",
+    "title": "인스타 감성 셀카",
+    "cue": "감성과 일상 무드가 중요한 셀카"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "detail",
+    "option_key": "selfie-mirror",
+    "title": "거울 셀카",
+    "cue": "전신 스타일과 공간이 함께 보이는 컷"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "detail",
+    "option_key": "selfie-cafe",
+    "title": "카페 인증샷",
+    "cue": "소품과 분위기가 함께 보이는 방향"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "detail",
+    "option_key": "selfie-travel",
+    "title": "여행 셀카",
+    "cue": "장소 감성과 인물이 함께 보이는 컷"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "detail",
+    "option_key": "selfie-daily",
+    "title": "데일리 기록",
+    "cue": "평소 일상처럼 자연스러운 방향"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "detail",
+    "option_key": "selfie-fitness",
+    "title": "운동 / 자기관리 인증",
+    "cue": "활동성과 건강미가 보이는 컷"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "detail",
+    "option_key": "selfie-night",
+    "title": "야간 감성 셀카",
+    "cue": "조명과 공기감이 중요한 셀카"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "detail",
+    "option_key": "selfie-room",
+    "title": "방 안 데일리 무드",
+    "cue": "실내 분위기와 생활감이 보이는 컷"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "detail",
+    "option_key": "selfie-friend",
+    "title": "친구와 함께 찍은 느낌",
+    "cue": "가볍고 즐거운 관계성이 느껴지는 컷"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "detail",
+    "option_key": "selfie-profile",
+    "title": "SNS 프로필용 셀카",
+    "cue": "얼굴 인상과 분위기가 분명한 컷"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "pose",
+    "option_key": "self-pose-face",
+    "title": "얼굴 가까이",
+    "cue": "얼굴과 표정이 먼저 보이는 셀카"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "pose",
+    "option_key": "self-pose-half",
+    "title": "상반신 중심",
+    "cue": "옷과 표정이 함께 보이는 구도"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "pose",
+    "option_key": "self-pose-full",
+    "title": "전신 거울샷",
+    "cue": "스타일 전체가 보이는 셀카"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "pose",
+    "option_key": "self-pose-walk",
+    "title": "걷는 중 자연스럽게",
+    "cue": "브이로그처럼 흐름이 있는 자세"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "pose",
+    "option_key": "self-pose-sit",
+    "title": "앉아서 편하게",
+    "cue": "카페나 실내에서 여유 있는 자세"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "pose",
+    "option_key": "self-pose-phone",
+    "title": "폰을 크게 보이게",
+    "cue": "셀카 도구와 손동작이 같이 보이는 자세"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "pose",
+    "option_key": "self-pose-lookingback",
+    "title": "뒤돌아보는 포즈",
+    "cue": "감성 컷에 잘 맞는 자연스러운 자세"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "pose",
+    "option_key": "self-pose-peace",
+    "title": "가벼운 제스처",
+    "cue": "브이, 손하트 같은 친근한 포즈"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "pose",
+    "option_key": "self-pose-bed",
+    "title": "침대에 기대거나 엎드리기",
+    "cue": "사적인 무드와 편한 분위기가 있는 자세"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "pose",
+    "option_key": "self-pose-crossleg",
+    "title": "의자에 앉아 다리 꼬기",
+    "cue": "세련되고 꾸민 느낌이 나는 자세"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "pose",
+    "option_key": "self-pose-overhead",
+    "title": "위에서 내려다보는 각도",
+    "cue": "얼굴형과 눈매가 또렷해지는 셀카"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "pose",
+    "option_key": "self-pose-sideface",
+    "title": "옆얼굴 / 반측면",
+    "cue": "코선과 턱선을 살리기 좋은 셀카"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "pose",
+    "option_key": "self-pose-window",
+    "title": "창가에 기대서 찍기",
+    "cue": "빛이 부드럽게 들어오는 감성 셀카"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "pose",
+    "option_key": "self-pose-floor",
+    "title": "바닥이나 침대에 앉기",
+    "cue": "편한 일상 무드가 살아나는 자세"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "pose",
+    "option_key": "self-pose-coffee",
+    "title": "컵이나 소품 들기",
+    "cue": "카페 / 브이로그 감성이 쉬운 셀카"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "pose",
+    "option_key": "self-pose-cover",
+    "title": "폰이나 손으로 살짝 가리기",
+    "cue": "부끄러운 듯한 연출이 쉬운 자세"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "pose",
+    "option_key": "self-pose-stretch",
+    "title": "운동 후 스트레칭 느낌",
+    "cue": "활동적이고 건강한 인상에 맞는 자세"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "pose",
+    "option_key": "self-pose-prone",
+    "title": "침대에 엎드려 찍기",
+    "cue": "편한 방 셀카나 감성 컷에 맞는 자세"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "pose",
+    "option_key": "self-pose-side",
+    "title": "옆으로 누워 얼굴만 들기",
+    "cue": "부드럽고 사적인 무드가 강한 셀카"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "pose",
+    "option_key": "self-pose-vface",
+    "title": "얼굴 옆 브이 포즈",
+    "cue": "SNS 감성이 강한 대표적인 손동작"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "pose",
+    "option_key": "self-pose-heart",
+    "title": "손하트 / 볼하트 하기",
+    "cue": "귀엽고 밝은 인상을 주는 셀카"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "pose",
+    "option_key": "self-pose-mouthcover",
+    "title": "입가를 살짝 가리며 웃기",
+    "cue": "부끄러운 듯한 연출에 맞는 자세"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "pose",
+    "option_key": "self-pose-chairarm",
+    "title": "의자 팔걸이나 테이블에 기대기",
+    "cue": "실내 감성 컷에 자주 쓰는 자세"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "pose",
+    "option_key": "self-pose-kneeup",
+    "title": "한쪽 무릎을 올려 앉기",
+    "cue": "꾸민 일상 사진에 잘 맞는 자세"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "pose",
+    "option_key": "self-pose-squat",
+    "title": "쪼그려 앉아 내려다보기",
+    "cue": "스트리트 감성이나 거울샷에 맞는 자세"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "pose",
+    "option_key": "self-pose-sink",
+    "title": "욕실 세면대 / 거울 앞 기대기",
+    "cue": "꾸민 셀카나 거울 인증샷에 자주 쓰는 자세"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "pose",
+    "option_key": "self-pose-hip",
+    "title": "한 손 허리로 거울샷 찍기",
+    "cue": "전신 코디나 실루엣을 살리기 쉬운 자세"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "pose",
+    "option_key": "self-pose-toe",
+    "title": "한 발을 앞으로 빼고 찍기",
+    "cue": "다리 비율이 길어 보이는 거울 자세"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "pose",
+    "option_key": "self-pose-overheadbed",
+    "title": "침대에 누워 위에서 내려찍기",
+    "cue": "포근하고 여성적인 방 셀카 자세"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "pose",
+    "option_key": "self-pose-pillow",
+    "title": "베개를 안고 옆으로 기대기",
+    "cue": "부드럽고 사적인 무드가 쉬운 자세"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "pose",
+    "option_key": "self-pose-windowseat",
+    "title": "창가에 앉아 무릎을 모으기",
+    "cue": "감성 셀카나 브이로그 컷에 맞는 자세"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "pose",
+    "option_key": "self-pose-hairlift",
+    "title": "머리를 한쪽으로 쓸어 넘기기",
+    "cue": "얼굴선과 헤어를 같이 살리는 자세"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "pose",
+    "option_key": "self-pose-shoulder",
+    "title": "어깨를 살짝 돌려 반측면 찍기",
+    "cue": "쇄골선과 옆선을 자연스럽게 살리는 자세"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "pose",
+    "option_key": "self-pose-bag",
+    "title": "가방이나 소지품을 들어 보이기",
+    "cue": "외출 룩이나 데일리 코디 셀카에 맞는 자세"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "pose",
+    "option_key": "self-pose-stair",
+    "title": "계단에 앉거나 서서 찍기",
+    "cue": "여행 / 외출 셀카에서 자주 쓰는 자세"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "pose",
+    "option_key": "self-pose-walllean",
+    "title": "벽에 기대 다리선을 강조하기",
+    "cue": "꾸민 일상컷이나 야간 셀카에 어울리는 자세"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "pose",
+    "option_key": "self-pose-armup",
+    "title": "한쪽 팔을 들어 머리 위로 두기",
+    "cue": "여성스러운 실루엣이 잘 보이는 셀카 자세"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "setting",
+    "option_key": "self-set-room",
+    "title": "방 / 집 안",
+    "cue": "생활감 있는 실내 배경"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "setting",
+    "option_key": "self-set-mirror",
+    "title": "거울 앞",
+    "cue": "반사 화면이 중심이 되는 배경"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "setting",
+    "option_key": "self-set-cafe",
+    "title": "카페 / 식탁",
+    "cue": "잔과 소품이 함께 보이는 배경"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "setting",
+    "option_key": "self-set-street",
+    "title": "거리 / 골목",
+    "cue": "도시 감성이 느껴지는 배경"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "setting",
+    "option_key": "self-set-window",
+    "title": "창가 자연광",
+    "cue": "빛이 부드럽게 들어오는 배경"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "setting",
+    "option_key": "self-set-gym",
+    "title": "헬스장 / 스튜디오",
+    "cue": "운동 기록 느낌의 배경"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "setting",
+    "option_key": "self-set-car",
+    "title": "차 안 / 이동 중",
+    "cue": "이동 감성이 보이는 배경"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "setting",
+    "option_key": "self-set-night",
+    "title": "야간 네온 / 조명",
+    "cue": "밤 분위기가 살아나는 배경"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "composition",
+    "option_key": "comp-close",
+    "title": "얼굴 클로즈업",
+    "cue": "표정과 디테일이 가장 먼저 보이는 구도"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "composition",
+    "option_key": "comp-bust",
+    "title": "바스트 샷",
+    "cue": "상반신 중심으로 안정감 있게 보이는 구도"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "composition",
+    "option_key": "comp-medium",
+    "title": "미디엄 샷",
+    "cue": "인물과 주변 맥락을 함께 보여주는 기본 구도"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "composition",
+    "option_key": "comp-wide",
+    "title": "와이드 샷",
+    "cue": "배경과 공간 분위기까지 같이 보이는 구도"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "composition",
+    "option_key": "comp-low",
+    "title": "로우 앵글",
+    "cue": "주제의 존재감을 더 크게 느끼게 하는 각도"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "composition",
+    "option_key": "comp-top",
+    "title": "탑뷰 / 오버헤드",
+    "cue": "위에서 내려다보는 정리된 화면"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "composition",
+    "option_key": "comp-pov",
+    "title": "POV / 셀카 느낌",
+    "cue": "직접 찍은 듯 가까운 거리감이 있는 구도"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "composition",
+    "option_key": "comp-symmetry",
+    "title": "정면 대칭",
+    "cue": "또렷하고 정돈된 인상을 주는 구도"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "composition",
+    "option_key": "comp-asymmetry",
+    "title": "비대칭 배치",
+    "cue": "시선 흐름과 여백이 살아 있는 구도"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "composition",
+    "option_key": "comp-poster",
+    "title": "포스터형 메인 비주얼",
+    "cue": "한 장면 자체가 강하게 보이는 구성"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "composition",
+    "option_key": "self-comp-mirror-full",
+    "title": "전신 거울샷",
+    "cue": "의상 전체와 자세가 보이는 구도"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "composition",
+    "option_key": "self-comp-mirror-half",
+    "title": "상반신 거울샷",
+    "cue": "얼굴과 코디를 같이 보여주는 구도"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "composition",
+    "option_key": "self-comp-mirror-face",
+    "title": "얼굴 가까운 거울샷",
+    "cue": "거울 속 얼굴 인상이 중요한 구도"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "composition",
+    "option_key": "self-comp-mirror-sit",
+    "title": "앉아서 찍는 거울샷",
+    "cue": "자연스럽고 여유로운 느낌의 구도"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "composition",
+    "option_key": "self-comp-mirror-side",
+    "title": "옆선이 보이는 거울샷",
+    "cue": "실루엣과 라인이 중요한 구도"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "composition",
+    "option_key": "self-comp-mirror-room",
+    "title": "거울 + 방 전체",
+    "cue": "생활감과 공간이 함께 보이는 구도"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "composition",
+    "option_key": "self-comp-mirror-fit",
+    "title": "피팅룸 스타일 거울샷",
+    "cue": "룩북처럼 코디가 중심인 구도"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "composition",
+    "option_key": "self-comp-mirror-close",
+    "title": "거울 앞 얼굴 + 폰 중심",
+    "cue": "셀카 감성이 강한 구도"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "composition",
+    "option_key": "self-comp-face-front",
+    "title": "얼굴 정면 꽉 차게",
+    "cue": "표정과 피부가 먼저 보이는 셀카 구도"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "composition",
+    "option_key": "self-comp-face-angle",
+    "title": "살짝 옆각 얼굴",
+    "cue": "각도와 얼굴선이 살아나는 구도"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "composition",
+    "option_key": "self-comp-face-high",
+    "title": "위에서 내려다보는 셀카",
+    "cue": "눈매와 턱선이 또렷한 구도"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "composition",
+    "option_key": "self-comp-face-low",
+    "title": "살짝 아래에서 올리는 셀카",
+    "cue": "힙하고 과감한 인상의 구도"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "composition",
+    "option_key": "self-comp-face-phone",
+    "title": "폰을 살짝 보이게",
+    "cue": "셀카 도구가 같이 느껴지는 구도"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "composition",
+    "option_key": "self-comp-face-shoulder",
+    "title": "어깨까지 들어오는 구도",
+    "cue": "얼굴과 상의가 함께 보이는 구도"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "composition",
+    "option_key": "self-comp-face-flash",
+    "title": "플래시가 직접 느껴지는 구도",
+    "cue": "야간 셀피에 잘 맞는 강한 구도"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "composition",
+    "option_key": "self-comp-face-soft",
+    "title": "얼굴 + 배경 흐림",
+    "cue": "얼굴만 선명하게 보이는 안정적인 구도"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "composition",
+    "option_key": "self-comp-half-front",
+    "title": "상반신 정면",
+    "cue": "얼굴과 코디가 같이 보이는 구도"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "composition",
+    "option_key": "self-comp-half-angle",
+    "title": "상반신 사선",
+    "cue": "몸선과 분위기가 함께 보이는 구도"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "composition",
+    "option_key": "self-comp-half-seat",
+    "title": "앉은 자세 상반신",
+    "cue": "카페나 실내에서 편한 구도"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "composition",
+    "option_key": "self-comp-half-mirror",
+    "title": "상반신 거울샷",
+    "cue": "거울 속 스타일이 자연스러운 구도"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "composition",
+    "option_key": "self-comp-half-hand",
+    "title": "손과 소품이 함께",
+    "cue": "컵이나 폰이 같이 보이는 구도"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "composition",
+    "option_key": "self-comp-half-lookaway",
+    "title": "시선을 빼는 상반신",
+    "cue": "감성적인 인상이 있는 구도"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "composition",
+    "option_key": "self-comp-half-walk",
+    "title": "걷는 중 반신 컷",
+    "cue": "브이로그처럼 흐름이 있는 구도"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "composition",
+    "option_key": "self-comp-half-window",
+    "title": "창가에서 반신",
+    "cue": "빛이 부드럽게 들어오는 구도"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "composition",
+    "option_key": "self-comp-walk-front",
+    "title": "걷는 중 정면 느낌",
+    "cue": "이동감이 자연스럽게 보이는 구도"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "composition",
+    "option_key": "self-comp-walk-side",
+    "title": "옆으로 지나가는 느낌",
+    "cue": "실루엣과 장소가 함께 보이는 구도"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "composition",
+    "option_key": "self-comp-walk-back",
+    "title": "살짝 뒤돌아보는 느낌",
+    "cue": "감성적인 이동 장면 구도"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "composition",
+    "option_key": "self-comp-walk-phone",
+    "title": "폰을 들고 걷는 느낌",
+    "cue": "셀프 기록 분위기가 있는 구도"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "composition",
+    "option_key": "self-comp-walk-wide",
+    "title": "배경이 더 크게 보이는 구도",
+    "cue": "장소 감성이 살아나는 구성"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "composition",
+    "option_key": "self-comp-walk-mid",
+    "title": "상반신 위주의 이동 컷",
+    "cue": "인물 중심의 이동 구도"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "composition",
+    "option_key": "self-comp-walk-night",
+    "title": "야간 거리 이동 컷",
+    "cue": "네온과 빛이 살아나는 구도"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "composition",
+    "option_key": "self-comp-walk-blur",
+    "title": "살짝 흔들림 있는 기록 컷",
+    "cue": "브이로그 기록감이 있는 구도"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "mood",
+    "option_key": "mood-bright",
+    "title": "밝고 친근하게",
+    "cue": "입문자도 편하게 느끼는 가볍고 열린 분위기"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "mood",
+    "option_key": "mood-clean",
+    "title": "깨끗하고 맑게",
+    "cue": "정보 전달이 또렷한 클린한 방향"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "mood",
+    "option_key": "mood-warm",
+    "title": "따뜻하고 편안하게",
+    "cue": "부드럽고 정감 있는 인상을 주는 무드"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "mood",
+    "option_key": "mood-calm",
+    "title": "차분하고 담백하게",
+    "cue": "과장되지 않고 정리된 톤"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "mood",
+    "option_key": "mood-cinematic",
+    "title": "영화처럼 깊게",
+    "cue": "공기감과 서사가 함께 느껴지는 무드"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "mood",
+    "option_key": "mood-dramatic",
+    "title": "강렬하고 드라마틱하게",
+    "cue": "명암과 감정이 또렷한 방향"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "mood",
+    "option_key": "mood-luxury",
+    "title": "고급스럽고 세련되게",
+    "cue": "브랜드 비주얼 같은 정제된 무드"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "mood",
+    "option_key": "mood-playful",
+    "title": "귀엽고 경쾌하게",
+    "cue": "색감과 인상이 가볍고 재미있는 방향"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "mood",
+    "option_key": "mood-future",
+    "title": "미래적이고 차갑게",
+    "cue": "기술적이고 현대적인 느낌"
+  },
+  {
+    "subject": "selfie-sns",
+    "step": "mood",
+    "option_key": "mood-vintage",
+    "title": "빈티지하고 레트로하게",
+    "cue": "옛 감성과 필름 느낌이 남는 방향"
+  },
+  {
+    "subject": "group-family",
+    "step": "detail",
+    "option_key": "group-couple",
+    "title": "커플 데이트",
+    "cue": "두 사람의 거리감과 감정이 보이는 방향"
+  },
+  {
+    "subject": "group-family",
+    "step": "detail",
+    "option_key": "group-wedding",
+    "title": "웨딩 / 스냅",
+    "cue": "특별한 날의 기념성과 분위기가 중요한 방향"
+  },
+  {
+    "subject": "group-family",
+    "step": "detail",
+    "option_key": "group-family",
+    "title": "가족사진",
+    "cue": "자연스럽고 따뜻한 관계성이 보이는 사진"
+  },
+  {
+    "subject": "group-family",
+    "step": "detail",
+    "option_key": "group-friends",
+    "title": "친구 단체",
+    "cue": "밝고 즐거운 모임 느낌의 사진"
+  },
+  {
+    "subject": "group-family",
+    "step": "detail",
+    "option_key": "group-parents-kids",
+    "title": "부모 + 아이",
+    "cue": "세대가 함께 보이는 가족 사진"
+  },
+  {
+    "subject": "group-family",
+    "step": "detail",
+    "option_key": "group-team",
+    "title": "동료 / 팀 사진",
+    "cue": "조직과 팀 분위기가 보이는 사진"
+  },
+  {
+    "subject": "group-family",
+    "step": "detail",
+    "option_key": "group-graduation",
+    "title": "졸업 / 입학 기념",
+    "cue": "기념성과 상징성이 있는 사진"
+  },
+  {
+    "subject": "group-family",
+    "step": "detail",
+    "option_key": "group-party",
+    "title": "생일 / 축하 모임",
+    "cue": "즐거운 행사 분위기가 느껴지는 사진"
+  },
+  {
+    "subject": "group-family",
+    "step": "detail",
+    "option_key": "group-pet",
+    "title": "반려동물과 가족",
+    "cue": "사람과 동물이 같이 보이는 사진"
+  },
+  {
+    "subject": "group-family",
+    "step": "detail",
+    "option_key": "group-trip",
+    "title": "여행 중 함께 찍는 컷",
+    "cue": "이동과 추억이 함께 느껴지는 장면"
+  },
+  {
+    "subject": "group-family",
+    "step": "relation",
+    "option_key": "relation-formal",
+    "title": "정면 기념사진처럼",
+    "cue": "모두가 정리된 자세로 보이는 방향"
+  },
+  {
+    "subject": "group-family",
+    "step": "relation",
+    "option_key": "relation-snap",
+    "title": "자연스러운 스냅처럼",
+    "cue": "과한 포즈 없이 생활감이 느껴지는 방향"
+  },
+  {
+    "subject": "group-family",
+    "step": "relation",
+    "option_key": "relation-warm",
+    "title": "다정하게 가까운 느낌",
+    "cue": "스킨십과 거리감이 부드러운 방향"
+  },
+  {
+    "subject": "group-family",
+    "step": "relation",
+    "option_key": "relation-fun",
+    "title": "웃고 떠드는 분위기",
+    "cue": "표정과 몸짓이 자유로운 방향"
+  },
+  {
+    "subject": "group-family",
+    "step": "relation",
+    "option_key": "relation-proud",
+    "title": "행사 / 기념의 자부심",
+    "cue": "특별한 날의 기쁨이 느껴지는 방향"
+  },
+  {
+    "subject": "group-family",
+    "step": "relation",
+    "option_key": "relation-luxury",
+    "title": "품위 있고 단정하게",
+    "cue": "웨딩이나 포멀한 촬영에 맞는 방향"
+  },
+  {
+    "subject": "group-family",
+    "step": "relation",
+    "option_key": "relation-youth",
+    "title": "활발하고 젊게",
+    "cue": "에너지와 밝음이 먼저 느껴지는 방향"
+  },
+  {
+    "subject": "group-family",
+    "step": "relation",
+    "option_key": "relation-calm",
+    "title": "차분하고 따뜻하게",
+    "cue": "과장 없는 편안한 관계성이 보이는 방향"
+  },
+  {
+    "subject": "group-family",
+    "step": "pose",
+    "option_key": "group-pose-line",
+    "title": "나란히 서기",
+    "cue": "가장 기본이 되는 단체 배치"
+  },
+  {
+    "subject": "group-family",
+    "step": "pose",
+    "option_key": "group-pose-shoulder",
+    "title": "어깨 붙이기 / 기대기",
+    "cue": "친밀감이 쉽게 드러나는 자세"
+  },
+  {
+    "subject": "group-family",
+    "step": "pose",
+    "option_key": "group-pose-hands",
+    "title": "손잡기 / 팔짱 끼기",
+    "cue": "관계성이 또렷하게 보이는 자세"
+  },
+  {
+    "subject": "group-family",
+    "step": "pose",
+    "option_key": "group-pose-walk",
+    "title": "함께 걷는 장면",
+    "cue": "자연스러운 흐름과 움직임이 있는 자세"
+  },
+  {
+    "subject": "group-family",
+    "step": "pose",
+    "option_key": "group-pose-sofa",
+    "title": "소파나 벤치에 함께 앉기",
+    "cue": "여유롭고 따뜻한 단체 자세"
+  },
+  {
+    "subject": "group-family",
+    "step": "pose",
+    "option_key": "group-pose-holdchild",
+    "title": "아이 안기 / 감싸기",
+    "cue": "가족형 사진에서 많이 쓰는 자세"
+  },
+  {
+    "subject": "group-family",
+    "step": "pose",
+    "option_key": "group-pose-backhug",
+    "title": "뒤에서 안기 / 감싸기",
+    "cue": "커플이나 웨딩 컷에 맞는 자세"
+  },
+  {
+    "subject": "group-family",
+    "step": "pose",
+    "option_key": "group-pose-circle",
+    "title": "둥글게 모이기",
+    "cue": "친구 / 팀 / 행사 분위기를 살리기 좋은 자세"
+  },
+  {
+    "subject": "group-family",
+    "step": "pose",
+    "option_key": "group-pose-table",
+    "title": "테이블을 둘러앉기",
+    "cue": "회의 / 식사 / 축하 장면에 맞는 자세"
+  },
+  {
+    "subject": "group-family",
+    "step": "pose",
+    "option_key": "group-pose-jump",
+    "title": "손 들기 / 점프 / 장난스러운 포즈",
+    "cue": "밝고 활동적인 모임에 맞는 자세"
+  },
+  {
+    "subject": "group-family",
+    "step": "pose",
+    "option_key": "group-pose-hug",
+    "title": "다 함께 붙어서 포옹하기",
+    "cue": "따뜻한 가족 사진에 잘 맞는 자세"
+  },
+  {
+    "subject": "group-family",
+    "step": "pose",
+    "option_key": "group-pose-backtoback",
+    "title": "등을 맞대거나 등을 기대기",
+    "cue": "커플이나 친구의 케미가 보이는 자세"
+  },
+  {
+    "subject": "group-family",
+    "step": "pose",
+    "option_key": "group-pose-toast",
+    "title": "컵을 들고 건배하기",
+    "cue": "파티, 모임, 여행컷에 잘 맞는 자세"
+  },
+  {
+    "subject": "group-family",
+    "step": "pose",
+    "option_key": "group-pose-piggyback",
+    "title": "업히거나 장난스럽게 안기",
+    "cue": "친구 / 커플의 활동적인 장면"
+  },
+  {
+    "subject": "group-family",
+    "step": "pose",
+    "option_key": "group-pose-staggered",
+    "title": "앞뒤 높이를 다르게 배치하기",
+    "cue": "여러 명이 자연스럽게 보이는 자세"
+  },
+  {
+    "subject": "group-family",
+    "step": "pose",
+    "option_key": "group-pose-kneelsit",
+    "title": "앞은 앉고 뒤는 서기",
+    "cue": "단체 사진에서 자주 쓰는 계층형 포즈"
+  },
+  {
+    "subject": "group-family",
+    "step": "pose",
+    "option_key": "group-pose-window",
+    "title": "창가나 난간에 함께 기대기",
+    "cue": "감성적인 커플 / 가족 스냅에 맞는 자세"
+  },
+  {
+    "subject": "group-family",
+    "step": "pose",
+    "option_key": "group-pose-floor",
+    "title": "바닥에 둘러앉기",
+    "cue": "친구 / 가족의 친밀한 순간을 살리는 자세"
+  },
+  {
+    "subject": "group-family",
+    "step": "pose",
+    "option_key": "group-pose-lap",
+    "title": "무릎에 기대거나 앉기",
+    "cue": "커플이나 가족 스냅에 다정함이 강한 자세"
+  },
+  {
+    "subject": "group-family",
+    "step": "pose",
+    "option_key": "group-pose-cheek",
+    "title": "얼굴을 가까이 맞대기",
+    "cue": "친한 친구나 커플의 친밀감이 큰 자세"
+  },
+  {
+    "subject": "group-family",
+    "step": "pose",
+    "option_key": "group-pose-armlink",
+    "title": "팔짱을 끼고 옆으로 서기",
+    "cue": "커플 / 친구의 안정적인 투샷 자세"
+  },
+  {
+    "subject": "group-family",
+    "step": "pose",
+    "option_key": "group-pose-rowseat",
+    "title": "일렬로 걸터앉기",
+    "cue": "여러 명이 자연스럽게 정리되는 단체 자세"
+  },
+  {
+    "subject": "group-family",
+    "step": "styling",
+    "option_key": "group-style-casual",
+    "title": "캐주얼하게 통일",
+    "cue": "일상복이 자연스럽게 맞춰진 느낌"
+  },
+  {
+    "subject": "group-family",
+    "step": "styling",
+    "option_key": "group-style-formal",
+    "title": "포멀하게 정돈",
+    "cue": "정장이나 단정한 룩이 어울리는 방향"
+  },
+  {
+    "subject": "group-family",
+    "step": "styling",
+    "option_key": "group-style-wedding",
+    "title": "웨딩 / 드레스 무드",
+    "cue": "특별한 날의 의상 느낌"
+  },
+  {
+    "subject": "group-family",
+    "step": "styling",
+    "option_key": "group-style-light",
+    "title": "밝고 산뜻하게",
+    "cue": "화사한 계열 의상이 많은 방향"
+  },
+  {
+    "subject": "group-family",
+    "step": "styling",
+    "option_key": "group-style-neutral",
+    "title": "베이지 / 화이트 톤",
+    "cue": "색을 줄여 안정감 있게 보이는 스타일"
+  },
+  {
+    "subject": "group-family",
+    "step": "styling",
+    "option_key": "group-style-colorful",
+    "title": "색감이 살아 있게",
+    "cue": "개성과 즐거움이 드러나는 스타일"
+  },
+  {
+    "subject": "group-family",
+    "step": "styling",
+    "option_key": "group-style-outdoor",
+    "title": "야외 촬영에 맞게",
+    "cue": "계절과 장소에 어울리는 스타일"
+  },
+  {
+    "subject": "group-family",
+    "step": "styling",
+    "option_key": "group-style-simple",
+    "title": "과하지 않게 담백하게",
+    "cue": "의상보다 관계가 중심인 스타일"
+  },
+  {
+    "subject": "group-family",
+    "step": "composition",
+    "option_key": "comp-close",
+    "title": "얼굴 클로즈업",
+    "cue": "표정과 디테일이 가장 먼저 보이는 구도"
+  },
+  {
+    "subject": "group-family",
+    "step": "composition",
+    "option_key": "comp-bust",
+    "title": "바스트 샷",
+    "cue": "상반신 중심으로 안정감 있게 보이는 구도"
+  },
+  {
+    "subject": "group-family",
+    "step": "composition",
+    "option_key": "comp-medium",
+    "title": "미디엄 샷",
+    "cue": "인물과 주변 맥락을 함께 보여주는 기본 구도"
+  },
+  {
+    "subject": "group-family",
+    "step": "composition",
+    "option_key": "comp-wide",
+    "title": "와이드 샷",
+    "cue": "배경과 공간 분위기까지 같이 보이는 구도"
+  },
+  {
+    "subject": "group-family",
+    "step": "composition",
+    "option_key": "comp-low",
+    "title": "로우 앵글",
+    "cue": "주제의 존재감을 더 크게 느끼게 하는 각도"
+  },
+  {
+    "subject": "group-family",
+    "step": "composition",
+    "option_key": "comp-top",
+    "title": "탑뷰 / 오버헤드",
+    "cue": "위에서 내려다보는 정리된 화면"
+  },
+  {
+    "subject": "group-family",
+    "step": "composition",
+    "option_key": "comp-pov",
+    "title": "POV / 셀카 느낌",
+    "cue": "직접 찍은 듯 가까운 거리감이 있는 구도"
+  },
+  {
+    "subject": "group-family",
+    "step": "composition",
+    "option_key": "comp-symmetry",
+    "title": "정면 대칭",
+    "cue": "또렷하고 정돈된 인상을 주는 구도"
+  },
+  {
+    "subject": "group-family",
+    "step": "composition",
+    "option_key": "comp-asymmetry",
+    "title": "비대칭 배치",
+    "cue": "시선 흐름과 여백이 살아 있는 구도"
+  },
+  {
+    "subject": "group-family",
+    "step": "composition",
+    "option_key": "comp-poster",
+    "title": "포스터형 메인 비주얼",
+    "cue": "한 장면 자체가 강하게 보이는 구성"
+  },
+  {
+    "subject": "group-family",
+    "step": "composition",
+    "option_key": "group-comp-couple-front",
+    "title": "나란히 정면",
+    "cue": "두 사람의 관계가 안정적으로 보이는 구도"
+  },
+  {
+    "subject": "group-family",
+    "step": "composition",
+    "option_key": "group-comp-couple-look",
+    "title": "서로 바라보기",
+    "cue": "감정선이 자연스럽게 느껴지는 구도"
+  },
+  {
+    "subject": "group-family",
+    "step": "composition",
+    "option_key": "group-comp-couple-walk",
+    "title": "함께 걷는 장면",
+    "cue": "데이트 스냅처럼 흐름이 보이는 구도"
+  },
+  {
+    "subject": "group-family",
+    "step": "composition",
+    "option_key": "group-comp-couple-seat",
+    "title": "앉아서 가까이",
+    "cue": "편안하고 다정한 거리감이 보이는 구도"
+  },
+  {
+    "subject": "group-family",
+    "step": "composition",
+    "option_key": "group-comp-couple-back",
+    "title": "뒷모습 중심",
+    "cue": "장소와 추억 감성이 크게 느껴지는 구도"
+  },
+  {
+    "subject": "group-family",
+    "step": "composition",
+    "option_key": "group-comp-couple-half",
+    "title": "상반신 밀착 구도",
+    "cue": "표정과 관계가 먼저 보이는 구도"
+  },
+  {
+    "subject": "group-family",
+    "step": "composition",
+    "option_key": "group-comp-couple-wide",
+    "title": "배경이 함께 보이는 와이드",
+    "cue": "여행 / 야외 감성이 있는 구도"
+  },
+  {
+    "subject": "group-family",
+    "step": "composition",
+    "option_key": "group-comp-couple-hold",
+    "title": "손잡기 / 포옹 포인트",
+    "cue": "행동이 중심이 되는 구도"
+  },
+  {
+    "subject": "group-family",
+    "step": "composition",
+    "option_key": "group-comp-formal-center",
+    "title": "정중앙 기념사진",
+    "cue": "행사나 웨딩에 안정적인 구도"
+  },
+  {
+    "subject": "group-family",
+    "step": "composition",
+    "option_key": "group-comp-formal-row",
+    "title": "한 줄 정렬",
+    "cue": "인원이 정돈되어 보이는 구도"
+  },
+  {
+    "subject": "group-family",
+    "step": "composition",
+    "option_key": "group-comp-formal-seat",
+    "title": "앉고 서는 조합",
+    "cue": "가족 / 웨딩에 균형이 좋은 구도"
+  },
+  {
+    "subject": "group-family",
+    "step": "composition",
+    "option_key": "group-comp-formal-stage",
+    "title": "단상 / 무대 느낌",
+    "cue": "졸업, 시상 장면에 쉬운 구도"
+  },
+  {
+    "subject": "group-family",
+    "step": "composition",
+    "option_key": "group-comp-formal-wide",
+    "title": "전체 인원이 다 보이는 와이드",
+    "cue": "기념성과 규모가 함께 보이는 구도"
+  },
+  {
+    "subject": "group-family",
+    "step": "composition",
+    "option_key": "group-comp-formal-half",
+    "title": "상반신 중심 단체컷",
+    "cue": "얼굴 인상이 잘 읽히는 구도"
+  },
+  {
+    "subject": "group-family",
+    "step": "composition",
+    "option_key": "group-comp-formal-couple",
+    "title": "커플 메인 정렬",
+    "cue": "웨딩 / 약혼 사진에 쉬운 구도"
+  },
+  {
+    "subject": "group-family",
+    "step": "composition",
+    "option_key": "group-comp-formal-family",
+    "title": "가족 중심 정리형",
+    "cue": "세대 구성이 또렷한 구도"
+  },
+  {
+    "subject": "group-family",
+    "step": "composition",
+    "option_key": "group-comp-casual-chat",
+    "title": "이야기하는 순간",
+    "cue": "자연스러운 대화가 보이는 구도"
+  },
+  {
+    "subject": "group-family",
+    "step": "composition",
+    "option_key": "group-comp-casual-walk",
+    "title": "함께 걷는 장면",
+    "cue": "이동감과 관계성이 보이는 구도"
+  },
+  {
+    "subject": "group-family",
+    "step": "composition",
+    "option_key": "group-comp-casual-laugh",
+    "title": "웃고 떠드는 장면",
+    "cue": "에너지와 즐거움이 먼저 보이는 구도"
+  },
+  {
+    "subject": "group-family",
+    "step": "composition",
+    "option_key": "group-comp-casual-circle",
+    "title": "모여 있는 느낌",
+    "cue": "친밀감이 느껴지는 배치 구도"
+  },
+  {
+    "subject": "group-family",
+    "step": "composition",
+    "option_key": "group-comp-casual-seat",
+    "title": "편하게 앉은 단체컷",
+    "cue": "실내나 카페에 어울리는 구도"
+  },
+  {
+    "subject": "group-family",
+    "step": "composition",
+    "option_key": "group-comp-casual-mix",
+    "title": "서 있고 앉는 혼합 구도",
+    "cue": "생활감이 있는 균형 구도"
+  },
+  {
+    "subject": "group-family",
+    "step": "composition",
+    "option_key": "group-comp-casual-trip",
+    "title": "여행 중 자연스러운 단체컷",
+    "cue": "장소감이 함께 보이는 구도"
+  },
+  {
+    "subject": "group-family",
+    "step": "composition",
+    "option_key": "group-comp-casual-wide",
+    "title": "장소가 크게 보이는 와이드",
+    "cue": "배경과 관계를 함께 담는 구도"
+  },
+  {
+    "subject": "group-family",
+    "step": "mood",
+    "option_key": "mood-bright",
+    "title": "밝고 친근하게",
+    "cue": "입문자도 편하게 느끼는 가볍고 열린 분위기"
+  },
+  {
+    "subject": "group-family",
+    "step": "mood",
+    "option_key": "mood-clean",
+    "title": "깨끗하고 맑게",
+    "cue": "정보 전달이 또렷한 클린한 방향"
+  },
+  {
+    "subject": "group-family",
+    "step": "mood",
+    "option_key": "mood-warm",
+    "title": "따뜻하고 편안하게",
+    "cue": "부드럽고 정감 있는 인상을 주는 무드"
+  },
+  {
+    "subject": "group-family",
+    "step": "mood",
+    "option_key": "mood-calm",
+    "title": "차분하고 담백하게",
+    "cue": "과장되지 않고 정리된 톤"
+  },
+  {
+    "subject": "group-family",
+    "step": "mood",
+    "option_key": "mood-cinematic",
+    "title": "영화처럼 깊게",
+    "cue": "공기감과 서사가 함께 느껴지는 무드"
+  },
+  {
+    "subject": "group-family",
+    "step": "mood",
+    "option_key": "mood-dramatic",
+    "title": "강렬하고 드라마틱하게",
+    "cue": "명암과 감정이 또렷한 방향"
+  },
+  {
+    "subject": "group-family",
+    "step": "mood",
+    "option_key": "mood-luxury",
+    "title": "고급스럽고 세련되게",
+    "cue": "브랜드 비주얼 같은 정제된 무드"
+  },
+  {
+    "subject": "group-family",
+    "step": "mood",
+    "option_key": "mood-playful",
+    "title": "귀엽고 경쾌하게",
+    "cue": "색감과 인상이 가볍고 재미있는 방향"
+  },
+  {
+    "subject": "group-family",
+    "step": "mood",
+    "option_key": "mood-future",
+    "title": "미래적이고 차갑게",
+    "cue": "기술적이고 현대적인 느낌"
+  },
+  {
+    "subject": "group-family",
+    "step": "mood",
+    "option_key": "mood-vintage",
+    "title": "빈티지하고 레트로하게",
+    "cue": "옛 감성과 필름 느낌이 남는 방향"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "detail",
+    "option_key": "fashion-lookbook",
+    "title": "룩북 / 쇼핑몰 컷",
+    "cue": "의상 전체가 잘 보이는 방향"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "detail",
+    "option_key": "fashion-editorial",
+    "title": "패션 화보",
+    "cue": "잡지 같은 완성도가 느껴지는 방향"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "detail",
+    "option_key": "fashion-street",
+    "title": "스트리트 룩",
+    "cue": "도시 감성과 개성이 살아 있는 방향"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "detail",
+    "option_key": "fashion-brand",
+    "title": "브랜드 캠페인 컷",
+    "cue": "브랜드 무드와 메시지가 중요한 방향"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "detail",
+    "option_key": "fashion-makeup",
+    "title": "메이크업 중심 컷",
+    "cue": "피부, 립, 아이메이크업이 중심인 방향"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "detail",
+    "option_key": "fashion-hair",
+    "title": "헤어 스타일 컷",
+    "cue": "헤어 질감과 실루엣이 중요한 방향"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "detail",
+    "option_key": "fashion-nail",
+    "title": "네일 / 손 디테일",
+    "cue": "손과 소품 디테일이 중요한 방향"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "detail",
+    "option_key": "fashion-accessory",
+    "title": "액세서리 중심",
+    "cue": "가방, 신발, 주얼리가 중심인 방향"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "detail",
+    "option_key": "fashion-fitting",
+    "title": "피팅룸 / 데일리 스타일",
+    "cue": "실사용 느낌이 있는 패션 컷"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "detail",
+    "option_key": "fashion-runway",
+    "title": "무대 / 런웨이 무드",
+    "cue": "화려함과 집중도가 있는 방향"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "focus",
+    "option_key": "fashion-focus-full",
+    "title": "의상 전체 실루엣",
+    "cue": "전신 균형과 핏이 먼저 보이는 방향"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "focus",
+    "option_key": "fashion-focus-top",
+    "title": "상의 / 자켓",
+    "cue": "상반신 스타일이 중심인 방향"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "focus",
+    "option_key": "fashion-focus-bottom",
+    "title": "하의 / 신발",
+    "cue": "하체 스타일과 디테일이 중심인 방향"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "focus",
+    "option_key": "fashion-focus-makeup",
+    "title": "메이크업 디테일",
+    "cue": "피부와 메이크업이 먼저 보이는 방향"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "focus",
+    "option_key": "fashion-focus-hair",
+    "title": "헤어 결 / 웨이브",
+    "cue": "헤어 질감과 스타일이 중요한 방향"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "focus",
+    "option_key": "fashion-focus-skin",
+    "title": "피부 표현",
+    "cue": "맑은 피부와 광택 표현이 중심인 방향"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "focus",
+    "option_key": "fashion-focus-bag",
+    "title": "가방 / 소품",
+    "cue": "주요 액세서리를 크게 보여주는 방향"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "focus",
+    "option_key": "fashion-focus-hand",
+    "title": "손 / 포즈 디테일",
+    "cue": "손동작과 스타일링이 중요한 방향"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "pose",
+    "option_key": "fashion-pose-walk",
+    "title": "런웨이처럼 걷기",
+    "cue": "전신 라인과 실루엣이 살아나는 자세"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "pose",
+    "option_key": "fashion-pose-wall",
+    "title": "벽에 기대기",
+    "cue": "도시적이고 세련된 패션 포즈"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "pose",
+    "option_key": "fashion-pose-hip",
+    "title": "한 손 허리 / 골반 강조",
+    "cue": "자신감 있는 패션 자세"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "pose",
+    "option_key": "fashion-pose-crossleg",
+    "title": "앉아 다리 꼬기",
+    "cue": "시크하고 화보 같은 앉은 자세"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "pose",
+    "option_key": "fashion-pose-deepseat",
+    "title": "의자에 깊게 앉기",
+    "cue": "하이엔드 룩북에 잘 맞는 자세"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "pose",
+    "option_key": "fashion-pose-over-shoulder",
+    "title": "어깨 너머로 돌아보기",
+    "cue": "헤어와 옆선을 같이 살리는 자세"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "pose",
+    "option_key": "fashion-pose-hair",
+    "title": "헤어를 만지거나 넘기기",
+    "cue": "뷰티 / 헤어 포인트가 잘 보이는 자세"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "pose",
+    "option_key": "fashion-pose-bag",
+    "title": "가방이나 소품 잡기",
+    "cue": "액세서리를 강조하기 쉬운 자세"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "pose",
+    "option_key": "fashion-pose-floor",
+    "title": "바닥 / 계단에 앉기",
+    "cue": "강한 스타일링 컷에 어울리는 자세"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "pose",
+    "option_key": "fashion-pose-turn",
+    "title": "몸을 틀며 방향 전환하기",
+    "cue": "움직임이 살아 있는 화보 포즈"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "pose",
+    "option_key": "fashion-pose-sunglasses",
+    "title": "선글라스나 안경 만지기",
+    "cue": "소품 포인트가 잘 사는 패션 포즈"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "pose",
+    "option_key": "fashion-pose-collar",
+    "title": "옷깃 / 코트깃 잡기",
+    "cue": "브랜드 룩북에서 자주 쓰는 자세"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "pose",
+    "option_key": "fashion-pose-lapel",
+    "title": "재킷 앞깃을 정리하기",
+    "cue": "하이엔드한 분위기가 쉬운 포즈"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "pose",
+    "option_key": "fashion-pose-crouch",
+    "title": "쭈그려 앉아 시선 주기",
+    "cue": "스트리트 화보에 자주 쓰는 자세"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "pose",
+    "option_key": "fashion-pose-stairs",
+    "title": "계단 위에 앉거나 서기",
+    "cue": "길고 입체적인 실루엣을 주는 자세"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "pose",
+    "option_key": "fashion-pose-recline",
+    "title": "소파나 체어에 기대어 눕기",
+    "cue": "에디토리얼 화보에 어울리는 자세"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "pose",
+    "option_key": "fashion-pose-chairknee",
+    "title": "의자에 앉아 무릎을 세우기",
+    "cue": "다리 라인을 강조하는 포즈"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "pose",
+    "option_key": "fashion-pose-back",
+    "title": "등 라인이나 뒷모습 보이기",
+    "cue": "의상 핏과 헤어를 같이 살리는 포즈"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "pose",
+    "option_key": "fashion-pose-coatflip",
+    "title": "코트자락 / 옷자락 날리기",
+    "cue": "움직임과 실루엣이 강한 화보 포즈"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "pose",
+    "option_key": "fashion-pose-armup",
+    "title": "팔을 위로 올려 길게 늘이기",
+    "cue": "몸선과 옷 실루엣이 드라마틱해지는 포즈"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "pose",
+    "option_key": "fashion-pose-sidechair",
+    "title": "의자에 옆으로 기대 앉기",
+    "cue": "하이엔드 화보에서 자주 쓰는 자세"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "pose",
+    "option_key": "fashion-pose-floorstretch",
+    "title": "바닥에 다리를 뻗고 기대기",
+    "cue": "에디토리얼 무드가 강한 포즈"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "pose",
+    "option_key": "fashion-pose-arch",
+    "title": "상체를 살짝 젖혀 목선 살리기",
+    "cue": "뷰티 / 패션 겸용으로 우아한 포즈"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "pose",
+    "option_key": "fashion-pose-strap",
+    "title": "가방끈 / 어깨끈을 잡아 당기기",
+    "cue": "액세서리와 쇄골선을 같이 살리는 포즈"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "pose",
+    "option_key": "fashion-pose-kneel",
+    "title": "무릎을 굽힌 낮은 포즈",
+    "cue": "스트리트 패션이나 화보에 강한 자세"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "pose",
+    "option_key": "fashion-pose-window",
+    "title": "유리 / 쇼윈도에 기대기",
+    "cue": "도시적인 반사광과 잘 어울리는 포즈"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "pose",
+    "option_key": "fashion-pose-chairback",
+    "title": "의자 등받이를 거꾸로 잡기",
+    "cue": "강한 패션 화보 느낌을 주는 자세"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "pose",
+    "option_key": "fashion-pose-legcrossstand",
+    "title": "서서 한쪽 다리를 교차하기",
+    "cue": "다리선이 길어 보이는 럭셔리 포즈"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "pose",
+    "option_key": "fashion-pose-necktouch",
+    "title": "목선이나 쇄골선을 손으로 살리기",
+    "cue": "뷰티와 패션을 같이 살리는 포즈"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "styling",
+    "option_key": "fashion-tone-minimal",
+    "title": "미니멀 / 모던",
+    "cue": "군더더기 없이 세련된 방향"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "styling",
+    "option_key": "fashion-tone-chic",
+    "title": "시크 / 도시적",
+    "cue": "도회적이고 날카로운 무드"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "styling",
+    "option_key": "fashion-tone-y2k",
+    "title": "Y2K / 트렌디",
+    "cue": "젊고 과감한 스타일 방향"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "styling",
+    "option_key": "fashion-tone-romantic",
+    "title": "부드럽고 로맨틱",
+    "cue": "여성스럽고 따뜻한 분위기"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "styling",
+    "option_key": "fashion-tone-luxury",
+    "title": "럭셔리 / 하이엔드",
+    "cue": "브랜드 화보 같은 프리미엄 무드"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "styling",
+    "option_key": "fashion-tone-natural",
+    "title": "자연스럽고 편안하게",
+    "cue": "데일리룩에 잘 맞는 방향"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "styling",
+    "option_key": "fashion-tone-strong",
+    "title": "강렬하고 개성 있게",
+    "cue": "색과 포즈가 과감한 방향"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "styling",
+    "option_key": "fashion-tone-clean",
+    "title": "깨끗하고 담백하게",
+    "cue": "제품/룩 전달이 우선인 방향"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "composition",
+    "option_key": "comp-close",
+    "title": "얼굴 클로즈업",
+    "cue": "표정과 디테일이 가장 먼저 보이는 구도"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "composition",
+    "option_key": "comp-bust",
+    "title": "바스트 샷",
+    "cue": "상반신 중심으로 안정감 있게 보이는 구도"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "composition",
+    "option_key": "comp-medium",
+    "title": "미디엄 샷",
+    "cue": "인물과 주변 맥락을 함께 보여주는 기본 구도"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "composition",
+    "option_key": "comp-wide",
+    "title": "와이드 샷",
+    "cue": "배경과 공간 분위기까지 같이 보이는 구도"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "composition",
+    "option_key": "comp-low",
+    "title": "로우 앵글",
+    "cue": "주제의 존재감을 더 크게 느끼게 하는 각도"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "composition",
+    "option_key": "comp-top",
+    "title": "탑뷰 / 오버헤드",
+    "cue": "위에서 내려다보는 정리된 화면"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "composition",
+    "option_key": "comp-pov",
+    "title": "POV / 셀카 느낌",
+    "cue": "직접 찍은 듯 가까운 거리감이 있는 구도"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "composition",
+    "option_key": "comp-symmetry",
+    "title": "정면 대칭",
+    "cue": "또렷하고 정돈된 인상을 주는 구도"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "composition",
+    "option_key": "comp-asymmetry",
+    "title": "비대칭 배치",
+    "cue": "시선 흐름과 여백이 살아 있는 구도"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "composition",
+    "option_key": "comp-poster",
+    "title": "포스터형 메인 비주얼",
+    "cue": "한 장면 자체가 강하게 보이는 구성"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "composition",
+    "option_key": "fashion-comp-beauty-face",
+    "title": "얼굴 정면 클로즈업",
+    "cue": "메이크업과 피부가 중심인 구도"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "composition",
+    "option_key": "fashion-comp-beauty-angle",
+    "title": "사선 얼굴 컷",
+    "cue": "라인과 음영이 살아나는 구도"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "composition",
+    "option_key": "fashion-comp-beauty-eyes",
+    "title": "눈 중심 클로즈업",
+    "cue": "아이메이크업이 먼저 보이는 구도"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "composition",
+    "option_key": "fashion-comp-beauty-lips",
+    "title": "입술 중심 클로즈업",
+    "cue": "립 포인트가 강한 구도"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "composition",
+    "option_key": "fashion-comp-beauty-hair",
+    "title": "헤어 + 얼굴 구도",
+    "cue": "헤어 결이 함께 보이는 구도"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "composition",
+    "option_key": "fashion-comp-beauty-hand",
+    "title": "손 + 얼굴 / 제품",
+    "cue": "뷰티 제품과 손동작이 보이는 구도"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "composition",
+    "option_key": "fashion-comp-beauty-neck",
+    "title": "목선까지 들어오는 구도",
+    "cue": "피부 표현이 자연스러운 구도"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "composition",
+    "option_key": "fashion-comp-beauty-soft",
+    "title": "얼굴 + 배경 흐림",
+    "cue": "얼굴만 선명하게 보이는 구도"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "composition",
+    "option_key": "fashion-comp-full-front",
+    "title": "전신 정면",
+    "cue": "의상 전체 실루엣이 또렷한 구도"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "composition",
+    "option_key": "fashion-comp-full-angle",
+    "title": "전신 사선",
+    "cue": "핏과 라인이 함께 보이는 구도"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "composition",
+    "option_key": "fashion-comp-full-walk",
+    "title": "걷는 룩북컷",
+    "cue": "움직임과 스타일이 동시에 보이는 구도"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "composition",
+    "option_key": "fashion-comp-full-mirror",
+    "title": "전신 거울컷",
+    "cue": "실사용 스타일이 자연스러운 구도"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "composition",
+    "option_key": "fashion-comp-full-poster",
+    "title": "화보 메인 전신컷",
+    "cue": "표지처럼 강하게 보이는 구도"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "composition",
+    "option_key": "fashion-comp-full-seat",
+    "title": "앉은 자세 전신컷",
+    "cue": "자연스러운 포즈가 있는 구도"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "composition",
+    "option_key": "fashion-comp-full-detail",
+    "title": "전신 + 신발 포인트",
+    "cue": "하의와 신발이 함께 보이는 구도"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "composition",
+    "option_key": "fashion-comp-full-wide",
+    "title": "배경이 함께 보이는 전신컷",
+    "cue": "장소 감성까지 살리는 구도"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "composition",
+    "option_key": "fashion-comp-upper-bust",
+    "title": "상반신 정면",
+    "cue": "상의와 얼굴이 함께 보이는 구도"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "composition",
+    "option_key": "fashion-comp-upper-angle",
+    "title": "상반신 사선",
+    "cue": "자켓, 어깨선이 살아나는 구도"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "composition",
+    "option_key": "fashion-comp-upper-close",
+    "title": "상의 디테일 클로즈업",
+    "cue": "소재와 디테일이 중심인 구도"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "composition",
+    "option_key": "fashion-comp-upper-hand",
+    "title": "손 / 가방 함께",
+    "cue": "포즈와 소품이 같이 보이는 구도"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "composition",
+    "option_key": "fashion-comp-upper-seat",
+    "title": "앉은 상반신컷",
+    "cue": "도시적이고 차분한 구도"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "composition",
+    "option_key": "fashion-comp-upper-lookaway",
+    "title": "시선을 뺀 상반신컷",
+    "cue": "감성적인 인상이 있는 구도"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "composition",
+    "option_key": "fashion-comp-upper-window",
+    "title": "창가 상반신컷",
+    "cue": "빛과 실루엣이 부드러운 구도"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "composition",
+    "option_key": "fashion-comp-upper-poster",
+    "title": "상반신 메인 화보컷",
+    "cue": "브랜드 무드가 강한 구도"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "mood",
+    "option_key": "mood-bright",
+    "title": "밝고 친근하게",
+    "cue": "입문자도 편하게 느끼는 가볍고 열린 분위기"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "mood",
+    "option_key": "mood-clean",
+    "title": "깨끗하고 맑게",
+    "cue": "정보 전달이 또렷한 클린한 방향"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "mood",
+    "option_key": "mood-warm",
+    "title": "따뜻하고 편안하게",
+    "cue": "부드럽고 정감 있는 인상을 주는 무드"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "mood",
+    "option_key": "mood-calm",
+    "title": "차분하고 담백하게",
+    "cue": "과장되지 않고 정리된 톤"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "mood",
+    "option_key": "mood-cinematic",
+    "title": "영화처럼 깊게",
+    "cue": "공기감과 서사가 함께 느껴지는 무드"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "mood",
+    "option_key": "mood-dramatic",
+    "title": "강렬하고 드라마틱하게",
+    "cue": "명암과 감정이 또렷한 방향"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "mood",
+    "option_key": "mood-luxury",
+    "title": "고급스럽고 세련되게",
+    "cue": "브랜드 비주얼 같은 정제된 무드"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "mood",
+    "option_key": "mood-playful",
+    "title": "귀엽고 경쾌하게",
+    "cue": "색감과 인상이 가볍고 재미있는 방향"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "mood",
+    "option_key": "mood-future",
+    "title": "미래적이고 차갑게",
+    "cue": "기술적이고 현대적인 느낌"
+  },
+  {
+    "subject": "fashion-beauty",
+    "step": "mood",
+    "option_key": "mood-vintage",
+    "title": "빈티지하고 레트로하게",
+    "cue": "옛 감성과 필름 느낌이 남는 방향"
+  },
+  {
+    "subject": "profile-id",
+    "step": "detail",
+    "option_key": "profile-resume",
+    "title": "이력서 / 회사 프로필",
+    "cue": "정돈되고 신뢰감 있는 인물 사진"
+  },
+  {
+    "subject": "profile-id",
+    "step": "detail",
+    "option_key": "profile-lecturer",
+    "title": "강사 / 발표자 소개",
+    "cue": "전문성과 친근함이 함께 필요한 방향"
+  },
+  {
+    "subject": "profile-id",
+    "step": "detail",
+    "option_key": "profile-social",
+    "title": "SNS 프로필",
+    "cue": "개인 브랜딩과 분위기가 중요한 방향"
+  },
+  {
+    "subject": "profile-id",
+    "step": "detail",
+    "option_key": "profile-model",
+    "title": "배우 / 모델 프로필",
+    "cue": "얼굴 인상과 캐릭터가 중요한 방향"
+  },
+  {
+    "subject": "profile-id",
+    "step": "detail",
+    "option_key": "profile-student",
+    "title": "학생 / 지원용 사진",
+    "cue": "단정하고 밝은 인상이 필요한 방향"
+  },
+  {
+    "subject": "profile-id",
+    "step": "detail",
+    "option_key": "profile-author",
+    "title": "작가 / 크리에이터 소개",
+    "cue": "취향과 개성이 드러나는 방향"
+  },
+  {
+    "subject": "profile-id",
+    "step": "detail",
+    "option_key": "profile-coach",
+    "title": "코치 / 컨설턴트",
+    "cue": "전문성, 상담감이 느껴지는 방향"
+  },
+  {
+    "subject": "profile-id",
+    "step": "detail",
+    "option_key": "profile-team",
+    "title": "팀원 소개용 사진",
+    "cue": "회사 페이지에 잘 어울리는 방향"
+  },
+  {
+    "subject": "profile-id",
+    "step": "appearance",
+    "option_key": "profile-trust",
+    "title": "신뢰감 있게",
+    "cue": "전문성과 안정감이 먼저 느껴지는 인상"
+  },
+  {
+    "subject": "profile-id",
+    "step": "appearance",
+    "option_key": "profile-friendly",
+    "title": "친근하게",
+    "cue": "부드럽고 approachable한 인상"
+  },
+  {
+    "subject": "profile-id",
+    "step": "appearance",
+    "option_key": "profile-smart",
+    "title": "깔끔하고 똑똑하게",
+    "cue": "정리된 인상이 강한 방향"
+  },
+  {
+    "subject": "profile-id",
+    "step": "appearance",
+    "option_key": "profile-calm",
+    "title": "차분하고 단정하게",
+    "cue": "과하지 않고 편안한 인상"
+  },
+  {
+    "subject": "profile-id",
+    "step": "appearance",
+    "option_key": "profile-bright",
+    "title": "밝고 긍정적으로",
+    "cue": "입문자나 대중 대상에 잘 맞는 인상"
+  },
+  {
+    "subject": "profile-id",
+    "step": "appearance",
+    "option_key": "profile-premium",
+    "title": "고급스럽고 품위 있게",
+    "cue": "하이엔드 서비스와 어울리는 인상"
+  },
+  {
+    "subject": "profile-id",
+    "step": "appearance",
+    "option_key": "profile-creative",
+    "title": "개성 있게",
+    "cue": "창작자나 개인 브랜드에 어울리는 인상"
+  },
+  {
+    "subject": "profile-id",
+    "step": "appearance",
+    "option_key": "profile-strong",
+    "title": "또렷하고 자신감 있게",
+    "cue": "리더십과 존재감이 느껴지는 인상"
+  },
+  {
+    "subject": "profile-id",
+    "step": "pose",
+    "option_key": "profile-pose-front",
+    "title": "정면으로 바르게 서기",
+    "cue": "가장 기본이 되는 프로필 자세"
+  },
+  {
+    "subject": "profile-id",
+    "step": "pose",
+    "option_key": "profile-pose-angled",
+    "title": "살짝 45도로 서기",
+    "cue": "부드럽고 자연스러운 기본 포즈"
+  },
+  {
+    "subject": "profile-id",
+    "step": "pose",
+    "option_key": "profile-pose-crossedarms",
+    "title": "가벼운 팔짱",
+    "cue": "전문성과 자신감이 드러나는 자세"
+  },
+  {
+    "subject": "profile-id",
+    "step": "pose",
+    "option_key": "profile-pose-handclasp",
+    "title": "손을 가볍게 모으기",
+    "cue": "정돈되고 안정적인 인상의 자세"
+  },
+  {
+    "subject": "profile-id",
+    "step": "pose",
+    "option_key": "profile-pose-seated",
+    "title": "의자에 단정하게 앉기",
+    "cue": "강사나 저자 소개에 잘 맞는 자세"
+  },
+  {
+    "subject": "profile-id",
+    "step": "pose",
+    "option_key": "profile-pose-desk",
+    "title": "책상 / 노트북 옆 자세",
+    "cue": "업무 맥락이 드러나는 자세"
+  },
+  {
+    "subject": "profile-id",
+    "step": "pose",
+    "option_key": "profile-pose-book",
+    "title": "책 / 노트 / 펜 들기",
+    "cue": "학생, 저자, 코치형에 어울리는 자세"
+  },
+  {
+    "subject": "profile-id",
+    "step": "pose",
+    "option_key": "profile-pose-present",
+    "title": "설명하는 손짓",
+    "cue": "강사 / 발표자 소개에 맞는 자세"
+  },
+  {
+    "subject": "profile-id",
+    "step": "pose",
+    "option_key": "profile-pose-pocket",
+    "title": "주머니 손으로 편하게",
+    "cue": "캐주얼한 개인 브랜딩 포즈"
+  },
+  {
+    "subject": "profile-id",
+    "step": "pose",
+    "option_key": "profile-pose-lean",
+    "title": "한쪽에 가볍게 기대기",
+    "cue": "딱딱하지 않은 개인 프로필 자세"
+  },
+  {
+    "subject": "profile-id",
+    "step": "pose",
+    "option_key": "profile-pose-tablet",
+    "title": "태블릿이나 서류를 들기",
+    "cue": "업무 / 강사형 프로필에 잘 맞는 자세"
+  },
+  {
+    "subject": "profile-id",
+    "step": "pose",
+    "option_key": "profile-pose-mic",
+    "title": "마이크나 발표 도구를 들기",
+    "cue": "강연자 / 진행자 느낌이 나는 자세"
+  },
+  {
+    "subject": "profile-id",
+    "step": "pose",
+    "option_key": "profile-pose-clipboard",
+    "title": "클립보드나 파일을 들기",
+    "cue": "회사 / 코치형 프로필에 어울리는 자세"
+  },
+  {
+    "subject": "profile-id",
+    "step": "pose",
+    "option_key": "profile-pose-sideseat",
+    "title": "의자에 살짝 옆으로 앉기",
+    "cue": "딱딱하지 않게 정돈된 인상을 주는 자세"
+  },
+  {
+    "subject": "profile-id",
+    "step": "pose",
+    "option_key": "profile-pose-handsbehind",
+    "title": "손을 뒤로 두고 서기",
+    "cue": "깔끔하고 군더더기 없는 기본 자세"
+  },
+  {
+    "subject": "profile-id",
+    "step": "pose",
+    "option_key": "profile-pose-coffee",
+    "title": "컵을 들고 편하게 서기",
+    "cue": "개인 브랜딩이나 SNS용 프로필에 맞는 자세"
+  },
+  {
+    "subject": "profile-id",
+    "step": "pose",
+    "option_key": "profile-pose-onehand",
+    "title": "한 손만 가볍게 제스처 주기",
+    "cue": "친근한 소개형 프로필에 어울리는 자세"
+  },
+  {
+    "subject": "profile-id",
+    "step": "pose",
+    "option_key": "profile-pose-rail",
+    "title": "난간이나 창틀에 살짝 기대기",
+    "cue": "딱딱하지 않은 브랜딩 프로필에 맞는 자세"
+  },
+  {
+    "subject": "profile-id",
+    "step": "pose",
+    "option_key": "profile-pose-notebook",
+    "title": "노트북이나 책을 품에 안기",
+    "cue": "강사 / 저자 / 학생 프로필에 잘 맞는 자세"
+  },
+  {
+    "subject": "profile-id",
+    "step": "background",
+    "option_key": "profile-bg-white",
+    "title": "흰 배경 스튜디오",
+    "cue": "가장 단정하고 범용적인 배경"
+  },
+  {
+    "subject": "profile-id",
+    "step": "background",
+    "option_key": "profile-bg-gray",
+    "title": "회색 / 중립 배경",
+    "cue": "정리된 스튜디오 느낌의 배경"
+  },
+  {
+    "subject": "profile-id",
+    "step": "background",
+    "option_key": "profile-bg-office",
+    "title": "사무실 느낌 흐림",
+    "cue": "업무 관련성이 보이는 배경"
+  },
+  {
+    "subject": "profile-id",
+    "step": "background",
+    "option_key": "profile-bg-window",
+    "title": "창가 자연광",
+    "cue": "밝고 부드러운 인상의 배경"
+  },
+  {
+    "subject": "profile-id",
+    "step": "background",
+    "option_key": "profile-bg-color",
+    "title": "단색 컬러 배경",
+    "cue": "개인 브랜딩 느낌이 있는 배경"
+  },
+  {
+    "subject": "profile-id",
+    "step": "background",
+    "option_key": "profile-bg-deep",
+    "title": "짙은 고급 배경",
+    "cue": "차분하고 프리미엄한 인상"
+  },
+  {
+    "subject": "profile-id",
+    "step": "background",
+    "option_key": "profile-bg-books",
+    "title": "책 / 작업 공간 배경",
+    "cue": "전문가나 작가 느낌이 있는 배경"
+  },
+  {
+    "subject": "profile-id",
+    "step": "background",
+    "option_key": "profile-bg-minimal",
+    "title": "아주 단순한 여백 배경",
+    "cue": "주인공 인상만 또렷하게 보이는 배경"
+  },
+  {
+    "subject": "profile-id",
+    "step": "composition",
+    "option_key": "comp-close",
+    "title": "얼굴 클로즈업",
+    "cue": "표정과 디테일이 가장 먼저 보이는 구도"
+  },
+  {
+    "subject": "profile-id",
+    "step": "composition",
+    "option_key": "comp-bust",
+    "title": "바스트 샷",
+    "cue": "상반신 중심으로 안정감 있게 보이는 구도"
+  },
+  {
+    "subject": "profile-id",
+    "step": "composition",
+    "option_key": "comp-medium",
+    "title": "미디엄 샷",
+    "cue": "인물과 주변 맥락을 함께 보여주는 기본 구도"
+  },
+  {
+    "subject": "profile-id",
+    "step": "composition",
+    "option_key": "comp-wide",
+    "title": "와이드 샷",
+    "cue": "배경과 공간 분위기까지 같이 보이는 구도"
+  },
+  {
+    "subject": "profile-id",
+    "step": "composition",
+    "option_key": "comp-low",
+    "title": "로우 앵글",
+    "cue": "주제의 존재감을 더 크게 느끼게 하는 각도"
+  },
+  {
+    "subject": "profile-id",
+    "step": "composition",
+    "option_key": "comp-top",
+    "title": "탑뷰 / 오버헤드",
+    "cue": "위에서 내려다보는 정리된 화면"
+  },
+  {
+    "subject": "profile-id",
+    "step": "composition",
+    "option_key": "comp-pov",
+    "title": "POV / 셀카 느낌",
+    "cue": "직접 찍은 듯 가까운 거리감이 있는 구도"
+  },
+  {
+    "subject": "profile-id",
+    "step": "composition",
+    "option_key": "comp-symmetry",
+    "title": "정면 대칭",
+    "cue": "또렷하고 정돈된 인상을 주는 구도"
+  },
+  {
+    "subject": "profile-id",
+    "step": "composition",
+    "option_key": "comp-asymmetry",
+    "title": "비대칭 배치",
+    "cue": "시선 흐름과 여백이 살아 있는 구도"
+  },
+  {
+    "subject": "profile-id",
+    "step": "composition",
+    "option_key": "comp-poster",
+    "title": "포스터형 메인 비주얼",
+    "cue": "한 장면 자체가 강하게 보이는 구성"
+  },
+  {
+    "subject": "profile-id",
+    "step": "composition",
+    "option_key": "profile-social-face",
+    "title": "얼굴 중심 프로필컷",
+    "cue": "SNS 아이콘에 잘 맞는 구도"
+  },
+  {
+    "subject": "profile-id",
+    "step": "composition",
+    "option_key": "profile-social-half",
+    "title": "상반신 브랜딩컷",
+    "cue": "개인 분위기와 스타일이 함께 보이는 구도"
+  },
+  {
+    "subject": "profile-id",
+    "step": "composition",
+    "option_key": "profile-social-angle",
+    "title": "사선 인상컷",
+    "cue": "보다 감성적인 프로필 구도"
+  },
+  {
+    "subject": "profile-id",
+    "step": "composition",
+    "option_key": "profile-social-creative",
+    "title": "개성 있는 자세",
+    "cue": "크리에이터 느낌이 살아나는 구도"
+  },
+  {
+    "subject": "profile-id",
+    "step": "composition",
+    "option_key": "profile-social-space",
+    "title": "배경이 조금 보이는 구도",
+    "cue": "작업공간이나 취향이 보이는 구도"
+  },
+  {
+    "subject": "profile-id",
+    "step": "composition",
+    "option_key": "profile-social-hand",
+    "title": "소품이 함께 보이는 구도",
+    "cue": "책, 카메라 등 캐릭터가 더해지는 구도"
+  },
+  {
+    "subject": "profile-id",
+    "step": "composition",
+    "option_key": "profile-social-seat",
+    "title": "앉은 자연스러운 구도",
+    "cue": "편안한 소개 이미지 구도"
+  },
+  {
+    "subject": "profile-id",
+    "step": "composition",
+    "option_key": "profile-social-poster",
+    "title": "메인 브랜딩컷",
+    "cue": "표지처럼 강하게 쓰기 좋은 구도"
+  },
+  {
+    "subject": "profile-id",
+    "step": "composition",
+    "option_key": "profile-comp-head",
+    "title": "얼굴 정면 헤드샷",
+    "cue": "가장 공식적인 프로필 구도"
+  },
+  {
+    "subject": "profile-id",
+    "step": "composition",
+    "option_key": "profile-comp-bust",
+    "title": "상반신 정면",
+    "cue": "회사 소개나 이력서에 쉬운 구도"
+  },
+  {
+    "subject": "profile-id",
+    "step": "composition",
+    "option_key": "profile-comp-angle",
+    "title": "약한 사선 각도",
+    "cue": "정면보다 자연스러운 공식 구도"
+  },
+  {
+    "subject": "profile-id",
+    "step": "composition",
+    "option_key": "profile-comp-center",
+    "title": "정중앙 정리형",
+    "cue": "단정하고 또렷한 인상 구도"
+  },
+  {
+    "subject": "profile-id",
+    "step": "composition",
+    "option_key": "profile-comp-space",
+    "title": "여백이 있는 프로필컷",
+    "cue": "웹페이지 프로필 영역에 쉬운 구도"
+  },
+  {
+    "subject": "profile-id",
+    "step": "composition",
+    "option_key": "profile-comp-seat",
+    "title": "앉은 자세 프로필",
+    "cue": "강사나 전문가 소개에 쉬운 구도"
+  },
+  {
+    "subject": "profile-id",
+    "step": "composition",
+    "option_key": "profile-comp-desk",
+    "title": "책상 옆 프로필",
+    "cue": "업무 관련성이 보이는 구도"
+  },
+  {
+    "subject": "profile-id",
+    "step": "composition",
+    "option_key": "profile-comp-window",
+    "title": "창가 자연광 프로필",
+    "cue": "밝고 신뢰감 있는 구도"
+  },
+  {
+    "subject": "profile-id",
+    "step": "mood",
+    "option_key": "trust-clear",
+    "title": "깔끔하고 신뢰감 있게",
+    "cue": "회사 소개나 업무 자료에 잘 맞는 방향"
+  },
+  {
+    "subject": "profile-id",
+    "step": "mood",
+    "option_key": "trust-friendly",
+    "title": "친근하고 부드럽게",
+    "cue": "접근성이 좋아 보이는 서비스 톤"
+  },
+  {
+    "subject": "profile-id",
+    "step": "mood",
+    "option_key": "trust-premium",
+    "title": "차분하고 프리미엄하게",
+    "cue": "전문성과 품질감이 느껴지는 방향"
+  },
+  {
+    "subject": "profile-id",
+    "step": "mood",
+    "option_key": "trust-smart",
+    "title": "똑똑하고 현대적으로",
+    "cue": "기술적이고 효율적인 인상이 있는 톤"
+  },
+  {
+    "subject": "profile-id",
+    "step": "mood",
+    "option_key": "trust-human",
+    "title": "사람 냄새 나게",
+    "cue": "딱딱함을 줄이고 실사용 장면이 느껴지는 방향"
+  },
+  {
+    "subject": "profile-id",
+    "step": "mood",
+    "option_key": "trust-calm",
+    "title": "과하지 않게 안정적으로",
+    "cue": "설명 자료에 무리가 없는 담백한 무드"
+  },
+  {
+    "subject": "profile-id",
+    "step": "mood",
+    "option_key": "trust-bold",
+    "title": "선명하고 자신감 있게",
+    "cue": "강한 메시지와 전달력이 필요한 방향"
+  },
+  {
+    "subject": "profile-id",
+    "step": "mood",
+    "option_key": "trust-soft",
+    "title": "부드럽고 환하게",
+    "cue": "교육, 케어, 입문자 대상에 맞는 방향"
+  }
+]

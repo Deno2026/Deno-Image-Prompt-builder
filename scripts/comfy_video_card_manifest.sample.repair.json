@@ -1,0 +1,37 @@
+[
+    {
+        "subject":  "video",
+        "step":  "start",
+        "option_key":  "t2v",
+        "title":  "Text to Video",
+        "prompt":  "cinematic filmmaker workspace with camera body, lens, and clapboard on a wooden desk, warm production mood, premium app card scene, square composition"
+    },
+    {
+        "subject":  "video",
+        "step":  "structure",
+        "option_key":  "two-cut",
+        "title":  "Two cut flow",
+        "prompt":  "two people in one room, one reacting and one responding, natural cinematic conversation energy in a single coherent scene, premium square composition"
+    },
+    {
+        "subject":  "video",
+        "step":  "structure",
+        "option_key":  "three-cut",
+        "title":  "Three cut flow",
+        "prompt":  "one subject moving through a hallway toward a bright doorway, clear sense of progression inside one coherent cinematic scene, premium square crop"
+    },
+    {
+        "subject":  "video",
+        "step":  "tone",
+        "option_key":  "tutorial",
+        "title":  "Tutorial tone",
+        "prompt":  "hands demonstrating a small object on a clean desk in soft daylight, practical and readable scene with calm clarity"
+    },
+    {
+        "subject":  "video",
+        "step":  "tone",
+        "option_key":  "shortform",
+        "title":  "Shortform tone",
+        "prompt":  "energetic close reaction portrait with bold contrast lighting and strong first impression, clean composition, no text, no logo"
+    }
+]

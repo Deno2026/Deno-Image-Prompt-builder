@@ -1,0 +1,113 @@
+{
+  "summary": {
+    "total_cards": 1693,
+    "home_cards": 3,
+    "video_cards": 48,
+    "image_cards": 1642,
+    "existing_assets": 1693,
+    "orphan_assets": 7,
+    "orphan_asset_paths": [
+      "assets/cards/food-drink/composition/food-comp-hot-close.webp",
+      "assets/cards/landscape/composition/land-comp-empty-panorama.webp",
+      "assets/cards/product/composition/product-comp-angle.webp",
+      "assets/cards/travel/composition/land-comp-empty-road.webp",
+      "assets/cards/vehicle/composition/vehicle-comp-front-angle.webp",
+      "assets/cards/vehicle/composition/vehicle-comp-side-profile.webp",
+      "assets/cards/video/subject/music-video.webp"
+    ],
+    "recommended_default_ratio": "16:9",
+    "notes": [
+      "현재 카드 썸네일은 object-fit: cover 기반이라 1:1보다 16:9 생성본이 안전합니다.",
+      "교체는 첫인상 배치 -> 영상 배치 -> 사람 카드 -> 비인물 카드 순서가 효율적입니다.",
+      "새 상위 모델을 찾으면 이 배치 manifest를 그대로 generate_card_assets.py에 넣어 재생성하면 됩니다."
+    ]
+  },
+  "batch_plan": [
+    {
+      "name": "01-home-and-video-entry",
+      "description": "메인 첫인상과 영상 첫 선택 화면부터 교체하는 배치",
+      "recommended_ratio": "16:9",
+      "count": 5,
+      "manifest": "scripts/replacement_batches/01-home-and-video-entry.json",
+      "pages": [
+        "home",
+        "video"
+      ],
+      "subjects": [
+        "home",
+        "video"
+      ]
+    },
+    {
+      "name": "02-video-core",
+      "description": "동영상 생성기 T2V 전 단계 카드 교체 배치",
+      "recommended_ratio": "16:9",
+      "count": 46,
+      "manifest": "scripts/replacement_batches/02-video-core.json",
+      "pages": [
+        "video"
+      ],
+      "subjects": [
+        "video"
+      ]
+    },
+    {
+      "name": "03-image-human",
+      "description": "사람 관련 이미지 카드 교체 배치",
+      "recommended_ratio": "16:9",
+      "count": 596,
+      "manifest": "scripts/replacement_batches/03-image-human.json",
+      "pages": [
+        "image"
+      ],
+      "subjects": [
+        "fashion-beauty",
+        "group-family",
+        "portrait",
+        "profile-id",
+        "selfie-sns",
+        "thumbnail-person"
+      ]
+    },
+    {
+      "name": "04-image-nonhuman-core",
+      "description": "제품/풍경/공간 등 주요 비인물 카드 교체 배치",
+      "recommended_ratio": "16:9",
+      "count": 635,
+      "manifest": "scripts/replacement_batches/04-image-nonhuman-core.json",
+      "pages": [
+        "image"
+      ],
+      "subjects": [
+        "animal",
+        "architecture",
+        "food-drink",
+        "landscape",
+        "product",
+        "service",
+        "space",
+        "travel",
+        "vehicle",
+        "workspace"
+      ]
+    },
+    {
+      "name": "05-image-longtail",
+      "description": "포스터/판타지/B-roll 등 롱테일 카드 교체 배치",
+      "recommended_ratio": "16:9",
+      "count": 411,
+      "manifest": "scripts/replacement_batches/05-image-longtail.json",
+      "pages": [
+        "image"
+      ],
+      "subjects": [
+        "broll",
+        "event",
+        "fantasy",
+        "illustration",
+        "poster",
+        "subjects"
+      ]
+    }
+  ]
+}

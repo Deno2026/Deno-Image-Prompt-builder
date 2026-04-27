@@ -12,17 +12,20 @@
       --panel: #07100a;
       --panel-soft: #0b1710;
       --panel-deep: #030704;
+      --panel-glass: rgba(10, 18, 13, 0.78);
       --text: #f2fbf3;
       --sub: #b1ceb9;
       --muted: #86a690;
       --line: rgba(92, 255, 145, 0.12);
-      --line-strong: rgba(92, 255, 145, 0.22);
+      --line-strong: rgba(92, 255, 145, 0.24);
       --accent: #58ff8d;
       --accent-deep: #1fa14c;
       --shadow: 0 26px 80px rgba(0, 0, 0, 0.45);
-      --radius-xl: 30px;
-      --radius-lg: 24px;
-      --radius-md: 18px;
+      --shadow-soft: 0 18px 48px rgba(0, 0, 0, 0.26);
+      --shadow-strong: 0 34px 100px rgba(0, 0, 0, 0.46);
+      --radius-xl: 34px;
+      --radius-lg: 26px;
+      --radius-md: 20px;
     }
 
     * {
@@ -31,6 +34,7 @@
 
     html {
       scroll-behavior: smooth;
+      color-scheme: dark;
     }
 
     body {
@@ -41,19 +45,37 @@
       background:
         radial-gradient(circle at 12% 8%, rgba(88, 255, 141, 0.09), transparent 18%),
         radial-gradient(circle at 86% 12%, rgba(88, 255, 141, 0.06), transparent 18%),
+        radial-gradient(circle at 52% 0%, rgba(255, 255, 255, 0.03), transparent 28%),
         linear-gradient(180deg, #020503 0%, #050906 34%, #030704 100%);
       overflow-x: hidden;
     }
 
-    body::before {
+    body::before,
+    body::after {
       content: "";
       position: fixed;
       inset: 0;
       pointer-events: none;
+      z-index: 0;
+    }
+
+    body::before {
       background:
         radial-gradient(circle at 18% 24%, rgba(255, 255, 255, 0.04), transparent 10%),
         radial-gradient(circle at 74% 36%, rgba(88, 255, 141, 0.04), transparent 14%);
-      z-index: 0;
+    }
+
+    body::after {
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent 18%),
+        repeating-linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 0.016) 0,
+          rgba(255, 255, 255, 0.016) 1px,
+          transparent 1px,
+          transparent 140px
+        );
+      opacity: 0.24;
     }
 
     a {
@@ -66,12 +88,27 @@
       font: inherit;
     }
 
+    a,
+    button,
+    textarea,
+    summary {
+      touch-action: manipulation;
+    }
+
+    a:focus-visible,
+    button:focus-visible,
+    textarea:focus-visible,
+    summary:focus-visible {
+      outline: 2px solid rgba(88, 255, 141, 0.72);
+      outline-offset: 3px;
+    }
+
     .shell {
       position: relative;
       z-index: 1;
-      width: min(1480px, calc(100vw - 56px));
+      width: min(1500px, calc(100vw - 56px));
       margin: 0 auto;
-      padding: 20px 0 42px;
+      padding: 18px 0 46px;
     }
 
     .topbar {
@@ -79,7 +116,15 @@
       grid-template-columns: auto 1fr auto;
       align-items: center;
       gap: 18px;
-      margin-bottom: 24px;
+      margin-bottom: 28px;
+      padding: 14px 16px;
+      border-radius: 28px;
+      border: 1px solid rgba(92, 255, 145, 0.12);
+      background:
+        linear-gradient(180deg, rgba(10, 18, 13, 0.86), rgba(6, 11, 8, 0.92)),
+        linear-gradient(135deg, rgba(88, 255, 141, 0.04), transparent 56%);
+      box-shadow: var(--shadow-soft);
+      backdrop-filter: blur(18px);
     }
 
     .mode-links {
@@ -164,12 +209,27 @@
     .result-card {
       position: relative;
       border-radius: var(--radius-xl);
-      border: 1px solid var(--line);
+      border: 1px solid rgba(92, 255, 145, 0.12);
       background:
-        linear-gradient(180deg, rgba(9, 17, 11, 0.98), rgba(5, 10, 7, 0.98)),
+        radial-gradient(circle at top left, rgba(88, 255, 141, 0.08), transparent 22%),
+        linear-gradient(180deg, rgba(9, 17, 11, 0.96), rgba(5, 10, 7, 0.98)),
         linear-gradient(135deg, rgba(88, 255, 141, 0.03), transparent 55%);
-      box-shadow: var(--shadow);
+      box-shadow: var(--shadow-strong);
       overflow: hidden;
+      isolation: isolate;
+    }
+
+    .step-card::before,
+    .result-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent 18%),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.015) 0, transparent 38%);
+      opacity: 0.45;
+      pointer-events: none;
+      z-index: -1;
     }
 
     .step-card {
@@ -220,9 +280,10 @@
       border-radius: 24px;
       border: 1px solid rgba(88, 255, 141, 0.16);
       background:
-        linear-gradient(180deg, rgba(8, 16, 10, 0.96), rgba(4, 8, 5, 0.98)),
-        linear-gradient(135deg, rgba(88, 255, 141, 0.04), transparent 56%);
+        linear-gradient(180deg, rgba(8, 16, 10, 0.84), rgba(4, 8, 5, 0.94)),
+        linear-gradient(135deg, rgba(88, 255, 141, 0.05), transparent 56%);
       box-shadow: 0 24px 50px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(16px);
       padding: 16px 14px 14px;
       overflow-y: auto;
       scrollbar-width: thin;
@@ -289,11 +350,37 @@
     }
 
     .step-heading {
+      position: sticky;
+      top: 12px;
+      z-index: 12;
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
       gap: 18px;
-      margin-bottom: 26px;
+      margin: -10px -8px 28px;
+      padding: 10px 8px 14px;
+      border-radius: 28px;
+      background:
+        linear-gradient(180deg, rgba(7, 16, 10, 0.97), rgba(7, 16, 10, 0.9) 72%, rgba(7, 16, 10, 0.7));
+      box-shadow: 0 22px 34px rgba(0, 0, 0, 0.22);
+      backdrop-filter: blur(18px);
+    }
+
+    .step-heading::after {
+      content: "";
+      position: absolute;
+      left: 8px;
+      right: 8px;
+      bottom: -18px;
+      height: 18px;
+      background: linear-gradient(180deg, rgba(7, 16, 10, 0.55), rgba(7, 16, 10, 0));
+      pointer-events: none;
+    }
+
+    @media (min-width: 901px) {
+      .step-card:has(.floating-back:not(.hidden)) .step-heading {
+        padding-left: 104px;
+      }
     }
 
     .step-copy {
@@ -314,6 +401,8 @@
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+      word-break: keep-all;
+      overflow-wrap: break-word;
     }
 
     .step-copy p,
@@ -349,9 +438,9 @@
       position: relative;
       min-height: 284px;
       border-radius: 26px;
-      border: 1px solid var(--line);
+      border: 1px solid rgba(92, 255, 145, 0.12);
       background:
-        linear-gradient(180deg, rgba(11, 22, 14, 0.98), rgba(6, 11, 8, 0.98)),
+        linear-gradient(180deg, rgba(11, 22, 14, 0.9), rgba(6, 11, 8, 0.95)),
         linear-gradient(135deg, rgba(88, 255, 141, 0.02), transparent 50%);
       padding: 16px;
       cursor: pointer;
@@ -360,7 +449,8 @@
       appearance: none;
       -webkit-appearance: none;
       transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
-      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+      box-shadow: 0 18px 42px rgba(0, 0, 0, 0.24);
+      backdrop-filter: blur(14px);
     }
 
     .option-card:hover,
@@ -369,12 +459,12 @@
     .direct-card.active {
       transform: translateY(-4px);
       border-color: var(--line-strong);
-      box-shadow: 0 22px 42px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 28px 64px rgba(0, 0, 0, 0.32);
     }
 
     .thumb {
       position: relative;
-      height: 174px;
+      height: 182px;
       border-radius: 22px;
       margin-bottom: 16px;
       border: 1px solid rgba(255, 255, 255, 0.05);
@@ -391,6 +481,8 @@
       height: 100%;
       object-fit: cover;
       z-index: 0;
+      filter: saturate(1.04) contrast(1.02);
+      transform: scale(1.015);
     }
 
     .thumb::before,
@@ -517,8 +609,8 @@
 
     .result-layout {
       display: grid;
-      grid-template-columns: minmax(0, 1fr) minmax(0, 0.98fr);
-      gap: 16px;
+      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+      gap: 18px;
       align-items: stretch;
       flex: 1;
       min-height: 0;
@@ -534,11 +626,12 @@
     .result-block,
     .knowledge-block {
       border-radius: 26px;
-      border: 1px solid var(--line);
+      border: 1px solid rgba(92, 255, 145, 0.12);
       background:
-        linear-gradient(180deg, rgba(9, 17, 11, 0.98), rgba(5, 9, 6, 0.98)),
+        linear-gradient(180deg, rgba(9, 17, 11, 0.9), rgba(5, 9, 6, 0.95)),
         linear-gradient(135deg, rgba(88, 255, 141, 0.02), transparent 52%);
-      padding: 16px;
+      padding: 18px;
+      backdrop-filter: blur(14px);
     }
 
     .result-block h3,
@@ -546,6 +639,8 @@
       margin: 0 0 8px;
       font-size: 1.42rem;
       letter-spacing: -0.03em;
+      word-break: keep-all;
+      overflow-wrap: break-word;
     }
 
     .summary-grid {
@@ -759,7 +854,7 @@
       min-height: 0;
     }
 
-    @media (max-width: 1380px) {
+    @media (max-width: 1960px) {
       .summary-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
@@ -914,6 +1009,13 @@
         align-items: flex-start;
         gap: 12px;
         margin-bottom: 18px;
+      }
+
+      .step-heading {
+        top: 8px;
+        margin: -8px -8px 18px;
+        padding: 8px 8px 12px;
+        border-radius: 22px;
       }
 
       .step-copy {
@@ -1131,6 +1233,12 @@
       .result-card {
         padding: 18px 12px 20px;
         border-radius: 24px;
+      }
+
+      .step-heading {
+        margin: -6px -6px 16px;
+        padding: 6px 6px 10px;
+        border-radius: 20px;
       }
 
       .floating-back {
@@ -1397,7 +1505,7 @@
         <div class="result-overview">
           <div class="result-block summary-panel">
             <h3>선택 요약</h3>
-            <p class="result-copy">긴 설명보다 지금까지 고른 핵심 키워드만 빠르게 확인할 수 있게 정리했습니다.</p>
+            <p class="result-copy">긴 설명보다 지금까지 고른 핵심 선택 내용만 빠르게 확인할 수 있게 정리했습니다.</p>
             <div id="summaryGrid" class="summary-grid"></div>
           </div>
 
@@ -1426,9 +1534,9 @@
             </summary>
             <div class="prompt-details-body">
               <label class="final-label" for="systemPromptInput">시스템 프롬프트</label>
-              <textarea id="systemPromptInput" class="prompt-editor"></textarea>
+              <textarea id="systemPromptInput" class="prompt-editor" aria-label="시스템 프롬프트"></textarea>
               <label class="final-label" for="resultBox">AI에 붙여넣을 문장</label>
-              <textarea id="resultBox" class="prompt-box" readonly></textarea>
+              <textarea id="resultBox" class="prompt-box" aria-label="AI에 붙여넣을 문장" readonly></textarea>
             </div>
           </details>
 
@@ -1447,7 +1555,7 @@
     <div class="modal-panel">
       <h3>직접 입력</h3>
       <p>프리셋보다 원하는 장면이 더 정확하다면 여기에 바로 적어주세요. 한두 줄만 적어도 다음 단계로 이어서 정리해드립니다.</p>
-      <textarea id="directModalInput" class="modal-input" placeholder="예: 비 오는 밤 골목길을 걷는 중년 남성의 영화 같은 인물 사진"></textarea>
+      <textarea id="directModalInput" class="modal-input" aria-label="직접 입력" placeholder="예: 비 오는 밤 골목길을 걷는 중년 남성의 영화 같은 인물 사진"></textarea>
       <div id="directModalStatus" class="status"></div>
       <div class="modal-actions">
         <button id="directModalCancel" class="ghost-btn" type="button">취소</button>
@@ -1488,7 +1596,7 @@ Use the structured inputs below to create 3 final image prompt options.
 Core goal:
 - Keep every explicit user selection.
 - If some useful visual details are missing, infer them naturally from the context and add them.
-- Write prompts that are detailed enough for weaker text encoders such as ComfyUI workflows, not only for GPT, Gemini, or Grok image chat models.
+- Write each prompt as a clear natural-language visual description, not as comma-separated keyword fragments, while keeping enough concrete visual detail for modern ComfyUI-style workflows where the prompt should carry the visual intent clearly.
 
 Output rules:
 1. Output only Option 1, Option 2, Option 3.
@@ -1506,7 +1614,7 @@ Expansion rules:
 - Especially infer and strengthen: pose nuance, hand placement, gaze direction, facial expression, body angle, framing, lens feel, camera distance, lighting direction, color palette, material texture, background simplicity, foreground/background separation, depth, atmosphere, and focal emphasis.
 - For people, add natural details like posture balance, hair flow, wardrobe texture, skin tone harmony, and flattering light if they fit the context.
 - For products, food, architecture, landscape, and service scenes, add realistic support details like surface texture, reflection control, environment cues, clean background handling, and composition anchors when relevant.
-- If the prompt is for ComfyUI-style generation, make the final prompt visually rich and explicit enough that the image can be rendered well even without the user manually specifying every small detail.
+- Keep the final prompt visually rich, readable, and specific enough that the scene can be imagined from the wording alone, even when the downstream image model does not infer missing details well.
 
 Quality rules:
 - Make the result feel intentional, visual, and production-ready.
@@ -3338,6 +3446,7 @@ Quality rules:
       ["vehicle-env-mountain", "산 / 자연 속", "야외 활동성과 연결되는 배경"],
       ["vehicle-env-beach", "바다 / 여행지", "여유와 여행 감성이 있는 배경"],
       ["vehicle-env-nightcity", "야간 도시", "네온과 반사가 살아나는 배경"],
+      ["vehicle-env-garage", "차고 / 작업 공간", "정비와 취미성이 느껴지는 배경"],
       ["vehicle-env-charging", "충전소 / 정비 공간", "기능 맥락이 보이는 배경"]
     ]);
 
@@ -3834,6 +3943,7 @@ Quality rules:
     renameStep("thumbnail-person", "pose", "어떤 자세가 좋을까요?");
     renameStep("thumbnail-person", "text", "텍스트는 어디에 둘까요?");
     renameStep("thumbnail-person", "composition", "화면은 어떻게 잡을까요?");
+    renameStep("thumbnail-person", "mood", "어떤 썸네일 분위기가 좋을까요?");
 
     renameStep("portrait", "detail", "어떤 인물 사진인가요?");
     renameStep("portrait", "appearance", "어떤 인상인가요?");
@@ -4103,7 +4213,7 @@ Quality rules:
       if (subject === "profile-id") {
         const detailKey = selected("detail")?.key;
 
-        if (step.key === "impression") {
+        if (step.key === "appearance") {
           if (["profile-resume", "profile-team"].includes(detailKey)) {
             return pickOptions(PROFILE_IMPRESSION_OPTIONS, ["profile-trust", "profile-smart", "profile-calm", "profile-premium"]);
           }
@@ -4438,7 +4548,7 @@ Quality rules:
         }
 
         if (step.key === "composition") {
-          if (["product-single", "product-angle", "product-float", "product-material"].includes(presentationKey)) {
+          if (["product-single", "product-angle", "product-float", "product-material", "product-splash"].includes(presentationKey)) {
             return PRODUCT_COMPOSITION_HERO_OPTIONS;
           }
           if (["product-hand", "product-lifestyle"].includes(presentationKey)) {
@@ -4768,11 +4878,20 @@ Quality rules:
         if (["fantasy-focus-battle", "fantasy-focus-team"].includes(focusKey) || ["fantasy-monster"].includes(detailKey)) {
           return FANTASY_COMPOSITION_BATTLE_OPTIONS;
         }
-        if (["fantasy-focus-world", "fantasy-focus-explore"].includes(focusKey) || ["fantasy-city", "fantasy-cyberpunk", "fantasy-post", "fantasy-myth"].includes(detailKey) || ["fantasy-stage-forest", "fantasy-stage-castle", "fantasy-stage-future", "fantasy-stage-ruin", "fantasy-stage-space", "fantasy-stage-extreme"].includes(stageKey)) {
+        if (focusKey === "fantasy-focus-character") {
+          return FANTASY_COMPOSITION_CHARACTER_OPTIONS;
+        }
+        if (["fantasy-focus-object", "fantasy-focus-ritual", "fantasy-focus-mood"].includes(focusKey)) {
+          return FANTASY_COMPOSITION_SYMBOLIC_OPTIONS;
+        }
+        if (["fantasy-focus-world", "fantasy-focus-explore"].includes(focusKey)) {
           return FANTASY_COMPOSITION_WORLD_OPTIONS;
         }
-        if (["fantasy-focus-object", "fantasy-focus-ritual", "fantasy-focus-mood"].includes(focusKey) || ["fantasy-magic", "fantasy-mecha", "fantasy-fairy"].includes(detailKey) || ["fantasy-stage-portal", "fantasy-stage-altar"].includes(stageKey)) {
+        if (["fantasy-magic", "fantasy-mecha", "fantasy-fairy"].includes(detailKey) || ["fantasy-stage-portal", "fantasy-stage-altar"].includes(stageKey)) {
           return FANTASY_COMPOSITION_SYMBOLIC_OPTIONS;
+        }
+        if (["fantasy-city", "fantasy-cyberpunk", "fantasy-post", "fantasy-myth"].includes(detailKey) || ["fantasy-stage-forest", "fantasy-stage-castle", "fantasy-stage-future", "fantasy-stage-ruin", "fantasy-stage-space", "fantasy-stage-extreme"].includes(stageKey)) {
+          return FANTASY_COMPOSITION_WORLD_OPTIONS;
         }
         return FANTASY_COMPOSITION_CHARACTER_OPTIONS;
       }
@@ -4927,7 +5046,7 @@ Quality rules:
     }
 
     function buildManualFlow() {
-      return stripGenericMood([
+      return [
         buildSubjectStep(),
         makeStep("detail", "어떤 느낌으로 정리할까요?", "장면 방향", "Detail direction", createOptions("DETAIL", "emerald", [
           ["manual-natural", "자연스럽고 생활감 있게", "과한 연출보다 실제 같은 방향"],
@@ -4941,7 +5060,7 @@ Quality rules:
         ])),
         makeStep("composition", "화면은 어떻게 잡을까요?", "구도", "Composition", COMMON_COMPOSITIONS),
         makeStep("mood", "어떤 분위기를 원하시나요?", "분위기", "Mood", GENERAL_MOODS)
-      ]);
+      ];
     }
 
     function buildFlow(subjectKey) {
@@ -4951,7 +5070,7 @@ Quality rules:
       if (subjectKey === "manual-subject") {
         return buildManualFlow();
       }
-      return [buildSubjectStep(), ...stripGenericMood(FLOW_PROFILES[subjectKey] || [])];
+      return [buildSubjectStep(), ...(FLOW_PROFILES[subjectKey] || [])];
     }
 
     function getCurrentStep() {
@@ -5054,7 +5173,7 @@ Quality rules:
     function renderCardThumb(step, option) {
       const assetPath = getCardAssetPath(step, option);
       const photoMarkup = assetPath
-        ? `<img class="thumb-photo" src="${assetPath}" alt="" loading="lazy" onerror="this.style.display='none'">`
+      ? `<img class="thumb-photo" src="${assetPath}" alt="" width="448" height="448" loading="lazy" onerror="this.style.display='none'">`
         : "";
       return `
         <div class="thumb">
@@ -5276,7 +5395,7 @@ Quality rules:
           extraRequest,
           "",
           "[Extra Input Handling]",
-          "Treat the extra input as cumulative keyword-style notes.",
+          "Treat the extra input as short natural-language notes from the user.",
           "Combine it with the structured selections above, infer the user's final desired image, and reflect that intent naturally in every option."
         );
       }
@@ -5293,7 +5412,7 @@ Quality rules:
         "[Contextual Expansion Rules]",
         "If some useful visual details are missing, infer and add only compatible supporting details instead of leaving the prompt thin.",
         "Especially strengthen pose nuance, hand placement, gaze, body angle, crop, camera distance, lens feel, lighting direction, texture, background simplicity, color harmony, depth, atmosphere, and focal emphasis when relevant.",
-        "Make the final prompts explicit enough for ComfyUI and weaker text encoders, not only for chat-based image models.",
+        "Keep the final prompts in natural language, with enough concrete visual detail that the intended image is easy to picture and reproduce.",
         "Never contradict the selected inputs, and never add text inside the image unless the user clearly requested it."
       );
 

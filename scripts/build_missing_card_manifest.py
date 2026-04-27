@@ -220,7 +220,11 @@ def derive_asset_path(subject: str, step: str, option_key: str) -> Path:
     return ASSET_DIR / subject / step / f"{option_key}.webp"
 
 
-def build_missing_manifest(limit: int = 0, subjects_filter: set[str] | None = None) -> list[dict]:
+def build_image_manifest(
+    include_existing: bool = False,
+    limit: int = 0,
+    subjects_filter: set[str] | None = None,
+) -> list[dict]:
     text = load_text(IMAGE_HTML)
     option_sets = parse_option_sets(text)
     flow_profiles = parse_flow_profiles(text)
@@ -233,7 +237,7 @@ def build_missing_manifest(limit: int = 0, subjects_filter: set[str] | None = No
             pass
         else:
             asset_path = derive_asset_path("subjects", "subject", option_key)
-            if not asset_path.exists():
+            if include_existing or not asset_path.exists():
                 items.append(
                     {
                         "subject": "subjects",
@@ -241,6 +245,7 @@ def build_missing_manifest(limit: int = 0, subjects_filter: set[str] | None = No
                         "option_key": option_key,
                         "title": title,
                         "cue": description,
+                        "asset_path": str(asset_path.relative_to(REPO_ROOT)).replace("\\", "/"),
                     }
                 )
 
@@ -261,7 +266,7 @@ def build_missing_manifest(limit: int = 0, subjects_filter: set[str] | None = No
                         continue
                     seen_keys.add(option_key)
                     asset_path = derive_asset_path(subject, step, option_key)
-                    if asset_path.exists():
+                    if asset_path.exists() and not include_existing:
                         continue
                     items.append(
                         {
@@ -270,6 +275,7 @@ def build_missing_manifest(limit: int = 0, subjects_filter: set[str] | None = No
                             "option_key": option_key,
                             "title": title,
                             "cue": description,
+                            "asset_path": str(asset_path.relative_to(REPO_ROOT)).replace("\\", "/"),
                         }
                     )
 
@@ -278,18 +284,36 @@ def build_missing_manifest(limit: int = 0, subjects_filter: set[str] | None = No
     return items
 
 
+def build_missing_manifest(limit: int = 0, subjects_filter: set[str] | None = None) -> list[dict]:
+    return build_image_manifest(
+        include_existing=False,
+        limit=limit,
+        subjects_filter=subjects_filter,
+    )
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Build manifest for card options that do not have generated images yet.")
     parser.add_argument("--output", default=str(DEFAULT_OUTPUT))
     parser.add_argument("--limit", type=int, default=0)
     parser.add_argument("--subjects", nargs="*", default=None)
+    parser.add_argument(
+        "--mode",
+        choices=["missing", "all"],
+        default="missing",
+        help="Write only missing image cards or the full image-card catalog.",
+    )
     return parser.parse_args()
 
 
 def main() -> int:
     args = parse_args()
     subjects_filter = set(args.subjects) if args.subjects else None
-    manifest = build_missing_manifest(limit=args.limit, subjects_filter=subjects_filter)
+    manifest = build_image_manifest(
+        include_existing=args.mode == "all",
+        limit=args.limit,
+        subjects_filter=subjects_filter,
+    )
     output_path = Path(args.output)
     output_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"Wrote {len(manifest)} items to {output_path}")

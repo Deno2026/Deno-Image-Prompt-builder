@@ -1,0 +1,4447 @@
+[
+  {
+    "subject": "product",
+    "step": "detail",
+    "option_key": "product-electronics",
+    "title": "전자기기",
+    "cue": "폰, 이어폰, 키보드 같은 디지털 제품"
+  },
+  {
+    "subject": "product",
+    "step": "detail",
+    "option_key": "product-beauty",
+    "title": "뷰티 / 화장품",
+    "cue": "스킨케어, 메이크업 제품 중심"
+  },
+  {
+    "subject": "product",
+    "step": "detail",
+    "option_key": "product-food",
+    "title": "식품 패키지",
+    "cue": "과자, 음료, 식품 포장 제품"
+  },
+  {
+    "subject": "product",
+    "step": "detail",
+    "option_key": "product-fashion",
+    "title": "패션 / 잡화",
+    "cue": "가방, 신발, 지갑, 안경 등"
+  },
+  {
+    "subject": "product",
+    "step": "detail",
+    "option_key": "product-home",
+    "title": "생활용품",
+    "cue": "주방, 청소, 수납, 소형 생활 제품"
+  },
+  {
+    "subject": "product",
+    "step": "detail",
+    "option_key": "product-premium",
+    "title": "럭셔리 / 고급 제품",
+    "cue": "고급 브랜드 무드가 중요한 제품"
+  },
+  {
+    "subject": "product",
+    "step": "detail",
+    "option_key": "product-tech",
+    "title": "디지털 디바이스",
+    "cue": "화면과 기능이 함께 보이는 제품"
+  },
+  {
+    "subject": "product",
+    "step": "detail",
+    "option_key": "product-stationery",
+    "title": "문구 / 굿즈",
+    "cue": "노트, 펜, 굿즈류 제품"
+  },
+  {
+    "subject": "product",
+    "step": "detail",
+    "option_key": "product-bottle",
+    "title": "병 / 용기 제품",
+    "cue": "향수, 샴푸, 드링크 같은 형태"
+  },
+  {
+    "subject": "product",
+    "step": "detail",
+    "option_key": "product-box",
+    "title": "박스 / 패키지 제품",
+    "cue": "포장 외형과 구성품이 중요한 제품"
+  },
+  {
+    "subject": "product",
+    "step": "presentation",
+    "option_key": "product-single",
+    "title": "단독 정면 컷",
+    "cue": "제품 하나가 가장 깔끔하게 보이는 구성"
+  },
+  {
+    "subject": "product",
+    "step": "presentation",
+    "option_key": "product-angle",
+    "title": "45도 히어로 샷",
+    "cue": "입체감과 디자인이 같이 보이는 구성"
+  },
+  {
+    "subject": "product",
+    "step": "presentation",
+    "option_key": "product-hand",
+    "title": "손에 들고 사용컷",
+    "cue": "실사용 감이 바로 느껴지는 구성"
+  },
+  {
+    "subject": "product",
+    "step": "presentation",
+    "option_key": "product-lifestyle",
+    "title": "생활 공간 속 사용 장면",
+    "cue": "라이프스타일 맥락이 보이는 구성"
+  },
+  {
+    "subject": "product",
+    "step": "presentation",
+    "option_key": "product-set",
+    "title": "구성품까지 함께",
+    "cue": "패키지와 구성 요소가 같이 보이는 구성"
+  },
+  {
+    "subject": "product",
+    "step": "presentation",
+    "option_key": "product-repeat",
+    "title": "여러 개 나열",
+    "cue": "수량감과 컬러감이 보이는 구성"
+  },
+  {
+    "subject": "product",
+    "step": "presentation",
+    "option_key": "product-float",
+    "title": "공중에 떠 있는 연출",
+    "cue": "세련되고 광고 같은 표현"
+  },
+  {
+    "subject": "product",
+    "step": "presentation",
+    "option_key": "product-material",
+    "title": "재질감 클로즈업",
+    "cue": "표면, 버튼, 질감이 중심인 구성"
+  },
+  {
+    "subject": "product",
+    "step": "presentation",
+    "option_key": "product-beforeafter",
+    "title": "전후 비교형",
+    "cue": "변화 포인트가 분명한 구성"
+  },
+  {
+    "subject": "product",
+    "step": "presentation",
+    "option_key": "product-splash",
+    "title": "물 / 액체 / 입자 연출",
+    "cue": "시원함이나 강한 광고성이 필요한 구성"
+  },
+  {
+    "subject": "product",
+    "step": "background",
+    "option_key": "product-bg-white",
+    "title": "흰 배경 스튜디오",
+    "cue": "가장 범용적이고 상세페이지에 쉬운 배경"
+  },
+  {
+    "subject": "product",
+    "step": "background",
+    "option_key": "product-bg-color",
+    "title": "단색 컬러 배경",
+    "cue": "제품 컬러를 살리기 쉬운 배경"
+  },
+  {
+    "subject": "product",
+    "step": "background",
+    "option_key": "product-bg-dark",
+    "title": "어두운 프리미엄 배경",
+    "cue": "고급스러운 인상을 주는 배경"
+  },
+  {
+    "subject": "product",
+    "step": "background",
+    "option_key": "product-bg-natural",
+    "title": "자연광 테이블",
+    "cue": "담백하고 생활감 있는 배경"
+  },
+  {
+    "subject": "product",
+    "step": "background",
+    "option_key": "product-bg-brand",
+    "title": "브랜드 세트 배경",
+    "cue": "캠페인 톤이 있는 배경"
+  },
+  {
+    "subject": "product",
+    "step": "background",
+    "option_key": "product-bg-soft",
+    "title": "부드러운 그라데이션",
+    "cue": "과하지 않고 세련된 배경"
+  },
+  {
+    "subject": "product",
+    "step": "background",
+    "option_key": "product-bg-texture",
+    "title": "소재감 있는 테이블",
+    "cue": "나무, 돌, 패브릭 등 질감 배경"
+  },
+  {
+    "subject": "product",
+    "step": "background",
+    "option_key": "product-bg-minimal",
+    "title": "최대한 단순하게",
+    "cue": "제품만 또렷하게 보이는 배경"
+  },
+  {
+    "subject": "product",
+    "step": "feature",
+    "option_key": "product-feature-logo",
+    "title": "브랜드 로고",
+    "cue": "브랜드명이 잘 읽히는 쪽으로 강조"
+  },
+  {
+    "subject": "product",
+    "step": "feature",
+    "option_key": "product-feature-gloss",
+    "title": "광택 / 반사",
+    "cue": "표면의 빛 표현이 중요한 제품"
+  },
+  {
+    "subject": "product",
+    "step": "feature",
+    "option_key": "product-feature-texture",
+    "title": "질감 / 재료",
+    "cue": "재질감이 먼저 느껴지는 제품"
+  },
+  {
+    "subject": "product",
+    "step": "feature",
+    "option_key": "product-feature-size",
+    "title": "크기감 / 형태",
+    "cue": "전체 실루엣과 비율이 중요한 제품"
+  },
+  {
+    "subject": "product",
+    "step": "feature",
+    "option_key": "product-feature-detail",
+    "title": "버튼 / 디테일",
+    "cue": "기능 요소나 디테일이 중심인 제품"
+  },
+  {
+    "subject": "product",
+    "step": "feature",
+    "option_key": "product-feature-usage",
+    "title": "사용 순간",
+    "cue": "쓰이는 맥락이 보이는 쪽으로 강조"
+  },
+  {
+    "subject": "product",
+    "step": "feature",
+    "option_key": "product-feature-luxury",
+    "title": "고급감",
+    "cue": "프리미엄 인상이 가장 중요한 제품"
+  },
+  {
+    "subject": "product",
+    "step": "feature",
+    "option_key": "product-feature-practical",
+    "title": "실용성 / 편리함",
+    "cue": "쉽게 이해되는 장점을 강조"
+  },
+  {
+    "subject": "product",
+    "step": "composition",
+    "option_key": "comp-close",
+    "title": "얼굴 클로즈업",
+    "cue": "표정과 디테일이 가장 먼저 보이는 구도"
+  },
+  {
+    "subject": "product",
+    "step": "composition",
+    "option_key": "comp-bust",
+    "title": "바스트 샷",
+    "cue": "상반신 중심으로 안정감 있게 보이는 구도"
+  },
+  {
+    "subject": "product",
+    "step": "composition",
+    "option_key": "comp-medium",
+    "title": "미디엄 샷",
+    "cue": "인물과 주변 맥락을 함께 보여주는 기본 구도"
+  },
+  {
+    "subject": "product",
+    "step": "composition",
+    "option_key": "comp-wide",
+    "title": "와이드 샷",
+    "cue": "배경과 공간 분위기까지 같이 보이는 구도"
+  },
+  {
+    "subject": "product",
+    "step": "composition",
+    "option_key": "comp-low",
+    "title": "로우 앵글",
+    "cue": "주제의 존재감을 더 크게 느끼게 하는 각도"
+  },
+  {
+    "subject": "product",
+    "step": "composition",
+    "option_key": "comp-top",
+    "title": "탑뷰 / 오버헤드",
+    "cue": "위에서 내려다보는 정리된 화면"
+  },
+  {
+    "subject": "product",
+    "step": "composition",
+    "option_key": "comp-pov",
+    "title": "POV / 셀카 느낌",
+    "cue": "직접 찍은 듯 가까운 거리감이 있는 구도"
+  },
+  {
+    "subject": "product",
+    "step": "composition",
+    "option_key": "comp-symmetry",
+    "title": "정면 대칭",
+    "cue": "또렷하고 정돈된 인상을 주는 구도"
+  },
+  {
+    "subject": "product",
+    "step": "composition",
+    "option_key": "comp-asymmetry",
+    "title": "비대칭 배치",
+    "cue": "시선 흐름과 여백이 살아 있는 구도"
+  },
+  {
+    "subject": "product",
+    "step": "composition",
+    "option_key": "comp-poster",
+    "title": "포스터형 메인 비주얼",
+    "cue": "한 장면 자체가 강하게 보이는 구성"
+  },
+  {
+    "subject": "product",
+    "step": "mood",
+    "option_key": "mood-bright",
+    "title": "밝고 친근하게",
+    "cue": "입문자도 편하게 느끼는 가볍고 열린 분위기"
+  },
+  {
+    "subject": "product",
+    "step": "mood",
+    "option_key": "mood-clean",
+    "title": "깨끗하고 맑게",
+    "cue": "정보 전달이 또렷한 클린한 방향"
+  },
+  {
+    "subject": "product",
+    "step": "mood",
+    "option_key": "mood-warm",
+    "title": "따뜻하고 편안하게",
+    "cue": "부드럽고 정감 있는 인상을 주는 무드"
+  },
+  {
+    "subject": "product",
+    "step": "mood",
+    "option_key": "mood-calm",
+    "title": "차분하고 담백하게",
+    "cue": "과장되지 않고 정리된 톤"
+  },
+  {
+    "subject": "product",
+    "step": "mood",
+    "option_key": "mood-cinematic",
+    "title": "영화처럼 깊게",
+    "cue": "공기감과 서사가 함께 느껴지는 무드"
+  },
+  {
+    "subject": "product",
+    "step": "mood",
+    "option_key": "mood-dramatic",
+    "title": "강렬하고 드라마틱하게",
+    "cue": "명암과 감정이 또렷한 방향"
+  },
+  {
+    "subject": "product",
+    "step": "mood",
+    "option_key": "mood-luxury",
+    "title": "고급스럽고 세련되게",
+    "cue": "브랜드 비주얼 같은 정제된 무드"
+  },
+  {
+    "subject": "product",
+    "step": "mood",
+    "option_key": "mood-playful",
+    "title": "귀엽고 경쾌하게",
+    "cue": "색감과 인상이 가볍고 재미있는 방향"
+  },
+  {
+    "subject": "product",
+    "step": "mood",
+    "option_key": "mood-future",
+    "title": "미래적이고 차갑게",
+    "cue": "기술적이고 현대적인 느낌"
+  },
+  {
+    "subject": "product",
+    "step": "mood",
+    "option_key": "mood-vintage",
+    "title": "빈티지하고 레트로하게",
+    "cue": "옛 감성과 필름 느낌이 남는 방향"
+  },
+  {
+    "subject": "food-drink",
+    "step": "detail",
+    "option_key": "food-korean",
+    "title": "한식 메인 메뉴",
+    "cue": "밥, 찌개, 구이처럼 메인 식사가 중심"
+  },
+  {
+    "subject": "food-drink",
+    "step": "detail",
+    "option_key": "food-western",
+    "title": "양식 / 파스타 / 브런치",
+    "cue": "서양식 접시 구성이 중심"
+  },
+  {
+    "subject": "food-drink",
+    "step": "detail",
+    "option_key": "food-bakery",
+    "title": "베이커리 / 디저트",
+    "cue": "빵, 케이크, 달콤한 메뉴 중심"
+  },
+  {
+    "subject": "food-drink",
+    "step": "detail",
+    "option_key": "food-coffee",
+    "title": "커피 / 카페 음료",
+    "cue": "잔과 분위기가 중요한 메뉴"
+  },
+  {
+    "subject": "food-drink",
+    "step": "detail",
+    "option_key": "food-cocktail",
+    "title": "칵테일 / 술",
+    "cue": "잔과 조명이 중요한 음료 컷"
+  },
+  {
+    "subject": "food-drink",
+    "step": "detail",
+    "option_key": "food-fast",
+    "title": "패스트푸드 / 간편식",
+    "cue": "먹음직스럽고 빠른 인상의 메뉴"
+  },
+  {
+    "subject": "food-drink",
+    "step": "detail",
+    "option_key": "food-meat",
+    "title": "고기 / 구이",
+    "cue": "불맛과 육즙이 중요한 메뉴"
+  },
+  {
+    "subject": "food-drink",
+    "step": "detail",
+    "option_key": "food-noodle",
+    "title": "면 / 국물 요리",
+    "cue": "온기와 식감이 중요한 메뉴"
+  },
+  {
+    "subject": "food-drink",
+    "step": "detail",
+    "option_key": "food-fruit",
+    "title": "과일 / 샐러드",
+    "cue": "신선함과 컬러가 중요한 메뉴"
+  },
+  {
+    "subject": "food-drink",
+    "step": "detail",
+    "option_key": "food-menu-set",
+    "title": "여러 메뉴 한 상",
+    "cue": "테이블 전체 구성이 중요한 장면"
+  },
+  {
+    "subject": "food-drink",
+    "step": "presentation",
+    "option_key": "food-single",
+    "title": "한 접시 집중",
+    "cue": "대표 메뉴 하나가 크게 보이는 구성"
+  },
+  {
+    "subject": "food-drink",
+    "step": "presentation",
+    "option_key": "food-table",
+    "title": "테이블 한 상",
+    "cue": "메뉴 여러 개가 함께 보이는 구성"
+  },
+  {
+    "subject": "food-drink",
+    "step": "presentation",
+    "option_key": "food-topview",
+    "title": "탑뷰 메뉴 배치",
+    "cue": "정리된 메뉴판 느낌의 구성"
+  },
+  {
+    "subject": "food-drink",
+    "step": "presentation",
+    "option_key": "food-hand",
+    "title": "손이 들어가는 먹는 장면",
+    "cue": "실제 먹는 순간이 보이는 구성"
+  },
+  {
+    "subject": "food-drink",
+    "step": "presentation",
+    "option_key": "food-cafe",
+    "title": "카페 테이블 무드",
+    "cue": "잔, 접시, 소품이 함께 보이는 구성"
+  },
+  {
+    "subject": "food-drink",
+    "step": "presentation",
+    "option_key": "food-close",
+    "title": "식감 클로즈업",
+    "cue": "표면과 디테일이 크게 보이는 구성"
+  },
+  {
+    "subject": "food-drink",
+    "step": "presentation",
+    "option_key": "food-set",
+    "title": "세트 메뉴 구성",
+    "cue": "메뉴 조합이 한 번에 보이는 구성"
+  },
+  {
+    "subject": "food-drink",
+    "step": "presentation",
+    "option_key": "food-menu-board",
+    "title": "메뉴판용 깔끔 컷",
+    "cue": "정보 전달이 쉬운 정리된 구성"
+  },
+  {
+    "subject": "food-drink",
+    "step": "texture",
+    "option_key": "food-hot",
+    "title": "따뜻한 김과 온기",
+    "cue": "막 나온 느낌이 살아 있는 방향"
+  },
+  {
+    "subject": "food-drink",
+    "step": "texture",
+    "option_key": "food-crispy",
+    "title": "바삭함",
+    "cue": "튀김, 구움결이 중요할 때 좋은 방향"
+  },
+  {
+    "subject": "food-drink",
+    "step": "texture",
+    "option_key": "food-juicy",
+    "title": "촉촉함 / 육즙",
+    "cue": "육즙, 소스, 촉촉함이 살아나는 방향"
+  },
+  {
+    "subject": "food-drink",
+    "step": "texture",
+    "option_key": "food-creamy",
+    "title": "부드럽고 크리미하게",
+    "cue": "크림, 우유감, 부드러움이 중요한 방향"
+  },
+  {
+    "subject": "food-drink",
+    "step": "texture",
+    "option_key": "food-fresh",
+    "title": "신선하고 상큼하게",
+    "cue": "채소, 과일, 산뜻함이 강조되는 방향"
+  },
+  {
+    "subject": "food-drink",
+    "step": "texture",
+    "option_key": "food-cold",
+    "title": "시원하고 차갑게",
+    "cue": "얼음, 서늘함, 청량감이 중요한 방향"
+  },
+  {
+    "subject": "food-drink",
+    "step": "texture",
+    "option_key": "food-sweet",
+    "title": "달콤하고 귀엽게",
+    "cue": "디저트나 카페 메뉴에 잘 맞는 방향"
+  },
+  {
+    "subject": "food-drink",
+    "step": "texture",
+    "option_key": "food-premium",
+    "title": "고급 레스토랑처럼",
+    "cue": "고급 플레이팅과 세련됨이 중요한 방향"
+  },
+  {
+    "subject": "food-drink",
+    "step": "composition",
+    "option_key": "comp-close",
+    "title": "얼굴 클로즈업",
+    "cue": "표정과 디테일이 가장 먼저 보이는 구도"
+  },
+  {
+    "subject": "food-drink",
+    "step": "composition",
+    "option_key": "comp-bust",
+    "title": "바스트 샷",
+    "cue": "상반신 중심으로 안정감 있게 보이는 구도"
+  },
+  {
+    "subject": "food-drink",
+    "step": "composition",
+    "option_key": "comp-medium",
+    "title": "미디엄 샷",
+    "cue": "인물과 주변 맥락을 함께 보여주는 기본 구도"
+  },
+  {
+    "subject": "food-drink",
+    "step": "composition",
+    "option_key": "comp-wide",
+    "title": "와이드 샷",
+    "cue": "배경과 공간 분위기까지 같이 보이는 구도"
+  },
+  {
+    "subject": "food-drink",
+    "step": "composition",
+    "option_key": "comp-low",
+    "title": "로우 앵글",
+    "cue": "주제의 존재감을 더 크게 느끼게 하는 각도"
+  },
+  {
+    "subject": "food-drink",
+    "step": "composition",
+    "option_key": "comp-top",
+    "title": "탑뷰 / 오버헤드",
+    "cue": "위에서 내려다보는 정리된 화면"
+  },
+  {
+    "subject": "food-drink",
+    "step": "composition",
+    "option_key": "comp-pov",
+    "title": "POV / 셀카 느낌",
+    "cue": "직접 찍은 듯 가까운 거리감이 있는 구도"
+  },
+  {
+    "subject": "food-drink",
+    "step": "composition",
+    "option_key": "comp-symmetry",
+    "title": "정면 대칭",
+    "cue": "또렷하고 정돈된 인상을 주는 구도"
+  },
+  {
+    "subject": "food-drink",
+    "step": "composition",
+    "option_key": "comp-asymmetry",
+    "title": "비대칭 배치",
+    "cue": "시선 흐름과 여백이 살아 있는 구도"
+  },
+  {
+    "subject": "food-drink",
+    "step": "composition",
+    "option_key": "comp-poster",
+    "title": "포스터형 메인 비주얼",
+    "cue": "한 장면 자체가 강하게 보이는 구성"
+  },
+  {
+    "subject": "food-drink",
+    "step": "mood",
+    "option_key": "mood-bright",
+    "title": "밝고 친근하게",
+    "cue": "입문자도 편하게 느끼는 가볍고 열린 분위기"
+  },
+  {
+    "subject": "food-drink",
+    "step": "mood",
+    "option_key": "mood-clean",
+    "title": "깨끗하고 맑게",
+    "cue": "정보 전달이 또렷한 클린한 방향"
+  },
+  {
+    "subject": "food-drink",
+    "step": "mood",
+    "option_key": "mood-warm",
+    "title": "따뜻하고 편안하게",
+    "cue": "부드럽고 정감 있는 인상을 주는 무드"
+  },
+  {
+    "subject": "food-drink",
+    "step": "mood",
+    "option_key": "mood-calm",
+    "title": "차분하고 담백하게",
+    "cue": "과장되지 않고 정리된 톤"
+  },
+  {
+    "subject": "food-drink",
+    "step": "mood",
+    "option_key": "mood-cinematic",
+    "title": "영화처럼 깊게",
+    "cue": "공기감과 서사가 함께 느껴지는 무드"
+  },
+  {
+    "subject": "food-drink",
+    "step": "mood",
+    "option_key": "mood-dramatic",
+    "title": "강렬하고 드라마틱하게",
+    "cue": "명암과 감정이 또렷한 방향"
+  },
+  {
+    "subject": "food-drink",
+    "step": "mood",
+    "option_key": "mood-luxury",
+    "title": "고급스럽고 세련되게",
+    "cue": "브랜드 비주얼 같은 정제된 무드"
+  },
+  {
+    "subject": "food-drink",
+    "step": "mood",
+    "option_key": "mood-playful",
+    "title": "귀엽고 경쾌하게",
+    "cue": "색감과 인상이 가볍고 재미있는 방향"
+  },
+  {
+    "subject": "food-drink",
+    "step": "mood",
+    "option_key": "mood-future",
+    "title": "미래적이고 차갑게",
+    "cue": "기술적이고 현대적인 느낌"
+  },
+  {
+    "subject": "food-drink",
+    "step": "mood",
+    "option_key": "mood-vintage",
+    "title": "빈티지하고 레트로하게",
+    "cue": "옛 감성과 필름 느낌이 남는 방향"
+  },
+  {
+    "subject": "vehicle",
+    "step": "detail",
+    "option_key": "vehicle-car-exterior",
+    "title": "자동차 외관",
+    "cue": "차량 전체 실루엣이 중심인 이미지"
+  },
+  {
+    "subject": "vehicle",
+    "step": "detail",
+    "option_key": "vehicle-car-interior",
+    "title": "차량 내부 / 콕핏",
+    "cue": "대시보드와 좌석 등 내부가 중심"
+  },
+  {
+    "subject": "vehicle",
+    "step": "detail",
+    "option_key": "vehicle-bike",
+    "title": "바이크 / 오토바이",
+    "cue": "기동감이 중요한 모빌리티 이미지"
+  },
+  {
+    "subject": "vehicle",
+    "step": "detail",
+    "option_key": "vehicle-ev",
+    "title": "전기차 / 충전 장면",
+    "cue": "미래성과 기술성이 중요한 장면"
+  },
+  {
+    "subject": "vehicle",
+    "step": "detail",
+    "option_key": "vehicle-luxury",
+    "title": "고급 차량 히어로 컷",
+    "cue": "프리미엄 무드가 중요한 차량 이미지"
+  },
+  {
+    "subject": "vehicle",
+    "step": "detail",
+    "option_key": "vehicle-sports",
+    "title": "스포츠 / 레이싱 차량",
+    "cue": "속도감과 역동성이 중요한 방향"
+  },
+  {
+    "subject": "vehicle",
+    "step": "detail",
+    "option_key": "vehicle-utility",
+    "title": "상용차 / 실용 차량",
+    "cue": "업무성과 용도가 보이는 이미지"
+  },
+  {
+    "subject": "vehicle",
+    "step": "detail",
+    "option_key": "vehicle-classic",
+    "title": "빈티지 / 클래식 차량",
+    "cue": "복고 감성이 중요한 차량 이미지"
+  },
+  {
+    "subject": "vehicle",
+    "step": "detail",
+    "option_key": "vehicle-detail",
+    "title": "휠 / 라이트 / 디테일",
+    "cue": "부품과 디테일이 중심인 컷"
+  },
+  {
+    "subject": "vehicle",
+    "step": "detail",
+    "option_key": "vehicle-driver",
+    "title": "운전자 포함 장면",
+    "cue": "사람과 차량의 관계가 보이는 이미지"
+  },
+  {
+    "subject": "vehicle",
+    "step": "detail",
+    "option_key": "vehicle-van",
+    "title": "캠핑카 / 밴 라이프",
+    "cue": "여행과 생활감이 함께 보이는 이미지"
+  },
+  {
+    "subject": "vehicle",
+    "step": "detail",
+    "option_key": "vehicle-scooter",
+    "title": "스쿠터 / 소형 이동수단",
+    "cue": "가벼운 도시 이동감이 중심인 이미지"
+  },
+  {
+    "subject": "vehicle",
+    "step": "action",
+    "option_key": "vehicle-parked",
+    "title": "정차된 히어로 샷",
+    "cue": "차량 형태가 또렷하게 보이는 구성"
+  },
+  {
+    "subject": "vehicle",
+    "step": "action",
+    "option_key": "vehicle-moving",
+    "title": "주행 중 장면",
+    "cue": "속도감과 이동감이 느껴지는 구성"
+  },
+  {
+    "subject": "vehicle",
+    "step": "action",
+    "option_key": "vehicle-door",
+    "title": "문을 열고 타는 순간",
+    "cue": "실사용 감이 있는 장면"
+  },
+  {
+    "subject": "vehicle",
+    "step": "action",
+    "option_key": "vehicle-charge",
+    "title": "충전 / 정비 장면",
+    "cue": "기능 맥락이 보이는 장면"
+  },
+  {
+    "subject": "vehicle",
+    "step": "action",
+    "option_key": "vehicle-roadtrip",
+    "title": "로드트립 출발 느낌",
+    "cue": "여행성과 이동의 설렘이 있는 장면"
+  },
+  {
+    "subject": "vehicle",
+    "step": "action",
+    "option_key": "vehicle-showroom",
+    "title": "전시장 / 쇼룸 느낌",
+    "cue": "제품 전시처럼 정돈된 장면"
+  },
+  {
+    "subject": "vehicle",
+    "step": "action",
+    "option_key": "vehicle-night",
+    "title": "야간 조명 반사",
+    "cue": "라이트와 반사가 강조되는 장면"
+  },
+  {
+    "subject": "vehicle",
+    "step": "action",
+    "option_key": "vehicle-offroad",
+    "title": "오프로드 / 자연 속",
+    "cue": "터프한 사용 맥락이 보이는 장면"
+  },
+  {
+    "subject": "vehicle",
+    "step": "purpose",
+    "option_key": "vehicle-purpose-daily",
+    "title": "출퇴근 / 일상 이동",
+    "cue": "실사용 감이 먼저 보이면 좋은 방향"
+  },
+  {
+    "subject": "vehicle",
+    "step": "purpose",
+    "option_key": "vehicle-purpose-trip",
+    "title": "여행 / 로드트립",
+    "cue": "이동과 장소 감성이 함께 보이면 좋은 방향"
+  },
+  {
+    "subject": "vehicle",
+    "step": "purpose",
+    "option_key": "vehicle-purpose-performance",
+    "title": "성능 / 스포츠",
+    "cue": "속도감과 강한 인상이 중요한 방향"
+  },
+  {
+    "subject": "vehicle",
+    "step": "purpose",
+    "option_key": "vehicle-purpose-premium",
+    "title": "프리미엄 / 광고용",
+    "cue": "쇼룸처럼 세련된 방향"
+  },
+  {
+    "subject": "vehicle",
+    "step": "purpose",
+    "option_key": "vehicle-purpose-ev",
+    "title": "전기차 / 기술 강조",
+    "cue": "충전과 미래성이 보이면 좋은 방향"
+  },
+  {
+    "subject": "vehicle",
+    "step": "purpose",
+    "option_key": "vehicle-purpose-work",
+    "title": "업무 / 실용성 강조",
+    "cue": "용도와 활용이 읽히는 방향"
+  },
+  {
+    "subject": "vehicle",
+    "step": "purpose",
+    "option_key": "vehicle-purpose-hobby",
+    "title": "취미 / 클래식 감성",
+    "cue": "개성과 애정이 느껴지는 방향"
+  },
+  {
+    "subject": "vehicle",
+    "step": "purpose",
+    "option_key": "vehicle-purpose-detail",
+    "title": "디테일 / 리뷰용",
+    "cue": "휠, 라이트, 콕핏이 먼저 보이는 방향"
+  },
+  {
+    "subject": "vehicle",
+    "step": "environment",
+    "option_key": "vehicle-env-city",
+    "title": "도심 거리",
+    "cue": "현대적이고 실사용 느낌이 있는 배경"
+  },
+  {
+    "subject": "vehicle",
+    "step": "environment",
+    "option_key": "vehicle-env-highway",
+    "title": "고속도로 / 큰 길",
+    "cue": "이동감이 강조되는 배경"
+  },
+  {
+    "subject": "vehicle",
+    "step": "environment",
+    "option_key": "vehicle-env-studio",
+    "title": "스튜디오 / 단색 배경",
+    "cue": "차량 자체가 중심인 배경"
+  },
+  {
+    "subject": "vehicle",
+    "step": "environment",
+    "option_key": "vehicle-env-showroom",
+    "title": "쇼룸 / 실내 전시",
+    "cue": "제품처럼 깔끔한 배경"
+  },
+  {
+    "subject": "vehicle",
+    "step": "environment",
+    "option_key": "vehicle-env-beach",
+    "title": "바다 / 여행지",
+    "cue": "여유와 여행 감성이 있는 배경"
+  },
+  {
+    "subject": "vehicle",
+    "step": "environment",
+    "option_key": "vehicle-env-mountain",
+    "title": "산 / 자연 속",
+    "cue": "야외 활동성과 연결되는 배경"
+  },
+  {
+    "subject": "vehicle",
+    "step": "environment",
+    "option_key": "vehicle-env-nightcity",
+    "title": "야간 도시",
+    "cue": "네온과 반사가 살아나는 배경"
+  },
+  {
+    "subject": "vehicle",
+    "step": "environment",
+    "option_key": "vehicle-env-garage",
+    "title": "차고 / 작업 공간",
+    "cue": "정비와 취미성이 느껴지는 배경"
+  },
+  {
+    "subject": "vehicle",
+    "step": "environment",
+    "option_key": "vehicle-env-charging",
+    "title": "충전소 / 정비 공간",
+    "cue": "기능 맥락이 보이는 배경"
+  },
+  {
+    "subject": "vehicle",
+    "step": "environment",
+    "option_key": "vehicle-env-interior-city",
+    "title": "도심 도로가 비치는 내부",
+    "cue": "창밖 흐름이 보이는 내부 장면"
+  },
+  {
+    "subject": "vehicle",
+    "step": "environment",
+    "option_key": "vehicle-env-interior-night",
+    "title": "야간 조명이 비치는 내부",
+    "cue": "대시보드와 야간 빛이 어울리는 장면"
+  },
+  {
+    "subject": "vehicle",
+    "step": "environment",
+    "option_key": "vehicle-env-interior-highway",
+    "title": "고속도로 주행 내부",
+    "cue": "이동감이 느껴지는 내부 장면"
+  },
+  {
+    "subject": "vehicle",
+    "step": "environment",
+    "option_key": "vehicle-env-interior-parked",
+    "title": "주차된 상태 내부",
+    "cue": "정돈된 콕핏을 보여주기 쉬운 장면"
+  },
+  {
+    "subject": "vehicle",
+    "step": "environment",
+    "option_key": "vehicle-env-interior-garage",
+    "title": "차고 / 실내 주차장",
+    "cue": "기계적이고 차분한 배경"
+  },
+  {
+    "subject": "vehicle",
+    "step": "environment",
+    "option_key": "vehicle-env-interior-showroom",
+    "title": "쇼룸 / 전시장 내부",
+    "cue": "프리미엄한 전시 분위기"
+  },
+  {
+    "subject": "vehicle",
+    "step": "environment",
+    "option_key": "vehicle-env-interior-rain",
+    "title": "비 오는 날 창문 배경",
+    "cue": "젖은 유리와 분위기가 살아나는 장면"
+  },
+  {
+    "subject": "vehicle",
+    "step": "environment",
+    "option_key": "vehicle-env-interior-sunset",
+    "title": "해질녘 빛이 들어오는 내부",
+    "cue": "따뜻한 무드가 있는 장면"
+  },
+  {
+    "subject": "vehicle",
+    "step": "composition",
+    "option_key": "comp-close",
+    "title": "얼굴 클로즈업",
+    "cue": "표정과 디테일이 가장 먼저 보이는 구도"
+  },
+  {
+    "subject": "vehicle",
+    "step": "composition",
+    "option_key": "comp-bust",
+    "title": "바스트 샷",
+    "cue": "상반신 중심으로 안정감 있게 보이는 구도"
+  },
+  {
+    "subject": "vehicle",
+    "step": "composition",
+    "option_key": "comp-medium",
+    "title": "미디엄 샷",
+    "cue": "인물과 주변 맥락을 함께 보여주는 기본 구도"
+  },
+  {
+    "subject": "vehicle",
+    "step": "composition",
+    "option_key": "comp-wide",
+    "title": "와이드 샷",
+    "cue": "배경과 공간 분위기까지 같이 보이는 구도"
+  },
+  {
+    "subject": "vehicle",
+    "step": "composition",
+    "option_key": "comp-low",
+    "title": "로우 앵글",
+    "cue": "주제의 존재감을 더 크게 느끼게 하는 각도"
+  },
+  {
+    "subject": "vehicle",
+    "step": "composition",
+    "option_key": "comp-top",
+    "title": "탑뷰 / 오버헤드",
+    "cue": "위에서 내려다보는 정리된 화면"
+  },
+  {
+    "subject": "vehicle",
+    "step": "composition",
+    "option_key": "comp-pov",
+    "title": "POV / 셀카 느낌",
+    "cue": "직접 찍은 듯 가까운 거리감이 있는 구도"
+  },
+  {
+    "subject": "vehicle",
+    "step": "composition",
+    "option_key": "comp-symmetry",
+    "title": "정면 대칭",
+    "cue": "또렷하고 정돈된 인상을 주는 구도"
+  },
+  {
+    "subject": "vehicle",
+    "step": "composition",
+    "option_key": "comp-asymmetry",
+    "title": "비대칭 배치",
+    "cue": "시선 흐름과 여백이 살아 있는 구도"
+  },
+  {
+    "subject": "vehicle",
+    "step": "composition",
+    "option_key": "comp-poster",
+    "title": "포스터형 메인 비주얼",
+    "cue": "한 장면 자체가 강하게 보이는 구성"
+  },
+  {
+    "subject": "vehicle",
+    "step": "mood",
+    "option_key": "mood-bright",
+    "title": "밝고 친근하게",
+    "cue": "입문자도 편하게 느끼는 가볍고 열린 분위기"
+  },
+  {
+    "subject": "vehicle",
+    "step": "mood",
+    "option_key": "mood-clean",
+    "title": "깨끗하고 맑게",
+    "cue": "정보 전달이 또렷한 클린한 방향"
+  },
+  {
+    "subject": "vehicle",
+    "step": "mood",
+    "option_key": "mood-warm",
+    "title": "따뜻하고 편안하게",
+    "cue": "부드럽고 정감 있는 인상을 주는 무드"
+  },
+  {
+    "subject": "vehicle",
+    "step": "mood",
+    "option_key": "mood-calm",
+    "title": "차분하고 담백하게",
+    "cue": "과장되지 않고 정리된 톤"
+  },
+  {
+    "subject": "vehicle",
+    "step": "mood",
+    "option_key": "mood-cinematic",
+    "title": "영화처럼 깊게",
+    "cue": "공기감과 서사가 함께 느껴지는 무드"
+  },
+  {
+    "subject": "vehicle",
+    "step": "mood",
+    "option_key": "mood-dramatic",
+    "title": "강렬하고 드라마틱하게",
+    "cue": "명암과 감정이 또렷한 방향"
+  },
+  {
+    "subject": "vehicle",
+    "step": "mood",
+    "option_key": "mood-luxury",
+    "title": "고급스럽고 세련되게",
+    "cue": "브랜드 비주얼 같은 정제된 무드"
+  },
+  {
+    "subject": "vehicle",
+    "step": "mood",
+    "option_key": "mood-playful",
+    "title": "귀엽고 경쾌하게",
+    "cue": "색감과 인상이 가볍고 재미있는 방향"
+  },
+  {
+    "subject": "vehicle",
+    "step": "mood",
+    "option_key": "mood-future",
+    "title": "미래적이고 차갑게",
+    "cue": "기술적이고 현대적인 느낌"
+  },
+  {
+    "subject": "vehicle",
+    "step": "mood",
+    "option_key": "mood-vintage",
+    "title": "빈티지하고 레트로하게",
+    "cue": "옛 감성과 필름 느낌이 남는 방향"
+  },
+  {
+    "subject": "space",
+    "step": "detail",
+    "option_key": "space-living",
+    "title": "거실",
+    "cue": "집의 중심 공간 느낌이 중요한 장면"
+  },
+  {
+    "subject": "space",
+    "step": "detail",
+    "option_key": "space-bedroom",
+    "title": "침실",
+    "cue": "편안함과 휴식감이 중요한 장면"
+  },
+  {
+    "subject": "space",
+    "step": "detail",
+    "option_key": "space-kitchen",
+    "title": "주방 / 다이닝",
+    "cue": "생활감과 구조가 보이는 장면"
+  },
+  {
+    "subject": "space",
+    "step": "detail",
+    "option_key": "space-cafe",
+    "title": "카페 / 소형 매장",
+    "cue": "상업 공간 감성이 중요한 장면"
+  },
+  {
+    "subject": "space",
+    "step": "detail",
+    "option_key": "space-office",
+    "title": "사무실 / 작업실",
+    "cue": "생산성과 정리감이 중요한 장면"
+  },
+  {
+    "subject": "space",
+    "step": "detail",
+    "option_key": "space-studio",
+    "title": "촬영 / 크리에이터 스튜디오",
+    "cue": "장비와 창작 분위기가 보이는 장면"
+  },
+  {
+    "subject": "space",
+    "step": "detail",
+    "option_key": "space-shop",
+    "title": "쇼룸 / 편집숍",
+    "cue": "브랜드 디스플레이가 중요한 장면"
+  },
+  {
+    "subject": "space",
+    "step": "detail",
+    "option_key": "space-hotel",
+    "title": "호텔 / 로비",
+    "cue": "고급스럽고 정돈된 장면"
+  },
+  {
+    "subject": "space",
+    "step": "detail",
+    "option_key": "space-bath",
+    "title": "욕실 / 파우더룸",
+    "cue": "재질과 정리감이 중요한 장면"
+  },
+  {
+    "subject": "space",
+    "step": "detail",
+    "option_key": "space-kids",
+    "title": "아이방 / 취미방",
+    "cue": "개성과 컬러가 보이는 장면"
+  },
+  {
+    "subject": "space",
+    "step": "style",
+    "option_key": "space-style-minimal",
+    "title": "미니멀 / 모던",
+    "cue": "요소를 줄여 정리된 느낌"
+  },
+  {
+    "subject": "space",
+    "step": "style",
+    "option_key": "space-style-natural",
+    "title": "내추럴 / 우드",
+    "cue": "나무와 따뜻한 재질감이 보이는 방향"
+  },
+  {
+    "subject": "space",
+    "step": "style",
+    "option_key": "space-style-nordic",
+    "title": "북유럽 / 화이트",
+    "cue": "밝고 담백한 실내 스타일"
+  },
+  {
+    "subject": "space",
+    "step": "style",
+    "option_key": "space-style-luxury",
+    "title": "럭셔리 / 호텔 무드",
+    "cue": "고급 소재와 여유감이 보이는 방향"
+  },
+  {
+    "subject": "space",
+    "step": "style",
+    "option_key": "space-style-black",
+    "title": "모던 블랙",
+    "cue": "강한 콘트라스트와 세련된 분위기"
+  },
+  {
+    "subject": "space",
+    "step": "style",
+    "option_key": "space-style-vintage",
+    "title": "빈티지 / 클래식",
+    "cue": "시간감이 있는 공간 스타일"
+  },
+  {
+    "subject": "space",
+    "step": "style",
+    "option_key": "space-style-color",
+    "title": "컬러 포인트",
+    "cue": "색감이 살아 있는 감각적인 공간"
+  },
+  {
+    "subject": "space",
+    "step": "style",
+    "option_key": "space-style-cozy",
+    "title": "코지 / 아늑한",
+    "cue": "편안하고 생활감 있는 공간"
+  },
+  {
+    "subject": "space",
+    "step": "style",
+    "option_key": "space-style-industrial",
+    "title": "인더스트리얼",
+    "cue": "금속, 콘크리트 감성이 살아나는 방향"
+  },
+  {
+    "subject": "space",
+    "step": "style",
+    "option_key": "space-style-editorial",
+    "title": "매거진 화보 같은 공간",
+    "cue": "공간 자체가 스타일 화보처럼 보이는 방향"
+  },
+  {
+    "subject": "space",
+    "step": "light",
+    "option_key": "space-light-morning",
+    "title": "오전 자연광",
+    "cue": "맑고 선명한 빛이 들어오는 방향"
+  },
+  {
+    "subject": "space",
+    "step": "light",
+    "option_key": "space-light-noon",
+    "title": "환하고 깨끗한 채광",
+    "cue": "전체가 밝고 보기 쉬운 방향"
+  },
+  {
+    "subject": "space",
+    "step": "light",
+    "option_key": "space-light-sunset",
+    "title": "해질녘 따뜻한 빛",
+    "cue": "감성적인 공기감이 살아나는 방향"
+  },
+  {
+    "subject": "space",
+    "step": "light",
+    "option_key": "space-light-lamp",
+    "title": "무드등 / 간접조명",
+    "cue": "저녁 실내 분위기가 살아나는 방향"
+  },
+  {
+    "subject": "space",
+    "step": "light",
+    "option_key": "space-light-window",
+    "title": "창가 역광",
+    "cue": "빛과 그림자가 섬세하게 보이는 방향"
+  },
+  {
+    "subject": "space",
+    "step": "light",
+    "option_key": "space-light-soft",
+    "title": "부드러운 확산광",
+    "cue": "눈에 편하고 화사한 방향"
+  },
+  {
+    "subject": "space",
+    "step": "light",
+    "option_key": "space-light-contrast",
+    "title": "명암이 있는 조명",
+    "cue": "고급스럽고 드라마틱한 방향"
+  },
+  {
+    "subject": "space",
+    "step": "light",
+    "option_key": "space-light-night",
+    "title": "야간 실내 조명",
+    "cue": "도시 야간 무드가 있는 방향"
+  },
+  {
+    "subject": "space",
+    "step": "composition",
+    "option_key": "land-panorama",
+    "title": "파노라마 와이드",
+    "cue": "넓은 풍경과 스케일이 먼저 느껴지는 화면"
+  },
+  {
+    "subject": "space",
+    "step": "composition",
+    "option_key": "land-mid",
+    "title": "중간 거리 풍경",
+    "cue": "주제와 배경이 균형 있게 보이는 화면"
+  },
+  {
+    "subject": "space",
+    "step": "composition",
+    "option_key": "land-foreground",
+    "title": "전경 강조",
+    "cue": "앞쪽 요소를 크게 두고 깊이를 만드는 화면"
+  },
+  {
+    "subject": "space",
+    "step": "composition",
+    "option_key": "land-silhouette",
+    "title": "실루엣 포함",
+    "cue": "해질녘이나 역광에서 분위기가 살아나는 화면"
+  },
+  {
+    "subject": "space",
+    "step": "composition",
+    "option_key": "land-road",
+    "title": "길이 이어지는 화면",
+    "cue": "시선이 안쪽으로 자연스럽게 들어가는 구성"
+  },
+  {
+    "subject": "space",
+    "step": "composition",
+    "option_key": "land-top",
+    "title": "높은 시점 / 항공 느낌",
+    "cue": "지역 전체 윤곽이 보이는 시원한 구도"
+  },
+  {
+    "subject": "space",
+    "step": "composition",
+    "option_key": "land-framed",
+    "title": "창틀 / 문틀 프레이밍",
+    "cue": "안쪽 장면을 액자처럼 감싸는 구도"
+  },
+  {
+    "subject": "space",
+    "step": "composition",
+    "option_key": "land-detail",
+    "title": "디테일 클로즈업",
+    "cue": "풍경 일부의 질감과 포인트를 크게 보는 화면"
+  },
+  {
+    "subject": "space",
+    "step": "composition",
+    "option_key": "space-comp-living-wide",
+    "title": "거실 전체 와이드",
+    "cue": "공간 구조가 한눈에 보이는 구도"
+  },
+  {
+    "subject": "space",
+    "step": "composition",
+    "option_key": "space-comp-living-corner",
+    "title": "코너 시점",
+    "cue": "입체감과 배치가 자연스러운 구도"
+  },
+  {
+    "subject": "space",
+    "step": "composition",
+    "option_key": "space-comp-living-center",
+    "title": "정면 정리형",
+    "cue": "가구 정렬이 잘 보이는 구도"
+  },
+  {
+    "subject": "space",
+    "step": "composition",
+    "option_key": "space-comp-living-sofa",
+    "title": "소파 중심 구도",
+    "cue": "메인 가구가 먼저 보이는 구도"
+  },
+  {
+    "subject": "space",
+    "step": "composition",
+    "option_key": "space-comp-living-window",
+    "title": "창가 포함 와이드",
+    "cue": "빛과 공기가 함께 보이는 구도"
+  },
+  {
+    "subject": "space",
+    "step": "composition",
+    "option_key": "space-comp-living-detail",
+    "title": "재질 / 소품 디테일",
+    "cue": "작은 포인트가 살아나는 구도"
+  },
+  {
+    "subject": "space",
+    "step": "composition",
+    "option_key": "space-comp-living-table",
+    "title": "테이블 중심 구도",
+    "cue": "생활감이 보이는 구도"
+  },
+  {
+    "subject": "space",
+    "step": "composition",
+    "option_key": "space-comp-living-magazine",
+    "title": "매거진 화보형",
+    "cue": "공간이 스타일컷처럼 보이는 구도"
+  },
+  {
+    "subject": "space",
+    "step": "composition",
+    "option_key": "space-comp-bed-wide",
+    "title": "침실 전체 와이드",
+    "cue": "침대와 주변 배치가 보이는 구도"
+  },
+  {
+    "subject": "space",
+    "step": "composition",
+    "option_key": "space-comp-bed-front",
+    "title": "침대 정면 구도",
+    "cue": "정돈감이 큰 침실 구도"
+  },
+  {
+    "subject": "space",
+    "step": "composition",
+    "option_key": "space-comp-bed-side",
+    "title": "옆각에서 보는 침실",
+    "cue": "공간 깊이감이 있는 구도"
+  },
+  {
+    "subject": "space",
+    "step": "composition",
+    "option_key": "space-comp-bed-window",
+    "title": "창가 침실 구도",
+    "cue": "자연광이 중심인 침실 구도"
+  },
+  {
+    "subject": "space",
+    "step": "composition",
+    "option_key": "space-comp-bed-detail",
+    "title": "침구 / 소품 디테일",
+    "cue": "질감이 중요한 침실 구도"
+  },
+  {
+    "subject": "space",
+    "step": "composition",
+    "option_key": "space-comp-bed-cozy",
+    "title": "아늑한 코너 구도",
+    "cue": "편안함이 크게 느껴지는 구도"
+  },
+  {
+    "subject": "space",
+    "step": "composition",
+    "option_key": "space-comp-bed-top",
+    "title": "침대 위 탑뷰 느낌",
+    "cue": "정돈된 침구 연출이 보이는 구도"
+  },
+  {
+    "subject": "space",
+    "step": "composition",
+    "option_key": "space-comp-bed-minimal",
+    "title": "아주 단순한 침실 구도",
+    "cue": "가구 수를 줄인 정리형 구도"
+  },
+  {
+    "subject": "space",
+    "step": "composition",
+    "option_key": "space-comp-commercial-wide",
+    "title": "매장 전체 와이드",
+    "cue": "동선과 구조가 한눈에 보이는 구도"
+  },
+  {
+    "subject": "space",
+    "step": "composition",
+    "option_key": "space-comp-commercial-counter",
+    "title": "카운터 중심",
+    "cue": "서비스 포인트가 보이는 구도"
+  },
+  {
+    "subject": "space",
+    "step": "composition",
+    "option_key": "space-comp-commercial-seating",
+    "title": "좌석 중심 구도",
+    "cue": "머무는 분위기가 보이는 구도"
+  },
+  {
+    "subject": "space",
+    "step": "composition",
+    "option_key": "space-comp-commercial-entry",
+    "title": "입구 쪽 시점",
+    "cue": "첫 인상이 잘 보이는 구도"
+  },
+  {
+    "subject": "space",
+    "step": "composition",
+    "option_key": "space-comp-commercial-corner",
+    "title": "코너 / 사선 시점",
+    "cue": "입체감과 디스플레이가 보이는 구도"
+  },
+  {
+    "subject": "space",
+    "step": "composition",
+    "option_key": "space-comp-commercial-detail",
+    "title": "디테일 / 소품 중심",
+    "cue": "브랜드 감성이 살아나는 구도"
+  },
+  {
+    "subject": "space",
+    "step": "composition",
+    "option_key": "space-comp-commercial-window",
+    "title": "창가 포함 실내",
+    "cue": "채광과 분위기가 함께 보이는 구도"
+  },
+  {
+    "subject": "space",
+    "step": "composition",
+    "option_key": "space-comp-commercial-editorial",
+    "title": "브랜드 화보형 공간 구도",
+    "cue": "공간 자체가 스타일컷처럼 보이는 구도"
+  },
+  {
+    "subject": "space",
+    "step": "mood",
+    "option_key": "mood-bright",
+    "title": "밝고 친근하게",
+    "cue": "입문자도 편하게 느끼는 가볍고 열린 분위기"
+  },
+  {
+    "subject": "space",
+    "step": "mood",
+    "option_key": "mood-clean",
+    "title": "깨끗하고 맑게",
+    "cue": "정보 전달이 또렷한 클린한 방향"
+  },
+  {
+    "subject": "space",
+    "step": "mood",
+    "option_key": "mood-warm",
+    "title": "따뜻하고 편안하게",
+    "cue": "부드럽고 정감 있는 인상을 주는 무드"
+  },
+  {
+    "subject": "space",
+    "step": "mood",
+    "option_key": "mood-calm",
+    "title": "차분하고 담백하게",
+    "cue": "과장되지 않고 정리된 톤"
+  },
+  {
+    "subject": "space",
+    "step": "mood",
+    "option_key": "mood-cinematic",
+    "title": "영화처럼 깊게",
+    "cue": "공기감과 서사가 함께 느껴지는 무드"
+  },
+  {
+    "subject": "space",
+    "step": "mood",
+    "option_key": "mood-dramatic",
+    "title": "강렬하고 드라마틱하게",
+    "cue": "명암과 감정이 또렷한 방향"
+  },
+  {
+    "subject": "space",
+    "step": "mood",
+    "option_key": "mood-luxury",
+    "title": "고급스럽고 세련되게",
+    "cue": "브랜드 비주얼 같은 정제된 무드"
+  },
+  {
+    "subject": "space",
+    "step": "mood",
+    "option_key": "mood-playful",
+    "title": "귀엽고 경쾌하게",
+    "cue": "색감과 인상이 가볍고 재미있는 방향"
+  },
+  {
+    "subject": "space",
+    "step": "mood",
+    "option_key": "mood-future",
+    "title": "미래적이고 차갑게",
+    "cue": "기술적이고 현대적인 느낌"
+  },
+  {
+    "subject": "space",
+    "step": "mood",
+    "option_key": "mood-vintage",
+    "title": "빈티지하고 레트로하게",
+    "cue": "옛 감성과 필름 느낌이 남는 방향"
+  },
+  {
+    "subject": "architecture",
+    "step": "detail",
+    "option_key": "arch-house",
+    "title": "주택 / 단독주택",
+    "cue": "집 외관과 생활 감성이 보이는 장면"
+  },
+  {
+    "subject": "architecture",
+    "step": "detail",
+    "option_key": "arch-apartment",
+    "title": "아파트 / 빌딩",
+    "cue": "도시형 건축 느낌이 중요한 장면"
+  },
+  {
+    "subject": "architecture",
+    "step": "detail",
+    "option_key": "arch-cafe",
+    "title": "카페 외관",
+    "cue": "입구와 브랜드 감성이 보이는 장면"
+  },
+  {
+    "subject": "architecture",
+    "step": "detail",
+    "option_key": "arch-hotel",
+    "title": "호텔 / 리조트",
+    "cue": "고급 외관과 분위기가 중요한 장면"
+  },
+  {
+    "subject": "architecture",
+    "step": "detail",
+    "option_key": "arch-hanok",
+    "title": "한옥 / 전통 건축",
+    "cue": "전통미와 구조가 중요한 장면"
+  },
+  {
+    "subject": "architecture",
+    "step": "detail",
+    "option_key": "arch-future",
+    "title": "미래적 건축",
+    "cue": "형태와 기술 감성이 중요한 장면"
+  },
+  {
+    "subject": "architecture",
+    "step": "detail",
+    "option_key": "arch-commercial",
+    "title": "상업 공간 외부",
+    "cue": "유입성과 브랜드 인상이 중요한 장면"
+  },
+  {
+    "subject": "architecture",
+    "step": "detail",
+    "option_key": "arch-public",
+    "title": "공공 / 문화 건축",
+    "cue": "공간 성격과 상징성이 보이는 장면"
+  },
+  {
+    "subject": "architecture",
+    "step": "detail",
+    "option_key": "arch-garden",
+    "title": "정원 / 테라스 포함",
+    "cue": "외부 공간과 건물이 같이 보이는 장면"
+  },
+  {
+    "subject": "architecture",
+    "step": "detail",
+    "option_key": "arch-minimal",
+    "title": "미니멀 외관",
+    "cue": "형태와 재료감이 또렷한 장면"
+  },
+  {
+    "subject": "architecture",
+    "step": "detail",
+    "option_key": "arch-landmark",
+    "title": "랜드마크 / 상징 건축",
+    "cue": "장소 대표성이 중요한 장면"
+  },
+  {
+    "subject": "architecture",
+    "step": "detail",
+    "option_key": "arch-office",
+    "title": "오피스 / 업무용 건물",
+    "cue": "현대적이고 정돈된 인상이 중요한 장면"
+  },
+  {
+    "subject": "architecture",
+    "step": "time",
+    "option_key": "arch-time-morning",
+    "title": "맑은 아침",
+    "cue": "또렷하고 산뜻한 외관 표현"
+  },
+  {
+    "subject": "architecture",
+    "step": "time",
+    "option_key": "arch-time-noon",
+    "title": "정오의 선명한 빛",
+    "cue": "형태와 구조가 명확한 표현"
+  },
+  {
+    "subject": "architecture",
+    "step": "time",
+    "option_key": "arch-time-sunset",
+    "title": "노을 시간",
+    "cue": "따뜻한 외관 색감이 살아나는 표현"
+  },
+  {
+    "subject": "architecture",
+    "step": "time",
+    "option_key": "arch-time-bluehour",
+    "title": "블루아워",
+    "cue": "도시 조명과 하늘 색이 어울리는 표현"
+  },
+  {
+    "subject": "architecture",
+    "step": "time",
+    "option_key": "arch-time-night",
+    "title": "완전한 야경",
+    "cue": "조명과 반사가 강조되는 표현"
+  },
+  {
+    "subject": "architecture",
+    "step": "time",
+    "option_key": "arch-time-rain",
+    "title": "비 온 뒤",
+    "cue": "젖은 바닥 반사가 살아나는 표현"
+  },
+  {
+    "subject": "architecture",
+    "step": "time",
+    "option_key": "arch-time-fog",
+    "title": "안개 / 흐린 날",
+    "cue": "분위기와 실루엣이 강조되는 표현"
+  },
+  {
+    "subject": "architecture",
+    "step": "time",
+    "option_key": "arch-time-spring",
+    "title": "계절감 있는 날",
+    "cue": "나무와 공기가 함께 느껴지는 표현"
+  },
+  {
+    "subject": "architecture",
+    "step": "focus",
+    "option_key": "arch-point-front",
+    "title": "정면 파사드",
+    "cue": "건물 전면 인상이 가장 중요한 방향"
+  },
+  {
+    "subject": "architecture",
+    "step": "focus",
+    "option_key": "arch-point-angle",
+    "title": "사선 뷰",
+    "cue": "입체감과 형태감이 잘 보이는 방향"
+  },
+  {
+    "subject": "architecture",
+    "step": "focus",
+    "option_key": "arch-point-entrance",
+    "title": "입구 / 출입구",
+    "cue": "브랜드 진입감이 중요한 방향"
+  },
+  {
+    "subject": "architecture",
+    "step": "focus",
+    "option_key": "arch-point-sign",
+    "title": "간판 / 로고 포함",
+    "cue": "브랜드명이 함께 읽히는 방향"
+  },
+  {
+    "subject": "architecture",
+    "step": "focus",
+    "option_key": "arch-point-full",
+    "title": "건물 전체",
+    "cue": "큰 비율과 실루엣이 중심인 방향"
+  },
+  {
+    "subject": "architecture",
+    "step": "focus",
+    "option_key": "arch-point-detail",
+    "title": "외장재 / 디테일",
+    "cue": "재료 질감이 중심인 방향"
+  },
+  {
+    "subject": "architecture",
+    "step": "focus",
+    "option_key": "arch-point-human",
+    "title": "사람과 함께",
+    "cue": "스케일감과 사용 맥락이 보이는 방향"
+  },
+  {
+    "subject": "architecture",
+    "step": "focus",
+    "option_key": "arch-point-street",
+    "title": "거리 맥락 포함",
+    "cue": "주변 도시 분위기까지 보이는 방향"
+  },
+  {
+    "subject": "architecture",
+    "step": "context",
+    "option_key": "arch-context-solo",
+    "title": "건물 단독으로 깔끔하게",
+    "cue": "주변보다 건물 자체가 중심인 맥락"
+  },
+  {
+    "subject": "architecture",
+    "step": "context",
+    "option_key": "arch-context-street",
+    "title": "거리와 함께",
+    "cue": "도시 흐름 안에서 보이는 맥락"
+  },
+  {
+    "subject": "architecture",
+    "step": "context",
+    "option_key": "arch-context-entry",
+    "title": "입구 / 진입 동선 중심",
+    "cue": "사람이 들어가는 느낌이 중요한 맥락"
+  },
+  {
+    "subject": "architecture",
+    "step": "context",
+    "option_key": "arch-context-brand",
+    "title": "간판 / 브랜드 보이게",
+    "cue": "상업성이나 인지가 중요한 맥락"
+  },
+  {
+    "subject": "architecture",
+    "step": "context",
+    "option_key": "arch-context-people",
+    "title": "사람이 크기감을 주게",
+    "cue": "스케일과 사용감이 느껴지는 맥락"
+  },
+  {
+    "subject": "architecture",
+    "step": "context",
+    "option_key": "arch-context-garden",
+    "title": "정원 / 테라스 포함",
+    "cue": "외부 공간까지 함께 보이는 맥락"
+  },
+  {
+    "subject": "architecture",
+    "step": "context",
+    "option_key": "arch-context-landmark",
+    "title": "광장 / 장소 대표성 중심",
+    "cue": "랜드마크처럼 보이는 맥락"
+  },
+  {
+    "subject": "architecture",
+    "step": "context",
+    "option_key": "arch-context-night",
+    "title": "야경 / 조명 연출 중심",
+    "cue": "빛과 반사가 먼저 보이는 맥락"
+  },
+  {
+    "subject": "architecture",
+    "step": "composition",
+    "option_key": "land-panorama",
+    "title": "파노라마 와이드",
+    "cue": "넓은 풍경과 스케일이 먼저 느껴지는 화면"
+  },
+  {
+    "subject": "architecture",
+    "step": "composition",
+    "option_key": "land-mid",
+    "title": "중간 거리 풍경",
+    "cue": "주제와 배경이 균형 있게 보이는 화면"
+  },
+  {
+    "subject": "architecture",
+    "step": "composition",
+    "option_key": "land-foreground",
+    "title": "전경 강조",
+    "cue": "앞쪽 요소를 크게 두고 깊이를 만드는 화면"
+  },
+  {
+    "subject": "architecture",
+    "step": "composition",
+    "option_key": "land-silhouette",
+    "title": "실루엣 포함",
+    "cue": "해질녘이나 역광에서 분위기가 살아나는 화면"
+  },
+  {
+    "subject": "architecture",
+    "step": "composition",
+    "option_key": "land-road",
+    "title": "길이 이어지는 화면",
+    "cue": "시선이 안쪽으로 자연스럽게 들어가는 구성"
+  },
+  {
+    "subject": "architecture",
+    "step": "composition",
+    "option_key": "land-top",
+    "title": "높은 시점 / 항공 느낌",
+    "cue": "지역 전체 윤곽이 보이는 시원한 구도"
+  },
+  {
+    "subject": "architecture",
+    "step": "composition",
+    "option_key": "land-framed",
+    "title": "창틀 / 문틀 프레이밍",
+    "cue": "안쪽 장면을 액자처럼 감싸는 구도"
+  },
+  {
+    "subject": "architecture",
+    "step": "composition",
+    "option_key": "land-detail",
+    "title": "디테일 클로즈업",
+    "cue": "풍경 일부의 질감과 포인트를 크게 보는 화면"
+  },
+  {
+    "subject": "architecture",
+    "step": "composition",
+    "option_key": "arch-comp-detail-entry",
+    "title": "문 / 입구 디테일",
+    "cue": "진입부 디테일이 중심인 구도"
+  },
+  {
+    "subject": "architecture",
+    "step": "composition",
+    "option_key": "arch-comp-detail-material",
+    "title": "외장재 / 재질 근접",
+    "cue": "재료감이 먼저 보이는 구도"
+  },
+  {
+    "subject": "architecture",
+    "step": "composition",
+    "option_key": "arch-comp-detail-window",
+    "title": "창문 / 패턴 중심",
+    "cue": "반복 구조가 살아나는 구도"
+  },
+  {
+    "subject": "architecture",
+    "step": "composition",
+    "option_key": "arch-comp-detail-stair",
+    "title": "계단 / 손잡이 포인트",
+    "cue": "동선 디테일이 보이는 구도"
+  },
+  {
+    "subject": "architecture",
+    "step": "composition",
+    "option_key": "arch-comp-detail-sign",
+    "title": "간판 / 타이포 디테일",
+    "cue": "브랜드 포인트가 중요한 구도"
+  },
+  {
+    "subject": "architecture",
+    "step": "composition",
+    "option_key": "arch-comp-detail-light",
+    "title": "조명 디테일",
+    "cue": "야간 조명 요소가 중심인 구도"
+  },
+  {
+    "subject": "architecture",
+    "step": "composition",
+    "option_key": "arch-comp-detail-angle",
+    "title": "모서리 / 라인 포인트",
+    "cue": "형태미가 잘 보이는 구도"
+  },
+  {
+    "subject": "architecture",
+    "step": "composition",
+    "option_key": "arch-comp-detail-human",
+    "title": "사람이 스케일만 주는 구도",
+    "cue": "건축 디테일과 크기감이 보이는 구도"
+  },
+  {
+    "subject": "architecture",
+    "step": "composition",
+    "option_key": "arch-comp-landmark-wide",
+    "title": "랜드마크 전체 와이드",
+    "cue": "대표성이 강한 전체 구도"
+  },
+  {
+    "subject": "architecture",
+    "step": "composition",
+    "option_key": "arch-comp-landmark-plaza",
+    "title": "광장과 함께",
+    "cue": "건물 앞 공간까지 보이는 구도"
+  },
+  {
+    "subject": "architecture",
+    "step": "composition",
+    "option_key": "arch-comp-landmark-night",
+    "title": "야경 메인 구도",
+    "cue": "조명과 상징성이 강한 구도"
+  },
+  {
+    "subject": "architecture",
+    "step": "composition",
+    "option_key": "arch-comp-landmark-reflect",
+    "title": "반사 / 수면 포함",
+    "cue": "상징적이고 드라마틱한 구도"
+  },
+  {
+    "subject": "architecture",
+    "step": "composition",
+    "option_key": "arch-comp-landmark-top",
+    "title": "높은 시점 느낌",
+    "cue": "주변 구조와 위치감이 있는 구도"
+  },
+  {
+    "subject": "architecture",
+    "step": "composition",
+    "option_key": "arch-comp-landmark-silhouette",
+    "title": "실루엣 중심",
+    "cue": "하늘과 대비가 살아나는 구도"
+  },
+  {
+    "subject": "architecture",
+    "step": "composition",
+    "option_key": "arch-comp-landmark-detail",
+    "title": "상징 포인트 근접",
+    "cue": "대표 디테일이 먼저 보이는 구도"
+  },
+  {
+    "subject": "architecture",
+    "step": "composition",
+    "option_key": "arch-comp-landmark-cinematic",
+    "title": "영화 같은 메인컷",
+    "cue": "장면성이 강한 구도"
+  },
+  {
+    "subject": "architecture",
+    "step": "composition",
+    "option_key": "arch-comp-front",
+    "title": "정면 파사드",
+    "cue": "건물 전면 인상이 또렷한 구도"
+  },
+  {
+    "subject": "architecture",
+    "step": "composition",
+    "option_key": "arch-comp-corner",
+    "title": "코너 / 사선 시점",
+    "cue": "입체감이 잘 보이는 구도"
+  },
+  {
+    "subject": "architecture",
+    "step": "composition",
+    "option_key": "arch-comp-wide",
+    "title": "건물 전체 와이드",
+    "cue": "전체 규모와 맥락이 보이는 구도"
+  },
+  {
+    "subject": "architecture",
+    "step": "composition",
+    "option_key": "arch-comp-entry",
+    "title": "입구 중심",
+    "cue": "진입감과 첫 인상이 보이는 구도"
+  },
+  {
+    "subject": "architecture",
+    "step": "composition",
+    "option_key": "arch-comp-sign",
+    "title": "간판 / 로고 포함",
+    "cue": "브랜드 인지가 쉬운 구도"
+  },
+  {
+    "subject": "architecture",
+    "step": "composition",
+    "option_key": "arch-comp-street",
+    "title": "거리 맥락 포함",
+    "cue": "주변 도시 분위기가 함께 보이는 구도"
+  },
+  {
+    "subject": "architecture",
+    "step": "composition",
+    "option_key": "arch-comp-low",
+    "title": "아래에서 올려보는 구도",
+    "cue": "높이감과 존재감이 큰 구도"
+  },
+  {
+    "subject": "architecture",
+    "step": "composition",
+    "option_key": "arch-comp-garden",
+    "title": "정원 / 테라스 포함",
+    "cue": "외부 공간과 건물이 함께 보이는 구도"
+  },
+  {
+    "subject": "architecture",
+    "step": "mood",
+    "option_key": "mood-bright",
+    "title": "밝고 친근하게",
+    "cue": "입문자도 편하게 느끼는 가볍고 열린 분위기"
+  },
+  {
+    "subject": "architecture",
+    "step": "mood",
+    "option_key": "mood-clean",
+    "title": "깨끗하고 맑게",
+    "cue": "정보 전달이 또렷한 클린한 방향"
+  },
+  {
+    "subject": "architecture",
+    "step": "mood",
+    "option_key": "mood-warm",
+    "title": "따뜻하고 편안하게",
+    "cue": "부드럽고 정감 있는 인상을 주는 무드"
+  },
+  {
+    "subject": "architecture",
+    "step": "mood",
+    "option_key": "mood-calm",
+    "title": "차분하고 담백하게",
+    "cue": "과장되지 않고 정리된 톤"
+  },
+  {
+    "subject": "architecture",
+    "step": "mood",
+    "option_key": "mood-cinematic",
+    "title": "영화처럼 깊게",
+    "cue": "공기감과 서사가 함께 느껴지는 무드"
+  },
+  {
+    "subject": "architecture",
+    "step": "mood",
+    "option_key": "mood-dramatic",
+    "title": "강렬하고 드라마틱하게",
+    "cue": "명암과 감정이 또렷한 방향"
+  },
+  {
+    "subject": "architecture",
+    "step": "mood",
+    "option_key": "mood-luxury",
+    "title": "고급스럽고 세련되게",
+    "cue": "브랜드 비주얼 같은 정제된 무드"
+  },
+  {
+    "subject": "architecture",
+    "step": "mood",
+    "option_key": "mood-playful",
+    "title": "귀엽고 경쾌하게",
+    "cue": "색감과 인상이 가볍고 재미있는 방향"
+  },
+  {
+    "subject": "architecture",
+    "step": "mood",
+    "option_key": "mood-future",
+    "title": "미래적이고 차갑게",
+    "cue": "기술적이고 현대적인 느낌"
+  },
+  {
+    "subject": "architecture",
+    "step": "mood",
+    "option_key": "mood-vintage",
+    "title": "빈티지하고 레트로하게",
+    "cue": "옛 감성과 필름 느낌이 남는 방향"
+  },
+  {
+    "subject": "landscape",
+    "step": "detail",
+    "option_key": "land-nature",
+    "title": "산 / 숲",
+    "cue": "자연이 풍부한 풍경 장면"
+  },
+  {
+    "subject": "landscape",
+    "step": "detail",
+    "option_key": "land-sea",
+    "title": "바다 / 해변",
+    "cue": "수평선과 바다 색감이 중요한 풍경"
+  },
+  {
+    "subject": "landscape",
+    "step": "detail",
+    "option_key": "land-lake",
+    "title": "호수 / 강",
+    "cue": "물결과 반사가 중요한 풍경"
+  },
+  {
+    "subject": "landscape",
+    "step": "detail",
+    "option_key": "land-city",
+    "title": "도시 전경",
+    "cue": "빌딩과 도시 흐름이 보이는 풍경"
+  },
+  {
+    "subject": "landscape",
+    "step": "detail",
+    "option_key": "land-night",
+    "title": "도시 야경",
+    "cue": "조명과 반짝임이 중심인 장면"
+  },
+  {
+    "subject": "landscape",
+    "step": "detail",
+    "option_key": "land-rural",
+    "title": "시골 / 들판",
+    "cue": "한적하고 넓은 느낌이 중요한 풍경"
+  },
+  {
+    "subject": "landscape",
+    "step": "detail",
+    "option_key": "land-desert",
+    "title": "사막 / 황량한 풍경",
+    "cue": "질감과 스케일이 중요한 장면"
+  },
+  {
+    "subject": "landscape",
+    "step": "detail",
+    "option_key": "land-snow",
+    "title": "눈 풍경",
+    "cue": "차갑고 고요한 계절감이 중요한 장면"
+  },
+  {
+    "subject": "landscape",
+    "step": "detail",
+    "option_key": "land-sky",
+    "title": "하늘 / 구름 중심",
+    "cue": "하늘이 주인공인 장면"
+  },
+  {
+    "subject": "landscape",
+    "step": "detail",
+    "option_key": "land-season",
+    "title": "계절감 풍경",
+    "cue": "봄꽃, 여름빛, 가을빛, 겨울기운이 중요한 장면"
+  },
+  {
+    "subject": "landscape",
+    "step": "time",
+    "option_key": "land-time-sunrise",
+    "title": "해 뜨기 직전",
+    "cue": "차갑고 맑은 시작 공기가 있는 시간"
+  },
+  {
+    "subject": "landscape",
+    "step": "time",
+    "option_key": "land-time-morning",
+    "title": "밝은 아침",
+    "cue": "선명하고 깨끗한 풍경 표현"
+  },
+  {
+    "subject": "landscape",
+    "step": "time",
+    "option_key": "land-time-noon",
+    "title": "한낮의 선명함",
+    "cue": "색과 구조가 또렷한 시간"
+  },
+  {
+    "subject": "landscape",
+    "step": "time",
+    "option_key": "land-time-sunset",
+    "title": "노을 시간",
+    "cue": "따뜻한 빛이 감도는 풍경"
+  },
+  {
+    "subject": "landscape",
+    "step": "time",
+    "option_key": "land-time-bluehour",
+    "title": "블루아워",
+    "cue": "푸른 하늘과 조명이 함께 살아나는 시간"
+  },
+  {
+    "subject": "landscape",
+    "step": "time",
+    "option_key": "land-time-night",
+    "title": "밤 풍경",
+    "cue": "도시빛이나 별빛이 살아나는 시간"
+  },
+  {
+    "subject": "landscape",
+    "step": "time",
+    "option_key": "land-time-rain",
+    "title": "비 오는 날",
+    "cue": "젖은 공기와 반사가 살아나는 날씨"
+  },
+  {
+    "subject": "landscape",
+    "step": "time",
+    "option_key": "land-time-fog",
+    "title": "안개 낀 날",
+    "cue": "깊이감과 신비로움이 있는 날씨"
+  },
+  {
+    "subject": "landscape",
+    "step": "time",
+    "option_key": "land-time-snow",
+    "title": "눈 오는 날",
+    "cue": "차갑고 정적인 계절감이 강한 날씨"
+  },
+  {
+    "subject": "landscape",
+    "step": "time",
+    "option_key": "land-time-wind",
+    "title": "바람감이 느껴지는 날",
+    "cue": "구름과 움직임이 살아나는 날씨"
+  },
+  {
+    "subject": "landscape",
+    "step": "presence",
+    "option_key": "land-presence-none",
+    "title": "사람 없이 풍경만",
+    "cue": "공간과 자연 자체가 중심인 화면"
+  },
+  {
+    "subject": "landscape",
+    "step": "presence",
+    "option_key": "land-presence-one",
+    "title": "실루엣 한 명",
+    "cue": "사람이 스케일을 만들어주는 화면"
+  },
+  {
+    "subject": "landscape",
+    "step": "presence",
+    "option_key": "land-presence-back",
+    "title": "뒷모습 한 명",
+    "cue": "여행자 감성이 더해지는 화면"
+  },
+  {
+    "subject": "landscape",
+    "step": "presence",
+    "option_key": "land-presence-car",
+    "title": "차 / 도로 포함",
+    "cue": "이동감이 함께 보이는 풍경"
+  },
+  {
+    "subject": "landscape",
+    "step": "presence",
+    "option_key": "land-presence-building",
+    "title": "건물 일부 포함",
+    "cue": "자연과 구조물이 같이 보이는 화면"
+  },
+  {
+    "subject": "landscape",
+    "step": "presence",
+    "option_key": "land-presence-animal",
+    "title": "동물 포함",
+    "cue": "자연 속 생명감이 더해지는 화면"
+  },
+  {
+    "subject": "landscape",
+    "step": "presence",
+    "option_key": "land-presence-group",
+    "title": "작은 그룹 포함",
+    "cue": "행동과 추억이 느껴지는 풍경"
+  },
+  {
+    "subject": "landscape",
+    "step": "presence",
+    "option_key": "land-presence-object",
+    "title": "소품 / 텐트 / 자전거 포함",
+    "cue": "이야기성이 더해지는 화면"
+  },
+  {
+    "subject": "landscape",
+    "step": "composition",
+    "option_key": "land-panorama",
+    "title": "파노라마 와이드",
+    "cue": "넓은 풍경과 스케일이 먼저 느껴지는 화면"
+  },
+  {
+    "subject": "landscape",
+    "step": "composition",
+    "option_key": "land-mid",
+    "title": "중간 거리 풍경",
+    "cue": "주제와 배경이 균형 있게 보이는 화면"
+  },
+  {
+    "subject": "landscape",
+    "step": "composition",
+    "option_key": "land-foreground",
+    "title": "전경 강조",
+    "cue": "앞쪽 요소를 크게 두고 깊이를 만드는 화면"
+  },
+  {
+    "subject": "landscape",
+    "step": "composition",
+    "option_key": "land-silhouette",
+    "title": "실루엣 포함",
+    "cue": "해질녘이나 역광에서 분위기가 살아나는 화면"
+  },
+  {
+    "subject": "landscape",
+    "step": "composition",
+    "option_key": "land-road",
+    "title": "길이 이어지는 화면",
+    "cue": "시선이 안쪽으로 자연스럽게 들어가는 구성"
+  },
+  {
+    "subject": "landscape",
+    "step": "composition",
+    "option_key": "land-top",
+    "title": "높은 시점 / 항공 느낌",
+    "cue": "지역 전체 윤곽이 보이는 시원한 구도"
+  },
+  {
+    "subject": "landscape",
+    "step": "composition",
+    "option_key": "land-framed",
+    "title": "창틀 / 문틀 프레이밍",
+    "cue": "안쪽 장면을 액자처럼 감싸는 구도"
+  },
+  {
+    "subject": "landscape",
+    "step": "composition",
+    "option_key": "land-detail",
+    "title": "디테일 클로즈업",
+    "cue": "풍경 일부의 질감과 포인트를 크게 보는 화면"
+  },
+  {
+    "subject": "landscape",
+    "step": "mood",
+    "option_key": "mood-bright",
+    "title": "밝고 친근하게",
+    "cue": "입문자도 편하게 느끼는 가볍고 열린 분위기"
+  },
+  {
+    "subject": "landscape",
+    "step": "mood",
+    "option_key": "mood-clean",
+    "title": "깨끗하고 맑게",
+    "cue": "정보 전달이 또렷한 클린한 방향"
+  },
+  {
+    "subject": "landscape",
+    "step": "mood",
+    "option_key": "mood-warm",
+    "title": "따뜻하고 편안하게",
+    "cue": "부드럽고 정감 있는 인상을 주는 무드"
+  },
+  {
+    "subject": "landscape",
+    "step": "mood",
+    "option_key": "mood-calm",
+    "title": "차분하고 담백하게",
+    "cue": "과장되지 않고 정리된 톤"
+  },
+  {
+    "subject": "landscape",
+    "step": "mood",
+    "option_key": "mood-cinematic",
+    "title": "영화처럼 깊게",
+    "cue": "공기감과 서사가 함께 느껴지는 무드"
+  },
+  {
+    "subject": "landscape",
+    "step": "mood",
+    "option_key": "mood-dramatic",
+    "title": "강렬하고 드라마틱하게",
+    "cue": "명암과 감정이 또렷한 방향"
+  },
+  {
+    "subject": "landscape",
+    "step": "mood",
+    "option_key": "mood-luxury",
+    "title": "고급스럽고 세련되게",
+    "cue": "브랜드 비주얼 같은 정제된 무드"
+  },
+  {
+    "subject": "landscape",
+    "step": "mood",
+    "option_key": "mood-playful",
+    "title": "귀엽고 경쾌하게",
+    "cue": "색감과 인상이 가볍고 재미있는 방향"
+  },
+  {
+    "subject": "landscape",
+    "step": "mood",
+    "option_key": "mood-future",
+    "title": "미래적이고 차갑게",
+    "cue": "기술적이고 현대적인 느낌"
+  },
+  {
+    "subject": "landscape",
+    "step": "mood",
+    "option_key": "mood-vintage",
+    "title": "빈티지하고 레트로하게",
+    "cue": "옛 감성과 필름 느낌이 남는 방향"
+  },
+  {
+    "subject": "travel",
+    "step": "detail",
+    "option_key": "travel-intro",
+    "title": "인트로용 장면",
+    "cue": "여행이 시작되는 느낌의 첫 장면"
+  },
+  {
+    "subject": "travel",
+    "step": "detail",
+    "option_key": "travel-airport",
+    "title": "공항 / 출발 장면",
+    "cue": "짐과 이동의 설렘이 있는 장면"
+  },
+  {
+    "subject": "travel",
+    "step": "detail",
+    "option_key": "travel-transit",
+    "title": "기차 / 버스 / 이동 중",
+    "cue": "이동 과정이 느껴지는 장면"
+  },
+  {
+    "subject": "travel",
+    "step": "detail",
+    "option_key": "travel-landmark",
+    "title": "명소 인증샷",
+    "cue": "대표 장소와 인물이 함께 보이는 장면"
+  },
+  {
+    "subject": "travel",
+    "step": "detail",
+    "option_key": "travel-cafe",
+    "title": "카페 / 맛집 장면",
+    "cue": "여행지의 생활감이 있는 장면"
+  },
+  {
+    "subject": "travel",
+    "step": "detail",
+    "option_key": "travel-street",
+    "title": "거리 걷는 장면",
+    "cue": "도시 흐름과 이동감이 있는 장면"
+  },
+  {
+    "subject": "travel",
+    "step": "detail",
+    "option_key": "travel-hotel",
+    "title": "숙소 / 호텔 컷",
+    "cue": "체류 공간의 분위기가 보이는 장면"
+  },
+  {
+    "subject": "travel",
+    "step": "detail",
+    "option_key": "travel-market",
+    "title": "시장 / 야시장 / 로컬 공간",
+    "cue": "현지감이 강한 장면"
+  },
+  {
+    "subject": "travel",
+    "step": "detail",
+    "option_key": "travel-outro",
+    "title": "아웃트로 풍경",
+    "cue": "마무리 감성을 주는 장면"
+  },
+  {
+    "subject": "travel",
+    "step": "detail",
+    "option_key": "travel-broll",
+    "title": "브이로그 중간 삽입컷",
+    "cue": "설명 사이에 넣기 좋은 장면"
+  },
+  {
+    "subject": "travel",
+    "step": "presence",
+    "option_key": "travel-one",
+    "title": "여행자 1명",
+    "cue": "주인공 한 명이 자연스럽게 보이는 구성"
+  },
+  {
+    "subject": "travel",
+    "step": "presence",
+    "option_key": "travel-back",
+    "title": "뒷모습 위주",
+    "cue": "장소 감성이 더 크게 느껴지는 구성"
+  },
+  {
+    "subject": "travel",
+    "step": "presence",
+    "option_key": "travel-couple",
+    "title": "커플 여행 느낌",
+    "cue": "두 사람의 추억이 보이는 구성"
+  },
+  {
+    "subject": "travel",
+    "step": "presence",
+    "option_key": "travel-friends",
+    "title": "친구 2~3명",
+    "cue": "즐거운 여행 분위기가 있는 구성"
+  },
+  {
+    "subject": "travel",
+    "step": "presence",
+    "option_key": "travel-none",
+    "title": "풍경 중심 / 사람 적게",
+    "cue": "장소와 공기감을 우선하는 구성"
+  },
+  {
+    "subject": "travel",
+    "step": "presence",
+    "option_key": "travel-hand",
+    "title": "손 / 소품 중심",
+    "cue": "커피, 티켓, 지도 같은 소품이 보이는 구성"
+  },
+  {
+    "subject": "travel",
+    "step": "presence",
+    "option_key": "travel-bag",
+    "title": "가방 / 짐 포함",
+    "cue": "이동 중이라는 느낌이 살아나는 구성"
+  },
+  {
+    "subject": "travel",
+    "step": "presence",
+    "option_key": "travel-pet",
+    "title": "반려동물과 함께",
+    "cue": "함께 여행하는 느낌이 보이는 구성"
+  },
+  {
+    "subject": "travel",
+    "step": "feel",
+    "option_key": "travel-feel-bright",
+    "title": "산뜻하고 여행지답게",
+    "cue": "가볍고 밝은 브이로그 무드"
+  },
+  {
+    "subject": "travel",
+    "step": "feel",
+    "option_key": "travel-feel-calm",
+    "title": "여유롭고 편안하게",
+    "cue": "느긋한 여행 감성이 있는 방향"
+  },
+  {
+    "subject": "travel",
+    "step": "feel",
+    "option_key": "travel-feel-cinematic",
+    "title": "영화처럼 깊게",
+    "cue": "공기감과 스토리가 느껴지는 방향"
+  },
+  {
+    "subject": "travel",
+    "step": "feel",
+    "option_key": "travel-feel-local",
+    "title": "로컬 감성 있게",
+    "cue": "현지 공기가 살아 있는 방향"
+  },
+  {
+    "subject": "travel",
+    "step": "feel",
+    "option_key": "travel-feel-clean",
+    "title": "깨끗하고 보기 쉽게",
+    "cue": "정보성 브이로그에 잘 맞는 방향"
+  },
+  {
+    "subject": "travel",
+    "step": "feel",
+    "option_key": "travel-feel-nostalgic",
+    "title": "추억처럼 서정적으로",
+    "cue": "회상 장면 같은 무드"
+  },
+  {
+    "subject": "travel",
+    "step": "feel",
+    "option_key": "travel-feel-luxury",
+    "title": "고급 여행 화보처럼",
+    "cue": "리조트나 프리미엄 여행 느낌"
+  },
+  {
+    "subject": "travel",
+    "step": "feel",
+    "option_key": "travel-feel-adventure",
+    "title": "탐험처럼 역동적으로",
+    "cue": "야외 활동과 움직임이 큰 방향"
+  },
+  {
+    "subject": "travel",
+    "step": "composition",
+    "option_key": "land-panorama",
+    "title": "파노라마 와이드",
+    "cue": "넓은 풍경과 스케일이 먼저 느껴지는 화면"
+  },
+  {
+    "subject": "travel",
+    "step": "composition",
+    "option_key": "land-mid",
+    "title": "중간 거리 풍경",
+    "cue": "주제와 배경이 균형 있게 보이는 화면"
+  },
+  {
+    "subject": "travel",
+    "step": "composition",
+    "option_key": "land-foreground",
+    "title": "전경 강조",
+    "cue": "앞쪽 요소를 크게 두고 깊이를 만드는 화면"
+  },
+  {
+    "subject": "travel",
+    "step": "composition",
+    "option_key": "land-silhouette",
+    "title": "실루엣 포함",
+    "cue": "해질녘이나 역광에서 분위기가 살아나는 화면"
+  },
+  {
+    "subject": "travel",
+    "step": "composition",
+    "option_key": "land-road",
+    "title": "길이 이어지는 화면",
+    "cue": "시선이 안쪽으로 자연스럽게 들어가는 구성"
+  },
+  {
+    "subject": "travel",
+    "step": "composition",
+    "option_key": "land-top",
+    "title": "높은 시점 / 항공 느낌",
+    "cue": "지역 전체 윤곽이 보이는 시원한 구도"
+  },
+  {
+    "subject": "travel",
+    "step": "composition",
+    "option_key": "land-framed",
+    "title": "창틀 / 문틀 프레이밍",
+    "cue": "안쪽 장면을 액자처럼 감싸는 구도"
+  },
+  {
+    "subject": "travel",
+    "step": "composition",
+    "option_key": "land-detail",
+    "title": "디테일 클로즈업",
+    "cue": "풍경 일부의 질감과 포인트를 크게 보는 화면"
+  },
+  {
+    "subject": "travel",
+    "step": "mood",
+    "option_key": "mood-bright",
+    "title": "밝고 친근하게",
+    "cue": "입문자도 편하게 느끼는 가볍고 열린 분위기"
+  },
+  {
+    "subject": "travel",
+    "step": "mood",
+    "option_key": "mood-clean",
+    "title": "깨끗하고 맑게",
+    "cue": "정보 전달이 또렷한 클린한 방향"
+  },
+  {
+    "subject": "travel",
+    "step": "mood",
+    "option_key": "mood-warm",
+    "title": "따뜻하고 편안하게",
+    "cue": "부드럽고 정감 있는 인상을 주는 무드"
+  },
+  {
+    "subject": "travel",
+    "step": "mood",
+    "option_key": "mood-calm",
+    "title": "차분하고 담백하게",
+    "cue": "과장되지 않고 정리된 톤"
+  },
+  {
+    "subject": "travel",
+    "step": "mood",
+    "option_key": "mood-cinematic",
+    "title": "영화처럼 깊게",
+    "cue": "공기감과 서사가 함께 느껴지는 무드"
+  },
+  {
+    "subject": "travel",
+    "step": "mood",
+    "option_key": "mood-dramatic",
+    "title": "강렬하고 드라마틱하게",
+    "cue": "명암과 감정이 또렷한 방향"
+  },
+  {
+    "subject": "travel",
+    "step": "mood",
+    "option_key": "mood-luxury",
+    "title": "고급스럽고 세련되게",
+    "cue": "브랜드 비주얼 같은 정제된 무드"
+  },
+  {
+    "subject": "travel",
+    "step": "mood",
+    "option_key": "mood-playful",
+    "title": "귀엽고 경쾌하게",
+    "cue": "색감과 인상이 가볍고 재미있는 방향"
+  },
+  {
+    "subject": "travel",
+    "step": "mood",
+    "option_key": "mood-future",
+    "title": "미래적이고 차갑게",
+    "cue": "기술적이고 현대적인 느낌"
+  },
+  {
+    "subject": "travel",
+    "step": "mood",
+    "option_key": "mood-vintage",
+    "title": "빈티지하고 레트로하게",
+    "cue": "옛 감성과 필름 느낌이 남는 방향"
+  },
+  {
+    "subject": "animal",
+    "step": "detail",
+    "option_key": "animal-dog",
+    "title": "강아지",
+    "cue": "표정과 털결이 중요한 반려견 컷"
+  },
+  {
+    "subject": "animal",
+    "step": "detail",
+    "option_key": "animal-cat",
+    "title": "고양이",
+    "cue": "눈빛과 자세가 중요한 반려묘 컷"
+  },
+  {
+    "subject": "animal",
+    "step": "detail",
+    "option_key": "animal-small",
+    "title": "작은 반려동물",
+    "cue": "햄스터, 토끼 같은 소형 동물"
+  },
+  {
+    "subject": "animal",
+    "step": "detail",
+    "option_key": "animal-bird",
+    "title": "새 / 조류",
+    "cue": "깃털과 움직임이 중요한 동물"
+  },
+  {
+    "subject": "animal",
+    "step": "detail",
+    "option_key": "animal-horse",
+    "title": "말 / 큰 동물",
+    "cue": "체형과 존재감이 중요한 동물"
+  },
+  {
+    "subject": "animal",
+    "step": "detail",
+    "option_key": "animal-farm",
+    "title": "농장 동물",
+    "cue": "소, 양, 염소 같은 평온한 장면"
+  },
+  {
+    "subject": "animal",
+    "step": "detail",
+    "option_key": "animal-wild",
+    "title": "야생동물 느낌",
+    "cue": "자연 속 생명감이 중요한 장면"
+  },
+  {
+    "subject": "animal",
+    "step": "detail",
+    "option_key": "animal-water",
+    "title": "물속 / 수족관 느낌",
+    "cue": "물과 반사 표현이 중요한 장면"
+  },
+  {
+    "subject": "animal",
+    "step": "detail",
+    "option_key": "animal-owner",
+    "title": "사람과 함께",
+    "cue": "교감과 관계가 보이는 장면"
+  },
+  {
+    "subject": "animal",
+    "step": "detail",
+    "option_key": "animal-multi",
+    "title": "여러 마리 함께",
+    "cue": "무리감과 상호작용이 중요한 장면"
+  },
+  {
+    "subject": "animal",
+    "step": "detail",
+    "option_key": "animal-reptile",
+    "title": "파충류 / 특수 동물",
+    "cue": "질감과 색이 독특한 장면"
+  },
+  {
+    "subject": "animal",
+    "step": "detail",
+    "option_key": "animal-baby",
+    "title": "아기 동물",
+    "cue": "작고 귀여운 인상이 중심인 장면"
+  },
+  {
+    "subject": "animal",
+    "step": "action",
+    "option_key": "animal-action-face",
+    "title": "얼굴 정면 초상",
+    "cue": "표정과 눈빛이 가장 중요한 장면"
+  },
+  {
+    "subject": "animal",
+    "step": "action",
+    "option_key": "animal-action-sit",
+    "title": "앉아 있는 자세",
+    "cue": "안정감 있게 또렷한 장면"
+  },
+  {
+    "subject": "animal",
+    "step": "action",
+    "option_key": "animal-action-run",
+    "title": "달리거나 뛰는 순간",
+    "cue": "역동성과 에너지가 있는 장면"
+  },
+  {
+    "subject": "animal",
+    "step": "action",
+    "option_key": "animal-action-play",
+    "title": "장난 / 놀이 중",
+    "cue": "활발함과 생활감이 있는 장면"
+  },
+  {
+    "subject": "animal",
+    "step": "action",
+    "option_key": "animal-action-sleep",
+    "title": "편하게 쉬는 순간",
+    "cue": "평온하고 귀여운 장면"
+  },
+  {
+    "subject": "animal",
+    "step": "action",
+    "option_key": "animal-action-eat",
+    "title": "먹는 장면",
+    "cue": "생활감이 또렷한 장면"
+  },
+  {
+    "subject": "animal",
+    "step": "action",
+    "option_key": "animal-action-walk",
+    "title": "산책 / 이동 중",
+    "cue": "함께 움직이는 느낌이 있는 장면"
+  },
+  {
+    "subject": "animal",
+    "step": "action",
+    "option_key": "animal-action-cuddle",
+    "title": "사람과 교감하는 순간",
+    "cue": "정서적인 관계가 보이는 장면"
+  },
+  {
+    "subject": "animal",
+    "step": "focus",
+    "option_key": "animal-focus-eyes",
+    "title": "눈빛과 얼굴",
+    "cue": "표정과 교감이 먼저 보이면 좋은 방향"
+  },
+  {
+    "subject": "animal",
+    "step": "focus",
+    "option_key": "animal-focus-body",
+    "title": "전신 자세",
+    "cue": "몸의 실루엣과 자세가 중요한 방향"
+  },
+  {
+    "subject": "animal",
+    "step": "focus",
+    "option_key": "animal-focus-fur",
+    "title": "털결 / 질감",
+    "cue": "촉감과 디테일이 중요한 방향"
+  },
+  {
+    "subject": "animal",
+    "step": "focus",
+    "option_key": "animal-focus-move",
+    "title": "움직임 / 순간 포착",
+    "cue": "달림, 점프, 놀이가 먼저 보이는 방향"
+  },
+  {
+    "subject": "animal",
+    "step": "focus",
+    "option_key": "animal-focus-bond",
+    "title": "사람과 교감",
+    "cue": "함께 있는 감정선이 중요한 방향"
+  },
+  {
+    "subject": "animal",
+    "step": "focus",
+    "option_key": "animal-focus-group",
+    "title": "여러 마리 상호작용",
+    "cue": "무리감과 관계가 중요한 방향"
+  },
+  {
+    "subject": "animal",
+    "step": "focus",
+    "option_key": "animal-focus-cute",
+    "title": "귀여운 순간",
+    "cue": "작고 사랑스러운 인상이 중요한 방향"
+  },
+  {
+    "subject": "animal",
+    "step": "focus",
+    "option_key": "animal-focus-wild",
+    "title": "존재감 / 야생 느낌",
+    "cue": "강한 생명감이 먼저 보이는 방향"
+  },
+  {
+    "subject": "animal",
+    "step": "environment",
+    "option_key": "animal-env-home",
+    "title": "집 안 / 실내",
+    "cue": "반려동물 일상 배경이 있는 장면"
+  },
+  {
+    "subject": "animal",
+    "step": "environment",
+    "option_key": "animal-env-bed",
+    "title": "침대 / 소파 / 쿠션 위",
+    "cue": "편안한 휴식 장면이 어울리는 배경"
+  },
+  {
+    "subject": "animal",
+    "step": "environment",
+    "option_key": "animal-env-yard",
+    "title": "마당 / 공원",
+    "cue": "밝고 자연스러운 야외 배경"
+  },
+  {
+    "subject": "animal",
+    "step": "environment",
+    "option_key": "animal-env-street",
+    "title": "거리 / 산책길",
+    "cue": "산책과 이동감이 있는 배경"
+  },
+  {
+    "subject": "animal",
+    "step": "environment",
+    "option_key": "animal-env-nature",
+    "title": "숲 / 들판 / 자연",
+    "cue": "야생 또는 자연감이 있는 배경"
+  },
+  {
+    "subject": "animal",
+    "step": "environment",
+    "option_key": "animal-env-farm",
+    "title": "농장 / 마구간",
+    "cue": "큰 동물이나 농장 동물에 맞는 배경"
+  },
+  {
+    "subject": "animal",
+    "step": "environment",
+    "option_key": "animal-env-water",
+    "title": "물가 / 수족관 / 수면 근처",
+    "cue": "물과 반사가 중요한 배경"
+  },
+  {
+    "subject": "animal",
+    "step": "environment",
+    "option_key": "animal-env-studio",
+    "title": "단색 / 스튜디오 배경",
+    "cue": "얼굴 초상에 집중하기 쉬운 배경"
+  },
+  {
+    "subject": "animal",
+    "step": "composition",
+    "option_key": "comp-close",
+    "title": "얼굴 클로즈업",
+    "cue": "표정과 디테일이 가장 먼저 보이는 구도"
+  },
+  {
+    "subject": "animal",
+    "step": "composition",
+    "option_key": "comp-bust",
+    "title": "바스트 샷",
+    "cue": "상반신 중심으로 안정감 있게 보이는 구도"
+  },
+  {
+    "subject": "animal",
+    "step": "composition",
+    "option_key": "comp-medium",
+    "title": "미디엄 샷",
+    "cue": "인물과 주변 맥락을 함께 보여주는 기본 구도"
+  },
+  {
+    "subject": "animal",
+    "step": "composition",
+    "option_key": "comp-wide",
+    "title": "와이드 샷",
+    "cue": "배경과 공간 분위기까지 같이 보이는 구도"
+  },
+  {
+    "subject": "animal",
+    "step": "composition",
+    "option_key": "comp-low",
+    "title": "로우 앵글",
+    "cue": "주제의 존재감을 더 크게 느끼게 하는 각도"
+  },
+  {
+    "subject": "animal",
+    "step": "composition",
+    "option_key": "comp-top",
+    "title": "탑뷰 / 오버헤드",
+    "cue": "위에서 내려다보는 정리된 화면"
+  },
+  {
+    "subject": "animal",
+    "step": "composition",
+    "option_key": "comp-pov",
+    "title": "POV / 셀카 느낌",
+    "cue": "직접 찍은 듯 가까운 거리감이 있는 구도"
+  },
+  {
+    "subject": "animal",
+    "step": "composition",
+    "option_key": "comp-symmetry",
+    "title": "정면 대칭",
+    "cue": "또렷하고 정돈된 인상을 주는 구도"
+  },
+  {
+    "subject": "animal",
+    "step": "composition",
+    "option_key": "comp-asymmetry",
+    "title": "비대칭 배치",
+    "cue": "시선 흐름과 여백이 살아 있는 구도"
+  },
+  {
+    "subject": "animal",
+    "step": "composition",
+    "option_key": "comp-poster",
+    "title": "포스터형 메인 비주얼",
+    "cue": "한 장면 자체가 강하게 보이는 구성"
+  },
+  {
+    "subject": "animal",
+    "step": "composition",
+    "option_key": "animal-comp-owner-hand",
+    "title": "손과 함께 가까운 구도",
+    "cue": "사람과 동물의 교감이 보이는 구도"
+  },
+  {
+    "subject": "animal",
+    "step": "composition",
+    "option_key": "animal-comp-owner-walk",
+    "title": "함께 걷는 장면",
+    "cue": "산책과 관계가 함께 보이는 구도"
+  },
+  {
+    "subject": "animal",
+    "step": "composition",
+    "option_key": "animal-comp-owner-hug",
+    "title": "안고 있는 장면",
+    "cue": "정서적 거리감이 가까운 구도"
+  },
+  {
+    "subject": "animal",
+    "step": "composition",
+    "option_key": "animal-comp-owner-seat",
+    "title": "같이 앉아 있는 장면",
+    "cue": "편안함이 느껴지는 구도"
+  },
+  {
+    "subject": "animal",
+    "step": "composition",
+    "option_key": "animal-comp-owner-home",
+    "title": "집 안 함께 있는 장면",
+    "cue": "생활감이 강한 구도"
+  },
+  {
+    "subject": "animal",
+    "step": "composition",
+    "option_key": "animal-comp-owner-wide",
+    "title": "사람 + 동물이 함께 보이는 와이드",
+    "cue": "관계와 장소가 함께 보이는 구도"
+  },
+  {
+    "subject": "animal",
+    "step": "composition",
+    "option_key": "animal-comp-owner-face",
+    "title": "사람과 동물 얼굴이 함께",
+    "cue": "감정선이 또렷한 구도"
+  },
+  {
+    "subject": "animal",
+    "step": "composition",
+    "option_key": "animal-comp-owner-play",
+    "title": "함께 노는 순간",
+    "cue": "즐거움과 상호작용이 보이는 구도"
+  },
+  {
+    "subject": "animal",
+    "step": "composition",
+    "option_key": "animal-comp-run-side",
+    "title": "옆으로 달리는 장면",
+    "cue": "움직임이 자연스럽게 보이는 구도"
+  },
+  {
+    "subject": "animal",
+    "step": "composition",
+    "option_key": "animal-comp-run-front",
+    "title": "정면으로 뛰는 장면",
+    "cue": "에너지가 직접 느껴지는 구도"
+  },
+  {
+    "subject": "animal",
+    "step": "composition",
+    "option_key": "animal-comp-play-wide",
+    "title": "놀이 중 와이드",
+    "cue": "행동과 공간이 함께 보이는 구도"
+  },
+  {
+    "subject": "animal",
+    "step": "composition",
+    "option_key": "animal-comp-walk-road",
+    "title": "산책길 이동 장면",
+    "cue": "생활감이 있는 구도"
+  },
+  {
+    "subject": "animal",
+    "step": "composition",
+    "option_key": "animal-comp-eat-close",
+    "title": "먹는 장면 클로즈업",
+    "cue": "행동 디테일이 살아나는 구도"
+  },
+  {
+    "subject": "animal",
+    "step": "composition",
+    "option_key": "animal-comp-water",
+    "title": "물가 / 수영 장면",
+    "cue": "물과 움직임이 함께 보이는 구도"
+  },
+  {
+    "subject": "animal",
+    "step": "composition",
+    "option_key": "animal-comp-jump",
+    "title": "점프 / 도약 순간",
+    "cue": "역동성이 큰 구도"
+  },
+  {
+    "subject": "animal",
+    "step": "composition",
+    "option_key": "animal-comp-multi",
+    "title": "여러 마리 상호작용",
+    "cue": "교감과 움직임이 함께 보이는 구도"
+  },
+  {
+    "subject": "animal",
+    "step": "composition",
+    "option_key": "animal-comp-face-front",
+    "title": "얼굴 정면 초상",
+    "cue": "눈빛과 표정이 가장 또렷한 구도"
+  },
+  {
+    "subject": "animal",
+    "step": "composition",
+    "option_key": "animal-comp-face-angle",
+    "title": "사선 얼굴 초상",
+    "cue": "입체감이 살아나는 구도"
+  },
+  {
+    "subject": "animal",
+    "step": "composition",
+    "option_key": "animal-comp-face-close",
+    "title": "더 가까운 얼굴 클로즈업",
+    "cue": "코, 눈, 털결이 크게 보이는 구도"
+  },
+  {
+    "subject": "animal",
+    "step": "composition",
+    "option_key": "animal-comp-face-half",
+    "title": "상반신 초상",
+    "cue": "얼굴과 자세가 함께 보이는 구도"
+  },
+  {
+    "subject": "animal",
+    "step": "composition",
+    "option_key": "animal-comp-face-bed",
+    "title": "편하게 쉬는 초상",
+    "cue": "휴식 분위기가 있는 구도"
+  },
+  {
+    "subject": "animal",
+    "step": "composition",
+    "option_key": "animal-comp-face-studio",
+    "title": "단색 배경 초상",
+    "cue": "얼굴만 또렷하게 보이는 구도"
+  },
+  {
+    "subject": "animal",
+    "step": "composition",
+    "option_key": "animal-comp-face-window",
+    "title": "창가 자연광 초상",
+    "cue": "빛이 부드럽게 드는 구도"
+  },
+  {
+    "subject": "animal",
+    "step": "composition",
+    "option_key": "animal-comp-face-owner",
+    "title": "주인과 함께 가까운 초상",
+    "cue": "교감이 느껴지는 구도"
+  },
+  {
+    "subject": "animal",
+    "step": "mood",
+    "option_key": "mood-bright",
+    "title": "밝고 친근하게",
+    "cue": "입문자도 편하게 느끼는 가볍고 열린 분위기"
+  },
+  {
+    "subject": "animal",
+    "step": "mood",
+    "option_key": "mood-clean",
+    "title": "깨끗하고 맑게",
+    "cue": "정보 전달이 또렷한 클린한 방향"
+  },
+  {
+    "subject": "animal",
+    "step": "mood",
+    "option_key": "mood-warm",
+    "title": "따뜻하고 편안하게",
+    "cue": "부드럽고 정감 있는 인상을 주는 무드"
+  },
+  {
+    "subject": "animal",
+    "step": "mood",
+    "option_key": "mood-calm",
+    "title": "차분하고 담백하게",
+    "cue": "과장되지 않고 정리된 톤"
+  },
+  {
+    "subject": "animal",
+    "step": "mood",
+    "option_key": "mood-cinematic",
+    "title": "영화처럼 깊게",
+    "cue": "공기감과 서사가 함께 느껴지는 무드"
+  },
+  {
+    "subject": "animal",
+    "step": "mood",
+    "option_key": "mood-dramatic",
+    "title": "강렬하고 드라마틱하게",
+    "cue": "명암과 감정이 또렷한 방향"
+  },
+  {
+    "subject": "animal",
+    "step": "mood",
+    "option_key": "mood-luxury",
+    "title": "고급스럽고 세련되게",
+    "cue": "브랜드 비주얼 같은 정제된 무드"
+  },
+  {
+    "subject": "animal",
+    "step": "mood",
+    "option_key": "mood-playful",
+    "title": "귀엽고 경쾌하게",
+    "cue": "색감과 인상이 가볍고 재미있는 방향"
+  },
+  {
+    "subject": "animal",
+    "step": "mood",
+    "option_key": "mood-future",
+    "title": "미래적이고 차갑게",
+    "cue": "기술적이고 현대적인 느낌"
+  },
+  {
+    "subject": "animal",
+    "step": "mood",
+    "option_key": "mood-vintage",
+    "title": "빈티지하고 레트로하게",
+    "cue": "옛 감성과 필름 느낌이 남는 방향"
+  },
+  {
+    "subject": "workspace",
+    "step": "detail",
+    "option_key": "work-presentation",
+    "title": "발표 자료 참고컷",
+    "cue": "슬라이드나 제안서에 넣기 쉬운 장면"
+  },
+  {
+    "subject": "workspace",
+    "step": "detail",
+    "option_key": "work-planning",
+    "title": "기획안 / 문서 삽입용",
+    "cue": "설명 자료에 어울리는 장면"
+  },
+  {
+    "subject": "workspace",
+    "step": "detail",
+    "option_key": "work-meeting",
+    "title": "회의 / 협업 장면",
+    "cue": "팀워크와 커뮤니케이션이 보이는 장면"
+  },
+  {
+    "subject": "workspace",
+    "step": "detail",
+    "option_key": "work-focus",
+    "title": "혼자 집중해서 일하는 장면",
+    "cue": "생산성과 몰입감이 보이는 장면"
+  },
+  {
+    "subject": "workspace",
+    "step": "detail",
+    "option_key": "work-remote",
+    "title": "재택근무 / 원격 작업",
+    "cue": "노트북과 공간이 함께 보이는 장면"
+  },
+  {
+    "subject": "workspace",
+    "step": "detail",
+    "option_key": "work-consulting",
+    "title": "상담 / 안내 장면",
+    "cue": "고객 응대나 설명이 보이는 장면"
+  },
+  {
+    "subject": "workspace",
+    "step": "detail",
+    "option_key": "work-data",
+    "title": "데이터 / 분석 느낌",
+    "cue": "수치, 차트, 정보성이 느껴지는 장면"
+  },
+  {
+    "subject": "workspace",
+    "step": "detail",
+    "option_key": "work-education",
+    "title": "교육 / 세미나 장면",
+    "cue": "가르치거나 듣는 흐름이 보이는 장면"
+  },
+  {
+    "subject": "workspace",
+    "step": "detail",
+    "option_key": "work-workshop",
+    "title": "작업 공정 / 제작 과정",
+    "cue": "손이 움직이는 실제 작업 장면"
+  },
+  {
+    "subject": "workspace",
+    "step": "detail",
+    "option_key": "work-tech",
+    "title": "기기 / 장비 중심 업무",
+    "cue": "도구와 디바이스가 중요한 장면"
+  },
+  {
+    "subject": "workspace",
+    "step": "focus",
+    "option_key": "work-focus-people",
+    "title": "사람 중심",
+    "cue": "인물의 행동과 협업이 먼저 보이는 방향"
+  },
+  {
+    "subject": "workspace",
+    "step": "focus",
+    "option_key": "work-focus-device",
+    "title": "노트북 / 기기 중심",
+    "cue": "도구와 화면이 중심인 방향"
+  },
+  {
+    "subject": "workspace",
+    "step": "focus",
+    "option_key": "work-focus-doc",
+    "title": "문서 / 차트 중심",
+    "cue": "정보가 눈에 들어오는 방향"
+  },
+  {
+    "subject": "workspace",
+    "step": "focus",
+    "option_key": "work-focus-hand",
+    "title": "손 / 작업 과정",
+    "cue": "실제 일하는 움직임이 보이는 방향"
+  },
+  {
+    "subject": "workspace",
+    "step": "focus",
+    "option_key": "work-focus-space",
+    "title": "공간 분위기 중심",
+    "cue": "업무 환경 전체가 보이는 방향"
+  },
+  {
+    "subject": "workspace",
+    "step": "focus",
+    "option_key": "work-focus-mix",
+    "title": "사람 + 화면 균형",
+    "cue": "업무 맥락이 쉽게 읽히는 방향"
+  },
+  {
+    "subject": "workspace",
+    "step": "focus",
+    "option_key": "work-focus-team",
+    "title": "여러 사람 협업",
+    "cue": "토론과 상호작용이 보이는 방향"
+  },
+  {
+    "subject": "workspace",
+    "step": "focus",
+    "option_key": "work-focus-clean",
+    "title": "아주 정리된 배치",
+    "cue": "슬라이드 삽입에 편한 방향"
+  },
+  {
+    "subject": "workspace",
+    "step": "layout",
+    "option_key": "work-layout-left",
+    "title": "왼쪽 여백 크게",
+    "cue": "문서나 제목 넣기 쉬운 구조"
+  },
+  {
+    "subject": "workspace",
+    "step": "layout",
+    "option_key": "work-layout-right",
+    "title": "오른쪽 여백 크게",
+    "cue": "설명 문구가 들어가기 쉬운 구조"
+  },
+  {
+    "subject": "workspace",
+    "step": "layout",
+    "option_key": "work-layout-center",
+    "title": "가운데 정리형",
+    "cue": "정보가 균형 있게 보이는 구조"
+  },
+  {
+    "subject": "workspace",
+    "step": "layout",
+    "option_key": "work-layout-wide",
+    "title": "넓은 와이드형",
+    "cue": "배너나 슬라이드 상단에 잘 맞는 구조"
+  },
+  {
+    "subject": "workspace",
+    "step": "layout",
+    "option_key": "work-layout-top",
+    "title": "상단 제목형",
+    "cue": "위에 헤드라인을 넣기 쉬운 구조"
+  },
+  {
+    "subject": "workspace",
+    "step": "layout",
+    "option_key": "work-layout-bottom",
+    "title": "하단 요약형",
+    "cue": "아래쪽 정리 문구와 잘 맞는 구조"
+  },
+  {
+    "subject": "workspace",
+    "step": "layout",
+    "option_key": "work-layout-close",
+    "title": "손 / 화면 클로즈업",
+    "cue": "핵심 행동이 크게 보이는 구조"
+  },
+  {
+    "subject": "workspace",
+    "step": "layout",
+    "option_key": "work-layout-overview",
+    "title": "공간 전체 개요",
+    "cue": "업무 환경이 한눈에 보이는 구조"
+  },
+  {
+    "subject": "workspace",
+    "step": "layout",
+    "option_key": "work-layout-talk-two",
+    "title": "2인 대화 중심",
+    "cue": "상담 / 미팅에 쉬운 구조"
+  },
+  {
+    "subject": "workspace",
+    "step": "layout",
+    "option_key": "work-layout-talk-group",
+    "title": "여러 명 협업 중심",
+    "cue": "회의나 팀워크 장면에 쉬운 구조"
+  },
+  {
+    "subject": "workspace",
+    "step": "layout",
+    "option_key": "work-layout-talk-left",
+    "title": "왼쪽 인물 + 오른쪽 여백",
+    "cue": "설명 문구 넣기 쉬운 구조"
+  },
+  {
+    "subject": "workspace",
+    "step": "layout",
+    "option_key": "work-layout-talk-right",
+    "title": "오른쪽 인물 + 왼쪽 여백",
+    "cue": "발표 슬라이드에 쉬운 구조"
+  },
+  {
+    "subject": "workspace",
+    "step": "layout",
+    "option_key": "work-layout-talk-table",
+    "title": "테이블 중심 협업 구도",
+    "cue": "문서와 손동작이 함께 보이는 구조"
+  },
+  {
+    "subject": "workspace",
+    "step": "layout",
+    "option_key": "work-layout-talk-screen",
+    "title": "사람 + 스크린 균형형",
+    "cue": "설명 상황이 읽히는 구조"
+  },
+  {
+    "subject": "workspace",
+    "step": "layout",
+    "option_key": "work-layout-talk-wide",
+    "title": "공간이 보이는 협업 구도",
+    "cue": "업무 환경이 함께 보이는 구조"
+  },
+  {
+    "subject": "workspace",
+    "step": "layout",
+    "option_key": "work-layout-talk-close",
+    "title": "손 / 표정 중심 근접 구도",
+    "cue": "집중감을 주는 구조"
+  },
+  {
+    "subject": "workspace",
+    "step": "layout",
+    "option_key": "work-layout-doc-left",
+    "title": "왼쪽 큰 여백",
+    "cue": "문서나 발표 제목을 넣기 쉬운 구조"
+  },
+  {
+    "subject": "workspace",
+    "step": "layout",
+    "option_key": "work-layout-doc-right",
+    "title": "오른쪽 큰 여백",
+    "cue": "설명 문구나 강조 박스를 넣기 쉬운 구조"
+  },
+  {
+    "subject": "workspace",
+    "step": "layout",
+    "option_key": "work-layout-doc-top",
+    "title": "상단 제목형",
+    "cue": "위에 헤드라인을 넣기 쉬운 구조"
+  },
+  {
+    "subject": "workspace",
+    "step": "layout",
+    "option_key": "work-layout-doc-bottom",
+    "title": "하단 요약형",
+    "cue": "캡션이나 설명문이 들어가기 쉬운 구조"
+  },
+  {
+    "subject": "workspace",
+    "step": "layout",
+    "option_key": "work-layout-doc-wide",
+    "title": "넓은 와이드형",
+    "cue": "슬라이드 상단 배너에 잘 맞는 구조"
+  },
+  {
+    "subject": "workspace",
+    "step": "layout",
+    "option_key": "work-layout-doc-clean",
+    "title": "아주 정리된 중앙형",
+    "cue": "정보 전달용에 안전한 구조"
+  },
+  {
+    "subject": "workspace",
+    "step": "layout",
+    "option_key": "work-layout-doc-device",
+    "title": "화면 클로즈업형",
+    "cue": "문서 속 강조컷으로 쓰기 쉬운 구조"
+  },
+  {
+    "subject": "workspace",
+    "step": "layout",
+    "option_key": "work-layout-doc-space",
+    "title": "공간 전체 개요형",
+    "cue": "설명 배경으로 쓰기 쉬운 구조"
+  },
+  {
+    "subject": "workspace",
+    "step": "composition",
+    "option_key": "comp-close",
+    "title": "얼굴 클로즈업",
+    "cue": "표정과 디테일이 가장 먼저 보이는 구도"
+  },
+  {
+    "subject": "workspace",
+    "step": "composition",
+    "option_key": "comp-bust",
+    "title": "바스트 샷",
+    "cue": "상반신 중심으로 안정감 있게 보이는 구도"
+  },
+  {
+    "subject": "workspace",
+    "step": "composition",
+    "option_key": "comp-medium",
+    "title": "미디엄 샷",
+    "cue": "인물과 주변 맥락을 함께 보여주는 기본 구도"
+  },
+  {
+    "subject": "workspace",
+    "step": "composition",
+    "option_key": "comp-wide",
+    "title": "와이드 샷",
+    "cue": "배경과 공간 분위기까지 같이 보이는 구도"
+  },
+  {
+    "subject": "workspace",
+    "step": "composition",
+    "option_key": "comp-low",
+    "title": "로우 앵글",
+    "cue": "주제의 존재감을 더 크게 느끼게 하는 각도"
+  },
+  {
+    "subject": "workspace",
+    "step": "composition",
+    "option_key": "comp-top",
+    "title": "탑뷰 / 오버헤드",
+    "cue": "위에서 내려다보는 정리된 화면"
+  },
+  {
+    "subject": "workspace",
+    "step": "composition",
+    "option_key": "comp-pov",
+    "title": "POV / 셀카 느낌",
+    "cue": "직접 찍은 듯 가까운 거리감이 있는 구도"
+  },
+  {
+    "subject": "workspace",
+    "step": "composition",
+    "option_key": "comp-symmetry",
+    "title": "정면 대칭",
+    "cue": "또렷하고 정돈된 인상을 주는 구도"
+  },
+  {
+    "subject": "workspace",
+    "step": "composition",
+    "option_key": "comp-asymmetry",
+    "title": "비대칭 배치",
+    "cue": "시선 흐름과 여백이 살아 있는 구도"
+  },
+  {
+    "subject": "workspace",
+    "step": "composition",
+    "option_key": "comp-poster",
+    "title": "포스터형 메인 비주얼",
+    "cue": "한 장면 자체가 강하게 보이는 구성"
+  },
+  {
+    "subject": "workspace",
+    "step": "composition",
+    "option_key": "work-comp-doc-left",
+    "title": "오른쪽 정보 + 왼쪽 여백",
+    "cue": "문서나 제목을 얹기 쉬운 구도"
+  },
+  {
+    "subject": "workspace",
+    "step": "composition",
+    "option_key": "work-comp-doc-right",
+    "title": "왼쪽 정보 + 오른쪽 여백",
+    "cue": "발표 자료나 설명 카피가 들어가기 쉬운 구도"
+  },
+  {
+    "subject": "workspace",
+    "step": "composition",
+    "option_key": "work-comp-doc-top",
+    "title": "상단 헤드라인형",
+    "cue": "위쪽에 제목과 핵심 문구를 놓기 쉬운 구도"
+  },
+  {
+    "subject": "workspace",
+    "step": "composition",
+    "option_key": "work-comp-doc-bottom",
+    "title": "하단 요약형",
+    "cue": "아래쪽에 설명문을 정리하기 쉬운 구도"
+  },
+  {
+    "subject": "workspace",
+    "step": "composition",
+    "option_key": "work-comp-doc-clean",
+    "title": "정중앙 정리형",
+    "cue": "문서 삽입용으로 가장 안정적인 구도"
+  },
+  {
+    "subject": "workspace",
+    "step": "composition",
+    "option_key": "work-comp-doc-device",
+    "title": "화면/자료 클로즈업형",
+    "cue": "차트와 텍스트가 먼저 보이는 구도"
+  },
+  {
+    "subject": "workspace",
+    "step": "composition",
+    "option_key": "work-comp-doc-wide",
+    "title": "넓은 슬라이드형",
+    "cue": "배너나 발표 자료 배경에 맞는 와이드 구도"
+  },
+  {
+    "subject": "workspace",
+    "step": "composition",
+    "option_key": "work-comp-doc-overview",
+    "title": "책상/공간 개요형",
+    "cue": "업무 공간 전체가 함께 보이는 구도"
+  },
+  {
+    "subject": "workspace",
+    "step": "composition",
+    "option_key": "work-comp-device-front",
+    "title": "정면 화면 중심",
+    "cue": "앱, 대시보드, 자료가 바로 읽히는 구도"
+  },
+  {
+    "subject": "workspace",
+    "step": "composition",
+    "option_key": "work-comp-device-angle",
+    "title": "사선 디바이스형",
+    "cue": "입체감과 제품성이 함께 보이는 구도"
+  },
+  {
+    "subject": "workspace",
+    "step": "composition",
+    "option_key": "work-comp-device-hand",
+    "title": "손 + 기기 사용형",
+    "cue": "실제 쓰는 느낌이 드는 구도"
+  },
+  {
+    "subject": "workspace",
+    "step": "composition",
+    "option_key": "work-comp-device-desk",
+    "title": "책상 위 작업형",
+    "cue": "도구와 업무 맥락이 함께 보이는 구도"
+  },
+  {
+    "subject": "workspace",
+    "step": "composition",
+    "option_key": "work-comp-device-multi",
+    "title": "여러 화면 조합형",
+    "cue": "업무 시스템이 많은 느낌을 주는 구도"
+  },
+  {
+    "subject": "workspace",
+    "step": "composition",
+    "option_key": "work-comp-device-clean",
+    "title": "배경 정리형",
+    "cue": "문서 삽입에 방해 없는 깔끔한 구도"
+  },
+  {
+    "subject": "workspace",
+    "step": "composition",
+    "option_key": "work-comp-device-wide",
+    "title": "공간 포함 와이드",
+    "cue": "업무 환경과 기기가 함께 보이는 구도"
+  },
+  {
+    "subject": "workspace",
+    "step": "composition",
+    "option_key": "work-comp-device-detail",
+    "title": "키보드/손 디테일형",
+    "cue": "작업 과정이 먼저 보이는 구도"
+  },
+  {
+    "subject": "workspace",
+    "step": "composition",
+    "option_key": "work-comp-people-two",
+    "title": "2인 대화형",
+    "cue": "상담이나 미팅 장면에 맞는 구도"
+  },
+  {
+    "subject": "workspace",
+    "step": "composition",
+    "option_key": "work-comp-people-group",
+    "title": "여러 명 협업형",
+    "cue": "팀워크와 회의 분위기가 보이는 구도"
+  },
+  {
+    "subject": "workspace",
+    "step": "composition",
+    "option_key": "work-comp-people-left",
+    "title": "사람 왼쪽 + 여백 오른쪽",
+    "cue": "설명 카피를 넣기 쉬운 구도"
+  },
+  {
+    "subject": "workspace",
+    "step": "composition",
+    "option_key": "work-comp-people-right",
+    "title": "사람 오른쪽 + 여백 왼쪽",
+    "cue": "발표 슬라이드처럼 쓰기 쉬운 구도"
+  },
+  {
+    "subject": "workspace",
+    "step": "composition",
+    "option_key": "work-comp-people-screen",
+    "title": "사람 + 화면 균형형",
+    "cue": "말하는 사람과 자료가 함께 보이는 구도"
+  },
+  {
+    "subject": "workspace",
+    "step": "composition",
+    "option_key": "work-comp-people-table",
+    "title": "테이블 중심 협업형",
+    "cue": "문서와 손동작까지 함께 보이는 구도"
+  },
+  {
+    "subject": "workspace",
+    "step": "composition",
+    "option_key": "work-comp-people-wide",
+    "title": "공간까지 보이는 와이드",
+    "cue": "현장감과 팀 분위기가 함께 보이는 구도"
+  },
+  {
+    "subject": "workspace",
+    "step": "composition",
+    "option_key": "work-comp-people-close",
+    "title": "표정/손동작 클로즈업형",
+    "cue": "몰입감과 대화감을 주는 구도"
+  },
+  {
+    "subject": "workspace",
+    "step": "mood",
+    "option_key": "trust-clear",
+    "title": "깔끔하고 신뢰감 있게",
+    "cue": "회사 소개나 업무 자료에 잘 맞는 방향"
+  },
+  {
+    "subject": "workspace",
+    "step": "mood",
+    "option_key": "trust-friendly",
+    "title": "친근하고 부드럽게",
+    "cue": "접근성이 좋아 보이는 서비스 톤"
+  },
+  {
+    "subject": "workspace",
+    "step": "mood",
+    "option_key": "trust-premium",
+    "title": "차분하고 프리미엄하게",
+    "cue": "전문성과 품질감이 느껴지는 방향"
+  },
+  {
+    "subject": "workspace",
+    "step": "mood",
+    "option_key": "trust-smart",
+    "title": "똑똑하고 현대적으로",
+    "cue": "기술적이고 효율적인 인상이 있는 톤"
+  },
+  {
+    "subject": "workspace",
+    "step": "mood",
+    "option_key": "trust-human",
+    "title": "사람 냄새 나게",
+    "cue": "딱딱함을 줄이고 실사용 장면이 느껴지는 방향"
+  },
+  {
+    "subject": "workspace",
+    "step": "mood",
+    "option_key": "trust-calm",
+    "title": "과하지 않게 안정적으로",
+    "cue": "설명 자료에 무리가 없는 담백한 무드"
+  },
+  {
+    "subject": "workspace",
+    "step": "mood",
+    "option_key": "trust-bold",
+    "title": "선명하고 자신감 있게",
+    "cue": "강한 메시지와 전달력이 필요한 방향"
+  },
+  {
+    "subject": "workspace",
+    "step": "mood",
+    "option_key": "trust-soft",
+    "title": "부드럽고 환하게",
+    "cue": "교육, 케어, 입문자 대상에 맞는 방향"
+  },
+  {
+    "subject": "service",
+    "step": "detail",
+    "option_key": "service-app",
+    "title": "앱 소개 메인 비주얼",
+    "cue": "앱 첫 화면이나 소개 배너용 방향"
+  },
+  {
+    "subject": "service",
+    "step": "detail",
+    "option_key": "service-web",
+    "title": "웹서비스 소개",
+    "cue": "웹 메인 히어로와 잘 맞는 비주얼"
+  },
+  {
+    "subject": "service",
+    "step": "detail",
+    "option_key": "service-ai",
+    "title": "AI / 챗봇 서비스",
+    "cue": "미래성과 친근함이 함께 필요한 방향"
+  },
+  {
+    "subject": "service",
+    "step": "detail",
+    "option_key": "service-saas",
+    "title": "대시보드 / SaaS",
+    "cue": "툴과 생산성 느낌이 중요한 방향"
+  },
+  {
+    "subject": "service",
+    "step": "detail",
+    "option_key": "service-finance",
+    "title": "금융 / 결제 서비스",
+    "cue": "신뢰감과 깔끔함이 중요한 방향"
+  },
+  {
+    "subject": "service",
+    "step": "detail",
+    "option_key": "service-commerce",
+    "title": "쇼핑 / 커머스",
+    "cue": "사용 흐름과 구매감이 느껴지는 방향"
+  },
+  {
+    "subject": "service",
+    "step": "detail",
+    "option_key": "service-education",
+    "title": "교육 / 학습 서비스",
+    "cue": "친절하고 이해 쉬운 방향"
+  },
+  {
+    "subject": "service",
+    "step": "detail",
+    "option_key": "service-health",
+    "title": "건강 / 케어 서비스",
+    "cue": "안정감과 따뜻함이 중요한 방향"
+  },
+  {
+    "subject": "service",
+    "step": "detail",
+    "option_key": "service-support",
+    "title": "고객지원 / 상담 서비스",
+    "cue": "사람 중심 안내가 중요한 방향"
+  },
+  {
+    "subject": "service",
+    "step": "detail",
+    "option_key": "service-marketing",
+    "title": "마케팅 / 광고 서비스",
+    "cue": "성과와 역동감이 중요한 방향"
+  },
+  {
+    "subject": "service",
+    "step": "usage",
+    "option_key": "service-usage-hero",
+    "title": "메인 랜딩 첫 화면용",
+    "cue": "첫인상과 대표성이 중요한 용도"
+  },
+  {
+    "subject": "service",
+    "step": "usage",
+    "option_key": "service-usage-feature",
+    "title": "기능 설명 섹션용",
+    "cue": "서비스 기능이 읽히는 용도"
+  },
+  {
+    "subject": "service",
+    "step": "usage",
+    "option_key": "service-usage-appstore",
+    "title": "앱스토어 / 소개 카드용",
+    "cue": "디바이스 중심 구성이 쉬운 용도"
+  },
+  {
+    "subject": "service",
+    "step": "usage",
+    "option_key": "service-usage-banner",
+    "title": "배너 / 광고 카피용",
+    "cue": "큰 여백과 카피가 필요한 용도"
+  },
+  {
+    "subject": "service",
+    "step": "usage",
+    "option_key": "service-usage-doc",
+    "title": "제안서 / 소개 자료용",
+    "cue": "문서에 넣기 쉬운 용도"
+  },
+  {
+    "subject": "service",
+    "step": "usage",
+    "option_key": "service-usage-support",
+    "title": "고객지원 / 안내 페이지용",
+    "cue": "사람 중심 안내가 필요한 용도"
+  },
+  {
+    "subject": "service",
+    "step": "usage",
+    "option_key": "service-usage-dashboard",
+    "title": "대시보드 / SaaS 소개용",
+    "cue": "화면과 정보 구조가 중요한 용도"
+  },
+  {
+    "subject": "service",
+    "step": "usage",
+    "option_key": "service-usage-social",
+    "title": "SNS 홍보 포스트용",
+    "cue": "빠르게 눈에 띄는 용도"
+  },
+  {
+    "subject": "service",
+    "step": "visual",
+    "option_key": "service-visual-device",
+    "title": "디바이스 목업 중심",
+    "cue": "폰이나 노트북 화면이 중심인 구성"
+  },
+  {
+    "subject": "service",
+    "step": "visual",
+    "option_key": "service-visual-person-device",
+    "title": "사람 + 화면",
+    "cue": "실사용 감이 쉽게 느껴지는 구성"
+  },
+  {
+    "subject": "service",
+    "step": "visual",
+    "option_key": "service-visual-ui",
+    "title": "UI가 떠 있는 합성형",
+    "cue": "기술 서비스처럼 보이는 구성"
+  },
+  {
+    "subject": "service",
+    "step": "visual",
+    "option_key": "service-visual-hand",
+    "title": "손에 든 폰 / 기기",
+    "cue": "직접 쓰는 장면이 있는 구성"
+  },
+  {
+    "subject": "service",
+    "step": "visual",
+    "option_key": "service-visual-dashboard",
+    "title": "대시보드 화면 중심",
+    "cue": "정보 구조가 중요한 구성"
+  },
+  {
+    "subject": "service",
+    "step": "visual",
+    "option_key": "service-visual-team",
+    "title": "팀 협업 장면",
+    "cue": "사람과 서비스 맥락이 보이는 구성"
+  },
+  {
+    "subject": "service",
+    "step": "visual",
+    "option_key": "service-visual-symbolic",
+    "title": "추상적 서비스 키비주얼",
+    "cue": "기능을 상징적으로 표현하는 구성"
+  },
+  {
+    "subject": "service",
+    "step": "visual",
+    "option_key": "service-visual-banner",
+    "title": "큰 여백 배너형",
+    "cue": "메인 카피를 넣기 쉬운 구성"
+  },
+  {
+    "subject": "service",
+    "step": "tone",
+    "option_key": "service-tone-trust",
+    "title": "신뢰감 있게",
+    "cue": "금융, 업무, 전문 서비스에 잘 맞는 톤"
+  },
+  {
+    "subject": "service",
+    "step": "tone",
+    "option_key": "service-tone-friendly",
+    "title": "친근하고 쉽게",
+    "cue": "입문자 대상 서비스에 잘 맞는 톤"
+  },
+  {
+    "subject": "service",
+    "step": "tone",
+    "option_key": "service-tone-future",
+    "title": "미래적이고 기술적으로",
+    "cue": "AI, 테크 서비스에 잘 맞는 톤"
+  },
+  {
+    "subject": "service",
+    "step": "tone",
+    "option_key": "service-tone-premium",
+    "title": "고급스럽고 세련되게",
+    "cue": "브랜드 가치를 높이는 톤"
+  },
+  {
+    "subject": "service",
+    "step": "tone",
+    "option_key": "service-tone-clean",
+    "title": "간결하고 정돈되게",
+    "cue": "복잡하지 않고 보기 쉬운 톤"
+  },
+  {
+    "subject": "service",
+    "step": "tone",
+    "option_key": "service-tone-human",
+    "title": "사람 냄새 나게",
+    "cue": "실사용자 중심 느낌이 있는 톤"
+  },
+  {
+    "subject": "service",
+    "step": "tone",
+    "option_key": "service-tone-bold",
+    "title": "강한 인상으로",
+    "cue": "메인 캠페인이나 런칭에 잘 맞는 톤"
+  },
+  {
+    "subject": "service",
+    "step": "tone",
+    "option_key": "service-tone-soft",
+    "title": "부드럽고 안정적으로",
+    "cue": "케어, 교육 서비스에 잘 맞는 톤"
+  },
+  {
+    "subject": "service",
+    "step": "composition",
+    "option_key": "poster-center",
+    "title": "정중앙 메인 비주얼",
+    "cue": "주제가 정면에서 강하게 보이는 포스터 구도"
+  },
+  {
+    "subject": "service",
+    "step": "composition",
+    "option_key": "poster-left-space",
+    "title": "왼쪽 여백형",
+    "cue": "오른쪽 비주얼, 왼쪽 텍스트 배치가 쉬운 구조"
+  },
+  {
+    "subject": "service",
+    "step": "composition",
+    "option_key": "poster-right-space",
+    "title": "오른쪽 여백형",
+    "cue": "왼쪽 비주얼, 오른쪽 텍스트 배치가 쉬운 구조"
+  },
+  {
+    "subject": "service",
+    "step": "composition",
+    "option_key": "poster-top-space",
+    "title": "상단 타이틀형",
+    "cue": "위쪽 제목 공간을 남기는 포스터 구조"
+  },
+  {
+    "subject": "service",
+    "step": "composition",
+    "option_key": "poster-bottom-space",
+    "title": "하단 크레딧형",
+    "cue": "아래쪽에 정보가 들어가기 쉬운 구조"
+  },
+  {
+    "subject": "service",
+    "step": "composition",
+    "option_key": "poster-diagonal",
+    "title": "대각선 흐름형",
+    "cue": "시선이 사선으로 움직이는 역동적인 구조"
+  },
+  {
+    "subject": "service",
+    "step": "composition",
+    "option_key": "poster-collage",
+    "title": "콜라주형",
+    "cue": "여러 요소를 한 장에 묶는 구성"
+  },
+  {
+    "subject": "service",
+    "step": "composition",
+    "option_key": "poster-minimal",
+    "title": "미니멀 메인형",
+    "cue": "요소를 줄여 상징이 강하게 보이는 구조"
+  },
+  {
+    "subject": "service",
+    "step": "composition",
+    "option_key": "service-comp-team-meeting",
+    "title": "회의 / 협업 메인컷",
+    "cue": "사람 관계와 서비스 맥락이 보이는 구도"
+  },
+  {
+    "subject": "service",
+    "step": "composition",
+    "option_key": "service-comp-team-device",
+    "title": "사람 + 화면 공유",
+    "cue": "서비스 설명에 쉬운 구도"
+  },
+  {
+    "subject": "service",
+    "step": "composition",
+    "option_key": "service-comp-team-consult",
+    "title": "상담 / 안내 장면",
+    "cue": "고객 응대 느낌이 있는 구도"
+  },
+  {
+    "subject": "service",
+    "step": "composition",
+    "option_key": "service-comp-team-wide",
+    "title": "공간이 함께 보이는 팀컷",
+    "cue": "신뢰감과 맥락이 보이는 구도"
+  },
+  {
+    "subject": "service",
+    "step": "composition",
+    "option_key": "service-comp-team-banner",
+    "title": "한쪽 여백이 큰 팀컷",
+    "cue": "카피를 얹기 쉬운 구도"
+  },
+  {
+    "subject": "service",
+    "step": "composition",
+    "option_key": "service-comp-team-two",
+    "title": "2인 상호작용 구도",
+    "cue": "대화와 설명이 먼저 읽히는 구도"
+  },
+  {
+    "subject": "service",
+    "step": "composition",
+    "option_key": "service-comp-team-hands",
+    "title": "손 / 기기 중심 협업컷",
+    "cue": "행동과 화면이 함께 보이는 구도"
+  },
+  {
+    "subject": "service",
+    "step": "composition",
+    "option_key": "service-comp-team-clean",
+    "title": "정돈된 사무공간 팀컷",
+    "cue": "기업형 서비스에 맞는 구도"
+  },
+  {
+    "subject": "service",
+    "step": "composition",
+    "option_key": "service-comp-ui-device",
+    "title": "디바이스 메인 구도",
+    "cue": "폰이나 노트북 화면이 중심인 구도"
+  },
+  {
+    "subject": "service",
+    "step": "composition",
+    "option_key": "service-comp-ui-hand",
+    "title": "손 + 디바이스 구도",
+    "cue": "실사용 장면이 느껴지는 구도"
+  },
+  {
+    "subject": "service",
+    "step": "composition",
+    "option_key": "service-comp-ui-banner",
+    "title": "큰 여백 배너형",
+    "cue": "카피를 얹기 쉬운 서비스 메인 구도"
+  },
+  {
+    "subject": "service",
+    "step": "composition",
+    "option_key": "service-comp-ui-dashboard",
+    "title": "대시보드 정면 구도",
+    "cue": "정보 구조가 또렷한 구도"
+  },
+  {
+    "subject": "service",
+    "step": "composition",
+    "option_key": "service-comp-ui-layer",
+    "title": "화면이 떠 있는 합성 구도",
+    "cue": "기술 서비스 같은 메인 구도"
+  },
+  {
+    "subject": "service",
+    "step": "composition",
+    "option_key": "service-comp-ui-split",
+    "title": "인물 + 화면 분할 구도",
+    "cue": "설명형 서비스에 쉬운 구도"
+  },
+  {
+    "subject": "service",
+    "step": "composition",
+    "option_key": "service-comp-ui-close",
+    "title": "화면 일부 클로즈업",
+    "cue": "핵심 기능이 크게 보이는 구도"
+  },
+  {
+    "subject": "service",
+    "step": "composition",
+    "option_key": "service-comp-ui-clean",
+    "title": "미니멀 서비스 메인 구도",
+    "cue": "복잡하지 않고 정리된 구도"
+  },
+  {
+    "subject": "service",
+    "step": "mood",
+    "option_key": "trust-clear",
+    "title": "깔끔하고 신뢰감 있게",
+    "cue": "회사 소개나 업무 자료에 잘 맞는 방향"
+  },
+  {
+    "subject": "service",
+    "step": "mood",
+    "option_key": "trust-friendly",
+    "title": "친근하고 부드럽게",
+    "cue": "접근성이 좋아 보이는 서비스 톤"
+  },
+  {
+    "subject": "service",
+    "step": "mood",
+    "option_key": "trust-premium",
+    "title": "차분하고 프리미엄하게",
+    "cue": "전문성과 품질감이 느껴지는 방향"
+  },
+  {
+    "subject": "service",
+    "step": "mood",
+    "option_key": "trust-smart",
+    "title": "똑똑하고 현대적으로",
+    "cue": "기술적이고 효율적인 인상이 있는 톤"
+  },
+  {
+    "subject": "service",
+    "step": "mood",
+    "option_key": "trust-human",
+    "title": "사람 냄새 나게",
+    "cue": "딱딱함을 줄이고 실사용 장면이 느껴지는 방향"
+  },
+  {
+    "subject": "service",
+    "step": "mood",
+    "option_key": "trust-calm",
+    "title": "과하지 않게 안정적으로",
+    "cue": "설명 자료에 무리가 없는 담백한 무드"
+  },
+  {
+    "subject": "service",
+    "step": "mood",
+    "option_key": "trust-bold",
+    "title": "선명하고 자신감 있게",
+    "cue": "강한 메시지와 전달력이 필요한 방향"
+  },
+  {
+    "subject": "service",
+    "step": "mood",
+    "option_key": "trust-soft",
+    "title": "부드럽고 환하게",
+    "cue": "교육, 케어, 입문자 대상에 맞는 방향"
+  }
+]

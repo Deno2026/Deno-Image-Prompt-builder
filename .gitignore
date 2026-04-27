@@ -1,0 +1,34 @@
+# Local visual QA screenshots and temporary browser exports
+/ab-*.png
+/shot-*.png
+/tmp-*.png
+/tmp-*.html
+/image-dom.html
+/.tmp-*/
+/.tmp-*.tar
+/.tmp-cdp-profile-*/
+
+# Local asset review sheets
+/candidate_sheet*.png
+/gpt_batch_sheet.png
+/latest-generated-image-assets-sheet.png
+/*-generated-sheets-preview*.png
+/*-ui-crop-sheet*.png
+/service_candidate_sheet.png
+/structure_candidate_sheet.png
+/subject_candidate_sheet.png
+/subject_sheet*.png
+/temp_video_product_motion.png
+/video_*_sheet*.png
+/backups/
+
+# Local generation logs and Python caches
+/*-cdp-report.json
+/*-crop-report.json
+/*-browser-report.json
+/image-flow-structure-review.json
+/image-product-splash-fix-report.json
+/PROJECT_STATE.md
+/scripts/*.log
+/scripts/gpt_image_replacement_progress.v1.json
+/scripts/__pycache__/
