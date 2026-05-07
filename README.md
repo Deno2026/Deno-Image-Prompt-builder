@@ -4,6 +4,8 @@
 
 [라이브 페이지 열기](https://deno2026.github.io/Deno-Image-Prompt-builder/)
 
+[프롬프트 빌더 v1.0 열기](https://deno2026.github.io/Deno-Image-Prompt-builder/v1/)
+
 ![Simple Prompt Master 메인 페이지](assets/readme/main-page.png)
 
 ## 프로젝트 소개
@@ -20,6 +22,7 @@ Simple Prompt Master는 프롬프트를 처음 쓰는 사람도 부담 없이 �
 | `image.html` | 사용 가능 | 사진 종류, 주제, 분위기, 구도 등을 고르고 이미지 생성용 LLM 지시문을 복사 |
 | `video.html` | 사용 가능 | Text to Video와 Image to Video 흐름을 나누어 영상 프롬프트 상담 지시문을 복사 |
 | `tts.html` | 준비중 | TTS / 오디오 항목은 아직 준비중입니다 |
+| `v1/index.html` | 구버전 | 2026.03.20 기준 프롬프트 빌더 v1.0 단일 페이지 |
 
 ## 사용 흐름
 
@@ -44,6 +47,7 @@ Simple Prompt Master는 프롬프트를 처음 쓰는 사람도 부담 없이 �
 - `image.html`: 이미지 생성 프롬프트 빌더
 - `video.html`: 동영상 생성 프롬프트 빌더
 - `tts.html`: TTS / 오디오 준비중 안내 페이지
+- `v1/index.html`: 프롬프트 빌더 v1.0 구버전 페이지
 - `assets/cards/`: 각 선택 카드에 사용되는 WebP 이미지
 - `assets/readme/main-page.png`: README용 메인 페이지 스크린샷
 - `scripts/`: 카드 이미지 교체, 매니페스트, 생성 계획 관리 스크립트

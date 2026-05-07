@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>디노 이미지 프롬프트 빌더 v1.0 (2026.03.20)</title>
+  <style>
+    :root {
+      --bg: #0f1115;
+      --panel: #171a21;
+      --panel-2: #1f2430;
+      --line: #2c3444;
+      --text: #f3f5f7;
+      --sub: #aab4c3;
+      --accent: #7dd3fc;
+      --good: #86efac;
+      --warn: #f9a8d4;
+      --bad: #fca5a5;
+      --picker-bg: #111827;
+      --picker-chip: #1f2937;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Pretendard", "Noto Sans KR", "Malgun Gothic", Arial, sans-serif;
+      background: linear-gradient(180deg, #0c0f14, #11151d);
+      color: var(--text);
+    }
+
+    body.modal-open {
+      overflow: hidden;
+    }
+
+    .wrap {
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    .hero { margin-bottom: 18px; }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 30px;
+    }
+    .sub {
+      color: var(--sub);
+      line-height: 1.5;
+    }
+
+    .quick-guide {
+      margin-top: 14px;
+      padding: 12px 14px;
+      border: 1px solid rgba(125, 211, 252, 0.28);
+      border-radius: 14px;
+      background: linear-gradient(180deg, rgba(25, 35, 52, 0.9), rgba(18, 26, 40, 0.88));
+      color: #dbeafe;
+      font-size: 13px;
+      line-height: 1.55;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+    }
+
+    .quick-guide strong {
+      color: var(--accent);
+      font-weight: 800;
+      margin-right: 6px;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(360px, 0.8fr);
+      gap: 20px;
+      align-items: start;
+    }
+
+    .card {
+      background: rgba(23, 26, 33, 0.95);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 18px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+    }
+
+    .sticky-card {
+      position: sticky;
+      top: 16px;
+      max-height: calc(100vh - 32px);
+      overflow: auto;
+    }
+
+    .section-title {
+      margin: 0 0 14px;
+      font-size: 18px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    .field.full { grid-column: 1 / -1; }
+
+    label {
+      font-size: 14px;
+      color: var(--sub);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    input[type="text"], textarea {
+      width: 100%;
+      background: var(--panel-2);
+      border: 1px solid var(--line);
+      color: var(--text);
+      border-radius: 12px;
+      padding: 12px 14px;
+      font-size: 14px;
+      outline: none;
+    }
+
+    textarea {
+      min-height: 92px;
+      resize: vertical;
+      line-height: 1.5;
+    }
+
+    .picker-row {
+      display: flex;
+      gap: 8px;
+      align-items: stretch;
+      width: 100%;
+    }
+
+    .picker-trigger {
+      flex: 0 0 84px;
+      min-width: 84px;
+      max-width: 84px;
+      background: var(--panel-2);
+      border: 1px solid var(--line);
+      color: var(--text);
+      border-radius: 12px;
+      padding: 0 12px;
+      font-size: 14px;
+      outline: none;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    .picker-trigger .value {
+      display: none;
+    }
+
+    .picker-trigger .placeholder { display: none; }
+    .picker-trigger .arrow {
+      color: var(--accent);
+      font-size: 12px;
+      flex: 0 0 auto;
+    }
+
+    .mini-btn {
+      min-width: 58px;
+      padding: 0 10px;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      background: #243041;
+      color: var(--text);
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .mini-btn.random {
+      background: #243041;
+      border-color: var(--line);
+      color: var(--text);
+    }
+
+    details {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: rgba(31, 36, 48, 0.5);
+      padding: 12px 14px;
+      margin-top: 8px;
+    }
+
+    summary {
+      cursor: pointer;
+      color: var(--accent);
+      font-weight: 700;
+      list-style: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    button {
+      border: none;
+      border-radius: 12px;
+      padding: 12px 16px;
+      font-size: 14px;
+      cursor: pointer;
+      color: #071019;
+      background: var(--accent);
+      font-weight: 700;
+    }
+
+    button.secondary {
+      background: #273142;
+      color: var(--text);
+      border: 1px solid var(--line);
+    }
+
+    .result-box {
+      width: 100%;
+      min-height: 420px;
+      white-space: pre-wrap;
+      line-height: 1.7;
+      background: #0f1520;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 14px;
+      color: #e8edf2;
+      font-size: 13px;
+      font-family: Consolas, Monaco, 'Courier New', monospace;
+      resize: vertical;
+    }
+
+    .prompt-tabs {
+      display: flex;
+      gap: 8px;
+      margin: 10px 0 12px;
+      flex-wrap: wrap;
+    }
+
+    .tab-btn {
+      background: #273142;
+      color: var(--text);
+      border: 1px solid var(--line);
+      padding: 10px 12px;
+      border-radius: 10px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .tab-btn.active {
+      background: #123041;
+      color: var(--accent);
+      border-color: #38bdf8;
+    }
+
+    .copy-bar {
+      position: sticky;
+      top: 0;
+      z-index: 5;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 10px;
+      margin: 0 0 12px;
+      padding: 10px 0 12px;
+      background: linear-gradient(180deg, rgba(23,26,33,0.98), rgba(23,26,33,0.92));
+      border-bottom: 1px solid rgba(44,52,68,0.8);
+    }
+
+    .primary-copy-btn {
+      width: 100%;
+      min-height: 54px;
+      padding: 14px 18px;
+      background: linear-gradient(135deg, #38bdf8, #22c55e);
+      color: #04121a;
+      box-shadow: 0 10px 22px rgba(34, 197, 94, 0.18);
+      border: 1px solid rgba(125, 211, 252, 0.45);
+      font-size: 15px;
+      white-space: nowrap;
+    }
+
+    .helper {
+      font-size: 12px;
+      color: var(--sub);
+      line-height: 1.45;
+    }
+
+    .status {
+      font-size: 13px;
+      color: var(--good);
+      min-height: 20px;
+      margin-top: 8px;
+      line-height: 1.45;
+    }
+
+    .status.error { color: var(--bad); }
+    .divider {
+      height: 1px;
+      background: var(--line);
+      margin: 16px 0;
+    }
+
+    .copy-fallback {
+      margin-top: 14px;
+      padding: 12px;
+      border: 1px dashed var(--line);
+      border-radius: 14px;
+      background: rgba(15, 21, 32, 0.7);
+      display: none;
+    }
+
+    .copy-fallback.active { display: block; }
+    .copy-fallback textarea {
+      min-height: 120px;
+      margin-top: 10px;
+      font-size: 13px;
+    }
+
+    
+
+    .modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(4, 8, 14, 0.72);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      padding: 24px;
+      overscroll-behavior: contain;
+    }
+
+    .modal.active { display: flex; }
+
+    .modal-card {
+      width: min(1120px, 100%);
+      max-height: 90vh;
+      overflow: auto;
+      background: var(--picker-bg);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 24px;
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
+      overscroll-behavior: contain;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .modal-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 16px;
+      position: sticky;
+      top: -20px;
+      padding: 4px 0 12px;
+      background: var(--picker-bg);
+      z-index: 3;
+    }
+
+    .modal-title {
+      font-size: 22px;
+      font-weight: 800;
+      margin: 0;
+    }
+
+    .modal-close {
+      background: #243041;
+      color: var(--text);
+      border: 1px solid var(--line);
+    }
+
+    .modal-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    .modal-search { margin-bottom: 16px; }
+    .modal-search input {
+      width: 100%;
+      background: #0f172a;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      color: var(--text);
+      padding: 13px 15px;
+      font-size: 15px;
+    }
+
+    .picker-category { margin-bottom: 18px; }
+    .picker-category h3 {
+      margin: 0 0 12px;
+      font-size: 17px;
+      font-weight: 800;
+      color: var(--accent);
+    }
+
+    .picker-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 12px;
+    }
+
+    .picker-option {
+      padding: 12px 14px;
+      border-radius: 12px;
+      border: 1px solid #3a475f;
+      background: #243041;
+      color: var(--text);
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.55;
+      text-align: left;
+    }
+
+    .picker-option:hover {
+      border-color: var(--accent);
+      background: #304562;
+    }
+
+    @media (max-width: 980px) {
+      .layout { grid-template-columns: 1fr; }
+      .grid { grid-template-columns: 1fr; }
+      .sticky-card {
+        position: static;
+        max-height: none;
+        overflow: visible;
+      }
+      .picker-grid { grid-template-columns: 1fr; }
+      .picker-row { flex-wrap: wrap; }
+      .mini-btn { min-height: 42px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <h1>디노 이미지 프롬프트 빌더 v1.0 (2026.03.20)</h1>
+      <div class="sub">
+        최신 버전은 채널을 참조해주세요<br>
+        https://www.youtube.com/@Denoise-AI
+      </div>
+      <div class="quick-guide">
+        <strong>기본 사용법</strong>
+        왼쪽 항목을 원하는 만큼 채워넣고, 오른쪽의 복사 버튼을 눌러서 GPT 또는 제미나이에 입력하세요
+      </div>
+    </div>
+
+    <div class="layout">
+      <div class="card">
+        <h2 class="section-title">기본 입력</h2>
+
+        <div class="field full">
+          <label><span>주제 (이것만 입력해도 잘 작동 합니다)</span></label>
+          <textarea id="topic" placeholder="예: 중년 남자 가수가 무대에서 감성적으로 노래하는 모습 / 아기 래브라도가 공원에서 신나게 뛰노는 장면"></textarea>
+        </div>
+
+        <div class="grid">
+          <div class="field">
+            <label><span>피사체 위치</span></label>
+            <div class="picker-row">
+              <input id="subjectPosition" type="text" placeholder="예: 화면 정중앙에 위치, 왼쪽 여백을 크게 두고 위치" />
+              <button class="picker-trigger" type="button" data-picker="subjectPosition">
+                <span class="value placeholder" id="subjectPositionDisplay"></span>
+                <span class="arrow">프리셋</span>
+              </button>
+              <button class="mini-btn random" type="button" data-random="subjectPosition">랜덤</button>
+              <button class="mini-btn" type="button" data-clear="subjectPosition">취소</button>
+            </div>
+          </div>
+
+          <div class="field">
+            <label><span>피사체 설명</span></label>
+            <div class="picker-row">
+              <input id="subjectDetail" type="text" placeholder="예 : 피사체를 설명하는데 도움이 될만한 정보를 입력하세요" />
+              <button class="picker-trigger" type="button" data-picker="subjectDetail">
+                <span class="value placeholder" id="subjectDetailDisplay"></span>
+                <span class="arrow">프리셋</span>
+              </button>
+              <button class="mini-btn random" type="button" data-random="subjectDetail">랜덤</button>
+              <button class="mini-btn" type="button" data-clear="subjectDetail">취소</button>
+            </div>
+          </div>
+
+          <div class="field">
+            <label><span>배경/장소</span></label>
+            <div class="picker-row">
+              <input id="background" type="text" placeholder="예: 콘서트 무대, 해질녘 공원, 고급 스튜디오" />
+              <button class="picker-trigger" type="button" data-picker="background">
+                <span class="value placeholder" id="backgroundDisplay"></span>
+                <span class="arrow">프리셋</span>
+              </button>
+              <button class="mini-btn random" type="button" data-random="background">랜덤</button>
+              <button class="mini-btn" type="button" data-clear="background">취소</button>
+            </div>
+          </div>
+
+          <div class="field">
+            <label><span>인물 포즈</span></label>
+            <div class="picker-row">
+              <input id="pose" type="text" placeholder="예: 의자에 다리를 꼬고 앉아 있는 자세" />
+              <button class="picker-trigger" type="button" data-picker="pose">
+                <span class="value placeholder" id="poseDisplay"></span>
+                <span class="arrow">프리셋</span>
+              </button>
+              <button class="mini-btn random" type="button" data-random="pose">랜덤</button>
+              <button class="mini-btn" type="button" data-clear="pose">취소</button>
+            </div>
+          </div>
+
+          <div class="field">
+            <label><span>카메라 각도</span></label>
+            <div class="picker-row">
+              <input id="angle" type="text" placeholder="예: 아래에서 올려다보는 시점" />
+              <button class="picker-trigger" type="button" data-picker="angle">
+                <span class="value placeholder" id="angleDisplay"></span>
+                <span class="arrow">프리셋</span>
+              </button>
+              <button class="mini-btn random" type="button" data-random="angle">랜덤</button>
+              <button class="mini-btn" type="button" data-clear="angle">취소</button>
+            </div>
+          </div>
+
+          <div class="field">
+            <label><span>구도</span></label>
+            <div class="picker-row">
+              <input id="composition" type="text" placeholder="예: 허리 위 중간 샷" />
+              <button class="picker-trigger" type="button" data-picker="composition">
+                <span class="value placeholder" id="compositionDisplay"></span>
+                <span class="arrow">프리셋</span>
+              </button>
+              <button class="mini-btn random" type="button" data-random="composition">랜덤</button>
+              <button class="mini-btn" type="button" data-clear="composition">취소</button>
+            </div>
+          </div>
+
+          <div class="field">
+            <label><span>분위기</span></label>
+            <div class="picker-row">
+              <input id="mood" type="text" placeholder="예: 따뜻하고 감성적인 분위기" />
+              <button class="picker-trigger" type="button" data-picker="mood">
+                <span class="value placeholder" id="moodDisplay"></span>
+                <span class="arrow">프리셋</span>
+              </button>
+              <button class="mini-btn random" type="button" data-random="mood">랜덤</button>
+              <button class="mini-btn" type="button" data-clear="mood">취소</button>
+            </div>
+          </div>
+
+          <div class="field">
+            <label><span>스타일</span></label>
+            <div class="picker-row">
+              <input id="style" type="text" placeholder="예: 시네마틱 리얼리즘" />
+              <button class="picker-trigger" type="button" data-picker="style">
+                <span class="value placeholder" id="styleDisplay"></span>
+                <span class="arrow">프리셋</span>
+              </button>
+              <button class="mini-btn random" type="button" data-random="style">랜덤</button>
+              <button class="mini-btn" type="button" data-clear="style">취소</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="field full">
+          <label><span>추가 디테일</span></label>
+          <textarea id="details" placeholder="예: 금속 마이크, 젖은 바닥 반사광, 무대 뒤 조명 번짐, 털결이 선명함"></textarea>
+        </div>
+
+        <details>
+          <summary>고급 설정 펼치기</summary>
+          <div class="grid" style="margin-top: 14px;">
+            <div class="field">
+              <label><span>조명</span></label>
+              <div class="picker-row">
+                <input id="lighting" type="text" placeholder="직접 입력하거나 프리셋으로 선택" />
+                <button class="picker-trigger" type="button" data-picker="lighting">
+                  <span class="value placeholder" id="lightingDisplay"></span>
+                  <span class="arrow">프리셋</span>
+                </button>
+                <button class="mini-btn random" type="button" data-random="lighting">랜덤</button>
+                <button class="mini-btn" type="button" data-clear="lighting">취소</button>
+              </div>
+            </div>
+
+            <div class="field">
+              <label><span>색감</span></label>
+              <div class="picker-row">
+                <input id="color" type="text" placeholder="직접 입력하거나 프리셋으로 선택" />
+                <button class="picker-trigger" type="button" data-picker="color">
+                  <span class="value placeholder" id="colorDisplay"></span>
+                  <span class="arrow">프리셋</span>
+                </button>
+                <button class="mini-btn random" type="button" data-random="color">랜덤</button>
+                <button class="mini-btn" type="button" data-clear="color">취소</button>
+              </div>
+            </div>
+
+            <div class="field">
+              <label><span>의상/소품</span></label>
+              <input id="props" type="text" placeholder="예: 검은 정장, 빈티지 마이크, 빨간 리본, 작은 핸드마이크" />
+            </div>
+
+            <div class="field">
+              <label><span>심도</span></label>
+              <div class="picker-row">
+                <input id="depth" type="text" placeholder="예: 배경이 크게 흐려지는 얕은 심도" />
+                <button class="picker-trigger" type="button" data-picker="depth">
+                  <span class="value placeholder" id="depthDisplay"></span>
+                  <span class="arrow">프리셋</span>
+                </button>
+                <button class="mini-btn random" type="button" data-random="depth">랜덤</button>
+                <button class="mini-btn" type="button" data-clear="depth">취소</button>
+              </div>
+            </div>
+
+            <div class="field">
+              <label><span>렌즈</span></label>
+              <div class="picker-row">
+                <input id="lens" type="text" placeholder="예: 85mm 인물용 망원 렌즈 느낌" />
+                <button class="picker-trigger" type="button" data-picker="lens">
+                  <span class="value placeholder" id="lensDisplay"></span>
+                  <span class="arrow">프리셋</span>
+                </button>
+                <button class="mini-btn random" type="button" data-random="lens">랜덤</button>
+                <button class="mini-btn" type="button" data-clear="lens">취소</button>
+              </div>
+            </div>
+
+            <div class="field">
+              <label><span>ISO</span></label>
+              <div class="picker-row">
+                <input id="iso" type="text" placeholder="예: ISO 200" />
+                <button class="picker-trigger" type="button" data-picker="iso">
+                  <span class="value placeholder" id="isoDisplay"></span>
+                  <span class="arrow">프리셋</span>
+                </button>
+                <button class="mini-btn random" type="button" data-random="iso">랜덤</button>
+                <button class="mini-btn" type="button" data-clear="iso">취소</button>
+              </div>
+            </div>
+
+            <div class="field">
+              <label><span>셔터스피드</span></label>
+              <div class="picker-row">
+                <input id="shutter" type="text" placeholder="예: 1/250초의 선명한 셔터스피드" />
+                <button class="picker-trigger" type="button" data-picker="shutter">
+                  <span class="value placeholder" id="shutterDisplay"></span>
+                  <span class="arrow">프리셋</span>
+                </button>
+                <button class="mini-btn random" type="button" data-random="shutter">랜덤</button>
+                <button class="mini-btn" type="button" data-clear="shutter">취소</button>
+              </div>
+            </div>
+
+            <div class="field">
+              <label><span>초점</span></label>
+              <div class="picker-row">
+                <input id="focus" type="text" placeholder="예: 눈에 정확히 초점이 맞는 설정" />
+                <button class="picker-trigger" type="button" data-picker="focus">
+                  <span class="value placeholder" id="focusDisplay"></span>
+                  <span class="arrow">프리셋</span>
+                </button>
+                <button class="mini-btn random" type="button" data-random="focus">랜덤</button>
+                <button class="mini-btn" type="button" data-clear="focus">취소</button>
+              </div>
+            </div>
+
+            <div class="field full">
+              <label><span>기술 디테일 직접 입력</span></label>
+              <textarea id="technical" placeholder="예: 얕은 심도, 85mm 렌즈 느낌, f1.8, ISO 200, 셔터스피드 1/250, 피사체 초점 또렷, 배경 보케 강함, 하이라이트 부드럽게"></textarea>
+            </div>
+
+            <div class="field full">
+              <label><span>추가 확장 지시</span></label>
+              <textarea id="enhanceNote" placeholder="예: 패션 화보처럼 매우 디테일하게 확장, 피부결과 의상 재질 강조, 전문가용 촬영 표현 적극 추가"></textarea>
+            </div>
+          </div>
+        </details>
+
+        <div class="toolbar">
+          <button id="randomAllBtn" type="button">프리셋 전체 랜덤</button>
+          <button id="clearBtn" type="button" class="secondary">입력 초기화</button>
+        </div>
+        <div class="status" id="status"></div>
+      </div>
+
+      <div class="card sticky-card">
+        <h2 class="section-title">생성 결과</h2>
+
+        <div class="copy-bar">
+          <div class="helper">복사 후, GPT 또는 제미나이에 그대로 입력하세요</div>
+          <button id="copyGuideBtn" type="button" class="primary-copy-btn">LLM 확장 지시문 복사</button>
+        </div>
+
+        <textarea class="result-box" id="resultBox" readonly spellcheck="false"></textarea>
+
+        <div id="copyFallback" class="copy-fallback" aria-live="polite">
+          <div class="helper"><b>자동 복사가 막혀서 수동 복사 모드로 전환됐어요.</b><br>아래 텍스트가 자동 선택되도록 시도합니다. 직접 Ctrl+C로 복사해 주세요.</div>
+          <textarea id="manualCopyArea" readonly></textarea>
+        </div>
+
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="pickerModal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h2 class="modal-title" id="pickerTitle">프리셋 선택</h2>
+        <button class="modal-close" type="button" id="closePickerBtn">닫기</button>
+      </div>
+      <div class="modal-actions">
+        <button id="pickerRandomBtn" type="button" class="secondary">이 항목 랜덤</button>
+        <button id="pickerClearBtn" type="button" class="secondary">선택 취소</button>
+      </div>
+      <div class="modal-search">
+        <input type="text" id="pickerSearch" placeholder="원하는 키워드로 빠르게 찾기" />
+      </div>
+      <div id="pickerContent"></div>
+    </div>
+  </div>
+
+  <script>
+    const ids = [
+      'topic', 'subjectPosition', 'subjectDetail', 'background', 'pose', 'composition', 'mood', 'style', 'details',
+      'angle', 'lighting', 'color', 'props', 'depth', 'lens', 'iso', 'shutter', 'focus', 'technical', 'enhanceNote'
+    ];
+
+    const labels = {
+      topic: '주제',
+      subjectPosition: '피사체 위치',
+      background: '배경/장소',
+      subjectDetail: '피사체 설명',
+      pose: '인물 포즈',
+      composition: '구도',
+      mood: '분위기',
+      style: '스타일',
+      details: '추가 디테일',
+      angle: '카메라 각도',
+      lighting: '조명',
+      color: '색감',
+      props: '의상/소품',
+      depth: '심도',
+      lens: '렌즈',
+      iso: 'ISO',
+      shutter: '셔터스피드',
+      focus: '초점',
+      technical: '기술 디테일 직접 입력',
+      enhanceNote: '추가 확장 지시'
+    };
+
+    const presetKeys = ['subjectPosition', 'subjectDetail', 'background', 'pose', 'angle', 'composition', 'mood', 'style', 'lighting', 'color', 'depth', 'lens', 'iso', 'shutter', 'focus'];
+    let activeResultTab = 'guide';
+    let currentPickerKey = null;
+
+    const pickerData = {
+      subjectDetail: {
+        title: '피사체 설명 프리셋',
+        categories: {
+          '인물 기본 정보': [
+            '20대 초반의 한국인 여성', '20대 후반의 세련된 여성', '30대 초반의 도시적인 남성', '중년의 따뜻한 인상 남성', '소년 같은 분위기의 젊은 남성', '우아한 분위기의 중년 여성', '자연스럽고 친근한 일반인 인상', '세련된 인플루언서 스타일의 인물'
+          ],
+          '인물 외형/인상': [
+            '맑고 또렷한 눈매', '부드럽고 자연스러운 표정', '도회적이고 세련된 인상', '장난기 있고 밝은 표정', '차분하고 지적인 분위기', '고급스럽고 자신감 있는 분위기', '깨끗하고 건강한 피부 표현', '자연스럽게 정돈된 헤어스타일'
+          ],
+          '캐릭터/비인간 피사체': [
+            '귀엽고 둥근 비율의 캐릭터', '애니메이션 주인공 같은 캐릭터', '판타지 세계관의 캐릭터', '사이버펑크 느낌의 캐릭터', '장난감처럼 매끈한 질감의 캐릭터', '동화책 삽화에 나올 법한 캐릭터', '작고 사랑스러운 동물 캐릭터', '강한 개성이 느껴지는 마스코트 캐릭터'
+          ],
+          '풍경/장소 대상': [
+            '넓고 탁 트인 풍경', '고요하고 평화로운 자연 풍경', '도시적인 분위기의 거리 풍경', '빛과 안개가 어우러진 몽환적인 풍경', '계절감이 뚜렷한 풍경', '사람이 거의 없는 조용한 장소', '건축 구조가 인상적인 장소', '여행지 같은 이국적인 풍경'
+          ],
+          '제품/사물 대상': [
+            '고급스럽고 정교한 제품', '미니멀 디자인의 전자기기', '유광 재질이 돋보이는 제품', '무광 재질의 세련된 오브제', '프리미엄 화장품 패키지', '향수병처럼 반사가 아름다운 유리 제품', '디자인 가구 같은 오브제', '브랜드 광고에 어울리는 상품'
+          ],
+          '반려동물/동물 대상': [
+            '둥글고 사랑스러운 강아지', '호기심 많은 고양이', '털결이 풍성한 반려동물', '순하고 안정적인 대형견', '작고 민첩한 소형견', '장난기 많은 동물 표정', '눈빛이 맑고 또렷한 동물', '귀여움이 강조된 동물 피사체'
+          ],
+          '질감/디테일 강조': [
+            '섬세한 피부결과 잔머리 표현', '선명한 털결과 윤기 표현', '금속 재질의 반사와 질감 강조', '유리 표면의 투명감과 반사 표현', '직물의 결감이 살아 있는 표현', '플라스틱이나 레진의 매끈한 표면감', '나무나 가죽의 재질감 강조', '작은 디테일까지 또렷하게 살아 있는 표현'
+          ]
+        }
+      },
+      depth: {
+        title: '심도 프리셋',
+        categories: {
+          '얕은 심도': [
+            '아주 얕은 심도', '배경이 크게 흐려지는 얕은 심도', '인물만 또렷한 얕은 심도', '보케가 강한 얕은 심도', '클로즈업에 어울리는 얕은 심도',
+            '눈 주변만 또렷한 극얕은 심도', '피사체 전면만 날카롭게 살아나는 얕은 심도', '전경과 배경이 부드럽게 녹아드는 얕은 심도'
+          ],
+          '중간 심도': [
+            '자연스러운 중간 심도', '인물과 배경이 적당히 보이는 심도', '균형 잡힌 중간 심도', '라이프스타일 촬영용 중간 심도',
+            '인물과 소품이 함께 읽히는 중간 심도', '공간 정보가 적당히 살아 있는 중간 심도'
+          ],
+          '깊은 심도': [
+            '배경까지 선명한 깊은 심도', '공간감이 잘 보이는 깊은 심도', '풍경이 또렷한 깊은 심도', '다큐멘터리 느낌의 깊은 심도',
+            '전경부터 후경까지 고르게 선명한 깊은 심도', '건축과 공간 구조가 잘 보이는 깊은 심도'
+          ]
+        }
+      },
+      lens: {
+        title: '렌즈 프리셋',
+        categories: {
+          '광각 계열': [
+            '24mm 광각 렌즈 느낌', '28mm 넓은 화각 느낌', '35mm 자연스러운 광각 느낌', '환경이 강조되는 광각 렌즈 느낌', '공간 원근감이 시원한 광각 느낌'
+          ],
+          '표준 계열': [
+            '50mm 표준 렌즈 느낌', '자연스러운 시야의 표준 렌즈 느낌', '인물과 배경 균형이 좋은 50mm 느낌', '광고 사진에 어울리는 표준 렌즈 느낌'
+          ],
+          '망원 계열': [
+            '85mm 인물용 망원 렌즈 느낌', '105mm 압축감 있는 망원 느낌', '135mm 강한 배경 압축 느낌', '피사체 분리가 좋은 인물 망원 느낌', '배경 압축이 선명한 공연 촬영용 망원 느낌'
+          ],
+          '특수 느낌': [
+            '매크로 렌즈 느낌', '시네마 렌즈 느낌', '아나모픽 렌즈 느낌', '빈티지 올드렌즈 느낌', '현대적인 고해상도 프라임 렌즈 느낌'
+          ]
+        }
+      },
+      iso: {
+        title: 'ISO 프리셋',
+        categories: {
+          '낮은 ISO': ['ISO 100', 'ISO 200', 'ISO 250'],
+          '중간 ISO': ['ISO 400', 'ISO 640', 'ISO 800'],
+          '높은 ISO': ['ISO 1250', 'ISO 1600', 'ISO 3200'],
+          '표현 중심': ['노이즈가 적은 낮은 ISO', '적당한 감도의 중간 ISO', '야간 촬영용 높은 ISO']
+        }
+      },
+      shutter: {
+        title: '셔터스피드 프리셋',
+        categories: {
+          '빠른 셔터': ['1/1000초의 빠른 셔터스피드', '1/500초로 순간을 멈춘 셔터스피드', '1/250초의 선명한 셔터스피드'],
+          '중간 셔터': ['1/125초의 자연스러운 셔터스피드', '1/60초의 일상적인 셔터스피드'],
+          '느린 셔터': ['1/30초의 약간 느린 셔터스피드', '1/15초의 움직임이 남는 셔터스피드', '장노출 느낌의 느린 셔터스피드'],
+          '표현 중심': ['움직임을 얼리는 빠른 셔터', '자연스러운 움직임이 남는 셔터', '빛의 흐름을 표현하는 느린 셔터']
+        }
+      },
+      focus: {
+        title: '초점 프리셋',
+        categories: {
+          '피사체 중심': ['눈에 정확히 초점이 맞는 설정', '얼굴 중심 초점', '상반신 중심 초점', '주인공 전체에 초점이 맞는 설정'],
+          '배경 활용': ['배경은 흐리고 피사체만 또렷한 초점', '전경은 흐리고 인물에 초점', '배경 디테일도 살아나는 넓은 초점'],
+          '연출형': ['앞쪽 소품에 초점이 걸린 설정', '실루엣 중심 초점', '선택 초점으로 한 부분만 또렷한 설정', '드라마틱한 포커스 폴오프']
+        }
+      },
+      background: {
+        title: '배경/장소 프리셋',
+        categories: {
+          '실내 스튜디오': [
+            '고급 스튜디오 세트장', '미니멀 화이트 스튜디오', '블랙 배경 스튜디오', '패션 화보 촬영 스튜디오', '조명이 설치된 인터뷰 스튜디오', '회색 톤 무드 스튜디오', '대형 배경지와 조명이 있는 광고 스튜디오', '거울 오브제가 놓인 화보 스튜디오', '부드러운 확산광이 가득한 뷰티 스튜디오', '크로마키가 설치된 촬영 스튜디오', '럭셔리 소품이 배치된 콘셉트 스튜디오', '바닥 반사가 살아 있는 글로시 스튜디오', '대형 창문이 있는 자연광 스튜디오', '어두운 하이패션 무드 스튜디오', '제품 촬영 겸용 클린 스튜디오', '빈 배경지와 스탠드 조명이 보이는 촬영장'
+          ],
+          '도시/거리': [
+            '도심 야경 거리', '네온사인 골목길', '도시 옥상', '횡단보도 앞 거리', '유럽풍 골목길', '비 오는 도시 거리', '고층 빌딩 사이 거리', '지하철 출구 앞 보도', '새벽 도심 인도', '럭셔리 쇼윈도 앞 거리', '밤늦은 번화가 거리', '택시 불빛이 스치는 도로변', '지하주차장 입구', '벽화가 있는 도심 골목', '버스정류장 근처 거리', '도시 육교 위', '겨울 밤 조명이 반사되는 보행자 거리'
+          ],
+          '자연/야외': [
+            '해질녘 공원', '푸른 숲길', '바닷가 해변', '꽃이 핀 정원', '넓은 초원', '호숫가 산책로', '가을 낙엽길', '안개 낀 숲속 공터', '바람 부는 언덕', '겨울 설원 길목', '여름 들판', '벚꽃길 산책로', '이른 아침 잔디밭', '비 온 뒤 촉촉한 숲길', '절벽이 보이는 해안 산책로', '들꽃이 핀 시골길', '석양이 비치는 강변 둔치', '산속 전망대'
+          ],
+          '공연/무대': [
+            '콘서트 무대', '조명이 가득한 라이브 공연장', '대형 페스티벌 무대', '재즈바 무대', '소극장 공연장', '클럽 공연 무대', '오케스트라 홀 무대', '리허설 중인 빈 무대', '백라이트가 강한 단독 무대', '팬 조명이 흔들리는 라이브 홀', '음향 장비가 보이는 공연 리허설장', '붉은 커튼이 있는 클래식 무대'
+          ],
+          '실내 공간': [
+            '고급 호텔 로비', '감성적인 카페 내부', '창가가 큰 거실', '빈티지 서재', '럭셔리 드레스룸', '레스토랑 내부', '넓은 복도형 갤러리', '고급 펜트하우스 실내', '클래식한 응접실', '대리석 바닥의 로비 공간', '무드등이 켜진 침실', '햇빛이 드는 다이닝룸', '예술 작품이 걸린 전시 공간', '따뜻한 조명의 바 공간', '모던 오피스 라운지'
+          ],
+          '특수 콘셉트': [
+            '사이버펑크 도시 배경', '몽환적인 안개 공간', '판타지 궁전 홀', '우주선 내부', '복고풍 필름 세트장', '네온 조명이 번지는 가상 공간', '초현실적인 무한 배경', '빛 입자가 떠다니는 판타지 공간', '꿈속 같은 수면 위 공간', '거대한 달이 보이는 초현실 배경', '붕 떠 있는 계단이 있는 공간', '기하학 구조물이 있는 미래 공간'
+          ]
+        }
+      },
+      mood: {
+        title: '분위기 프리셋',
+        categories: {
+          '감성/잔잔함': [
+            '따뜻하고 감성적인 분위기', '잔잔하고 서정적인 분위기', '쓸쓸하고 고요한 분위기', '포근하고 부드러운 분위기', '아련하고 추억적인 분위기', '조용하고 내밀한 분위기', '담백하고 차분한 분위기', '늦은 밤 혼자 있는 듯한 잔잔한 분위기', '봄날 햇살 같은 포근한 분위기', '숨소리까지 들릴 듯 조용한 분위기', '비 내린 뒤의 촉촉한 분위기', '천천히 시간이 흐르는 여유로운 분위기'
+          ],
+          '고급/세련됨': [
+            '고급스럽고 세련된 분위기', '도회적이고 모던한 분위기', '럭셔리하고 우아한 분위기', '정제되고 미니멀한 분위기', '하이패션 화보 같은 분위기', '브랜드 캠페인 같은 세련된 분위기', '차갑고 정교한 럭셔리 분위기', '클래식하면서도 품위 있는 분위기', '절제된 고급미가 느껴지는 분위기', '대담하지만 세련된 분위기'
+          ],
+          '강렬/드라마틱': [
+            '강렬하고 압도적인 분위기', '드라마틱하고 긴장감 있는 분위기', '카리스마 있고 무게감 있는 분위기', '영화 같은 웅장한 분위기', '어둡고 치명적인 분위기', '폭발 직전의 에너지가 느껴지는 분위기', '숨 막히게 팽팽한 긴장감의 분위기', '무대 조명 아래 압도적인 분위기', '서사가 느껴지는 시네마틱 분위기', '거칠고 강한 에너지가 살아 있는 분위기'
+          ],
+          '밝음/유쾌함': [
+            '유쾌하고 발랄한 분위기', '밝고 사랑스러운 분위기', '장난스럽고 경쾌한 분위기', '상큼하고 산뜻한 분위기', '청량하고 시원한 분위기', '웃음기 가득한 활기찬 분위기', '초여름 햇살 같은 생동감 있는 분위기', '발랄한 광고 컷 같은 분위기', '에너지 넘치고 경쾌한 분위기', '명랑하고 친근한 분위기'
+          ],
+          '몽환/특수': [
+            '몽환적이고 비현실적인 분위기', '신비롭고 판타지적인 분위기', '네온 감성의 미래적인 분위기', '빈티지하고 복고적인 분위기', '자연스럽고 다큐멘터리 같은 분위기', '꿈처럼 흐릿하고 감각적인 분위기', '현실과 비현실의 경계가 흐려진 분위기', '빛이 번지는 환상적인 분위기', '시간이 멈춘 듯한 초현실 분위기', '기묘하면서도 아름다운 분위기'
+          ]
+        }
+      },
+      subjectPosition: {
+        title: '피사체 위치 프리셋',
+        categories: {
+          '기본 위치': ['화면 정중앙에 위치', '화면 왼쪽에 위치', '화면 오른쪽에 위치', '화면 하단 중앙에 위치', '화면 상단 중앙에 위치'],
+          '여백 활용': ['왼쪽 여백을 크게 두고 위치', '오른쪽 여백을 크게 두고 위치', '상단 여백을 크게 두고 위치', '하단 여백을 크게 두고 위치', '넓은 배경 속 작은 피사체로 위치'],
+          '구성 강조': ['삼등분 왼쪽 지점에 위치', '삼등분 오른쪽 지점에 위치', '전경 가까이에 크게 위치', '중경 중심에 안정적으로 위치', '배경 쪽에 작게 위치']
+        }
+      },
+      pose: {
+        title: '인물 포즈 프리셋',
+        categories: {
+          '서 있는 포즈': [
+            '정면으로 곧게 서 있는 기본 자세','창가에 기대어 서 있는 자세','벽에 한쪽 어깨를 기대고 서 있는 자세','한 손을 허리에 올린 패션모델 자세','양손을 자연스럽게 내리고 서 있는 자세','양손을 주머니에 넣고 서 있는 자세','고개를 살짝 기울이고 서 있는 자세','한쪽 다리에 체중을 실은 자연스러운 자세','다리를 교차해 우아하게 서 있는 자세','무대 위에서 마이크를 들고 서 있는 자세','한 손으로 재킷을 정리하는 자세','허리를 살짝 틀어 몸선이 보이는 자세','양팔을 가볍게 벌리고 당당하게 서 있는 자세','한 발을 앞으로 내민 런웨이 시작 자세','뒤돌아보며 멈춰 선 자세','창문을 바라보며 옆모습을 드러낸 자세','두 손을 뒤로 모으고 선 자세','어깨를 살짝 내리고 여유롭게 선 자세'
+          ],
+          '앉아 있는 포즈': [
+            '의자에 바르게 앉아 있는 자세','의자에 다리를 꼬고 앉아 있는 섹시한 자세','의자 끝에 살짝 걸터앉은 자세','침대 가장자리에 걸터앉아 있는 자세','소파에 편하게 기대어 앉아 있는 자세','바닥에 무릎을 세우고 앉아 있는 자세','바닥에 다리를 옆으로 모으고 앉아 있는 자세','테이블 앞에 앉아 턱을 괴고 있는 자세','한쪽 팔걸이에 기대어 앉아 있는 자세','하이체어에 길게 앉아 다리를 드러낸 자세','창틀에 앉아 바깥을 바라보는 자세','소파 끝에 깊숙이 기대어 앉은 자세','양손을 무릎 위에 올리고 단정히 앉은 자세','등을 살짝 말고 감성적으로 앉은 자세','한쪽 다리를 뻗고 편하게 앉은 자세','테이블 위로 몸을 기울이며 앉은 자세'
+          ],
+          '쪼그리기/무릎 포즈': [
+            '쪼그리고 앉아 카메라를 보는 자세','한쪽 무릎을 세우고 앉아 있는 자세','양 무릎을 꿇고 정면을 바라보는 자세','한쪽 무릎을 바닥에 댄 포즈','몸을 앞으로 숙인 쪼그린 자세','팔을 무릎 위에 올린 편안한 쪼그림 자세','운동 전 준비 자세처럼 낮게 앉은 자세','치마를 정리하며 무릎 꿇은 자세','계단 아래에 쪼그려 앉은 자세'
+          ],
+          '침대/소파/가구 포즈': [
+            '침대에 옆으로 기대어 누운 자세','침대 위에 엎드려 상체를 든 자세','침대 헤드에 등을 기대고 앉아 있는 자세','소파 팔걸이에 기대어 비스듬히 앉은 자세','소파에 다리를 올리고 편하게 앉은 자세','긴 의자에 반쯤 누운 자세','창틀에 걸터앉아 있는 자세','계단에 앉아 고개를 숙인 자세','긴 벤치에 다리를 길게 뻗고 앉은 자세'
+          ],
+          '걷기/이동 포즈': [
+            '카메라를 향해 걸어오는 자세','옆모습이 보이게 걷는 자세','코트 자락이 흩날리며 걷는 자세','런웨이 모델처럼 워킹하는 자세','한 발을 내딛는 순간의 자세','고개를 돌리며 뒤돌아보는 걸음 자세','계단을 내려오는 자세','빠르게 지나가는 순간을 잡은 자세','무대 중앙으로 걸어 나오는 자세','천천히 다가오며 시선을 주는 자세','한 손을 흔들며 걸어오는 자세','발끝이 강조되는 우아한 워킹 자세'
+          ],
+          '점프/역동 포즈': [
+            '공중으로 점프하는 찰나의 자세','두 팔을 벌리고 가볍게 뛰어오른 자세','한쪽 다리를 접고 점프한 자세','머리카락과 옷자락이 날리는 점프 자세','무대 퍼포먼스처럼 크게 도약한 자세','장난스럽게 깡충 뛰는 자세','달리다 뛰어오르는 역동적 자세','회전 동작 직전의 역동적인 자세'
+          ],
+          '손동작 강조 포즈': [
+            '한 손으로 턱을 만지는 자세','머리카락을 넘기는 자세','양손으로 얼굴 옆을 감싸는 자세','한 손으로 선글라스를 만지는 자세','마이크를 두 손으로 잡고 있는 자세','한 손으로 벽을 짚고 있는 자세','가슴 앞에서 손을 모으는 자세','한 손을 뻗어 화면 밖을 가리키는 자세','한 손으로 모자를 눌러쓰는 자세','손끝으로 목선을 스치는 자세','두 손으로 컵을 감싸 쥔 자세','손으로 옷깃을 살짝 잡아당기는 자세'
+          ],
+          '감정/연출 포즈': [
+            '고개를 살짝 숙이고 쓸쓸하게 서 있는 자세','환하게 웃으며 손을 흔드는 자세','눈을 감고 감정에 몰입한 자세','카메라를 도발적으로 바라보는 자세','수줍게 어깨를 모으는 자세','당당하게 가슴을 펴고 선 자세','무심한 표정으로 시선을 피하는 자세','울컥한 감정을 참는 듯한 자세','고요하게 숨을 고르는 자세','입꼬리를 살짝 올린 여유로운 자세','생각에 잠긴 듯 멀리 바라보는 자세','감정을 터뜨리기 직전의 긴장된 자세'
+          ]
+        }
+      },
+      angle: {
+        title: '카메라 각도 프리셋',
+        categories: {
+          '기본 시점': ['눈높이 정면 시점','살짝 옆에서 보는 사선 시점','정면 아이컨택 시점','측면 프로필이 강조되는 시점','관찰자처럼 멀리서 보는 시점','수평이 안정적인 정면 시점','인터뷰처럼 차분한 시점','친밀하게 마주 보는 시점','시선을 살짝 빗겨 보는 자연스러운 시점'],
+          '위아래 시점': ['아래에서 올려다보는 시점','바닥 가까이에서 올려다보는 극저각 시점','위에서 내려다보는 시점','천장에서 내려다보는 극고각 시점','완전 위에서 내려다보는 탑뷰','허리 아래에서 올려다보는 패션 시점','머리 위쪽에서 부드럽게 내려다보는 시점','상반신을 중심으로 위에서 보는 시점'],
+          '연출 시점': ['어깨 너머로 보는 시점','뒤에서 따라가는 시점','인물을 옆에서 따라가는 시점','풍경을 먼저 보여주고 인물을 담는 시점','살짝 흔들리는 핸드헬드 느낌 시점','현장감 있는 다큐 촬영 시점','관객석에서 무대를 바라보는 시점','문틈 사이로 엿보는 듯한 시점','무대 뒤편에서 바라보는 시점'],
+          '특수 느낌': ['마치 드론처럼 떠 있는 시점','망원렌즈로 멀리서 압축해 보는 시점','광각렌즈로 공간이 넓어 보이는 시점','감시카메라처럼 높은 위치의 시점','셀카처럼 가까운 시점','무대 객석에서 보는 공연 시점']
+        }
+      },
+      composition: {
+        title: '구도 프리셋',
+        categories: {
+          '인물 중심': ['초근접 클로즈업','얼굴 클로즈업','상반신 중심 샷','허리 위 중간 샷','전신 샷','하체까지 자연스럽게 보이는 반전신 구도','인물 한 명이 화면을 강하게 지배하는 구도','어깨선이 강조되는 근접 구도','손과 얼굴이 함께 들어오는 감정 구도','인물 중심의 정적인 초상 구도'],
+          '균형/정렬': ['정면 중앙 구도','대칭 구도','삼등분 구도','상하 대칭이 강한 정돈된 구도','인물과 소품이 균형 있게 나뉜 구도','정갈하고 안정적인 광고식 구도','균형감이 뛰어난 매거진형 구도','좌우 여백이 정리된 안정적 구도'],
+          '공간 활용': ['넓게 보이는 와이드 샷','배경이 강조되는 초광각 구도','인물보다 공간이 더 크게 보이는 구도','배경 원근감이 깊게 느껴지는 구도','하늘이나 천장이 넓게 들어오는 개방감 구도','전경-중경-후경이 분명한 입체 구도','빈 공간이 분위기를 만드는 미니멀 구도','통로 깊이가 강조되는 원근 구도','주변 환경이 서사를 만드는 환경 중심 구도'],
+          '연출/화보': ['잡지 화보 느낌 세로 구도','광고 포스터 느낌 정갈한 구도','영화 스틸컷 느낌 구도','왼쪽 여백에 카피가 들어갈 듯한 광고 구도','오른쪽 여백이 넓은 편집 디자인용 구도','표지 화보처럼 타이틀이 들어갈 여백이 있는 구도','룩북 촬영에 어울리는 세련된 구도','세로 숏폼 썸네일에 맞는 집중형 구도'],
+          '특수 구성': ['전경 요소가 함께 들어오는 입체 구도','프레임 안에 문이나 창문이 함께 들어가는 액자형 구도','테이블 위 사물과 함께 담는 라이프스타일 구도','군중 속에서 인물이 돋보이는 중심 구도','무대 조명과 관객이 함께 보이는 라이브 공연 구도','반사면을 활용한 감각적인 구도','거울 구도','실루엣이 크게 보이는 역광 구도','앞쪽 오브제가 흐리게 들어오는 시네마 구도']
+        }
+      },
+      style: {
+        title: '스타일 프리셋',
+        categories: {
+          '실사/화보': ['실사 사진 느낌','시네마틱 리얼리즘','고급 패션 화보 느낌','잡지 표지 느낌','하이엔드 스튜디오 촬영 느낌','럭셔리 브랜드 캠페인 느낌','하이패션 런웨이 화보 느낌','뷰티 광고 클로즈업 느낌','하이엔드 에디토리얼 촬영 느낌','프리미엄 룩북 촬영 느낌','브랜드 광고 메인 비주얼 느낌','정교한 상업 사진 느낌'],
+          '영화/영상미': ['영화 포스터 느낌','한국 드라마 스틸컷 느낌','헐리우드 블록버스터 영화 느낌','뮤직비디오 콘셉트 아트 느낌','누아르 영화 느낌','라이브 콘서트 공식 포스터 느낌','하이틴 청춘 영화 느낌','독립영화 스틸컷 느낌','서스펜스 영화의 한 장면 같은 느낌','감성 멜로 영화 스틸컷 느낌'],
+          '일러스트/아트': ['귀엽고 아기자기한 일러스트','부드러운 수채화 느낌','선명한 애니메이션 느낌','동화책 삽화 느낌','정교한 디지털 페인팅 느낌','판타지 일러스트북 표지 느낌','초현실주의 아트 느낌','우아한 클래식 회화 느낌','수집형 카드 일러스트 느낌','고해상도 컨셉아트 느낌'],
+          '광고/상업': ['광고 사진 느낌','프리미엄 향수 광고 느낌','감각적인 음식 광고 사진 느낌','스포츠 브랜드 캠페인 느낌','무대 공연 홍보 포스터 느낌','유튜브 썸네일에 어울리는 강한 느낌','브랜드 룩북 같은 상업 비주얼','프리미엄 SNS 광고 비주얼 느낌','쇼핑몰 메인 배너 느낌'],
+          '감성/트렌디': ['따뜻한 감성 사진 느낌','몽환적인 드림코어 느낌','빈티지 필름 사진 느낌','인스타 감성 라이프스타일 사진 느낌','감성 브이로그 썸네일 느낌','힙한 스트릿 패션 화보 느낌','키치하고 톡톡 튀는 팝아트 느낌','미래적인 사이버펑크 느낌','네온 감성 도시 야경 느낌','레트로 매거진 느낌','Y2K 감성 화보 느낌','트렌디한 숏폼 콘텐츠 비주얼 느낌']
+        }
+      },
+      lighting: {
+        title: '조명 프리셋',
+        categories: {
+          '자연광': ['은은한 자연광','따뜻한 노을빛 조명','황금시간대 햇살 조명','실내 창가 햇빛 조명','맑은 한낮의 밝은 햇빛','구름 낀 날의 확산광','비 오는 날 회색빛 자연광','새벽 공기처럼 차갑고 옅은 조명','창문 틈 사이로 들어오는 자연광'],
+          '스튜디오/뷰티': ['부드러운 스튜디오 조명','고급 화보용 강한 조명','부드럽고 평평한 광고 조명','백화점 화보 같은 밝고 깨끗한 조명','스튜디오 소프트박스 조명','하얗고 깨끗한 뷰티 화보 조명','촬영장 메인 라이트와 필 라이트가 균형 잡힌 조명','얼굴 윤곽을 정교하게 살리는 스튜디오 조명'],
+          '드라마틱': ['드라마틱한 역광','얼굴 윤곽이 살아나는 림라이트','명암 대비가 큰 영화 조명','실루엣이 강조되는 강한 역광','후광처럼 뒤에서 감싸는 빛','안개를 통과하는 빛줄기 조명','강한 직사광으로 그림자가 또렷한 조명','한쪽 방향에서만 강하게 들어오는 조명'],
+          '야간/네온': ['비 오는 밤 네온 조명','차가운 도시 야간 조명','몽환적인 보랏빛 조명','파란빛 야간 무드 조명','붉은빛 드라마틱 조명','청록빛 사이버 감성 조명','네온 간판이 반사되는 조명','야간 가로등이 번지는 조명'],
+          '무대/특수': ['무대 스포트라이트 조명','무대 뒤에서 퍼지는 색조명','무대 위 컬러 스포트라이트 조명','콘서트장 레이저가 스치는 조명','촛불 같은 아늑한 조명','크리스마스 전구 같은 반짝 조명','라이브 공연장 조명 리허설 느낌']
+        }
+      },
+      color: {
+        title: '색감 프리셋',
+        categories: {
+          '기본 톤': ['따뜻한 색감','차가운 색감','부드러운 파스텔 톤','선명하고 진한 색감','저채도 감성 톤','고급스러운 뉴트럴 톤','맑고 깨끗한 화이트 톤','흑백 모노톤'],
+          '감성 색감': ['핑크빛 로맨틱 톤','하늘색 청량 톤','초록빛 자연 톤','보랏빛 몽환 톤','우유빛 부드러운 크림 톤','선셋 오렌지 톤','새벽 블루 톤','은은한 라벤더 톤','말린 장미빛 감성 톤'],
+          '고급/영화 톤': ['어두운 누아르 톤','황금빛 브라운 톤','고급스러운 블랙 앤 골드 톤','채도를 줄인 영화 톤','럭셔리 화보용 골드 브론즈 톤','짙고 무거운 시네마 톤','고급 호텔 로비 같은 중후한 톤','딥네이비 기반 시네마 톤'],
+          '트렌디/특수 톤': ['네온사인 같은 강렬한 톤','인스타 감성 밝은 톤','맑은 에메랄드 톤','체리빛 핑크 레드 톤','하이틴 감성 캔디 톤','상큼한 과즙미 컬러 톤','겨울 공기 같은 맑은 쿨톤','가을 감성의 말린 잎사귀 톤','Y2K 느낌의 채도 높은 톤'],
+          '빈티지/필름': ['필름 카메라 같은 빈티지 톤','베이지 중심의 따뜻한 톤','복고풍 세피아 톤','차분한 그레이시 톤','하이라이트가 살아 있는 밝은 톤','명암이 깊은 콘트라스트 톤','부드럽고 뽀얀 뷰티 톤','빛바랜 필름 같은 로우 콘트라스트 톤']
+        }
+      }
+    };
+
+    const displayMap = {
+      subjectDetail: 'subjectDetailDisplay',
+      background: 'backgroundDisplay',
+      mood: 'moodDisplay',
+      subjectPosition: 'subjectPositionDisplay',
+      pose: 'poseDisplay',
+      angle: 'angleDisplay',
+      composition: 'compositionDisplay',
+      style: 'styleDisplay',
+      lighting: 'lightingDisplay',
+      color: 'colorDisplay',
+      depth: 'depthDisplay',
+      lens: 'lensDisplay',
+      iso: 'isoDisplay',
+      shutter: 'shutterDisplay',
+      focus: 'focusDisplay'
+    };
+
+    function getVal(id) {
+      const el = document.getElementById(id);
+      return el ? el.value.trim() : '';
+    }
+
+    function setVal(id, value) {
+      const el = document.getElementById(id);
+      if (el) el.value = value || '';
+      if (displayMap[id]) updatePickerDisplay(id);
+    }
+
+    function getValues() {
+      return Object.fromEntries(ids.map(id => [id, getVal(id)]));
+    }
+
+    function updatePickerDisplay(key) {
+      const el = document.getElementById(displayMap[key]);
+      if (!el) return;
+      const value = getVal(key);
+      el.textContent = value || '';
+      el.className = value ? 'value' : 'value placeholder';
+    }
+
+    function getFlatOptions(key) {
+      return Object.values(pickerData[key].categories).flat();
+    }
+
+    function pickRandomForKey(key) {
+      const options = getFlatOptions(key);
+      if (!options.length) return;
+      const randomValue = options[Math.floor(Math.random() * options.length)];
+      setVal(key, randomValue);
+      updateResult();
+      setStatus(`${labels[key]} 랜덤 선택 완료`);
+    }
+
+    function clearPresetValue(key) {
+      setVal(key, '');
+      updateResult();
+      setStatus(`${labels[key]} 선택 취소 완료`);
+    }
+
+    function buildGuideTextFromValues(v) {
+      const presentIds = ids.filter(id => {
+        const value = v[id];
+        return typeof value === 'string' && value.trim() !== '';
+      });
+
+      const missingIds = ids.filter(id => !presentIds.includes(id));
+
+      const userProvided = presentIds.length > 0
+        ? presentIds.map(id => `${labels[id]}: ${v[id].trim()}`).join('\n')
+        : '사용자가 명시적으로 입력한 항목 없음';
+
+      const fieldsToInfer = missingIds.length > 0
+        ? missingIds.map(id => labels[id]).join(', ')
+        : '없음';
+
+      return `You are a world-class image prompt engineer and prompt enhancer.
+` +
+        `Read the structured inputs below and generate exactly THREE different final prompt options.
+
+` +
+        `Output format rules:
+` +
+        `1. Output exactly 3 options in total.
+` +
+        `2. For each option, write the English image-generation prompt first as one continuous paragraph.
+` +
+        `3. Immediately below it, write a short Korean summary explaining the concept, intention, and photographic direction of that prompt.
+` +
+        `4. Separate Option 1, Option 2, and Option 3 clearly.
+` +
+        `5. Use this exact section format for each option:
+` +
+        `Option 1
+<English prompt>
+<한국어 요약>
+
+` +
+        `Option 2
+<English prompt>
+<한국어 요약>
+
+` +
+        `Option 3
+<English prompt>
+<한국어 요약>
+
+` +
+        `6. Do not use markdown code blocks.
+` +
+        `7. Do not add any extra explanation before, after, or between the options.
+` +
+        `8. Do not output bullet points, greetings, commentary, or labels other than Option 1, Option 2, and Option 3.
+
+` +
+        `Variation rules:
+` +
+        `1. All three options must stay faithful to the same core user intent.
+` +
+        `2. However, each option should differ in photographic direction, mood emphasis, composition logic, or stylistic treatment.
+` +
+        `3. Make the three options feel meaningfully different, not like minor rewrites.
+
+` +
+        `Quality rules:
+` +
+        `1. Never change the user's core intent.
+` +
+        `2. The user-provided fields are explicit constraints and must be respected.
+` +
+        `3. The fields listed under [Fields To Infer] were not provided by the user. They are not literal values, and they must be intelligently inferred and completed from context.
+` +
+        `4. Never output placeholder concepts such as empty, blank, missing, none, unspecified, or not provided inside the final prompt.
+` +
+        `5. Do not write a short or weak prompt. Each English prompt must be dense, professional, visually rich, and ready to paste directly into an image model.
+` +
+        `6. Enrich the result with subject presence, body language, facial details, skin or fur texture, outfit material, prop material, foreground, midground, background, spatial depth, lighting direction, shadow structure, highlight behavior, lens feel, focal emphasis, depth of field, bokeh, realism, mood density, and premium editorial or cinematic details.
+` +
+        `7. If the user directly provided technical details such as lens feel, aperture, ISO, exposure, shutter, focus plane, shallow depth of field, or background blur, prioritize them. If not, infer realistic values and expressions that fit the scene and style.
+` +
+        `8. Use the omitted fields as creative guidance targets: fill them in with tasteful, visually strong, context-consistent decisions that improve image quality and coherence.
+
+` +
+        `Additional user expansion note: ${v.enhanceNote && v.enhanceNote.trim() ? v.enhanceNote.trim() : '없음'}
+
+` +
+        `[User-Provided Input]
+${userProvided}
+
+` +
+        `[Fields To Infer]
+${fieldsToInfer}`;
+    }
+
+    function buildGuideText() {
+      return buildGuideTextFromValues(getValues());
+    }
+
+    function setStatus(msg, isError = false) {
+      const status = document.getElementById('status');
+      status.textContent = msg;
+      status.classList.toggle('error', isError);
+      clearTimeout(setStatus._timer);
+      setStatus._timer = setTimeout(() => {
+        status.textContent = '';
+        status.classList.remove('error');
+      }, 2600);
+    }
+
+    function showManualCopy(text, message) {
+      const fallback = document.getElementById('copyFallback');
+      const area = document.getElementById('manualCopyArea');
+      area.value = text;
+      fallback.classList.add('active');
+      area.focus();
+      area.select();
+      area.setSelectionRange(0, area.value.length);
+      setStatus(message, true);
+    }
+
+    function hideManualCopy() {
+      document.getElementById('copyFallback').classList.remove('active');
+      document.getElementById('manualCopyArea').value = '';
+    }
+
+    function legacyCopy(text) {
+      const temp = document.createElement('textarea');
+      temp.value = text;
+      temp.setAttribute('readonly', '');
+      temp.style.position = 'fixed';
+      temp.style.top = '-9999px';
+      temp.style.left = '-9999px';
+      document.body.appendChild(temp);
+      temp.focus();
+      temp.select();
+      temp.setSelectionRange(0, temp.value.length);
+      let success = false;
+      try { success = document.execCommand('copy'); } catch (error) { success = false; }
+      document.body.removeChild(temp);
+      return success;
+    }
+
+    async function safeCopy(text, successMessage) {
+      if (!text || !text.trim()) {
+        setStatus('복사할 내용이 없어요.', true);
+        return false;
+      }
+      hideManualCopy();
+      try {
+        if (navigator.clipboard && typeof navigator.clipboard.writeText === 'function') {
+          await navigator.clipboard.writeText(text);
+          setStatus(successMessage);
+          return true;
+        }
+      } catch (error) {}
+
+      if (legacyCopy(text)) {
+        setStatus(successMessage + ' (대체 복사 방식 사용)');
+        return true;
+      }
+
+      showManualCopy(text, '자동 복사가 제한되어 수동 복사창을 열었어요. Ctrl+C로 복사해 주세요.');
+      return false;
+    }
+
+    function updateResult() {
+      document.getElementById('resultBox').value = buildGuideText();
+    }
+
+    function attachTabHandlers() {
+      document.querySelectorAll('[data-result-tab]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          activeResultTab = 'guide';
+          document.querySelectorAll('[data-result-tab]').forEach(x => x.classList.remove('active'));
+          btn.classList.add('active');
+          updateResult();
+        });
+      });
+    }
+
+    function attachLiveHandlers() {
+      ids.forEach(id => {
+        const el = document.getElementById(id);
+        if (!el) return;
+        const handler = () => updateResult();
+        el.addEventListener('input', handler);
+        el.addEventListener('change', handler);
+      });
+    }
+
+    function attachMainHandlers() {
+      document.getElementById('clearBtn').addEventListener('click', () => {
+        ids.forEach(id => setVal(id, ''));
+        hideManualCopy();
+        updateAllDisplays();
+        updateResult();
+        setStatus('입력 초기화 완료');
+      });
+
+      document.getElementById('randomAllBtn').addEventListener('click', () => {
+        presetKeys.forEach(key => pickRandomForKey(key));
+        setStatus('모든 프리셋 랜덤 선택 완료');
+      });
+
+      document.getElementById('copyGuideBtn').addEventListener('click', async () => {
+        await safeCopy(buildGuideText(), 'LLM 확장 지시문 복사 완료');
+      });
+    }
+
+    function openPicker(key) {
+      currentPickerKey = key;
+      const modal = document.getElementById('pickerModal');
+      const title = document.getElementById('pickerTitle');
+      const search = document.getElementById('pickerSearch');
+      title.textContent = pickerData[key].title;
+      search.value = '';
+      renderPickerOptions(key, '');
+      modal.classList.add('active');
+      document.body.classList.add('modal-open');
+      search.focus();
+    }
+
+    function closePicker() {
+      document.getElementById('pickerModal').classList.remove('active');
+      document.body.classList.remove('modal-open');
+      currentPickerKey = null;
+    }
+
+    function renderPickerOptions(key, query) {
+      const config = pickerData[key];
+      const content = document.getElementById('pickerContent');
+      const lower = (query || '').trim().toLowerCase();
+      const html = Object.entries(config.categories).map(([cat, items]) => {
+        const filtered = items.filter(item => item.toLowerCase().includes(lower));
+        if (!filtered.length) return '';
+        return `
+          <div class="picker-category">
+            <h3>${cat}</h3>
+            <div class="picker-grid">
+              ${filtered.map(item => `<button type="button" class="picker-option">${item}</button>`).join('')}
+            </div>
+          </div>
+        `;
+      }).join('');
+      content.innerHTML = html || '<div class="helper">검색 결과가 없습니다.</div>';
+
+      content.querySelectorAll('.picker-option').forEach(btn => {
+        btn.addEventListener('click', () => {
+          setVal(key, btn.textContent);
+          updateResult();
+          closePicker();
+          setStatus(`${labels[key]} 선택 완료`);
+        });
+      });
+    }
+
+    function attachPickerHandlers() {
+      document.querySelectorAll('[data-picker]').forEach(btn => {
+        btn.addEventListener('click', () => openPicker(btn.dataset.picker));
+      });
+
+      document.querySelectorAll('[data-random]').forEach(btn => {
+        btn.addEventListener('click', () => pickRandomForKey(btn.dataset.random));
+      });
+
+      document.querySelectorAll('[data-clear]').forEach(btn => {
+        btn.addEventListener('click', () => clearPresetValue(btn.dataset.clear));
+      });
+
+      document.getElementById('closePickerBtn').addEventListener('click', closePicker);
+      document.getElementById('pickerModal').addEventListener('click', (e) => {
+        if (e.target.id === 'pickerModal') closePicker();
+      });
+      document.getElementById('pickerSearch').addEventListener('input', (e) => {
+        if (currentPickerKey) renderPickerOptions(currentPickerKey, e.target.value);
+      });
+      document.getElementById('pickerRandomBtn').addEventListener('click', () => {
+        if (!currentPickerKey) return;
+        pickRandomForKey(currentPickerKey);
+        closePicker();
+      });
+      document.getElementById('pickerClearBtn').addEventListener('click', () => {
+        if (!currentPickerKey) return;
+        clearPresetValue(currentPickerKey);
+        closePicker();
+      });
+      window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closePicker();
+      });
+    }
+
+    function updateAllDisplays() {
+      Object.keys(displayMap).forEach(updatePickerDisplay);
+    }
+
+    function assert(condition, message) {
+      if (!condition) throw new Error(message);
+    }
+
+    attachTabHandlers();
+    attachLiveHandlers();
+    attachMainHandlers();
+    attachPickerHandlers();
+    updateAllDisplays();
+    updateResult();
+  </script>
+</body>
+</html>
