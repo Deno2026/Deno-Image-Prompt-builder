@@ -61,6 +61,10 @@ Simple Prompt Master는 프롬프트를 처음 쓰는 사람도 부담 없이 �
 https://deno2026.github.io/Deno-Image-Prompt-builder/
 ```
 
+## 라이선스
+
+이 프로젝트는 [GNU GPL v3.0](LICENSE) (`GPL-3.0-only`)으로 배포됩니다. 사용, 학습, 수정, 재배포, 상업적 이용이 가능합니다. 수정본을 배포할 때는 GPL-3.0을 따라야 하며 필요한 라이선스와 저작권 고지를 유지해야 합니다.
+
 ## GitHub About 권장값
 
 - Description: `이미지와 동영상 프롬프트를 클릭 흐름으로 정리하는 Simple Prompt Master`
