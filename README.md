@@ -4,8 +4,6 @@
 
 [라이브 페이지 열기](https://deno2026.github.io/Deno-Image-Prompt-builder/)
 
-[프롬프트 빌더 v1.0 열기](https://deno2026.github.io/Deno-Image-Prompt-builder/v1/)
-
 ![Simple Prompt Master 메인 페이지](assets/readme/main-page.png)
 
 ## 프로젝트 소개
@@ -32,6 +30,38 @@ Simple Prompt Master는 프롬프트를 처음 쓰는 사람도 부담 없이 �
 4. 마지막 화면에서 지시문 복사
 5. ChatGPT, Gemini, Grok 등 대화형 LLM에 붙여넣고 추가 질문에 답변
 6. LLM이 최종 이미지 또는 영상 프롬프트를 정리
+
+### 선택한 내용은 어떻게 복사되나요?
+
+[동영상 빌더](https://deno2026.github.io/Deno-Image-Prompt-builder/video.html)의 **Text to Video**에서 다음 카드를 선택한 예입니다. 각 단계의 세부 입력과 마지막 추가 메모는 비워둡니다.
+
+| 단계 | 선택 |
+| --- | --- |
+| 영상 종류 | 풍경 / 감성 컷 |
+| 집중 포인트 | 빛 / 분위기 |
+| 컷 구성 | 한 컷만 |
+| 카메라 | 고정 |
+| 움직임 | 배경 요소 중심 |
+| 속도감 | 천천히 / 여운 있게 |
+| 분위기 | 감성적으로 |
+
+**LLM 상담 지시문 복사**를 누르면 아래 선택 내용이 상담 지시문에 포함됩니다. 다음은 실제 복사물의 마지막 부분입니다.
+
+```text
+[Builder Choices]
+Video type: landscape or atmospheric scenic shot
+Primary focus: lighting and atmosphere should establish the scene first
+Shot structure: single-shot video, one continuous scene
+Camera plan: static camera, steady framing
+Primary motion: environmental motion like wind, particles, water, or lighting changes
+Pacing and rhythm: slow pacing with gentle timing and more lingering moments
+Tone and style: soft emotional atmosphere, lyrical and immersive
+
+[Extra Notes From User]
+(none)
+```
+
+전체 복사물에는 사용할 영상 모델을 먼저 확인하고, 필요한 세부사항을 질문한 뒤 해당 모델에 맞는 최종 프롬프트를 작성하라는 안내도 들어 있습니다. 복사한 지시문을 ChatGPT나 Gemini에 붙여넣고 사용할 모델과 원하는 풍경을 알려주면 됩니다.
 
 ## 설계 방향
 
@@ -60,6 +90,10 @@ Simple Prompt Master는 프롬프트를 처음 쓰는 사람도 부담 없이 �
 ```text
 https://deno2026.github.io/Deno-Image-Prompt-builder/
 ```
+
+## 구버전
+
+이전 단일 페이지가 필요하면 [프롬프트 빌더 v1.0](https://deno2026.github.io/Deno-Image-Prompt-builder/v1/)을 열 수 있습니다. 현재 이미지·동영상 빌더는 [라이브 페이지](https://deno2026.github.io/Deno-Image-Prompt-builder/)에서 시작하세요.
 
 ## 라이선스
 
